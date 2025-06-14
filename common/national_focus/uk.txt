@@ -1,18 +1,18 @@
 
 focus_tree = {
-	id = british_focus
+	#id = british_focus
 	
-	country = {
-		factor = 0
+	#country = {
+	#	factor = 0
 		
-		modifier = {
-			add = 10
-			tag = ENG
-		}
-	}
+	#	modifier = {
+	#		add = 10
+	#		tag = ENG
+	#	}
+	#}
 	
 	default = no
-	shared_focus = ALLIED_cum
+	#shared_focus = ALLIED_cum
 	
 	focus = {
 		id = ENG_refinery_effort
