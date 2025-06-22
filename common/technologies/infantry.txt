@@ -104,7 +104,9 @@ technologies = {
 		amphibious_mechanized = {
 			soft_attack = 0.05
 		}
-		
+		camelry = {
+			soft_attack = 0.05
+		}
 		path = {
 			leads_to_tech = improved_infantry_weapons
 			research_cost_coeff = 1
@@ -182,7 +184,9 @@ technologies = {
 		amphibious_mechanized = {
 			soft_attack = 0.05
 		}
-		
+		camelry = {
+			soft_attack = 0.05
+		}
 		path = {
 			leads_to_tech = advanced_infantry_weapons
 			research_cost_coeff = 1
@@ -311,7 +315,9 @@ technologies = {
 			soft_attack = 0.1
 		}		
 	
-
+		camelry = {
+			soft_attack = 0.1
+		}
 		motorized = {
 			soft_attack = 0.1
 		}
@@ -1371,7 +1377,11 @@ technologies = {
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
-		}		
+		}
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1454,7 +1464,11 @@ technologies = {
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
-		}		
+		}
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1545,7 +1559,11 @@ technologies = {
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
-		}		
+		}
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1636,7 +1654,11 @@ technologies = {
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
-		}		
+		}
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03

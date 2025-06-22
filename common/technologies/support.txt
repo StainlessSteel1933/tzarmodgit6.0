@@ -152,16 +152,10 @@ technologies = {
 		assault_engineer = {
 			breakthrough = 0.1
 			fort = {
-				attack = 0.15
+				attack = 0.1
 			}
 		}
 
-		armored_engineer = {
-			entrenchment = 1
-			fort = {
-				defence = 0.15
-			}
-		}
 		
 		enable_subunits = {
 			assault_engineer

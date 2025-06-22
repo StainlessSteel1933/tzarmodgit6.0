@@ -186,6 +186,7 @@ ideas = {
 						
 			modifier = {
 				production_speed_buildings_factor = -0.50
+				production_factory_max_efficiency_factor = -0.10
 			}
 		}
 
@@ -207,6 +208,7 @@ ideas = {
 						
 			modifier = {
 				production_speed_buildings_factor = -0.40
+				production_factory_max_efficiency_factor = -0.08
 			}
 		}
 
@@ -228,6 +230,7 @@ ideas = {
 						
 			modifier = {
 				production_speed_buildings_factor = -0.30
+				production_factory_max_efficiency_factor = -0.06
 			}
 		}
 
@@ -249,6 +252,7 @@ ideas = {
 						
 			modifier = {
 				production_speed_buildings_factor = -0.20
+				production_factory_max_efficiency_factor = -0.04
 			}
 		}
 
@@ -270,6 +274,7 @@ ideas = {
 						
 			modifier = {
 				production_speed_buildings_factor = -0.10
+				production_factory_max_efficiency_factor = -0.02
 			}
 		}
 

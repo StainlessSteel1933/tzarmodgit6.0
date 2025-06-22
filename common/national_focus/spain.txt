@@ -152,34 +152,34 @@ focus_tree = {
 					}
 				}
 			172 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
 			176 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
 			792 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
 			790 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -710,7 +710,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		#relative_position_id = SPA_fuse_the_parties
-		cost = 5
+		cost = 7
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -720,10 +720,10 @@ focus_tree = {
 			hidden_effect = { add_ideas = SPR_no_navy2 }
 			add_ideas = SPA_national_recovery_1	
 			167 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 8
 					instant_build = yes
 				}
 			}
@@ -885,7 +885,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_fascist_economic_aid
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -928,7 +928,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_facilitate_pyrenees_freight_transports
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -960,7 +960,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_autarky
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1039,7 +1039,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SPA_national_recovery
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}

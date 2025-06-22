@@ -119,7 +119,7 @@ RAJ_one_last_ride_desc:0 " "
 
 
 
-RAJ_modifier_army_sub_unit_camelry_attack_factor_tt:0 "Camelry Attack: §G+20.00%§!"
+RAJ_modifier_army_sub_unit_camelry_attack_factor_tt:0 "Camelry Attack: §G+10.00%§!"
 coastal_bunker_effectiveness_factor_tt:0 "Coastal Fort Effectiviness: §G+15.00%§!"
 RAJ_stability_weekly_tt:0 "Weekly Stablitiy Gain: §G+0.10%§!"
 RAJ_quit_india_greatsoul:0 "Gandhi Great Soul of India"

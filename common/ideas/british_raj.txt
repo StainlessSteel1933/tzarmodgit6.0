@@ -405,7 +405,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_expected_value = -0.02
 			}
 		}
 		RAJ_the_zamindari_system = {
@@ -423,7 +423,7 @@ ideas = {
 			modifier = {
 				political_advisor_cost_factor = -0.2
 				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.01
 			}
 		}
 

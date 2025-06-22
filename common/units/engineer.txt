@@ -277,7 +277,7 @@ sub_units = {
 
 		fort = {
 			attack = 0.25 #More than reg engineers (0.1)
-			defence = 0.1 #Less than reg engineers (0.25)
+			defence = 0.05 #Less than reg engineers (0.25)
 		}
 
 		river = {
@@ -370,12 +370,12 @@ sub_units = {
 		}
 
 		forest = {
-			defence = 0.1 
+			defence = 0.075
 			movement = 0.05 
 		}
 
 		plains = {
-			movement = 0.1 #More than reg engineers (0)
+			movement = 0.05 #More than reg engineers (0)
 		}
 
 		desert = {

@@ -4566,7 +4566,7 @@ focus_tree = {
 				}
 				completion_reward = {
 					every_country = {
-						limit = { the_axis = yes }
+						limit = { OR = { the_axis = yes original_tag = CZE original_tag = YUG } }
 						add_ideas = GER_armaments_miracle
 					}
 					# add_ideas = GER_armaments_miracle
@@ -5208,7 +5208,8 @@ focus_tree = {
 						custom_effect_tooltip = "   "
 						every_country = {
 							limit = { OR = { original_tag = HUN original_tag = ROM original_tag = SPR
-											 original_tag = BUL original_tag = YUG original_tag = ITA } }
+											 original_tag = BUL original_tag = YUG original_tag = ITA 
+											 original_tag = CZE } }
 							add_ideas = general_staff
 						}
 

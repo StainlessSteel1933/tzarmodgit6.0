@@ -138,15 +138,15 @@ division_template = {
 	division_names_group = FRA_MOT_01
 
 	regiments = {
-		mechanized x = 0 y = 0 }
-	    mechanized x = 0 y = 1 }
-		mechanized x = 0 y = 2 }
-		mechanized x = 0 y = 3 }
+		mechanized {x = 0 y = 0 }
+	    mechanized {x = 0 y = 1 }
+		mechanized {x = 0 y = 2 }
+		mechanized {x = 0 y = 3 }
 
-		mechanized x = 1 y = 0 }
-		mechanized x = 1 y = 1 }
-		mechanized x = 1 y = 2 }
-		mechanized x = 1 y = 3 }
+		mechanized {x = 1 y = 0 }
+		mechanized {x = 1 y = 1 }
+		mechanized {x = 1 y = 2 }
+		mechanized {x = 1 y = 3 }
 		medium_sp_anti_air_brigade = { x = 4 y = 3 }
 
 		heavy_armor = { x = 2 y = 0 }
@@ -177,14 +177,14 @@ division_template = {
 	division_names_group = FRA_MEC_01
 
 	regiments = {
-		mechanized x = 0 y = 0 }
-	    mechanized x = 0 y = 1 }
-		mechanized x = 0 y = 2 }
-		mechanized x = 0 y = 3 }
-		mechanized x = 1 y = 0 }
-		mechanized x = 1 y = 1 }
-		mechanized x = 1 y = 2 }
-		mechanized x = 1 y = 3 }
+		mechanized {x = 0 y = 0 }
+	    mechanized {x = 0 y = 1 }
+		mechanized {x = 0 y = 2 }
+		mechanized {x = 0 y = 3 }
+		mechanized {x = 1 y = 0 }
+		mechanized {x = 1 y = 1 }
+		mechanized {x = 1 y = 2 }
+		mechanized {x = 1 y = 3 }
 		medium_sp_anti_air_brigade = { x = 4 y = 3 }
 		light_armor = { x = 2 y = 0 }
 		light_armor = { x = 2 y = 1 }
@@ -981,25 +981,6 @@ instant_effect = {
 		efficiency = 50 
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = cas_equipment_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
 	# add_equipment_production = {
 	# 	equipment = {
 	# 		type = heavy_tank_equipment_1
@@ -1026,5 +1007,6 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 50
 	}
+}
 
 ###################

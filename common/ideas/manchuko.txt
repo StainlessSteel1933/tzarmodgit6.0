@@ -61,8 +61,8 @@ ideas = {
 			
 			
 		modifier = { 	consumer_goods_expected_value = -0.03 
-		industrial_capacity_factory	= 0.1
-						industrial_capacity_dockyard = 0.1
+		industrial_capacity_factory	= 0.2
+						industrial_capacity_dockyard = 0.2
 
 		}
 			

@@ -66,6 +66,9 @@ sub_units = {
 			attack = 0.05
 			defence = 0.05
 		}
+		urban = {
+			attack = 0.075
+		}
 
 		same_support_type = flame
 	}
@@ -133,12 +136,12 @@ sub_units = {
 			attack = 0.05
 		}
 		urban = {
-			attack = 0.05
+			attack = 0.1
 			defence = 0.05
 		}
 		fort = {
 			attack = 0.05
-			defence = 0.05
+			defence = 0.025
 		}
 
 		same_support_type = flame
@@ -209,7 +212,7 @@ sub_units = {
 		}
 		fort = {
 			attack = 0.15
-			defence = 0.1
+			defence = 0.025
 		}
 
 		same_support_type = flame

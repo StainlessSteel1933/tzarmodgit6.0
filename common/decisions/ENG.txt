@@ -679,7 +679,7 @@ foreign_politics = {
         }
 
         visible = {
-		has_game_rule = {  rule = horst_vichy_france    option = HORST_ENABLE_VICHY_FRANCE   }
+			#has_game_rule = {  rule = horst_vichy_france    option = HORST_ENABLE_VICHY_FRANCE   }
         }
 
         cost = 0
@@ -726,7 +726,7 @@ foreign_politics = {
         }
 
         visible = {
-			date>1942.6.6
+			#date>1942.6.6
         }
 
         cost = 0
@@ -736,14 +736,14 @@ foreign_politics = {
         available = {
 			EFR = { owns_state = 26 }
 			NOT = { has_global_flag = operation_torch_flag }
-			OR = { NOT = { ITA = { controls_state = 448 controls_state = 450 controls_state = 451 }   }
+			OR = { date>1942.6.6 NOT = { ITA = { controls_state = 448 controls_state = 450 controls_state = 451 }   }
 			
 			}
 		}
 		
 		complete_effect = {
 			set_global_flag = operation_torch_flag
-			GER =  { activate_mission = GER_case_anton }
+			#GER =  { activate_mission = GER_case_anton }
 			every_country = { limit = { AND = { is_in_faction_with = ENG has_war = yes }  }
 			EFR = { declare_war_on = { target = PREV type = annex_everything }	} }
 			GER = { add_to_faction = EFR }
@@ -1017,72 +1017,7 @@ foreign_politics = {
 				    set_nationality = ENG
 			    }
 		}
-			if = {
-				limit = {
-					CAN = {
-						
-					}
-				}
-				set_technology = {
-					
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					CAN = {
-						
-					}
-				}
-				set_technology = {
-					
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					CAN = {
-						
-					}
-				}
-				set_technology = {
-					
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					CAN = {
-						
-					}
-				}
-				set_technology = {
-					
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					CAN = {
-						has_tech = naval_bomber2
-					}
-				}
-				set_technology = {
-					naval_bomber2 = 1
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					CAN = {
-						has_tech = naval_bomber3
-					}
-				}
-				set_technology = {
-					naval_bomber3 = 1
-				}
-			}
-#############################################################################################
+			
 
 		    ENG = {
 				# if = {

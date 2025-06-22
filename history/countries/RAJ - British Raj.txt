@@ -73,7 +73,6 @@ if = {
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
 		improved_secondary_battery = 1
-		basic_fire_control_system = 1
 		cruiser_submarines = 1	
 	}	
 }
@@ -424,6 +423,7 @@ add_ideas = {
 	set_variable = { RAJ_independence_movement_factory_efficiency = 0 }
 	set_variable = { RAJ_independence_movement_stability_weekly = 0 }
 	set_variable = { RAJ_independence_movement_factory_efficiency_gain_factor = 0 }
+	set_variable = { RAJ_independence_movement_surrender_limit = 0 }
 	
 	
 	set_variable = { RAJ_royal_indian_navy_navy_anti_air_attack_factor = 0 }

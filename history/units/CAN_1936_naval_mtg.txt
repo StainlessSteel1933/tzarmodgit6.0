@@ -10,24 +10,24 @@
 			# Scrap Iron Flotilla
 			ship = { name = "HMCS Saguenay" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
 			ship = { name = "HMCS Skeena" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
-			ship = { name = "USS Omaha" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
-			ship = { name = "USS Milwaukee" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+			ship = { name = "USS Omahaa" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+			ship = { name = "USS Milwaukeee" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
 			ship = { name = "USS Cincinnati" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }		
 			ship = { name = "USS Omaha" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
 			ship = { name = "USS Milwaukee" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
-			ship = { name = "USS Cincinnati" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }
+			ship = { name = "USS Cincinnatii" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }
 			ship = { name = "USS New Orleans" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }				
 			ship = { name = "USS Astoria" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }
-			ship = { name = "HMCS Saguenay" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
-			ship = { name = "HMCS Skeena" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
-			ship = { name = "HMCS Saguenay" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
-			ship = { name = "HMCS Skeena" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
-			ship = { name = "HMCS Saguenay" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
-			ship = { name = "HMCS Skeena" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }		
-			ship = { name = "HMCS Saguenay" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
-			ship = { name = "HMCS Skeena" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }		
-			ship = { name = "HMCS Saguenay" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
-			ship = { name = "HMCS Skeena" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }					
+			ship = { name = "HMCS Saguenayy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
+			ship = { name = "HMCS Skeenaa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
+			ship = { name = "HMCS Saguenayyy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
+			ship = { name = "HMCS Skeenaaa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
+			ship = { name = "HMCS Saguenayyyy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
+			ship = { name = "HMCS Skeenaaaa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }		
+			ship = { name = "HMCS Saguenayyyyy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
+			ship = { name = "HMCS Skeenaaaaa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }		
+			ship = { name = "HMCS Saguenayyyyyy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
+			ship = { name = "HMCS Skeenaaaaaa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }					
 		}				
 	}
 }

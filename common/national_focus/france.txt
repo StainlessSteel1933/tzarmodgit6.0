@@ -770,6 +770,7 @@
 		completion_reward = {
 			army_experience = 5
 			add_ideas = FRA_tank_ic
+			
 		}
 	}
 	focus = {

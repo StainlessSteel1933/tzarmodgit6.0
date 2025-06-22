@@ -304,7 +304,6 @@ focus = {
         }
 
         available = {
-            659 = { is_fully_controlled_by = ROOT }
             
         }
         
@@ -319,7 +318,7 @@ focus = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
-            992 ={
+            659 ={
                 add_building_construction = {
                     type = bunker
                     level = 5
@@ -623,7 +622,7 @@ focus = {
                 value = 0.05 
             }
             custom_effect_tooltip = idea_RAJ_independence_movement_tt
-            add_to_variable = { RAJ_independence_movement_infra = 0.2 tooltip = production_speed_infrastructure_factor_tt }
+            add_to_variable = { RAJ_independence_movement_infra = 0.3 tooltip = production_speed_infrastructure_factor_tt }
             custom_effect_tooltip = generic_skip_one_line_tt
             439 = {
 				add_building_construction = {
@@ -1199,7 +1198,7 @@ focus = {
 
         completion_reward = {
             435 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 4
                 add_building_construction = {
                     type = dam
                     level = 1
@@ -1211,7 +1210,7 @@ focus = {
             }
 
             431 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 4
                 add_building_construction = {
                     type = dam
                     level = 1
@@ -1223,7 +1222,7 @@ focus = {
             }
 
             438 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 4
                 add_building_construction = {
                     type = dam
                     level = 1
@@ -2066,7 +2065,7 @@ focus = {
         430 = {
 			add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 9991
 				instant_build = yes
 			}						
@@ -2074,43 +2073,43 @@ focus = {
         432 = {
 			add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 997
 				instant_build = yes
 			}
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 10090
 				instant_build = yes
 			}
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 2013
 				instant_build = yes
 			}
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 1119
 				instant_build = yes
 			}		
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 3907
 				instant_build = yes
 			}	
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 1553
 				instant_build = yes
 			}	
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 1525
 				instant_build = yes
 			}		
@@ -2118,13 +2117,13 @@ focus = {
         434 = {
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 12322
 				instant_build = yes
 			}
             add_building_construction = {
 				type = bunker
-				level = 10
+				level = 5
 				province = 1996
 				instant_build = yes
 			}
@@ -2541,15 +2540,9 @@ focus = {
         }
         
         bypass = {
-            is_subject = no
+            
         }
 
-        bypass_effect = {
-            if  = {
-                limit = { has_idea = RAJ_princely_states }
-                remove_ideas = RAJ_princely_states
-            }
-        }
 
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -2563,7 +2556,7 @@ focus = {
 
         completion_reward = {
             custom_effect_tooltip = idea_RAJ_independence_movement_tt
-            add_to_variable = { RAJ_autonomy_gain_independence_movement = 0.05 tooltip = autonomy_gain_tt }
+            add_to_variable = { RAJ_independence_movement_surrender_limit = 0.5 tooltip = surrender_limit_tt }
 
         }
     }
@@ -3605,7 +3598,7 @@ focus = {
 
         completion_reward = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_special_forces_defence_factor = 0.05 tooltip = special_forces_defence_factor_tt }
+            add_to_variable = { RAJ_special_forces_defence_factor = 0.03 tooltip = special_forces_defence_factor_tt }
 
         }
     }
@@ -3678,8 +3671,8 @@ focus = {
 
         completion_reward = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_special_forces_attack_factor = 0.05 tooltip = special_forces_attack_factor_tt }
-            add_to_variable = { RAJ_special_forces_defence_factor = 0.05 tooltip = special_forces_defence_factor_tt }
+            add_to_variable = { RAJ_special_forces_attack_factor = 0.03 tooltip = special_forces_attack_factor_tt }
+            add_to_variable = { RAJ_special_forces_defence_factor = 0.03 tooltip = special_forces_defence_factor_tt }
         }
     }
 
@@ -3812,7 +3805,7 @@ focus = {
 
         completion_reward = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_special_forces_defence_factor = 0.05 tooltip = special_forces_defence_factor_tt }
+            add_to_variable = { RAJ_special_forces_defence_factor = 0.03 tooltip = special_forces_defence_factor_tt }
         }
     }
 
@@ -3851,13 +3844,13 @@ focus = {
 					
 						add_building_construction = {
 							type = bunker
-							level = 10
+							level = 5
 							province = 4435
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 10
+							level = 5
 							province = 12338
 							instant_build = yes
 						}
@@ -3871,13 +3864,13 @@ focus = {
 					
 						add_building_construction = {
 							type = bunker
-							level = 10
+							level = 5
 							province = 5310
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 10
+							level = 5
 							province = 4987
 							instant_build = yes
 						}
@@ -4149,7 +4142,7 @@ focus = {
 
 		completion_reward = {
 			custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_special_forces_attack_factor = 0.05 tooltip = special_forces_attack_factor_tt }
+            add_to_variable = { RAJ_special_forces_attack_factor = 0.03 tooltip = special_forces_attack_factor_tt }
 		}
 	}
 	
@@ -4177,7 +4170,7 @@ focus = {
             custom_effect_tooltip = generic_skip_one_line_tt
             
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-			add_to_variable = { RAJ_cav_attack = 0.1 tooltip = cavalry_attack_factor_tt }
+			add_to_variable = { RAJ_cav_attack = 0.05 tooltip = cavalry_attack_factor_tt }
 			
             
             #add_ideas = RAJ_Mysore_lancers
@@ -4267,7 +4260,7 @@ focus = {
 		
 		completion_reward = {
 			custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_infantry_attack = 0.05 tooltip = army_infantry_attack_factor_tt }
+            add_to_variable = { RAJ_infantry_attack = 0.03 tooltip = army_infantry_attack_factor_tt }
             custom_effect_tooltip = "Raises ten 25% equipped divisions"
 			division_template = {
 					name = "Imperial Service Troops"
@@ -4382,7 +4375,7 @@ focus = {
 		
 		completion_reward = {
 			custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_infantry_attack = 0.05 tooltip = army_infantry_attack_factor_tt }
+            add_to_variable = { RAJ_infantry_attack = 0.03 tooltip = army_infantry_attack_factor_tt }
 		}		
 	}
 	
@@ -4414,7 +4407,7 @@ focus = {
 
 		completion_reward = {
 			custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-			add_to_variable = { RAJ_cav_attack = 0.1 tooltip = cavalry_attack_factor_tt }
+			add_to_variable = { RAJ_cav_attack = 0.05 tooltip = cavalry_attack_factor_tt }
 		}
 	}
 
@@ -4454,7 +4447,7 @@ focus = {
 			}
             custom_effect_tooltip = generic_skip_one_line_tt
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-			add_to_variable = { RAJ_cav_attack = 0.1 tooltip = cavalry_attack_factor_tt }
+			add_to_variable = { RAJ_cav_attack = 0.05 tooltip = cavalry_attack_factor_tt }
             add_to_variable = { RAJ_air_superiority_bonus_in_combat = 0.05 tooltip = air_superiority_bonus_in_combat_tt }
 		}
 	}
@@ -4487,7 +4480,7 @@ focus = {
 
 		completion_reward = {
 			custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-			add_to_variable = { RAJ_cav_defence = 0.1 tooltip = cavalry_defence_factor_tt }
+			add_to_variable = { RAJ_cav_defence = 0.05 tooltip = cavalry_defence_factor_tt }
 		}
 	}
 
@@ -4526,7 +4519,7 @@ focus = {
             #}
             custom_effect_tooltip = generic_skip_one_line_tt
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_modifier_army_sub_unit_camelry_attack_factor = 0.2 tooltip = RAJ_modifier_army_sub_unit_camelry_attack_factor_tt}
+            add_to_variable = { RAJ_modifier_army_sub_unit_camelry_attack_factor = 0.1 tooltip = RAJ_modifier_army_sub_unit_camelry_attack_factor_tt}
 
 		}
 	}
@@ -4780,7 +4773,7 @@ focus = {
         completion_reward = {
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
             add_to_variable = { RAJ_army_artillery_attack_factor = 0.1 tooltip = army_artillery_attack_factor_tt }
-            add_to_variable = { RAJ_military_coordination_bonus = 0.2 tooltip = coordination_bonus_tt }
+            add_to_variable = { RAJ_military_coordination_bonus = 0.05 tooltip = coordination_bonus_tt }
         }
     }
 
@@ -4835,10 +4828,11 @@ focus = {
 
         completion_reward = {
             add_tech_bonus = {
-				name = RAJ_model_usa_tech
-				bonus = 1
-				uses = 3
-				category = electronics
+				name = bomber_command_focus
+				bonus = 1.5
+				uses = 2
+				technology = basic_large_airframe
+				technology = basic_medium_airframe
 			}
             custom_effect_tooltip = generic_skip_one_line_tt
             add_popularity = {
@@ -5046,7 +5040,7 @@ focus = {
             }
             custom_effect_tooltip = generic_skip_one_line_tt
             custom_effect_tooltip = RAJ_army_dynamic_modifier_tt
-            add_to_variable = { RAJ_infantry_attack = 0.05 tooltip = army_infantry_attack_factor_tt }
+            add_to_variable = { RAJ_infantry_attack = 0.03 tooltip = army_infantry_attack_factor_tt }
         }
     }
 	

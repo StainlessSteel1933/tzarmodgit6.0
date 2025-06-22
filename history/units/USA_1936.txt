@@ -170,27 +170,6 @@ units = {
 }
 	
 	
-air_wings = {
-	378 = {
-		tac_bomber_equipment_0 = {
-			owner = "USA" 
-			amount = 200
-		}
-		CAS_equipment_1 = {
-			owner = "USA" 
-			amount = 100
-		}
-		fighter_equipment_0 =  {
-			owner = "USA" 
-			amount = 200
-		}
-		nav_bomber_equipment_1 =  {
-			owner = "USA" 
-			amount = 100
-		}
-	}
-}
-
 
 #########################
 ## STARTING PRODUCTION ##
@@ -245,24 +224,6 @@ instant_effect = {
 		efficiency = 50
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = cv_nav_bomber_equipment_1
-			creator = "USA" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = cas_equipment_1
-			creator = "USA" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
 	add_equipment_production = {
 		equipment = {
 			type = transport_plane_equipment_1

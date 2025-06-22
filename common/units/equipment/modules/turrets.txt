@@ -205,7 +205,7 @@ equipment_modules = {
 		category = tank_heavy_turret_type
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
-
+		allow_equipment_type = artillery
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament

@@ -17,7 +17,6 @@ RAJ_army_dynamic_modifier = {
 	out_of_supply_factor = RAJ_out_of_supply
 	army_armor_attack_factor = RAJ_armor_attack
 	army_artillery_attack_factor = RAJ_army_artillery_attack_factor
-	surrender_limit = RAJ_cap_limit
 	heat_attrition_factor = RAJ_heat
 	army_org_factor = RAJ_army_org_factor
 	army_attack_factor = RAJ_army_attack
@@ -177,6 +176,7 @@ idea_RAJ_independence_movement = { #STATE MODIFIER
 	production_speed_infrastructure_factor = RAJ_independence_movement_infra
 	production_factory_efficiency_gain_factor = RAJ_independence_movement_factory_efficiency_gain_factor
 	stability_weekly = RAJ_independence_movement_stability_weekly
+	surrender_limit = RAJ_independence_movement_surrender_limit
 
 }
 

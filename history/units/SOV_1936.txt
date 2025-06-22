@@ -392,38 +392,12 @@ units = {
 air_wings = {
 	# LVO Aviatsya Komandovaniya -- Leningrad
 	206 = { 
-		fighter_equipment_0 = {
+		basic_air_fraiment = {
 			version_name = "I16-R"
 			owner = "SOV" 
 			amount = 1600
 		}
        
-		tac_bomber_equipment_0 =  {
-			owner = "SOV" 
-			amount = 200
-		}
-		
-		fighter_equipment_1 = {
-			owner = "SOV" 
-			amount = 100
-		}
-       
-		nav_bomber_equipment_1 = {
-			owner = "SOV" 
-			amount = 100
-		}
-
-		cas_equipment_1 = {
-			owner = "SOV"
-			amount = 200
-		}
-		cas_equipment_1 = {
-			owner = "SOV"
-			amount = 200
-		}
-		
-	}	
-}
 	#########################
 	## STARTING PRODUCTION ##
 	#########################
@@ -492,58 +466,7 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 70
 	}
-		add_equipment_production = {
-		equipment = {
-			type = gw_armored_car_equipment
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 70
-	}
-	add_equipment_production = {
-		equipment = {
-			type = transport_plane_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 70
-	}
 
-
-	add_equipment_production = {
-		equipment = {
-			type = cas_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 10
-		progress = 0.15
-		efficiency = 70
-	}
-		add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			creator = "SOV" 
-			version_name = "MiG-3"
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 70
-	}
-	
-	
-	
-	# add_equipment_production = {
-	# 	equipment = {
-	# 	type = heavy_tank_equipment_1
-	# 		creator = "SOV" 
-	# 		version_name = "T-35 1936"
-	# 	}
-	# 	requested_factories = 1
-	# 	progress = 0.15
-	# 	efficiency = 70
-	# }
 
 	add_equipment_production = {
 		equipment = {
