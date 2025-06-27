@@ -33,6 +33,67 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_arde
+		icon = GFX_focus_research
+		prerequisite = { focus = ENG_royal_arsenal_woolwich }
+		relative_position_id = ENG_royal_arsenal_woolwich
+		x = 0
+		y = 1
+		
+		cost = 10
+
+		
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = maud_focus
+		prerequisite = { focus = ENG_arde }
+		icon = GFX_focus_wonderweapons
+		x = 0
+		y = 1
+		relative_position_id = ENG_arde
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.75
+			}
+			USA = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.75
+				}
+			}
+			
+			add_tech_bonus = {
+				name = maud_focus
+				bonus = 1 # was 1
+				uses = 1
+				category = nuclear
+			}
+			hidden_effect = {
+				SOV = {
+					add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.75
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = ENG_projectile_development_establishment
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = ENG_royal_arsenal_woolwich  }
@@ -52,12 +113,43 @@ focus_tree = {
 					technology = experimental_rockets
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+	}
+
+	focus = {
+		id = ENG_land_mattress
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = ENG_projectile_development_establishment  }
+		x = 0
+		y = 1
+		relative_position_id = ENG_projectile_development_establishment
+		cost = 10
+
+		
+		
+		completion_reward = {
 			add_tech_bonus = {
 				name = UK_secret_focus
 				bonus = 1.0
 				uses = 3
 				category = rocketry
 			}
+		}
+	}
+
+	focus = {
+		id = ENG_rocket_projectile_3_inch
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = ENG_projectile_development_establishment  }
+		x = -2
+		y = 1
+		relative_position_id = ENG_projectile_development_establishment
+		cost = 10
+
+		
+		
+		completion_reward = {
+			
 		}
 	}
 
