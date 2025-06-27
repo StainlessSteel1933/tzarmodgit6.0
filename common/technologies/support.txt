@@ -682,6 +682,10 @@ technologies = {
 			#equipment_capture_factor = 0.025
 			max_strength = 5.0
 		}
+		armored_maintenance = {
+			reliability_factor = 0.08
+			max_strength = 5.0
+		}
 		enable_equipment_modules = {
 			easy_maintenance
 		}
@@ -733,6 +737,10 @@ technologies = {
 			#equipment_capture_factor = 0.025
 			max_strength = 2.5
 		}
+		armored_maintenance = {
+			reliability_factor = 0.08
+			max_strength = 2.5
+		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
 			research_cost_coeff = 1
@@ -776,7 +784,10 @@ technologies = {
 			#equipment_capture_factor = 0.025
 			max_strength = 2.5
 		}
-
+		armored_maintenance = {
+			reliability_factor = 0.08
+			max_strength = 2.5
+		}
 		research_cost = 1.5
 		start_year = 1945
 		folder = {
@@ -1080,6 +1091,15 @@ technologies = {
 			experience_loss_factor = -0.10
 			max_strength = 5
 		}
+		helicopter_field_hospital = {
+			casualty_trickleback = 0.15
+			experience_loss_factor = -0.10
+			max_strength = 5
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
+		}
 		enable_subunits = {
 			helicopter_field_hospital
 		}
@@ -1128,6 +1148,15 @@ technologies = {
 			experience_loss_factor = -0.10
 			max_strength = 5
 		}
+		helicopter_field_hospital = {
+			casualty_trickleback = 0.15
+			experience_loss_factor = -0.10
+			max_strength = 5
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
+		}
 		path = {
 			leads_to_tech = tech_field_hospital4
 			research_cost_coeff = 1
@@ -1172,7 +1201,15 @@ technologies = {
 			experience_loss_factor = -0.10
 			max_strength = 5
 		}
-
+		helicopter_field_hospital = {
+			casualty_trickleback = 0.15
+			experience_loss_factor = -0.10
+			max_strength = 5
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
+		}
 		research_cost = 1.5
 		start_year = 1945
 		folder = {
@@ -1496,6 +1533,9 @@ technologies = {
 		signal_company = {
 			initiative = 0.12
 		}
+		armored_signal = {
+			initiative = 0.12
+		}
 		path = {
 			leads_to_tech = tech_signal_company4
 			research_cost_coeff = 1
@@ -1536,6 +1576,9 @@ technologies = {
 	tech_signal_company4 = {
 		special_project_specialization = { specialization_land }
 		signal_company = {
+			initiative = 0.12
+		}
+		armored_signal = {
 			initiative = 0.12
 		}
 

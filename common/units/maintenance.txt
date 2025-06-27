@@ -83,7 +83,7 @@ sub_units = {
 		combat_width = 0
 	
 		#Size Definitions
-		max_strength = 1
+		max_strength = 12.5
 		max_organisation = 20	
 		default_morale = 0.3
 		manpower = 500
@@ -95,8 +95,8 @@ sub_units = {
 		can_be_parachuted = no
 		
 		# Important Ability
-		reliability_factor = 0.02 #Less than reg maintenance (0.05)
-		equipment_capture_factor = 0.1 #More than reg maintenance (0.05)
+		reliability_factor = 0.05 #Less than reg maintenance (0.05)
+		#equipment_capture_factor = 0.1 #More than reg maintenance (0.05)
 		recovery = 0.1 #More than reg maintenance (0)
 
 		essential = {

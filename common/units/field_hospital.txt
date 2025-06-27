@@ -75,8 +75,8 @@ sub_units = {
 		combat_width = 0
 	
 		#Size Definitions
-		max_strength = 2 #Same as reg hospital
-		max_organisation = 20
+		max_strength = 12.5 #Same as reg hospital
+		max_organisation = 45
 		default_morale = 0.3
 		manpower = 500
 		training_time = 120
@@ -88,7 +88,7 @@ sub_units = {
 
 		# Important Ability
 		casualty_trickleback = 0.25
-		experience_loss_factor = -0.10
+		experience_loss_factor = -0.20
 		
 		battalion_mult = {
 			category = category_all_infantry

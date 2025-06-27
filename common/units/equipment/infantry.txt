@@ -56,8 +56,8 @@ equipments = {
 		visual_level = 1
 
 		#Defensive Abilities
-		defense = 18
-		breakthrough = 2.25
+		defense = 16.5
+		breakthrough = 1.75
 
 		#Offensive Abilities
 		soft_attack = 3.6
@@ -81,8 +81,8 @@ equipments = {
 		visual_level = 2
 		
 		#Defensive Abilities
-		defense = 20
-		breakthrough = 4.75
+		defense = 18.5
+		breakthrough = 3.75
 
 		#Offensive Abilities
 		soft_attack = 6.0
@@ -106,7 +106,7 @@ equipments = {
 		visual_level = 3
 		
 		#Defensive Abilities
-		defense = 23
+		defense = 21.5
 		breakthrough = 6.25
 
 		#Offensive Abilities

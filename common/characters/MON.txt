@@ -7,12 +7,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ panzer_expert organizer panzer_leader ranger}
+			traits={ panzer_expert organizer panzer_leader swamp_fox ranger infantry_leader infantry_expert}
 			skill=4 
-			attack_skill=4
-			defense_skill=2
+			attack_skill=6
+			defense_skill=4
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=5
 			legacy_id=-1
 		}
 		country_leader={
@@ -31,10 +31,10 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ politically_connected organizer panzer_leader skilled_staffer panzer_expert fast_planner ranger }
+			traits={ politically_connected organizer panzer_leader swamp_fox skilled_staffer panzer_expert logistics_wizard infantry_leader ranger infantry_expert urban_assault_specialist }
 			skill=5
-			attack_skill=4
-			defense_skill=4
+			attack_skill=6
+			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
@@ -301,7 +301,7 @@ characters={
 				original_tag = MON
 			}
 			traits  = {
-				army_concealment_2 
+				army_commando_2 
 			}
 			cost = 100
 			ai_will_do = {
@@ -361,7 +361,7 @@ characters={
 				original_tag = MON
 			}
 			traits  = {
-				navy_naval_air_defense_2 
+				army_infantry_2 
 			}
 			cost = 100
 			ai_will_do = {

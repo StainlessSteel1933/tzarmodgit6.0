@@ -184,7 +184,7 @@ sub_units = {
 		manpower = 1200
 
 		#Misc Abilities
-		maximum_speed = 0.5
+		maximum_speed = 0.1
 		training_time = 210		
 		weight = 1.2
 		
@@ -212,7 +212,7 @@ sub_units = {
 		}
 
 		mountain = {
-			attack = -0.1
+			attack = -0.2
 			movement = -0.05
 		}
 

@@ -78,12 +78,6 @@ focus = {
 		x = -13
 		y = 1
 		cost = 10
-		available = { 
-		has_country_leader = {
-			character = USA_franklin_delano_roosevelt
-			ruling_only = yes
-		}
-		}
 		prerequisite = { focus = USA_reorganization_act   }
 		mutually_exclusive = { focus = USA_landon_deal }
 		relative_position_id=USA_reorganization_act
@@ -98,12 +92,6 @@ focus = {
 		y = 1
 		cost = 10
 		mutually_exclusive = { focus = USA_roosevelt_deal }
-		available = {
-			has_country_leader = {
-			character = USA_alf_landon
-			ruling_only = yes
-		}
-		}
 		prerequisite = { focus = USA_reorganization_act   }
 		relative_position_id=USA_reorganization_act
 		completion_reward = { 
@@ -1504,7 +1492,37 @@ focus = {
 					instant_build = yes
 				}
 			}
-			every_country = { limit = { is_in_faction_with = ENG NOT = { tag = USA } } add_ideas = USA_economic_aid  }
+			ENG = {
+					add_ideas = USA_economic_aid
+				}
+			CAN = {
+					add_ideas = USA_economic_aid
+				}
+			FRA = {
+					add_ideas = USA_economic_aid
+				}
+			FRF = {
+					add_ideas = USA_economic_aid
+				}
+			MEX = {
+					add_ideas = USA_economic_aid
+				}
+			HOL = {
+					add_ideas = USA_economic_aid
+				}
+			NZL = {
+					add_ideas = USA_economic_aid
+				}
+			AST = {
+					add_ideas = USA_economic_aid
+				}
+			RAJ = {
+					add_ideas = USA_economic_aid
+				}
+			SAF = {
+					add_ideas = USA_economic_aid
+				}
+			
 			USA_congress_small_supporta = yes
 		}
 	} 
