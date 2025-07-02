@@ -2670,7 +2670,7 @@ focus = {
 			focus = USA_defend_philippines
 		}
 		available = {
-			controls_state  = 627
+			#controls_state  = 627
 		}
 		completion_reward = {
 			custom_effect_tooltip = "I shall return "

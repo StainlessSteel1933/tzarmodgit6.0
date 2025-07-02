@@ -59,7 +59,7 @@ equipments = {
 		hard_attack = 31.0
 		soft_attack = 0
 		ap_attack = 24
-		defense = -5.75
+		defense = -1
 		breakthrough = 2
 
 		build_cost_ic = 2.5
@@ -80,7 +80,7 @@ equipments = {
 		hard_attack = 37
 		ap_attack = 38
 		soft_attack = 0
-		defense = -7
+		defense = 1.5
 		breakthrough = 3
 
 		build_cost_ic = 3

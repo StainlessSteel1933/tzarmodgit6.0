@@ -691,7 +691,27 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
-			activate_decision = HOL_relocate_government_to_batavia
+			add_victory_points = {
+				province = 391
+				value = -35
+			}
+			add_victory_points = {
+				province = 3211
+				value = -5
+			}
+			add_victory_points = {
+				province = 9498
+				value = -15
+			}
+			add_victory_points = {
+				province = 10906
+				value = 20
+			}
+			add_victory_points = {
+				province = 153
+				value = 35
+			}
+			#activate_decision = HOL_relocate_government_to_batavia
 			custom_effect_tooltip = HOL_continue_the_war_in_batavia_tt
 			335 = { add_core_of = HOL }
 			672 = { add_core_of = HOL }
@@ -2301,24 +2321,24 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = HOL_henri_winkelman
-			custom_effect_tooltip = HOL_appoint_new_supreme_commander_tt
-			hidden_effect = {
-				add_field_marshal_role = {
-					character = "HOL_henri_winkelman"
-						traits = { 
-							defensive_doctrine 
-							trait_cautious 
-							unyielding_defender 
-						}
-						skill = 4
-						attack_skill = 2
-						defense_skill = 4
-						planning_skill = 4
-						logistics_skill = 3
-				}
-			}
+			#custom_effect_tooltip = available_political_advisor
+			#show_ideas_tooltip = HOL_henri_winkelman
+			#custom_effect_tooltip = HOL_appoint_new_supreme_commander_tt
+			#hidden_effect = {
+			#	add_field_marshal_role = {
+			#		character = "HOL_henri_winkelman"
+			#			traits = { 
+			#				defensive_doctrine 
+			#				trait_cautious 
+			#				unyielding_defender 
+			#			}
+			#			skill = 4
+			#			attack_skill = 2
+			#			defense_skill = 4
+			#			planning_skill = 4
+			#			logistics_skill = 3
+			#	}
+			#}
 		}
 	}
 

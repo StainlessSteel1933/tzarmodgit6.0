@@ -278,7 +278,7 @@ technologies = {
 		rangers_support = {
 			battalion_mult = {
 				category = category_line_artillery
-				soft_attack = 0.20
+				soft_attack = 0.05
 			}
 		}
 		
