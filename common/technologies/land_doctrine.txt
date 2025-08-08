@@ -2645,7 +2645,7 @@ technologies = {
 		additional_brigade_column_size = 1
 		land_reinforce_rate = 0.04
 		minimum_training_level = -0.2	
-		army_speed_factor = 0.1		
+		#army_speed_factor = 0.1		
 
 		doctrine = yes	
 		research_cost = 0.01
@@ -2679,6 +2679,7 @@ technologies = {
 		#reduced pocketed combat penalty and/or reduces the out of supply penalty or increases time before moving to worse penalty
 		no_supply_grace = 168 # more hours before supply penalty changes
 		out_of_supply_factor = -0.40
+		supply_combat_penalties_on_core_factor = -0.15
 		pocket_penalty = -0.2
 				
 		path = {
@@ -2686,12 +2687,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		category_support_battalions = {
-			max_organisation = 5
-			soft_attack = 0.075
-			breakthrough = 0.1
-			defense = 0.1
-			}
+		#category_support_battalions = {
+		#	max_organisation = 5
+		#	soft_attack = 0.075
+		#	breakthrough = 0.1
+		#	defense = 0.1
+		#	}
 
 		doctrine = yes	
 		research_cost = 4.71
@@ -2724,7 +2725,7 @@ technologies = {
 	
 		dig_in_speed_factor = 0.25
 		max_dig_in = 2.5
-		pocket_penalty = -0.05
+		#pocket_penalty = -0.05
 
 		category_light_infantry = {
 			max_organisation = 8
@@ -2772,8 +2773,8 @@ technologies = {
 			peoples_army
 		}
 
-		pocket_penalty = -0.05
-
+		#pocket_penalty = -0.05
+		
 
 		allow = { 
 			OR = {
@@ -2789,36 +2790,36 @@ technologies = {
 
 
 		
-
+		coordination_bonus = 0.05
 		supply_consumption_factor = -0.15
-		motorized_rocket_brigade = {
-			max_organisation = 10
-			default_morale = 0.2
-			soft_attack = 0.2
-		}		
-		motorized = {
-			max_organisation = 5
-			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
-			max_organisation = 5
-			soft_attack = 0.2
-		}
-		mot_anti_tank_brigade = {
-			max_organisation = 5
-			soft_attack = 0.2
-		}
-		mot_anti_air_brigade = {
-			max_organisation = 5
-			soft_attack = 0.2
-		}
-		mechanized = {
-			max_organisation = 5
-		}
-		amphibious_mechanized = {
-			max_organisation = 5
-			soft_attack = 0.1
-		}
+		#motorized_rocket_brigade = {
+		#	max_organisation = 10
+		#	default_morale = 0.2
+		#	soft_attack = 0.2
+		#}		
+		#motorized = {
+		#	max_organisation = 5
+		#	soft_attack = 0.1
+		#}
+		#mot_artillery_brigade = {
+		#	max_organisation = 5
+		#	soft_attack = 0.2
+		#}
+		#mot_anti_tank_brigade = {
+		#	max_organisation = 5
+		#	soft_attack = 0.2
+		#}
+		#mot_anti_air_brigade = {
+		#	max_organisation = 5
+		#	soft_attack = 0.2
+		#}
+		#mechanized = {
+		#	max_organisation = 5
+		#}
+		#amphibious_mechanized = {
+		#	max_organisation = 5
+		#	soft_attack = 0.1
+		#}
 
 		enable_tactic = tactic_relentless_assault
 		enable_tactic = tactic_human_wave_tactics
@@ -2853,45 +2854,52 @@ technologies = {
 	}
 	
 	deep_operations = {
-		category_tanks = {
-			max_organisation = 4
+		
+		category_army = {
+			breakthrough = 0.2
 		}
 		
-		anti_tank_brigade = { 
-			defense = 0.25		} #I went in singleplayer and made a 8 at unit and had 550 defense, I'm aware this modifier lowers defense instead of increasing it, that's the entire point.
-		mot_anti_tank_brigade = {
-			defense = 0.25
-		}
+		
+		#category_tanks = {
+		#	max_organisation = 4
+		#}
+		
+		#ancient gdu babble but still relevant
+		#anti_tank_brigade = { 
+		#	defense = 0.25		} #I went in singleplayer and made a 8 at unit and had 550 defense, I'm aware this modifier lowers defense instead of increasing it, that's the entire point.
+		#mot_anti_tank_brigade = {
+		#	defense = 0.25
+		#}
 
-		category_all_armor = {
-			default_morale = 0.07
-		}
-		artillery_brigade = { 
-			#max_strength = 7.5
-			default_morale = 0.15
-			defense = 0.1
-		}
+		#category_all_armor = {
+		#	default_morale = 0.07
+		#}
+		#artillery_brigade = { 
+		#	#max_strength = 7.5
+		#	default_morale = 0.15
+		#	defense = 0.1
+		#}
 		#mot_artillery_brigade = {
 		#	max_strength = 7.5
 		#}
 		#rocket_artillery_brigade = {
 		#	max_strength = 7.5
 		#}
-		motorized_rocket_brigade = {
-			#max_strength = 10.0
-			max_organisation = 2.5
-		}		
-		anti_air_brigade = { 
-			#max_strength = 7.5
-			max_organisation = 2.5
-			default_morale = 0.15
-			defense = 0.1
-		}
-		anti_tank_brigade = { 
-			#max_strength = 1.0
-			default_morale = 0.15
-			hard_attack = 0.1
-		}
+		#motorized_rocket_brigade = {
+		#	#max_strength = 10.0
+		#	max_organisation = 2.5
+		#}		
+		#anti_air_brigade = { 
+		#	#max_strength = 7.5
+		#	max_organisation = 2.5
+		#	default_morale = 0.15
+		#	defense = 0.1
+		#}
+		#anti_tank_brigade = { 
+		#	#max_strength = 1.0
+		#	default_morale = 0.15
+		#	hard_attack = 0.1
+		#}
 
 		xp_research_type = army
 		# xp_research_cost = 100
@@ -2937,30 +2945,48 @@ technologies = {
 		max_planning = 0.1
 		planning_speed = 0.15
 		
-		motorized = {
-			max_organisation = 5
-			default_morale = 0.1
-			defense = 0.1
+		motorized_rocket_brigade = {
+			soft_attack = 0.2
+			breakthrough = 0.2
 		}
 		
-		mechanized = {
-			max_organisation = 5
-			default_morale = 0.1
-			defense = 0.05
-		}	
-		amphibious_mechanized = {
-			max_organisation = 5
-			default_morale = 0.1
-			defense = 0.1
-		}	
+		category_artillery = {
+			soft_attack = 0.10
+			#breakthrough = 0.10
+		}
 		
-		category_light_infantry = {
-			max_organisation = 10
-			default_morale = 0.25
+		category_all_infantry = {
+			soft_attack = 0.10
+			#breakthrough = 0.10
 		}
-		infantry = {
-			#max_strength = 7.0
+
+		super_heavy_artillery = {
+			soft_attack = 0.10
 		}
+		#motorized = {
+		#	max_organisation = 5
+		#	default_morale = 0.1
+		#	defense = 0.1
+		#}
+		
+		#mechanized = {
+		#	max_organisation = 5
+		#	default_morale = 0.1
+		#	defense = 0.05
+		#}	
+		#amphibious_mechanized = {
+		#	max_organisation = 5
+		#	default_morale = 0.1
+		#	defense = 0.1
+		#}	
+		
+		#category_light_infantry = {
+		#	max_organisation = 10
+		#	default_morale = 0.25
+		#}
+		#infantry = {
+		#	#max_strength = 7.0
+		#}
 		# category_light_infantry = { 
 			
 		# }
@@ -2999,30 +3025,24 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 
-		category_army = {
-			default_morale = 0.05
-		}
-
-		category_light_infantry = {
-			max_organisation = 8
-			breakthrough = 0.1
-		}
-
-		mechanized = {
-			max_organisation = 8
-			default_morale = 0.02
-			breakthrough = 0.10			
-		}
-		motorized = {
-			max_organisation = 8
-			default_morale = 0.02
-			breakthrough = 0.10			
-		}
-		amphibious_mechanized = {
-			max_organisation = 8
-			default_morale = 0.02
-			breakthrough = 0.10	
-		}
+		
+		org_loss_when_moving = -0.5
+		#mechanized = {
+		#	max_organisation = 8
+		#	default_morale = 0.02
+		#	breakthrough = 0.10			
+		#}
+		#motorized = {
+		#	max_organisation = 8
+		#	default_morale = 0.02
+		#	breakthrough = 0.10			
+		#}
+		#amphibious_mechanized = {
+		#	max_organisation = 8
+		#	default_morale = 0.02
+		#	soft_attack = 0.10
+		#	breakthrough = 0.10	
+		#}
 		
 		enable_tactic = tactic_overwhelming_fire
 		
@@ -3060,22 +3080,38 @@ technologies = {
 		# xp_research_cost = 100
 		# xp_research_bonus = 1.00
 		xp_unlock_cost = 100
+		
+		shocktroop = {
+			#soft_attack = 0.10
+			breakthrough = 1.00
+		}
+		
 		category_all_armor = {
-			max_organisation = 3
-			breakthrough = 0.20 	
+			#max_organisation = 3
+			breakthrough = 0.1
 		}
-		category_tanks = {
-			max_organisation = 2
+		
+		artillery_brigade = {
+			breakthrough = 0.05
 		}
-		category_all_infantry = {
-			max_organisation = 5
-			breakthrough = 0.10
-		}
-
+		
 		motorized_rocket_brigade = {
-			breakthrough = 0.15
-			default_morale = 0.15			
+			breakthrough = 0.2
 		}
+		
+		#category_tanks = {
+		#	max_organisation = 2
+		#}
+		
+		#category_all_infantry = {
+		#	max_organisation = 5
+		#	breakthrough = 0.10
+		#}
+
+		#motorized_rocket_brigade = {
+		#	breakthrough = 0.15
+		#	default_morale = 0.15			
+		#}
 		#armored_car = {
 		#	max_organisation = 1
 		#	breakthrough = 0.10
@@ -3113,6 +3149,8 @@ technologies = {
 	}
 	
 	mechanized_wave = {
+		
+		
 		category_tanks = {
 			max_organisation = 5
 			soft_attack = 0.05
@@ -3131,28 +3169,28 @@ technologies = {
 		
 		
 			
-		mechanized = {
-			max_organisation = 6
-			default_morale = 0.075
-			breakthrough = 0.10
-			#max_strength = 7.0
-		}
-		motorized = {
-			max_organisation = 6
-			default_morale = 0.075
-			breakthrough = 0.10
-			#max_strength = 7.0
-		}	
-		amphibious_mechanized = {
-			max_organisation = 10
-			default_morale = 0.075
-			breakthrough = 0.10
-			#max_strength = 6.0
-		}	
-		motorized_rocket_brigade = {
-			max_organisation = 5
-			breakthrough = 0.20 
-		}
+		#mechanized = {
+		#	max_organisation = 6
+		#	default_morale = 0.075
+		#	breakthrough = 0.10
+		#	#max_strength = 7.0
+		#}
+		#motorized = {
+		#	max_organisation = 6
+		#	default_morale = 0.075
+		#	breakthrough = 0.10
+		#	#max_strength = 7.0
+		#}	
+		#amphibious_mechanized = {
+		#	max_organisation = 10
+		#	default_morale = 0.075
+		#	breakthrough = 0.10
+		#	#max_strength = 6.0
+		#}	
+		#motorized_rocket_brigade = {
+		#	max_organisation = 5
+		#	breakthrough = 0.20 
+		#}
 		
 		path = {
 			leads_to_tech = continuous_offensive
@@ -3189,18 +3227,25 @@ technologies = {
 		# xp_research_cost = 100
 		# xp_research_bonus = 1.00
 		xp_unlock_cost = 100
-		org_loss_when_moving = -0.15
+		
 		land_reinforce_rate = 0.05
-		rocket_artillery_brigade = { 
-			defense = 0.15
-			breakthrough = 0.1
+		
+		category_army = {
+			default_morale = 0.20
+			max_organisation = 12
 		}
-		category_all_armor = {
-			max_organisation = 3
-		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.05
-		}
+		
+		
+		#rocket_artillery_brigade = { 
+		#	defense = 0.15
+		#	breakthrough = 0.1
+		#}
+		#category_all_armor = {
+		#	max_organisation = 3
+		#}
+		#motorized_rocket_brigade = {
+		#	soft_attack = 0.05
+		#}
 		
 		enable_tactic = tactic_backhand_blow
 
