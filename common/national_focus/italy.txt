@@ -5803,7 +5803,7 @@ completion_reward = {
 
 		completion_reward = {
 			add_stability = 0.02
-			add_timed_idea = { idea = ITA_devaluated_lira days = 195 }
+			add_timed_idea = { idea = ITA_devaluated_lira days = 365 }
 		}
 	}
 	focus = {
@@ -6111,9 +6111,6 @@ completion_reward = {
 			85 = {
 				add_core_of = ITA
 			}
-			913 = {
-				add_core_of = ITA
-			}
 		}
 	}
 
@@ -6336,6 +6333,28 @@ completion_reward = {
 
 			custom_effect_tooltip = ITA_all_roads_lead_to_rome_re_tt
 			add_to_variable = { ITA_re_supply_node_range = 0.1 }
+		}
+	}
+	focus = {
+		id = ITA_prepare_defense
+		icon = GFX_focus_generic_spread_fascism
+		prerequisite = { focus = ITA_all_roads_lead_to_rome }
+		text = "Prepare Defenses in Egypt"
+		x = 0
+		y = 2
+		relative_position_id = ITA_the_italian_legions
+		cost = 2
+		available = {
+			has_full_control_of_state = 2
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			857 = {
+				add_building_construction = { type = bunker level = 8 province = 10947 instant_build = yes }
+				add_building_construction = { type = bunker level = 6 province = 7143 instant_build = yes }
+			}
 		}
 	}
 
@@ -7312,9 +7331,16 @@ completion_reward = {
 	transfer_state = 916
 	transfer_state = 914
 	transfer_state = 915
+	transfer_state = 104
+	transfer_state = 103
+	transfer_state = 902
+	transfer_state = 901
+	transfer_state = 109
+	transfer_state = 804
+	transfer_state = 764
 			YUG = {
-				complete_national_focus = CRO_emergency_powers_to_pavlec
-					set_cosmetic_tag = YUG_CRO	
+				complete_national_focus = YUG_Political_1
+					#set_cosmetic_tag = YUG_CRO	
 					set_politics = {
 						ruling_party = fascism
 						elections_allowed = no
@@ -7367,20 +7393,20 @@ completion_reward = {
 				transfer_state = 803
 				transfer_state = 184
 			}
-			every_country = {
-				limit = {
-					owns_state = 82
-				}
-				transfer_state = 764
-			}
+			#every_country = {
+			#	limit = {
+			#		owns_state = 82
+			#	}
+			#	transfer_state = 764
+			#}
 			if = {
-				limit = {
-					ROM = {
-						NOT = {
-							has_completed_focus = ROM_codreanus_iron_guard
-						}
-					}
-				}
+				#limit = {
+				#	ROM = {
+				#		NOT = {
+				#			has_completed_focus = ROM_codreanus_iron_guard
+				#		}
+				#	}
+				#}
 				every_country = {
 					limit = {
 						owns_state = 211
@@ -7395,15 +7421,15 @@ completion_reward = {
 			#ITA = { annex_country = { target = GRE transfer_troops = no } }
 			ITA = {
 				transfer_state = 802 transfer_state = 105 transfer_state = 853
-				transfer_state = 108 transfer_state = 107
+				transfer_state = 107
 			
 				transfer_state = 731 transfer_state = 185 transfer_state = 47
 				transfer_state = 186 transfer_state = 187
 			}
 			GER = {
 				transfer_state = 102
-				puppet = {
-					target = YUG}
+				#puppet = {
+				#	target = YUG}
 			}
 			# handles When germany has annexed hungary, so they get vojvodina
 			every_country = {

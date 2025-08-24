@@ -63,7 +63,23 @@ SOV_mrp = {
  			factor = 1
  		}
  	}
-	
+	SOV_deploy_units_tz = {
+		name = "Backline deployment"
+		allowed = {
+			original_tag = SOV
+		}
+		visible = {
+			date < 1941.5.5
+		}
+		fire_only_once = yes
+		available = {
+			date < 1941.5.5
+		}
+		complete_effect = {
+			add_manpower = -305000
+			load_oob = "SOV_Belarus_Deployment"
+		}
+	}
 	SOV_annex_Mongolia = {
 			targets = { MON }
 

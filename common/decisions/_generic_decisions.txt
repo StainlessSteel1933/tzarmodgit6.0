@@ -6,35 +6,35 @@ political_actions = {
 		icon = generic_industry
 		
 			allowed = { 
-	OR = {	
-	tag = EFR 
-		tag = SOV
-		tag = CHI
-		tag = SIA 
-		tag = FRA
-		tag = JAP
-		tag = RAJ
-		tag = AST
-		tag = NZL
-		tag = MAN
-		tag = BUL
-		tag = ROM
-		tag = HUN
-		tag = SPR
-		tag = GER
-		tag = ITA
-		tag = ENG
-		tag = IRE
-		tag = SAF
-		tag = FIN 
-		tag = USA
-		tag = CAN
-		tag = BRA
-		tag = MEX
-		tag = NOR
-		tag = YUG 
-		tag = FRF
-		tag = CZE
+				OR = {	
+				tag = EFR 
+					tag = SOV
+					tag = CHI
+					tag = SIA 
+					tag = FRA
+					tag = JAP
+					tag = RAJ
+					tag = AST
+					tag = NZL
+					tag = MIN
+					tag = BUL
+					tag = ROM
+					tag = HUN
+					tag = SPR
+					tag = GER
+					tag = ITA
+					tag = ENG
+					tag = IRE
+					tag = SAF
+					tag = FIN 
+					tag = USA
+					tag = CAN
+					tag = BRA
+					tag = MEX
+					tag = NOR
+					tag = YUG 
+					tag = FRF
+					tag = CZE
 			}
 		}
 
@@ -92,7 +92,7 @@ political_actions = {
 		tag = RAJ
 		tag = AST
 		tag = NZL
-		tag = MAN
+		tag = MIN
 		tag = BUL
 		tag = ROM
 		tag = HUN
@@ -167,7 +167,7 @@ operations = {
 	OR = {	
 		tag = SIA 
 		tag = JAP
-		tag = MAN
+		tag = MIN
 			tag = EFR 
 
 		tag = BUL
@@ -184,11 +184,11 @@ operations = {
 		
 		available = {
 			controls_state = 446
-			controls_state = 453
+			controls_state = 679
 			OR = {
 				NOT = {
 					owns_state = 446
-					owns_state = 453
+					owns_state = 679
 				}
 				any_country = {
 					has_war_with = ROOT
@@ -232,13 +232,13 @@ operations = {
 					limit = {
 						NOT = {
 							owns_state = 446
-							owns_state = 453
+							owns_state = 679
 						}
 					}
 					random_country = {
 						limit = {
 							owns_state = 446
-							owns_state = 453
+							owns_state = 679
 						}
 						country_event = { id = generic.12 days = 1 }
 					}
@@ -251,7 +251,7 @@ operations = {
 				limit = {
 					OR = {
 						has_full_control_of_state = 446
-						has_full_control_of_state = 453
+						has_full_control_of_state = 679
 					}
 				}
 				set_country_flag = blew_up_suez
@@ -263,7 +263,7 @@ operations = {
 					limit = {
 						ENG = {
 							owns_state = 446
-							owns_state = 453
+							owns_state = 679
 						}
 					}
 					add_war_support = -0.05
@@ -323,7 +323,7 @@ operations = {
 		OR = { 
 		tag = SIA 
 		tag = JAP
-		tag = MAN
+		tag = MIN
 		tag = BUL
 		tag = ROM
 			tag = EFR 
@@ -442,7 +442,7 @@ special_projects = {
 	OR = { 	
 		tag = SIA 
 		tag = JAP
-		tag = MAN
+		tag = MIN
 		tag = BUL
 		tag = ROM
 		tag = HUN
@@ -458,7 +458,7 @@ special_projects = {
 		
 		available = {
 			has_full_control_of_state = 446
-			has_full_control_of_state = 453
+			has_full_control_of_state = 679
 			num_of_civilian_factories > 15
 		}
 	
@@ -480,7 +480,7 @@ special_projects = {
 			if = {
 				limit = {
 					has_full_control_of_state = 446
-					has_full_control_of_state = 453
+					has_full_control_of_state = 679
 				}
 				set_country_flag = rebuilt_suez
 				clr_global_flag = SUEZ_CANAL_BLOCKED
@@ -535,7 +535,7 @@ special_projects = {
 		OR = { 
 		tag = SIA 
 		tag = JAP
-		tag = MAN
+		tag = MIN
 		tag = BUL
 		tag = ROM
 		tag = HUN
@@ -924,7 +924,7 @@ war_measures = {
 	# 	tag = SIA
 	# 	tag = EFR 
 	# 	tag = FRF
-	# 	tag = MAN 
+	# 	tag = MIN 
 	# 	tag = RAJ
 	# 	tag = AST
 	# 	tag = NZL
@@ -1158,7 +1158,7 @@ economy_decisions = {
 
 	focus_on_navy = {
 
-	icon = generic_naval
+		icon = generic_naval
 
 		available = {
 			has_stability > 0.2
@@ -1174,7 +1174,7 @@ economy_decisions = {
 		fire_only_once = no
 
 		modifier = {
-			industrial_capacity_factory = -0.1
+			industrial_capacity_factory = -0.05
 			industrial_capacity_dockyard = 0.075
 		}
 
@@ -1212,8 +1212,8 @@ economy_decisions = {
 		fire_only_once = no
 
 		modifier = {
-			production_factory_efficiency_gain_factor = 0.5
-			consumer_goods_expected_value = 0.03
+			production_factory_efficiency_gain_factor = 0.3
+			consumer_goods_expected_value = 0.02
 			political_power_gain = -0.1
 		}
 
@@ -1462,7 +1462,7 @@ economy_decisions = {
 		tag = FRA
 		tag = BUL
 		tag = ROM
-		tag = MAN
+		tag = MIN
 		tag = HUN
 		tag = SPR
 		tag = ENG
@@ -1570,7 +1570,7 @@ economy_decisions = {
 		tag = FIN 
 		tag = USA
 		tag = CAN
-		tag = MAN
+		tag = MIN
 		tag = BRA
 		tag = MEX
 		tag = NOR 

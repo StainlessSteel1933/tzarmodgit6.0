@@ -3499,13 +3499,7 @@ focus_tree = {
 		cost = 0.2
 
 		available = {
-			AND = {
-				NOT = {
-				controls_province = 6380
-				controls_province = 413
-			}
-			surrender_progress > 0.78
-			}
+			surrender_progress > 0.68
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}

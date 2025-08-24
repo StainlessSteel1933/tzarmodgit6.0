@@ -80,7 +80,7 @@ GER_henschel_organization = {
 			tag = ITA 
 			tag = BUL
 			tag = YUG
-			tag = MAN
+			tag = MIN
 		}
 	}
 	
@@ -134,7 +134,7 @@ GER_man_organization = {
 			tag = ITA 
 			tag = BUL
 			tag = YUG
-			tag = MAN
+			tag = MIN
 		}
 	}
 	

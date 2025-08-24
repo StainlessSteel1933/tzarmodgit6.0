@@ -1,7 +1,7 @@
 
 state={
 	id=858
-	name="STATE_895"
+	name="Southern Angola"
 	manpower = 92400
 	state_category = pastoral
 

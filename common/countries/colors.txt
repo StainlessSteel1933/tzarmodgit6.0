@@ -191,7 +191,7 @@ USA = {
 	color = rgb { 1 84 160  }
 	color_ui = rgb { 74 147 255}
 }
-MAN = {
+MIN = {
 	color = rgb { 255 120 71 }
 	color_ui = rgb { 255 120 71 }
 }

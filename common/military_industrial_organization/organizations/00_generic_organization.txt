@@ -350,7 +350,7 @@ generic_tank_organization = {
 			AND = {
 				OR = {
 					is_literally_china = yes
-					tag = MAN
+					tag = MIN
 				}
 				has_dlc = "Waking the Tiger"
 			}
@@ -401,7 +401,7 @@ generic_tank_organization = {
 		equipment_bonus = {
 			armor_value = -0.05
 			defense =-0.05
-			build_cost_ic = -0.03
+			build_cost_ic = -0.05
 		}
 	}
 
@@ -474,7 +474,7 @@ generic_tank_organization = {
 		all_parents = { generic_mio_trait_simplified_suspension generic_mio_trait_crew_ergonomics }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.1
+			production_efficiency_gain_factor = 0.025
 			production_resource_need_factor = -0.1
 		}
 	}
@@ -490,7 +490,7 @@ generic_tank_organization = {
 		all_parents = { generic_mio_trait_improved_tracks generic_mio_trait_standardized_components generic_mio_trait_command_upgrades }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -508,7 +508,7 @@ generic_tank_organization = {
 		
 		production_bonus = {
 			production_cost_factor = -0.05
-			production_efficiency_gain_factor = 0.1
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 
@@ -702,7 +702,7 @@ generic_infantry_tank_organization = {
 		all_parents = { generic_mio_trait_light_tank_improvements generic_mio_trait_medium_tank_improvements }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.1
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 
@@ -808,7 +808,7 @@ generic_infantry_tank_organization = {
 		any_parent = { generic_mio_trait_medium_tank_improvements }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.1
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 
@@ -1086,7 +1086,7 @@ generic_mobile_tank_organization = {
 		
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 }
@@ -1227,7 +1227,7 @@ generic_medium_tank_organization = {
 		relative_position_id = generic_mio_trait_power_traverse
 		
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -1406,7 +1406,7 @@ generic_heavy_tank_organization = {
 		relative_position_id = generic_mio_trait_wide_tracks
 		
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -1421,7 +1421,7 @@ generic_heavy_tank_organization = {
 		all_parents = { generic_mio_trait_wide_tracks generic_mio_trait_one_piece_hull_side_coverings }
 		
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -1536,7 +1536,7 @@ generic_heavy_tank_organization = {
 		mutually_exclusive = { generic_mio_trait_commander_cupola }
 		
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 			production_resource_penalty_factor = -0.1
 		}
 	}
@@ -1718,7 +1718,7 @@ generic_tank_refurbishment_plant_organization = {
 		}
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -1735,7 +1735,7 @@ generic_tank_refurbishment_plant_organization = {
 		limit_to_equipment_type = { armor }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.1
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 
@@ -1818,7 +1818,7 @@ generic_tank_refurbishment_plant_organization = {
 		}
 		
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -2417,7 +2417,7 @@ generic_escort_ship_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+				OR = { tag = CHI tag = PRC tag = MIN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
 				has_dlc = "Waking the Tiger"
 			}
 		}
@@ -3877,7 +3877,7 @@ generic_general_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE tag = TUR tag = LAT tag = LIT } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MIN tag = HOL tag = BUL tag = GRE tag = TUR tag = LAT tag = LIT } }
 		NOT = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
 		NOT = {
 			AND = {
@@ -4235,7 +4235,7 @@ generic_light_aircraft_organization = {
 		position = { x=2 y=0 }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -4269,7 +4269,7 @@ generic_light_aircraft_organization = {
 		}
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -4349,7 +4349,7 @@ generic_light_aircraft_organization = {
 		}
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -4580,7 +4580,7 @@ generic_medium_aircraft_organization = {
 		}
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -4595,7 +4595,7 @@ generic_medium_aircraft_organization = {
 		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -4612,7 +4612,7 @@ generic_medium_aircraft_organization = {
 		limit_to_equipment_type = { transport_plane_equipment }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -4907,7 +4907,7 @@ generic_heavy_aircraft_organization = {
 		any_parent = { generic_mio_trait_reinforced_frames }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 			production_resource_penalty_factor = -0.1
 		}
 	}
@@ -5189,7 +5189,7 @@ generic_cas_aircraft_organization = {
 		position = { x=0 y=0 }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -5756,7 +5756,7 @@ generic_multi_role_aircraft_organization = {
 		}
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -5779,7 +5779,7 @@ generic_multi_role_aircraft_organization = {
 		}
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -6163,7 +6163,7 @@ generic_high_agility_fighter_aircraft_organization = {
 		mutually_exclusive = { generic_mio_trait_fighter_interceptors }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -6654,7 +6654,7 @@ generic_artillery_organization = {
 			AND = {
 				OR = {
 					is_literally_china = yes
-					tag = MAN
+					tag = MIN
 				}
 				has_dlc = "Waking the Tiger"
 			}
@@ -6901,7 +6901,7 @@ generic_artillery_organization = {
 		relative_position_id = generic_mio_trait_rapid_fire
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -7023,7 +7023,7 @@ generic_infantry_equipment_organization = {
 			AND = {
 				OR = {
 					is_literally_china = yes
-					tag = MAN
+					tag = MIN
 				}
 				has_dlc = "Waking the Tiger"
 			}
@@ -7091,7 +7091,7 @@ generic_infantry_equipment_organization = {
 		}
 
 		production_bonus = {
-		production_efficiency_gain_factor = 0.05
+		production_efficiency_gain_factor = 0.01
 		}
 
 		equipment_bonus = {
@@ -7142,7 +7142,7 @@ generic_infantry_equipment_organization = {
 		}
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -7429,7 +7429,7 @@ generic_support_equipment_organization = {
 		limit_to_equipment_type = { support_equipment }
 		
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 			production_resource_need_factor = 0.1
 		}
 	}
@@ -7447,7 +7447,7 @@ generic_support_equipment_organization = {
 		limit_to_equipment_type = { support_equipment }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.01
 		}
 	}
 
@@ -7630,7 +7630,7 @@ generic_motorized_mechanized_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+				OR = { tag = CHI tag = PRC tag = MIN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
 				has_dlc = "Waking the Tiger"
 			}
 		}
@@ -7878,7 +7878,7 @@ generic_motorized_mechanized_organization = {
 		
 		all_parents = { generic_mio_trait_bulletproof_panels }
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 
 		equipment_bonus = {
 			ap_attack = 0.1
@@ -7894,7 +7894,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_medium_machinegun_mounts
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		mutually_exclusive = { generic_mio_trait_closed_chassi }
 
@@ -7912,7 +7912,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_open_chassi
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		mutually_exclusive = { generic_mio_trait_open_chassi }
 
@@ -7930,7 +7930,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=-1 y=2 }
 		relative_position_id = generic_mio_trait_closed_chassi
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		any_parent = { generic_mio_trait_closed_chassi generic_mio_trait_open_chassi }
 
@@ -7947,7 +7947,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_bulletproof_panels
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		all_parents = { generic_mio_trait_bulletproof_panels }
 
@@ -7964,7 +7964,7 @@ generic_motorized_mechanized_organization = {
 		position = { x=1 y=0 }
 		relative_position_id = generic_mio_trait_light_flame_projectors
 		
-		limit_to_equipment_type = { mechanized_equipment }
+		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
 		
 		all_parents = { generic_mio_trait_bulletproof_panels }
 
@@ -8077,7 +8077,7 @@ generic_armored_car_organization = {
 		relative_position_id = generic_mio_trait_simplified_suspension
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.15
+			production_efficiency_gain_factor = 0.0255
 			production_resource_need_factor = -0.15
 		}
 	}
@@ -8093,7 +8093,7 @@ generic_armored_car_organization = {
 		relative_position_id = generic_mio_trait_standardized_components
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.1
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 
@@ -8109,7 +8109,7 @@ generic_armored_car_organization = {
 
 		production_bonus = {
 			production_cost_factor = -0.05
-			production_efficiency_gain_factor = 0.1
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 

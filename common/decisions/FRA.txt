@@ -44,14 +44,13 @@ FRA_bop_decisions = {
 		visible = {
 				has_completed_focus = Fra_left_wing
 		}
-		cost = 15
+		cost = 35
 		
 		complete_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
 				value = 0.1
 			}
-			add_stability = -0.1
 		}	
 	}
 	FRA_bop_3_5 = {
@@ -60,14 +59,13 @@ FRA_bop_decisions = {
 		visible = {
 				has_completed_focus = Fra_right_wing
 		}
-		cost = 15
+		cost = 35
 		
 		complete_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
 				value = 0.1
 			}
-			add_stability = -0.1
 		}	
 	}
 	FRA_bop_3 = {
@@ -75,18 +73,17 @@ FRA_bop_decisions = {
 		fire_only_once = yes
 		visible = {
 			AND = {
-				date>1938.1.1
+				date>1937.1.1
 				has_completed_focus = Fra_left_wing
 			}
 		}
-		cost = 100
+		cost = 80
 		
 		complete_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
-				value = 0.2
+				value = 0.25
 			}
-			add_stability = -0.2
 		}	
 	}
 	FRA_bop_4 = {
@@ -95,14 +92,13 @@ FRA_bop_decisions = {
 		visible = {
 			has_completed_focus = FRA_support_right
 		}
-		cost = 50
+		cost = 100
 		
 		complete_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
 				value = 0.25
 			}
-			add_stability = -0.3
 		}	
 	}
 }
@@ -735,7 +731,6 @@ Battle_for_France = {
 				 		}
 					}
 			}
-			hidden_effect = {
 							if = {
 								limit = {
 								and = {
@@ -749,7 +744,6 @@ Battle_for_France = {
 																}}
 								activate_mission = FRA_TZAR_RELOCATION_CIV
 							}
-			}
 			#custom_effect_tooltip = GER_relocate_industry_mil
 		}
 	}
@@ -818,15 +812,14 @@ Battle_for_France = {
 					activate_mission = FRA_TZAR_RELOCATION_MIL
 				}
 			}
-			}
-			#custom_effect_tooltip = GER_relocate_industry_mil
 		}
+			#custom_effect_tooltip = GER_relocate_industry_mil
 	}
-	FRA_tzar_war22 = {
-		name = "Battle for France"
-		icon = officers_purged
+	FRA_held = {
+		name = "Battle for france"
+		icon = generic_construction
 		available = {
-			always = yes
+			always = no
 		}
 
 		is_good = yes
@@ -837,18 +830,27 @@ Battle_for_France = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 7
-
-		visible = {
-			always = yes 
-		}
+		days_mission_timeout = 1
 
         timeout_effect = {
-			add_to_variable = {
-				var = FRA_battle_weeks_held
-				value = 1
+			if = {
+				limit = {
+					casualties > 1000000
+				}
+				set_technology = { french_anti_battleplan = 1 popup = yes } 
 			}
-			activate_mission = FRA_tzar_war
+			if = {
+				limit = {
+					surrender_progress > 0.98
+				}
+				FRF = {
+					change_tag_from = FRA
+				}
+				set_global_flag = France_capitulated
+			}
+			add_to_variable = { FRA_battle_weeks_held = 1}
+			activate_mission = FRA_held
 		}
+			#custom_effect_tooltip = GER_relocate_industry_mil
 	}
 }

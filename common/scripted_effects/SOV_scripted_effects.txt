@@ -3285,7 +3285,7 @@ SOV_approach_sinkiang_diplomacy_effect = {
 		}
 		add_ai_strategy = {
 			type = alliance
-			id = MAN		
+			id = MIN		
 			value = -5
 		}
 	}
@@ -7877,7 +7877,7 @@ SOV_initiate_civil_war = {
 			limit = {
 				SOV_is_exiles = yes 
 			}
-			MAN = { give_military_access = SOP }
+			MIN = { give_military_access = SOP }
 		}
 
 
@@ -8923,9 +8923,9 @@ SOV_exiles_civil_war_start = {
 		limit = {
 			has_completed_focus = SOV_approach_semyonov
 		}
-		MAN = {
+		MIN = {
 			country_event = {
-				id = NSB_Soviet_fascist_civil_war.004 # transfer Semyonov from MAN to SOV
+				id = NSB_Soviet_fascist_civil_war.004 # transfer Semyonov from MIN to SOV
 				days = 0
 			}
 		}

@@ -10,7 +10,7 @@ state={
 				1936.1.1.16 = {
 			owner = SWE 
 		}
-		owner = USA
+		owner = SWE
 		
 		buildings = {
 			infrastructure = 2

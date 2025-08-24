@@ -156,7 +156,7 @@ focus_tree = {
 			
 		#	add_named_threat = { threat = 10 name = JAP_CHIONE }
 			#add_ideas = JAP_war_with_chi1
-			MAN = {
+			MIN = {
 				declare_war_on = {
 							target = CHI
 							type = annex_everything
@@ -235,21 +235,21 @@ focus_tree = {
 				MON = {	army_experience = 150 }
 				RAJ = {	army_experience = 150 }
 				AST = {	army_experience = 150 }
-				MAN = {	army_experience = 350 }
+				MIN = {	army_experience = 350 }
 				NZL = { army_experience = 150 }	
 				ROM = { army_experience = 100 }		
 				HUN = { army_experience = 100 }	
 				BUL = { army_experience = 100 }
 				IF = { limit = { country_exists = YUG } YUG = { army_experience = 100 } }
 				IF = { limit = { country_exists = SIA } SIA = { army_experience = 300 air_experience  = 1000 } }
-				IF = { limit = { country_exists = MAN } MAN = { army_experience = 300 air_experience  = 1000 } }
+				IF = { limit = { country_exists = MIN } MIN = { army_experience = 300 air_experience  = 1000 } }
 			}
 		}
 	}
 
 	focus = {
 		id = JAP_secure_china
-		icon = GFX_focus_chi_one_china_policy
+		icon = GFX_focus_BRA_end_the_state_of_emergency
 		prerequisite = { focus = JAP_intervene_in_china }
 		x = 0
 		y = 1
@@ -326,11 +326,11 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_ensure_compliance
-		icon = GFX_focus_chi_one_china_policy
+		icon = GFX_SOV_intervention_in_china_ccp_2d_sov_compatibility
 		prerequisite = { focus = JAP_intervene_in_china }
 		x = -2
 		y = 1
-		text = "The thing"
+		text = "Stabilising Newly Conquered Land"
 		relative_position_id = JAP_intervene_in_china
 
 		cost = 3
@@ -368,6 +368,117 @@ focus_tree = {
 					}
 				}
 				add_compliance = 100
+			}
+		}
+	}
+	focus = {
+		id = JAP_grant_some
+		icon = GFX_focus_chi_one_china_policy
+		prerequisite = { focus = JAP_ensure_compliance }
+		mutually_exclusive = {
+			focus = Grant_everything
+		}
+		x = -2
+		y = 1
+		text = "Grant Northen Holdings in China"
+		relative_position_id = JAP_ensure_compliance
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				threat < 0.9
+			}
+		}
+
+		available = {
+		owns_state = 608
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			MIN = {
+				transfer_state = 608
+				transfer_state = 621
+				transfer_state = 746
+				transfer_state = 615
+				transfer_state = 614
+				transfer_state = 622
+				transfer_state = 597
+				
+			}
+		}
+	}
+	focus = {
+		id = Grant_everything
+		icon = GFX_focus_chi_one_china_policy
+		prerequisite = { focus = JAP_ensure_compliance }
+		mutually_exclusive = {
+			focus = JAP_grant_some
+		}
+		x = 0
+		y = 1
+		text = "Create a full Collaboration Goverment"
+		relative_position_id = JAP_ensure_compliance
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				threat < 0.9
+			}
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					AND = {
+					impassable = no
+					is_core_of = CHI
+					NOT = {
+						state = 729
+						state = 728
+						state = 326
+						state = 613
+						state = 743
+						state = 591
+						state = 594
+						state = 592
+						state = 593
+						state = 595
+						state = 596
+					}}
+				}
+				transfer_state_to = MIN
 			}
 		}
 	}
@@ -600,13 +711,13 @@ focus_tree = {
 			add_ideas = AST_papua
 		}
 		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 210 }
-		MAN = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 210 } }
+		MIN = { add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 210 } }
 		RAJ = { add_timed_idea = { idea = Raj_ToraToraTora days = 150 } }
-		if = { limit = { OR = { country_exists = MAN country_exists = SIA } }
+		if = { limit = { OR = { country_exists = MIN country_exists = SIA } }
 			JAP = { add_ideas = game_impact_japan   }
 		}
 		# add_ideas = game_impact_japan
-		if = { limit = { country_exists = MAN } MAN = { add_ideas = game_impact_japan_puppet   } }
+		if = { limit = { country_exists = MIN } MIN = { add_ideas = game_impact_japan_puppet   } }
 		if = { limit = { country_exists = SIA } SIA = { add_ideas = game_impact_japan_puppet   } }
 		# activate_mission = JAP_DEI_transfer
 	}
@@ -891,7 +1002,7 @@ focus_tree = {
 		relative_position_id = JAP_expand_the_showa_steel_works
 
 		# allow_branch = {
-		# 	MAN = { has_focus_tree = generic_focus }
+		# 	MIN = { has_focus_tree = generic_focus }
 		# }
 
 		cost = 3
@@ -1099,7 +1210,7 @@ focus_tree = {
 				# technology = construction4
 				# technology = construction5
 			}
-			if = { limit = { country_exists = MAN } add_research_slot = 1 }
+			if = { limit = { country_exists = MIN } add_research_slot = 1 }
 			715 = { add_extra_state_shared_building_slots = 3 }
 			610 = { add_extra_state_shared_building_slots = 3 }
 			328 = { add_extra_state_shared_building_slots = 3 }
@@ -1195,7 +1306,7 @@ focus_tree = {
 			else = {
 				add_ideas = war_economy
 			}
-			if = { limit = { country_exists = MAN } MAN = { add_ideas = war_economy } }
+			if = { limit = { country_exists = MIN } MIN = { add_ideas = war_economy } }
 			if = { limit = { country_exists = SIA } SIA = { add_ideas = war_economy } }
 		}
 	}
@@ -1275,7 +1386,7 @@ focus_tree = {
 			else = {
 				add_ideas = tot_economic_mobilisation
 			}
-			if = { limit = { country_exists = MAN } MAN = { add_ideas = tot_economic_mobilisation } }
+			if = { limit = { country_exists = MIN } MIN = { add_ideas = tot_economic_mobilisation } }
 			if = { limit = { country_exists = SIA } SIA = { add_ideas = tot_economic_mobilisation } }
 		}
 	}
@@ -3496,7 +3607,7 @@ focus_tree = {
 
 			focus = {
 				id = Victory_in_Papua
-				icon = GFX_focus_jap_strike_south
+				icon = GFX_focus_ETH_an_empire_in_the_shade_of_the_sun
 				prerequisite = { focus = JAP_strike_on_the_southern_resource_area }	
 				x = 1
 				y = 1
@@ -3561,7 +3672,7 @@ focus_tree = {
 			
 			focus = {
 				id = Victory_in_the_Pacific
-				icon = GFX_focus_jap_strike_south
+				icon = GFX_focus_ARG_anti_american_propaganda
 				x = 0
 				y = 3
 				prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
@@ -3631,7 +3742,7 @@ focus_tree = {
 			
 			focus = {
 				id = Victory_in_the_Philippines 
-				icon = GFX_focus_jap_strike_south
+				icon = GFX_focus_ETH_an_ethiopian_navy_in_exile
 				x = -1
 				y = 1
 				prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
@@ -3747,7 +3858,7 @@ focus_tree = {
 
 			focus = {
 				id = Victory_in_Raj
-				icon = GFX_focus_jap_strike_south	
+				icon = GFX_focus_RAJ_the_other_solution	
 				x = -2
 				y = 2
 				relative_position_id = JAP_strike_on_the_southern_resource_area

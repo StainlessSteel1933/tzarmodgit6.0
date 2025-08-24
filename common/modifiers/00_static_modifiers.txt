@@ -161,11 +161,10 @@ france_hero_cities_buffed = { # on Province
 Atlantic_Wall_Garrison = { # on Province
 	cas_damage_reduction = 0.40
 	army_defence_factor = 0.2
-	
 }
 
 Atlantic_Wall_Garrison_1 = { # on Province
-naval_invasion_penalty = 0.75
+naval_invasion_penalty = 0.4
 	
 }
 

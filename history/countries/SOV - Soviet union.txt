@@ -57,6 +57,7 @@ set_variable = { SOV_barb_debuff_air_intercept_efficiency = -0.225 }
 set_variable = { SOV_barb_debuff_enemy_army_bonus_air_superiority_factor = 0.45 }
 set_variable = { SOV_barb_debuff_army_org_factor = -0.2 }
 set_variable = { SOV_barb_debuff_army_defence_factor = -0.1 }
+set_variable = { SOV_barb_debuff_army_org_regain = -0.1 }
 
 create_equipment_variant = {
 		name = "breakthrough tank"
@@ -208,6 +209,7 @@ recruit_character = SOV_abram_ioffe
 recruit_character = SOV_boris_stechkin
 recruit_character = SOV_arkady_nazarov
 recruit_character = SOV_vladimir_kotelnikov
+recruit_character = SOV_daemon_vodanov
 
 
 if = {

@@ -25,10 +25,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-
+			is_ai = no
+			GER = {
+				owns_state = 16
+			}
 		}
 
-		completion_reward = {	
+		completion_reward = {
+			remove_ideas = neutrality_idea3
 			army_experience = 800
 			set_technology = {
 				improved_medium_tank_chassis = 1
@@ -56,9 +60,7 @@ focus_tree = {
 				popularity = 0.15
 				ideology = democratic
 			}
-			custom_effect_tooltip = FRF_france_libre
 			set_technology = {infantry_equipment_2 = 1}
-			custom_effect_tooltip = "     "
 
 			create_equipment_variant = {
 				name = "Improved Medium Tank Chassis"

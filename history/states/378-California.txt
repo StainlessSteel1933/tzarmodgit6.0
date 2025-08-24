@@ -23,15 +23,19 @@ state={
 			air_base = 10
 			1562 = {
 				naval_base = 15
+				coastal_bunker = 3
 			}
 			9671 = {
 				naval_base = 4
+				coastal_bunker = 3
 			}
 			9814 = {
 				naval_base = 15
+				coastal_bunker = 3
 			}
 			610 = {
 				naval_base = 1
+				coastal_bunker = 3
 			}
 		}
 		add_core_of = USA

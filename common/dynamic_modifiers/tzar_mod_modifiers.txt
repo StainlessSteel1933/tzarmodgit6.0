@@ -44,3 +44,47 @@ FRA_Army = { #NATIONAL SPIRIT - Civilian
  	surrender_limit = FRA_cap_limit
  	monthly_population = FRA_pop_growth
  }
+YUG_internal_divide = { #NATIONAL SPIRIT - Civilian
+	enable = { always = yes }
+	
+	icon = GFX_idea_ARG_maintain_neutrality
+
+	political_power_gain = YUG_pp_internal_divide
+	stability_factor = YUG_stab_internal_divide
+	consumer_goods_factor = YUG_cg_internal_divide
+	resistance_target = YUG_resist_internal_divide
+	local_resources_factor = YUG_resources_internal_divide
+	recruitable_population_factor = YUG_recruit_internal_divide
+	justify_war_goal_time = YUG_justify_internal_divide
+	enemy_operative_capture_chance = YUG_operative_internal_divide
+	production_factory_efficiency_gain_factor = YUG_eff_gain #-0.1
+ 	production_factory_max_efficiency_factor = YUG_cap #0.05
+ 	production_speed_industrial_complex_factor = YUG_civ_speed #0.1
+	industrial_capacity_factory = YUG_output
+	communism_drift = YUG_communism_drift
+}
+
+YUG_army = { #NATIONAL SPIRIT - Military
+	enable = { always = yes }
+	
+	icon = GFX_idea_YUG_all_yugoslavian_regiments
+
+	army_org_factor = YUG_org_army
+	army_morale = YUG_morale_army
+	experience_gain_army = YUG_xp_gain_army
+	land_doctrine_cost_factor = YUG_doctrine_cost_army
+	production_speed_military_factory_factor = YUG_mil_speed_army
+	training_time_army_factor = YUG_training_time_army
+	casualty_trickleback = YUG_casualty_army
+	conscription_factor = YUG_conscription_army
+	army_leader_cost_factor = YUG_leader_cost_army
+	army_attack_factor = YUG_army_attack
+	
+}
+
+YUG_navy = {	# NAVY
+	enable = { always = yes }
+	icon = GFX_idea_generic_navy
+	
+	industrial_capacity_dockyard = YUG_navy_industrial_capacity_dockyard
+}

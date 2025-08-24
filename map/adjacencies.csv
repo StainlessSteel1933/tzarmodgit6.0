@@ -267,7 +267,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;ONTARIO
 2800;2776;;-1;-1;-1;-1;-1;YEMEN_STRAIT;YEMEN
 8941;5605;;-1;-1;-1;-1;-1;MED_STRAIT;MED
-5656;5579;;-1;-1;-1;-1;-1;MED_STRAIT2;MED
+5555;5579;;-1;-1;-1;-1;-1;MED_STRAIT2;MED
+8895;5579;;-1;-1;-1;-1;-1;MED_STRAIT2;MED
+8918;5579;;-1;-1;-1;-1;-1;MED_STRAIT2;MED
+5555;8918;;-1;-1;-1;-1;-1;MED_STRAIT2;MED
 9998;949;sea;;-1;-1;-1;-1;Axis Minor-Japan
 9998;9617;sea;;-1;-1;-1;-1;Axis Minor-Japan
 9998;9660;sea;;-1;-1;-1;-1;Axis Minor-Japan

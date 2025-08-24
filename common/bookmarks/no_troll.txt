@@ -207,7 +207,7 @@ bookmarks = {
 				ROM_swamp_greater_romania
 			}
 		}
-		"MAN"={
+		"MIN"={
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
 			ideology = fascism

@@ -1691,7 +1691,7 @@
  MAN_democratic_ADJ:0 "Manchu"
  MAN_neutrality_ADJ:0 "Manchu"
  MAN_communism_ADJ:0 "Manchu"
- MAN:0 "China"
+ MIN:0 "China"
  MAN_DEF:0 "China"
  MAN_ADJ:0 "Manchu"
  BAH_fascism:1 "Bahamas Unitary State"

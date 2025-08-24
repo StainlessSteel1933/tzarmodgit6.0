@@ -173,7 +173,7 @@ ideas = {
 			}
 			
 			allowed = {
-					tag = MAN
+					tag = MIN
 				has_dlc = "Waking the Tiger"
 			}
 			
@@ -223,7 +223,7 @@ ideas = {
 			
 			allowed = {
 
-					tag = MAN
+					tag = MIN
 				
 				has_dlc = "Waking the Tiger"
 			}
@@ -247,7 +247,7 @@ ideas = {
 			
 			allowed = {
 		
-					tag = MAN
+					tag = MIN
 				
 				has_dlc = "Waking the Tiger"
 			}
@@ -277,7 +277,7 @@ ideas = {
 			allowed = {
 				has_dlc = "Waking the Tiger"
 		
-					tag = MAN
+					tag = MIN
 				
 			}
 			
@@ -333,7 +333,7 @@ ideas = {
 			allowed = {
 				has_DLC = "Waking the Tiger"
 
-					tag = MAN
+					tag = MIN
 				
 			}
 			
@@ -368,7 +368,7 @@ ideas = {
 			allowed = {
 				has_DLC = "Waking the Tiger"
 		
-					tag = MAN
+					tag = MIN
 				
 
 			}
@@ -406,7 +406,7 @@ ideas = {
 			allowed = {
 				has_DLC = "Waking the Tiger"
 
-					tag = MAN
+					tag = MIN
 				
 			}
 
@@ -456,7 +456,7 @@ ideas = {
 			allowed = {
 				has_DLC = "Waking the Tiger"
 			
-					original_tag = MAN
+					original_tag = MIN
 				
 			}
 			

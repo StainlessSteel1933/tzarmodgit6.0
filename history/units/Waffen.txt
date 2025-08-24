@@ -14,8 +14,9 @@ division_template = {
 		ss = { x = 1 y = 3 }
 		ss = { x = 1 y = 4 }
 		ss = { x = 2 y = 0 }
-		anti_air_brigade = { x = 2 y = 1 }
-		anti_tank_brigade = { x = 2 y = 2 }
+		anti_air_brigade = { x = 2 y = 2 }
+		anti_tank_brigade = { x = 2 y = 1 }
+		anti_air_brigade = { x = 2 y = 3 }
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }

@@ -31,7 +31,7 @@
 }
 ##### Division Templates #####
 division_template = {
-	name = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"		
+	name = "Division d'Infanterie"		
 	division_names_group = FRA_INF_01
 	# Represents: Division d'Infanterie (Series A and B), Div. d'Inf. de Forteresse
 	# Difference is their equipment
@@ -52,6 +52,7 @@ division_template = {
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		anti_air_brigade = { x = 3 y = 3 }
+anti_air_brigade = { x = 3 y = 4 }
 		anti_tank_brigade = { x = 4 y = 0 }
 		anti_tank_brigade = { x = 4 y = 1 }
 		artillery_brigade = { x = 4 y = 2 }
@@ -79,8 +80,9 @@ division_template = {
 		mountaineers = { x = 1 y = 3 }
 		mountaineers = { x = 1 y = 4 }
 		mountaineers = {x = 2 y = 0 }
-		anti_air_brigade = { x = 2 y = 1 }
-		anti_tank_brigade = { x = 2 y = 2 }
+		anti_air_brigade = { x = 2 y = 2 }
+		anti_tank_brigade = { x = 2 y = 1 }
+		anti_air_brigade = { x = 2 y = 3 }
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
@@ -214,433 +216,433 @@ division_template = {
 units = {
 	division = {
 		location = 11420
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11420
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11420
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11420
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 454
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 454
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3402
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3402
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3402
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3402
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9561
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9561
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3447
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3447
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3447
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3447
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11549
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11549
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9472
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9472
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3560
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3560
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3560
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3560
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 5291
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 5291
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 5291
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9559
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9559
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9559
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11502
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11502
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11502
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11502
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11516
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3629
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3629
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3629
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 1346
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 549
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 549
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 549
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9503
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9503
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 6529
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 6529
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 678
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 678
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 521
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 521
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9534
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9534
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
@@ -652,181 +654,1205 @@ units = {
 	}
 	division = {
 		location = 9523
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9523
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 6545
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 6545
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9505
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9505
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 551
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 551
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11732
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11732
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9725
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9725
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3506
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9490
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9490
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9434
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9434
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 512
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 512
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9578
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 9578
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3549
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 3549
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 6949
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 6949
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11491
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		location = 11491
-		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	# division = {
+	# 	location = 11420
+	# 	division_template = "Division Légère Mécanique"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	# division = {
+	# 	location = 11420
+	# 	division_template = "Division Légère Mécanique"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	# division = {
+	# 	location = 11506
+	# 	division_template = "Division Légère Mécanique"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	# division = {
+	# 	location = 11506
+	# 	division_template = "Division Légère Mécanique"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	division = {
+		location = 11506
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11506
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3402
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3402
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3447
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3447
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11506
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11506
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "FRA"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = light_tank_equipment_2
+	# 		creator = "FRA" 
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.4
+	# 	efficiency = 50
+	# }
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+
+	add_equipment_production = { 
+		equipment = { 
+			type = anti_air_equipment_1 
+			creator = "FRA" 
+		} 
+
+		requested_factories = 1
+		progress = 0.4 
+		efficiency = 50 
+	}
+
+	add_equipment_production = { 
+		equipment = { 
+			type = anti_tank_equipment_1 
+			creator = "FRA" 
+		} 
+
+		requested_factories = 1
+		progress = 0.4 
+		efficiency = 50 
+	}
+
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = heavy_tank_equipment_1
+	# 		creator = "FRA"
+	# 	}
+	# 	progress = 0.15
+	# 	efficiency = 50
+	# }
+	add_equipment_production = {
+		equipment = {
+			type = train_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 2
+		progress = 0.15
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = gw_armored_car_equipment
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+}ipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 549
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 549
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 549
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9503
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9503
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 6529
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 6529
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 678
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 678
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 521
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 521
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11506
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11506
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11506
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11506
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9534
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9534
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11506
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11506
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11506
+		division_template = "Division d'Infanterie Motorisée"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9523
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9523
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11506
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11506
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 6545
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 6545
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9505
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9505
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 551
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 551
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11732
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11732
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9725
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9725
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3506
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3506
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9490
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9490
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9434
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9434
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 512
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 512
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9578
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9578
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3549
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3549
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 6949
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 6949
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11491
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11491
+		division_template = "	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}
+	division = {	
+		start_equipment_factor = 1 start_experience_factor = 0.3
+		location = 12756
+		division_template = "Infantry Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
+	}"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}

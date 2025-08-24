@@ -736,7 +736,7 @@ foreign_politics = {
         available = {
 			EFR = { owns_state = 26 }
 			NOT = { has_global_flag = operation_torch_flag }
-			OR = { date>1942.6.6 NOT = { ITA = { controls_state = 448 controls_state = 450 controls_state = 451 }   }
+			OR = { date>1942.1.1 NOT = { ITA = { controls_state = 448 controls_state = 450 controls_state = 451 }   }
 			
 			}
 		}

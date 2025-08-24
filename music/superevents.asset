@@ -3,75 +3,75 @@ soundeffect = {
    sounds = {
         sound = "barbarossa"
     }
-    volume = 1
+    volume = 0.5
 }
 soundeffect = {
   name = "super_eastern_front"
    sounds = {
         sound = "eastern_front"
     }
-    volume = 1
+    volume = 0.5
 }
 soundeffect = {
   name = "super_endsieg"
    sounds = {
         sound = "endsieg"
     }
-    volume = 1
+    volume = 0.5
 }
 soundeffect = {
   name = "super_geacps"
    sounds = {
         sound = "geacps"
     }
-    volume = 1
+    volume = 0.5
 }
 soundeffect = {
   name = "super_japanese_surrender"
    sounds = {
         sound = "japanese_surrender"
     }
-    volume = 1
+    volume = 0.5
 }
 soundeffect = {
   name = "super_pacific_war"
    sounds = {
         sound = "pacific_war"
     }
-    volume = 1
+    volume = 0.5
 }
 soundeffect = {
   name = "super_russo_japanese_war"
    sounds = {
         sound = "russo_japanese_war"
     }
-    volume = 1
+    volume = 0.5
 }
 soundeffect = {
   name = "super_sino_japanese_war"
    sounds = {
         sound = "sino_japanese_war"
     }
-    volume = 1
+    volume = 0.5
 }
 soundeffect = {
   name = "super_soviet_end"
    sounds = {
         sound = "soviet_end"
     }
-    volume = 1
+    volume = 0.5
 }
 soundeffect = {
   name = "super_super_nuke"
    sounds = {
         sound = "super_nuke"
     }
-    volume = 1
+    volume = 0.5
 }
 soundeffect = {
   name = "super_ww2"
    sounds = {
         sound = "ww2"
     }
-    volume = 1
+    volume = 0.5
 }

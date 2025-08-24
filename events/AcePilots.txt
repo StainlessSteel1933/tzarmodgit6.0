@@ -43,7 +43,7 @@
 # 		if={limit={date>1939.9.1} add_war_support = 0.02}
 # 		trigger = {
 # 			NOT = { tag = JAP }
-# 			NOT = { tag = MAN }
+# 			NOT = { tag = MIN }
 # 			NOT = { tag = SIA }
 # 			NOT = { tag = BUL }
 # 			NOT = { tag = ROM }
@@ -70,7 +70,7 @@
 # 		name = ace_promoted.1.a
 # 		 add_war_support = 0.02
 # 		trigger = {
-# 			tag = MAN
+# 			tag = MIN
 # 		}
 # 		add_to_variable = { global.horst_acesCounterMAN = 1 }
 # 	}
@@ -191,7 +191,7 @@
 # 		if={limit={date>1939.9.1} add_war_support = 0.02}
 # 		trigger = {
 # 			NOT = { tag = JAP }
-# 			NOT = { tag = MAN }
+# 			NOT = { tag = MIN }
 # 			NOT = { tag = SIA }
 # 			NOT = { tag = BUL }
 # 			NOT = { tag = ROM }
@@ -218,7 +218,7 @@
 # 		name = ace_promoted.1.a
 # 		 add_war_support = 0.02
 # 		trigger = {
-# 			tag = MAN
+# 			tag = MIN
 # 		}
 # 		add_to_variable = { global.horst_acesCounterMAN = 1 }
 # 	}

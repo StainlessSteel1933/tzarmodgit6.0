@@ -3096,12 +3096,12 @@ SOV_arseniy_golovko={
 			allowed = {
 				OR = {
 					original_tag = SOV
-					original_tag = MAN # This is where he starts the game
+					original_tag = MIN # This is where he starts the game
 				}
 			}
 			available = {
 				if = { 
-					limit = { tag = MAN }
+					limit = { tag = MIN }
 					custom_trigger_tooltip = {
 					 	tooltip = SOV_grigory_semyonov_man_tt
 					 	SOV_soviet_civil_war_not_started = yes 
@@ -3650,6 +3650,21 @@ SOV_arseniy_golovko={
 			traits = { scientist_trait_electronics_specialist }
 			skills = {
 				specialization_air = 2
+			}
+		}
+	}
+	SOV_daemon_vodanov = {
+		name = SOV_daemon_vodanov
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_eduard_grote
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_armored_specialist }
+			skills = {
+				specialization_land = 2
 			}
 		}
 	}

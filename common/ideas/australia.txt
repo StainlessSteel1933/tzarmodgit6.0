@@ -83,9 +83,9 @@ ideas = {
 				extra_paratrooper_supply_grace = 96
 			}
 			targeted_modifier = { tag = JAP attack_bonus_against = 0.025 }
-			targeted_modifier = { tag = MAN attack_bonus_against = 0.025 }
+			targeted_modifier = { tag = MIN attack_bonus_against = 0.025 }
 			targeted_modifier = { tag = JAP defense_bonus_against = 0.05 }
-			targeted_modifier = { tag = MAN defense_bonus_against = 0.05 }			
+			targeted_modifier = { tag = MIN defense_bonus_against = 0.05 }			
 			
 		}
 		

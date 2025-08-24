@@ -26,7 +26,7 @@ state={
 		1939.1.1 = {
 			
 			owner = SWE
-			controller = MAN
+			controller = MIN
 
 		}
 	}

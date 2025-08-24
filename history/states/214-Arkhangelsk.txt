@@ -2,7 +2,7 @@
 state={
 	id=214
 	name="STATE_214"
-
+	impassable = yes
 	history={
 		owner = SOV
 		victory_points = {

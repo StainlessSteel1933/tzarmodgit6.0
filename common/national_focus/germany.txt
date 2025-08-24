@@ -155,7 +155,7 @@ focus_tree = {
 				add_equipment_to_stockpile = {
 					producer = GER
 					type = infantry_equipment_0
-					amount = 50000
+					amount = 40000
                 }	
 			}
 			hidden_effect = {
@@ -291,7 +291,7 @@ focus_tree = {
 				add_equipment_to_stockpile = {
 					producer = GER
 					type = infantry_equipment_0
-					amount = 20000
+					amount = 10000
                 }	
 			}
 		}
@@ -455,65 +455,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			4 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			}
-			69 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = GER_africa_taken
-		text = "Africa Taken"
-		icon = GFX_focus_ITA_mare_nostrum
-		prerequisite = { focus = GER_A_Stable_Economy }
-		x = 0
-		y = 1
-		relative_position_id = GER_A_Stable_Economy
-		cost = 10
-		available = {
-			679 = {is_controlled_by_ROOT_or_ally = yes}
-			447 = {is_controlled_by_ROOT_or_ally = yes}
-		}
-	
-
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
-
-		completion_reward = {
-			add_ideas = GER_africa_conquered
-			899 = {
-                add_extra_state_shared_building_slots = 4
-                add_building_construction = {
-                    type = dam
-                    level = 1
-                    instant_build = yes
-                    province = {
-                        id = 6469
-                    }
-                }
-			}
-			51 = {
-                add_extra_state_shared_building_slots = 4
-                add_building_construction = {
-                    type = dam
-                    level = 1
-                    instant_build = yes
-                    province = {
-                        id = 6488
-                    }
-                }
-			}
 		}
 	}
 	
@@ -610,6 +551,7 @@ focus_tree = {
 		prerequisite = { focus = GER_fall_gelb }
 		relative_position_id = GER_fall_gelb
 		available = {
+			has_completed_focus = GER_four_year_plan
 			date>1941.10.1
 		}
 		x = 2
@@ -619,7 +561,9 @@ focus_tree = {
 			factor = 12
 		}
 		
-		available = { FRA = { has_capitulated = yes } }
+		available = { has_full_control_of_state = 19
+			has_full_control_of_state = 14
+			has_full_control_of_state = 16 }
 		
 		completion_reward = {
 			SWI = {
@@ -903,10 +847,10 @@ focus_tree = {
 
 		completion_reward = {
 			53 = {
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 8
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -918,10 +862,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 6
 					add_building_construction = {
 						type = arms_factory
-						level = 4
+						level = 6
 						instant_build = yes
 					}
 				}
@@ -945,10 +889,10 @@ focus_tree = {
 
 		completion_reward = {
 			53 = {
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 8
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -979,10 +923,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 8
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = arms_factory
-						level = 8
+						level = 4
 						instant_build = yes
 					}
 					set_state_flag = GER_german_war_economy
@@ -1696,7 +1640,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_tank_designer_MAN
-		text = "MAN Panther Initiative"
+		text = "MIN Panther Initiative"
 		mutually_exclusive = {focus = GER_tank_designer_HEN}
 		icon = GFX_focus_generic_tank_assault
 		prerequisite = { focus = GER_tank_designer }
@@ -2129,6 +2073,7 @@ focus_tree = {
 					army_experience = 100
 					air_experience  = 100
 				}
+				RAJ = { add_ideas = the_price_of_no_asia }
 				SOV = { army_experience = 200 air_experience  = 300 }
 				GER = { air_experience  = 300 }
 				ITA = { air_experience  = 300 }
@@ -2146,7 +2091,7 @@ focus_tree = {
 				BUL = { army_experience = 150 }
 				IF = { limit = { country_exists = YUG } YUG = { army_experience = 100 } }
 				IF = { limit = { country_exists = YUG } SIA = { army_experience = 1000 air_experience  = 1000 } }
-				IF = { limit = { country_exists = YUG } MAN = { army_experience = 1000 air_experience  = 1000 } }
+				IF = { limit = { country_exists = YUG } MIN = { army_experience = 1000 air_experience  = 1000 } }
 			}
 			if = {
 				limit = {
@@ -2317,7 +2262,6 @@ focus_tree = {
 							has_completed_focus = ROM_codreanus_iron_guard
 						}
 					}
-					}
 						every_country = {
 							limit = {
 								controls_state = 43
@@ -2330,6 +2274,7 @@ focus_tree = {
 						46 = {
 							add_manpower = 1523069
 						}
+				}
 			}
 			
 			GER = { 
@@ -2546,6 +2491,7 @@ focus_tree = {
 				FRA = {
 				activate_mission = FRA_TZAR_RELOCATION_CIV
 				activate_mission = FRA_TZAR_RELOCATION_MIL
+				activate_mission = FRA_held
 				}
 			}
 			if = {
@@ -3212,7 +3158,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			FRA = { has_capitulated = yes }
+			has_full_control_of_state = 19
+			has_full_control_of_state = 14
+			has_full_control_of_state = 16
 			
 		}	
 		available_if_capitulated = yes
@@ -3328,7 +3276,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		available = {
-			FRA = { has_capitulated = yes }
+			has_full_control_of_state = 19
+			has_full_control_of_state = 14
+			has_full_control_of_state = 16
 			
 		}
 		
@@ -3536,7 +3486,7 @@ focus_tree = {
 				}
 			}
 		}
-		cancel_if_invalid = no
+		cancel_if_invalid = no	
 		x = -3
 		y = 1
 		relative_position_id = GER_fall_gelb 
@@ -3564,7 +3514,9 @@ focus_tree = {
 		}	
 		
 				available = { 				
-			FRA = { has_capitulated = yes }
+			has_full_control_of_state = 19
+			has_full_control_of_state = 14
+			has_full_control_of_state = 16
 			}
 			
 			completion_reward = {
@@ -3572,23 +3524,21 @@ focus_tree = {
 			
 			
 						99 = {
-						add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
-			limit_to_coastal = yes
+		limit_to_coastal = yes
 							level < 3
 						}
 					}
 			}
 			
 						58 = {
-							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3598,10 +3548,9 @@ focus_tree = {
 			}
 			
 						59 = {
-							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3611,10 +3560,9 @@ focus_tree = {
 			}
 			
 						56 = {
-							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3624,10 +3572,9 @@ focus_tree = {
 			}
 			
 						36 = {
-							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3637,10 +3584,9 @@ focus_tree = {
 			}
 			
 						7 = {
-							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3650,10 +3596,9 @@ focus_tree = {
 			}
 			
 						35 = {
-							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3663,10 +3608,9 @@ focus_tree = {
 			}
 			
 						6 = {
-							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3676,10 +3620,9 @@ focus_tree = {
 			}
 			
 						29 = {
-							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3689,10 +3632,9 @@ focus_tree = {
 			}
 			
 						785 = {
-							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3702,10 +3644,9 @@ focus_tree = {
 			}
 			
 						15 = {
-							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3715,10 +3656,9 @@ focus_tree = {
 			}
 			
 						14 = {
-							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 								limit_to_coastal = yes
@@ -3728,10 +3668,9 @@ focus_tree = {
 			}
 			
 						30 = {
-							add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3741,10 +3680,9 @@ focus_tree = {
 			}
 			
 								23 = {
-									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3755,10 +3693,9 @@ focus_tree = {
 			
 			
 								19 = {
-									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3779,10 +3716,9 @@ focus_tree = {
 					}
 			
 								142 = {
-									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3804,10 +3740,9 @@ focus_tree = {
 					}
 			
 								143 = {
-									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -3829,10 +3764,9 @@ focus_tree = {
 					}
 			
 								144 = {
-									add_building_construction = { type=anti_air_building level=3 instant_build=yes }
 								set_building_level = {
 						type = coastal_bunker
-						level = 10
+						level = 8
 						province = {
 							all_provinces = yes
 		limit_to_coastal = yes
@@ -4118,7 +4052,9 @@ focus_tree = {
 					available = {
 						has_war_with = ENG
 						has_full_control_of_state = 16	
-						FRA = { has_capitulated = yes }
+						has_full_control_of_state = 19
+			has_full_control_of_state = 14
+			has_full_control_of_state = 16
 					}
 			
 					available_if_capitulated = yes
@@ -4138,7 +4074,9 @@ focus_tree = {
 					available = {
 						has_full_control_of_state = 8
 						has_full_control_of_state = 28
-						FRA = { has_capitulated = yes }
+						has_full_control_of_state = 19
+			has_full_control_of_state = 14
+			has_full_control_of_state = 16
 					}
 					bypass = {
 					}
@@ -4512,7 +4450,6 @@ focus_tree = {
 						if = { limit = {country_exists = BUL } BUL = { add_timed_idea = { idea = GER_barbarossa_minor days = 160 } } }
 						if = { limit = {country_exists = YUG } YUG = { add_timed_idea = { idea = GER_barbarossa_minor days = 160 } } }
 						if = { limit = {country_exists = CZE } CZE = { add_timed_idea = { idea = GER_barbarossa_minor days = 160 } } }
-						HUN = { add_timed_idea = { idea = GER_barbarossa_minor days = 160 } }
 					}	
 				}
 			}
@@ -5463,7 +5400,6 @@ focus_tree = {
 							ITA = {add_timed_idea = { idea = GER_fall_blau days = 60 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
 							if = {limit = {country_exists = YUG } YUG = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
-							HUN = {add_timed_idea = { idea = GER_fall_blau days = 60 }}
 						}
 
 						custom_effect_tooltip = "   "
@@ -5514,7 +5450,6 @@ focus_tree = {
 							ITA = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
 							if = {limit = {country_exists = YUG } YUG = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
-							HUN = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}
 						}
 						hidden_effect = {
 							news_event = { hours = 6 id = news.811 }
@@ -5566,11 +5501,9 @@ focus_tree = {
 				focus = {
 					id = GER_endsieg_focus1
 					icon = GFX_focus_GER_flag_shield
-					available = { date > 1941.1.1 
-					OR = {
+					available = {
+						date > 1941.1.1 
 						surrender_progress > 0.1
-						has_global_flag = GDU_dday_started
-						}
 					}
 					x = 25
 					y = 8
@@ -5776,22 +5709,6 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }	
 				}
-				4 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			69 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
 				
 			}
 		}

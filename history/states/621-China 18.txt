@@ -20,7 +20,7 @@ state={
 
 			}
 			owner = SWE
-			controller = MAN
+			controller = MIN
 
 		}
 

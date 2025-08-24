@@ -234,10 +234,13 @@ ideas = {
 
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.10 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
-				CAS_equipment = {
-					build_cost_ic = -0.2 instant = yes
+				medium_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
 				}
 
 				#light_tank_chassis = {
@@ -366,7 +369,7 @@ ideas = {
 				}
 			}
 
-			available = { ROOT = { has_government = fascism } }
+			available = {  }
 
 			cancel={
 				NOT={
@@ -407,7 +410,7 @@ ideas = {
 				}
 			}
 
-			available = { ROOT = { has_government = fascism } }
+			available = {  }
 
 			cancel={
 				NOT={

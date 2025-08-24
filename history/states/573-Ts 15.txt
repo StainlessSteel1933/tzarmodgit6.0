@@ -6,7 +6,6 @@ state={
 		chromium=150.000
 		tungsten=180.000
 	}
-
 	history={
 		victory_points = {
 			10329 1 

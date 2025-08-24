@@ -7,7 +7,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = MAN
+			tag = MIN
 			#has_dlc = "Waking the Tiger"
 		}
 	}
@@ -53,7 +53,7 @@ focus_tree = {
 	
 		focus = {
 		id = MAN_obedience
-		icon = GFX_focus_CZE_german_puppet
+		icon = GFX_focus_ETH_the_lion_and_the_sun
 		prerequisite = { focus = MAN_pacify_the_countryside }
 		x = 0
 		y = 1
@@ -356,7 +356,7 @@ focus_tree = {
 
 	focus = {
 		id = MAN_alliance_with_the_kwantung_army
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_focus_AFG_afghan_bank
 		prerequisite = { focus = MAN_mukden_military_academy }
 		prerequisite = { focus = MAN_army_modernization   }
 		x = -1
@@ -456,7 +456,7 @@ focus_tree = {
 		available = {
 	OR = {
 	JAP = { controls_state = 608 }
-		MAN = { controls_state = 608 }
+		MIN = { controls_state = 608 }
 	}
 		}
 
@@ -497,7 +497,7 @@ focus_tree = {
 		available = {
 		OR = { 
 		JAP = { owns_state = 608 }
-		MAN = { owns_state = 608 }
+		MIN = { owns_state = 608 }
 
 }
 		}
@@ -648,7 +648,7 @@ focus_tree = {
 	
 		focus = {
 		id = MAN_aluminum
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_focus_SWE_urbanization
 		x = 0
 		y = 1
 
@@ -1044,7 +1044,7 @@ focus_tree = {
 		focus = {
 		id = MAN_navy_academy
 		icon = GFX_focus_JAP_army_expansion
-		x = -14
+		x = -9
 		y = 1
 
 		cost = 5
@@ -1077,8 +1077,8 @@ focus_tree = {
 	}
 	focus = {
 		id = MAN_dockyards
-		icon = GFX_focus_generic_destroyer
-		x = -12
+		icon = GFX_focus_ETH_an_empire_in_the_shade_of_the_sun
+		x = -7
 		y = 1
 
 		cost = 5
@@ -1132,7 +1132,7 @@ focus_tree = {
 		add_equipment_production = {
 							equipment = {
 								type = ship_hull_light_1
-								creator = "MAN"
+								creator = "MIN"
 								version_name = "Momi Class"
 							}
 							requested_factories = 1
@@ -1185,7 +1185,7 @@ focus_tree = {
 		
 	focus = {
 		id = MAN_ship_designs
-		icon = GFX_focus_JAP_battlefleet
+		icon = GFX_focus_ETH_an_ethiopian_navy_in_exile
 		x = 0
 		y = 1
 
@@ -1267,10 +1267,10 @@ focus_tree = {
 	
 		focus = {
 		id = MAN_showa_steel
-		icon = GFX_focus_generic_steel
+		icon = GFX_SOV_develop_the_urals_ccp_2d_sov_compatibility
 		x = 0
 		y = 1
-
+		text = "Expansion of Showa Steel Production"
 		cost = 5
 
 		prerequisite = { focus = MAN_anshan_steelworks }
@@ -1347,7 +1347,7 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = convoy_1
 				amount = 100
-				producer = MAN
+				producer = MIN
 			}
 	716 = { 
 add_building_construction = {
@@ -1377,7 +1377,7 @@ add_building_construction = {
 		focus = {
 		id = MAN_railways_extend_to_pyongyang
 		icon = GFX_focus_MAN_rail
-		x = -10
+		x = 2
 		y = 1
 
 		cost = 5
@@ -1641,7 +1641,7 @@ add_building_construction = {
 			focus = {
 		id = MAN_chahar5
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = 1
+		x = -2
 		y = 1
 
 		cost = 5
@@ -1676,7 +1676,7 @@ add_building_construction = {
 	
 	focus = {
 		id = MAN_chahar6
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_focus_generic_china1
 		x = 0
 		y = 1
 
@@ -1689,7 +1689,7 @@ add_building_construction = {
 		available = {
 		OR = {
 		JAP = { has_full_control_of_state = 621 }
-		MAN = { has_full_control_of_state = 621 }
+		MIN = { has_full_control_of_state = 621 }
 		}
 		}
 
@@ -2014,7 +2014,7 @@ add_building_construction = {
 	
 		focus = {
 		id = MAN_tankplant_h
-		icon = GFX_goal_generic_production2
+		icon = GFX_focus_BRA_acquire_german_tanks
 		x = 1
 		y = 2
 
@@ -2060,7 +2060,7 @@ add_building_construction = {
 		
 		focus = {
 		id = MAN_tankplant_p
-		icon = GFX_goal_generic_production2
+		icon = GFX_focus_generic_tank_production
 		x = -1
 		y = 2
 
@@ -2103,202 +2103,6 @@ add_building_construction = {
 		}
 	}	
 	
-		focus = {
-		id = MAN_mamcc
-		icon = GFX_goal_generic_air_bomber
-		x = -8
-		y = 1
-
-		cost = 5
-
-				prerequisite = { focus = MAN_five_year_plan_new }
-		relative_position_id = MAN_five_year_plan_new
-		
-
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		custom_effect_tooltip = available_designer
-        show_ideas_tooltip = MAN_mamc		
-
-		
-		}
-	}
 	
-	
-		focus = {
-		id = MAN_mamc_expansion
-		icon = GFX_goal_generic_build_airforce
-		x = 0
-		y = 1
-
-		cost = 5
-
-				prerequisite = { focus = MAN_mamcc }
-		relative_position_id = MAN_mamcc
-		
-
-		available = {
-			is_ai = no
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-717 = {	
-		add_extra_state_shared_building_slots = 2	
-		add_building_construction = {
-		type = arms_factory
-		level = 2
-		instant_build = yes
-		}
-		}
-		
-		}
-	}
-	
-		focus = {
-		id = MAN_mamc_pilot
-		icon = GFX_focus_generic_military_academy
-		x = -2
-		y = 1
-
-		cost = 5
-
-				prerequisite = { focus = MAN_mamcc }
-		relative_position_id = MAN_mamcc
-		
-
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		add_tech_bonus = {
-		bonus = 1.0
-			uses = 2
-			category = air_doctrine
-		
-		
-		}
-		
-		}
-	}
-		focus = {
-		id = MAN_mamc_tac
-		icon = GFX_goal_generic_air_bomber
-		x = 1
-		y = 1
-
-		cost = 5
-
-				mutually_exclusive = { focus = MAN_mamc_medium_air}
-				prerequisite = { focus = MAN_mamc_expansion }
-		relative_position_id = MAN_mamc_expansion
-		
-		
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-	add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = heavy_air
-			}
-		
-		}
-	}
-	
-		focus = {
-		id = MAN_mamc_medium_air
-		icon = GFX_goal_generic_medium_air
-		x = -1
-		y = 1
-
-		cost = 5
-
-		mutually_exclusive = { focus = MAN_mamc_tac}
-				prerequisite = { focus = MAN_mamc_expansion }
-		relative_position_id = MAN_mamc_expansion
-		
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = medium_air_bomber
-			}
-		}
-	}
 		
 }

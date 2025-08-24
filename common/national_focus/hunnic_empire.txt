@@ -7,7 +7,7 @@ focus_tree = {
 		modifier = {
 			add = 1000
 			tag = HUN
-			#always = no
+			always = yes
 			#has_dlc = "Death or Dishonor"
 		}
 	}
@@ -51,7 +51,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_political_power = 50
+			#add_political_power = 50
 			add_stability = 0.05
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -131,7 +131,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_continue_the_regency
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -284,7 +284,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_political_power = 50
+			#add_political_power = 50
 
 			add_ideas = HUN_power_to_the_regent_idea
 
@@ -330,7 +330,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_political_power = 75
+			#add_political_power = 75
 
 			add_popularity = {
 				ideology = neutrality
@@ -378,7 +378,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_political_power = 75
+			#add_political_power = 75
 
 			add_stability = 0.15
 
@@ -606,7 +606,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_the_hungarian_life_and_renewal_party
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 15
@@ -761,7 +761,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_empower_the_greenshirts
 
-		cost = 5
+		cost = 15
 
 		ai_will_do = {
 			factor = 15
@@ -805,7 +805,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_the_march_on_budapest
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -840,8 +840,8 @@ focus_tree = {
 				add_threat = 1
 				set_party_name = {
 					ideology = fascism
-					long_name = HUN_arrow_cross_party_hungarist_movement_long
-					name = HUN_arrow_cross_party_hungarist_movement
+					long_name = "Arrow Cross Movement"
+					name = "Arrow Cross"
 				}	
 
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -1279,12 +1279,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-
+			add_ideas = ROM_revenge_against_soviet 
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.15
 			}
-
+			
 			#custom_effect_tooltip = POR_the_communist_threat_tt
 			
 
@@ -1526,7 +1527,7 @@ focus_tree = {
 		id = wuw_HUN_seek_german_contracts
 		icon = GFX_focus_generic_german_trade
 		prerequisite = { focus = wuw_HUN_act_of_defense focus = wuw_HUN_wherever_the_cross_points }
-		#mutually_exclusive = { focus = wuw_HUN_claim_overlordship_over_slovakia }
+		mutually_exclusive = { focus = wuw_HUN_license_fiat_tankettes }
 		x = -1
 		y = 1
 		relative_position_id = wuw_HUN_act_of_defense
@@ -1578,9 +1579,9 @@ focus_tree = {
 	focus = {
 		id = wuw_HUN_invite_german_investors
 		icon = GFX_focus_chi_mission_to_germany
-		prerequisite = { focus = wuw_HUN_seek_german_contracts }
-		mutually_exclusive = { focus = wuw_HUN_renew_the_rome_protocols }
-		x = 0
+		prerequisite = { focus = wuw_HUN_seek_german_contracts focus = wuw_HUN_license_fiat_tankettes }
+		#mutually_exclusive = { focus = wuw_HUN_renew_the_rome_protocols }
+		x = -1
 		y = 1
 		relative_position_id = wuw_HUN_seek_german_contracts
 
@@ -1660,7 +1661,7 @@ focus_tree = {
 		id = wuw_HUN_license_fiat_tankettes
 		icon = GFX_focus_generic_fiat
 		prerequisite = { focus = wuw_HUN_act_of_defense focus = wuw_HUN_wherever_the_cross_points }
-		#mutually_exclusive = { focus = wuw_HUN_claim_overlordship_over_slovakia }
+		mutually_exclusive = { focus = wuw_HUN_seek_german_contracts }
 		x = -3
 		y = 1
 		relative_position_id = wuw_HUN_act_of_defense
@@ -1984,51 +1985,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = wuw_HUN_forcefully_revitalize_the_industries
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = wuw_HUN_economic_intervention }
-		#mutually_exclusive = { focus = wuw_HUN_avoid_interventionalist_destablilization }
-		x = 1
-		y = 1
-		relative_position_id = wuw_HUN_economic_intervention
-
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-
-			add_timed_idea = {
-				idea = HUN_forceful_industrial_revitalization
-				days = 365
-			}
-
-			
-		}
-	}
-
-	focus = {
 		id = wuw_HUN_reintigrate_the_imperial_railroads
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = wuw_HUN_economic_intervention }
 		#mutually_exclusive = { focus = wuw_HUN_avoid_interventionalist_destablilization }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = wuw_HUN_economic_intervention
 
@@ -2316,56 +2277,6 @@ focus_tree = {
 			add_timed_idea = {
 				idea = HUN_revaluing_the_pengo
 				days = 420
-			}
-
-		}
-	}
-
-	focus = {
-		id = wuw_HUN_allied_manufacturing_programs
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = wuw_HUN_devalue_the_pengo }
-		#mutually_exclusive = { focus = wuw_HUN_repulö_muszaki_intezet }
-		x = -1
-		y = 1
-		relative_position_id = wuw_HUN_devalue_the_pengo
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		cost = 10
-
-		ai_will_do = {
-			
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
 			}
 
 		}
@@ -2760,11 +2671,12 @@ focus_tree = {
 	focus = {
 		id = wuw_HUN_expand_the_diosgyor_machinery_factory
 		icon = GFX_focus_HUN_expand_the_diosgyor_machinery_factory
+		prerequisite = { focus = wuw_HUN_devalue_the_pengo  }
 		prerequisite = { focus = wuw_HUN_announce_the_gyor_program }
 		#mutually_exclusive = { focus = wuw_HUN_avoid_interventionalist_destablilization }
-		x = 1
+		x = -1
 		y = 1
-		relative_position_id = wuw_HUN_announce_the_gyor_program
+		relative_position_id = wuw_HUN_devalue_the_pengo
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -2846,7 +2758,7 @@ focus_tree = {
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = wuw_HUN_announce_the_gyor_program }
 		#mutually_exclusive = { focus = wuw_HUN_avoid_interventionalist_destablilization }
-		x = 3
+		x = 1
 		y = 1
 		relative_position_id = wuw_HUN_announce_the_gyor_program
 
@@ -3389,23 +3301,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			IF = {
@@ -3499,23 +3394,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -3896,10 +3774,10 @@ focus_tree = {
 					is_fully_controlled_by = ROOT
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}

@@ -17,7 +17,7 @@ shared_focus = {
 		x = -16
 		y = 0
 		trigger = {
-			 tag = MAN 
+			 tag = MIN 
 		}
 	}
 
@@ -56,7 +56,7 @@ shared_focus = {
 	available = {
 		OR = { 
 		NOT = { has_global_flag = falkenhausen_recalled }
-		tag = MAN
+		tag = MIN
 		}
 	}
 
@@ -86,7 +86,7 @@ shared_focus = {
 	available = {
 		
 		OR = { NOT = { has_global_flag = falkenhausen_recalled }
-		tag = MAN
+		tag = MIN
 		}
 	}
 
@@ -130,7 +130,7 @@ shared_focus = {
 	available = {
 		# NOT = { has_idea = CHI_incompetent_officers }	
 		# OR = { NOT = { has_global_flag = falkenhausen_recalled }
-		tag = MAN
+		tag = MIN
 		}
 
 	bypass = {
@@ -162,7 +162,7 @@ shared_focus = {
 	available = {
 		
 		OR = { NOT = { has_global_flag = falkenhausen_recalled }
-		tag = MAN
+		tag = MIN
 		}
 	}
 
@@ -199,7 +199,7 @@ shared_focus = {
 	available = {
 	
 		OR = { NOT = { has_global_flag = falkenhausen_recalled }
-		tag = MAN
+		tag = MIN
 		}
 	}
 
@@ -340,7 +340,7 @@ shared_focus = {
 	completion_reward = {
 		random_owned_controlled_state = {
 			limit = {
-				is_fully_controlled_by = MAN
+				is_fully_controlled_by = MIN
 				free_building_slots = {
 					building = arms_factory
 					size > 1
@@ -407,7 +407,7 @@ shared_focus = {
 			}
 			if = {
 				limit = {
-					tag = MAN
+					tag = MIN
 				}
 				division_template = {
 					name = "Experimental Mechanised Division"
@@ -430,7 +430,7 @@ shared_focus = {
 			capital_scope = {
 				create_unit = {
 					division = "name = \"200. Mechanised Division\" division_template = \"Experimental Mechanised Division\" start_experience_factor = 1.0" 
-					owner = MAN
+					owner = MIN
 				}
 			}			
 		}
@@ -762,7 +762,7 @@ shared_focus = {
 
 	available = {
 		all_other_country = { NOT = { has_completed_focus = CHI_guarantee_the_hanoi_route } }
-		NOT = { tag = MAN }
+		NOT = { tag = MIN }
 	}
 
 	bypass = {
@@ -1692,11 +1692,11 @@ shared_focus = {
 
 	
 	bypass = {
-	original_tag = MAN 
+	original_tag = MIN 
 	}
 
 	available = {
-	tag = MAN
+	tag = MIN
 	}
 
 
@@ -1707,7 +1707,7 @@ shared_focus = {
 	completion_reward = {
 		JAP = {
 			add_opinion_modifier = {
-				target = MAN
+				target = MIN
 				modifier = CHI_collaboration_with_the_japanese
 			}
 		}

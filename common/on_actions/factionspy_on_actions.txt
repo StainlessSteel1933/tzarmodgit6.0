@@ -7,7 +7,7 @@ on_actions = {
 					 share_intel_with_allies=yes
 
 				}
-				MAN={if={limit={country_exists=MAN}
+				MIN={if={limit={country_exists=MIN}
 				  share_intel_with_allies=yes
 				}}
         }

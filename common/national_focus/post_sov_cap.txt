@@ -75,6 +75,7 @@ focus_tree = {
 						}
                 }
             }
+			Generic_spawn_inf_a_little = yes
         }
 	}
 }

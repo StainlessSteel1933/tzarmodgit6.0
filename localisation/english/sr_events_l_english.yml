@@ -168,8 +168,8 @@
 
  news.412:0 "France Falls!"
  news.412.t:0 "France Falls!"
- news.412.d:0 "France held for §B[?FRA.FRA_battle_weeks_held]§! weeks, inflicting §R[?GER.casualties]§! casualties on the Germans. As a result, France will receive §B[?FRA.FRA_battle_weeks_held]§! civs in Gabon, and Germany will receive §R[?GER.GER_battle_weeks]§! civs in Berlin."
- news.412.a:0 "Ok"
+ news.412.d:0 "France held for §B[?FRA.FRA_battle_weeks_held]§! days, inflicting §R[?GER.casualties]§! casualties on the Germans."
+ news.412.a:0 "gg"
 
  soviet.302:0 "Reinforcements from Siberia!"
  soviet.302.t:0 "Reinforcements from Siberia!"

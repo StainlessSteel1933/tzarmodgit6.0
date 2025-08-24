@@ -155,7 +155,7 @@ Prepare_Overlord:0 "Prepare Operation Overlord"
 
  #Battle of France Localization
  Battle_for_France:0 "Battle of France"
- Battle_for_France_desc:0 "Once the Battle of France begins, every week you hold mainland France without capitulating, you will receive one additional civilian factory in Gabon, up to a maximum of 10.\n\nOn the other hand, when you capitulate the Germans will get up to 10 civilian factories in Berlin, but for each week you hold they receive one less, down to a minimum of 0.\n\nFight to the best of your ability, and be rewarded for your efforts!\n\nThe Battle of France begins under any of the following conditions:\n   - French core territory is invaded\n   - Germany declares war on Belgium\n   - Italy Joins the War"
+Battle_for_France_desc:0 "We are evacuating §G1 military§! and §O1 civilian§! every day.\nEvery moment counts as we struggle to hold the line.\n\nCAUTION if our casualties exceed §R1.0 million§!,\nour morale will break, and our defenses will collapse."
  FRA_battle_start:0 "A Phoney War..."
  FRA_battle_start_desc:0 "The Battle for France will begin with any invasion of French Core Territory, or a declaration of war by the Germans on Belgium"
  FRA_battle_1:0 "§GYou have held for [?FRA_battle_weeks_held] weeks§!"

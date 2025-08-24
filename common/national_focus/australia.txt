@@ -2118,7 +2118,7 @@ technology = improved_medium_airframe
 		cost = 10
 
 		available = {
-
+			has_war = yes
 		}
 		
 		bypass = {

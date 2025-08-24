@@ -64,8 +64,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_auto_cannon
 		add_stats = {
-			soft_attack = 30
-			hard_attack = 13
+			soft_attack = 44
+			hard_attack = 25
 			ap_attack = 35
 			build_cost_ic = 2
 			reliability = -0.1
@@ -149,7 +149,7 @@ equipment_modules = {
 		}
 		parent = tank_anti_air_cannon_2
 		add_stats = {
-			soft_attack = 12
+			soft_attack = 36
 			hard_attack = 20
 			ap_attack = 25
 			air_attack = 90
@@ -326,11 +326,16 @@ equipment_modules = {
 		abbreviation = "rk1"
 		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = rocket
+		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
-
+		forbid_equipment_type = {
+			anti_air
+			anti_tank
+			flame
+			amphibious
+		}
 		add_stats = {
-			soft_attack = 80
+			soft_attack = 85
 			hard_attack = 1
 			ap_attack = 2
 			build_cost_ic = 8.5
@@ -355,14 +360,14 @@ equipment_modules = {
 		abbreviation = "rk2"
 		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = rocket
+		allow_equipment_type = artillery
 		parent = tank_rocket_launcher
 		forbid_equipment_type_exact_match = armor
 		add_stats = {
-			soft_attack = 85
+			soft_attack = 105
 			hard_attack = 1
 			ap_attack = 2
-			build_cost_ic = 5
+			build_cost_ic = 8
 			maximum_speed = -0.2
 			reliability = -0.1
 			breakthrough = -4
@@ -466,6 +471,7 @@ equipment_modules = {
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type_exact_match = armor
+		allow_equipment_type = artillery
 		forbid_equipment_type = {
 			anti_air
 			anti_tank
@@ -474,7 +480,7 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			soft_attack = 78
+			soft_attack = 85
 			hard_attack = 2
 			ap_attack = 60
 			build_cost_ic = 11

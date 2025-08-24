@@ -7,7 +7,7 @@ state = {
 	resources = {
 		chromium = 18 # was: 24
 	}
-
+	impassable = yes
 	history = {
 		owner = SOV
 		buildings = {

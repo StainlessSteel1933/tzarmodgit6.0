@@ -60,7 +60,7 @@ country_event = {
 				JAP = {
 					add_ideas = sr1942_latewar
 				}		
-				MAN = {
+				MIN = {
 					add_ideas = sr1942_latewar
 				}
 				SIA = {
@@ -177,7 +177,7 @@ country_event = {
 						remove_idea = sr1942_latewar
 						add_idea = sr1943_latewar
 					}				}		
-				MAN = {
+				MIN = {
 					swap_ideas = { 
 						remove_idea = sr1942_latewar
 						add_idea = sr1943_latewar
@@ -311,7 +311,7 @@ country_event = {
 						remove_idea = sr1943_latewar
 						add_idea = sr1944_latewar
 					}				}		
-				MAN = {
+				MIN = {
 					swap_ideas = { 
 						remove_idea = sr1943_latewar
 						add_idea = sr1944_latewar
@@ -442,7 +442,7 @@ country_event = {
 						remove_idea = sr1944_latewar
 						add_idea = sr1945_latewar
 					}				}		
-				MAN = {
+				MIN = {
 					swap_ideas = { 
 						remove_idea = sr1944_latewar
 						add_idea = sr1945_latewar

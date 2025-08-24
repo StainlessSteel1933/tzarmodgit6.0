@@ -31,12 +31,12 @@ simulate_pop_growth = { ##WIP
 }
 
 ai_manchukuo_effect = {
-	if = { limit = { MAN = { is_ai = yes } } 
-		MAN = { set_equipment_fraction = 0.0 }
-		JAP = {	add_research_slot = 1 annex_country = { target = MAN transfer_troops = yes } add_ideas = no_exports }
+	if = { limit = { MIN = { is_ai = yes } } 
+		MIN = { set_equipment_fraction = 0.0 }
+		JAP = {	add_research_slot = 1 annex_country = { target = MIN transfer_troops = yes } add_ideas = no_exports }
 		610 = { add_manpower = 25417 add_extra_state_shared_building_slots = 2 add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
 		716 = { add_manpower = 25417 add_extra_state_shared_building_slots = 2 add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
-		every_state = { limit = { is_core_of = MAN } add_extra_state_shared_building_slots = 2 set_compliance = 100 remove_core_of = CHI remove_core_of = MAN add_core_of = SWE }
+		every_state = { limit = { is_core_of = MIN } add_extra_state_shared_building_slots = 2 set_compliance = 100 remove_core_of = CHI remove_core_of = MIN add_core_of = SWE }
 		715 = { add_extra_state_shared_building_slots = 2 }
 		328 = { add_extra_state_shared_building_slots = 2 }
 		716 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
@@ -48,7 +48,7 @@ ai_manchukuo_effect = {
 		716 = { add_resource = {  type = steel amount = 16 } }
 		328 = { add_resource = {  type = aluminium amount = 16 } }
 		761 = { add_extra_state_shared_building_slots = 3 add_building_construction = { type = synthetic_refinery level = 3 instant_build = yes } }
-		# MAN = { 
+		# MIN = { 
 		# 	remove_state_core = 328	remove_state_core = 610 remove_state_core = 611	remove_state_core = 794
 		# 	remove_state_core = 612	remove_state_core = 714	remove_state_core = 715
 		# 	remove_state_core = 716	remove_state_core = 717 remove_state_core = 745	remove_state_core = 761				
@@ -163,7 +163,7 @@ startup_ideas = {
 	GER = { add_ideas = prewar_training }
 	ITA = { add_ideas = prewar_training }
 	JAP = { add_ideas = prewar_training }
-	if = { limit = { country_exists = MAN } MAN = { add_ideas = prewar_training } }
+	if = { limit = { country_exists = MIN } MIN = { add_ideas = prewar_training } }
 	if = { limit = { country_exists = CRO } CRO = { add_ideas = prewar_training } }
 	ROM = { add_ideas = prewar_training }
 	BUL = { add_ideas = prewar_training }

@@ -160,7 +160,7 @@ country_event = {
 		controls_province = 2086
 		}
 		}
-		MAN = {
+		MIN = {
 		AND = {
 		controls_province = 8087
 		controls_province = 9975
@@ -211,7 +211,7 @@ country_event = {
 		controls_province = 12910
 		}
 		}
-		MAN = {
+		MIN = {
 		AND = {
 		controls_province = 7859
 		controls_province = 12406

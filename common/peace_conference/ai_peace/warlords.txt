@@ -2,7 +2,7 @@
 # See documentation.info file for more detailed scripting information.
 
 peace_ai_desires = {
-    # Warlords want to expand their territory in China, not create puppets- So take states even if not cores, they _can_ be in the future, right. This goes for MAN as well
+    # Warlords want to expand their territory in China, not create puppets- So take states even if not cores, they _can_ be in the future, right. This goes for MIN as well
     warlords_want_to_conquer_china = {
         peace_action_type = { take_states }
         enable = {
@@ -24,7 +24,7 @@ peace_ai_desires = {
             ROOT = {
                 OR = {
                     WTT_is_chinese_warlord = yes
-                    tag = MAN
+                    tag = MIN
                 }
             }
         }
@@ -53,7 +53,7 @@ peace_ai_desires = {
             ROOT = {
                 OR = {
                     WTT_is_chinese_warlord = yes
-                    tag = MAN
+                    tag = MIN
                     tag = PRC
                     tag = CHI
                 }
@@ -75,7 +75,7 @@ peace_ai_desires = {
                     WTT_is_chinese_warlord = yes
                     tag = PRC
                     tag = CHI
-                    tag = MAN
+                    tag = MIN
                 }
             }
         }

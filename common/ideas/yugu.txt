@@ -19,5 +19,25 @@ ideas = {
 				consumer_goods_expected_value = -0.05
 			}
 		}
+	
+		YUG_naval_treaty_idea = {
+					
+			picture = generic_the_london_naval_treaty
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = -0.30
+			}
+		}
+	
 	}
 }

@@ -143,7 +143,7 @@ ideas = {
 			defense_bonus_against = 0.1
 		}
 		targeted_modifier = {
-			tag = MAN
+			tag = MIN
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}
@@ -1188,7 +1188,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = MAN }
+						OR = { tag = CHI tag = MIN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1230,7 +1230,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI  tag = MAN   }
+						OR = { tag = CHI  tag = MIN   }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1262,7 +1262,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI  tag = MAN  }
+						OR = { tag = CHI  tag = MIN  }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1294,7 +1294,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = MAN  }
+						OR = { tag = CHI tag = MIN  }
 						
 					}
 				}
@@ -1329,7 +1329,7 @@ ideas = {
 						has_dlc = "Waking the Tiger"
 					}
 					NOT = {
-						OR = { tag = CHI  tag = MAN }
+						OR = { tag = CHI  tag = MIN }
 					}
 				}
 				NOT = {
@@ -1363,7 +1363,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = MAN }
+						OR = { tag = CHI tag = MIN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1396,7 +1396,7 @@ ideas = {
 				NOT = {
 					AND = {
 						has_DLC = "Waking the Tiger"
-							original_tag = MAN
+							original_tag = MIN
 					}
 				}
 				NOT = {
@@ -1432,7 +1432,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = MAN   }
+						OR = { tag = CHI tag = MIN   }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1464,7 +1464,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI  tag = MAN }
+						OR = { tag = CHI  tag = MIN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1496,7 +1496,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = MAN }
+						OR = { tag = CHI tag = MIN }
 						has_dlc = "Waking the Tiger"
 					}
 				}

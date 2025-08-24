@@ -71,6 +71,15 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough = 0.1
 		}
+		light_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
 		enable_equipment_modules = {
 			# tank_medium_howitzer
 			# tank_small_cannon_2
@@ -190,7 +199,15 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough = 0.1
 		}
-		
+		light_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
 		path = {
 			leads_to_tech = artillery3
 			research_cost_coeff = 1
@@ -252,7 +269,15 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough = 0.1
 		}
-		
+		light_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
 		enable_equipment_modules = {
 			# tank_medium_cannon_2
 		}
@@ -374,6 +399,15 @@ technologies = {
 		mot_artillery_brigade = {
 			soft_attack = 0.1
 			breakthrough = 0.1
+		}
+		light_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.05
 		}
 		enable_equipment_modules = {
 			# auto_loader
@@ -649,6 +683,9 @@ technologies = {
 		enable_equipments = {
 			rocket_artillery_equipment_2
 		}
+		enable_equipment_modules = {
+			tank_rocket_launcher_2
+		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.3
 			breakthrough = 0.10
@@ -762,8 +799,6 @@ technologies = {
 		super_heavy_sp_anti_air_brigade = { air_attack = 0.08 }
 		modern_sp_anti_air_brigade = { air_attack = 0.08 }
 
-		industry_air_damage_factor = -0.15
-		tech_air_damage_factor = -0.015
 		
 		path = {
 			leads_to_tech = antiair2
@@ -798,7 +833,7 @@ technologies = {
 			anti_air_equipment_2
 		}
 
-		static_anti_air_damage_factor = 0.1
+		static_anti_air_damage_factor = 0.05
 
 		enable_equipment_modules = { 
 			ship_anti_air_3
@@ -850,9 +885,6 @@ technologies = {
 		super_heavy_sp_anti_air_brigade = { air_attack = 0.08 }
 		modern_sp_anti_air_brigade = { air_attack = 0.08 }
 		
-		industry_air_damage_factor = -0.15
-		tech_air_damage_factor = -0.015
-
 		path = {
 			leads_to_tech = antiair3_5
 			research_cost_coeff = 1
@@ -993,7 +1025,7 @@ technologies = {
 			}
 		}
 
-		static_anti_air_damage_factor = 0.1
+		static_anti_air_damage_factor = 0.05
 		
 		enable_equipment_modules = { 
 			ship_anti_air_4

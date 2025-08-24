@@ -2989,7 +2989,7 @@ special_projects = {
 			}
 				ROM = {
 			add_opinion_modifier = {
-    target = MAN
+    target = MIN
     modifier = anti_cross_faction_trade
 }
 			}
@@ -3065,7 +3065,7 @@ special_projects = {
 			}
 			ROM = {
 			remove_opinion_modifier = {
-    target = MAN
+    target = MIN
     modifier = anti_cross_faction_trade
 }
 			}

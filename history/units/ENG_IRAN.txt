@@ -13,8 +13,9 @@ division_template = {
 		mountaineers = { x = 1 y = 3 }
 		mountaineers = { x = 1 y = 4 }
 		mountaineers = {x = 2 y = 0 }
-		anti_air_brigade = { x = 2 y = 1 }
-		anti_tank_brigade = { x = 2 y = 2 }
+		anti_air_brigade = { x = 2 y = 2 }
+		anti_tank_brigade = { x = 2 y = 1 }
+		anti_air_brigade = { x = 2 y = 3 }
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
@@ -76,30 +77,6 @@ units = {
 	division = {	
 		start_equipment_factor = 1 start_experience_factor = 0.3
 		location = 2065
-		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
-	}
-	division = {	
-		start_equipment_factor = 1 start_experience_factor = 0.3
-		location = 12756
-		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
-	}
-	division = {	
-		start_equipment_factor = 1 start_experience_factor = 0.3
-		location = 12756
-		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
-	}
-	division = {	
-		start_equipment_factor = 1 start_experience_factor = 0.3
-		location = 4928
-		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
-	}
-	division = {	
-		start_equipment_factor = 1 start_experience_factor = 0.3
-		location = 4928
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "ENG" } }
 	}

@@ -251,7 +251,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			super_heavy_tank_aa_chassis = 8 #was 4, but IC was halved
+			super_heavy_tank_aa_chassis = 16 #was 4, but IC was halved
 		}
 		manpower = 1000
 		max_organisation = 31

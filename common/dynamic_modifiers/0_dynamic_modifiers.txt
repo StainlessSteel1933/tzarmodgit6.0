@@ -890,6 +890,7 @@ SOV_barb_debuff_dynamic_modifier = { #NATIONAL SPIRIT
 	army_attack_factor = SOV_barb_debuff_army_attack_factor
 	army_defence_factor = SOV_barb_debuff_army_defence_factor
 	max_planning = SOV_barb_debuff_max_planning
+	army_org_regain = SOV_barb_debuff_army_org_regain
 
 	air_superiority_efficiency = SOV_barb_debuff_air_superiority_efficiency
 	army_bonus_air_superiority_factor = SOV_barb_debuff_army_bonus_air_superiority_factor

@@ -605,45 +605,6 @@ technologies = {
 		}
 	}
 
-	main_battle_tank_chassis = { #E-50
-		special_project_specialization = { specialization_land }
-		enable_equipments = {
-			modern_tank_chassis_1
-			modern_tank_destroyer_chassis_1
-			modern_tank_artillery_chassis_1
-			modern_tank_aa_chassis_1
-		}
-		enable_subunits = {
-			modern_armor
-		}
-
-		research_cost = 2.5
-		start_year = 1945
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1946.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1947.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1948.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
 
 
 	basic_heavy_tank_chassis = { #Grosstraktor
@@ -1571,6 +1532,8 @@ mio_cat_tech_light_armor_and_modules
 		enable_equipment_modules = {
 			tank_medium_cannon_3
 			tank_anti_air_cannon_3		
+			tank_rocket_launcher
+			tank_auto_cannon_3
 		}
 
 		research_cost = 0.5
@@ -1623,8 +1586,7 @@ mio_cat_tech_light_armor_and_modules
 		enable_equipment_modules = {	
 			dozer_blade
 			auto_loader
-			secondary_turret_small_cannon
-			tank_auto_cannon_3 
+			secondary_turret_small_cannon 
 			hvap_ammo
 			wet_ammo_storage
 		}
@@ -1774,6 +1736,7 @@ mio_cat_tech_light_armor_and_modules
 			tank_high_velocity_cannon_3		
 			tank_anti_air_cannon_3
 			tank_small_cannon_3
+			tank_auto_cannon_3
 		}
 
 		research_cost = 0.5
@@ -1796,7 +1759,7 @@ mio_cat_tech_light_armor_and_modules
 	}
 		radio_tech_1 = {
 			special_project_specialization = { specialization_land }
-		enable_equipment_modules = { 
+			enable_equipment_modules = { 
 			tank_radio_1
 			lc_radio_1
 		}
@@ -1819,8 +1782,9 @@ mio_cat_tech_light_armor_and_modules
 
 		categories = {
 			tank_modules
-mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 			armor
+			electronics
 		}
 	}	
 	
@@ -1849,8 +1813,9 @@ mio_cat_tech_light_armor_and_modules
 
 		categories = {
 			tank_modules
-mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 			armor
+			electronics
 		}
 	}	
 	radio_tech_3 = {
@@ -1861,43 +1826,8 @@ mio_cat_tech_light_armor_and_modules
 			lc_radio_3
 		}
 		allow = {
-			#date > 1941.1.1
-			OR = {
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = HORST_ENABLE_FREE_RESEARCH
-				}
-				AND = { 
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = HORST_DISABLE_LIMIT_1940
-				}
-				date > 1940.1.1
-				}
-				AND = { 
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = HORST_DISABLE_LIMIT_1941
-				}
-				date > 1941.1.1
-				}
-				AND = { 
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = SR_tank_limit_barbarossa
-				}
-				date > 1941.6.1
-				}
-					AND = { 
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = HORST_DISABLE_LIMIT_1942
-				}
-				date > 1942.1.1
-				}
-			}
 		}
-		research_cost = 0.4
+		research_cost = 1.2
 		start_year = 1942
 		folder = {
 			name = nsb_armour_folder
@@ -1910,8 +1840,65 @@ mio_cat_tech_light_armor_and_modules
 
 		categories = {
 			tank_modules
-mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
 			armor
 		}
+	}
+		
+
+
+		main_battle_tank_chassis = { #E-50
+
+		enable_equipments = {
+			modern_tank_chassis_1
+			modern_tank_destroyer_chassis_1
+			modern_tank_artillery_chassis_1
+			modern_tank_aa_chassis_1
+		}
+		enable_subunits = {
+			modern_armor
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = @1945 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > 1946.1.1
+			}
+
+			modifier = {
+				factor = 2
+				date > 1947.1.1
+			}
+
+			modifier = {
+				factor = 2
+				date > 1948.1.1
+			}
+
+			modifier = {
+				factor = 6
+				# Centurion was designed and entered production in 1945-1946
+				tag = ENG
+				date > 1944.9.1
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
 	}
 }

@@ -38,281 +38,14 @@ division_template = {
 
 units = {
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-		
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
-		division_template = "Siberian Reinforcements"	
-		start_experience_factor = 0.6
-		start_equipment_factor = 1
-		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
-	}
-	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
@@ -320,266 +53,266 @@ units = {
 		
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
@@ -587,70 +320,337 @@ units = {
 		
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
 		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
 	}
 	division= {			
-		location = 7375
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+		
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
+		division_template = "Siberian Reinforcements"	
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SOV" } }
+	}
+	division= {			
+		location = 11225
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
 		start_equipment_factor = 1

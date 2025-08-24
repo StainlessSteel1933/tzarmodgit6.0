@@ -174,7 +174,7 @@ buildings = {
 		value = 1
 		infrastructure_construction_effect = yes
 		level_cap = {
-			province_max = 10
+			province_max = 15
 		}		
 	}
 
@@ -190,7 +190,7 @@ buildings = {
 		value = 1
 		infrastructure_construction_effect = yes
 		level_cap = {
-			province_max = 10
+			province_max = 5
 		}
 	}
 

@@ -1,3 +1,5 @@
+-- If you're reading this, don't say anything about this, this is a secret between us (๑>؂•̀๑) (decreased from 4.5 vanilla value to 4.0).
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.3
 NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999			
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999
 NDefines.NDiplomacy.EMBARGO_COST = 9999

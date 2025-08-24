@@ -1,0 +1,25 @@
+l_english:
+ # Base Modifiers
+ YUG_base_eco:0 "Modify §YInternal Politics§! by"
+ YUG_base_politics:0 "Modify §YPolitical Landscape§! by"
+ YUG_base_army:0 "Modify §YYugoslavian Army§! by"
+
+ # Internal Divide Tooltips
+ YUG_internal_divide_reduction_small:0 "$YUG_base_eco$ \nPolitical Power Gain: §G+5.00%§!\nStability: §G+2.50%§!\nConsumer Goods: §Y-2.00%§!\n\n"
+ YUG_internal_divide_reduction_medium:0 "$YUG_base_eco$ \nPolitical Power Gain: §G+7.50%§!\nStability: §G+5.00%§!\nConsumer Goods: §Y-4.00%§!\n\n"
+ YUG_internal_divide_reduction_large:0 "$YUG_base_eco$ \nPolitical Power Gain: §G+10.00%§!\nStability: §G+7.50%§!\nConsumer Goods: §Y-6.00%§!\n\n"
+ YUG_internal_divide_reduction_very_large:0 "$YUG_base_eco$ \nPolitical Power Gain: §G+15.00%§!\nStability: §G+10.00%§!\nConsumer Goods: §Y-8.00%§!\n\n"
+ YUG_internal_divide_increase:0 "$YUG_base_eco$ \nPolitical Power Gain: §R-5.00%§!\nStability: §R-2.50%§!\nConsumer Goods: §Y+4.00%§!\n\n"
+ YUG_internal_divide_increase_large:0 "$YUG_base_eco$ \nPolitical Power Gain: §R-10.00%§!\nStability: §R-5.00%§!\nConsumer Goods: §Y+8.00%§!\n\n"
+
+ # Political Divide Tooltips
+ YUG_political_divide_reduction_small:0 "$YUG_base_politics$ \nPolitical Power Gain: §G+5.00%§!\nStability: §G+2.50%§!\nAdvisor Cost: §Y-2.00%§!\n\n"
+ YUG_political_divide_reduction_medium:0 "$YUG_base_politics$ \nPolitical Power Gain: §G+7.50%§!\nStability: §G+5.00%§!\nAdvisor Cost: §Y-4.00%§!\n\n"
+ YUG_political_divide_reduction_large:0 "$YUG_base_politics$ \nPolitical Power Gain: §G+10.00%§!\nStability: §G+7.50%§!\nAdvisor Cost: §Y-6.00%§!\n\n"
+ YUG_political_divide_reduction_very_large:0 "$YUG_base_politics$ \nPolitical Power Gain: §G+15.00%§!\nStability: §G+10.00%§!\nAdvisor Cost: §Y-8.00%§!\n\n"
+ YUG_political_divide_increase:0 "$YUG_base_politics$ \nPolitical Power Gain: §R-5.00%§!\nStability: §R-2.50%§!\nAdvisor Cost: §Y+4.00%§!\n\n"
+ YUG_political_divide_increase_large:0 "$YUG_base_politics$ \nPolitical Power Gain: §R-10.00%§!\nStability: §R-5.00%§!\nAdvisor Cost: §Y+8.00%§!\n\n"
+
+ # Army Tooltips
+ YUG_army_improvement_medium:0 "$YUG_base_army$ \nOrganization: §G+5.00%§!\nMorale: §G+5.00%§!\nExperience Gain: §G+10.00%§!\nTraining Time: §Y-5.00%§!\n\n"
+ YUG_army_improvement_large:0 "$YUG_base_army$ \nOrganization: §G+10.00%§!\nMorale: §G+10.00%§!\nExperience Gain: §G+15.00%§!\nTraining Time: §Y-10.00%§!\n\n" 

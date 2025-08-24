@@ -59,8 +59,8 @@ on_actions = {
 				set_variable={host = JAP.id}
 			}
 			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = MAN}}
-				set_variable={host = MAN.id}
+				limit = {has_game_rule = {rule = horst_host_country option = MIN}}
+				set_variable={host = MIN.id}
 			}
 			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = SOV}}

@@ -11,7 +11,7 @@ characters={
 			idea_token = MAN_yonimitsu_kasahara
 			ledger = army
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			traits = {
 				army_regrouping_2
@@ -35,7 +35,7 @@ characters={
 			idea_token = MAN_kyoiji_tomonaga
 			ledger = army
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			traits = {
 				army_infantry_2
@@ -59,7 +59,7 @@ characters={
 			idea_token = MAN_hesehn_tiemei
 			ledger = army
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			traits = {
 				army_logistics_2
@@ -78,7 +78,7 @@ characters={
 				small="gfx/interface/ideas/idea_MAN_zhang_haipeng.dds"
 			}
 			army={
-				large="gfx/leaders/MAN/portrait_man_zhang_haipeng.dds"
+				large="gfx/leaders/MIN/portrait_man_zhang_haipeng.dds"
 			}
 		}
 		
@@ -116,7 +116,7 @@ characters={
 			idea_token = MAN_hung_zhehuang
 			ledger = army
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			
 			traits = {
@@ -141,7 +141,7 @@ characters={
 			idea_token = MAN_shigeru_honjo
 			ledger = army
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			traits = {
 				army_armored_2
@@ -217,7 +217,7 @@ characters={
 			slot = political_advisor
 			idea_token = MAN_kenkichi_ueda
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			traits = {
 				war_industrialist 
@@ -251,7 +251,7 @@ characters={
 			slot = political_advisor
 			idea_token = MAN_harukichi_hyakutake
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			traits = {
 				silent_workhorse 
@@ -286,7 +286,7 @@ characters={
 			slot = political_advisor
 			idea_token = MAN_tomoyuki_yamashita
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			traits = {
 				captain_of_industry 
@@ -321,7 +321,7 @@ characters={
 			slot = high_command
 			idea_token = MAN_hisaichi_terauchii
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			traits = {
 				army_armored_3 
@@ -355,7 +355,7 @@ characters={
 			slot = political_advisor
 			idea_token = MAN_seishiro_itagaki
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			traits = {
 				smooth_talking_charmer 
@@ -390,7 +390,7 @@ characters={
 			slot = army_chief
 			idea_token = MAN_shunroku_hata
 			allowed = {
-				original_tag = MAN
+				original_tag = MIN
 			}
 			traits = {
 				army_chief_offensive_2 
@@ -836,7 +836,7 @@ characters={
 				small="gfx/interface/ideas/idea_MAN_yoshiko_kawashima.dds"
 			}
 			army={
-				large="gfx/leaders/MAN/portrait_man_yoshiko_kawashima.dds"
+				large="gfx/leaders/MIN/portrait_man_yoshiko_kawashima.dds"
 			}
 		}
 		corps_commander={
@@ -853,7 +853,7 @@ characters={
 		name="Aisin Gioro Puyi"
 		portraits={
 			civilian={
-				large="gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+				large="gfx/leaders/MIN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 			}
 		}
 		country_leader={

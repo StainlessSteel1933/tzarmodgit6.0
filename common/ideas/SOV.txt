@@ -4662,7 +4662,7 @@ ideas = {
 					AND = {
 						OR = {
 							is_literally_china = yes
-							tag = MAN
+							tag = MIN
 						}
 						has_dlc = "Waking the Tiger"
 					}
@@ -4686,7 +4686,7 @@ ideas = {
 					limit = {
 						OR = {
 							is_literally_china = yes
-							tag = MAN
+							tag = MIN
 						}
 					}
 					has_completed_focus = CHI_hire_soviet_designer
