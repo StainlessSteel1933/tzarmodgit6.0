@@ -10,10 +10,30 @@ if = {
 		set_naval_oob = "YUG_1936_naval_legacy"
 	}
 }
+add_dynamic_modifier = { modifier = YUG_internal_divide }
+add_dynamic_modifier = { modifer = YUG_navy }
+add_dynamic_modifier = { modifier = YUG_army }
+# xyz chatgpt modding lol
+# never use chatgpt to make dynamic modifers again :SKULL:
+set_variable = { YUG_pp_internal_divide = 0 }
+set_variable = { YUG_stab_internal_divide = -0.1 }
+set_variable = { YUG_cg_internal_divide = 0 }
+set_variable = { YUG_resist_internal_divide = 0 }
+set_variable = { YUG_resources_internal_divide = 0 }
+set_variable = { YUG_eff_gain = 0 }
+set_variable = { YUG_cap = 0 }
+set_variable = { YUG_civ_speed = 0 }
+set_variable = { YUG_output = 0 }
+set_variable = { YUG_communism_drift = 0 }
 
+set_variable = { YUG_org_army = 0 }
+set_variable = { YUG_conscription_army = -0.5 }
+set_variable = { YUG_army_attack = 0 }
+
+set_variable = { YUG_navy_industrial_capacity_dockyard = -0.25 }
 set_research_slots = 3
 add_timed_idea = { idea = GER_mefo_bills_1 days = 1330 }
-add_ideas = COOM_volunteers_minors
+add_ideas = { COOM_volunteers_minors YUG_naval_treaty_idea }
 
 add_to_tech_sharing_group = axis_research 
 
@@ -196,14 +216,19 @@ recruit_character = CRO_ante_vokic
 recruit_character = CRO_peter_williams
 recruit_character = CRO_john_wilson
 recruit_character = CRO_peter_walker
-recruit_character = CRO_vladimir_pavlec
-recruit_character = CRO_ivan_subasic
-recruit_character = CRO_alojzije_stepinac
+#recruit_character = CRO_vladimir_pavlec
+#recruit_character = CRO_ivan_subasic
+#recruit_character = CRO_alojzije_stepinac
 recruit_character = CRO_gaspar_njegovan
 recruit_character = CRO_vladimir_kren
 recruit_character = CRO_djuro_jakcin
 recruit_character = CRO_sismundo_pejacevic
-
+recruit_character = YUG_military_occuption
+recruit_character = MNT_blazo_dukanovic
+recruit_character = YUG_milan_nedic
+recruit_character = YUG_draza_mihailovic
+recruit_character = YUG_dimitrije_ljotic
+recruit_character = YUG_germogen_maximov
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #

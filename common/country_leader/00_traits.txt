@@ -4094,8 +4094,8 @@ tank_refurbishment_plant = { #NSB
 	reichs_prop = {
 		sprite = 13
 		war_support_factor = 0.10 
-		fascism_drift = 0.75
-		stability_weekly = 0.005
+		fascism_drift = 0.15
+		#stability_weekly = 0.005
 
 		ai_will_do = {
 			factor = 1
@@ -8285,5 +8285,49 @@ tank_refurbishment_plant = { #NSB
 		fascism_drift = 0.1
 		opinion_gain_monthly_same_ideology_factor = 0.75
 	}
+	ITA_tomislav_of_croatia = {
+		random = no
+		#stability_factor = -0.25
+		political_power_factor = 0.15
+		#naval_coordination = 0.2
+		#army_breakthrough_against_minor_factor = 0.3
 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	BBA_ALB_fascist_lawyer = { 
+		random = no 
+		
+		political_power_gain = 0.25
+		consumer_goods_factor = -0.10
+		puppet_cost_factor = -0.4
+		
+		ai_will_do = {
+			factor = 1
+		}
+	} 
+
+	ITA_head_of_the_national_committee = { 
+		random = no 
+		
+		war_support_factor = 0.1
+		modifier_army_sub_unit_mountaineers_attack_factor = 0.1
+		modifier_army_sub_unit_mountaineers_speed_factor = 0.1
+		modifier_army_sub_unit_mountaineers_max_org_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	YUG_chetnik_trait = { 
+		random = no
+		communism_drift = -0.1
+		war_support_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

@@ -7331,9 +7331,16 @@ completion_reward = {
 	transfer_state = 916
 	transfer_state = 914
 	transfer_state = 915
+	transfer_state = 104
+	transfer_state = 103
+	transfer_state = 902
+	transfer_state = 901
+	transfer_state = 109
+	transfer_state = 804
+	transfer_state = 764
 			YUG = {
-				complete_national_focus = CRO_emergency_powers_to_pavlec
-					set_cosmetic_tag = YUG_CRO	
+				complete_national_focus = YUG_Political_1
+					#set_cosmetic_tag = YUG_CRO	
 					set_politics = {
 						ruling_party = fascism
 						elections_allowed = no
@@ -7386,20 +7393,20 @@ completion_reward = {
 				transfer_state = 803
 				transfer_state = 184
 			}
-			every_country = {
-				limit = {
-					owns_state = 82
-				}
-				transfer_state = 764
-			}
+			#every_country = {
+			#	limit = {
+			#		owns_state = 82
+			#	}
+			#	transfer_state = 764
+			#}
 			if = {
-				limit = {
-					ROM = {
-						NOT = {
-							has_completed_focus = ROM_codreanus_iron_guard
-						}
-					}
-				}
+				#limit = {
+				#	ROM = {
+				#		NOT = {
+				#			has_completed_focus = ROM_codreanus_iron_guard
+				#		}
+				#	}
+				#}
 				every_country = {
 					limit = {
 						owns_state = 211
@@ -7414,15 +7421,15 @@ completion_reward = {
 			#ITA = { annex_country = { target = GRE transfer_troops = no } }
 			ITA = {
 				transfer_state = 802 transfer_state = 105 transfer_state = 853
-				transfer_state = 108 transfer_state = 107
+				transfer_state = 107
 			
 				transfer_state = 731 transfer_state = 185 transfer_state = 47
 				transfer_state = 186 transfer_state = 187
 			}
 			GER = {
 				transfer_state = 102
-				puppet = {
-					target = YUG}
+				#puppet = {
+				#	target = YUG}
 			}
 			# handles When germany has annexed hungary, so they get vojvodina
 			every_country = {

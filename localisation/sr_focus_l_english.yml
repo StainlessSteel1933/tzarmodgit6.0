@@ -1,4 +1,66 @@
 ﻿l_english:
+ # Base Modifiers
+ YUG_base_eco:0 "Modify §YInternal Politics§! by"
+ YUG_base_politics:0 "Modify §YPolitical Landscape§! by"
+ YUG_base_army:0 "Modify §YYugoslavian Army§! by"
+
+ # Internal Divide Tooltips
+ YUG_internal_divide_reduction_small:0 "$YUG_base_eco$ \nPolitical Power Gain: §G+5.00%§!\nStability: §G+2.50%§!\nConsumer Goods: §Y-2.00%§!\n\n"
+ YUG_internal_divide_reduction_medium:0 "$YUG_base_eco$ \nPolitical Power Gain: §G+7.50%§!\nStability: §G+5.00%§!\nConsumer Goods: §Y-4.00%§!\n\n"
+ YUG_internal_divide_reduction_large:0 "$YUG_base_eco$ \nPolitical Power Gain: §G+10.00%§!\nStability: §G+7.50%§!\nConsumer Goods: §Y-6.00%§!\n\n"
+ YUG_internal_divide_reduction_very_large:0 "$YUG_base_eco$ \nPolitical Power Gain: §G+15.00%§!\nStability: §G+10.00%§!\nConsumer Goods: §Y-8.00%§!\n\n"
+ YUG_internal_divide_increase:0 "$YUG_base_eco$ \nPolitical Power Gain: §R-5.00%§!\nStability: §R-2.50%§!\nConsumer Goods: §Y+4.00%§!\n\n"
+ YUG_internal_divide_increase_large:0 "$YUG_base_eco$ \nPolitical Power Gain: §R-10.00%§!\nStability: §R-5.00%§!\nConsumer Goods: §Y+8.00%§!\n\n"
+
+ # Political Divide Tooltips
+ YUG_political_divide_reduction_small:0 "$YUG_base_politics$ \nPolitical Power Gain: §G+5.00%§!\nStability: §G+2.50%§!\nAdvisor Cost: §Y-2.00%§!\n\n"
+ YUG_political_divide_reduction_medium:0 "$YUG_base_politics$ \nPolitical Power Gain: §G+7.50%§!\nStability: §G+5.00%§!\nAdvisor Cost: §Y-4.00%§!\n\n"
+ YUG_political_divide_reduction_large:0 "$YUG_base_politics$ \nPolitical Power Gain: §G+10.00%§!\nStability: §G+7.50%§!\nAdvisor Cost: §Y-6.00%§!\n\n"
+ YUG_political_divide_reduction_very_large:0 "$YUG_base_politics$ \nPolitical Power Gain: §G+15.00%§!\nStability: §G+10.00%§!\nAdvisor Cost: §Y-8.00%§!\n\n"
+ YUG_political_divide_increase:0 "$YUG_base_politics$ \nPolitical Power Gain: §R-5.00%§!\nStability: §R-2.50%§!\nAdvisor Cost: §Y+4.00%§!\n\n"
+ YUG_political_divide_increase_large:0 "$YUG_base_politics$ \nPolitical Power Gain: §R-10.00%§!\nStability: §R-5.00%§!\nAdvisor Cost: §Y+8.00%§!\n\n"
+
+ # Army Tooltips
+ YUG_army_improvement_medium:0 "$YUG_base_army$ \nOrganization: §G+5.00%§!\nMorale: §G+5.00%§!\nExperience Gain: §G+10.00%§!\nTraining Time: §Y-5.00%§!\n\n"
+ YUG_army_improvement_large:0 "$YUG_base_army$ \nOrganization: §G+10.00%§!\nMorale: §G+10.00%§!\nExperience Gain: §G+15.00%§!\nTraining Time: §Y-10.00%§!\n\n" 
+
+
+ FRA_base_eco:0 "Modify §YFrench Economy§! by"
+ FRA_base_politics:0 "Modify §YFrench Politics§! by"
+ FRA_base_army:0 "Modify §YFrench Army§! by"
+ FRA_decrease_instability:0 "Decreases Political Instability by §G1§!\n\n"
+ FRA_women:0 "$FRA_base_politics$ Political Power Gain: §G+7.50%§! \nIncreases Political Instability by §R1§!\n\n"
+ FRA_afrika:0 "Increases Political Instability by §R1§!\n\n"
+
+ FRA_small_eco_upgrade:0 "$FRA_base_eco$ \n§YFactory Output§!: §G+5.00%§! \n\n"
+ FRA_big_upgrade_eco:0 "$FRA_base_eco$ \nConsumer Goods Factories: §Y-4.00%§! \nProduction Efficiency Cap: §G+2.50%§!\nFactory Output: §G+2.50%§! \n\n"
+ FRA_cg_upgrade:0 "$FRA_base_eco$ \nConsumer Goods: §Y-8.00%§! \n\n"
+ FRA_cg_increase:0 "$FRA_base_eco$ \nConsumer Goods: §Y+15.00%§! \n\n"
+ FRA_stability:0 "$FRA_base_politics$ Daily Political Power Gain by: §G+0.50§! \n\n"
+ FRA_decrease_instability_BIG:0 "Deccreases Political Instability by §G2§!\n\n"
+ FRA_warsupport_weekly:0 "$FRA_base_army$ \nWeekly War Support Gain: §G0.50%§! \n\n"
+ FRA_increase_foutput:0 "$FRA_base_eco$ \nFactory Output: §G+7.50%§! \n\n"
+ FRA_wages:0 "$FRA_base_eco$ \nConsumer Goods Factories: §Y10.00%§!\nFactory Output: §G+5.00%§! \n\n"
+ FRA_extraction_eff:0 "$FRA_base_eco$ \nResources Extraction Efficiency: §G+10.00%§! \n\n"
+ FRA_anti_minor:0 "$FRA_base_army$ \nDefense Against Minor Countries: §G+15.00%§! \n\n"
+ FRA_army_reform1:0 "$FRA_base_army$ \nExperience Gain: §G+65.00%§! \nWeekly War Support Gain: §G+0.50%§!\n\n"
+ FRA_weather_attrition:0 "$FRA_base_army$ \nHeat Attrition: §G-10.00%§! \nWinter Attrition §G-10.00%§!"
+ FRA_tank_buff:0 "$FRA_base_army$ \nAttack: §G+4.00%§!"
+ FRA_oil_consumption:0 "$FRA_base_army$ \Army Oil Consumption: §G-25.00%§!"
+ FRA_dynamic_market:0 "$FRA_base_eco$ \nProduction Efficiency Cap: §G+10.00%§!\nFactory Output: §G+10.00%§! \n\n"
+ FRA_big_upgrade_eco:0 "$FRA_base_eco$ \nConsumer Goods Factories: §Y-8.00%§!\nFactory Output: §G+7.50%§! \n\n"
+ FRA_increase_support_for_right:0 "Increases Support for §BNational Union§! by §G15§!."
+ FRA_right_side_eco_from_focus:0 "$FRA_base_eco$ \nConsumer Goods Factor: §Y-8.00%§! \nFacotry Output §G+7.50%§\n\n"
+ FRA_entrepenuership:0 "$FRA_base_eco$ \nConsumer Goods Factor: §Y-8.00%§! \nFacotry Output §G+10.00%§!\nProduction Efficiency Retention §G+7.50%§!\n\n"
+ FRA_bop_left_side:0 "Country is in chaos!"
+ FRA_bop_right_side:0 "Country is stable."
+
+
+
+
+ # Army Tooltips
+ YUG_army_improvement_medium:0 "Significantly improves army organization and effectiveness"
+ YUG_army_improvement_large:0 "Greatly improves army organization and effectiveness" 
   news.813.d:0 "Congratulations!!!\n\nYou've won the cannon bonus!!!\n\n\n                                                               £steam2_texticon"
  news.814.t:0 "The Liberation of Kiev"
  news.814.d:0 "Kiev, the capital of Soviet Ukraine, has been liberated by Red Army forces after bitter fighting. German troops have retreated or been captured, and Soviet soldiers were met with tears and cheers from residents who endured two years of occupation. Though parts of the city lie in ruins, major landmarks have survived. The red Soviet flag now flies once more over Kiev, marking a significant victory on the Eastern Front and a powerful symbol of Soviet resistance and hope."
