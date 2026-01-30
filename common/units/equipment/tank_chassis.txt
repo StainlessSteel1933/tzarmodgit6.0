@@ -18,7 +18,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_flamethrower
+
 				}
 			}
 
@@ -114,10 +114,6 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_secondary_turret
-			count < 2
-		}
-		module_count_limit = {
-			category = 
 			count < 2
 		}
 		module_count_limit = {
@@ -331,7 +327,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_flamethrower
+				
 				}
 			}
 
@@ -365,7 +361,7 @@ equipments = {
 			layout_type_slot = {
 			    required = yes
 				allowed_module_categories = {
-					tank_armor_layout
+					
 				}
 			}			
 
@@ -432,7 +428,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_small_main_armament
 					tank_medium_main_armament
-					tank_flamethrower
+	
 				}
 			}
 
@@ -536,10 +532,6 @@ equipments = {
 		module_count_limit = {
 			category = tank_radio_module
 			count < 2
-		}
-		module_count_limit = {
-			category = 
-			count < 2 #one secondary turrets only
 		}
 		module_count_limit = {
 			module = amphibious_drive
@@ -738,8 +730,6 @@ equipments = {
 				allowed_module_categories = {
 					tank_small_main_armament
 					tank_medium_main_armament
-					tank_medium_main_armament_3
-					tank_flamethrower
 				}
 			}
 
@@ -748,7 +738,6 @@ equipments = {
 				allowed_module_categories = {
 					tank_light_turret_type
 					tank_medium_turret_type
-					tank_medium_turret_type_3
 				}
 			}
 
@@ -825,7 +814,7 @@ equipments = {
 		}
 		default_modules = {
 			main_armament_slot = empty
-			turret_type_slot = tank_medium_turret_type_3
+			turret_type_slot = tank_medium_three_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_welded_armor
 			engine_type_slot = tank_gasoline_engine
@@ -854,7 +843,6 @@ equipments = {
 					tank_small_main_armament
 					tank_medium_main_armament
 					tank_heavy_main_armament
-					tank_flamethrower
 				}
 			}
 
@@ -1134,10 +1122,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_small_main_armament
 					tank_medium_main_armament
-					tank_medium_main_armament_3
 					tank_heavy_main_armament
-					tank_heavy_main_armament_3
-					tank_flamethrower
 				}
 			}
 
@@ -1247,10 +1232,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_small_main_armament
 					tank_medium_main_armament
-					tank_medium_main_armament_3
 					tank_heavy_main_armament
-					tank_heavy_main_armament_3
-					tank_flamethrower
 				}
 			}
 
@@ -1705,10 +1687,6 @@ super_heavy_tank_chassis = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
-			count < 2
-		}
-		module_count_limit = {
-			category = 
 			count < 2
 		}
 		module_count_limit = {

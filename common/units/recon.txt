@@ -309,6 +309,12 @@ sub_units = {
 			light_tank_chassis
 		}
 
+		# Couldn't decide on what to modify.
+		# battalion_mult = {
+		# 	category = category_all_armor
+		# 	soft_attack = 0.10
+		# }
+		
 		need = {
 			light_tank_chassis = 24
 		}
