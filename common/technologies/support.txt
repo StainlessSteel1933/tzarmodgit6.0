@@ -155,6 +155,14 @@ technologies = {
 				attack = 0.1
 			}
 		}
+		armored_engineer = {
+			entrenchment  = 2
+			
+			fort = {
+				defence = 0.10
+				attack = 0.05
+			}
+		}
 
 		
 		enable_subunits = {
@@ -202,6 +210,21 @@ technologies = {
 		special_project_specialization = { specialization_land }
 		engineer = {
 			entrenchment  = 2
+			river = {
+				attack = 0.1	
+				defence = 0.10
+			}
+		}
+		assault_engineer = {
+			breakthrough = 0.3
+			river = {
+				attack = 0.1	
+				defence = 0.10
+			}
+		}
+		armored_engineer = {
+			entrenchment  = 2
+			
 			river = {
 				attack = 0.1	
 				defence = 0.10

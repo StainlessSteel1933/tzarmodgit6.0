@@ -240,7 +240,7 @@ sub_units = {
 		breakthrough = 1.5 # more than reg engineers (0.5)
 
 		# Support nerfs to combat abilities
-		soft_attack = -0.5
+		soft_attack = -0.1
 
 		can_be_parachuted = no
 
@@ -255,44 +255,32 @@ sub_units = {
 		}
 
 		forest = {
-			attack = 0.05 #More than reg eng (0)
-			defence = 0.1 #Less than reg engineers (0.25)
+			defence = 0.075
+			movement = 0.05
 		}
 
 		hills = {
-			attack = 0.05 # more than reg engineers (0)
-			defence = 0.1
+			defence = 0.075
 		}
 
 		jungle = {
-			attack = 0.05
-			defence = 0.1 #Less than reg engineers (0.25)
+			defence = 0.075
 		}
 
 		marsh = {
-			attack = 0.05 #More than reg eng (0)
-			defence = 0.1 #Less than reg engineers (0.25)
-			movement = 0.1 #Less than reg engineers (0.25)
+			attack = 0.1
+			defence = 0.1
+			movement = 0.2
 		}
 
 		fort = {
-			attack = 0.25 #More than reg engineers (0.1)
-			defence = 0.05 #Less than reg engineers (0.25)
+			attack = 0.075
+			defence = 0.15
 		}
 
 		river = {
-			attack = 0.05 #More than reg engineers (0)
-			defence = 0.1 #Less than reg engineers (0.25)
-			movement = 0.25
-		}
-
-		amphibious = {
-			attack = 0.2
-		}
-
-		urban = {
-			attack = 0.15 
-			movement = 0.05 #More than reg engineers (0)
+			attack = 0.075
+			movement = 0.15
 		}
 
 		same_support_type = engineer
@@ -370,51 +358,32 @@ sub_units = {
 		}
 
 		forest = {
-			defence = 0.075
-			movement = 0.05 
-		}
-
-		plains = {
-			movement = 0.05 #More than reg engineers (0)
-		}
-
-		desert = {
-			movement = 0.05 #More than reg engineers (0)
+			defence = 0.12
+			movement = 0.05
 		}
 
 		hills = {
-			defence = 0.1 #Same as reg engineers (0.1)
-			movement = 0.05 #More than reg engineers (0)
+			defence = 0.075
 		}
 
 		jungle = {
-			attack = 0.1 #Defense swapped with attack because tanks in asia are canc*r
-			movement = 0.05 #More than reg eng (0)
+			defence = 0.075
 		}
 
 		marsh = {
-			defence = 0.1 #Less than reg engineers (0.25)
+			attack = 0.1
+			defence = 0.1
 			movement = 0.2
 		}
 
 		fort = {
-			attack = 0.15 #More than reg engineers (0.1)
+			attack = 0.075
 			defence = 0.25
 		}
 
 		river = {
-			attack = 0.1 #More than reg engineers (0)
-			movement = 0.30 #More than reg eng (0.25)
-		}
-
-		amphibious = {
-			attack = 0.2 #More than regular enginners (0.15)
-		}
-
-		urban = {
-			attack = 0.1 #More than regular enginners (0)
-			defence = 0.05 #More than reg eng (0)
-			movement = 0.05 #More than reg engineers (0)
+			defence = 0.1
+			movement = 0.15
 		}
 
 		same_support_type = engineer

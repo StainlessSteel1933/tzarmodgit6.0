@@ -2103,9 +2103,6 @@ technologies = {
 		enable_equipments = {
 			armored_car_chassis_1
 		}
-		armored_car_recon = {
-			recon = 1
-		}
 		enable_equipment_modules = {
 			car_three_man_tank_turret
 			car_three_man_tank_turret_aa
@@ -2156,9 +2153,6 @@ technologies = {
 		special_project_specialization = { specialization_land }
 		enable_equipments = {
 			armored_car_chassis_2
-		}
-		armored_car_recon = {
-			recon = 2
 		}
 		research_cost = 1
 		start_year = 1942
