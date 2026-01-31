@@ -3131,6 +3131,30 @@ SOV_arseniy_golovko={
 		}		
 	}
 
+	SOV_tong_shangzhi={
+		name="Tong Tong Shanghur"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Asia_Generic_2"
+			}
+		}
+		
+		field_marshal={
+			traits={ politically_connected organizer panzer_leader swamp_fox skilled_staffer panzer_expert logistics_wizard infantry_leader ranger infantry_expert urban_assault_specialist }
+			skill=6
+			attack_skill=7
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=socialism
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+
 	SOV_nikolay_ustryalov = {
 		name = SOV_nikolay_ustryalov
 		portraits = {

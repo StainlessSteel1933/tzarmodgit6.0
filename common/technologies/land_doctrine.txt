@@ -273,7 +273,7 @@ technologies = {
 		}
 		anti_tank_brigade = {
 			
-			default_morale = 1.0
+			default_morale = 0.1
 		}
 		
 		
@@ -345,16 +345,16 @@ technologies = {
 			combat_width = -1.0
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.1
-			breakthrough =0.1
+			soft_attack = 0.2
+			breakthrough =0.2
 		}	
 		medium_sp_artillery_brigade = {
 			soft_attack = 0.2
 			breakthrough =0.2
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.1
-			breakthrough =0.1
+			soft_attack = 0.2
+			breakthrough =0.2
 		}	
 		mech_at = {
 			hard_attack = 0.1

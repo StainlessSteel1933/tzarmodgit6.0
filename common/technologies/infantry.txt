@@ -878,6 +878,7 @@ technologies = {
 		special_project_specialization = { specialization_land }
 		enable_subunits = {
 			desertinfantry
+			camelry
 		}
 		
 		on_research_complete = {
@@ -915,6 +916,10 @@ technologies = {
 			max_organisation = 5
 			soft_attack = 0.05
 		}
+		camelry = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
 		path = {
 			leads_to_tech = desertinfantry_at3
 			research_cost_coeff = 1
@@ -937,6 +942,9 @@ technologies = {
 	desertinfantry_at3 = {
 		special_project_specialization = { specialization_land }
 		desertinfantry = {
+			max_organisation = 5
+		}
+		camelry = {
 			max_organisation = 5
 		}
 

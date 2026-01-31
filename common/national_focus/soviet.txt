@@ -1413,7 +1413,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6412,6 +6412,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			add_stability = 0.05
+			army_experience = 100
 			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
 			SOV_unlock_propaganda_campaign_slot_effect = yes
 		}

@@ -37,12 +37,6 @@ JAP_kure_naval_arsenal_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		FROM = {
-			OR = {
-				has_completed_focus = JAP_supremacy_of_the_battlefleet
-				has_completed_focus = JAP_the_ultimate_battleship
-			}
-		}
 	}
 }
 
@@ -146,15 +140,6 @@ JAP_mitsubishi_organization = {
 	
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = JAP } }
-			}
-			FROM = { NOT = { has_war_with = JAP } }
-		}
-		ELSE = {
-			FROM = { has_completed_focus = JAP_agility_focus }
-		}
 
 		IF = {
 			limit = {
@@ -177,7 +162,6 @@ JAP_aichi_organization = {
 		tag = JAP
 	}
 	available = {
-		FROM = { has_completed_focus = JAP_range_focus }
 	}
 }
 

@@ -11,7 +11,7 @@ GDU_Zaibatsu_category = {
 		}
 
 		available = {
-			has_completed_focus = JAP_guide_the_zaibatsus
+			has_completed_focus = JAP_fund_the_riken_institute
 			NOT = { has_idea = zaibatsu1 }
 		}
 
@@ -61,7 +61,7 @@ GDU_Zaibatsu_category = {
 		}
 
 		available = {
-			has_completed_focus = JAP_guide_the_zaibatsus
+			has_completed_focus = JAP_fund_the_riken_institute
 			NOT = { has_idea = zaibatsu2 }
 		}
 
@@ -111,7 +111,7 @@ GDU_Zaibatsu_category = {
 		}
 
 		available = {
-			has_completed_focus = JAP_guide_the_zaibatsus
+			has_completed_focus = JAP_fund_the_riken_institute
 			NOT = { has_idea = zaibatsu3 }
 		}
 
@@ -161,7 +161,7 @@ GDU_Zaibatsu_category = {
 		}
 
 		available = {
-			has_completed_focus = JAP_guide_the_zaibatsus
+			has_completed_focus = JAP_fund_the_riken_institute
 			NOT = { has_idea = zaibatsu4 }
 		}
 
