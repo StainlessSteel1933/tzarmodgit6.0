@@ -124,6 +124,11 @@ sub_units = {
 			defence = -0.4 
 			movement = -0.2
 		}
+		desert = {
+			attack = -0.15
+			movement = -0.15
+			defence = -0.15
+		}
 		mountain = 	{
 		    attack = -0.85
 			defence = -0.85
@@ -226,6 +231,11 @@ sub_units = {
 		river = { 
 			attack = -0.4 
 			movement = -0.4
+		}
+		desert = {
+			attack = -0.15
+			movement = -0.15
+			defence = -0.15
 		}
 		amphibious = { 
 			attack = -0.85

@@ -143,6 +143,11 @@
 			attack = -0.30
 			defence = -0.55
 		}
+		desert = {
+			attack = -0.15
+			movement = -0.15
+			defence = -0.15
+		}
 		river = { 
 			attack = -0.15
 			movement = -0.15	
@@ -202,6 +207,11 @@
 		    attack = -0.20
 			defence = -0.4 
 			movement = -0.2
+		}
+		desert = {
+			attack = -0.15
+			movement = -0.15
+			defence = -0.15
 		}
 		mountain = 	{
 		    attack = -0.85
