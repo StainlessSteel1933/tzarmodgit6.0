@@ -1970,9 +1970,9 @@ technologies = {
 			super_heavy_tank_destroyer_equipment_1
 		}
 
-		enable_subunits = {
-			super_heavy_tank_destroyer_brigade
-		}
+		# enable_subunits = {
+		# 	super_heavy_tank_destroyer_brigade
+		# }
 	
 		research_cost = 0.5
 		start_year = 1943

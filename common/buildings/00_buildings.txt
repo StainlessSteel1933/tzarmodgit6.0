@@ -170,6 +170,7 @@ buildings = {
 		per_level_extra_cost = 750
 		disabled_in_dmz = yes
 		icon_frame = 7
+		allied_build = yes
 		land_fort = 1
 		value = 1
 		infrastructure_construction_effect = yes
@@ -270,9 +271,7 @@ buildings = {
 			fuel_gain_from_states = 2.0 #per hour
 			}
 		}
-		allow = {
-			is_major = yes
-		}
+
 		level_cap = {
 			shares_slots = yes
 			state_max = 3
