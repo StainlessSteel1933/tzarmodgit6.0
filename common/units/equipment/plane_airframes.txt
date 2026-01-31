@@ -24,7 +24,7 @@ equipments = {
 		substitute = cv_small_plane_airframe
 		
 		interface_overview_category_index = 1
-		air_superiority = 1
+		#air_superiority = 1
 		reliability = 0.8
 		naval_strike_attack = 1
 		naval_strike_targetting = 7.5
@@ -712,7 +712,7 @@ equipments = {
 		interface_category = interface_category_air
 		interface_overview_category_index = 1
 
-		air_superiority = 1
+		#air_superiority = 1
 		reliability = 0.8
 		naval_strike_attack = 1
 		naval_strike_targetting = 7.5
@@ -1345,7 +1345,7 @@ equipments = {
 		interface_category = interface_category_air
 		
 		interface_overview_category_index = 4
-		air_superiority = 1.25
+		#air_superiority = 1.25
 		reliability = 0.8
 		naval_strike_attack = 1
 		naval_strike_targetting = 11.25

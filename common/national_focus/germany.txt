@@ -2883,7 +2883,7 @@ focus_tree = {
 			damage_control_2 = 1
 			improved_depth_charges = 1 
 			improved_sonar = 1 
-			improved_airplane_launcher = 1
+			#improved_airplane_launcher = 1
 			basic_cruiser_armor_scheme = 1
 			magnetic_detonator = 1
 			basic_light_shell = 1
@@ -3173,7 +3173,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				set_technology = { cruiser_submarines = 1 }
+				set_technology = { #cruiser_submarines = 1 }
 			}
 		}
 		
@@ -3206,7 +3206,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				set_technology = { cruiser_submarines = 1 }
+				set_technology = { #cruiser_submarines = 1 }
 			}
 		}
 	}
@@ -3434,18 +3434,18 @@ focus_tree = {
 				name_group = GER_BB_HISTORICAL
 				parent_version = 0
 				modules = {
-					fixed_ship_battery_slot = ship_heavy_battery_2
+					#fixed_ship_battery_slot = ship_heavy_battery_2
 					fixed_ship_anti_air_slot = ship_anti_air_2
 					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 					fixed_ship_radar_slot = empty
 					fixed_ship_engine_slot = heavy_ship_engine_3
 					fixed_ship_secondaries_slot = ship_anti_air_2
 					fixed_ship_armor_slot = ship_armor_bb_3
-					front_1_custom_slot = ship_heavy_battery_2
+					#front_1_custom_slot = ship_heavy_battery_2
 					mid_1_custom_slot = ship_secondaries_2
 					mid_2_custom_slot = ship_secondaries_2
 					mid_3_custom_slot = ship_secondaries_2
-					rear_1_custom_slot = ship_heavy_battery_2
+					#rear_1_custom_slot = ship_heavy_battery_2
 				}
 			}
 			hidden_effect = {
@@ -3492,18 +3492,18 @@ focus_tree = {
 				name_group = GER_BB_HISTORICAL
 				parent_version = 0
 				modules = {
-					fixed_ship_battery_slot = ship_heavy_battery_2
+					#fixed_ship_battery_slot = ship_heavy_battery_2
 					fixed_ship_anti_air_slot = ship_anti_air_2
 					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 					fixed_ship_radar_slot = empty
 					fixed_ship_engine_slot = heavy_ship_engine_3
 					fixed_ship_secondaries_slot = ship_anti_air_2
 					fixed_ship_armor_slot = ship_armor_bb_3
-					front_1_custom_slot = ship_heavy_battery_2
+					#front_1_custom_slot = ship_heavy_battery_2
 					mid_1_custom_slot = ship_secondaries_2
 					mid_2_custom_slot = ship_secondaries_2
 					mid_3_custom_slot = ship_secondaries_2
-					rear_1_custom_slot = ship_heavy_battery_2
+					#rear_1_custom_slot = ship_heavy_battery_2
 				}
 			}
 			hidden_effect = {

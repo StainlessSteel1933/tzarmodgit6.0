@@ -46,10 +46,7 @@ if = { limit = { country_exists = CRO }
     	modifier = stahlpakt
 	}
 }
-add_opinion_modifier = {
-	target = GER
-	modifier = german_trade_monopoly
-}
+
 
 
 set_research_slots = 3
@@ -95,8 +92,8 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		early_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
+		#early_ship_hull_submarine = 1
+		#basic_ship_hull_submarine = 1
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1

@@ -354,7 +354,7 @@ country_event = {
 				# if = { limit = { FRA = { has_tech = computing_machine } } set_technology = { computing_machine = 1 } }
 				# if = { limit = { FRA = { has_tech = improved_computing_machine } } set_technology = { improved_computing_machine = 1 } }
 				# #air doctrine
-				# if = { limit = { FRA = { has_tech = air_superiority } } set_technology = { air_superiority = 1 } }
+				# if = { limit = { FRA = { has_tech = air_superiority } } set_technology = { #air_superiority = 1 } }
 				# if = { limit = { FRA = { has_tech = dive_bombing } } set_technology = { dive_bombing = 1 } }
 				# if = { limit = { FRA = { has_tech = direct_ground_support } } set_technology = { direct_ground_support = 1 } }
 				# if = { limit = { FRA = { has_tech = hunt_and_destroy } } set_technology = { hunt_and_destroy = 1 } }

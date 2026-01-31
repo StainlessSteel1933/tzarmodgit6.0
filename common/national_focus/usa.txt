@@ -3611,7 +3611,7 @@ focus = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				set_technology = { cruiser_submarines = 1 }
+				set_technology = { #cruiser_submarines = 1 }
 			}
 		}
 	}

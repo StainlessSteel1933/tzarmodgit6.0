@@ -50,10 +50,7 @@ add_relation_modifier = {
     modifier = stahlpakt
 }
 
-add_opinion_modifier = {
-	target = GER
-	modifier = german_trade_monopoly
-}
+
 
 
 set_rule = { can_be_spymaster = no }
@@ -351,7 +348,7 @@ set_technology = { basic_train = 1
 	fuel_silos = 1
 	desertinfantry_at = 1
 	synth_oil_experiments = 1
-	armored_car_chassis_0 = 1
+	armored_car1 = 1
 	# armored_car1 = 1
 }
 
@@ -419,7 +416,7 @@ if = {
 	set_technology = {
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
+		#early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
@@ -427,17 +424,17 @@ if = {
 		early_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
+		#basic_medium_battery = 1
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 		smoke_generator = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
+		#basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_secondary_battery = 1
-		improved_airplane_launcher = 1
+		#improved_secondary_battery = 1
+		#improved_airplane_launcher = 1
 	}
 }
 
@@ -891,17 +888,17 @@ create_equipment_variant = {
 		name_group = ITA_BB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_2
+			#fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_2
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_2
-			fixed_ship_armor_slot = ship_armor_bb_2
-			front_1_custom_slot = ship_heavy_battery_2
+			#fixed_ship_armor_slot = ship_armor_bb_2
+			#front_1_custom_slot = ship_heavy_battery_2
 			mid_1_custom_slot = ship_airplane_launcher_2
 			mid_2_custom_slot = ship_anti_air_2
-			rear_1_custom_slot = ship_heavy_battery_2
+			#rear_1_custom_slot = ship_heavy_battery_2
 		}
 		obsolete = yes
 	}

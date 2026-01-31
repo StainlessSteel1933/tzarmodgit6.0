@@ -3,41 +3,52 @@ army_experience = 10
 navy_experience = 10
 air_experience = 2
 set_oob = "ENG_1936"
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_naval_oob = "ENG_1936_Naval"
-	else = {
-		set_naval_oob = "ENG_1936_Naval_Legacy"
-	}
-}
-
-
+# if = {
+# 	limit = {
+# 		has_dlc = "Man the Guns"
+# 	}
+# 	set_naval_oob = "ENG_1936_Naval"
+# 	else = {
+# 		set_naval_oob = "ENG_1936_Naval_Legacy"
+# 	}
+# }
 set_variable = {
-    var = min_fuel
-    value = 0.800
+	var = min_fuel
+	value = 0.8
 }
 
-add_intel = { target = SOV civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
-add_intel = { target = USA civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+add_intel = {
+	target = SOV
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
 
-add_timed_idea = { idea = france_production_regrowth days = 30 }
+add_intel = {
+	target = USA
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+
+add_timed_idea = {
+	idea = france_production_regrowth
+	days = 30
+}
 
 load_oob = "ENG_Motorized"
-
 set_research_slots = 4
-
 set_stability = 0.65
 set_war_support = 0.11
-
 # Starting tech
-set_technology = { 
+set_technology = {
 	basic_train = 1
-		infantry_weapons = 1
+	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
-	paratroopers = 1	
+	paratroopers = 1
 	shocktroops = 1
 	tech_engineers = 1
 	tech_recon = 1
@@ -53,48 +64,40 @@ set_technology = {
 	basic_light_tank_chassis = 1
 	improved_light_tank_chassis = 1
 	#improved_light_tank_chassis = 1  # PLACEHOLDER
-	basic_heavy_tank_chassis = 1  # PLACEHOLDER
+	basic_heavy_tank_chassis = 1	# PLACEHOLDER
 	#basic_medium_tank = 1 # PLACEHOLDER
 	iw_small_airframe = 1
-	camelry = 1 
+	camelry = 1
 	basic_small_airframe = 1
-
-	
-	
-		iw_medium_airframe = 1
-		basic_medium_airframe = 1
-					aa_lmg = 1`
-	
-
+	iw_medium_airframe = 1
+	basic_medium_airframe = 1
+	# aa_lmg = 1`
 	tech_field_hospital = 1
 	tech_mountaineers = 1
-	
 	trench_warfare = 1
-
-	
 	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
 	radio_detection = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
-
-	air_superiority = 1
-	forward_interception = 1 
-	fighter_ace_initiative = 1 
-	dive_bombing = 1
-	dogfighting_experience = 1
+	# #air_superiority = 1
+	# forward_interception = 1 
+	# fighter_ace_initiative = 1 
+	# dive_bombing = 1
+	# dogfighting_experience = 1
 	interwar_antitank = 1
-	multialtitude_flying = 1
-	dive_bombing = 1
+	# multialtitude_flying = 1
+	# dive_bombing = 1
 	armored_car1 = 1
 }
 
 # set_country_flag=fuel_system_enabled
-
 if = {
 	limit = {
-		not = { has_dlc = "Man the Guns" }
+		not = {
+			has_dlc = "Man the Guns"
+		}
 	}
 	set_technology = {
 		early_submarine = 1
@@ -108,15 +111,16 @@ if = {
 		transport = 1
 	}
 }
+
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		basic_ship_hull_submarine = 1
+		# #basic_ship_hull_submarine = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
+		# #early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
@@ -125,21 +129,22 @@ if = {
 		basic_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
+		# #basic_medium_battery = 1
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 		sonar = 1
 		smoke_generator = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
+		# #basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_airplane_launcher = 1
-		improved_secondary_battery = 1
-		cruiser_submarines = 1
+		#improved_airplane_launcher = 1
+		#improved_secondary_battery = 1
+		#cruiser_submarines = 1
 	}
 }
+
 add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
@@ -147,99 +152,116 @@ add_ideas = {
 	limited_conscription
 	COOM_volunteers_majors
 }
-	
-
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
 	amount = 15000
 	producer = ENG
-}  
+}
+
 add_equipment_to_stockpile = {
 	type = support_equipment
 	amount = 5500
 	producer = ENG
-} 
+}
+
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
 	amount = 7750
 	producer = ENG
-} 
+}
+
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 130000
 	producer = ENG
-} 
+}
+
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
 	amount = 19150
 	producer = ENG
-} 
+}
 
 # add_equipment_to_stockpile = {
 # 	type = light_tank_equipment_2
 # 	amount = 1440
 # 	producer = ENG
 # } 
-
 add_equipment_to_stockpile = {
-type = anti_air_equipment_1
-amount = 3500
-producer = ENG
+	type = anti_air_equipment_1
+	amount = 3500
+	producer = ENG
 }
 
+create_equipment_variant = {
+	name = "Hawker Hurricane"
+	type = small_plane_cas_airframe_1
+	modules = {
+		fixed_main_weapon_slot = tank_buster_1
+		fixed_auxiliary_weapon_slot_1 = tank_buster_1
+		engine_type_slot = engine_2_1x
+		special_type_slot_1 = lmg_defense_turret
+		special_type_slot_2 = dive_brakes_small
+	}
+}
 
 create_equipment_variant = {
-		name = "Hawker Hurricane"
-		type = small_plane_cas_airframe_1
-		modules = {
-			fixed_main_weapon_slot = tank_buster_1
-			fixed_auxiliary_weapon_slot_1 = tank_buster_1
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = lmg_defense_turret
-			special_type_slot_2 = dive_brakes_small
-		}
+	name = "Bristol Blenheim"
+	type = medium_plane_airframe_1
+	modules = {
+		fixed_main_weapon_slot = medium_bomb_bay
+		fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+		engine_type_slot = engine_2_2x
+		special_type_slot_1 = lmg_defense_turret_2x
+		special_type_slot_2 = lmg_defense_turret_2x
+		special_type_slot_3 = empty
+		special_type_slot_4 = empty
 	}
-		create_equipment_variant = {
-		name = "Bristol Blenheim"
-		type = medium_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-			engine_type_slot = engine_2_2x
-			special_type_slot_1 = lmg_defense_turret_2x
-			special_type_slot_2 = lmg_defense_turret_2x
-			special_type_slot_3 = empty
-			special_type_slot_4 = empty
-		}
+}
+
+create_equipment_variant = {
+	name = "Fairey Barracuda"
+	type = cv_small_plane_naval_bomber_airframe_1
+	modules = {
+		fixed_main_weapon_slot = torpedo_mounting
+		fixed_auxiliary_weapon_slot_1 = empty
+		engine_type_slot = engine_2_1x
+		special_type_slot_1 = lmg_defense_turret
+		special_type_slot_2 = empty
 	}
-		create_equipment_variant = {
-		name = "Fairey Barracuda"
-		type = cv_small_plane_naval_bomber_airframe_1
-		modules = {
-			fixed_main_weapon_slot = torpedo_mounting
-			fixed_auxiliary_weapon_slot_1 = empty
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = lmg_defense_turret
-			special_type_slot_2 = empty
-		}
+}
+
+create_equipment_variant = {
+	name = "Hawker Hurricane"
+	type = small_plane_airframe_1
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		fixed_auxiliary_weapon_slot_1 = light_mg_4x
+		engine_type_slot = engine_2_1x
+		special_type_slot_1 = lmg_defense_turret
 	}
-	create_equipment_variant = {
-		name = "Hawker Hurricane"
-		type = small_plane_airframe_1
-		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			fixed_auxiliary_weapon_slot_1 = light_mg_4x
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = lmg_defense_turret
-		}
-	}
-	add_equipment_to_stockpile = { type = small_plane_cas_airframe_1 variant_name = "Hawker Hurricane" amount = 670 } 
-add_equipment_to_stockpile = { type = medium_plane_airframe_1 variant_name = "Bristol Blenheim" amount = 180 }
-add_equipment_to_stockpile = { type = cv_small_plane_naval_bomber_airframe_1 variant_name = "Fairey Barracuda" amount = 138 }
+}
+
+add_equipment_to_stockpile = {
+	type = small_plane_cas_airframe_1
+	variant_name = "Hawker Hurricane"
+	amount = 670
+}
+
+add_equipment_to_stockpile = {
+	type = medium_plane_airframe_1
+	variant_name = "Bristol Blenheim"
+	amount = 180
+}
+
+add_equipment_to_stockpile = {
+	type = cv_small_plane_naval_bomber_airframe_1
+	variant_name = "Fairey Barracuda"
+	amount = 138
+}
 
 set_convoys = 1300
-
 # DIPLOMACY
 if = {
 	limit = {
@@ -282,24 +304,23 @@ if = {
 	}
 }
 
-give_guarantee = POL 
+give_guarantee = POL
 give_guarantee = DEN
-give_guarantee = BEL 
+give_guarantee = BEL
 give_guarantee = HOL
-give_guarantee = NOR 
-
+give_guarantee = NOR
 add_to_tech_sharing_group = commonwealth_research
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.11.14"
 	election_frequency = 48
-	elections_allowed = yes ##suspended through duration of war, which is handled via event
+	elections_allowed = yes	##suspended through duration of war, which is handled via event
 }
+
 set_popularities = {
 	democratic = 100
-    fascism = 0
-    communism = 0
+	fascism = 0
+	communism = 0
 }
 
 create_faction = Allies
@@ -310,10 +331,9 @@ add_to_faction = AST
 add_to_faction = NZL
 add_to_faction = SAF
 add_to_faction = RAJ
-add_to_faction = NOR		
-
+add_to_faction = NOR
+add_to_faction = HOL
 # Order matters - here Chamberlain becomes starting leader
-
 # create_country_leader = {
 # 	name = "Winston Churchill"
 # 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
@@ -324,8 +344,6 @@ add_to_faction = NOR
 # 		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
 # 	}
 # }
-
-
 # create_country_leader = {
 # 	name = "Stanley Baldwin"
 # 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
@@ -336,8 +354,6 @@ add_to_faction = NOR
 # 		conservative_grandee
 # 	}
 # }
-
-
 # create_country_leader = {
 # 	name = "Oswald Mosley"
 # 	desc = "POLITICS_OSWALD_MOSLEY_DESC"
@@ -347,7 +363,6 @@ add_to_faction = NOR
 # 	traits = {
 # 	}
 # }
-
 # create_country_leader = {
 # 	name = "Harry Pollitt"
 # 	desc = "POLITICS_HARRY_POLLITT_DESC"
@@ -357,8 +372,6 @@ add_to_faction = NOR
 # 	traits = {
 # 	}
 # }
-
-
 # create_field_marshal = {
 # 	name = "Alan Brooke" # Aristocrat
 # 	id = 997
@@ -370,7 +383,6 @@ add_to_faction = NOR
 # 	planning_skill = 4
 # 	logistics_skill = 5
 # }
-
 # create_field_marshal = {
 # 	name = "Bernard Montgomery" # Aristocrat
 # 	id = 996
@@ -382,7 +394,6 @@ add_to_faction = NOR
 # 	planning_skill = 5
 # 	logistics_skill = 5
 # }
-
 # create_corps_commander = {
 # 	name = "Claude Auchinleck"
 # 	picture = "Portrait_Britain_Claude_Auchinleck.dds"
@@ -393,7 +404,6 @@ add_to_faction = NOR
 # 	planning_skill = 5
 # 	logistics_skill = 3
 # }
-
 # create_corps_commander = {
 # 	name = "Neil Ritchie"
 # 	picture = "Portrait_Britain_Neil_Ritchie.dds"
@@ -405,7 +415,6 @@ add_to_faction = NOR
 # 	planning_skill = 3
 # 	logistics_skill = 3
 # }
-
 # create_corps_commander = {
 # 	name = "Alan Cunningham"
 # 	picture = "Portrait_Britain_Alan_Cunningham.dds"
@@ -416,7 +425,6 @@ add_to_faction = NOR
 # 	planning_skill = 1
 # 	logistics_skill = 5
 # }
-
 # create_corps_commander = {
 # 	name = "William Slim"
 # 	picture = "Portrait_Britain_William_Slim.dds"
@@ -427,7 +435,6 @@ add_to_faction = NOR
 # 	planning_skill = 3
 # 	logistics_skill = 6
 # }
-
 # create_corps_commander = {
 # 	name = "Richard O'Connor"
 # 	id = 999
@@ -439,7 +446,6 @@ add_to_faction = NOR
 # 	planning_skill = 1
 # 	logistics_skill = 1
 # }
-
 # create_corps_commander = {
 # 	name = "William Platt"
 # 	picture = "Portrait_Britain_William_Platt.dds"
@@ -450,7 +456,6 @@ add_to_faction = NOR
 # 	planning_skill = 5
 # 	logistics_skill = 4
 # }
-
 # create_field_marshal = {
 # 	name = "George Giffard"
 # 	picture = "Portrait_Britain_George_Giffard.dds"
@@ -461,7 +466,6 @@ add_to_faction = NOR
 # 	planning_skill = 4
 # 	logistics_skill = 5
 # }
-
 # create_field_marshal = {
 # 	name = "Harold Alexander" # Aristocrat
 # 	id = 995
@@ -473,7 +477,6 @@ add_to_faction = NOR
 # 	planning_skill = 2
 # 	logistics_skill = 4
 # }
-
 # create_corps_commander = {
 # 	name = "Jackie Smyth"
 # 	picture = "Portrait_Britain_John_Jackie_Smyth.dds"
@@ -484,7 +487,6 @@ add_to_faction = NOR
 # 	planning_skill = 3
 # 	logistics_skill = 5
 # }
-
 # create_corps_commander = {
 # 	name = "Thomas Jacomb Hutton"
 # 		picture = "Portrait_Britain_Thomas_Jacomb_Hutton.dds"
@@ -495,7 +497,6 @@ add_to_faction = NOR
 # 		planning_skill = 1
 # 		logistics_skill = 6
 # }
-
 # create_corps_commander = {
 # 	name = "Arthur Percival"
 # 		picture = "Portrait_Britain_Arthur_Percival.dds"
@@ -506,7 +507,6 @@ add_to_faction = NOR
 # 		planning_skill = 5
 # 		logistics_skill = 4
 # }
-
 # create_corps_commander = {
 # 	name = "Merton Beckwith-Smith"
 # 		picture = "Portrait_Britain_Merton_Beckwith_Smith.dds"
@@ -517,7 +517,6 @@ add_to_faction = NOR
 # 		planning_skill = 4
 # 		logistics_skill = 4
 # }
-
 # create_corps_commander = {
 # 	name = "Henry Pownall"
 # 	picture = "Portrait_Britain_Henry_Pownall.dds"
@@ -528,7 +527,6 @@ add_to_faction = NOR
 # 	planning_skill = 2
 # 	logistics_skill = 2
 # }
-
 # create_field_marshal = {
 # 	name = "John Vereker Lord Gort" # Aristocrat
 # 	id = 994
@@ -540,7 +538,6 @@ add_to_faction = NOR
 # 	planning_skill = 3
 # 	logistics_skill = 3
 # }
-
 # create_corps_commander = {
 # 	name = "Henry Wilson"
 # 		picture = "Portrait_Britain_Henry_Maitland_Wilson.dds"
@@ -551,7 +548,6 @@ add_to_faction = NOR
 # 		planning_skill = 2
 # 		logistics_skill = 2
 # }
-
 # create_corps_commander = {
 # 	name = "(Use for Inf) William Gott"
 # 		picture = "Portrait_Britain_William_Gott.dds"
@@ -562,7 +558,6 @@ add_to_faction = NOR
 # 		planning_skill = 2
 # 		logistics_skill = 2
 # }
-
 # create_corps_commander = {
 # 	name = "Jock Campbell"
 # 		picture = "Portrait_Britain_Jock_Campbell.dds"
@@ -573,7 +568,6 @@ add_to_faction = NOR
 # 		planning_skill = 2
 # 		logistics_skill = 7
 # }
-
 # create_corps_commander = {
 # 	name = "Oliver Leese" # Aristocrat
 # 	id = 993
@@ -585,7 +579,6 @@ add_to_faction = NOR
 # 	planning_skill = 3
 # 	logistics_skill = 3
 # }
-
 # create_corps_commander = {
 # 	name = "Miles Dempsey"
 # 	picture = "Portrait_Britain_Miles_Dempsey.dds"
@@ -596,7 +589,6 @@ add_to_faction = NOR
 # 	planning_skill = 1
 # 	logistics_skill = 7
 # }
-
 # create_corps_commander = {
 # 	name = "Brian Horrocks"
 # 	picture = "Portrait_Britain_Brian_Horrocks.dds"
@@ -607,7 +599,6 @@ add_to_faction = NOR
 # 	planning_skill = 7
 # 	logistics_skill = 1
 # }
-
 # create_field_marshal = {
 # 	name = "Archibald Wavell" # Aristocrat
 # 	id = 998
@@ -637,7 +628,6 @@ recruit_character = ENG_arthur_percival
 recruit_character = ENG_alan_cunningham
 recruit_character = ENG_neil_ritchie
 recruit_character = ENG_william_slim
-
 recruit_character = ENG_richard_oconnor
 recruit_character = ENG_henry_wilson
 recruit_character = ENG_william_platt
@@ -648,7 +638,6 @@ recruit_character = ENG_jackie_smyth
 recruit_character = ENG_john_vereker_lord_gort
 recruit_character = ENG_jock_campbell
 recruit_character = ENG_archibald_wavell
-
 recruit_character = ENG_bernard_montgomery
 recruit_character = ENG_harold_alexander
 recruit_character = ENG_philip_kerr
@@ -657,12 +646,10 @@ recruit_character = ENG_leslie_hore_belisha
 recruit_character = ENG_maxwell_aitken
 recruit_character = ENG_ernest_bevin
 recruit_character = ENG_stewart_menzies
-
 recruit_character = ENG_john_cockcroft
 recruit_character = ENG_charles_goodeve
 recruit_character = ENG_nevil_shute
 recruit_character = ENG_robert_watson_watt
-
 # create_navy_leader = {
 # 	name = "James Fownes Somerville" # Aristocrat
 # 	id = 983
@@ -685,7 +672,6 @@ recruit_character = ENG_robert_watson_watt
 # 	maneuvering_skill = 3
 # 	coordination_skill = 2
 # }
-
 # create_navy_leader = {
 # 	name = "Andrew Cunningham"
 # 	id = 985
@@ -697,7 +683,6 @@ recruit_character = ENG_robert_watson_watt
 # 	maneuvering_skill = 6
 # 	coordination_skill = 6
 # }
-
 # create_navy_leader = {
 # 	name = "Bruce Fraser"
 # 	id = 986
@@ -709,7 +694,6 @@ recruit_character = ENG_robert_watson_watt
 # 	maneuvering_skill = 4
 # 	coordination_skill = 4
 # }
-
 # create_navy_leader = {
 # 	name = "John Tovey" # Aristocrat
 # 	id = 987
@@ -721,7 +705,6 @@ recruit_character = ENG_robert_watson_watt
 # 	maneuvering_skill = 2
 # 	coordination_skill = 5
 # }
-
 # create_navy_leader = {
 # 	name = "Bernard Rawlings" # Aristocrat
 # 	id = 988
@@ -733,7 +716,6 @@ recruit_character = ENG_robert_watson_watt
 # 	maneuvering_skill = 3
 # 	coordination_skill = 4
 # }
-
 # create_navy_leader = {
 # 	name = "John Cunningham"
 # 	id = 989
@@ -756,7 +738,6 @@ recruit_character = ENG_robert_watson_watt
 # 	maneuvering_skill = 3
 # 	coordination_skill = 6
 # }
-
 # create_navy_leader = {
 # 	name = "Algernon Willis"
 # 	id = 991
@@ -768,12 +749,13 @@ recruit_character = ENG_robert_watson_watt
 # 	maneuvering_skill = 3
 # 	coordination_skill = 6
 # }
-
-
 ### Ship Variants ###
-
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	### Variants ###
 	# Submarines #
 	create_equipment_variant = {
@@ -882,8 +864,11 @@ if = {
 		}
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	### Variants ###
 	# Submarines #
 	# Submarines #
@@ -932,7 +917,6 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-
 	create_equipment_variant = {
 		name = "Emerald Class"
 		type = ship_hull_cruiser_1
@@ -945,33 +929,32 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_3
-			fixed_ship_secondaries_slot = ship_secondaries_2 
+			fixed_ship_secondaries_slot = ship_secondaries_2
 			mid_1_custom_slot = ship_light_medium_battery_2
 			mid_2_custom_slot = ship_light_medium_battery_2
 			rear_1_custom_slot = ship_light_medium_battery_2
 		}
 		obsolete = yes
 	}
-
 	create_equipment_variant = {
-			name = "Town Class"
-			type = ship_hull_cruiser_2
-			name_group = ENG_CL_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_medium_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_3
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				front_1_custom_slot = ship_light_medium_battery_2
-				mid_1_custom_slot = ship_light_medium_battery_2
-				mid_2_custom_slot = ship_light_medium_battery_2
-				rear_1_custom_slot = ship_light_medium_battery_2
-			}
+		name = "Town Class"
+		type = ship_hull_cruiser_2
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_3
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			front_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_light_medium_battery_2
+			mid_2_custom_slot = ship_light_medium_battery_2
+			rear_1_custom_slot = ship_light_medium_battery_2
 		}
+	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
 		name = "County Class"
@@ -990,28 +973,26 @@ if = {
 			mid_2_custom_slot = ship_medium_battery_2
 			rear_1_custom_slot = ship_medium_battery_2
 		}
-		}
-	
+	}
 	create_equipment_variant = {
 		name = "Nelson Class"
 		type = ship_hull_heavy_1
 		name_group = ENG_BB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_2
+			#fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_2
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_2
-			fixed_ship_armor_slot = ship_armor_bb_2
-			front_1_custom_slot = ship_heavy_battery_2
+			#fixed_ship_armor_slot = ship_armor_bb_2
+			#front_1_custom_slot = ship_heavy_battery_2
 			mid_1_custom_slot = ship_airplane_launcher_1
 			mid_2_custom_slot = ship_airplane_launcher_1
-			rear_1_custom_slot = ship_heavy_battery_2
+			#rear_1_custom_slot = ship_heavy_battery_2
 		}
 	}
-
 	create_equipment_variant = {
 		name = "Hermes Class"
 		type = ship_hull_carrier_conversion_ca
@@ -1027,21 +1008,19 @@ if = {
 		}
 		obsolete = yes
 	}
-
 	create_equipment_variant = {
-			name = "Ark Royal Class"
-			type = ship_hull_carrier_1
-			name_group = ENG_CV_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_2
-				fixed_ship_secondaries_slot = empty
-				front_1_custom_slot = ship_deck_space
-			}
+		name = "Ark Royal Class"
+		type = ship_hull_carrier_1
+		name_group = ENG_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_2
+			fixed_ship_secondaries_slot = empty
+			front_1_custom_slot = ship_deck_space
 		}
-	
+	}
 }

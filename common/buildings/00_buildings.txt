@@ -260,6 +260,7 @@ buildings = {
 		icon_frame = 10
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
+		hide_if_missing_tech = yes
 		refinery = yes
 		value = 5
 		infrastructure_construction_effect = yes

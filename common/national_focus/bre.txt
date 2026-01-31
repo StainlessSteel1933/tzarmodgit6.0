@@ -2255,7 +2255,7 @@ focus_tree = {
 						set_technology = { 
 							basic_ship_hull_cruiser = 1 
 							basic_torpedo = 1
-							basic_medium_battery = 1
+							#basic_medium_battery = 1
 						}
 						navy_experience = 20
 						custom_effect_tooltip = RAJ_navy_funding_effect

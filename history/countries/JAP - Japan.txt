@@ -336,7 +336,7 @@ add_to_faction = MIN
 set_faction_spymaster = yes	
 
 set_technology = { basic_train = 1
-		improved_airplane_launcher = 1
+		#improved_airplane_launcher = 1
 	interwar_antiair = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -364,11 +364,11 @@ set_technology = { basic_train = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	tech_logistics_company = 1 
-	air_superiority = 1
+	#air_superiority = 1
 	forward_interception = 1 
 	fighter_ace_initiative = 1 
 	dive_bombing = 1 
-	armored_car_chassis_0 = 1
+	armored_car1 = 1
 	# armored_car1 = 1
 	tech_mountaineers = 1
 }
@@ -430,10 +430,10 @@ if = {
 		basic_battery = 1
 		basic_light_battery = 1
 		basic_heavy_battery = 1
-		basic_medium_battery = 1
+		#basic_medium_battery = 1
 		improved_ship_torpedo_launcher = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
+		#early_ship_hull_submarine = 1
+		#basic_ship_hull_submarine = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
@@ -442,10 +442,10 @@ if = {
 		early_ship_hull_carrier = 1
 		basic_ship_hull_carrier = 1
 		mtg_transport = 1
-		basic_secondary_battery = 1
+		#basic_secondary_battery = 1
 		basic_depth_charges = 1
 		basic_cruiser_armor_scheme = 1
-		cruiser_submarines = 1
+		#cruiser_submarines = 1
 	}
 	set_naval_oob = "JAP_1936_naval"
 }
@@ -1333,17 +1333,17 @@ if = {
 			type = ship_hull_heavy_1
 			parent_version = 0
 			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_2
+				#fixed_ship_battery_slot = ship_heavy_battery_2
 				fixed_ship_anti_air_slot = ship_anti_air_2
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = heavy_ship_engine_2
 				fixed_ship_secondaries_slot = ship_secondaries_2
-				fixed_ship_armor_slot = ship_armor_bb_1
+				#fixed_ship_armor_slot = ship_armor_bb_1
 				front_1_custom_slot =   ship_heavy_battery_2
 				mid_1_custom_slot = ship_anti_air_2
 				mid_2_custom_slot = ship_airplane_launcher_1
-				rear_1_custom_slot = ship_heavy_battery_2
+				#rear_1_custom_slot = ship_heavy_battery_2
 			}
 		}
 
@@ -1576,14 +1576,14 @@ if = {
 		set_air_oob = "JAP_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
-			engines_1 = 1
-			engines_2 = 1
-			early_bombs = 1
-			aircraft_construction = 1
+			#engines_1 = 1
+			#engines_2 = 1
+			#early_bombs = 1
+			#aircraft_construction = 1
 			iw_small_airframe = 1
 			iw_medium_airframe = 1
 			basic_small_airframe = 1
-			air_torpedoe_1 = 1
+			#air_torpedoe_1 = 1
 		}
 	else = {
 		set_air_oob = "JAP_1936_air_legacy"

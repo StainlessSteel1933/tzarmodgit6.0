@@ -34,10 +34,6 @@ add_timed_idea = { idea = france_production_regrowth days = 30 }
 add_intel = { target = JAP civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 
 
-add_opinion_modifier = {
-	
-}
-
 add_ideas = { CZE_arms_industry 
 	COOM_volunteers_minors
 }

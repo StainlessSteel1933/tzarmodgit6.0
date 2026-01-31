@@ -48,10 +48,7 @@ add_relation_modifier = {
 	target = BUL
 	modifier = stahlpakt
 }
-add_opinion_modifier = {
-	target = GER
-	modifier = german_trade_monopoly
-}
+
 
 set_technology = {
 	
@@ -123,14 +120,14 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		early_ship_hull_submarine = 1
+		#early_ship_hull_submarine = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
 		basic_torpedo = 1
 		mtg_transport = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
+		#basic_medium_battery = 1
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 	}
