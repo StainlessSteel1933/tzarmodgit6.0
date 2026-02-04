@@ -168,7 +168,7 @@
 
  news.412:0 "France Falls!"
  news.412.t:0 "France Falls!"
- news.412.d:0 "France held for §B[?FRA.FRA_battle_weeks_held]§! days, inflicting §R[?GER.casualties]§! casualties on the Germans."
+ news.412.d:0 "France held for §B[?FRA.FRA_battle_weeks_held]§! days, inflicting §R[?GER.casualties]§! casualties on the Germans.\n\nFrance originaly had: §O[?FRA.civsMainland]§! and §7[?FRA.millsMainland]§!\nEvacuated: §O[?FRA.evacedCivs]§!  §7[?FRA.evacedMills]§!"
  news.412.a:0 "gg"
 
  soviet.302:0 "Reinforcements from Siberia!"

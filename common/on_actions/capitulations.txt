@@ -1,45 +1,76 @@
 on_actions = {
 	on_capitulation = {
-        effect = {
-            ### FRA
-            if = {
-				limit = { original_tag = FRA }
-				FRA = { set_technology = { french_anti_battleplan = 0 popup = no } }
+		effect = {
+			### FRA
+			if = {
+				limit = {
+					original_tag = FRA
+				}
+				FRA = {
+					set_technology = {
+						french_anti_battleplan = 0
+						popup = no
+					}
+				}
 				539 = {
 					add_extra_state_shared_building_slots = var:FRA.FRA_battle_weeks_held
 					add_building_construction = {
 						type = industrial_complex
-    					level = var:FRA.FRA_battle_weeks_held
-    					instant_build = yes
+						level = var:FRA.FRA_battle_weeks_held
+						instant_build = yes
 					}
 				}
 				# 10 - FRA_battle_weeks_held, rewards germany more for capitulating France faster
-				set_temp_variable = { GER_battle_weeks = 100 }
-				subtract_from_temp_variable = { GER_battle_weeks = var:FRA.FRA_battle_weeks_held }
+				set_temp_variable = {
+					GER_battle_weeks = 100
+				}
+				subtract_from_temp_variable = {
+					GER_battle_weeks = var:FRA.FRA_battle_weeks_held
+				}
 				64 = {
 					add_extra_state_shared_building_slots = var:GER.GER_battle_weeks
 					add_building_construction = {
 						type = industrial_complex
-    					level = 10
-    					instant_build = yes
+						level = 10
+						instant_build = yes
 					}
 				}
 				news_event = news.412
-
 				clear_variable = FRA_battle_weeks_held
-
 				# Add a preset amount of equipment for Germany capping france, since they get none otherwise
 				GER = {
-					add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 65000 producer = GER }
-					add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 4500 producer = GER }
-					add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 8000 producer = GER }
-					add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 4500 producer = GER }
-					add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 4000 producer = GER }
-					add_equipment_to_stockpile = { type = support_equipment_1 amount = 4000 producer = GER }
-
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_2
+						amount = 65000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = anti_air_equipment_1
+						amount = 4500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment_1
+						amount = 8000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = anti_tank_equipment_1
+						amount = 4500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment_1
+						amount = 4000
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment_1
+						amount = 4000
+						producer = GER
+					}
 					# add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 300 producer = GER }
 					# add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 2000 producer = GER }
-
 					create_equipment_variant = {
 						name = "French Basic Medium Tank Chassis"
 						type = medium_tank_chassis_1
@@ -56,37 +87,66 @@ on_actions = {
 							special_type_slot_4 = secondary_turret_small_cannon
 							special_type_slot_9 = apcr_ammo
 						}
-						upgrades={
-							tank_nsb_engine_upgrade=12
-							tank_nsb_armor_upgrade=2
+						upgrades = {
+							tank_nsb_engine_upgrade = 12
+							tank_nsb_armor_upgrade = 2
 						}
 					}
-					add_equipment_to_stockpile = { 
-					variant_name = "French Basic Medium Tank Chassis"
-						type = medium_tank_chassis_1 amount = 1500
+					add_equipment_to_stockpile = {
+						variant_name = "French Basic Medium Tank Chassis"
+						type = medium_tank_chassis_1
+						amount = 1500
 					}
 				}
-
-				FRA = { set_capital = { state = 310 } }
-				310 = { 
+				FRA = {
+					set_capital = {
+						state = 310
+					}
+				}
+				310 = {
 					add_building_construction = {
 						type = infrastructure
-    					level = 8
-    					instant_build = yes
+						level = 8
+						instant_build = yes
 					}
-					add_building_construction  ={
+					add_building_construction = {
 						type = naval_base
 						level = 9
 						province = 12885
 						instant_build = yes
 					}
 				}
-				539 = { 
-					add_building_construction = { type = bunker province = 7963 level = 5 instant_build = yes } 
-					add_building_construction = { type = bunker province = 13211 level = 5 instant_build = yes } 
-					add_building_construction = { type = bunker province = 1993 level = 5 instant_build = yes } 
-					add_building_construction = { type = bunker province = 8078 level = 5 instant_build = yes } 
-					add_building_construction = { type = bunker province = 11194 level = 5 instant_build = yes } 
+				539 = {
+					add_building_construction = {
+						type = bunker
+						province = 7963
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 13211
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 1993
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 8078
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11194
+						level = 5
+						instant_build = yes
+					}
 				}
 				28 = {
 					set_building_level = {
@@ -100,86 +160,120 @@ on_actions = {
 					}
 				}
 				if = {
-				limit = {
-					AND = {
-						has_game_rule = { rule = canada_small_game option = CAN_SMALL_GAME_DISABLE }
-						has_start_date = 1936.1.1.13
-					}
-				}
-				539 = {
-					add_extra_state_shared_building_slots = 70
-					add_building_construction = {
-						type = industrial_complex
-						level = 20
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 35
-						instant_build = yes
-					}
-				}
-				772 = {
-					add_extra_state_shared_building_slots = 30
-				}
-				773 = {
-					add_extra_state_shared_building_slots = 30
-				}
-				660 = {
-					add_extra_state_shared_building_slots = 30
-				}
-				}
-				FRA_fix_africa = yes
-				FRA = { add_state_core = 772 add_state_core = 539 add_state_core = 773 
-						add_state_core = 660 add_state_core = 774 }
-				FRA = { country_event = { id = france.10 }}
-				GER = {  country_event = { id = france.14 }
-                GER = { transfer_state = 806 }
-                GER = { transfer_state = 991 }
-                EFR = { transfer_state = 851 }
-                EFR = { transfer_state = 913}
-                ITA = {
-                    transfer_state = 956 
-                    transfer_state = 515
-                    transfer_state = 956
-                     
-                }
-                ENG = {
-                	transfer_state = 554
-                	transfer_state = 553
-                	transfer_state = 680
-                	#transfer_state = 667
-                }
-                EFR = {transfer_state = 293 }
-                EFR = {
-                transfer_state = 798
-                transfer_state = 342 
-                }
-                FRF = {
-                    transfer_state = 888
-                    transfer_state = 890
-                    transfer_state = 889
-                  
-                    set_technology = {
-                    improved_medium_tank_chassis = 1
-                    mechanised_infantry = 1
-                    }
-                }
-				762 = { set_compliance = 60 }
-				if = {
 					limit = {
-						JAP = {
-							exists = yes
+						AND = {
+							has_game_rule = {
+								rule = canada_small_game
+								option = CAN_SMALL_GAME_DISABLE
+							}
+							has_start_date = 1936.1.1.13
 						}
 					}
-					JAP = { transfer_state = 671 transfer_state = 286 transfer_state = 728 }
+					539 = {
+						add_extra_state_shared_building_slots = 70
+						add_building_construction = {
+							type = industrial_complex
+							level = 20
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = arms_factory
+							level = 35
+							instant_build = yes
+						}
+					}
+					772 = {
+						add_extra_state_shared_building_slots = 30
+					}
+					773 = {
+						add_extra_state_shared_building_slots = 30
+					}
+					660 = {
+						add_extra_state_shared_building_slots = 30
+					}
 				}
-
-				FRA = { country_event = { id = france.800 } }
+				FRA_fix_africa = yes
+				FRA = {
+					add_state_core = 772
+					add_state_core = 539
+					add_state_core = 773
+					add_state_core = 660
+					add_state_core = 774
+				}
+				FRA = {
+					country_event = {
+						id = france.10
+					}
+				}
+				GER = {
+					country_event = {
+						id = france.14
+					}
+					GER = {
+						transfer_state = 806
+					}
+					GER = {
+						# transfer_state = 991
+					}
+					EFR = {
+						transfer_state = 851
+					}
+					EFR = {
+						transfer_state = 913
+					}
+					ITA = {
+						# transfer_state = 956
+						transfer_state = 515
+						# transfer_state = 956
+					}
+					ENG = {
+						transfer_state = 554
+						transfer_state = 553
+						transfer_state = 680
+						#transfer_state = 667
+					}
+					EFR = {
+						transfer_state = 293
+					}
+					EFR = {
+						transfer_state = 798
+						transfer_state = 342
+					}
+					FRF = {
+						transfer_state = 888
+						transfer_state = 890
+						transfer_state = 889
+						set_technology = {
+							improved_medium_tank_chassis = 1
+							mechanised_infantry = 1
+						}
+					}
+					762 = {
+						set_compliance = 60
+					}
+					if = {
+						limit = {
+							JAP = {
+								exists = yes
+							}
+						}
+						JAP = {
+							transfer_state = 671
+							transfer_state = 286
+							transfer_state = 728
+						}
+					}
+					FRA = {
+						country_event = {
+							id = france.800
+						}
+					}
 				}
 			}
 			if = {
-				limit = { original_tag = POR }
+				limit = {
+					original_tag = POR
+				}
 				SPR = {
 					annex_country = {
 						target = POR
@@ -187,15 +281,10 @@ on_actions = {
 					}
 				}
 				#ENG = { transfer_state = 540 540 = { set_compliance = 70 } transfer_state = 892 892 = { set_compliance = 70 } 
-					#transfer_state = 891 891 = { set_compliance = 70 } transfer_state = 346 346 = { set_compliance = 70 } transfer_state = 292 292 = { set_compliance = 70 }  transfer_state = 544 544 = { set_compliance = 70 }
-					#If = { limit = { country_exists = SAF } SAF = { transfer_state = 292 292 = { set_compliance = 70 } transfer_state = 544 544 = { set_compliance = 70 } country_event = { id = srevents.17 days = 1 } } }
-					
-					#country_event = { id = srevents.16 days = 1 }
-				}
-				
-				
-				
-				}
+				#transfer_state = 891 891 = { set_compliance = 70 } transfer_state = 346 346 = { set_compliance = 70 } transfer_state = 292 292 = { set_compliance = 70 }  transfer_state = 544 544 = { set_compliance = 70 }
+				#If = { limit = { country_exists = SAF } SAF = { transfer_state = 292 292 = { set_compliance = 70 } transfer_state = 544 544 = { set_compliance = 70 } country_event = { id = srevents.17 days = 1 } } }
+				#country_event = { id = srevents.16 days = 1 }
+			}
 			if = {
 				limit = {
 					original_tag = NOR
@@ -207,93 +296,217 @@ on_actions = {
 					}
 				}
 			}
-            if = {
-                limit = { original_tag = DEN }
-				GER = { transfer_state = 99 transfer_state = 37 
-				99 = { set_compliance = 60 } 37 = { set_compliance = 60 } }
-			}
-            ### pol
-			if = { limit = { original_tag = POL }
-				POL = { set_equipment_fraction = 0.0 }
-				SOV = { 
-					transfer_state = 784 transfer_state = 97 transfer_state = 96 transfer_state = 95
-					transfer_state = 94 transfer_state = 93 transfer_state = 91 transfer_state = 89
-					784 = { set_compliance = 100 } 97 = { set_compliance = 100 }
-					96 = { set_compliance = 100 } 95 = { set_compliance = 100 }
-					94 = { set_compliance = 100 } 93 = { set_compliance = 100 }
-					91 = { set_compliance = 100 } 89 = { set_compliance = 100 }
+			if = {
+				limit = {
+					original_tag = DEN
 				}
-				GER = {  transfer_state = 85
-					transfer_state = 86 transfer_state = 87 transfer_state = 98 transfer_state = 10
-					transfer_state = 90 transfer_state = 88  transfer_state = 762 transfer_state = 72
-					86 = { set_compliance = 60 } 762 = { set_compliance = 60 }
+				GER = {
+					transfer_state = 99
+					transfer_state = 37
+					99 = {
+						set_compliance = 60
+					}
+					37 = {
+						set_compliance = 60
+					}
+				}
+			}
+			### pol
+			if = {
+				limit = {
+					original_tag = POL
+				}
+				POL = {
+					set_equipment_fraction = 0
+				}
+				SOV = {
+					transfer_state = 784
+					transfer_state = 97
+					transfer_state = 96
+					transfer_state = 95
+					transfer_state = 94
+					transfer_state = 93
+					transfer_state = 91
+					transfer_state = 89
+					784 = {
+						set_compliance = 100
+					}
+					97 = {
+						set_compliance = 100
+					}
+					96 = {
+						set_compliance = 100
+					}
+					95 = {
+						set_compliance = 100
+					}
+					94 = {
+						set_compliance = 100
+					}
+					93 = {
+						set_compliance = 100
+					}
+					91 = {
+						set_compliance = 100
+					}
+					89 = {
+						set_compliance = 100
+					}
+				}
+				GER = {
+					transfer_state = 85
+					transfer_state = 86
+					transfer_state = 87
+					transfer_state = 98
+					transfer_state = 10
+					transfer_state = 90
+					transfer_state = 88
+					transfer_state = 762
+					transfer_state = 72
+					86 = {
+						set_compliance = 60
+					}
+					762 = {
+						set_compliance = 60
+					}
 				}
 				#Larp
-				set_province_name = { id = 6558 name = "Posen" } 86 = { set_state_name = "Posen" }
-				set_province_name = { id = 6464 name = "Kattowitz" } 762 = { set_state_name = "Kattowitz" }
-				set_province_name = { id = 279 name = "Bromberg" }
-				set_province_name = { id = 3295 name = "Thorn" }		
+				set_province_name = {
+					id = 6558
+					name = "Posen"
+				}
+				86 = {
+					set_state_name = "Posen"
+				}
+				set_province_name = {
+					id = 6464
+					name = "Kattowitz"
+				}
+				762 = {
+					set_state_name = "Kattowitz"
+				}
+				set_province_name = {
+					id = 279
+					name = "Bromberg"
+				}
+				set_province_name = {
+					id = 3295
+					name = "Thorn"
+				}
 			}
-            ### bel
-			if =  { limit = { original_tag = BEL }
-				BEL = { country_event = { id =  mtg_netherlands.331 days = 1 } 	}
-				GER = { set_state_owner = 6 set_state_owner = 34 set_state_owner = 8 }
-				every_state = { limit = { is_core_of = BEL } set_compliance = 40 }
+			### bel
+			if = {
+				limit = {
+					original_tag = BEL
+				}
+				BEL = {
+					country_event = {
+						id = mtg_netherlands.331
+						days = 1
+					}
+				}
+				GER = {
+					set_state_owner = 6
+					set_state_owner = 34
+					set_state_owner = 8
+				}
+				every_state = {
+					limit = {
+						is_core_of = BEL
+					}
+					set_compliance = 40
+				}
 				FRA = {
 					annex_country = {
 						target = BEL
-					
 					}
 				}
 				# If = { limit = { country_exists = FRA } FRA = { annex_country = BEL } }
 				# If = { limit = { country_exists = FRF } FRF = { annex_country = BEL } }
 			}
-            ###axis
+			###axis
 			if = {
-				limit = { original_tag = GER NOT = { has_global_flag = axis_lost } NOT = {has_global_flag = sov_cap_lol}}
+				limit = {
+					original_tag = GER
+					NOT = {
+						has_global_flag = axis_lost
+					}
+					NOT = {
+						has_global_flag = sov_cap_lol
+					}
+				}
 				axis_defeat = yes
 			}
 			if = {
-				limit = { original_tag = GER NOT = { has_global_flag = axis_lost }}
+				limit = {
+					original_tag = GER
+					NOT = {
+						has_global_flag = axis_lost
+					}
+				}
 				axis_defeat_without_sov = yes
 			}
-            ### jap
+			### jap
 			if = {
-				limit = { original_tag = JAP }
+				limit = {
+					original_tag = JAP
+				}
 				every_state = {
-					limit = { is_owned_by = JAP }
+					limit = {
+						is_owned_by = JAP
+					}
 					set_compliance = 0
 				}
 				every_state = {
-					limit = { is_core_of = JAP }
-					add_dynamic_modifier = { modifier = japanese_resistance }
+					limit = {
+						is_core_of = JAP
+					}
+					add_dynamic_modifier = {
+						modifier = japanese_resistance
+					}
 				}
 				JAP = {
-					set_equipment_fraction = 0.00
+					set_equipment_fraction = 0
 				}
-			 	USA = { 
+				USA = {
 					annex_country = {
-					target = JAP
-					transfer_troops = no 					
-					}
-			  	}
-				if = { limit = { country_exists = SIA } 
- 					USA = { 
-						annex_country = {
-						target = SIA
+						target = JAP
 						transfer_troops = no
-	 					}
-			  		}
-			  	}
-				if = { limit = { country_exists = MIN } 
- 					USA = { 
-						annex_country = {
-						target = MIN
-						transfer_troops = no
- 						}
 					}
-			  	}
+				}
+				if = {
+					limit = {
+						country_exists = SIA
+					}
+					USA = {
+						annex_country = {
+							target = SIA
+							transfer_troops = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MIN
+					}
+					USA = {
+						annex_country = {
+							target = MIN
+							transfer_troops = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						original_tag = CHI
+					}
+					JAP = {
+						annex_country = {
+							target = CHI
+						}
+					}
+				}
 			}
-        }
-    }
+		}
+	}
 }

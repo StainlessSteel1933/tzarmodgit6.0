@@ -2572,6 +2572,19 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect ={
+				every_state = {
+					limit = {
+						is_on_continent = europe
+						is_fully_controlled_by = FRA
+						is_on_continent = europe
+					}
+					add_to_variable = {
+						var:FRA.civsMainland = industrial_complex_level
+					}
+					add_to_variable = {
+						var:FRA.millsMainland = arms_factory_level
+					}
+				}
 				FRA = {
 				activate_mission = FRA_TZAR_RELOCATION_CIV
 				activate_mission = FRA_TZAR_RELOCATION_MIL
