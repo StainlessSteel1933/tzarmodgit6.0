@@ -3,7 +3,7 @@ equipments = {
  		year = 1922
  		is_archetype = yes 
 		naval_weather_penalty_factor = 1
-
+		naval_dominance_factor = 300
  		is_buildable = no
  		type = capital_ship
  		interface_category = interface_category_capital_ships
@@ -114,7 +114,7 @@ equipments = {
  	ship_hull_pre_dreadnought = {
  		year = 1905
 		naval_weather_penalty_factor = 1
-
+		naval_dominance_factor = 200
  		visual_tech_level_addition = 0
  		archetype = ship_hull_heavy
  		priority = 1500
@@ -254,7 +254,7 @@ equipments = {
  		reliability = 0.75
  		fuel_consumption = 67
  		build_cost_ic = 3300
-
+		naval_dominance_factor = 300
  	}
  	ship_hull_heavy_2 = {
  		year = 1936
@@ -314,7 +314,7 @@ equipments = {
  			#oil = 10
  			steel = 1
  		}
-
+		naval_dominance_factor = 325
  		manpower = 5200
  	}
  	ship_hull_heavy_3 = {
@@ -386,7 +386,7 @@ equipments = {
  			steel = 2
  			
  		}
-
+		naval_dominance_factor = 350
  		manpower = 6000
  	}
  	ship_hull_heavy_4 = {
@@ -457,7 +457,7 @@ equipments = {
  			steel = 2
  			
  		}
-
+		naval_dominance_factor = 375
  		manpower = 6000
  	}
 	ship_hull_heavy_modern = {
@@ -616,7 +616,7 @@ equipments = {
  			steel = 1
  			
  		}
-
+		naval_dominance_factor = 375
  		manpower = 9000
  	}
  	battleship_1 = {
