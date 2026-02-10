@@ -129,7 +129,7 @@ equipments = {
  		resources = {
  			steel = 2
  		}
-
+		naval_dominance_factor = 125
  		module_slots = {
  			fixed_ship_battery_slot = inherit
  			fixed_ship_anti_air_slot = inherit
