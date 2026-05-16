@@ -1,0 +1,9 @@
+technology_categories = {
+
+	generic
+	year_1936
+	tank_modules
+	year_1940
+	special_forces
+	year_1939
+}
