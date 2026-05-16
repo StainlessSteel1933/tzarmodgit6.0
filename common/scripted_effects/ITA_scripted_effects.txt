@@ -3489,6 +3489,10 @@ ITA_manage_national_spirits_in_civil_war = {
 	#Copy RICOSTRUZIONE INDUSTRIALE vars
 	set_variable = { ITA_iri_production_speed_industrial_complex_factor = ITA.ITA_iri_production_speed_industrial_complex_factor }
 	set_variable = { ITA_iri_industrial_concern_cost_factor = ITA.ITA_iri_industrial_concern_cost_factor }
+	set_variable = { ITA_iri_tank_manufacturer_cost_factor = ITA.ITA_iri_tank_manufacturer_cost_factor }
+	set_variable = { ITA_iri_materiel_manufacturer_cost_factor = ITA.ITA_iri_materiel_manufacturer_cost_factor }
+	set_variable = { ITA_iri_aircraft_manufacturer_cost_factor = ITA.ITA_iri_aircraft_manufacturer_cost_factor }
+	set_variable = { ITA_iri_naval_manufacturer_cost_factor = ITA.ITA_iri_naval_manufacturer_cost_factor }
 	set_variable = { ITA_iri_production_speed_arms_factory_factor = ITA.ITA_iri_production_speed_arms_factory_factor }
 	set_variable = { ITA_iri_consumer_goods_factor = ITA.ITA_iri_consumer_goods_factor }
 	set_variable = { ITA_iri_local_resources_factor = ITA.ITA_iri_local_resources_factor }

@@ -133,6 +133,7 @@ ideas = {
 			ledger = navy
 			modifier = {
 				industrial_capacity_dockyard = 0.04
+				# naval_manufacturer_cost_factor = -0.8
 				# ship_hull_cruiser_design_cost_factor = -0.6
 			}
 			cost = 35.00

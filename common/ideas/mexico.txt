@@ -1125,6 +1125,9 @@ ideas = {
 			}
 
 			modifier = {
+				tank_manufacturer_cost_factor = -0.25
+				naval_manufacturer_cost_factor = -0.25
+				materiel_manufacturer_cost_factor = -0.25
 			}
 			
 			traits = { electronics_concern }

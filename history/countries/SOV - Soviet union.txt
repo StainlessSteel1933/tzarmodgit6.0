@@ -834,6 +834,7 @@ set_variable = {
 }
 
 set_variable = {
+	SOV_soviet_airforce_aircraft_manufacturer_cost_factor = 0
 }
 #-> Expand the Aircraft Industry
 set_variable = {
@@ -927,6 +928,7 @@ set_variable = {
 }
 
 set_variable = {
+	SOV_defense_industry_tank_manufacturer_cost_factor = 0
 }
 #-> Tank Designer focus
 set_variable = {
@@ -934,6 +936,7 @@ set_variable = {
 }
 #-> Tankograd
 set_variable = {
+	SOV_defense_industry_materiel_manufacturer_cost_factor = 0
 }
 #-> Equipment Designers focus
 set_variable = {

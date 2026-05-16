@@ -1383,6 +1383,7 @@ ideas = {
 		
 		crda = {
 				modifier = {
+			    naval_manufacturer_cost_factor = -1
 			}		
 			allowed = {
 				original_tag = ITA
@@ -1400,6 +1401,7 @@ ideas = {
 		
 		odero_terni_orlando = {
 				modifier = {
+			    naval_manufacturer_cost_factor = -1
 			}
 			cost = 75
 				

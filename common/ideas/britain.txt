@@ -1894,6 +1894,7 @@ ideas = {
 				armor = 0.15
 			}
 			modifier = {
+			tank_manufacturer_cost_factor = -1
 			}
 			traits = { commonwealth_tank_manufactuer }
 			
@@ -1908,6 +1909,7 @@ ideas = {
 				OR = { original_tag = ENG original_tag = NOR original_tag = SAF original_tag = CAN original_tag = NZL original_tag = AST original_tag = RAJ  original_tag = FRA  original_tag = FRF   }
 			}
 			modifier = {
+			tank_manufacturer_cost_factor = -1
 			}
 			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 
@@ -1941,6 +1943,7 @@ ideas = {
 				armor = 0.15
 			}
 			modifier = {
+			tank_manufacturer_cost_factor = -1
 			}
 			
 			equipment_bonus = {

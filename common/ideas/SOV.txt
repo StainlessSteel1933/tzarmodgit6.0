@@ -4096,6 +4096,7 @@ ideas = {
 			}
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			visible = {
@@ -4139,6 +4140,7 @@ ideas = {
 			}
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 			visible = {
 				hidden_trigger = {
@@ -4171,6 +4173,7 @@ ideas = {
 			}
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 			visible = {
 				hidden_trigger = {
@@ -4205,6 +4208,7 @@ ideas = {
 			}
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 			visible = {
 				hidden_trigger = {
@@ -4237,6 +4241,7 @@ ideas = {
 			}
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 			visible = {
 				hidden_trigger = {
@@ -4266,6 +4271,7 @@ ideas = {
 			picture = morozov_design_bureau
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 			allowed = {
 				original_tag = SOV
@@ -4299,6 +4305,7 @@ ideas = {
 			picture = morozov_design_bureau
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 			allowed = {
 				original_tag = SOV
@@ -4332,6 +4339,7 @@ ideas = {
 			picture = morozov_design_bureau
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 			allowed = {
 				original_tag = SOV
@@ -4375,6 +4383,7 @@ ideas = {
 			picture = astrov_design_bureau
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 			allowed = {
 				original_tag = SOV
@@ -4403,6 +4412,7 @@ ideas = {
 			picture = astrov_design_bureau
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4436,6 +4446,7 @@ ideas = {
 			picture = astrov_design_bureau
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4471,6 +4482,7 @@ ideas = {
 			picture = astrov_design_bureau
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4504,6 +4516,7 @@ ideas = {
 			picture = astrov_design_bureau
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4538,6 +4551,7 @@ ideas = {
 			picture = astrov_design_bureau
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4572,6 +4586,7 @@ ideas = {
 			picture = astrov_design_bureau
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4606,6 +4621,7 @@ ideas = {
 			picture = astrov_design_bureau
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4651,6 +4667,7 @@ ideas = {
 			
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4681,6 +4698,7 @@ ideas = {
 			
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4715,6 +4733,7 @@ ideas = {
 			
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4751,6 +4770,7 @@ ideas = {
 			
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4785,6 +4805,7 @@ ideas = {
 			
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4820,6 +4841,7 @@ ideas = {
 			
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4855,6 +4877,7 @@ ideas = {
 			
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {
@@ -4890,6 +4913,7 @@ ideas = {
 			
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {

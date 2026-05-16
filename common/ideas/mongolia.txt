@@ -363,6 +363,7 @@ ideas = {
 			}
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 			visible = {
 			
@@ -387,6 +388,7 @@ ideas = {
 			picture = astrov_design_bureau
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 			allowed = {
 				original_tag = MON
@@ -413,6 +415,7 @@ ideas = {
 			
 			cost = 75
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 
 			allowed = {

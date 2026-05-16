@@ -2403,6 +2403,7 @@ ideas = {
 				
 			}
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 			#traits = { porsche_manufacturer }
 
@@ -2461,6 +2462,7 @@ ideas = {
 				armor = 0.15
 			}
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 			
 			#traits = { henschel_manufacturer }
@@ -2493,6 +2495,7 @@ ideas = {
 				armor = 0.15
 			}
 			modifier = {
+			    tank_manufacturer_cost_factor = -1
 			}
 		 equipment_bonus = {
 				armor = {
@@ -2529,6 +2532,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			modifier = {
+			naval_manufacturer_cost_factor = -1
 			}
 			equipment_bonus = {
 				

@@ -311,15 +311,19 @@ set_variable = {
 }
 
 set_variable = {
+	ITA_iri_tank_manufacturer_cost_factor = -0.15
 }
 
 set_variable = {
+	ITA_iri_materiel_manufacturer_cost_factor = -0.15
 }
 
 set_variable = {
+	ITA_iri_aircraft_manufacturer_cost_factor = -0.15
 }
 
 set_variable = {
+	ITA_iri_naval_manufacturer_cost_factor = -0.15
 }
 
 set_variable = {

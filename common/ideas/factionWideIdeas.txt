@@ -1513,10 +1513,12 @@ ideas = {
 		free_tank_designer = {
 			allowed = { always = no }
 			removal_cost = -1 
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		free_naval_designer = {
 			allowed = { always = no }
 			removal_cost = -1 
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 	}
 }
