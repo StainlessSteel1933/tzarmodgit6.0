@@ -1,4 +1,6 @@
 -- If you're reading this, don't say anything about this, this is a secret between us (๑>؂•̀๑) (decreased from 4.5 vanilla value to 4.0).
+NDefines.NDoctrines.DEFAULT_REWARD_MASTERY = 50
+NDefines.NDoctrines.MAX_MONTHLY_MASTERY_GAIN = 200
 NDefines.NFactions.AI_DAYS_TO_SELECT_GOAL = 9000
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.3
 NDefines.NProduction.RESOURCE_TO_ENERGY_COEFFICIENT = 999.0 -- How much energy per coal produces Vanilla 9
