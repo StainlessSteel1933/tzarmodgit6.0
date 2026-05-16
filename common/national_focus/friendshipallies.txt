@@ -227,7 +227,7 @@ joint_focus = {
 				name = ALLIED_mp
 				bonus = 2.00
 				uses = 1
-				technology = tech_military_police = 1
+				technology = tech_military_police
 			}
 		}
 
@@ -236,7 +236,7 @@ joint_focus = {
 				name = ALLIED_mp
 				bonus = 1.00
 				uses = 1
-				technology = tech_military_police = 1
+				technology = tech_military_police
 			}
 		}
 }

@@ -278,6 +278,12 @@ characters={
 				small="GFX_Portrait_generic_air_europe_3"
 			}
 		}
+		advisor={
+			slot = theorist
+			idea_token = adalbert_rogulja
+			allowed = {
+				original_tag = YUG
+			}
 			traits = {
 				mobile_warfare_expert
 			}
@@ -286,6 +292,7 @@ characters={
 				factor = 2.000
 			}
 		}
+	}
 	CRO_djuro_jakcin={
 		name="Djuro Jakcin"
 		portraits={

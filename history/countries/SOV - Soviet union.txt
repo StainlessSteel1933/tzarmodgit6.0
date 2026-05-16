@@ -834,7 +834,7 @@ set_variable = {
 }
 
 set_variable = {
-	SOV_soviet_airforce_aircraft_manufacturer_cost_factor = 0
+	SOV_soviet_airforce_air_manufacturer_cost_factor = 0
 }
 #-> Expand the Aircraft Industry
 set_variable = {
@@ -1136,6 +1136,14 @@ set_variable = {
 
 set_variable = {
 	SOV_factionalism_popularity_stability_cost_factor = -0.1
+
+	set_variable = {
+		SOV_factionalism_overlord_trade_cost_factor = 0
+	}
+
+	set_variable = {
+		SOV_factionalism_building_slots_factor = 0
+	}
 }
 
 #POUM VARS

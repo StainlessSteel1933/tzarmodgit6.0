@@ -75,7 +75,7 @@ ideas = {
 			}
 	}
 	no_fighter_cheating = {
-		name = ""
+		
 		picture = YUG_orthodox_church_support
 			allowed = {
 				always = no
@@ -467,7 +467,7 @@ ideas = {
 		name = "Neutrality in The World War"
 
 		allowed = {
-			always = yse
+			always = yes
 		}
 
 		allowed_civil_war = {
@@ -502,7 +502,7 @@ ideas = {
 		
 
 		allowed = {
-			always = yse
+			always = yes
 		}
 
 		allowed_civil_war = {
@@ -563,7 +563,7 @@ ideas = {
 		
 
 		allowed = {
-			always = yse
+			always = yes
 		}
 
 		allowed_civil_war = {

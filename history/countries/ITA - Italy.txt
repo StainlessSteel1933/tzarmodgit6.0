@@ -319,7 +319,7 @@ set_variable = {
 }
 
 set_variable = {
-	ITA_iri_aircraft_manufacturer_cost_factor = -0.15
+	ITA_iri_air_manufacturer_cost_factor = -0.15
 }
 
 set_variable = {

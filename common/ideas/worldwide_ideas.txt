@@ -2,10 +2,9 @@ ideas = {
 
 hidden_ideas = {
 	scuffed_modding = {
-		name = ""
 	}
 	tank_nerf = {
-			name = ""
+			
 			picture = vittorio_emanuele
 			modifier = {
 				army_speed_factor = -0.25

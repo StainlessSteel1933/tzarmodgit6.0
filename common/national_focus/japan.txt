@@ -3811,7 +3811,7 @@ focus_tree = {
 			FOCUS_FILTER_IMPERIAL_INFLUENCE
 		}
 		completion_reward = {
-			hidden_effect = 
+			hidden_effect = {
 				declare_war_on = {
 					target = ENG
 					type = annex_everything
@@ -3855,6 +3855,7 @@ focus_tree = {
 				declare_war_on = {
 					target = MEX
 					type = annex_everything
+				}
 				}
 				hidden_effect = {
 					USA = {

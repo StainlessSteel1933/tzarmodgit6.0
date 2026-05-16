@@ -335,22 +335,14 @@ characters={
 		}
 		advisor={
 			idea_token = CZE_karel_janousek
+			slot = theorist
 			allowed = {
 				original_tag = CZE
-			}
-				advisor={
-			cost = 150
-			slot = theorist
-			idea_token = manstein
-			ledger = army
-			allowed = {
-				original_tag = GER
 			}
 			traits = {
 				mobile_warfare_expert
 			}
-		}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}

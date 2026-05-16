@@ -849,7 +849,6 @@ CHI_protracted_warfare_idea = {
 	dig_in_speed_factor = CHI_protracted_warfare_dig_in_speed_factor
 	equipment_capture_factor = CHI_protracted_warfare_equipment_capture_factor
 	cas_damage_reduction = CHI_protracted_warfare_cas_damage_reduction
-	cat_mass_mobilization_cost_factor = CHI_decisive_battle_cat_mass_mobilization_cost_factor
 	army_defence_factor = CHI_protracted_warfare_army_defence_factor
 }
 
@@ -860,7 +859,6 @@ CHI_decisive_battle_idea = {
 	army_attack_factor = CHI_decisive_battle_army_attack_factor
 	breakthrough_factor = CHI_decisive_battle_breakthrough_factor
 	org_loss_when_moving = CHI_decisive_battle_org_loss_when_moving
-	cat_deep_battle_cost_factor = CHI_decisive_battle_cat_deep_battle_cost_factor
 	unit_motorized_design_cost_factor = CHI_decisive_battle_unit_motorized_design_cost_factor
 	unit_mechanized_design_cost_factor = CHI_decisive_battle_unit_mechanized_design_cost_factor
 	modifier_army_sub_unit_armored_car_attack_factor = CHI_decisive_battle_modifier_army_sub_unit_armored_car_attack_factor

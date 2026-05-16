@@ -190,7 +190,6 @@ technologies = {
 						original_tag = ITA
 						has_completed_focus = ITA_italian_tankettes
 					}
-					always = no
 				}
 			}
 
@@ -310,7 +309,6 @@ technologies = {
 					original_tag = ITA
 					has_completed_focus = ITA_italian_tankettes
 				}
-				always = no
 			}
 		}
 
@@ -723,7 +721,6 @@ technologies = {
 						has_completed_focus = ITA_modernize_ansaldo_facilities
 					}
 				}
-				always = no
 			}
 		}
 
@@ -785,7 +782,6 @@ technologies = {
 					original_tag = ITA
 					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
 				}
-				always = no
 			}
 		}
 
@@ -847,19 +843,16 @@ technologies = {
 					limit = {
 						has_completed_focus = ITA_capo_supremo
 					}
-					always = no
 				}
 				else_if = {
 					limit = {
 						has_completed_focus = ITA_modern_musculus
 					}
-					always = no
 				}
 				else_if = {
 					limit = {
 						has_completed_focus = ITA_a_time_for_war
 					}
-					always = no
 				}
 			}
 		}

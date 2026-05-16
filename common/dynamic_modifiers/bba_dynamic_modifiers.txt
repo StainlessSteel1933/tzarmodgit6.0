@@ -347,7 +347,6 @@ ITA_ricostruzione_industriale_dynamic_modifier = { #NATIONAL SPIRIT
 	industrial_concern_cost_factor = ITA_iri_industrial_concern_cost_factor #-0.35
 	tank_manufacturer_cost_factor = ITA_iri_tank_manufacturer_cost_factor #-0.15
 	materiel_manufacturer_cost_factor = ITA_iri_materiel_manufacturer_cost_factor #-0.15
-	aircraft_manufacturer_cost_factor = ITA_iri_aircraft_manufacturer_cost_factor #-0.15
 	naval_manufacturer_cost_factor = ITA_iri_naval_manufacturer_cost_factor #-0.15
 
 	#  later stuff

@@ -128,10 +128,11 @@ characters = {
 				large = GFX_portrait_SOV_supreme_soviet
 			}
 		}
-		
-		traits = {
+		country_leader = {
+			traits = {
 				triumphant_revolutionary
 			}
+		}
 	}
 
 	SOV_provisional_government = {

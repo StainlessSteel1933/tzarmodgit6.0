@@ -172,8 +172,7 @@ types = {
 				victim_effects = {
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
 					var:target_state = {
-						always = no
-						custom_effect_tooltip = raid_nuclear_strike_tt
+											custom_effect_tooltip = raid_nuclear_strike_tt
 						add_dynamic_modifier = {
 							modifier = fallout_atomic
 							days = 180
@@ -200,8 +199,7 @@ types = {
 				victim_effects = {
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
 					var:target_state = {
-						always = no
-						custom_effect_tooltip = raid_nuclear_strike_tt
+											custom_effect_tooltip = raid_nuclear_strike_tt
 						add_dynamic_modifier = {
 							modifier = fallout_atomic
 							days = 365
@@ -229,8 +227,7 @@ types = {
 					}
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
 					var:target_state = {
-						always = no
-						custom_effect_tooltip = raid_nuclear_strike_tt
+											custom_effect_tooltip = raid_nuclear_strike_tt
 						add_dynamic_modifier = {
 							modifier = fallout_atomic
 							days = 730
@@ -369,8 +366,7 @@ types = {
 				victim_effects = {
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
 					var:target_state = {
-						always = no
-						#custom_effect_tooltip = raid_nuclear_strike_tt
+											#custom_effect_tooltip = raid_nuclear_strike_tt
 						add_dynamic_modifier = {
 							modifier = fallout_atomic
 							days = 365
@@ -392,8 +388,7 @@ types = {
 				victim_effects = {
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
 					var:target_state = {
-						always = no
-						add_dynamic_modifier = {
+											add_dynamic_modifier = {
 							modifier = fallout_atomic
 							days = 365
 						}
@@ -535,8 +530,7 @@ types = {
 				victim_effects = {
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
 					var:target_state = {
-						always = no
-						#custom_effect_tooltip = raid_nuclear_strike_tt
+											#custom_effect_tooltip = raid_nuclear_strike_tt
 						add_dynamic_modifier = {
 							modifier = fallout_atomic
 							days = 365
@@ -547,8 +541,7 @@ types = {
 							province = var:ROOT.target_province #optional use either province or state
 							use_nuke = no #will consume nuke if specified
 						}
-						always = no
-					}
+										}
 				}
 			}
 			critical_success = {
@@ -559,8 +552,7 @@ types = {
 				victim_effects = {
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
 					var:target_state = {
-						always = no
-						add_dynamic_modifier = {
+											add_dynamic_modifier = {
 							modifier = fallout_atomic
 							days = 365
 						}
@@ -570,8 +562,7 @@ types = {
 							province = var:ROOT.target_province #optional use either province or state
 							use_nuke = no #will consume nuke if specified
 						}
-						always = no
-					}
+										}
 				}
 			}
 		}
@@ -762,8 +753,7 @@ types = {
 				victim_effects = {
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }   
 					var:target_state = {
-						always = no
-						custom_effect_tooltip = raid_nuclear_strike_tt
+											custom_effect_tooltip = raid_nuclear_strike_tt
 						hidden_effect = {
 							IF = {
 								limit = { 
@@ -798,8 +788,7 @@ types = {
 				victim_effects = {
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
 					var:target_state = {
-						always = no
-						custom_effect_tooltip = raid_nuclear_strike_tt
+											custom_effect_tooltip = raid_nuclear_strike_tt
 						hidden_effect = {
 							IF = {
 								limit = { 
@@ -956,8 +945,7 @@ types = {
 				victim_effects = {
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
 					var:target_state = {
-						always = no
-						#custom_effect_tooltip = raid_nuclear_strike_tt
+											#custom_effect_tooltip = raid_nuclear_strike_tt
 						add_dynamic_modifier = {
 							modifier = fallout_thermonuclear
 							days = 730
@@ -980,8 +968,7 @@ types = {
 				victim_effects = {
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
 					var:target_state = {
-						always = no
-						add_dynamic_modifier = {
+											add_dynamic_modifier = {
 							modifier = fallout_thermonuclear
 							days = 730
 						}
@@ -1124,8 +1111,7 @@ types = {
 				victim_effects = {
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
 					var:target_state = {
-						always = no
-						#custom_effect_tooltip = raid_nuclear_strike_tt
+											#custom_effect_tooltip = raid_nuclear_strike_tt
 						add_dynamic_modifier = {
 							modifier = fallout_thermonuclear
 							days = 730
@@ -1138,8 +1124,7 @@ types = {
 							use_nuke = no #will consume nuke if specified
 							nuke_type = thermonuclear_bomb
 						}
-						always = no
-					}
+										}
 				}
 			}
 			critical_success = {
@@ -1149,8 +1134,7 @@ types = {
 				victim_effects = {
 					var:actor_country = { save_global_event_target_as = nuclear_gandhi_actor_country }  
 					var:target_state = {
-						always = no
-						add_dynamic_modifier = {
+											add_dynamic_modifier = {
 							modifier = fallout_thermonuclear
 							days = 730
 						}
@@ -1161,8 +1145,7 @@ types = {
 							use_nuke = no #will consume nuke if specified
 							nuke_type = thermonuclear_bomb
 						}
-						always = no
-					}
+										}
 				}
 			}
 		}

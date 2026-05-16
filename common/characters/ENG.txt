@@ -904,8 +904,8 @@ characters={
 			idea_token = ENG_ernest_bevin
 			allowed = {
 				original_tag = ENG
-				always = no }
-			}
+				always = no
+				}
 			traits = {
 				captain_of_industry 
 			}
@@ -937,7 +937,6 @@ characters={
 			}
 		}
 	}
-
 	# ENG_alan_turing={
 	# 	name=ENG_alan_turing
 	# 	portraits={
@@ -961,9 +960,7 @@ characters={
 	# 		}
 	# 	}
 	# }
-
 	
-
  #####                               
  #   #  ####  # ###### #  # ##### #  ####  #####  #### 
  #    #  # # #    ##  #  #  # #     #  #   
@@ -971,8 +968,6 @@ characters={
     # #    # #    # # #  #  #    #  #     # 
  #   # #  # # #    #  ##  #  # #  #  #  #  # 
  #####  ####  # ###### #  #  #  #  ####   #   #### 
-
-
 	ENG_james_chadwick = {
 		name = ENG_james_chadwick
 		portraits = {
@@ -981,14 +976,12 @@ characters={
 				small = GFX_idea_james_chadwick
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_nuclear_warfare_expert }
 			skills = {
 				specialization_nuclear = 2
 			}
 		}
-
 		#advisor = {
 		#	cost = 100
 		#	slot = theorist
@@ -1005,7 +998,6 @@ characters={
 		#	}
 		#}
 	}
-
 	ENG_frank_whittle = {
 		name = ENG_frank_whittle
 		portraits = {
@@ -1014,14 +1006,12 @@ characters={
 				small = GFX_idea_frank_whittle
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_jet_expert scientist_trait_bright }
 			skills = {
 				specialization_air = 2
 			}
 		}
-
 		#advisor = {
 		#	cost = 100
 		#	slot = theorist
@@ -1038,7 +1028,6 @@ characters={
 		#	}
 		#}		
 	}
-
 	ENG_john_cockcroft = {
 		name = ENG_john_cockcroft
 		portraits = {
@@ -1046,7 +1035,6 @@ characters={
 				large = GFX_portrait_ENG_john_cockcroft
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_nuclear_power_expert }
 			skills = {
@@ -1054,7 +1042,6 @@ characters={
 			}
 		}
 	}
-
 	ENG_charles_goodeve = {
 		name = ENG_charles_goodeve
 		portraits = {
@@ -1062,7 +1049,6 @@ characters={
 				large = GFX_portrait_ENG_charles_goodeve
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_surface_ship_specialist }
 			skills = {
@@ -1070,7 +1056,6 @@ characters={
 			}
 		}
 	}
-
 	ENG_nevil_shute = {
 		name = ENG_nevil_shute
 		portraits = {
@@ -1078,7 +1063,6 @@ characters={
 				large = GFX_portrait_ENG_nevil_shute
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_aircraft_specialist scientist_trait_gifted_engineer }
 			skills = {
@@ -1086,7 +1070,6 @@ characters={
 			}
 		}
 	}
-
 	ENG_robert_watson_watt = {
 		name = ENG_robert_watson_watt
 		portraits = {
@@ -1094,7 +1077,6 @@ characters={
 				large = GFX_portrait_ENG_robert_watson_watt
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_electronics_specialist }
 			skills = {

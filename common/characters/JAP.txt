@@ -2887,6 +2887,7 @@ characters = {
 	JAP_sanzo_nosaka = {
 		instance = {
 			
+				allowed = { always = yes }
 
 			name = JAP_sanzo_nosaka
 
@@ -2939,6 +2940,7 @@ characters = {
 
 		instance = {
 			
+				allowed = { always = yes }
 			name = JAP_kijuro_shidehara
 
 			portraits = {
