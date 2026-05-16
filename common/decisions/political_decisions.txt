@@ -244,7 +244,7 @@ political_actions = {
             #     GER = { has_government = ROOT }
             #     AND = {
             #         country_exists = DDR
-            #         
+            #         DDR = { has_government = ROOT }
             #     }
             # }
         }
@@ -373,7 +373,7 @@ political_actions = {
 				add = 10
 				tag = AUS
 				fascism > 0.45
-				# always = no
+				# has_completed_focus = liberty_ethos
 			}
 		}
     }

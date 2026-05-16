@@ -68,7 +68,7 @@ MEX_category_military_issues = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_seize_the_panama_canal
 			NOT = {
 				has_war_with = USA
 			}
@@ -111,6 +111,18 @@ MEX_category_military_issues = {
 		fire_only_once = yes
 
 		complete_effect = {
+			if = {
+				limit = {
+					304 = {
+						is_owned_by = "PAN"
+						is_controlled_by = ROOT
+					}
+					ROOT = {
+						has_war_with = "PAN"
+					}
+				}
+				annex_country = { target = "PAN" }
+			}
 			add_named_threat = {
 				threat = 5
 				name = threat_mexico_attacks_panama_canal
@@ -173,7 +185,7 @@ MEX_category_military_issues = {
 
 			has_completed_focus = MEX_focus_spanish_civil_war_refugees
 
-			NOT = { always = no }
+			NOT = { has_completed_focus = MEX_focus_falangist_veterans }
 
 			FROM = {
 				OR = {
@@ -190,7 +202,7 @@ MEX_category_military_issues = {
 
 			has_completed_focus = MEX_focus_spanish_civil_war_refugees
 
-			NOT = { always = no }
+			NOT = { has_completed_focus = MEX_focus_falangist_veterans }
 		}
 
 		targets = { SPR SPD }
@@ -208,7 +220,7 @@ MEX_category_military_issues = {
 		}
 		
 		available = {
-			always = no
+			has_completed_focus = MEX_focus_support_spains_loyalists
 
 			has_equipment = {
 				convoy > 2
@@ -288,7 +300,7 @@ MEX_category_military_issues = {
 
 			has_completed_focus = MEX_focus_spanish_civil_war_refugees
 
-			NOT = { always = no }
+			NOT = { has_completed_focus = MEX_focus_support_spains_loyalists }
 
 			FROM = {
 				has_government = fascism
@@ -302,7 +314,7 @@ MEX_category_military_issues = {
 
 			has_completed_focus = MEX_focus_spanish_civil_war_refugees
 
-			NOT = { always = no }
+			NOT = { has_completed_focus = MEX_focus_support_spains_loyalists }
 		}
 		
 		targets = { SPR }
@@ -317,7 +329,7 @@ MEX_category_military_issues = {
 		}
 
 		available = {
-			always = no
+			has_completed_focus = MEX_focus_falangist_veterans
 
 			has_equipment = {
 				convoy > 2
@@ -384,7 +396,7 @@ MEX_category_military_issues = {
 		}
 		
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_interior_defence_plan
 		}
 		
 		ai_will_do = {
@@ -411,7 +423,7 @@ MEX_category_military_issues = {
 		}
 		
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_coastal_defence_plan
 		}
 		
 		ai_will_do = {
@@ -441,21 +453,25 @@ MEX_category_territorial_integration = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_unify_centroamerica
 			OR = {
 				NOT = {
 					313 = { is_core_of = ROOT }
 				}
-				#
+				#GUA = {
+				#	is_subject_of = ROOT
+				#}
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 313
-				#
+				#GUA = {
+				#	is_subject_of = ROOT
+				#}
 			}
-			always = no
+			has_completed_focus = MEX_focus_integrate_the_south
 		}
 
 		cost = 50
@@ -465,6 +481,8 @@ MEX_category_territorial_integration = {
 		cancel_if_not_visible = yes
 		
 		remove_effect = {
+			annex_country = { target = GUA }
+
 			add_state_core = 313
 
 			hidden_effect = {
@@ -486,21 +504,25 @@ MEX_category_territorial_integration = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_unify_centroamerica
 			OR = {
 				NOT = {
 					312 = { is_core_of = ROOT }
 				}
-				#
+				#HON = {
+				#	is_subject_of = ROOT
+				#}
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 312
-				#
+				#HON = {
+				#	is_subject_of = ROOT
+				#}
 			}
-			always = no
+			has_completed_focus = MEX_focus_integrate_the_south
 		}
 
 		cost = 50
@@ -510,6 +532,8 @@ MEX_category_territorial_integration = {
 		cancel_if_not_visible = yes
 		
 		remove_effect = {
+			annex_country = { target = HON }
+
 			add_state_core = 312
 
 			hidden_effect = {
@@ -531,21 +555,25 @@ MEX_category_territorial_integration = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_unify_centroamerica
 			OR = {
 				NOT = {
 					314 = { is_core_of = ROOT }
 				}
-				#
+				#ELS = {
+				#	is_subject_of = ROOT
+				#}
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 314
-				#
+				#ELS = {
+				#	is_subject_of = ROOT
+				#}
 			}
-			always = no
+			has_completed_focus = MEX_focus_integrate_the_south
 		}
 
 		cost = 50
@@ -555,6 +583,8 @@ MEX_category_territorial_integration = {
 		cancel_if_not_visible = yes
 		
 		remove_effect = {
+			annex_country = { target = ELS }
+
 			add_state_core = 314
 
 			hidden_effect = {
@@ -576,21 +606,25 @@ MEX_category_territorial_integration = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_unify_centroamerica
 			OR = {
 				NOT = {
 					317 = { is_core_of = ROOT }
 				}
-				
+				NIC = {
+					is_subject_of = ROOT
+				}
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 317
-				
+				NIC = {
+					is_subject_of = ROOT
+				}
 			}
-			always = no
+			has_completed_focus = MEX_focus_integrate_the_south
 		}
 
 		cost = 50
@@ -600,6 +634,8 @@ MEX_category_territorial_integration = {
 		cancel_if_not_visible = yes
 		
 		remove_effect = {
+			annex_country = { target = NIC }
+
 			add_state_core = 317
 
 			hidden_effect = {
@@ -621,21 +657,25 @@ MEX_category_territorial_integration = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_unify_centroamerica
 			OR = {
 				NOT = {
 					316 = { is_core_of = ROOT }
 				}
-				#
+				#COS = {
+				#	is_subject_of = ROOT
+				#}
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 316
-				#
+				#COS = {
+				#	is_subject_of = ROOT
+				#}
 			}
-			always = no
+			has_completed_focus = MEX_focus_integrate_the_south
 		}
 
 		cost = 50
@@ -645,6 +685,8 @@ MEX_category_territorial_integration = {
 		cancel_if_not_visible = yes
 		
 		remove_effect = {
+			annex_country = { target = COS }
+			
 			add_state_core = 316
 
 			hidden_effect = {
@@ -666,7 +708,7 @@ MEX_category_territorial_integration = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_unify_centroamerica
 			OR = {
 				NOT = {
 					304 = { is_core_of = ROOT }
@@ -684,7 +726,7 @@ MEX_category_territorial_integration = {
 				#	is_subject_of = ROOT
 				#}
 			}
-			always = no
+			has_completed_focus = MEX_focus_integrate_the_south
 		}
 
 		cost = 50
@@ -694,6 +736,8 @@ MEX_category_territorial_integration = {
 		cancel_if_not_visible = yes
 
 		remove_effect = {
+			annex_country = { target = "PAN" }
+			
 			add_state_core = 304
 
 			hidden_effect = {
@@ -715,7 +759,7 @@ MEX_category_territorial_integration = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_unify_centroamerica
 			NOT = {
 				685 = { is_core_of = ROOT }
 			}
@@ -723,7 +767,7 @@ MEX_category_territorial_integration = {
 		
 		available = {
 			controls_state = 685
-			always = no
+			has_completed_focus = MEX_focus_integrate_the_south
 		}
 
 		cost = 25
@@ -752,21 +796,25 @@ MEX_category_territorial_integration = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_unify_centroamerica
 			OR = {
 				NOT = {
 					311 = { is_core_of = ROOT }
 				}
-				
+				BLZ = {
+					is_subject_of = ROOT
+				}
 			}
 		}
 		
 		available = {
 			OR = {
 				controls_state = 311
-				
+				BLZ = {
+					is_subject_of = ROOT
+				}
 			}
-			always = no
+			has_completed_focus = MEX_focus_integrate_the_south
 		}
 
 		cost = 25
@@ -776,6 +824,8 @@ MEX_category_territorial_integration = {
 		cancel_if_not_visible = yes
 
 		remove_effect = {
+			annex_country = { target = BLZ }
+			
 			add_state_core = 311
 
 			311 = {
@@ -800,7 +850,7 @@ MEX_category_territorial_integration = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_liberate_the_caribbean
 			NOT = {
 				315 = { is_core_of = ROOT }
 			}
@@ -808,7 +858,7 @@ MEX_category_territorial_integration = {
 		
 		available = {
 			controls_state = 315
-			always = no
+			has_completed_focus = MEX_focus_integrate_the_caribbean
 		}
 
 		cost = 25
@@ -836,7 +886,7 @@ MEX_category_territorial_integration = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_liberate_the_caribbean
 			NOT = {
 				318 = { is_core_of = ROOT }
 			}
@@ -844,7 +894,7 @@ MEX_category_territorial_integration = {
 		
 		available = {
 			controls_state = 318
-			always = no
+			has_completed_focus = MEX_focus_integrate_the_caribbean
 		}
 
 		cost = 25
@@ -872,7 +922,7 @@ MEX_category_territorial_integration = {
 		}
 
 		visible = {
-			always = no
+			has_completed_focus = MEX_focus_liberate_the_caribbean
 			NOT = {
 				319 = { is_core_of = ROOT }
 			}
@@ -880,7 +930,7 @@ MEX_category_territorial_integration = {
 		
 		available = {
 			controls_state = 319
-			always = no
+			has_completed_focus = MEX_focus_integrate_the_caribbean
 		}
 
 		cost = 25
@@ -1219,8 +1269,8 @@ MEX_category_hispanic_solidarity = {
 		
 		target_root_trigger = {
 			OR = {
-				always = no
-				always = no
+				has_completed_focus = MEX_focus_hispanic_alliance
+				has_completed_focus = MEX_focus_bolivarian_alliance
 			}
 		}
 
@@ -1256,7 +1306,7 @@ MEX_category_hispanic_solidarity = {
 						original_tag = BRA
 					}
 				}
-				always = no
+				has_completed_focus = MEX_focus_invite_brazil
 			}
 		}
 

@@ -148,7 +148,7 @@ SPR_the_fire_rises = {
 			AST = { army_experience = 100 air_experience = 100 }
 			NZL = { army_experience = 100 air_experience = 100 }
 			RAJ = { army_experience = 100 air_experience = 100 }
-			
+			BRA = { army_experience = 100 air_experience = 100 }
 			MEX = { army_experience = 100 air_experience = 100 }
 			news_event = { hours = 1 id = news.63 }
 

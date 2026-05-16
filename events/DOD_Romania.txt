@@ -1,4 +1,4 @@
-add_namespace = DOD_romania
+﻿add_namespace = DOD_romania
 
 #Invite Foreign Motor Companies
 country_event = {

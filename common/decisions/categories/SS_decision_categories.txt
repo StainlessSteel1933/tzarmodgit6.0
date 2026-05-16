@@ -3,24 +3,7 @@ SS_demands = {
 		original_tag = GER
 	}
 
-	#visible = {
-	#	has_idea = heinrich_himmler
-	#}
-}
-SS_recruitment = { 
-	allowed = {
-		original_tag = GER
-	}
-
-	available = {
-		has_government = fascism
-	}
-
 	visible = {
-		always = no}
-}
-wehrmacht_demands = {
-	allowed = {
-		original_tag = GER
+		has_idea = heinrich_himmler
 	}
 }

@@ -520,7 +520,7 @@ country_event = {
 			declare_war_on = { target = ITA type = annex_everything }
 			#needs tweaking
 			declare_war_on = { target = SPR type = annex_everything }
-			# if = { limit = { }
+			# if = { limit = { BRA = { is_ai = no } }
 			# 	declare_war_on = { target = BRA type = annex_everything }
 			# }
 			if = { limit = { MEX = { is_ai = no } }

@@ -1,4 +1,4 @@
-add_namespace = britain 
+﻿add_namespace = britain 
 
 # Burma road china
 country_event = {

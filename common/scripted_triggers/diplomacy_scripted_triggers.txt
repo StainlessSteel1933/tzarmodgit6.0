@@ -14,7 +14,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = ITA }  } } 
 	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = ROM }  } } 
 	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = HUN }  } } 
-	# if = { limit = {FROM = { tag = ETH   } }  		} 
+	# if = { limit = {FROM = { tag = ETH   } }  		ETH = {  always = no  } } 
 	# if = { limit = {FROM = { tag = FRA   } }  			FRA = { has_country_flag = france_is_kill }  } 
 	#if = { limit = {ROOT = { tag = JAP  } } 			NOT = { FROM = { OR = { the_axis = yes tag = SOV } } } }
 	if = { limit = {ROOT = { the_geacps = yes  } } 	NOT = { FROM = { OR = { the_axis = yes tag = SOV }  } } }
@@ -22,7 +22,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = { limit = {ROOT = { the_geacps = yes } } 	NOT = { FROM = { normally_played_allies = yes  } } }
 	#if = { limit = {ROOT = { the_axis = yes } } 		NOT = { FROM = { tag = JAP  } } }
 	if = { limit = {FROM = { tag = EFR   } }  		EFR = {  always = no  } } 
-	if = { limit = {FROM = { tag = FIN   } }  		} 
+	if = { limit = {FROM = { tag = FIN   } }  		FIN = {  always = no  } } 
 
 	if = { limit = { ROOT = {  tag = SOV  }  }   	FROM = { NOT = {  the_axis = yes } } }
 	if = { limit = { ROOT = {  tag = SOV  }  }   	FROM = { NOT = {  the_geacps = yes } } }
@@ -40,15 +40,15 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 	if = { limit = { FROM = { tag = FRA } }		FRA = {  always = no  } }	
 	if = { limit = {ROOT = { tag = EFR   } }  		EFR = {  always = no  } } 
-	if = { limit = {ROOT = { tag = ETH   } }  		} 
+	if = { limit = {ROOT = { tag = ETH   } }  		ETH = {  always = no  } } 
 	# if = { limit = {ROOT = { tag = FRA   } }  			FRA = { has_country_flag = france_is_kill }  } 
 	if = { limit = {FROM = { the_geacps = yes  } } 			NOT = { ROOT = { OR = { the_axis = yes tag = SOV }  } } }
 	#if = { limit = {FROM = { tag = MIN  } } 			NOT = { ROOT = { OR = { the_axis = yes tag = SOV }  } } }
 
 	if = { limit = {FROM = { the_axis = yes} } 		NOT = { ROOT = { the_geacps = yes  } } }
 	if = { limit = {FROM = { tag = EFR   } }  		EFR = {  always = no  } } 
-	if = { limit = {FROM = { tag = FIN   } }  		} 
-	if = { limit = {ROOT = { tag = FIN   } }  		} 
+	if = { limit = {FROM = { tag = FIN   } }  		FIN = {  always = no  } } 
+	if = { limit = {ROOT = { tag = FIN   } }  		FIN = {  always = no  } } 
 	# if = { limit = {FROM = { normally_played_allies = yes} } 		NOT = { ROOT = { tag = SOV  } } }
 	# if = { limit = {ROOT = { normally_played_allies = yes} } 		NOT = { FROM = { tag = SOV  } } }
 	

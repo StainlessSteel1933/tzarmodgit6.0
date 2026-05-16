@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # Soviet Events
 ###########################
 
@@ -371,7 +371,7 @@ country_event = {
 #	
 #	trigger = {
 #		tag = SOV
-#		NOT = { always = no}
+#		NOT = { has_completed_focus = SOV_great_purge }
 #		focus_progress = {
 #			focus = SOV_great_purge
 #			progress > 0.25
@@ -439,7 +439,7 @@ country_event = {
 #	
 #	trigger = {
 #		tag = SOV
-#		NOT = { always = no}
+#		NOT = { has_completed_focus = SOV_great_purge }
 #		focus_progress = {
 #			focus = SOV_great_purge
 #			progress > 0.5
@@ -527,7 +527,7 @@ country_event = {
 #	
 #	trigger = {
 #		tag = SOV
-#		NOT = { always = no}
+#		NOT = { has_completed_focus = SOV_great_purge }
 #		focus_progress = {
 #			focus = SOV_great_purge
 #			progress > 0.75

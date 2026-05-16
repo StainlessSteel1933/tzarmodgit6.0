@@ -1,10 +1,9 @@
-
+﻿
 ###########################
 #  Panay Incident events
 ###########################
 
 add_namespace = panay_incident
-add_namespace = usa
 
 #Hidden event to trigger synchronised Panay events for USA and ENG
 country_event = {
@@ -118,3 +117,62 @@ country_event = {
 	}
 }
 
+# Election of 1936: Roosevelt vs Alf Landon
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+				country_event = { id = usa.35 days = 730 } # midterms
+		}
+	}
+
+	option = { 	
+		name = usa.6.a	
+		custom_effect_tooltip = usa_congress_elections_tt_roosevelt
+		add_ideas = new_deal
+		country_event = usa.30
+	}
+	
+	option = {
+		name = usa.6.b
+			set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.6 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		USA_flip_support = yes
+		custom_effect_tooltip = usa_congress_elections_tt_good
+		add_political_power = 120
+		if = {
+			limit = {
+				has_idea = standard_oil_california
+			}
+			add_political_power = 150
+		}
+		if = {
+			limit = {
+				NOT = { has_idea = standard_oil_california }
+			}
+			add_ideas = standard_oil_california
+		}
+		retire_character = USA_franklin_delano_roosevelt
+		USA_alf_landon = {
+										add_country_leader_role = {
+					country_leader = {
+					  ideology=liberalism
+					  traits = {   }
+					  expire="1965.1.1"
+					}
+					promote_leader = yes
+				}		
+		}
+		country_event = usa.31
+
+}
+}

@@ -129,11 +129,11 @@ startup_ideas = {
 	#Remove ai production to decrease savegame bloat
 	#if = { limit = { SIA = { is_ai = yes } } SIA = { add_ideas = no_production set_equipment_fraction = 0.0 } }
 	#if = { limit = { MEX = { is_ai = yes } } MEX = { add_ideas = no_production set_equipment_fraction = 0.0 } }
-	#if = { limit = { } }
-	# if = { limit = { } }
+	#if = { limit = { BRA = { is_ai = yes } } BRA = { add_ideas = no_production set_equipment_fraction = 0.0 } }
+	# if = { limit = { IRE = { is_ai = yes } } IRE = { add_ideas = no_production set_equipment_fraction = 0.0 } }
 	#BEL = { add_ideas = no_production }  GRE = { add_ideas = no_production } #ALB = { add_ideas = no_production }
 	#HOL = { add_ideas = no_production }  CHI = { add_ideas = no_production }
-	#DEN = { add_ideas = no_production }  SWE = { add_ideas = no_production }
+	#DEN = { add_ideas = no_production }  LAT = { add_ideas = no_production } SWE = { add_ideas = no_production }
 	#CZE = { add_ideas = no_production }  AUS = { add_ideas = no_production } POL = { add_ideas = no_production }
 	#PER = { add_ideas = no_production }
 	#Training and Synth Refinery
@@ -146,9 +146,9 @@ startup_ideas = {
 	NZL = { add_ideas = refinery_pre_build_debuff add_ideas = prewar_training }
 	RAJ = { add_ideas = refinery_pre_build_debuff add_ideas = prewar_training }
 	ENG = { add_ideas = refinery_pre_build_debuff add_ideas = prewar_training }
-	# 
+	# IRE = { add_ideas = refinery_pre_build_debuff add_ideas = prewar_training }
 	MEX = { add_ideas = refinery_pre_build_debuff add_ideas = prewar_training }
-	# 
+	# BRA = { add_ideas = refinery_pre_build_debuff add_ideas = prewar_training }
 	SOV = { add_ideas = prewar_training }
 	#Axis
 	GER = { add_ideas = prewar_training }

@@ -8,16 +8,19 @@ spawn_militia = {
 						militia = { x = 0 y = 1 }
 						militia = { x = 0 y = 2 }
 						militia = { x = 0 y = 3 }
+						militia = { x = 0 y = 4 }
 
 						militia = { x = 1 y = 0 }
 						militia = { x = 1 y = 1 }
 						militia = { x = 1 y = 2 }
 						militia = { x = 1 y = 3 }
+						militia = { x = 1 y = 4 }
 
 						militia = { x = 2 y = 0 }
 						militia = { x = 2 y = 1 }
 						militia = { x = 2 y = 2 }
 						militia = { x = 2 y = 3 }
+						anti_air_brigade = { x = 2 y = 4 }
 
 						artillery_brigade = { x = 3 y = 0}
 						anti_tank_brigade = { x = 3 y = 1}
@@ -25,7 +28,7 @@ spawn_militia = {
 						artillery_brigade = { x = 3 y = 3}
 					}
 					support = {
-						engineer = { x = 0 y = 0 }
+						engineer_company = { x = 0 y = 0 }
 						recon = { x = 0 y = 1 }
 						logistics_company  = { x = 0 y = 2 }
 					}
@@ -2927,7 +2930,63 @@ SOV_foreign_politics_decision_cost_reduction_effect = { #Add more diplomacy vars
 }
 
 SOV_approach_sinkiang_diplomacy_effect = {
-	
+	add_ai_strategy = {
+		type = befriend
+		id = SIK			
+		value = 15
+	}
+	add_ai_strategy = {
+		type = alliance
+		id = SIK		
+		value = 15
+	}
+	SIK = {
+		add_ai_strategy = {
+			type = befriend
+			id = SOV			
+			value = 10
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = CHI		
+			value = -5
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = PRC		
+			value = -5
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = XSM		
+			value = -5
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = SHX		
+			value = -5
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = YUN		
+			value = -5
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = GXC		
+			value = -5
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = MEN		
+			value = -5
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = MIN		
+			value = -5
+		}
+	}
 }
 
 SOV_set_appropriate_national_academy_of_sciences_flag_effect = {
@@ -3708,8 +3767,8 @@ SOV_manage_spanish_generals_exiled_in_ussr_effect = {
 				OR = {
 					has_completed_focus = SOV_the_left_opposition
 					AND = {
-						always = no
-						NOT = { always = no }
+						has_completed_focus = SOV_the_right_opposition
+						NOT = { has_completed_focus = SOV_covert_support_for_spanish_poum }
 					}
 				}
 			}
@@ -3746,7 +3805,7 @@ SOV_manage_spanish_generals_exiled_in_ussr_effect = {
 			ROOT = { tag = SPC }
 			SOV = {
 				has_country_flag = SOV_spanish_refugee_generals_welcome_flag
-				always = no
+				has_completed_focus = SOV_covert_support_for_spanish_poum
 			}
 		}
 		ROOT = { SPR_jose_rovira = { set_nationality = SOV } }
@@ -7159,7 +7218,7 @@ SOV_set_up_right_opposition_militia = {
 		# More Peasant Militia if collectivization has been reversed
 		IF = {
 			limit = {
-				ROOT = { always = no }
+				ROOT = { has_completed_focus = SOV_reverse_the_collectivization_process }
 				NOT = { has_state_category = enclave }
 				NOT = { has_state_category = wasteland }
 			}
@@ -7923,14 +7982,14 @@ SOV_start_civil_war = {
 			}
 		}
 		if = {
-			limit = { always = no }
+			limit = { has_completed_focus = SOV_the_right_opposition }
 			uncomplete_national_focus = { # Remove all traces of Bukharin's
 				focus = SOV_the_right_opposition
 				uncomplete_children = yes
 			}
 		}
 		if = {
-			limit = { always = no }
+			limit = { has_completed_focus = SOV_beaten_but_not_defeated }
 			uncomplete_national_focus = { # Remove all traces of exiles'
 				focus = SOV_beaten_but_not_defeated
 				uncomplete_children = yes
@@ -8230,7 +8289,7 @@ SOV_start_civil_war = {
 		# Add effects to SOS
 		IF = {
 			limit = {
-				GER = { always = no }
+				GER = { has_completed_focus = GER_anti_soviet_pact }
 			}
 			SOS = { add_opinion_modifier = { target = GER modifier = worse_pact_against_us } }
 		}
@@ -8308,7 +8367,7 @@ SOV_left_opposition_civil_war_start = {
 
 	# Check Foreign Funds
 	IF = {
-		limit = { always = no }
+		limit = { has_completed_focus = SOV_funds_for_the_cause }
 		add_timed_idea = {
 			idea = SOV_foreign_funds_idea
 			days = 365
@@ -8339,7 +8398,7 @@ SOV_right_opposition_civil_war_start = {
 
 	# Reverse the collectivisation process
 	IF = {
-		limit = { always = no }
+		limit = { has_completed_focus = SOV_reverse_the_collectivization_process }
 		add_timed_idea = {
 			idea = SOV_support_from_farmers
 			days = 365
@@ -8506,7 +8565,7 @@ SOV_exiles_civil_war_start = {
 	# Cavalry
 	IF = {
 		limit = {
-			always = no
+			has_completed_focus = SOV_approach_semyonov
 		}
 		MIN = {
 			country_event = {
@@ -8662,6 +8721,7 @@ SOV_the_eyes_fear_units = {
 	}
 	division_template = {
 		name = "Ruki"			#
+		division_names_group = SOV_INF_03
 		regiments = {
 			infantry = { x = 0 y = 0 }
 			infantry = { x = 0 y = 1 }

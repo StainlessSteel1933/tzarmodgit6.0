@@ -1,4 +1,4 @@
-add_namespace = dod_news
+﻿add_namespace = dod_news
 
 # czechs in the axis
 news_event = {

@@ -61,7 +61,7 @@ country_event = {
 				}
 			}
 			NOT = {
-				has_global_flag = sr_1_ev
+				has_global_flag = 1_sr_ev
 			}
 		}
 	}
@@ -73,7 +73,7 @@ country_event = {
 		}
 		sound_effect = "super_ww2"
 		#WW2 Flag
-		set_global_flag = sr_1_ev
+		set_global_flag = 1_sr_ev
 		set_country_flag = Super_WW2
 	}
 }

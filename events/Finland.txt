@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # Finland Events
 ###########################
 
@@ -17,7 +17,7 @@ country_event = {
 				name = finland.20.a
 	add_named_threat = { threat = 7.5 name = Winter_War_Threat }
 	#create_wargoal = { type = puppet_wargoal_focus target = FIN } 
-	
+	FIN = { country_event = { id = finland.21 } }
 	SOV = {
 		transfer_state = 146
 		add_state_core = 146 

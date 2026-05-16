@@ -2,6 +2,72 @@
 #### SOVIET ####
 ################
 
+SOV_industry_relocation = {
+	priority = 998
+	
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+	}
+
+	visible = {
+		has_completed_focus = SOV_move_industry_to_the_urals
+	}
+}
+SOV_mrp  = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+	}
+
+	visible = {
+	}
+}
+
+SOV_great_patriotic_war = {
+	priority = 997
+
+	allowed = {
+		original_tag = SOV
+	}
+		visible = {
+		date > 1941.1.1
+	}
+}
+
+SOV_Hero_City= {
+	priority = 995
+
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		date > 1940.1.1
+	}
+		
+}
+
+
+
+SOV_barb_debuff_category = {
+	priority = 999
+
+	icon = ger_mefo_bills
+
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		original_tag = SOV
+	}
+}
+################
+#### SOVIET ####
+################
+
 ####### NO STEP BACK! #######
 
 SOV_paranoia_system = {
@@ -26,13 +92,6 @@ SOV_paranoia_system = {
 			has_idea = SOV_anti_soviet_military_thinking_banned_army
 			has_idea = SOV_anti_soviet_military_thinking_banned_navy
 			has_idea = SOV_anti_soviet_military_thinking_banned_airforce
-			# So Opposition can get rid of the Junior Army/Navy Officers Purged NS
-			has_idea = SOV_purged_junior_army_officers_1
-			has_idea = SOV_purged_junior_army_officers_2
-			has_idea = SOV_purged_junior_army_officers_3
-			has_idea = SOV_purged_junior_navy_officers_1
-			has_idea = SOV_purged_junior_navy_officers_2
-			has_idea = SOV_purged_junior_navy_officers_3
 			SOV_is_stalinist = yes
 			has_country_flag = SOV_assassinated_stalin_flag
 		}
@@ -106,13 +165,13 @@ SOV_soviet_aid_to_poum_decision_category = { #Dec cat for aiding the POUM
 	}
 
 	visible = {
-		always = no
-NOT = { has_global_flag = scw_over }
+		has_completed_focus = SOV_covert_support_for_spanish_poum
+		NOT = { has_global_flag = scw_over }
 		NOT = {
 			AND = {
 				has_global_flag = SPR_anarchist_uprising_flag
 				OR = {
-					NOT = { SPC = { always = no} }
+					NOT = { SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution } }
 					NOT = { country_exists = SPC }
 				}
 			}
@@ -145,8 +204,8 @@ SOV_diplomacy_baltic_decision_category = {
 	}
 
 	visible = {
-		always = no
-OR = {
+		has_completed_focus = SOV_baltic_security
+		OR = {
 			country_exists = EST
 			country_exists = LAT
 			country_exists = LIT
@@ -166,13 +225,6 @@ SOV_diplomacy_nordic_decision_category = {
 
 	visible = {
 		always = no
-OR = {
-			country_exists = FIN
-			country_exists = SWE
-			country_exists = NOR
-			country_exists = DEN
-		}
-		is_subject = no
 	}
 }
 
@@ -187,11 +239,6 @@ SOV_diplomacy_balkan_decision_category = {
 
 	visible = {
 		always = no
-any_country = {
-			BUL_is_balkan_nation = yes
-			exists = yes
-		}
-		is_subject = no
 	}
 }
 
@@ -205,15 +252,7 @@ SOV_diplomacy_middle_east_decision_category = {
 	}
 
 	visible = {
-		OR = {
-			always = no}
-		OR = {
-			country_exists = IRQ
-			country_exists = PER
-			country_exists = AFG
-			country_exists = SAU
-		}
-		is_subject = no
+		always = no
 	}
 }
 
@@ -226,34 +265,7 @@ SOV_diplomacy_asia_decision_category = {
 		original_tag = SOV
 	}
 
-	visible = {
-		OR = {
-			AND = {
-				always = no
-any_country = {
-					OR = {
-						SOV_is_free_chinese_tag = yes
-					}
-					exists = yes
-				}
-			}
-			AND = {
-				always = no
-any_country = {
-					OR = {
-						AND = {
-							tag = JAP
-							is_subject = no
-						}
-						AND = {
-							SOV_is_free_chinese_tag = yes
-							is_in_faction_with = JAP
-						}
-					}
-				}
-			}
-		}
-	}
+	visible = {always = no}
 }
 
 SOV_soviet_aid_decision_category = { #Dec cat for Sinkiang (mission dummies go here)
@@ -276,8 +288,8 @@ SOV_national_academy_of_sciences_dec_cat = {
 	}
 
 	visible = {
-		always = no
-has_civil_war = no
+		has_completed_focus = SOV_national_academies_of_sciences
+		has_civil_war = no
 	}
 }
 
@@ -307,7 +319,7 @@ SOV_kill_trotsky_dec_cat = {
 	}
 
 	visible = {
-		has_completed_focus = SOV_behead_the_snake
+		always = no
 	}
 }
 
@@ -322,7 +334,7 @@ SOV_infiltrate_foreign_atomic_programs_dec_cat = {
 	}
 
 	visible = {
-		has_completed_focus = SOV_soviet_atomic_bomb_project
+		always = no
 	}
 }
 
@@ -337,7 +349,8 @@ SOV_comecon_dec_cat = {
 	}
 
 	visible = {
-		always = no}
+		always = no
+	}
 }
 
 SOV_soviet_civil_war_dec_cat = {  
@@ -351,12 +364,7 @@ SOV_soviet_civil_war_dec_cat = {
 	} 
 
 	visible = {
-		OR = {
-			SOV_is_left_opposition = yes 
-			SOV_is_right_opposition = yes
-			SOV_is_exiles = yes 
-		}
-		NOT = { has_global_flag = SOV_soviet_civil_war_over }
+		always = no
 	}
 
 	highlight_states = {
@@ -393,7 +401,7 @@ SOV_permanent_revolution_dec_cat = {
 	}
 
 	visible = {
-		has_completed_focus = SOV_the_permanent_revolution
+		always = no
 	}
 }
 
@@ -407,7 +415,8 @@ SOV_panslavic_nationalism = {
 	}
 
 	visible = {
-		always = no}
+		always = no
+	}
 }
 
 SOV_polish_territory = {

@@ -12,7 +12,7 @@ FRA_has_worker_shortage = {
 }
 
 is_owned_or_subject_trigger = {
-		controller = {
+	CONTROLLER = {
 		OR = {
 			tag = ROOT
 			is_subject_of = ROOT
