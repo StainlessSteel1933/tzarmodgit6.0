@@ -1,6 +1,9 @@
 ideas = {
 
 hidden_ideas = {
+	scuffed_modding = {
+		name = ""
+	}
 	tank_nerf = {
 			name = ""
 			picture = vittorio_emanuele
