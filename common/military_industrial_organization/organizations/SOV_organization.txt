@@ -1202,7 +1202,7 @@ SOV_rubin_design_bureau_organization = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
 			}
-			NOR_AAT = yes
+			always = no
 		}
 	}
 
@@ -2693,7 +2693,7 @@ SOV_gaz_organization = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
 			}
-			NOR_AAT = yes
+			always = no
 		}
 	}
 

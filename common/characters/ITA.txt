@@ -863,7 +863,7 @@ characters={
 			idea_token = ITA_giuseppe_bottai
 			
 			available = {
-				has_completed_focus = ITA_legge_bottai
+				always = no
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_education
 				}
@@ -912,7 +912,7 @@ characters={
 			idea_token = ITA_renato_ricci
 			
 			available = {
-				has_completed_focus = ITA_security_militias
+				always = no
 				NOT = {
 					has_country_leader_with_trait = mussolini_minister_of_corporations
 				}
@@ -1064,7 +1064,7 @@ characters={
 						limit = {
 							has_dlc = "By Blood Alone"
 						}
-						has_completed_focus = ITA_cooperate_with_moderates
+						always = no
 					}
 				}
 			}
@@ -1104,7 +1104,7 @@ characters={
 					limit = {
 						has_dlc = "By Blood Alone"
 					}
-					NOT = { has_completed_focus = ITA_revoke_the_acerbo_law }
+					NOT = { always = no }
 				}
 			}
 			traits = {
@@ -1178,8 +1178,8 @@ characters={
 					}
 					OR = {
 						has_government = fascism
-						has_completed_focus = ITA_utilize_the_blackshirts
-						has_completed_focus = ITA_cooperate_with_moderates
+						always = no
+						always = no
 					}
 				}
 				else = {
@@ -1302,8 +1302,8 @@ characters={
 			visible = {
 				owner = {
 					OR = {
-						has_completed_focus = ITA_meritocracy
-						has_completed_focus = ITA_bring_back_exiled_intellectuals
+						always = no
+						always = no
 					}
 				}
 			}
@@ -1318,8 +1318,8 @@ characters={
 		#	}
 		#	available = {
 		#		OR = {
-		#			has_completed_focus = ITA_meritocracy
-		#			has_completed_focus = ITA_bring_back_exiled_intellectuals
+		#			always = no
+		#			always = no
 		#		}
 		#	}
 		#	research_bonus = {

@@ -386,7 +386,7 @@
 		available = {
 			OR = {
 				OR = {
-					has_completed_focus = FRA_military_investments
+					always = no
 					has_completed_focus = FRA_defensive_strategems
 				}
 				has_completed_focus = FRA_review_foreign_policy
@@ -1599,7 +1599,7 @@
 				id = FRA_violence
 				value = 0.1
 			}}
-			fra_improve_politics = yes
+			always = no
 			clr_country_flag = FRA_passed_reform
 			set_country_flag = FRA_passed_reform
 			add_stability = 0.05
@@ -1679,7 +1679,7 @@
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
 			custom_effect_tooltip = FRA_wages
-			Fra_custom_wages = yes
+			always = no
 			hidden_effect = {
 				add_power_balance_value = {
 					id = FRA_violence
@@ -2055,7 +2055,7 @@
 		y = 1
 		available = {
 			OR = {
-				# has_completed_focus = FRA_military_investments
+				# always = no
 				date > 1937.6.1
 				GER = {
 					has_completed_focus = GER_anschluss

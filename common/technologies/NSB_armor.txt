@@ -190,7 +190,7 @@ technologies = {
 						original_tag = ITA
 						has_completed_focus = ITA_italian_tankettes
 					}
-					ITA_add_improved_light_tank_templates = yes
+					always = no
 				}
 			}
 
@@ -310,7 +310,7 @@ technologies = {
 					original_tag = ITA
 					has_completed_focus = ITA_italian_tankettes
 				}
-				ITA_add_improved_light_tank_templates = yes
+				always = no
 			}
 		}
 
@@ -719,11 +719,11 @@ technologies = {
 				limit = {
 					original_tag = ITA
 					OR = {
-						has_completed_focus = ITA_end_fiat_ansaldo_duopoly
+						always = no
 						has_completed_focus = ITA_modernize_ansaldo_facilities
 					}
 				}
-				ITA_add_improved_heavy_tank_templates = yes
+				always = no
 			}
 		}
 
@@ -785,7 +785,7 @@ technologies = {
 					original_tag = ITA
 					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
 				}
-				ITA_add_advanced_heavy_tank_templates = yes
+				always = no
 			}
 		}
 
@@ -847,19 +847,19 @@ technologies = {
 					limit = {
 						has_completed_focus = ITA_capo_supremo
 					}
-					ITA_add_il_duce_sh_tank_template_and_production = yes
+					always = no
 				}
 				else_if = {
 					limit = {
 						has_completed_focus = ITA_modern_musculus
 					}
-					ITA_add_modern_musculus_sh_tank_template_and_production = yes
+					always = no
 				}
 				else_if = {
 					limit = {
 						has_completed_focus = ITA_a_time_for_war
 					}
-					ITA_add_hand_of_god_sh_tank_template_and_production = yes
+					always = no
 				}
 			}
 		}
@@ -1495,36 +1495,21 @@ mio_cat_tech_light_armor_and_modules
 		allow = {
 			#date > 1941.1.1
 			OR = {
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = HORST_ENABLE_FREE_RESEARCH
-				}
+				always = no
 				AND = { 
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = HORST_DISABLE_LIMIT_1940
-				}
+				always = no
 				date > 1940.1.1
 				}
 				AND = { 
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = HORST_DISABLE_LIMIT_1941
-				}
+				always = no
 				date > 1941.1.1
 				}
 				AND = { 
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = SR_tank_limit_barbarossa
-				}
+				always = no
 				date > 1941.6.1
 				}
 					AND = { 
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = HORST_DISABLE_LIMIT_1942
-				}
+				always = no
 				date > 1942.1.1
 				}
 			}
@@ -1697,36 +1682,21 @@ mio_cat_tech_light_armor_and_modules
 		allow = {
 			#date > 1941.1.1
 			OR = {
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = HORST_ENABLE_FREE_RESEARCH
-				}
+				always = no
 				AND = { 
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = HORST_DISABLE_LIMIT_1940
-				}
+				always = no
 				date > 1940.1.1
 				}
 				AND = { 
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = HORST_DISABLE_LIMIT_1941
-				}
+				always = no
 				date > 1941.1.1
 				}
 				AND = { 
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = SR_tank_limit_barbarossa
-				}
+				always = no
 				date > 1941.6.1
 				}
 					AND = { 
-				has_game_rule = {
-					rule = horst_tank_research_options
-					option = HORST_DISABLE_LIMIT_1942
-				}
+				always = no
 				date > 1942.1.1
 				}
 			}
@@ -1895,7 +1865,6 @@ mio_cat_tech_light_armor_and_modules
 
 		categories = {
 			armor
-			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
 			mio_cat_tech_medium_armor_and_modules
 		}

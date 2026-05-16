@@ -1773,7 +1773,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			wuw_HUN_does_not_have_trianon = yes
+			always = no
 		}
 
 		cancel_if_invalid = no

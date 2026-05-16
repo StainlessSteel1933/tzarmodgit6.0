@@ -54,9 +54,6 @@ country_event = {
 				BUL = {
 					add_ideas = sr1942_latewar
 				}		
-				FIN = {
-					add_ideas = sr1942_latewar
-				}
 				JAP = {
 					add_ideas = sr1942_latewar
 				}		
@@ -167,11 +164,6 @@ country_event = {
 						remove_idea = sr1942_latewar
 						add_idea = sr1943_latewar
 					}				}		
-				FIN = {
-					swap_ideas = { 
-						remove_idea = sr1942_latewar
-						add_idea = sr1943_latewar
-					}				}
 				JAP = {
 					swap_ideas = { 
 						remove_idea = sr1942_latewar
@@ -301,11 +293,6 @@ country_event = {
 						remove_idea = sr1943_latewar
 						add_idea = sr1944_latewar
 					}				}		
-				FIN = {
-					swap_ideas = { 
-						remove_idea = sr1943_latewar
-						add_idea = sr1944_latewar
-					}				}
 				JAP = {
 					swap_ideas = { 
 						remove_idea = sr1943_latewar
@@ -432,11 +419,6 @@ country_event = {
 						remove_idea = sr1944_latewar
 						add_idea = sr1945_latewar
 					}				}		
-				FIN = {
-					swap_ideas = { 
-						remove_idea = sr1944_latewar
-						add_idea = sr1945_latewar
-					}				}
 				JAP = {
 					swap_ideas = { 
 						remove_idea = sr1944_latewar

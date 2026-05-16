@@ -912,7 +912,7 @@ SOV_target_capital_is_on_unlocked_continent_fifth_columnists = {
 			}
 		}
 		AND = {
-			has_completed_focus = SOV_the_onslaught_on_colonialism
+			always = no
 			FROM = {
 				capital_scope = {
 					is_on_continent = africa
@@ -920,7 +920,7 @@ SOV_target_capital_is_on_unlocked_continent_fifth_columnists = {
 			}
 		}
 		AND = {
-			has_completed_focus = SOV_carry_revolution_east
+			always = no
 				FROM = {
 				capital_scope = {
 					OR = {
@@ -931,7 +931,7 @@ SOV_target_capital_is_on_unlocked_continent_fifth_columnists = {
 			}
 		}
 		AND = {
-			has_completed_focus = SOV_the_end_of_the_imperialist_era
+			always = no
 			FROM = {
 				capital_scope = {
 					OR = {
@@ -948,7 +948,7 @@ SOV_target_capital_is_on_unlocked_continent_fifth_columnists = {
 SOV_target_capital_is_on_unlocked_continent_uprisings = {
 	OR = {
 		AND = {
-			has_completed_focus = SOV_a_global_class_struggle
+			always = no
 			FROM = {
 				capital_scope = {
 					is_on_continent = europe
@@ -956,7 +956,7 @@ SOV_target_capital_is_on_unlocked_continent_uprisings = {
 			}
 		}
 		AND = {
-			has_completed_focus = SOV_the_onslaught_on_colonialism
+			always = no
 			FROM = {
 				capital_scope = {
 					is_on_continent = africa
@@ -964,7 +964,7 @@ SOV_target_capital_is_on_unlocked_continent_uprisings = {
 			}
 		}
 		AND = {
-			has_completed_focus = SOV_carry_revolution_east
+			always = no
 			FROM = {
 				capital_scope = {
 					OR = {
@@ -975,7 +975,7 @@ SOV_target_capital_is_on_unlocked_continent_uprisings = {
 			}
 		}
 		AND = {
-			has_completed_focus = SOV_the_end_of_the_imperialist_era
+			always = no
 			FROM = {
 				capital_scope = {
 					OR = {
@@ -1191,14 +1191,14 @@ SOV_advisor_is_aligned_centre = {
 SOV_is_right_opposition = {
 	#custom_trigger_tooltip = {
 		#tooltip = SOV_is_right_opposition_tt
-		SOV = { has_completed_focus = SOV_the_right_opposition }
+		SOV = { always = no }
 	#}
 }
 
 SOV_is_exiles = {
 	#custom_trigger_tooltip = {
 		#tooltip = SOV_is_exiles_tt
-		SOV = { has_completed_focus = SOV_beaten_but_not_defeated }
+		SOV = { always = no }
 	#}
 }
 
@@ -1239,7 +1239,7 @@ SOV_is_stalinist = {
 
 SOV_we_want_to_send_ultimatums = {
 	OR = {
-		has_completed_focus = SOV_claims_in_baltic
+		always = no
 		focus_progress = {
 			focus = SOV_claims_in_baltic
 			progress > 0.01

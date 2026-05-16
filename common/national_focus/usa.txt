@@ -1333,7 +1333,7 @@ focus = {
                 days = 60
             }
 		custom_effect_tooltip = USA_the_overnight_conversation_tt 
-		hidden_effect = { HMP_usa_total_mob = yes }		
+		hidden_effect = { always = no }		
 		}
 	}
 
@@ -2683,7 +2683,7 @@ focus = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = "We will hold Philippines at all cost " 
-			hidden_effect = {every_state = { limit = { Philippines = yes }}  add_dynamic_modifier = { scope = USA modifier = USA_hold_philippines days = 30 }  }
+			hidden_effect = {every_state = { limit = { always = no }}  add_dynamic_modifier = { scope = USA modifier = USA_hold_philippines days = 30 }  }
 		}
 	}
 	focus = {

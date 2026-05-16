@@ -794,7 +794,7 @@ characters={
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus = MEX_focus_confederation_of_mexican_workers 
+					always = no 
 				}
 				if = {
 					limit = {
@@ -829,7 +829,7 @@ characters={
 					limit = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus = MEX_focus_the_gold_shirts 
+					always = no 
 				}
 				if = {
 					limit = {

@@ -1247,7 +1247,7 @@ country_event = {
 		name = mexico.19.e
 		
 		trigger = {
-			has_completed_focus = MEX_focus_confederation_of_mexican_workers
+			always = no
 			NOT = {
 				has_country_leader = {
 					character = MEX_vicente_lombardo
@@ -1420,7 +1420,7 @@ country_event = {
 		name = mexico.19.i
 		
 		trigger = {
-			has_completed_focus = MEX_focus_confederation_of_mexican_workers
+			always = no
 			NOT = {
 				has_country_leader = {
 					character = MEX_vicente_lombardo
@@ -1479,7 +1479,7 @@ country_event = {
 
 			has_government = communism
 			NOT = {
-				has_completed_focus = MEX_focus_communist_revolution
+				always = no
 			}			
 			NOT = {
 				has_global_flag = flag_mexico_invited_trotsky_to_government
@@ -1611,7 +1611,7 @@ country_event = {
 		name = mexico.19.p
 		
 		trigger = {
-			has_completed_focus = MEX_focus_legion_of_christ
+			always = no
 			NOT = {
 				has_country_leader = {
 					character = MEX_jesus_degollado_guizar
@@ -4093,7 +4093,6 @@ country_event = {
 				has_full_control_of_state = 686
 			}
 			release = PUE
-			PUE = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4108,7 +4107,6 @@ country_event = {
 				has_full_control_of_state = 695
 			}
 			release = CRC
-			CRC = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4123,7 +4121,6 @@ country_event = {
 				has_full_control_of_state = 309
 			}
 			release = SUR
-			SUR = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4138,7 +4135,6 @@ country_event = {
 				has_full_control_of_state = 694
 			}
 			release = GDL
-			GDL = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4153,7 +4149,6 @@ country_event = {
 				has_full_control_of_state = 310
 			}
 			release = CAY
-			CAY = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4168,7 +4163,6 @@ country_event = {
 				has_full_control_of_state = 687
 			}
 			release = GYA
-			GYA = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4183,7 +4177,6 @@ country_event = {
 				has_full_control_of_state = 689
 			}
 			release = JAM
-			JAM = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4198,7 +4191,6 @@ country_event = {
 				has_full_control_of_state = 691
 			}
 			release = TRI
-			TRI = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4215,7 +4207,6 @@ country_event = {
 				has_full_control_of_state = 308				
 			}
 			release = BAS
-			BAS = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720
@@ -4232,7 +4223,6 @@ country_event = {
 				has_full_control_of_state = 693				
 			}
 			release = BAH
-			BAH = {
 				add_timed_idea = {
 					idea = MEX_bolivarian_agitation
 					days = 720

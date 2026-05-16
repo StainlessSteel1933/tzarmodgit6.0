@@ -189,7 +189,7 @@ resource_rights = {
 
 startup_on_actions = {
 	simulate_pop_growth = yes
-	ai_siam_effect = yes
+	always = no
 	#startup_events = yes
 	startup_ideas = yes
 	croatia_player = yes

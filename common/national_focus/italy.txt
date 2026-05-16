@@ -2179,7 +2179,7 @@ focus = {
 			#}
 
 			#Update NS icon
-			ITA_improve_regio_esercito_dm_effect = yes
+			always = no
 		}
 	}
 
@@ -2258,13 +2258,13 @@ focus = {
 					#ITA_add_improved_light_tank_templates = yes
 					}
 					#L3/35 lf Flamethrower
-					ITA_add_basic_light_flamethrower_template = yes
+					always = no
 				}
 				else = {
 					custom_effect_tooltip = ITA_italian_tankettes_flamethrower_tt
 					effect_tooltip = {
 						#L3/35 lf Flamethrower
-						ITA_add_basic_light_flamethrower_template = yes
+						always = no
 					}
 				}
 			}
@@ -2416,7 +2416,7 @@ focus = {
 				limit = {
 					has_dlc = "No Step Back"
 				}
-				ITA_add_basic_medium_tank_templates = yes
+				always = no
 			}
 		}
 	}
@@ -2486,7 +2486,7 @@ focus = {
 			}
 
 			#Update NS icon
-			ITA_improve_regio_esercito_dm_effect = yes
+			always = no
 		}
 	}
 
@@ -2646,7 +2646,7 @@ focus = {
 				limit = {
 					always = yes
 				}
-				ITA_add_citta_dell_aria_templates = yes
+				always = no
 			}
 		}
 	}
@@ -2747,7 +2747,7 @@ focus = {
 				limit = {
 					always = yes
 				}
-				ITA_add_reggianes_exports_templates = yes
+				always = no
 			}
 		}
 	}
@@ -2775,7 +2775,7 @@ focus = {
 					NOT = { has_war_with = GER }
 				}
 				add_equipment_to_stockpile = { 
-					type = small_plane_medium_air_airframe_1
+					type = var:small_plane_medium_air_airframe_1
 					amount = 100
 					producer = GER
 					variant_name = "Ju 87"
@@ -2815,7 +2815,7 @@ focus = {
 			air_experience = 50
 
 			#Update NS icon
-			ITA_improve_regia_aeronautica_dm_effect = yes
+			always = no
 		}
 	}
 
@@ -2913,7 +2913,7 @@ focus = {
 			}
 
 			#Update NS icon
-			ITA_improve_regia_aeronautica_dm_effect = yes
+			always = no
 		}
 	}
 
@@ -2970,7 +2970,7 @@ focus = {
 			}
 
 			#Update NS icon
-			ITA_improve_regia_aeronautica_dm_effect = yes
+			always = no
 		}
 	}
 
@@ -3016,7 +3016,7 @@ focus = {
 				limit = {
 					always = yes
 				}
-				ITA_add_long_range_aircraft_templates = yes
+				always = no
 			}
 		}
 	}
@@ -3059,7 +3059,7 @@ focus = {
 				limit = {
 					always = yes
 				}
-				ITA_add_bomber_designs_templates = yes
+				always = no
 			}
 		}
 	}
@@ -3102,7 +3102,7 @@ focus = {
 				limit = {
 					always = yes
 				}
-				ITA_add_fighter_designs_templates = yes
+				always = no
 			}
 		}
 	}
@@ -3204,7 +3204,7 @@ completion_reward = {
 				limit = {
 					always = yes
 				}
-				ITA_add_supremacy_in_the_skies_templates = yes
+				always = no
 			}
 		}
 	}
@@ -3849,7 +3849,7 @@ completion_reward = {
 			#}
 
 			#Update NS icon
-			ITA_improve_regia_marina_dm_effect = yes
+			always = no
 		}
 	}
 
@@ -3863,7 +3863,7 @@ completion_reward = {
 		relative_position_id = ITA_expand_naval_facilities
 		cost = 5
 		available = {
-			is_at_peace_exiled_countries_excluded = yes
+			always = no
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -4163,7 +4163,7 @@ completion_reward = {
 
 			if = {
 				limit = {
-					NOT = { has_completed_focus = ITA_strengthen_ascari_corps }
+					NOT = { always = no }
 					NOT = { has_completed_focus = ITA_forza_navale_especiale }
 				}
 				custom_effect_tooltip = ITA_strengthen_ascari_corps_ibrahim_farag_mohammed_tt
@@ -4207,7 +4207,7 @@ completion_reward = {
 				limit = {
 					always = yes
 				}
-				ITA_naval_air_coordination_templates = yes
+				always = no
 			}
 
 			add_ace = {
@@ -4293,7 +4293,7 @@ completion_reward = {
 			}
 
 			#Update NS icon
-			ITA_improve_regia_marina_dm_effect = yes
+			always = no
 		}
 	}
 
@@ -4336,7 +4336,7 @@ completion_reward = {
 			}
 
 			#Update NS icon
-			ITA_improve_regia_marina_dm_effect = yes
+			always = no
 		}
 	}
 
@@ -5612,7 +5612,7 @@ completion_reward = {
 		bypass = {
 			OR = {
 				has_country_flag = ITA_defeat_in_ethiopia_flag
-				ITA_has_peaced_out_eth_on_startup = yes
+				always = no
 			}
 		}
 
@@ -5644,16 +5644,16 @@ completion_reward = {
 				}
 				if = {
 					limit = {
-						NOT = { has_completed_focus = ITA_defy_the_duce	}
+						NOT = { always = no	}
 					}
-					ITA_initiate_balance_of_power_effect = yes
+					always = no
 				}
 			}
 			else_if = {
 				limit = {
 					NOT = { has_completed_focus = ITA_triumph_in_africa_bba }
 				}
-				ITA_bop_very_low_increase_effect = yes
+				always = no
 			}
 			else = {
 				effect_tooltip = {
@@ -5668,7 +5668,7 @@ completion_reward = {
 
 			if = {
 				limit = {
-					has_completed_focus = ITA_solid_progress
+					always = no
 				}
 				unlock_decision_tooltip = ITA_bop_slander_the_duce
 				unlock_decision_tooltip = ITA_bop_criticize_the_war
@@ -5874,7 +5874,7 @@ completion_reward = {
 			add_war_support = 0.03
 			add_political_power = 25
 
-			ITA_bop_very_low_increase_effect = yes #Works for every Duce
+			always = no #Works for every Duce
 		}
 	}
 
@@ -6439,7 +6439,7 @@ completion_reward = {
 		}
 
 		available = {
-			ITA_is_ruled_by_a_pope = yes
+			always = no
 			is_subject = no
 		}
 
@@ -6495,7 +6495,7 @@ completion_reward = {
 				}
 			}
 			
-			ITA_bop_low_increase_pope_side_effect = yes
+			always = no
 		}
 	}
 
@@ -6609,7 +6609,7 @@ completion_reward = {
 							has_guaranteed = ROOT
 							has_non_aggression_pact_with = ROOT
 						}
-						ITA_is_protestant_or_orthodox_country_in_europe_for_pope = yes
+						always = no
 					}
 				}
 				custom_effect_tooltip = generic_current_effects
@@ -6624,7 +6624,7 @@ completion_reward = {
 							has_guaranteed = ROOT
 							has_non_aggression_pact_with = ROOT
 						}
-						ITA_is_protestant_or_orthodox_country_in_europe_for_pope = yes
+						always = no
 					}
 					ROOT = {
 						create_wargoal = {
@@ -6649,12 +6649,12 @@ completion_reward = {
 						has_tech = super_heavy_tank_chassis
 					}
 					#SH template
-					ITA_add_hand_of_god_sh_tank_template_and_production = yes
+					always = no
 				}
 				else = {
 					custom_effect_tooltip = ITA_focus_sh_tank_template_tt
 					effect_tooltip = {
-						ITA_add_hand_of_god_sh_tank_template_and_production = yes
+						always = no
 					}
 				}
 			}
@@ -6821,7 +6821,7 @@ completion_reward = {
 			}
 			custom_effect_tooltip = ITA_papal_state_catholic_dominion_puppet_discount_tt
 
-			ITA_bop_medium_increase_pope_side_effect = yes
+			always = no
 		}
 	}
 
@@ -6930,7 +6930,7 @@ completion_reward = {
 		cost = 5
 		available = {
 			44 = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
+				always = no
 			}
 			has_tech = synth_oil_experiments
 		}
@@ -6968,7 +6968,7 @@ completion_reward = {
 		cost = 5
 		available = {
 			44 = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
+				always = no
 			}
 		}
 
@@ -6997,7 +6997,7 @@ completion_reward = {
 		cost = 5
 		available = {
 			44 = {
-				state_is_fully_controlled_by_ROOT_or_subject = yes
+				always = no
 			}
 		}
 
@@ -7006,7 +7006,7 @@ completion_reward = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_completed_focus = ITA_regional_development }
+					NOT = { always = no }
 				}
 				custom_effect_tooltip = ITA_albanian_fascist_militia_occupation_law_full_tt
 				show_ideas_tooltip = ITA_fake_colonial_police_law

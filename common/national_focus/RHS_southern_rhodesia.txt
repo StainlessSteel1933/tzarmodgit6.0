@@ -665,7 +665,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			BAF_decrease_food_security = yes
+			always = no
 			if = {
 				limit = {
 					has_completed_focus = RHS_settler_orientated_policies
@@ -844,7 +844,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = { idea = RHS_anglophile_immigration_campaign days = 545 }
-			RHN = {
 				add_timed_idea = { idea = RHS_anglophile_immigration_campaign days = 365 }
 			}
 		}
@@ -1929,7 +1928,7 @@ focus_tree = {
 				uses = 1
 				category = engineers_tech 
 			}
-			TBE_royal_pioneer_corps = yes
+			always = no
 		}
 	}
 

@@ -58,7 +58,7 @@ HOL_george_patton={
 			}
 		}
 						corps_commander={ 
-				visible = { any_country =  { OR = { has_completed_focus = USA_overlord has_completed_focus = ENG_overlord_states }  }   }
+				visible = { any_country =  { OR = { always = no always = no }  }   }
 	traits = {  trickster panzer_leader panzer_expert trait_reckless  urban_assault_specialist adaptable expert_improviser }
 	skill = 9
 	attack_skill = 9
@@ -77,7 +77,7 @@ HOL_dwight_eisenhower={
 			}
 		}
 		field_marshal = {
-				visible = { any_country =  { OR = { has_completed_focus = USA_overlord has_completed_focus = ENG_overlord_states }  }   }
+				visible = { any_country =  { OR = { always = no always = no }  }   }
 	traits = { logistics_wizard skilled_staffer organizer fast_planner offensive_doctrine inspirational_leader organisational_leader trait_cautious panzer_leader panzer_expert  }
 	skill = 9
 	attack_skill = 8
@@ -95,7 +95,7 @@ HOL_dwight_eisenhower={
 			}
 		}
 					corps_commander={ 
-				visible = { any_country =  { OR = { has_completed_focus = USA_overlord has_completed_focus = ENG_overlord_states }  }   }
+				visible = { any_country =  { OR = { always = no always = no }  }   }
 	traits = {  trait_engineer fortress_buster fake_skilled_staffer trait_cautious brilliant_strategist ranger harsh_leader infantry_leader infantry_expert }
 	skill = 9
 	attack_skill = 8
@@ -117,7 +117,7 @@ HOL_dwight_eisenhower={
 		}
 		
 			field_marshal = { 
-				visible = { any_country =  { OR = { has_completed_focus = USA_overlord has_completed_focus = ENG_overlord_states }  }   }
+				visible = { any_country =  { OR = { always = no always = no }  }   }
 		traits = { organizer fake_skilled_staffer logistics_wizard fast_planner infantry_leader infantry_expert trickster expert_improviser offensive_doctrine brilliant_strategist aggressive_assaulter  }
 	skill = 9
 
@@ -138,7 +138,7 @@ HOL_dwight_eisenhower={
 			}
 		}
 				field_marshal={ 
-				visible = { any_country =  { OR = { has_completed_focus = USA_overlord has_completed_focus = ENG_overlord_states }  }   }
+				visible = { any_country =  { OR = { always = no always = no }  }   }
 		traits = { logistics_wizard trait_cautious inflexible_strategist panzer_leader infantry_leader infantry_expert panzer_expert unyielding_defender inspirational_leader organisational_leader }
 	skill = 9
 	attack_skill = 7
@@ -156,7 +156,7 @@ HOL_dwight_eisenhower={
 			}
 		}
 		 corps_commander = { 
-			visible = { any_country =  { has_completed_focus = SOV_preemptive_invasion_of_iran } }
+			visible = { any_country =  { always = no } }
 		traits = { trait_engineer urban_assault_specialist trickster infantry_leader infantry_expert organizer trait_mountaineer desert_fox   }
 		skill = 7
 		attack_skill = 6 
@@ -173,7 +173,7 @@ HOL_dwight_eisenhower={
 			}
 		} #Point Value:
 		field_marshal = { 
-			visible = { any_country =  { has_completed_focus = SOV_preemptive_invasion_of_iran } } 
+			visible = { any_country =  { always = no } } 
 		traits = { offensive_doctrine organisational_leader trickster infantry_leader infantry_expert organizer thorough_planner logistics_wizard  trait_mountaineer desert_fox   }
 		skill = 7
 		attack_skill = 6
@@ -190,7 +190,7 @@ HOL_dwight_eisenhower={
 			}
 		} #Point Value:
 		corps_commander = { 
-			visible = { any_country =  { has_completed_focus = SOV_preemptive_invasion_of_iran } }  
+			visible = { any_country =  { always = no } }  
 		traits = {  panzer_leader panzer_expert trait_mountaineer expert_improviser desert_fox urban_assault_specialist trait_engineer fortress_buster harsh_leader }
 		skill = 7 
 		attack_skill = 6
@@ -207,7 +207,7 @@ HOL_dwight_eisenhower={
 			}
 		}
 		corps_commander = { #17
-				visible = { any_country =  { has_completed_focus = SOV_preemptive_invasion_of_iran } } 
+				visible = { any_country =  { always = no } } 
 			traits = { old_guard war_hero combined_arms_expert cavalry_leader desert_fox hill_fighter urban_assault_specialist expert_improviser   }
     skill = 7
     attack_skill = 5

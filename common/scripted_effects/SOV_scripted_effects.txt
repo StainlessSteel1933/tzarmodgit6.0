@@ -2929,65 +2929,7 @@ SOV_foreign_politics_decision_cost_reduction_effect = { #Add more diplomacy vars
 	round_variable = SOV_sinkiang_proposal_cost
 }
 
-SOV_approach_sinkiang_diplomacy_effect = {
-	add_ai_strategy = {
-		type = befriend
-		id = SIK			
-		value = 15
-	}
-	add_ai_strategy = {
-		type = alliance
-		id = SIK		
-		value = 15
-	}
-	SIK = {
-		add_ai_strategy = {
-			type = befriend
-			id = SOV			
-			value = 10
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = CHI		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = PRC		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = XSM		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = SHX		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = YUN		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = GXC		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = MEN		
-			value = -5
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = MIN		
-			value = -5
-		}
-	}
-}
+
 
 SOV_set_appropriate_national_academy_of_sciences_flag_effect = {
 	#log = "ROOT is [ROOT.GetName]"
@@ -3733,147 +3675,10 @@ SOV_manage_spanish_generals_exiled_in_ussr_effect = {
 		}
 		ROOT = { SPR_enrique_lister = { set_nationality = SOV } }
 		SOV = {
-			SPR_enrique_lister = {
-				set_variable = { SOV.SOV_spanish_general = THIS }
-				#log = "Líster is [?SOV.SOV_spanish_general.GetName]" #Debug
-				#Líster joins the USSR as a Stalinist
-				if = {
-					limit = {
-						has_trait = trait_SPR_anti_stalinist_loyalties
-					}
-					remove_unit_leader_trait = trait_SPR_anti_stalinist_loyalties
-				}
-				if = {
-					limit = {
-						has_trait = trait_SPR_republican_loyalties
-					}
-					remove_unit_leader_trait = trait_SPR_republican_loyalties
-				}
-				if = {
-					limit = {
-						NOT = { has_trait = trait_SPR_stalinist_loyalties }
-					}
-					add_unit_leader_trait = trait_SPR_stalinist_loyalties
-				}
-			}
-			set_country_flag = SOV_go_go_general_flag
-		}
-	}
-	else_if = { #El Campesino
-		limit = {
-			ROOT = { tag = SPD }
-			SOV = {
-				has_country_flag = SOV_spanish_refugee_generals_welcome_flag
-				OR = {
-					has_completed_focus = SOV_the_left_opposition
-					AND = {
-						has_completed_focus = SOV_the_right_opposition
-						NOT = { has_completed_focus = SOV_covert_support_for_spanish_poum }
-					}
-				}
-			}
-		}
+			always = no
 		ROOT = { SPR_valentin_gonzalez = { set_nationality = SOV } }
 		SOV = {
-			SPR_valentin_gonzalez = {
-				set_variable = { SOV.SOV_spanish_general = THIS }
-				#El Campesino joins the USSR as an Anti-Stalinist
-				if = {
-					limit = {
-						has_trait = trait_SPR_republican_loyalties
-					}
-					remove_unit_leader_trait = trait_SPR_republican_loyalties
-				}
-				if = {
-					limit = {
-						has_trait = trait_SPR_stalinist_loyalties
-					}
-					remove_unit_leader_trait = trait_SPR_stalinist_loyalties
-				}
-				if = {
-					limit = {
-						NOT = { has_trait = trait_SPR_anti_stalinist_loyalties }
-					}
-					add_unit_leader_trait = trait_SPR_anti_stalinist_loyalties
-				}
-			}
-			set_country_flag = SOV_go_go_general_flag
-		}
-	}
-	else_if = { #José Rovira
-		limit = {
-			ROOT = { tag = SPC }
-			SOV = {
-				has_country_flag = SOV_spanish_refugee_generals_welcome_flag
-				has_completed_focus = SOV_covert_support_for_spanish_poum
-			}
-		}
-		ROOT = { SPR_jose_rovira = { set_nationality = SOV } }
-		SOV = {
-			SPR_jose_rovira = {
-				set_variable = { SOV.SOV_spanish_general = THIS }
-				#Rovira joins the USSR as an Anti-Stalinist
-				if = {
-					limit = {
-						has_trait = trait_SPR_republican_loyalties
-					}
-					remove_unit_leader_trait = trait_SPR_republican_loyalties
-				}
-				if = {
-					limit = {
-						has_trait = trait_SPR_stalinist_loyalties
-					}
-					remove_unit_leader_trait = trait_SPR_stalinist_loyalties
-				}
-				if = {
-					limit = {
-						NOT = { has_trait = trait_SPR_anti_stalinist_loyalties }
-					}
-					add_unit_leader_trait = trait_SPR_anti_stalinist_loyalties
-				}
-			}
-			set_country_flag = SOV_go_go_general_flag
-		}
-	}
-	if = {
-		limit = {
-			SOV = { has_country_flag = SOV_go_go_general_flag }
-		}
-		var:SOV.SOV_spanish_general = {
-			#log = "I am [THIS.GetName]" #Debug
-			if = { # Won't be a marshal in the USSR
-				limit = {
-					is_field_marshal = yes
-				}
-				demote_leader = yes
-			}
-			if = { # Won't be an advisor in the USSR
-				limit = {
-					is_advisor = yes
-				}
-				if = {
-					limit = {
-						is_character_slot = theorist
-					}
-					remove_advisor_role = { slot = theorist } 
-				}
-				else_if = {
-					limit = {
-						is_character_slot = army_chief
-					}
-					remove_advisor_role = { slot = army_chief } 
-				}
-				if = {
-					limit = {
-						is_character_slot = high_command
-					}
-					remove_advisor_role = { slot = high_command } 
-				}
-			}
-			unit_leader_event = { id = NSB_soviet_spanish_civil_war.1 days = 5 random_days = 2 }
-		}
-		SOV = { clr_country_flag = SOV_spanish_refugee_generals_welcome_flag }
-	}
+			always = no
 }
 
 #POUM brigades come to aid in the Soviet Civil War
@@ -7218,7 +7023,7 @@ SOV_set_up_right_opposition_militia = {
 		# More Peasant Militia if collectivization has been reversed
 		IF = {
 			limit = {
-				ROOT = { has_completed_focus = SOV_reverse_the_collectivization_process }
+				ROOT = { always = no }
 				NOT = { has_state_category = enclave }
 				NOT = { has_state_category = wasteland }
 			}
@@ -7982,14 +7787,14 @@ SOV_start_civil_war = {
 			}
 		}
 		if = {
-			limit = { has_completed_focus = SOV_the_right_opposition }
+			limit = { always = no }
 			uncomplete_national_focus = { # Remove all traces of Bukharin's
 				focus = SOV_the_right_opposition
 				uncomplete_children = yes
 			}
 		}
 		if = {
-			limit = { has_completed_focus = SOV_beaten_but_not_defeated }
+			limit = { always = no }
 			uncomplete_national_focus = { # Remove all traces of exiles'
 				focus = SOV_beaten_but_not_defeated
 				uncomplete_children = yes
@@ -8289,7 +8094,7 @@ SOV_start_civil_war = {
 		# Add effects to SOS
 		IF = {
 			limit = {
-				GER = { has_completed_focus = GER_anti_soviet_pact }
+				GER = { always = no }
 			}
 			SOS = { add_opinion_modifier = { target = GER modifier = worse_pact_against_us } }
 		}
@@ -8367,7 +8172,7 @@ SOV_left_opposition_civil_war_start = {
 
 	# Check Foreign Funds
 	IF = {
-		limit = { has_completed_focus = SOV_funds_for_the_cause }
+		limit = { always = no }
 		add_timed_idea = {
 			idea = SOV_foreign_funds_idea
 			days = 365
@@ -8398,7 +8203,7 @@ SOV_right_opposition_civil_war_start = {
 
 	# Reverse the collectivisation process
 	IF = {
-		limit = { has_completed_focus = SOV_reverse_the_collectivization_process }
+		limit = { always = no }
 		add_timed_idea = {
 			idea = SOV_support_from_farmers
 			days = 365
@@ -8565,7 +8370,7 @@ SOV_exiles_civil_war_start = {
 	# Cavalry
 	IF = {
 		limit = {
-			has_completed_focus = SOV_approach_semyonov
+			always = no
 		}
 		MIN = {
 			country_event = {

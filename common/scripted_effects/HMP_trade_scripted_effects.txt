@@ -28,7 +28,6 @@ anti_cross_faction_trade_axis = {
 	#     modifier = anti_cross_faction_trade
 	# }
 	# add_opinion_modifier = {
-	#     target = FIN
 	#     modifier = anti_cross_faction_trade
 	# }
 	# add_opinion_modifier = {
@@ -133,9 +132,6 @@ anti_cross_faction_trade_all = {
 		anti_cross_faction_trade_allies = yes
 	}
 	ITA = {
-		anti_cross_faction_trade_allies = yes
-	}
-	FIN = {
 		anti_cross_faction_trade_allies = yes
 	}
 	HUN = {

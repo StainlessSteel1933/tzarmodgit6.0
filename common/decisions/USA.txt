@@ -126,20 +126,20 @@ USA_roosevelt_ll_to_target_armor  = {
 		if = { limit ={ FROM = { has_tech = improved_medium_tank_chassis } }
 			send_equipment = {   equipment = medium_tank_chassis amount = 800  target = FROM }
 			send_equipment = {   equipment = medium_tank_aa_chassis amount = 80  target = FROM }
-			send_equipment = {   equipment = mech_chassis amount = 500  target = FROM }			
+			send_equipment = {   equipment = var:mech_chassis amount = 500  target = FROM }			
 		}
 		else_if = { limit ={ FROM = { has_tech = improved_light_tank_chassis } }
 			send_equipment = {   equipment = light_tank_chassis amount = 1000  target = FROM }
 			send_equipment = {   equipment = light_tank_aa_chassis amount = 100  target = FROM }	
-			send_equipment = {   equipment = mech_chassis amount = 500  target = FROM }				
+			send_equipment = {   equipment = var:mech_chassis amount = 500  target = FROM }				
 		}
 			else_if = { limit ={ FROM = { has_tech = improved_heavy_tank_chassis } }
 			send_equipment = {   equipment = heavy_tank_chassis amount = 600  target = FROM }
 			send_equipment = {   equipment = heavy_tank_aa_chassis amount = 60  target = FROM }
-			send_equipment = {   equipment = mech_chassis amount = 500  target = FROM }	
+			send_equipment = {   equipment = var:mech_chassis amount = 500  target = FROM }	
 		}
 		else = { 
-			send_equipment = {   equipment = mech_chassis amount = 2000  target = FROM }	
+			send_equipment = {   equipment = var:mech_chassis amount = 2000  target = FROM }	
 		}
 			send_equipment = {   equipment = support_equipment amount = 400  target = FROM }
 			send_equipment = {   equipment = motorized_equipment amount = 100  target = FROM }
@@ -152,7 +152,7 @@ USA_roosevelt_ll_to_target_armor  = {
 
 		icon = generic_construction
 		
-		visible = { has_completed_focus = USA_Lend_Lease_Act }
+		visible = { always = no }
 		
 		allowed = {
 		
@@ -194,7 +194,7 @@ USA_roosevelt_ll_to_target_armor  = {
 
 		icon = generic_construction
 		
-		visible = { has_completed_focus = USA_Lend_Lease_Act }
+		visible = { always = no }
 		
 		allowed = {
 		
@@ -236,7 +236,7 @@ USA_roosevelt_ll_to_target_armor  = {
 
 		icon = generic_construction
 		
-		visible = { has_completed_focus = USA_Lend_Lease_Act }
+		visible = { always = no }
 		
 		allowed = {
 		
@@ -278,7 +278,7 @@ USA_roosevelt_ll_to_target_armor  = {
 
 		icon = generic_construction
 		
-		visible = { has_completed_focus = USA_Lend_Lease_Act }
+		visible = { always = no }
 		
 		allowed = {
 		
@@ -320,7 +320,7 @@ USA_roosevelt_ll_to_target_armor  = {
 
 		icon = generic_construction
 		
-		visible = { has_completed_focus = USA_Lend_Lease_Act }
+		visible = { always = no }
 		
 		allowed = {
 		
@@ -362,7 +362,7 @@ USA_roosevelt_ll_to_target_armor  = {
 
 		icon = generic_construction
 		
-		visible = { has_completed_focus = USA_Lend_Lease_Act }
+		visible = { always = no }
 		
 		allowed = {
 		
@@ -537,9 +537,7 @@ USA_puppet_brazil = {
 	}
 
 	available = {
-	BRA = { has_war_with = GER
-			is_ai = yes 
-			}
+	always = no
 	date > 1941.1.1
 
 	}
@@ -705,11 +703,11 @@ USA_aid_britain = {
 		is_good = yes
 		fire_only_once = yes
 		timeout_effect = { 
-			send_equipment = { equipment = fighter_equipment amount = 5000 target = ENG }
-			send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = ENG }
-			send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = ENG }
-			send_equipment = { equipment = CAS_equipment amount = 5000 target = ENG }
-			send_equipment = { equipment = nav_bomber_equipment amount = 5000 target = ENG }
+			send_equipment = { equipment = var:fighter_equipment amount = 5000 target = ENG }
+			send_equipment = { equipment = var:tac_bomber_equipment amount = 5000 target = ENG }
+			send_equipment = { equipment = var:heavy_fighter_equipment amount = 5000 target = ENG }
+			send_equipment = { equipment = var:CAS_equipment amount = 5000 target = ENG }
+			send_equipment = { equipment = var:nav_bomber_equipment amount = 5000 target = ENG }
 			#send_equipment = { equipment = transport_plane_equipment amount = 5000 target = ENG }
 			activate_mission = USA_auto_ll_eng_2
 		 }
@@ -730,11 +728,11 @@ USA_aid_britain = {
 		is_good = yes
 		fire_only_once = yes
 		timeout_effect = { 
-			send_equipment = { equipment = fighter_equipment amount = 5000 target = ENG }
-			send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = ENG }
-			send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = ENG }
-			send_equipment = { equipment = CAS_equipment amount = 5000 target = ENG }
-			send_equipment = { equipment = nav_bomber_equipment amount = 5000 target = ENG }
+			send_equipment = { equipment = var:fighter_equipment amount = 5000 target = ENG }
+			send_equipment = { equipment = var:tac_bomber_equipment amount = 5000 target = ENG }
+			send_equipment = { equipment = var:heavy_fighter_equipment amount = 5000 target = ENG }
+			send_equipment = { equipment = var:CAS_equipment amount = 5000 target = ENG }
+			send_equipment = { equipment = var:nav_bomber_equipment amount = 5000 target = ENG }
 			activate_mission = USA_auto_ll_eng_1 
 		}
 		complete_effect ={}

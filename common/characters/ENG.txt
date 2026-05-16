@@ -471,7 +471,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ harsh_leader infantry_officer infantry_leader desert_fox trait_mountaineer  }
+			traits={ harsh_leader infantry_officer infantry_leader desert_fox trait_mountaineer }
 			skill=4
 			attack_skill=6
 			defense_skill=4
@@ -819,16 +819,16 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_philip_kerr
-			available  = {
+			available = {
 			}
-			allowed  = {
-				original_tag  = ENG
+			allowed = {
+				original_tag = ENG
 			}
-			traits  = {
+			traits = {
 				silent_workhorse 
 			}
-			ai_will_do  = {
-				factor  = 2.000
+			ai_will_do = {
+				factor = 2.000
 			}
 		}		
 	}
@@ -842,10 +842,10 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_nevile_henderson
-			allowed  = {
-				original_tag  = ENG
+			allowed = {
+				original_tag = ENG
 			}
-			traits  = {
+			traits = {
 				backroom_backstabber 
 			}
 		}
@@ -861,10 +861,10 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_leslie_hore_belisha
-			allowed  = {
-				original_tag  = ENG
+			allowed = {
+				original_tag = ENG
 			}
-			traits  = {
+			traits = {
 				armaments_organizer 
 			}
 		}
@@ -879,15 +879,15 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_maxwell_aitken
-			allowed  = {
-				original_tag  = ENG
+			allowed = {
+				original_tag = ENG
 				has_completed_focus = limited_rearmament_focus
 			}
-			traits  = {
+			traits = {
 				war_industrialist 
 			}
-			ai_will_do  = {
-				factor  = 2.000
+			ai_will_do = {
+				factor = 2.000
 			}
 		}
 	}
@@ -902,15 +902,15 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = ENG_ernest_bevin
-			allowed  = {
-				original_tag  = ENG
-				has_completed_focus = { ENG_build_civs }
+			allowed = {
+				original_tag = ENG
+				always = no }
 			}
-			traits  = {
+			traits = {
 				captain_of_industry 
 			}
-			ai_will_do  = {
-				factor  = 1.000
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 	}
@@ -927,12 +927,12 @@ characters={
 			slot = air_chief
 			# ledger = air
 			idea_token = eng_stewart_menzies
-			available  = {
+			available = {
 			}
-			allowed  = {
-				original_tag  = ENG
+			allowed = {
+				original_tag = ENG
 			}
-			traits  = {
+			traits = {
 				air_air_superiority_2
 			}
 		}
@@ -948,15 +948,15 @@ characters={
 	# 	advisor={
 	# 		slot = political_advisor
 	# 		idea_token = eng_alan_turing
-	# 		available  = {
+	# 		available = {
 	# 		}
-	# 		ai_will_do  = {
-	# 			factor  = 1.000
+	# 		ai_will_do = {
+	# 			factor = 1.000
 	# 		}
-	# 		allowed  = {
-	# 			original_tag  = ENG
+	# 		allowed = {
+	# 			original_tag = ENG
 	# 		}
-	# 		traits  = {
+	# 		traits = {
 	# 			mastermind_code_cracker 
 	# 		}
 	# 	}
@@ -964,13 +964,13 @@ characters={
 
 	
 
-  #####                                                              
- #     #   ####   #  ######  #    #  #####  #   ####   #####   ####  
- #        #    #  #  #       ##   #    #    #  #         #    #      
-  #####   #       #  #####   # #  #    #    #   ####     #     ####  
-       #  #       #  #       #  # #    #    #       #    #         # 
- #     #  #    #  #  #       #   ##    #    #  #    #    #    #    # 
-  #####    ####   #  ######  #    #    #    #   ####     #     ####  
+ #####                               
+ #   #  ####  # ###### #  # ##### #  ####  #####  #### 
+ #    #  # # #    ##  #  #  # #     #  #   
+ #####  #    # #####  # # #  #  #  ####   #   #### 
+    # #    # #    # # #  #  #    #  #     # 
+ #   # #  # # #    #  ##  #  # #  #  #  #  # 
+ #####  ####  # ###### #  #  #  #  ####   #   #### 
 
 
 	ENG_james_chadwick = {

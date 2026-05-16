@@ -1175,7 +1175,7 @@ ideas = {
 					has_government = fascism
 					AND = {
 						has_government = neutrality
-						NOT = { has_completed_focus = HUN_renounce_the_treaty_of_trianon }
+						NOT = { always = no }
 					}
 				}
 			}
@@ -1383,7 +1383,7 @@ ideas = {
 	# 		}
 			
 	# 		available = {
-	# 			has_completed_focus = HUN_renounce_the_treaty_of_trianon
+	# 			always = no
 	# 		}
 			
 	# 		traits = { fascist_demagogue }

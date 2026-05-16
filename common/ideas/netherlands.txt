@@ -1126,7 +1126,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = neutrality
-					NOT = { has_completed_focus = HOL_the_only_man_in_the_dutch_government }
+					NOT = { always = no }
 				}
 			}
 
@@ -1155,7 +1155,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = neutrality
-					NOT = { has_completed_focus = HOL_the_only_man_in_the_dutch_government }
+					NOT = { always = no }
 				}
 			}
 

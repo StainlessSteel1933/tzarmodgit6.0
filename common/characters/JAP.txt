@@ -661,7 +661,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = -1
 			visible = {
-				has_completed_focus = JAP_contact_former_sakurakai_members
+				always = no
 			}
 		}
 
@@ -1290,8 +1290,8 @@ characters = {
 			legacy_id = -1
 			visible = {
 				OR = {
-					has_completed_focus = JAP_grand_army_purge
-					has_completed_focus = JAP_sway_disillusioned_young_officers
+					always = no
+					always = no
 				}
 			}
 		}
@@ -1319,8 +1319,8 @@ characters = {
 			legacy_id = -1
 			visible = {
 				OR = {
-					has_completed_focus = JAP_grand_army_purge
-					has_completed_focus = JAP_sway_disillusioned_young_officers
+					always = no
+					always = no
 				}
 			}
 		}
@@ -1348,8 +1348,8 @@ characters = {
 			legacy_id = -1
 			visible = {
 				OR = {
-					has_completed_focus = JAP_grand_army_purge
-					has_completed_focus = JAP_sway_disillusioned_young_officers
+					always = no
+					always = no
 				}
 			}
 		}
@@ -1377,8 +1377,8 @@ characters = {
 			legacy_id = -1
 			visible = {
 				OR = {
-					has_completed_focus = JAP_grand_army_purge
-					has_completed_focus = JAP_sway_disillusioned_young_officers
+					always = no
+					always = no
 				}
 			}
 		}
@@ -1406,8 +1406,8 @@ characters = {
 			legacy_id = -1
 			visible = {
 				OR = {
-					has_completed_focus = JAP_grand_army_purge
-					has_completed_focus = JAP_sway_disillusioned_young_officers
+					always = no
+					always = no
 				}
 			}
 		}
@@ -1435,8 +1435,8 @@ characters = {
 			legacy_id = -1
 			visible = {
 				OR = {
-					has_completed_focus = JAP_grand_army_purge
-					has_completed_focus = JAP_sway_disillusioned_young_officers
+					always = no
+					always = no
 				}
 			}
 		}
@@ -1464,8 +1464,8 @@ characters = {
 			legacy_id = -1
 			visible = {
 				OR = {
-					has_completed_focus = JAP_grand_army_purge
-					has_completed_focus = JAP_sway_disillusioned_young_officers
+					always = no
+					always = no
 				}
 			}
 		}
@@ -1493,8 +1493,8 @@ characters = {
 			legacy_id = -1
 			visible = {
 				OR = {
-					has_completed_focus = JAP_grand_army_purge
-					has_completed_focus = JAP_sway_disillusioned_young_officers
+					always = no
+					always = no
 				}
 			}
 		}
@@ -1531,7 +1531,7 @@ characters = {
 			logistics_skill = 3
 			legacy_id = -1
 			visible = {
-				has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+				always = no
 			}
 		}
 
@@ -1542,10 +1542,10 @@ characters = {
 				original_tag = JAP
 			}
 			visible = {
-				has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+				always = no
 			}
 			available = {
-				has_completed_focus = JAP_grand_army_purge
+				always = no
 			}
 			traits = {
 				army_chief_organizational_1
@@ -1770,10 +1770,10 @@ characters = {
 				original_tag = JAP
 			}
 			visible = {
-				has_completed_focus = JAP_contact_former_sakurakai_members
+				always = no
 			}
 			available = {
-				has_completed_focus = JAP_contact_former_sakurakai_members
+				always = no
 			}
 			traits = {
 				army_chief_planning_1
@@ -3179,9 +3179,9 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+					always = no
 				}
 			}
 
@@ -3189,7 +3189,7 @@ characters = {
 				#OR = {
 					#has_completed_focus = JAP_found_the_great_japan_press_association
 					#has_completed_focus = JAP_propagandize_the_nihon_shoki
-					has_completed_focus = JAP_reform_the_education_system
+					always = no
 				#}
 			}
 			traits = {
@@ -3222,13 +3222,13 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_contact_former_sakurakai_members
+				always = no
 			}
 
 			traits = {
@@ -3313,8 +3313,8 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+					always = no
+					always = no
 				}
 			}
 
@@ -3355,14 +3355,14 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_fukumotoism
+				always = no
 			}
 
 			traits = {
@@ -3396,14 +3396,14 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
+					always = no
+					always = no
 				}
 			}
 
 			available = {
 				OR = {
-					has_completed_focus = JAP_draft_the_showa_constitution
+					always = no
 					has_completed_focus = JAP_imperial_rule_assistance_association
 				}
 			}
@@ -3438,8 +3438,8 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
+					always = no
 				}
 			}
 
@@ -3477,13 +3477,13 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_ally_the_league_of_blood
+				always = no
 			}
 
 			traits = {
@@ -3516,13 +3516,13 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_integrate_the_kenkokutai
+				always = no
 			}
 
 			traits = {
@@ -3555,13 +3555,13 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_contact_the_masterless_samurai
+				always = no
 			}
 
 			traits = {
@@ -3594,13 +3594,13 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_contact_the_masterless_samurai
+				always = no
 			}
 
 			traits = {
@@ -3668,14 +3668,14 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_launch_the_income_doubling_plan
+				always = no
 			}
 
 			traits = {
@@ -3711,15 +3711,15 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
+					always = no
 				}
 			}
 
 			available = {
 				not_already_hired_except_as = political_advisor
 				OR = {
-					has_completed_focus = JAP_a_new_take_on_state_shintoism
-					has_completed_focus = JAP_the_spirit_of_the_imperial_nation
+					always = no
+					always = no
 					has_completed_focus = JAP_enact_religious_organizations_law
 				}
 			}
@@ -3783,7 +3783,7 @@ characters = {
 			}
 
 			available = {
-				has_completed_focus = JAP_eastern_road_and_steel_expansion
+				always = no
 			}
 
 			traits = {
@@ -3816,8 +3816,8 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
-					has_completed_focus = JAP_organize_a_general_election
+					always = no
+					always = no
 				}
 			}
 
@@ -3855,8 +3855,8 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
+					always = no
 				}
 			}
 
@@ -3930,14 +3930,14 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_shinkansen
+				always = no
 			}
 
 			traits = {
@@ -3970,8 +3970,8 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
+					always = no
 				}
 			}
 
@@ -4009,14 +4009,14 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_democratic_womens_suffrage
+				always = no
 			}
 
 			traits = {
@@ -4049,13 +4049,13 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_raise_support_within_the_proletarian_class
+				always = no
 				NOT = {
 					has_country_flag = JAP_IJA_arrested_advisors_flag
 				}
@@ -4093,14 +4093,14 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_raise_the_red_flag_high
+				always = no
 			}
 
 			traits = {
@@ -4133,15 +4133,15 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
 				OR = {
-					has_completed_focus = JAP_social_and_cultural_revolution
-					has_completed_focus = JAP_uplift_labor_unions
+					always = no
+					always = no
 				}
 			}
 
@@ -4175,15 +4175,15 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
 				OR = {
-					has_completed_focus = JAP_adopt_syndicalist_ideas
-					has_completed_focus = JAP_uplift_labor_unions
+					always = no
+					always = no
 				}
 			}
 
@@ -4259,7 +4259,7 @@ characters = {
 			visible = {
 				NOT = {
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+					always = no
 				}
 			}
 
@@ -4382,13 +4382,13 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_seek_yakuza_support
+				always = no
 				NOT = {
 					has_country_flag = JAP_IJA_arrested_advisors_flag
 				}
@@ -4512,15 +4512,15 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
 				OR = {
-					has_completed_focus = JAP_reform_the_education_system
-					has_completed_focus = JAP_overhaul_the_education_system
+					always = no
+					always = no
 				}
 			}
 
@@ -4559,7 +4559,7 @@ characters = {
 			available = {
 				OR = {
 					has_completed_focus = JAP_the_five_great_cities
-					has_completed_focus = JAP_taiheyo_belt
+					always = no
 				}
 			}
 
@@ -4593,14 +4593,14 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_cooperate_with_anarchists
+				always = no
 			}
 
 			traits = {
@@ -4633,8 +4633,8 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
@@ -4672,14 +4672,14 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_the_labor_farmer_faction_ascendant
+				always = no
 			}
 
 			traits = {
@@ -4712,13 +4712,13 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_sea_nationalize_the_zaibatsus
+				always = no
 			}
 
 			traits = {
@@ -4790,13 +4790,13 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
 				}
 			}
 
 			available = {
 				OR = {
-					has_completed_focus = JAP_give_it_your_all_for_the_emperor
+					always = no
 					has_completed_focus = JAP_form_the_great_japan_industrial_patriotic_association
 				}
 			}
@@ -4832,14 +4832,14 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_the_lecture_group_ascendant
+				always = no
 			}
 
 			traits = {
@@ -4875,14 +4875,14 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_secretly_rebuild_the_party
+				always = no
 				NOT = {
 					has_country_flag = JAP_IJA_arrested_advisors_flag
 				}
@@ -4925,8 +4925,8 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_organize_a_general_election
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 					has_country_leader = {
 						ruling_only = yes
@@ -4936,7 +4936,7 @@ characters = {
 			}
 
 			available = {
-				has_completed_focus = JAP_incorporate_buddhist_socialism
+				always = no
 			}
 
 			traits = {
@@ -4969,13 +4969,13 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
 				}
 			}
 
 			available = {
 				OR = {
-					has_completed_focus = JAP_embrace_kokutai
+					always = no
 					has_completed_focus = JAP_new_order_movement
 				}
 			}
@@ -5010,8 +5010,8 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
+					always = no
 				}
 			}
 
@@ -5049,13 +5049,13 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_contact_the_masterless_samurai
+				always = no
 			}
 
 			traits = {
@@ -5088,14 +5088,14 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_limit_the_emperors_power
+				always = no
 			}
 
 			traits = {
@@ -5128,14 +5128,14 @@ characters = {
 
 			visible = {	
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
+					always = no
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_ensure_civil_liberties
+				always = no
 			}
 
 			traits = {
@@ -5168,13 +5168,13 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
 					has_completed_focus = JAP_sea_purge_the_kodoha_faction
 				}
 			}
 
 			available = {
-				has_completed_focus = JAP_ally_the_league_of_blood
+				always = no
 			}
 
 			traits = {
@@ -5207,8 +5207,8 @@ characters = {
 
 			visible = {
 				NOT = {
-					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
-					has_completed_focus = JAP_okadas_military_purge_speech
+					always = no
+					always = no
 				}
 			}
 
@@ -5592,7 +5592,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 750 #communist general 1
 			visible = {
-				has_completed_focus = JAP_approach_the_young_officers
+				always = no
 			}
 		}
 	}
@@ -5614,7 +5614,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 751 #communist general 2
 			visible = {
-				has_completed_focus = JAP_approach_the_young_officers
+				always = no
 			}
 		}
 	}
@@ -5637,7 +5637,7 @@ characters = {
 			logistics_skill = 3
 			legacy_id = 752 #communist general 3
 			visible = {
-				has_completed_focus = JAP_approach_the_young_officers
+				always = no
 			}
 		}
 	}

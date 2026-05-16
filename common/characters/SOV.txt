@@ -103,15 +103,15 @@ characters = {
 				original_tag = SOV
 			}
 			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
+				always = no
 				NOT = {
-					has_completed_focus = SOV_the_third_rome
+					always = no
 				}
 			}
 			available = {
-				has_completed_focus = SOV_the_hands_do
+				always = no
 				NOT = {
-					has_completed_focus = SOV_the_third_rome
+					always = no
 				}
 			}
 			traits = {
@@ -321,9 +321,9 @@ SOV_mikhail_tukhachevsky={
 	available = {
 		if = {
 			limit = {
-				SOV = { has_completed_focus = SOV_great_purge }
+				SOV = { always = no }
 			}
-			NOT = { SOV = { has_completed_focus = SOV_great_purge } }
+			NOT = { SOV = { always = no } }
 		}
 	}
 	field_marshal={
@@ -1463,7 +1463,7 @@ SOV_arseniy_golovko={
 			legacy_id = 0
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				has_completed_focus = SOV_organization_of_the_partisans
+				always = no
 			}
 		}
 	}
@@ -1487,7 +1487,7 @@ SOV_arseniy_golovko={
 			legacy_id = 0
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				has_completed_focus = SOV_organization_of_the_partisans
+				always = no
 			}
 		}
 	}
@@ -1535,7 +1535,7 @@ SOV_arseniy_golovko={
 			legacy_id = 0
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				has_completed_focus = SOV_the_glory_of_the_red_army
+				always = no
 			}
 		}
 	}
@@ -1586,7 +1586,7 @@ SOV_arseniy_golovko={
 			logistics_skill = 1
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+				ROOT = { always = no }
 			}
 		}
 	}
@@ -1610,7 +1610,7 @@ SOV_arseniy_golovko={
 			logistics_skill = 1
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+				ROOT = { always = no }
 			}
 		}
 	}
@@ -1632,7 +1632,7 @@ SOV_arseniy_golovko={
 			logistics_skill = 3
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+				ROOT = { always = no }
 			}
 		}
 	}
@@ -1654,7 +1654,7 @@ SOV_arseniy_golovko={
 			logistics_skill = 1
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+				ROOT = { always = no }
 			}
 		}
 	}
@@ -1676,7 +1676,7 @@ SOV_arseniy_golovko={
 			logistics_skill = 2
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+				ROOT = { always = no }
 			}
 		}
 	}
@@ -1698,7 +1698,7 @@ SOV_arseniy_golovko={
 			logistics_skill = 1
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+				ROOT = { always = no }
 			}
 		}
 	}
@@ -1872,16 +1872,16 @@ SOV_arseniy_golovko={
 			}
 		}
 
-		allowed_civil_war = {f
+		allowed_civil_war = {
 			OR = {
-				has_completed_focus = SOV_the_plan_for_the_coup #Goes to right oppo if aligned via Plan for the Coup
+				always = no #Goes to right oppo if aligned via Plan for the Coup
 				AND = { #If not aligned by Right oppo, then stays with Stalin
 					original_tag = SOV
 					NOT = { tag = SOV }
 					NOT = {
 						any_other_country = {
 							original_tag = SOV
-							has_completed_focus = SOV_the_plan_for_the_coup
+							always = no
 						}
 					}
 				}
@@ -1917,14 +1917,14 @@ SOV_arseniy_golovko={
 
 		allowed_civil_war = {
 			OR = {
-				has_completed_focus = SOV_the_plan_for_the_coup #Goes to right oppo if aligned via Plan for the Coup
+				always = no #Goes to right oppo if aligned via Plan for the Coup
 				AND = { #If not aligned by Right oppo, then stays with Stalin
 					original_tag = SOV
 					NOT = { tag = SOV }
 					NOT = {
 						any_other_country = {
 							original_tag = SOV
-							has_completed_focus = SOV_the_plan_for_the_coup
+							always = no
 						}
 					}
 				}
@@ -2129,7 +2129,7 @@ SOV_arseniy_golovko={
 				}
 			}
 			available = {
-				has_completed_focus = SOV_policy_of_individual_security
+				always = no
 			}
 			traits = {
 				pc_for_foreign_affairs_molotov 
@@ -2160,7 +2160,7 @@ SOV_arseniy_golovko={
 				}
 			}
 			available = {
-				has_completed_focus = SOV_policy_of_collective_security 
+				always = no 
 			}
 			traits = {
 				pc_for_foreign_affairs_litvinov 
@@ -2730,7 +2730,7 @@ SOV_arseniy_golovko={
 			}
 			available = {
 				OR = {
-					has_completed_focus = SOV_the_need_for_policy_changes 
+					always = no 
 					has_completed_focus = SOV_return_democracy_to_the_party
 				}
 				if = {
@@ -2786,8 +2786,8 @@ SOV_arseniy_golovko={
 					has_global_flag = SOV_soviet_civil_war
 					has_global_flag = SOV_soviet_civil_war_over
 					AND = {
-						has_completed_focus = SOV_the_plan_for_the_coup
-						has_completed_focus = SOV_coup_detat
+						always = no
+						always = no
 					}
 				}
 				if = {
@@ -2865,11 +2865,11 @@ SOV_arseniy_golovko={
 			OR = {
 				AND = {
 					SOV_is_left_opposition = yes 
-					has_completed_focus = SOV_liberate_ryutin
+					always = no
 				}
 				AND = {
 					SOV_is_right_opposition = yes 
-					has_completed_focus = SOV_liberate_ryutin 
+					always = no 
 				}
 				AND = {
 					SOV_is_exiles = yes 
@@ -2923,7 +2923,7 @@ SOV_arseniy_golovko={
 			available = {
 				OR = {
 					has_completed_focus = SOV_war_heroes
-					has_completed_focus = SOV_socialist_realm
+					always = no
 				}
 			}
 			traits = {
@@ -2952,10 +2952,10 @@ SOV_arseniy_golovko={
 				original_tag = SOV
 			}
 			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
+				always = no
 			}
 			available = {
-				has_completed_focus = SOV_return_of_the_rocor
+				always = no
 			}
 			traits = {
 				orthodox_rabblerouser
@@ -2984,10 +2984,10 @@ SOV_arseniy_golovko={
 				original_tag = SOV
 			}
 			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
+				always = no
 			}
 			available = {
-				has_completed_focus = SOV_the_declaration
+				always = no
 			}
 			traits = {
 				theocratic_diplomat
@@ -3016,10 +3016,10 @@ SOV_arseniy_golovko={
 				original_tag = SOV
 			}
 			available = {
-				has_completed_focus = SOV_the_declaration
+				always = no
 			}
 			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
+				always = no
 			}
 			traits = {
 				driver_of_the_faithful
@@ -3086,7 +3086,7 @@ SOV_arseniy_golovko={
 			visible = {
 				OR = {
 					has_idea = SOV_grigory_semyonov
-					has_completed_focus = SOV_approach_semyonov
+					always = no
 				}
 			}
 		}
@@ -3106,13 +3106,13 @@ SOV_arseniy_golovko={
 					custom_trigger_tooltip = {
 					 	tooltip = SOV_grigory_semyonov_man_tt
 					 	SOV_soviet_civil_war_not_started = yes 
-					 	NOT = { SOV = { has_completed_focus = SOV_approach_semyonov } }
+					 	NOT = { SOV = { always = no } }
 					}
 				}
 				
 				if = {
 					limit = { tag = SOV }
-					has_completed_focus = SOV_approach_semyonov
+					always = no
 				}
 				if = {
 					limit = {
@@ -3177,7 +3177,7 @@ SOV_arseniy_golovko={
 				original_tag = SOV
 			}
 			available = {
-				has_completed_focus = SOV_consolidate_power
+				always = no
 			}
 			traits = {
 				political_chameleon
@@ -3211,7 +3211,7 @@ SOV_arseniy_golovko={
 				}
 			}
 			available = {
-				has_completed_focus = SOV_reconvene_the_zemsky_sobor
+				always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag

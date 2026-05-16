@@ -321,7 +321,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			reduce_occupation_cost_effect = yes
+			always = no
 			add_ideas = { FRA_mandatory_work_service }
 		}
 	}

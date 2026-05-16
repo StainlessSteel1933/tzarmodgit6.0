@@ -221,7 +221,7 @@ on_actions = {
 					days = 35
 					value = 1
 				}
-				CZE_update_skoda_tier = yes
+				always = no
 			}
 		}
 	}
@@ -309,9 +309,9 @@ on_actions = {
 				limit = {
 					FROM = {
 						original_tag = CZE
-						has_completed_focus = CZE_negotiations_with_the_autonomous_bloc
+						always = no
 						NOT = {
-							has_completed_focus = CZE_form_a_federation
+							always = no
 						}
 					}
 				}
@@ -323,7 +323,7 @@ on_actions = {
 				limit = {
 					FROM = {
 						original_tag = CZE
-						has_completed_focus = CZE_form_a_federation
+						always = no
 					}
 				}
 				ROOT = {
@@ -348,7 +348,7 @@ on_actions = {
 					ROOT = {
 						original_tag = CZE
 						NOT = {
-							has_completed_focus = CZE_lessons_of_war
+							always = no
 						}
 					}
 					FROM = {
@@ -364,7 +364,7 @@ on_actions = {
 					FROM = {
 						original_tag = CZE
 						NOT = {
-							has_completed_focus = CZE_lessons_of_war
+							always = no
 						}
 					}
 					ROOT = {

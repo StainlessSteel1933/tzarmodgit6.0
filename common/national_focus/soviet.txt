@@ -1659,7 +1659,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_completed_focus = SOV_the_path_of_marxism_leninism
-				has_completed_focus = SOV_womens_fascist_movement
+				always = no
 			}
 		}
 		
@@ -3404,7 +3404,7 @@ focus_tree = {
 						original_tag = SOV
 					}
 					available = {
-						has_completed_focus = SOV_defense_of_moscow
+						always = no
 					}
 					traits = {
 						marshal_of_victory
@@ -3789,7 +3789,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 800  } 
 			add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 1500 }
 			add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 3460  }  
-			add_equipment_to_stockpile = { type = mech_equipment_1 amount = 5000  }  
+			add_equipment_to_stockpile = { type = var:mech_equipment_1 amount = 5000  }  
 		}
 	}
 	focus = {
@@ -4749,7 +4749,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_completed_focus = SOV_leader_of_the_party_and_the_people
+					always = no
 				}
 				swap_ruler_traits = {
 					remove = stalin_inheritor_of_lenin_leader
@@ -4806,7 +4806,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_completed_focus = SOV_leader_of_the_party_and_the_people
+					always = no
 				}
 				swap_ruler_traits = {
 					remove = stalin_servant_of_lenin_leader
@@ -5413,7 +5413,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			sov_begin_civil_war = yes
+			always = no
 						# Return Trotsky from Mexico
 			set_global_flag = flag_trotsky_returning_to_ussr_from_mexico
 			SOV_promote_to_country_leader_trotsky = yes	

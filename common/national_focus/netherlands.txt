@@ -1065,7 +1065,7 @@ focus_tree = {
 			    producer = HOL
 			}
 			add_ideas = HOL_liberation
-			#HOL_de_crisisjaren_level_down = yes
+			#always = no
 		}
 	}
 
@@ -1086,7 +1086,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = low_economic_mobilisation
-			HOL_de_crisisjaren_level_down = yes
+			always = no
 		}
 	}
 
@@ -1143,7 +1143,7 @@ focus_tree = {
 					}
 				}
 			}
-			HOL_de_crisisjaren_level_down = yes
+			always = no
 		}
 	}
 
@@ -1175,7 +1175,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			HOL_de_crisisjaren_level_down = yes
+			always = no
 		}
 	}
 
@@ -1214,7 +1214,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			HOL_de_crisisjaren_level_down = yes
+			always = no
 		}
 	}
 
@@ -1370,7 +1370,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			HOL_de_crisisjaren_level_down = yes
+			always = no
 			hidden_effect = { news_event = { id = mtg_news.47 days = 1 } }
 		}
 	}
@@ -1624,7 +1624,7 @@ focus_tree = {
 				uses = 1 # was 2
 				category = jet_technology
 			}
-			HOL_domestic_jet_engine_designs_level_up = yes
+			always = no
 
 		}
 	}
@@ -3022,7 +3022,7 @@ focus_tree = {
 				uses = 2
 				category = air_doctrine
 			}
-			HOL_domestic_jet_engine_designs_level_up = yes
+			always = no
 		}
 	}
 
@@ -3512,134 +3512,7 @@ focus_tree = {
 				    ideology = democratic
 				    popularity = -0.05
 				}
-				HOL_pieter_sjoerds_gerbrandy = {
-					promote_character = {
-						ideology = conservatism
-					}
-				}
-				retire_country_leader = yes
-				if = {
-					limit = {
-						has_idea = HOL_weak_government
-					}
-					remove_ideas = HOL_weak_government
-				}
-			}
-		}
-	}
-
-
-	
-
-	focus = {
-		id = HOL_de_vernieuwing
-		prerequisite = { focus = HOL_symbol_of_resistance}
-		icon = GFX_goal_generic_demand_territory
-		x = -1
-		y = 1
-		relative_position_id = HOL_symbol_of_resistance
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_political_power = 200
-			set_temp_variable = {
-				var = ban_communism_var
-				value = party_popularity@communism
-			}
-			multiply_temp_variable = {
-				var = ban_communism_var
-				value = -1
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = ban_communism_var
-			}
-			set_temp_variable = {
-				var = ban_fascism_var
-				value = party_popularity@fascism
-			}
-			multiply_temp_variable = {
-				var = ban_fascism_var
-				value = -1
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = ban_fascism_var
-			}
-			set_temp_variable = {
-				var = ban_democratic_var
-				value = party_popularity@democratic
-			}
-			multiply_temp_variable = {
-				var = ban_democratic_var
-				value = -1
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = ban_democratic_var
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			swap_ruler_traits = { remove = disdain_for_politicians_1 add = disdain_for_politicians_2 }
-		}
-	}
-
-	focus = {
-		id = HOL_depillarization
-		prerequisite = { focus = HOL_symbol_of_resistance }
-		icon = GFX_goal_generic_national_unity
-		x = 1
-		y = 1
-		relative_position_id = HOL_symbol_of_resistance
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			add_stability = 0.1
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = HOL_depillarization
-		}
-	}
-
-	focus = {
-		id = HOL_a_new_dutch_unity
-		prerequisite = { focus = HOL_de_vernieuwing }
-		prerequisite = { focus = HOL_depillarization }
-		icon = GFX_goal_anschluss
-		x = 1
-		y = 1
-		relative_position_id = HOL_de_vernieuwing
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
-		completion_reward = {
-			add_war_support = 0.15
-			add_stability = 0.05
-		}
-	}
-
-
-	focus = {
-		id = HOL_royal_arms_purchases
-		available = {
-			
-		}
-		prerequisite = { focus = HOL_de_vernieuwing }
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 0
-		y = 1
-		relative_position_id = HOL_a_new_dutch_unity
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			add_offsite_building = { type = arms_factory level = 3 }
-		}
-	}
+				always = no
 
 	
 

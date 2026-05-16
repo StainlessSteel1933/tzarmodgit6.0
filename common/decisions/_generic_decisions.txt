@@ -1272,7 +1272,7 @@ economy_decisions = {
 		}
 		days_remove = 90
 		remove_effect = {
-			replace_arms_with_civ_factories = yes
+			always = no
 			add_war_support = -0.01
 			add_stability = 0.01
 		}

@@ -317,7 +317,7 @@ technologies = {
 			}
 			#modifier = {
 			#	factor = 2
-			#	anti_submarine_strategy_required_trigger = yes
+			#	always = no
 			#}
 		}
 
@@ -362,7 +362,7 @@ technologies = {
 			}
 			#modifier = {
 			#	factor = 2
-			#	anti_submarine_strategy_required_trigger = yes
+			#	always = no
 			#}
 		}
 
@@ -407,7 +407,7 @@ technologies = {
 			}
 			#modifier = {
 			#	factor = 2
-			#	anti_submarine_strategy_required_trigger = yes
+			#	always = no
 			#}
 		}
 
@@ -448,7 +448,7 @@ technologies = {
 			}
 			#modifier = {
 			#	factor = 2
-			#	anti_submarine_strategy_required_trigger = yes
+			#	always = no
 			#}
 		}
 
@@ -491,7 +491,7 @@ technologies = {
 			}
 			#modifier = {
 			#	factor = 2
-			#	anti_submarine_strategy_required_trigger = yes
+			#	always = no
 			#}
 		}
 
@@ -535,7 +535,8 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-			anti_submarine_strategy_required_trigger = yes
+			}
+		}
 		categories = {
 			naval_equipment
 			dd_tech
@@ -576,7 +577,7 @@ technologies = {
 			}
 			#modifier = {
 			#	factor = 2
-			#	anti_submarine_strategy_required_trigger = yes
+			#	always = no
 			#}
 		}
 
@@ -616,7 +617,7 @@ technologies = {
 			}
 			#modifier = {
 			#	factor = 2
-			#	anti_submarine_strategy_required_trigger = yes
+			#	always = no
 			#}
 		}
 

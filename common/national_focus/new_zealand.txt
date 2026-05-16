@@ -593,7 +593,7 @@ focus_tree = {
 			}
 			else = {
 				add_equipment_to_stockpile = {
-					type = nav_bomber_equipment_1
+					type = var:nav_bomber_equipment_1
 					amount = 56
 					producer = ENG
 				}
@@ -603,13 +603,13 @@ focus_tree = {
 						ENG = { has_tech = tactical_bomber1 }
 					}
 					add_equipment_to_stockpile = {
-						type = tac_bomber_equipment_1
+						type = var:tac_bomber_equipment_1
 						amount = 30
 						producer = ENG
 					}
 					else = {
 						add_equipment_to_stockpile = {
-							type = tac_bomber_equipment_0
+							type = var:tac_bomber_equipment_0
 							amount = 30
 							producer = ENG
 						}	

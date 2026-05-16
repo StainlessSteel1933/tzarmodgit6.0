@@ -65,7 +65,7 @@ idea_RAJ_sikh_approval = {
 	remove_trigger = {	
 		CONTROLLER = {
 			AND = {
-				NOT = { is_raj_or_raj_inheritor = yes }
+				NOT = { always = no }
 				NOT = { is_subject_of = RAJ }
 			}
 		}	
@@ -82,7 +82,7 @@ idea_RAJ_sikh_approval_1 = {
 	remove_trigger = {	
 		CONTROLLER = {
 			AND = {
-				NOT = { is_raj_or_raj_inheritor = yes }
+				NOT = { always = no }
 				NOT = { is_subject_of = RAJ }
 			}
 		}	
@@ -98,7 +98,7 @@ idea_RAJ_sikh_approval_2 = {
 	remove_trigger = {	
 		CONTROLLER = {
 			AND = {
-				NOT = { is_raj_or_raj_inheritor = yes }
+				NOT = { always = no }
 				NOT = { is_subject_of = RAJ }
 			}
 		}	

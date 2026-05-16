@@ -137,7 +137,7 @@ characters={
 				visible = {
 					OR = {
 						has_completed_focus = wuw_HUN_strengthen_horthys_reign
-						has_completed_focus = wuw_HUN_end_the_regency
+						always = no
 					}
 				}		
 			}
@@ -203,8 +203,8 @@ characters={
 			visible = {
 				NOT = {
 					OR = {
-						has_completed_focus = wuw_HUN_end_the_regency
-						has_completed_focus = wuw_HUN_end_the_white_terror
+						always = no
+						always = no
 						has_completed_focus = wuw_HUN_undermine_the_admiral
 					}
 				}
@@ -255,8 +255,8 @@ characters={
 				visible = {
 					NOT = {
 						OR = {
-							has_completed_focus = wuw_HUN_end_the_regency
-							has_completed_focus = wuw_HUN_end_the_white_terror
+							always = no
+							always = no
 							has_completed_focus = wuw_HUN_undermine_the_admiral
 						}
 					}

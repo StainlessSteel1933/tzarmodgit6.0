@@ -440,7 +440,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_completed_focus = ITA_security_militias
+					always = no
 				}
 			}
 					
@@ -470,7 +470,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_completed_focus = ITA_security_militias
+					always = no
 				}
 			}
 					
@@ -501,7 +501,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_completed_focus = ITA_security_militias
+					always = no
 				}
 			}
 					
@@ -533,7 +533,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_completed_focus = ITA_security_militias
+					always = no
 				}
 			}
 					
@@ -562,7 +562,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ITA_italian_irredentism
+				always = no
 			}
 					
 			modifier = {
@@ -687,7 +687,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ITA_corpo_di_truppe_volontarie
+				always = no
 			}
 
 			modifier = {
@@ -1389,7 +1389,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_new_forms_of_weaponry
+				always = no
 			}
 
 			modifier = {
@@ -1411,7 +1411,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_monarchia_d_italia
+				always = no
 			}
 
 			modifier = {
@@ -1434,7 +1434,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_monarchia_d_italia
+				always = no
 			}
 
 			modifier = {
@@ -1458,7 +1458,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_monarchia_d_italia
+				always = no
 			}
 
 			modifier = {
@@ -1483,7 +1483,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_monarchia_d_italia
+				always = no
 			}
 
 			modifier = {
@@ -1502,7 +1502,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_setting_course
+				always = no
 			}
 
 			modifier = {
@@ -1523,7 +1523,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_seek_papal_support
+				always = no
 			}
 
 			modifier = {
@@ -1545,7 +1545,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_agents_of_the_church
+				always = no
 			}
 
 			modifier = {
@@ -1569,7 +1569,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_agents_of_the_church
+				always = no
 			}
 
 			modifier = {
@@ -1593,7 +1593,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_strengthen_the_papacy
+				always = no
 			}
 
 			modifier = {
@@ -1618,7 +1618,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_strengthen_the_papacy
+				always = no
 			}
 
 			modifier = {
@@ -1993,7 +1993,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_guarantee_austrian_independence
+				always = no
 			}
 			
 			modifier = {
@@ -2017,7 +2017,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_italys_destiny
+				always = no
 			}
 			
 			modifier = {
@@ -2062,7 +2062,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_political_commissars
+				always = no
 			}
 			
 			modifier = {
@@ -2105,7 +2105,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_empower_the_carabinieri
+				always = no
 			}
 			
 			modifier = {
@@ -2129,7 +2129,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_defense_against_capitalism
+				always = no
 			}
 			
 			modifier = {
@@ -2151,7 +2151,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_the_fight_against_stalinism
+				always = no
 			}
 			
 			targeted_modifier = {
@@ -2173,7 +2173,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_the_italian_confederation
+				always = no
 			}
 
 			cancel = {
@@ -2199,7 +2199,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_planned_economy
+				always = no
 			}
 
 			cancel = {
@@ -2274,7 +2274,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_aid_for_the_spanish_republic
+				always = no
 			}
 
 			cancel = {
@@ -2331,7 +2331,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_bring_down_fascist_strongholds
+				always = no
 			}
 	
 			modifier = {
@@ -2350,7 +2350,7 @@ ideas = {
 			}
 	
 			allowed_civil_war = {
-				has_completed_focus = ITA_union_in_the_party
+				always = no
 			}
 
 			modifier = {
@@ -2369,7 +2369,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_common_ground
+				always = no
 			}
 	
 			modifier = {
@@ -2389,7 +2389,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_appease_the_military
+				always = no
 			}
 	
 			modifier = {
@@ -2440,7 +2440,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_divino_duce
+				always = no
 			}
 	
 			modifier = {
@@ -2462,7 +2462,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_blackshirt_loyalty
+				always = no
 			}
 	
 			modifier = {
@@ -2489,7 +2489,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_a_greater_purpose
+				always = no
 			}
 
 			modifier = {
@@ -2510,7 +2510,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_spreading_the_eagles_wings
+				always = no
 			}
 	
 			modifier = {
@@ -2536,7 +2536,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_italian_hegemony
+				always = no
 			}
 
 			modifier = {
@@ -2583,8 +2583,8 @@ ideas = {
 
 			allowed_civil_war = {
 				OR = {
-					has_completed_focus = ITA_reorganize_regio_esercito
-					has_completed_focus = ITA_reinforce_regia_aeronautica
+					always = no
+					always = no
 				}
 			}
 					
@@ -2608,7 +2608,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_completed_focus = ITA_proclaim_the_italian_empire
+				always = no
 			}
 			
 			modifier = {

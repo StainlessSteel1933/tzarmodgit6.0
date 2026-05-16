@@ -1366,13 +1366,13 @@ focus_tree = {
 				}
 			}
 			else = {
-				BUL_replace_national_naval_designer = yes
+				always = no
 			}
 
 			custom_effect_tooltip = BUL_an_aegean_sea_fleet_tt
 			every_controlled_state = {
 				limit = {
-					BUL_state_is_in_the_aegean_sea = yes
+					always = no
 					dockyard > 0
 				}
 				add_building_construction = {

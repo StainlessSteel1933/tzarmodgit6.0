@@ -165,13 +165,13 @@ SOV_soviet_aid_to_poum_decision_category = { #Dec cat for aiding the POUM
 	}
 
 	visible = {
-		has_completed_focus = SOV_covert_support_for_spanish_poum
+		always = no
 		NOT = { has_global_flag = scw_over }
 		NOT = {
 			AND = {
 				has_global_flag = SPR_anarchist_uprising_flag
 				OR = {
-					NOT = { SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution } }
+					NOT = { SPC = { always = no } }
 					NOT = { country_exists = SPC }
 				}
 			}
@@ -204,7 +204,7 @@ SOV_diplomacy_baltic_decision_category = {
 	}
 
 	visible = {
-		has_completed_focus = SOV_baltic_security
+		always = no
 		OR = {
 			country_exists = EST
 			country_exists = LAT
@@ -288,7 +288,7 @@ SOV_national_academy_of_sciences_dec_cat = {
 	}
 
 	visible = {
-		has_completed_focus = SOV_national_academies_of_sciences
+		always = no
 		has_civil_war = no
 	}
 }

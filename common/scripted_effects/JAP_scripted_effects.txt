@@ -773,7 +773,7 @@ JAP_setup_faction_wide_aoe_effects_from = {
 				original_tag = JAP
 				OR = {
 					has_completed_focus = JAP_develop_the_yen_bloc
-					has_completed_focus = JAP_a_common_currency_for_all_of_asia
+					always = no
 				}
 			}
 			ROOT = {
@@ -806,7 +806,7 @@ JAP_setup_faction_wide_aoe_effects_from = {
 		limit = {
 			FROM = {
 				original_tag = JAP
-				has_completed_focus = JAP_the_minitry_of_pan_asian_development
+				always = no
 			}
 			ROOT = {
 				NOT = {
@@ -851,7 +851,7 @@ JAP_setup_faction_wide_aoe_effects_root = {
 				original_tag = JAP
 				OR = {
 					has_completed_focus = JAP_develop_the_yen_bloc
-					has_completed_focus = JAP_a_common_currency_for_all_of_asia
+					always = no
 				}
 			}
 			FROM = {
@@ -888,7 +888,7 @@ JAP_setup_faction_wide_aoe_effects_root = {
 		limit = {
 			ROOT = {
 				original_tag = JAP
-				has_completed_focus = JAP_the_minitry_of_pan_asian_development
+				always = no
 			}
 			FROM = {
 				NOT = {
@@ -933,7 +933,7 @@ JAP_setup_faction_wide_aoe_effects_JAP = {
 			JAP = {
 				OR = {
 					has_completed_focus = JAP_develop_the_yen_bloc
-					has_completed_focus = JAP_a_common_currency_for_all_of_asia
+					always = no
 				}
 			}
 			ROOT = {
@@ -968,7 +968,7 @@ JAP_setup_faction_wide_aoe_effects_JAP = {
 	IF = {
 		limit = {
 			JAP = {
-				has_completed_focus = JAP_the_minitry_of_pan_asian_development
+				always = no
 			}
 			ROOT = {
 				NOT = {
@@ -1013,7 +1013,7 @@ JAP_setup_faction_wide_aoe_effects_root_this = {
 			ROOT = {
 				OR = {
 					has_completed_focus = JAP_develop_the_yen_bloc
-					has_completed_focus = JAP_a_common_currency_for_all_of_asia
+					always = no
 				}
 			}
 			THIS = {
@@ -1048,7 +1048,7 @@ JAP_setup_faction_wide_aoe_effects_root_this = {
 	IF = {
 		limit = {
 			ROOT = {
-				has_completed_focus = JAP_the_minitry_of_pan_asian_development
+				always = no
 			}
 			THIS = {
 				NOT = {
