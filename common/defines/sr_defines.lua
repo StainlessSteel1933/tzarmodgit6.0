@@ -1,4 +1,12 @@
 -- If you're reading this, don't say anything about this, this is a secret between us (๑>؂•̀๑) (decreased from 4.5 vanilla value to 4.0).
+
+NDefines.NNavy.DOMINANCE_DAILY_GAIN_FACTOR = 0.5
+NDefines.NNavy.DOMINANCE_DAILY_LOSS_FACTOR = 0.1
+NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 1							-- base days needed to prepare a naval invasion
+NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 90								-- base cap of naval invasions can be planned at the same time
+NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 20							-- base cap of divisions that can be assigned in a naval invasion
+
+NDefines.NProduction.BASE_COUNTRY_ENERGY_PRODUCTION = 1000000 			-- The base energy production of a country
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.3
 NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999			
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999
