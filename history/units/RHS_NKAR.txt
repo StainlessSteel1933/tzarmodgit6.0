@@ -1,9 +1,0 @@
-units = {
-	##### Nyasaland KAR force spawned from RHS tree #####
-	division= {
-		name = "27th 'Rhodesian' Brigade"
-		location = 10929
-		division_template = "Kings African Rifles"
-		start_experience_factor = 0.1
-	}
-}

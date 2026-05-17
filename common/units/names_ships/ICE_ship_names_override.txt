@@ -1,9 +1,0 @@
-﻿# OVERRIDE - Removes nonexistent ICE tag from ship naming
-ICE_DD_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_COAST_GUARD
-	for_countries = { }
-	type = ship
-	ship_types = { ship_hull_light destroyer }
-	prefix = ""
-	fallback_name = "Ship %d"
-}

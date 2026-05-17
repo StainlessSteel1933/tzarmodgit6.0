@@ -1,3 +1,0 @@
-division_names = {
-  # Empty override to prevent tag errors
-}

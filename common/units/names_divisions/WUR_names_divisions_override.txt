@@ -1,8 +1,0 @@
-﻿# OVERRIDE - Removes nonexistent WUR tag from division naming
-WUR_INF_01 = {
-	name = "Infantry Divisions"
-	for_countries = { }
-	can_use = { always = no }
-	division_types = { "infantry" }
-	fallback_name = "%da Infantry Division"
-}

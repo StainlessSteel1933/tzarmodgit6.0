@@ -1,9 +1,0 @@
-﻿# OVERRIDE - Removes nonexistent COG tag from ship naming
-COG_DD_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_DESTROYERS
-	for_countries = { }
-	type = ship
-	ship_types = { ship_hull_light destroyer }
-	prefix = ""
-	fallback_name = "Destroyer %d"
-}

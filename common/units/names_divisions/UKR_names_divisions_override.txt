@@ -1,8 +1,0 @@
-﻿# OVERRIDE - Removes nonexistent UKR tag from division naming (use URK instead)
-UKR_INF_01 = {
-	name = "Infantry Divisions"
-	for_countries = { }
-	can_use = { always = no }
-	division_types = { "infantry" }
-	fallback_name = "%da Infantry Division"
-}

@@ -1,4 +1,0 @@
-﻿# OVERRIDE - Disables nonexistent BRM divisions
-division_names = {
-  # Empty - BRM tag not defined in mod
-}

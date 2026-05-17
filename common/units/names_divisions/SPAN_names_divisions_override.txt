@@ -1,8 +1,0 @@
-﻿# OVERRIDE - Removes nonexistent country tags from SPAN (Spanish) division naming
-SPAN_INF_01 = {
-	name = "Infantry Division"
-	for_countries = { }
-	can_use = { always = no }
-	division_types = { "infantry" }
-	fallback_name = "%da División de Infantería"
-}

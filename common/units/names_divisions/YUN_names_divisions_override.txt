@@ -1,8 +1,0 @@
-﻿# OVERRIDE - Removes nonexistent YUN tag from division naming
-YUN_INF_01 = {
-	name = "Infantry Unit"
-	for_countries = { }
-	can_use = { always = no }
-	division_types = { "infantry" }
-	fallback_name = "%da Infantry Unit"
-}

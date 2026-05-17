@@ -1,9 +1,0 @@
-﻿# OVERRIDE - Removes nonexistent ETH tag from ship naming
-ETH_NAMES_01 = {
-	name = NAME_THEME_CITIES
-	for_countries = { }
-	type = ship
-	ship_types = { ship_hull_light destroyer }
-	prefix = ""
-	fallback_name = "Ship %d"
-}
