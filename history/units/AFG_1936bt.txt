@@ -1,0 +1,186 @@
+﻿division_template = {
+	name = "Royal Guard"
+
+	division_names_group = AFG_ARM_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 0 y = 4 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 1 y = 4 }
+		mountaineers = {x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		anti_air_brigade = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+		signal_company = { x = 0 y = 5}
+		logistics_company = { x = 0 y =6 }
+	}
+	
+	priority = 2
+}
+division_template = {
+	name = "infantry"				# infantry units (lowest experience, oldest equipment)
+
+	division_names_group = AFG_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = {x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = {x = 2 y = 3 }
+		infantry = { x = 2 y = 4 }
+		infantry = { x = 3 y = 0 }
+		anti_air_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+	}
+	priority = 0
+}
+
+units = {
+	#Royal Afghani Army
+	division = {
+		name = "Royal Afghan Household Division"
+		location = 10737
+		division_template = "Royal Guard"
+		start_experience_factor = 1.0
+	}
+	division = {
+		#name = "Farah Military District"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 10737
+		division_template = "infantry"
+		start_experience_factor = 0.5
+
+	}
+	division = {
+		#name = "Ghazni infantry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4893
+		division_template = "infantry"
+		start_experience_factor = 0.5
+
+	}
+	division = {
+		#name = "Faizabad infantry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4893
+		division_template = "infantry"
+		start_experience_factor = 0.5
+
+	}
+	#Herat Army
+	division = {
+		#name = "Herat infantry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4893
+		division_template = "infantry"
+		start_experience_factor = 0.5
+
+	}
+	division = {
+		#name = "Mazar-e Shar infantry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 10852
+		division_template = "infantry"
+		start_experience_factor = 0.5
+
+	}
+	division = {
+		#name = "Maymeneh infantry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 1948
+		division_template = "infantry"
+		start_experience_factor = 0.5
+
+	}
+	#Kandahar Army
+	division = {
+		#name = "Kandahar infantry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1948
+		division_template = "infantry"
+		start_experience_factor = 0.5
+
+	}
+	division = {
+		#name = "Jalalabad infantry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10852
+		division_template = "infantry"
+		start_experience_factor = 0.5
+
+	}	
+
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "AFG"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}

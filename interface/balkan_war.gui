@@ -1,0 +1,158 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "Balkan_war_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height= 230 }
+		background = {
+		position = { x = 0 y = -16 }
+		name = "Background"
+		spriteType = "GFX_ss_background_gui"
+	}
+		instantTextBoxType = {
+			name =victors
+			position = { x = 150 y = 16 }
+			font = "hoi4_typewriter16"
+			text = [victorDesc]
+			format = center
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name =gain
+			position = { x = 0 y = 150 }
+			font = "hoi4_typewriter16"
+			text = [gainDesc]
+			format = center
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name =trans
+			position = { x = 50 y = 112 }
+			font = "hoi4_typewriter16"
+			text = [transDesc]
+			format = left
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name ="croatia"
+			position = { x = 50 y = 32 }
+			font = "hoi4_typewriter16"
+			text = [croatiaDesc]
+			format = left
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name =["serbia"]
+			position = { x = 50 y = 48 }
+			font = "hoi4_typewriter16"
+			text = [serbiaDesc]
+			format = left
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name ="resources"
+			position = { x = 50 y = 64 }
+			font = "hoi4_typewriter16"
+			text = [resourcesDesc]
+			format = left
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name ="greece"
+			position = { x = 50 y = 80 }
+			font = "hoi4_typewriter16"
+			text = [greeceDesc]
+			format = left
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name ="dobruja"
+			position = { x = 50 y = 96 }
+			font = "hoi4_typewriter16"
+			text = [dobrujaDesc]
+			format = left
+			maxWidth = 450
+		}
+		
+		iconType = {
+			name = "heer_loyalty_container"
+			spriteType = "GFX_generic_text_bg_48"
+			position = { x = 50 y = 194 }
+		}
+		
+		instantTextBoxType = {
+			name ="ITA_POWER"
+			position = { x = 50 y = 198 }
+			font = "hoi_18mbs"
+			text = "ITA_power_num"
+			format = center
+			maxWidth = 50
+			pdx_tooltip = heer_loyalty_tooltip
+
+		}
+		iconType = {
+			name = "heer_loyalty_container2"
+			spriteType = "GFX_generic_text_bg_48"
+			position = { x = 140 y = 194 }
+		}
+		
+		instantTextBoxType = {
+			name ="HUN_POWER"
+			position = { x = 140 y = 198 }
+			font = "hoi_18mbs"
+			text = "HUN_POWER"
+			format = center
+			maxWidth = 50
+			pdx_tooltip = heer_loyalty_tooltip
+
+		}	
+		iconType = {
+			name = "heer_loyalty_container3"
+			spriteType = "GFX_generic_text_bg_48"
+			position = { x = 230 y = 194 }
+		}	
+		instantTextBoxType = {
+			name ="ROM_POWER"
+			position = { x = 230 y = 198 }
+			font = "hoi_18mbs"
+			text = "ROM_POWER"
+			format = center
+			maxWidth = 50
+			pdx_tooltip = heer_loyalty_tooltip
+
+		}		
+		iconType = {
+			name = "heer_loyalty_container4"
+			spriteType = "GFX_generic_text_bg_48"
+			position = { x = 320 y = 194 }
+		}	
+		instantTextBoxType = {
+			name ="BUL_POWER"
+			position = { x = 320 y = 198 }
+			font = "hoi_18mbs"
+			text = "BUL_POWER"
+			format = center
+			maxWidth = 50
+			pdx_tooltip = heer_loyalty_tooltip
+
+		}	
+		iconType = {
+			name = "heer_loyalty_container5"
+			spriteType = "GFX_generic_text_bg_48"
+			position = { x = 410 y = 194 }
+		}	
+		instantTextBoxType = {
+			name ="GER_POWER"
+			position = { x = 410 y = 198 }
+			font = "hoi_18mbs"
+			text = "GER_POWER"
+			format = center
+			maxWidth = 50
+			pdx_tooltip = heer_loyalty_tooltip
+
+		}	
+	
+	}
+}
+
+

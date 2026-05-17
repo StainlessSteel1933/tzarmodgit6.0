@@ -1,0 +1,38 @@
+################
+####   SR   ####
+################
+
+Battle_for_France = {
+	priority = 999
+	
+	allowed = {
+		original_tag = FRA
+	}
+
+	available = {
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
+nigger = {
+	priority = 1
+	
+	allowed = {
+	OR = {
+		original_tag = AST
+		original_tag = RAJ
+		}
+	}
+
+	available = {
+	}
+
+	visible = {
+		OR = {
+		RAJ = {is_ai = yes}
+		AST = {is_ai = yes}
+		}
+	}
+}

@@ -1,0 +1,88 @@
+on_actions = {
+	on_monthly_GER = {
+		effect = {
+			#### Check for DDay. If a DDay occurs, Axis gets a mission to defeat the DDay within 1 year; if they defeat it, Axis gets some buffs and Allies lose stability/war support because of the failed DDay. Germany's Totaler Krieg event also gets triggered upon DDay, if it has not already been triggered. The idea is that this gives Allies realistic incentives for DDay; they shouldn't want to launch one until they are sure that they will succeed, because in reality a failed DDay would have been a disaster and would have resulted in large amounts of lost/captured equipment (like Dunkirk) and would have been a PR disaster for the Democracies that relied on popular support for continuing the war. ####
+			if = {
+				limit = {
+					NOT = { has_global_flag = GDU_dday_started }
+					date > 1941.1.1
+
+					#For states look in on startup
+					any_of_scopes = {
+						array = global.dday_state_array
+
+						is_controlled_by_allied_country = yes
+					}
+				}
+
+						
+					set_global_flag = GDU_dday_started
+					GER = {
+						activate_mission = GER_defeat_dday
+						annex_country = { target = EFR transfer_troops = no }
+					}
+					ITA = { transfer_state = 32 transfer_state = 21 transfer_state = 460 
+					transfer_state = 513 transfer_state = 459 transfer_state = 514 }
+					# }
+					# ITA = {
+					# 	set_country_flag = case_anton
+					# }
+					news_event = { days = 0 id = news.809 }
+					if = {
+						limit = {
+							NOT = { has_global_flag = total_war }
+						}
+						# GER = { country_event = { id = pfu.21 } }
+						news_event = { days = 3 id = news.808 }
+					}
+				
+			}
+			# If the date is past march 1st 1943, Germany declares Total war
+			if = { limit = { date > 1943.3.1 } 
+				if = {
+					limit = {
+						NOT = { has_global_flag = total_war }
+					}
+					news_event = { days = 1 id = news.808 }
+				}
+			}
+
+			#### If Soviets start advancing beyond the pre-Barbarossa boundaries into Poland/East Prussia after 1942 but before 1943, that is sufficient to trigger Totaler Krieg for Germany to give it one last gasping breath of life ####
+			if = {
+				limit = {
+					NOT = { has_global_flag = total_war }
+					NOT = { has_global_flag = GDU_eastern_front_Axis_danger }
+					# original_tag = SOV
+					date > 1942.1.1
+					OR = {
+						any_of_scopes = {
+							array = global.owned_state_array_GER
+							is_controlled_by = SOV
+						}
+						SOV = { controls_state = 188 } # Memel
+						SOV = { controls_state = 98 }# Plock
+						SOV = { controls_state = 10 }# Warsazawa
+						SOV = { controls_state = 92 }# Lublin
+						SOV = { controls_state = 88 }# Krakow
+
+						# Also adding more states in Northern Germany/Denmark. Soviet meme naval invasions of Northern Germany can trigger this
+
+						SOV = { controls_state = 85 }# Danzig
+						SOV = { controls_state = 37 }# Sjaelland DK
+						SOV = { controls_state = 99 }# Jutland DK
+
+					}
+				}
+				hidden_effect = {
+					set_global_flag = GDU_eastern_front_Axis_danger
+					if = {
+						limit = {
+							NOT = { has_global_flag = total_war }
+						}
+						news_event = { days = 1 id = news.808 }
+					}
+				}
+			}
+		}
+	}
+}

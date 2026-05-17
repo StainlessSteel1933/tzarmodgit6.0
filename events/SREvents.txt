@@ -1,0 +1,630 @@
+add_namespace = srevents
+
+#####	#####	#####	#####	#####
+#		  #		#	#	#	#	  #
+#		  #		#	#	#	#	  #
+#####	  #		#####	####	  #
+	#	  #		#	#	# #		  #
+	#	  #		#	#	#  #	  #
+#####	  #		#	#	#	#	  #
+
+### Soviet Start Event
+country_event = { 
+	id = srevents.1
+	title = srevents.1.t
+	desc = srevents.1.d 
+	picture = GFX_report_event_stalin_01  
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### USA Start Event
+country_event = { 
+	id = srevents.2
+	title = srevents.2.t
+	desc = srevents.2.d 
+	picture = GFX_report_event_FDR_speech  
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+		add_timed_idea = { idea = economic_recovery days = 1500 }
+
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = sr_no_asia
+					option = ENABLE_sr_no_asia
+				} 
+			}
+			add_ideas = the_price_of_no_asia
+			hidden_effect = {
+				every_state = { limit = { is_core_of = USA }
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+					remove_building = {
+						type = dockyard
+						level = 2
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+### ENG Start Event
+country_event = { 
+	id = srevents.3
+	title = srevents.3.t
+	desc = srevents.3.d 
+	picture = GFX_report_event_eng_mosley_speech
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = sr_no_asia
+					option = ENABLE_sr_no_asia
+				} 
+			}
+
+			hidden_effect = {
+			ENG = { add_ideas = USA_ships_for_victory_idea }
+			RAJ = { add_ideas = RAJ_famine }
+			ITA = { add_timed_idea = { idea = GER_mefo_bills_1 days = 1330 } }
+			ITA = { add_timed_idea = { idea = GER_mefo_bills_ended days = 1330 } } 
+			696 = { add_core_of = ENG }
+			696 = {
+				add_extra_state_shared_building_slots = 25
+				add_building_construction = {
+					type = industrial_complex
+					level = 8
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 7
+					instant_build = yes
+				}
+					}
+			439 = {
+				remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			430 = {
+				remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+			
+			
+			}
+			427 = {
+				remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+			}
+			443 = {
+				remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+			}
+			423 = {
+				remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+			}
+			425 = {
+				remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+			}
+			424 = {
+				remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+			}
+			436 = {
+				remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+			}
+		}
+	}
+	
+}
+
+### AST
+country_event = { 
+	id = srevents.4
+	title = srevents.4.t
+	desc = srevents.4.d 
+	picture = GFX_report_event_ast_army
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### RAJ
+country_event = { 
+	id = srevents.5
+	title = srevents.5.t
+	desc = srevents.5.d 
+	picture = GFX_report_event_ghandi_women 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### SAF
+country_event = { 
+	id = srevents.6
+	title = srevents.6.t
+	desc = srevents.6.d 
+	picture = GFX_report_event_saf_soldiers
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### FRA 
+country_event = { 
+	id = srevents.7
+	title = srevents.7.t
+	desc = srevents.7.d 
+	picture = GFX_report_event_french_liberation  
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### GER
+country_event = { 
+	id = srevents.8
+	title = srevents.8.t
+	desc = srevents.8.d 
+	picture = GFX_report_event_hitler_croatia_handshake  
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+		# Appears to be unneeded
+		# if = {
+		# 	limit = {
+		# 		has_game_rule = {
+		# 			rule = sr_no_asia
+		# 			option = ENABLE_sr_no_asia
+		# 		} 
+		# 	}
+		# 	SWE = { give_resource_rights = { receiver = GER state = 724 } }
+		# }
+	}
+	
+}
+
+### ITA
+country_event = { 
+	id = srevents.9
+	title = srevents.9.t
+	desc = srevents.9.d 
+	picture = GFX_report_event_albanian_king_zog
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### JAP
+country_event = { 
+	id = srevents.10
+	title = srevents.10.t
+	desc = srevents.10.d 
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+#####	#   #	#####
+  #		#	#	  #		
+  #		#	#	  #		
+  #		#	#	  #
+  #		#	#	  #
+  #		#	#	  #
+  # 	#####	  #
+
+  #Barbarossa Start Events rewrite to explain the barb debuff mechanic
+country_event = {
+	id = srevents.11 #
+	title = srevents.11.t
+	desc = srevents.11.d
+	picture = GFX_report_event_stalin_01
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = srevents.11.a
+	}
+
+  }
+#BUL
+country_event = {
+	id = srevents.12
+	title = srevents.12.t
+	desc = srevents.12.d
+	picture = GFX_report_event_albanian_king_zog
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = srevents.12.a
+	}
+}
+#ROM
+country_event = {
+	id = srevents.13
+	title = srevents.13.t
+	desc = srevents.13.d
+	picture = GFX_report_event_albanian_king_zog
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = srevents.13.a
+	}
+}
+
+########## extra cum events
+country_event = { 
+	id = srevents.14
+	title = srevents.14.t
+	desc = srevents.14.d 
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.14.a 
+
+	}
+	
+}
+
+# AFGHAN AUSTIMO WARNING
+country_event = { 
+	id = srevents.15
+	title = srevents.15.t
+	desc = srevents.15.d 
+	picture = GFX_report_event_tur_machine_gunners
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.15.a 
+
+	}
+	
+}
+
+# ANGOLA/MOZAMBIQUE
+country_event = { 
+	id = srevents.16
+	title = srevents.16.t
+	desc = srevents.16.d 
+	picture = GFX_report_event_saf_soldiers
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.16.a 
+
+	}
+	
+}
+
+country_event = { 
+	id = srevents.17
+	title = srevents.17.t
+	desc = srevents.17.d 
+	picture = GFX_report_event_saf_soldiers
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.17.a 
+
+	}
+	
+}
+###########################################################################3
+# Russian Mud Events #
+country_event = {
+	id = srevents.800 #spring mud
+	title = "Spring Mud Season"
+	desc = "The Spring Mud Season has begun!"
+	picture = GFX_report_event_german_italian_pact
+	hidden = yes 
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+		news_event = { id = news.401 hours = 1 }
+	}
+	
+	option = {
+		every_state = { limit = { is_core_of = SOV } add_province_modifier = { static_modifiers = { mud_simulator } province = { all_provinces = yes }  } }
+		SWE = { country_event = { id = srevents.801 days = 40 } }
+	}
+}
+news_event = {
+	id = news.401
+	title = "Spring Mud Season"
+	desc = news.401.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.401.a
+	}
+}
+country_event = {
+	id = srevents.802 #fall mud
+	title = "Fall Mud Season"
+	desc = news.402.d
+	picture = GFX_report_event_german_italian_pact
+ 
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		news_event = { id = news.402 hours = 1 }
+	}
+ 
+	
+	option = {
+		every_state = { limit = { is_core_of = SOV } add_province_modifier = { static_modifiers = { mud_simulator } province = { all_provinces = yes }  } }
+		SWE = { country_event = { id = srevents.801 days = 40 } }
+	}
+}
+news_event = {
+	id = news.402
+	title = "Fall Mud Season"
+	desc = news.402.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.401.a
+	}
+}
+country_event = {
+	id = srevents.801 #mud removal event
+	title = "Mud Season Over"
+	desc = "The Mud Season is Over! Units will now operate normally on the eastern front"
+	picture = GFX_report_event_german_italian_pact
+ 
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		news_event = { id = news.403 hours = 1 }
+	}
+	
+	option = {
+		every_state = { limit = { is_core_of = SOV } remove_province_modifier = { static_modifiers = { mud_simulator } province = { all_provinces = yes }  } }
+		# SWE = { country_event = { id = srevents.801 days = 60 } }
+	}
+}
+news_event = {
+	id = news.403
+	title = "Mud Season Over"
+	desc = "The Mud Season is Over! Units will now operate normally on the eastern front"
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.401.a
+	}
+}
+
+country_event = {
+	id = srevents.999 #Cold war goes hot, Soviets Declare War!
+	title = "Cold War Goes Hot!"
+	desc = "Cold War Goes Hot!"
+	picture = GFX_report_event_german_italian_pact
+ 
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		SOV = {
+			declare_war_on = { target = ENG type = annex_everything } 
+			declare_war_on = { target = FRF type = annex_everything } 
+			declare_war_on = { target = CAN type = annex_everything } 
+			declare_war_on = { target = SAF type = annex_everything } 
+			declare_war_on = { target = RAJ type = annex_everything } 
+			declare_war_on = { target = AST type = annex_everything } 
+			declare_war_on = { target = NZL type = annex_everything }
+			declare_war_on = { target = USA type = annex_everything } 
+			declare_war_on = { target = GER type = annex_everything } 
+			declare_war_on = { target = ITA type = annex_everything }
+			#needs tweaking
+			declare_war_on = { target = SPR type = annex_everything }
+			if = { limit = { BRA = { is_ai = no } }
+				declare_war_on = { target = BRA type = annex_everything }
+			}
+			if = { limit = { MEX = { is_ai = no } }
+				declare_war_on = { target = MEX type = annex_everything }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = srevents.805 #recheck if soviet front is empty
+	title = "Fall Mud Season"
+	desc = news.402.d
+	picture = GFX_report_event_german_italian_pact
+ 
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		every_state = {
+			limit = {
+				AND = {
+					SOV_frontline_states = yes
+					NOT = { is_controlled_by = SOV }
+					SOV = {
+						divisions_in_state = {
+							type = infantry size < 1 state = PREV
+						}
+					}
+				}
+			}
+			GER = { set_state_controller = PREV }
+		}
+	}
+ 
+	
+	option = {
+	}
+}
+
+country_event = {
+	id = srevents.806
+	title = "South Africa is AI controlled"
+	desc = "Do you want to annex South Africa into Canada?"
+	picture = GFX_report_event_japan_startup
+	fire_only_once = yes
+ 	is_triggered_only = yes
+	  option = {
+	name = "Yes, South Africa won't be played"
+	country_event = { id = srevents.807 }
+	}
+	 option = {
+	name = "No, South Africa will have a player on it."
+	}  
+ }
+ 
+ country_event = {
+	id = srevents.807
+	title = "The Annexation of South Africa"
+	desc = "The annexation of South Africa is imminent."
+	picture = GFX_report_event_japan_startup
+	fire_only_once = yes
+ 	is_triggered_only = yes
+	option = {
+		name = "Confirm annexation"
+		every_state = { limit = { is_core_of = SAF }
+			add_core_of = CAN
+		}
+		CAN = { annex_country = { target = SAF transfer_troops = yes } }
+		SAF = { 
+			every_unit_leader = {
+				 set_nationality = CAN
+			 }
+			 transfer_navy = {
+				 target = CAN
+			 }
+		 }
+	}
+	option = {
+		name = "Reconsider..."
+		country_event = { id = srevents.806 }
+	}
+ }
+
+country_event = { 
+	id = srevents.808
+	title = srevents.808.t
+	desc = srevents.808.d 
+	picture = GFX_report_event_yugoslavian_cavalry 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.808.a 
+		
+		effect_tooltip = {
+			RAJ = { 
+				add_timed_idea = {
+					idea = idea_RAJ_one_last_ride days = 30
+				}
+			}
+		}
+
+	}
+	
+}

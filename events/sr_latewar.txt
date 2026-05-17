@@ -1,0 +1,482 @@
+﻿add_namespace = srlatewar
+
+country_event = { 
+	id = srlatewar.1
+	title = srlatewar.1.t
+	desc = srlatewar.1.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				SOV = {
+					add_ideas = sr1942_latewar
+				}	
+				ENG = {
+					add_ideas = sr1942_latewar
+				}
+				USA = {
+					add_ideas = sr1942_latewar
+				}
+				CAN = {
+					add_ideas = sr1942_latewar
+				}
+				SAF = {
+					add_ideas = sr1942_latewar
+				}
+				RAJ = {
+					add_ideas = sr1942_latewar
+				}
+				AST = {
+					add_ideas = sr1942_latewar
+				}
+				NZL = {
+					add_ideas = sr1942_latewar
+				}
+				FRA = {
+					add_ideas = sr1942_latewar
+				}
+				GER = {
+					add_ideas = sr1942_latewar
+				}		
+				ITA = {
+					add_ideas = sr1942_latewar
+				}		
+				SPR = {
+					add_ideas = sr1942_latewar
+				}		
+				HUN = {
+					add_ideas = sr1942_latewar
+				}		
+				ROM = {
+					add_ideas = sr1942_latewar
+				}		
+				BUL = {
+					add_ideas = sr1942_latewar
+				}		
+				FIN = {
+					add_ideas = sr1942_latewar
+				}
+				JAP = {
+					add_ideas = sr1942_latewar
+				}		
+				MIN = {
+					add_ideas = sr1942_latewar
+				}
+				SIA = {
+					add_ideas = sr1942_latewar
+				}
+				MEX = {
+					add_ideas = sr1942_latewar
+				}
+				BRA = {
+					add_ideas = sr1942_latewar
+				}
+				CRO = {
+					add_ideas = sr1942_latewar
+				}						
+	}
+	
+	option = {
+		name = srlatewar.1.a
+	
+	}
+}	
+	
+country_event = { 
+	id = srlatewar.2
+	title = srlatewar.2.t
+	desc = srlatewar.2.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				SOV = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}		}
+				ENG = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}
+				USA = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}
+				CAN = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}
+				SAF = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}
+				RAJ = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}
+				AST = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}
+				NZL = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}
+				FRA = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}
+				GER = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}		
+				ITA = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}		
+				SPR = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}		
+				HUN = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}		
+				ROM = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}		
+				BUL = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}		
+				FIN = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}
+				JAP = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}		
+				MIN = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}				}
+				SIA = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}
+				}
+				BRA = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}
+				}
+				MEX = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}
+				}
+				CRO = {
+					swap_ideas = { 
+						remove_idea = sr1942_latewar
+						add_idea = sr1943_latewar
+					}
+				}
+	}
+	
+	option = {
+		name = srlatewar.2.a
+	
+	}	
+}
+
+
+
+
+country_event = { 
+	id = srlatewar.3
+	title = srlatewar.3.t
+	desc = srlatewar.3.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				SOV = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}	
+				ENG = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}
+				USA = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}
+				CAN = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}
+				SAF = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}
+				RAJ = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}
+				AST = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}
+				NZL = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}
+				FRA = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}
+				GER = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}		
+				ITA = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}		
+				SPR = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}		
+				HUN = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}		
+				ROM = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}		
+				BUL = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}		
+				FIN = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}
+				JAP = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}		
+				MIN = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}				}
+				SIA = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}
+				}
+				BRA = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}
+				}
+				MEX = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}
+				}
+				CRO = {
+					swap_ideas = { 
+						remove_idea = sr1943_latewar
+						add_idea = sr1944_latewar
+					}
+				}
+	}
+	
+	option = {
+		name = srlatewar.3.a
+	
+	}	
+}
+
+country_event = { 
+	id = srlatewar.4
+	title = srlatewar.4.t
+	desc = srlatewar.4.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				SOV = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}	
+				ENG = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}
+				USA = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}
+				CAN = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}
+				SAF = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}
+				RAJ = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}
+				AST = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}
+				NZL = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}
+				FRA = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}
+				GER = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}		
+				ITA = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}		
+				SPR = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}		
+				HUN = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}		
+				ROM = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}		
+				BUL = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}		
+				FIN = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}
+				JAP = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}		
+				MIN = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}				}
+				SIA = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}
+				}
+				BRA = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}
+				}
+				MEX = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}
+				}
+				CRO = {
+					swap_ideas = { 
+						remove_idea = sr1944_latewar
+						add_idea = sr1945_latewar
+					}
+				}
+	}
+	
+	option = {
+		name = srlatewar.4.a
+	
+	}	
+}
+
+	

@@ -1,0 +1,32 @@
+
+state={
+	id=345
+	name="STATE_345"
+
+	history={
+		owner = YUG
+		1936.1.1.15 = {
+			owner = SWE
+
+		}
+		1936.1.1.16 = {
+			owner = YUG
+
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		3868 6889 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

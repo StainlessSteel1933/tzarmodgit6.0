@@ -1,0 +1,105 @@
+﻿division_template = {
+	name = "Infanteriet Divisjon"		
+	division_names_group = NOR_INF_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		anti_air_brigade = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+		recon = { x = 0 y = 1 } 
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+
+
+units = {
+	######## LAND UNITS ########
+	##### Kongelige Norwegan Overkommando #####
+	division = { # "1. Divisjon"
+		location = 6115
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { # "1. Divisjon"
+		location = 6115
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { # "1. Divisjon"
+		location = 6115
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { # "1. Divisjon"
+		location = 6115
+		division_template ="Infanteriet Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { # "1. Divisjon"
+		location = 6115
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { # "1. Divisjon"
+		location = 6115
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	
+}
+
+air_wings = {
+	### Luftforsvaret -- Oslo
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "NOR"
+		}
+		requested_factories = 1
+		progress = 0.37
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "NOR"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+	}
+}

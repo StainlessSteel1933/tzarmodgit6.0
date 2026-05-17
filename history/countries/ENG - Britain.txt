@@ -1,0 +1,1045 @@
+capital = 126
+army_experience = 10
+navy_experience = 10
+air_experience = 2
+set_oob = "ENG_1936"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "ENG_1936_Naval"
+	else = {
+		set_naval_oob = "ENG_1936_Naval_Legacy"
+	}
+}
+
+
+set_variable = {
+    var = min_fuel
+    value = 0.800
+}
+
+add_intel = { target = SOV civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+add_intel = { target = USA civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+
+add_timed_idea = { idea = france_production_regrowth days = 30 }
+
+load_oob = "ENG_Motorized"
+
+set_research_slots = 4
+
+set_stability = 0.65
+set_war_support = 0.11
+
+# Starting tech
+set_technology = { 
+	basic_train = 1
+		infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	paratroopers = 1	
+	shocktroops = 1
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	tech_mountaineers = 1
+	marines = 1
+	desertinfantry_at = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	#improved_light_tank_chassis = 1  # PLACEHOLDER
+	basic_heavy_tank_chassis = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	iw_small_airframe = 1
+	basic_small_airframe = 1
+
+	
+	
+		iw_medium_airframe = 1
+		basic_medium_airframe = 1
+					aa_lmg = 1`
+	
+
+	tech_field_hospital = 1
+	tech_mountaineers = 1
+	
+	trench_warfare = 1
+
+	
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+
+	air_superiority = 1
+	forward_interception = 1 
+	fighter_ace_initiative = 1 
+	dive_bombing = 1
+	dogfighting_experience = 1
+	interwar_antitank = 1
+	multialtitude_flying = 1
+	dive_bombing = 1
+	armored_car1 = 1
+}
+
+# set_country_flag=fuel_system_enabled
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+		improved_secondary_battery = 1
+		cruiser_submarines = 1
+	}
+}
+add_ideas = {
+	stiff_upper_lip
+	ENG_the_war_to_end_all_wars
+	george_v
+	limited_conscription
+	COOM_volunteers_majors
+}
+	
+
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 15000
+	producer = ENG
+}  
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 5500
+	producer = ENG
+} 
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 7750
+	producer = ENG
+} 
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 130000
+	producer = ENG
+} 
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 19150
+	producer = ENG
+} 
+
+# add_equipment_to_stockpile = {
+# 	type = light_tank_equipment_2
+# 	amount = 1440
+# 	producer = ENG
+# } 
+
+add_equipment_to_stockpile = {
+type = anti_air_equipment_1
+amount = 3500
+producer = ENG
+}
+
+
+create_equipment_variant = {
+		name = "Hawker Hurricane"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = tank_buster_1
+			fixed_auxiliary_weapon_slot_1 = tank_buster_1
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = dive_brakes_small
+		}
+	}
+		create_equipment_variant = {
+		name = "Bristol Blenheim"
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = lmg_defense_turret_2x
+			special_type_slot_2 = lmg_defense_turret_2x
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+	}
+		create_equipment_variant = {
+		name = "Fairey Barracuda"
+		type = cv_small_plane_naval_bomber_airframe_1
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_auxiliary_weapon_slot_1 = empty
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Hawker Hurricane"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = lmg_defense_turret
+		}
+	}
+	add_equipment_to_stockpile = { type = small_plane_cas_airframe_1 variant_name = "Hawker Hurricane" amount = 670 } 
+add_equipment_to_stockpile = { type = medium_plane_airframe_1 variant_name = "Bristol Blenheim" amount = 180 }
+add_equipment_to_stockpile = { type = cv_small_plane_naval_bomber_airframe_1 variant_name = "Fairey Barracuda" amount = 138 }
+
+set_convoys = 1300
+
+# DIPLOMACY
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = RAJ
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = CAN
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = SAF
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = AST
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = NZL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	else = {
+		puppet = RAJ
+		puppet = AST
+		puppet = CAN
+		puppet = NZL
+		puppet = SAF
+	}
+}
+
+give_guarantee = POL 
+give_guarantee = DEN
+give_guarantee = BEL 
+give_guarantee = HOL
+give_guarantee = NOR 
+
+add_to_tech_sharing_group = commonwealth_research
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = yes ##suspended through duration of war, which is handled via event
+}
+set_popularities = {
+	democratic = 100
+    fascism = 0
+    communism = 0
+}
+
+create_faction = Allies
+add_to_faction = ENG
+add_to_faction = FRA
+add_to_faction = CAN
+add_to_faction = AST
+add_to_faction = NZL
+add_to_faction = SAF
+add_to_faction = RAJ
+add_to_faction = NOR		
+
+# Order matters - here Chamberlain becomes starting leader
+
+# create_country_leader = {
+# 	name = "Winston Churchill"
+# 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+# 	picture = "Portrait_Britain_Winston_Churchill.dds"
+# 	expire = "1965.1.1"
+# 	ideology = conservatism
+# 	traits = {
+# 		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
+# 	}
+# }
+
+
+# create_country_leader = {
+# 	name = "Stanley Baldwin"
+# 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
+# 	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
+# 	expire = "1938.1.1"
+# 	ideology = liberalism
+# 	traits = {
+# 		conservative_grandee
+# 	}
+# }
+
+
+# create_country_leader = {
+# 	name = "Oswald Mosley"
+# 	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+# 	picture = "Portrait_Britain_Oswald_Mosley.dds"
+# 	expire = "1965.1.1"
+# 	ideology = fascism_ideology
+# 	traits = {
+# 	}
+# }
+
+# create_country_leader = {
+# 	name = "Harry Pollitt"
+# 	desc = "POLITICS_HARRY_POLLITT_DESC"
+# 	picture = "portrait_eng_harry_pollitt.dds"
+# 	expire = "1965.1.1"
+# 	ideology = leninism
+# 	traits = {
+# 	}
+# }
+
+
+# create_field_marshal = {
+# 	name = "Alan Brooke" # Aristocrat
+# 	id = 997
+# 	picture = "Portrait_Britain_Alan_Brooke.dds"
+# 	traits = {  trait_cautious career_officer trait_engineer combined_arms_expert ambusher logistics_wizard aggressive_assaulter inspirational_leader skilled_staffer war_hero old_guard infantry_officer panzer_leader}
+# 	skill = 5
+# 	attack_skill = 3
+# 	defense_skill = 6
+# 	planning_skill = 4
+# 	logistics_skill = 5
+# }
+
+# create_field_marshal = {
+# 	name = "Bernard Montgomery" # Aristocrat
+# 	id = 996
+# 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
+# 	traits = { brilliant_strategist trait_cautious organizer logistics_wizard thorough_planner inspirational_leader aggressive_assaulter offensive_doctrine media_personality trait_cautious  infantry_officer trickster }
+# 	skill = 6 
+# 	attack_skill = 5
+# 	defense_skill = 5
+# 	planning_skill = 5
+# 	logistics_skill = 5
+# }
+
+# create_corps_commander = {
+# 	name = "Claude Auchinleck"
+# 	picture = "Portrait_Britain_Claude_Auchinleck.dds"
+# 	traits = { career_officer brilliant_strategist infantry_expert expert_improviser organizer trickster infantry_leader jungle_rat infantry_officer}
+# 	skill = 5
+# 	attack_skill = 6
+# 	defense_skill = 2
+# 	planning_skill = 5
+# 	logistics_skill = 3
+# }
+
+# create_corps_commander = {
+# 	name = "Neil Ritchie"
+# 	picture = "Portrait_Britain_Neil_Ritchie.dds"
+# 	traits = { inflexible_strategist infantry_officer politically_connected old_guard trait_reckless }
+# 	id = 2002
+# 	skill = 4
+# 	attack_skill = 7
+# 	defense_skill = 2
+# 	planning_skill = 3
+# 	logistics_skill = 3
+# }
+
+# create_corps_commander = {
+# 	name = "Alan Cunningham"
+# 	picture = "Portrait_Britain_Alan_Cunningham.dds"
+# 	traits = { trickster infantry_leader ambusher expert_improviser hill_fighter skilled_staffer infantry_officer}
+# 	skill = 5
+# 	attack_skill = 3
+# 	defense_skill = 7
+# 	planning_skill = 1
+# 	logistics_skill = 5
+# }
+
+# create_corps_commander = {
+# 	name = "William Slim"
+# 	picture = "Portrait_Britain_William_Slim.dds"
+# 	traits = { trickster jungle_rat fortress_buster expert_improviser trait_engineer war_hero infantry_officer brilliant_strategist politically_connected career_officer} 
+# 	skill = 5
+# 	attack_skill = 4
+# 	defense_skill = 4
+# 	planning_skill = 3
+# 	logistics_skill = 6
+# }
+
+# create_corps_commander = {
+# 	name = "Richard O'Connor"
+# 	id = 999
+# 	picture = "Portrait_Britain_Richard_OConnor.dds"
+# 	traits = { panzer_leader desert_fox trickster infantry_officer brilliant_strategist expert_improviser panzer_expert camouflage_expert }
+# 	skill = 5
+# 	attack_skill = 8
+# 	defense_skill = 3
+# 	planning_skill = 1
+# 	logistics_skill = 1
+# }
+
+# create_corps_commander = {
+# 	name = "William Platt"
+# 	picture = "Portrait_Britain_William_Platt.dds"
+# 	traits = { trait_engineer old_guard ranger trickster infantry_leader fortress_buster }
+# 	skill = 3
+# 	attack_skill = 3
+# 	defense_skill = 7
+# 	planning_skill = 5
+# 	logistics_skill = 4
+# }
+
+# create_field_marshal = {
+# 	name = "George Giffard"
+# 	picture = "Portrait_Britain_George_Giffard.dds"
+# 	traits = { defensive_doctrine infantry_leader infantry_expert inspirational_leader commando hill_fighter old_guard war_hero career_officer cavalry_officer}
+# 	skill = 5
+# 	attack_skill = 5
+# 	defense_skill = 2
+# 	planning_skill = 4
+# 	logistics_skill = 5
+# }
+
+# create_field_marshal = {
+# 	name = "Harold Alexander" # Aristocrat
+# 	id = 995
+# 	picture = "Portrait_Britain_Harold_Alexander.dds"
+# 	traits = { infantry_leader infantry_expert trickster offensive_doctrine guerilla_fighter trait_mountaineer infantry_officer harsh_leader politically_connected skilled_staffer}
+# 	skill = 5
+# 	attack_skill = 6
+# 	defense_skill = 3
+# 	planning_skill = 2
+# 	logistics_skill = 4
+# }
+
+# create_corps_commander = {
+# 	name = "Jackie Smyth"
+# 	picture = "Portrait_Britain_John_Jackie_Smyth.dds"
+# 	traits = { infantry_officer harsh_leader trait_reckless war_hero ambusher old_guard infantry_leader}
+# 	skill = 4
+# 	attack_skill = 3
+# 	defense_skill = 5
+# 	planning_skill = 3
+# 	logistics_skill = 5
+# }
+
+# create_corps_commander = {
+# 	name = "Thomas Jacomb Hutton"
+# 		picture = "Portrait_Britain_Thomas_Jacomb_Hutton.dds"
+# 		traits = { swamp_fox organizer skilled_staffer trait_cautious career_officer}
+# 		skill = 3
+# 		attack_skill = 5
+# 		defense_skill = 1
+# 		planning_skill = 1
+# 		logistics_skill = 6
+# }
+
+# create_corps_commander = {
+# 	name = "Arthur Percival"
+# 		picture = "Portrait_Britain_Arthur_Percival.dds"
+# 		traits = { inflexible_strategist career_officer skilled_staffer}
+# 		skill = 3
+# 		attack_skill = 1
+# 		defense_skill = 8
+# 		planning_skill = 5
+# 		logistics_skill = 4
+# }
+
+# create_corps_commander = {
+# 	name = "Merton Beckwith-Smith"
+# 		picture = "Portrait_Britain_Merton_Beckwith_Smith.dds"
+# 		traits = { commando infantry_leader infantry_expert camouflage_expert infantry_officer trait_reckless war_hero}
+# 		skill = 5
+# 		attack_skill = 4
+# 		defense_skill = 4
+# 		planning_skill = 4
+# 		logistics_skill = 4
+# }
+
+# create_corps_commander = {
+# 	name = "Henry Pownall"
+# 	picture = "Portrait_Britain_Henry_Pownall.dds"
+# 	traits = {infantry_leader ambusher infantry_officer armor_officer trait_reckless old_guard}
+# 	skill = 3
+# 	attack_skill = 3
+# 	defense_skill = 9
+# 	planning_skill = 2
+# 	logistics_skill = 2
+# }
+
+# create_field_marshal = {
+# 	name = "John Vereker Lord Gort" # Aristocrat
+# 	id = 994
+# 	picture = "Portrait_Britain_John_Vereker.dds"
+# 	traits = {infantry_leader trait_reckless war_hero unyielding_defender ambusher organizer old_guard politically_connected career_officer skilled_staffer inflexible_strategist defensive_doctrine}
+# 	skill = 4
+# 	attack_skill = 2
+# 	defense_skill = 6
+# 	planning_skill = 3
+# 	logistics_skill = 3
+# }
+
+# create_corps_commander = {
+# 	name = "Henry Wilson"
+# 		picture = "Portrait_Britain_Henry_Maitland_Wilson.dds"
+# 		traits = { trait_mountaineer winter_specialist infantry_leader ambusher infantry_officer harsh_leader }
+# 		skill = 3
+# 		attack_skill = 4
+# 		defense_skill = 4
+# 		planning_skill = 2
+# 		logistics_skill = 2
+# }
+
+# create_corps_commander = {
+# 	name = "(Use for Inf) William Gott"
+# 		picture = "Portrait_Britain_William_Gott.dds"
+# 		traits = {infantry_leader desert_fox ambusher expert_improviser armor_officer trait_reckless old_guard inflexible_strategist trickster}
+# 		skill = 4
+# 		attack_skill = 6
+# 		defense_skill = 6
+# 		planning_skill = 2
+# 		logistics_skill = 2
+# }
+
+# create_corps_commander = {
+# 	name = "Jock Campbell"
+# 		picture = "Portrait_Britain_Jock_Campbell.dds"
+# 		traits = { panzer_leader trait_engineer fortress_buster combined_arms_expert desert_fox war_hero career_officer trait_cautious skilled_staffer}
+# 		skill = 4
+# 		attack_skill = 4
+# 		defense_skill = 6
+# 		planning_skill = 2
+# 		logistics_skill = 7
+# }
+
+# create_corps_commander = {
+# 	name = "Oliver Leese" # Aristocrat
+# 	id = 993
+# 	picture = "Portrait_Britain_Oliver_Leese.dds"
+# 	traits = { panzer_leader panzer_expert trickster  hill_fighter infantry_officer inflexible_strategist media_personality }
+# 	skill = 4
+# 	attack_skill = 5
+# 	defense_skill = 4
+# 	planning_skill = 3
+# 	logistics_skill = 3
+# }
+
+# create_corps_commander = {
+# 	name = "Miles Dempsey"
+# 	picture = "Portrait_Britain_Miles_Dempsey.dds"
+# 	traits = { naval_invader camouflage_expert infantry_expert infantry_leader commando infantry_officer trait_reckless politically_connected}
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 1
+# 	planning_skill = 1
+# 	logistics_skill = 7
+# }
+
+# create_corps_commander = {
+# 	name = "Brian Horrocks"
+# 	picture = "Portrait_Britain_Brian_Horrocks.dds"
+# 	traits = { panzer_leader ranger combined_arms_expert fortress_buster trait_engineer inflexible_strategist career_officer}
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 3
+# 	planning_skill = 7
+# 	logistics_skill = 1
+# }
+
+# create_field_marshal = {
+# 	name = "Archibald Wavell" # Aristocrat
+# 	id = 998
+# 	picture = "Portrait_Britain_Archibald_Wavell.dds"
+# 	traits = { trait_reckless harsh_leader logistics_wizard thorough_planner defensive_doctrine expert_delegator skilled_staffer trait_engineer organizer infantry_leader politically_connected infantry_leader}
+# 	skill = 4
+# 	attack_skill = 3
+# 	defense_skill = 3
+# 	planning_skill = 1
+# 	logistics_skill = 9
+# }
+recruit_character = ENG_winston_churchill
+recruit_character = ENG_stanley_baldwin
+recruit_character = ENG_charles_kitchener
+recruit_character = ENG_hubert_lyons
+recruit_character = ENG_horatio_madden
+recruit_character = ENG_james_fownes_somerville
+recruit_character = ENG_charles_forbes
+recruit_character = ENG_henry_harwood
+recruit_character = ENG_algernon_willis
+recruit_character = ENG_alan_brooke
+recruit_character = ENG_thomas_jacomb_hutton
+recruit_character = ENG_claude_auchinleck
+recruit_character = ENG_miles_dempsey
+recruit_character = ENG_william_gott
+recruit_character = ENG_arthur_percival
+recruit_character = ENG_alan_cunningham
+recruit_character = ENG_neil_ritchie
+recruit_character = ENG_william_slim
+
+recruit_character = ENG_richard_oconnor
+recruit_character = ENG_henry_wilson
+recruit_character = ENG_william_platt
+recruit_character = ENG_merton_beckwithsmith
+recruit_character = ENG_henry_pownall
+recruit_character = ENG_brian_horrocks
+recruit_character = ENG_jackie_smyth
+recruit_character = ENG_john_vereker_lord_gort
+recruit_character = ENG_jock_campbell
+recruit_character = ENG_archibald_wavell
+
+recruit_character = ENG_bernard_montgomery
+recruit_character = ENG_harold_alexander
+recruit_character = ENG_philip_kerr
+recruit_character = ENG_nevile_henderson
+recruit_character = ENG_leslie_hore_belisha
+recruit_character = ENG_maxwell_aitken
+recruit_character = ENG_ernest_bevin
+recruit_character = ENG_stewart_menzies
+
+recruit_character = ENG_john_cockcroft
+recruit_character = ENG_charles_goodeve
+recruit_character = ENG_nevil_shute
+recruit_character = ENG_robert_watson_watt
+
+# create_navy_leader = {
+# 	name = "James Fownes Somerville" # Aristocrat
+# 	id = 983
+# 	picture = "Portrait_Britain_James_Fownes_Somerville.dds"
+# 	traits = { superior_tactician spotter air_controller blue_water_expert }
+# 	skill = 6
+# 	attack_skill = 6
+# 	defense_skill = 3
+# 	maneuvering_skill = 7
+# 	coordination_skill = 8
+# }
+# create_navy_leader = {
+# 	name = "Henry Harwood" # Aristocrat
+# 	id = 984
+# 		picture = "Portrait_Britain_Henry_Harwood.dds"
+# 	traits = {  bold fly_swatter blue_water_expert }
+# 	skill = 3
+# 	attack_skill = 3
+# 	defense_skill = 2
+# 	maneuvering_skill = 3
+# 	coordination_skill = 2
+# }
+
+# create_navy_leader = {
+# 	name = "Andrew Cunningham"
+# 	id = 985
+# 	picture = "Portrait_Britain_Andrew_Cunningham.dds"
+# 	traits = { bold blockade_runner superior_tactician ironside air_controller inshore_fighter }
+# 	skill = 7
+# 	attack_skill = 7
+# 	defense_skill = 4
+# 	maneuvering_skill = 6
+# 	coordination_skill = 6
+# }
+
+# create_navy_leader = {
+# 	name = "Bruce Fraser"
+# 	id = 986
+# 		picture = "Portrait_Britain_Bruce_Fraser.dds"
+# 	traits = { blockade_runner air_controller arctic_water_expert  }
+# 	skill = 4
+# 	attack_skill = 3
+# 	defense_skill = 2
+# 	maneuvering_skill = 4
+# 	coordination_skill = 4
+# }
+
+# create_navy_leader = {
+# 	name = "John Tovey" # Aristocrat
+# 	id = 987
+# 		picture = "Portrait_Britain_John_Tovey.dds"
+# 	traits = { superior_tactician spotter fly_swatter arctic_water_expert }
+# 	skill = 4
+# 	attack_skill = 3
+# 	defense_skill = 3
+# 	maneuvering_skill = 2
+# 	coordination_skill = 5
+# }
+
+# create_navy_leader = {
+# 	name = "Bernard Rawlings" # Aristocrat
+# 	id = 988
+# 		picture = "Portrait_Britain_Bernard_Rawlings.dds"
+# 	traits = { fleet_protector ironside }
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 6
+# 	maneuvering_skill = 3
+# 	coordination_skill = 4
+# }
+
+# create_navy_leader = {
+# 	name = "John Cunningham"
+# 	id = 989
+# 		picture = "Portrait_Britain_John_Cunningham.dds"
+# 	traits = { ironside fly_swatter green_water_expert }
+# 	skill = 4
+# 	attack_skill = 2
+# 	defense_skill = 4
+# 	maneuvering_skill = 4
+# 	coordination_skill = 3
+# }
+# create_navy_leader = {
+# 	name = "Charles Forbes"
+# 	id = 990
+# 		picture = "Portrait_Britain_Charles_Forbes.dds"
+# 	traits = { fly_swatter cruiser_captain fleet_protector destroyer_leader  arctic_water_expert    }
+# 	skill = 5
+# 	attack_skill = 5
+# 	defense_skill = 2
+# 	maneuvering_skill = 3
+# 	coordination_skill = 6
+# }
+
+# create_navy_leader = {
+# 	name = "Algernon Willis"
+# 	id = 991
+# 		picture = "Portrait_Britain_Algernon_Willis.dds"
+# 	traits = { spotter blockade_runner smoke_screen_expert concealment_expert }
+# 	skill = 3
+# 	attack_skill = 2
+# 	defense_skill = 2
+# 	maneuvering_skill = 3
+# 	coordination_skill = 6
+# }
+
+
+### Ship Variants ###
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Variants ###
+	# Submarines #
+	create_equipment_variant = {
+		name = "O/P/R Class"
+		type = submarine_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			sub_engine_upgrade = 2
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 3
+		}
+	}
+	create_equipment_variant = {
+		name = "SS2"
+		type = submarine_1
+		parent_version = 1
+		upgrades = {
+			ship_reliability_upgrade = 2
+			sub_engine_upgrade = 0
+			sub_stealth_upgrade = 2
+			sub_torpedo_upgrade = 3
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "A/B/C/D Class"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 2
+			ship_anti_air_upgrade = 1
+		}
+		obsolete = yes
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Emerald Class"
+		type = light_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 3
+			ship_gun_upgrade = 2
+			ship_anti_air_upgrade = 3
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Amphion Class"
+		type = light_cruiser_1
+		parent_version = 1
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 3
+			ship_gun_upgrade = 3
+			ship_anti_air_upgrade = 3
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "County Class"
+		type = heavy_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 3
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 3
+		}
+	}
+	# Battlecruisers #
+	create_equipment_variant = {
+		name = "BC1"
+		type = battle_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 2
+		}
+	}
+	# Battleships #
+	create_equipment_variant = {
+		name = "BB1"
+		type = battleship_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 3
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 3
+			ship_gun_upgrade = 3
+		}
+	}
+	create_equipment_variant = {
+		name = "Queen Elizabeth Class"
+		type = battleship_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 1
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	### Variants ###
+	# Submarines #
+	# Submarines #
+	create_equipment_variant = {
+		name = "S Class"
+		type = ship_hull_submarine_1
+		name_group = ENG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "A/B/C/D Class"
+		type = ship_hull_light_1
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "E/F/G/H Class"
+		type = ship_hull_light_2
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Emerald Class"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_3
+			fixed_ship_secondaries_slot = ship_secondaries_2 
+			mid_1_custom_slot = ship_light_medium_battery_2
+			mid_2_custom_slot = ship_light_medium_battery_2
+			rear_1_custom_slot = ship_light_medium_battery_2
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+			name = "Town Class"
+			type = ship_hull_cruiser_2
+			name_group = ENG_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_3
+				fixed_ship_secondaries_slot = ship_secondaries_2
+				front_1_custom_slot = ship_light_medium_battery_2
+				mid_1_custom_slot = ship_light_medium_battery_2
+				mid_2_custom_slot = ship_light_medium_battery_2
+				rear_1_custom_slot = ship_light_medium_battery_2
+			}
+		}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "County Class"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			mid_1_custom_slot = ship_medium_battery_2
+			mid_2_custom_slot = ship_medium_battery_2
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+		}
+	
+	create_equipment_variant = {
+		name = "Nelson Class"
+		type = ship_hull_heavy_1
+		name_group = ENG_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = ship_heavy_battery_2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Hermes Class"
+		type = ship_hull_carrier_conversion_ca
+		name_group = ENG_CVL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_secondaries_slot = empty
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+			name = "Ark Royal Class"
+			type = ship_hull_carrier_1
+			name_group = ENG_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_2
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_2
+				fixed_ship_secondaries_slot = empty
+				front_1_custom_slot = ship_deck_space
+			}
+		}
+	
+}

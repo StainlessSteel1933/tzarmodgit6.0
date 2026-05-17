@@ -1,0 +1,14 @@
+### HOW THIS WORKS: 
+### THIS is a combination of the various doctrines into one 'super doctrine'.
+### Air doctrine takes 10~ techs to finish in vanilla, this is a bit longer BUT allows you to be good at more things. You get the essentials early on, and progress further over time. 
+### This is supposed to take the 'best' of each tree and combine it into one. 
+### Currently, there's Dogfighting (Fighter core), a single tech for naval missions (there's not much to do with that the way air doctrine is set up), a tech tree for CAS, and a tech tree for strat destruction. You can get it all. 
+
+technologies = { 
+
+	
+	
+	
+}
+	
+	

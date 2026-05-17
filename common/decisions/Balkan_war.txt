@@ -1,0 +1,272 @@
+balkan_form = {
+
+	form_greater_BUL2 = {
+		name = "Proclaim Bulgarian Empire"
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = BUL
+		}
+		available = {
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 106
+					}
+				}
+				controls_state = 106
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 803
+					}
+				}
+				controls_state = 803
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 914
+					}
+				}
+				controls_state = 914
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 184
+					}
+				}
+				controls_state = 184
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 77
+					}
+				}
+				controls_state = 77
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 731
+					}
+				}
+				controls_state = 731
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 341
+					}
+				}
+				controls_state = 341
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 904
+					}
+				}
+				controls_state = 904
+			}
+		}
+
+		visible = {
+			original_tag = BUL
+			NOT = { has_global_flag = form_greater_bul2 }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = HUN_greater_rom
+			hidden_effect = {
+				set_global_flag = form_greater_bul2
+			}
+		}
+	}
+	form_greater_BUL = {
+		name = "Proclaim Greater Bulgaria"
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = BUL
+		}
+
+		available = {
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 106
+					}
+				}
+				controls_state = 106
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 803
+					}
+				}
+				controls_state = 803
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 914
+					}
+				}
+				controls_state = 914
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 184
+					}
+				}
+				controls_state = 184
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 77
+					}
+				}
+				controls_state = 77
+			}
+		}
+
+		visible = {
+			original_tag = BUL
+			NOT = { has_global_flag = form_greater_bul }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = HUN_greater_rom
+			hidden_effect = {
+				set_global_flag = form_greater_bul
+			}
+		}
+	}
+	form_greater_HUN_bal = {
+		name = "Proclaim Greater Hungary"
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = HUN
+		}
+
+		available = {
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 45
+					}
+				}
+				controls_state = 45
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 76
+					}
+				}
+				controls_state = 76
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 664
+					}
+				}
+				controls_state = 664
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 908
+					}
+				}
+				controls_state = 908
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 73
+					}
+				}
+				controls_state = 73
+			}
+		}
+
+		visible = {
+			original_tag = HUN
+			NOT = { has_global_flag = HUN_greater_hun_formed }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = HUN_greater_hun
+			hidden_effect = {
+				set_global_flag = HUN_greater_hun_formed
+			}
+		}
+	}
+	form_greater_HUN2_bal = {
+		name = "Restore Hungarian Kingdom"
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = HUN
+		}
+
+		available = {}
+
+		visible = {
+			original_tag = HUN
+			NOT = { has_global_flag = form_greater_hun_2 }
+		}
+
+		complete_effect = {
+		}
+	}
+	form_greater_ROM_bal = {
+		name = "Proclaim Greater Romania"
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = ROM
+		}
+
+		available = {
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 905
+					}
+				}
+				controls_state = 905
+			}
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 764
+					}
+				}
+				controls_state = 764
+			}
+		}
+
+		visible = {
+			original_tag = ROM
+			NOT = { has_global_flag = form_greater_rom }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = ROM_greater_rom
+			hidden_effect = {
+				set_global_flag = form_greater_rom
+			}
+		}
+	}
+}

@@ -1,0 +1,847 @@
+characters={
+	NOR_otto_ruge={
+		name="Otto Ruge"
+		advisor={
+			slot = army_chief
+			idea_token = NOR_otto_ruge
+			allowed  = {
+					original_tag  = NOR 
+				}
+				cost = 75
+				traits  = {
+					army_chief_offensive_2 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+		field_marshal={
+			traits={ bearer_of_artillery organizer infantry_leader trait_engineer ranger fortress_buster infantry_expert }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_kristian_laake={
+		name="Kristian Bubway"
+		advisor={
+			slot = army_chief
+			idea_token = NOR_kristian_laake
+			allowed  = {
+					original_tag  = NOR 
+				}
+				cost = 75
+				traits  = {
+					army_chief_defensive_2 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+		corps_commander={
+			traits={ adaptable war_hero infantry_officer old_guard harsh_leader infantry_leader infantry_expert hill_fighter trait_engineer fortress_buster }
+			skill=5
+			attack_skill=6
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_johan_nygaardsvold={
+		name="Johan Nygaardsvold"
+		portraits={
+			civilian={
+				large=GFX_portrait_Johan_Nygaardsvold
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	NOR_odd_prytz={
+		name="Odd Prytz"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_5"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ editor }
+			expire="1953.1.1.12"
+			id=-1
+		}
+	}
+	NOR_wilhelm_teige={
+		name="Wilhelm Teige"
+		portraits={
+			civilian={
+				large="GFX_Portrait_europe_generic_7"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ ideological_crusader silent_workhorse }
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+	NOR_sverre_eriksen={
+		name="Sverre Eriksen"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_8"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits={ reichs_minister appeaser }
+			expire="1943.1.1.12"
+			id=-1
+		}
+	}
+	NOR_nelson_mello={
+		name="Nelson Mello"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/BRA/Nelson_Mello.tga"
+			}
+		}
+		navy_leader={
+			traits={ fleet_protector superior_tactician ironside destroyer_leader concealment_expert ground_pounder }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	NOR_françois_darlan={
+		name="François Darlan"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_francois_darlan.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Francois_Darlan.dds"
+			}
+		}
+		navy_leader={
+			traits={ bold blockade_runner superior_tactician spotter concealment_expert }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	NOR_joão_baptista_de_mattos={
+		name="João Baptista de Mattos"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+		}
+		field_marshal={
+			traits={ adaptable organizer cavalry_leader naval_invader logistics_wizard thorough_planner organisational_leader combined_arms_expert cavalry_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_markos_drakos={
+		name="Markos Drakos"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/GRE/portrait_gre_markos_drakos.dds"
+			}
+		}
+		field_marshal={
+			traits={ infantry_leader trait_mountaineer hill_fighter jungle_rat logistics_wizard thorough_planner infantry_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_alexandros_papagos={
+		name="Alexandros Papagos"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_GRE_alexandros_papagos.dds"
+			}
+			army={
+				large="gfx/leaders/GRE/portrait_gre_alexandros_papagos.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist infantry_leader trickster commando trait_mountaineer logistics_wizard unyielding_defender ambusher camouflage_expert guerilla_fighter }
+			skill=5
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_charles_de_gaulle={
+		name="Charles De Gaulle"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_charles_de_gaulle.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist harsh_leader trickster panzer_leader desert_fox logistics_wizard offensive_doctrine aggressive_assaulter panzer_expert fortress_buster }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_king_haakon_vii={
+		name="King Haakon VII"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/NOR/portrait_norway_haakon_vii.tga"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist infantry_leader trickster trait_engineer offensive_doctrine thorough_planner aggressive_assaulter infantry_expert }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	NOR_alphonse_juin={
+		name="Alphonse Juin"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_alphonse_juin.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Alphonse_Juin.dds"
+			}
+		}
+		field_marshal={
+			traits={ bearer_of_artillery trait_cautious cavalry_leader commando desert_fox logistics_wizard defensive_doctrine combined_arms_expert cavalry_expert skirmisher }
+			skill=5
+			attack_skill=4
+			defense_skill=6
+			planning_skill=1
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	NOR_izaak_reijnders={
+		name="Izaak Reijnders"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_HOL_izaak_reijnders.dds"
+			}
+			army={
+				large="gfx/leaders/HOL/portrait_hol_izaak_reijnders.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist trait_reckless organizer infantry_leader logistics_wizard thorough_planner unyielding_defender infantry_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	NOR_henri_winkelman={
+		name="Henri Winkelman"
+		portraits={
+			army={
+				small="GFX_portrait_hol_henri_winkelman_small"
+			}
+			army={
+				large="GFX_portrait_hol_henri_winkelman"
+			}
+		}
+		field_marshal={
+			traits={ inflexible_strategist trait_cautious infantry_leader logistics_wizard defensive_doctrine unyielding_defender ambusher guerilla_fighter }
+			skill=5
+			attack_skill=1
+			defense_skill=7
+			planning_skill=2
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_jean_de_lattre_de_tassigny={
+		name="Jean de Lattre de Tassigny"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_jean_de_lattre_de_tassigny.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster panzer_leader desert_fox panzer_expert skirmisher expert_improviser }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_philippe_leclerc={
+		name="Philippe Leclerc"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_philippe_leclerc.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_france_philippe_leclerc.dds"
+			}
+		}
+		corps_commander={
+			traits={ fake_skilled_staffer trait_reckless infantry_leader trickster desert_fox ambusher camouflage_expert guerilla_fighter }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	NOR_petrus_wilhelmus_best={
+		name="Petrus Wilhelmus Best"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_HOL_petrus_wilhelmus_best.dds"
+			}
+			army={
+				large="gfx/leaders/HOL/portrait_hol_petrus_wilhelmus_best.dds"
+			}
+		}
+		corps_commander={
+			traits={ fake_skilled_staffer organizer infantry_leader trickster jungle_rat ambusher skirmisher }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_eurico_gaspar_dutra={
+		name="Eurico Gaspar Dutra"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery cavalry_leader naval_invader swamp_fox trait_mountaineer jungle_rat combined_arms_expert cavalry_expert naval_liason expert_improviser }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	NOR_mariepierre_koenig={
+		name="Marie-Pierre Koenig"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_marie_pierre_koenig.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_fra_marie_pierre_koenig.dds"
+			}
+		}
+		corps_commander={
+			traits={ adaptable trait_engineer panzer_leader naval_invader panzer_expert invader_ii naval_liason }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=9
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	NOR_antoinemariebenoît_besson={
+		name="Antoine-Marie-Benoît Besson"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist cavalry_leader trickster desert_fox urban_assault_specialist combined_arms_expert cavalry_expert ambusher guerilla_fighter }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_godfried_van_voorst_tot_voorst={
+		name="Godfried van Voorst tot Voorst"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_HOL_godfried_van_voorst_tot_voorst.dds"
+			}
+			army={
+				large="gfx/leaders/HOL/portrait_hol_godfried_van_voorst_tot_voorst.dds"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist trickster trait_engineer panzer_leader trait_mountaineer jungle_rat panzer_expert }
+			skill=5
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_euclides_zenobio_da_costa={
+		name="Euclides Zenobio Da Costa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ adaptable infantry_leader trickster desert_fox infantry_expert }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_mascarenhas_de_morais={
+		name="Mascarenhas de Morais"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/BRA/Mascarenhas_de_Morais.tga"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery trait_engineer panzer_leader ranger urban_assault_specialist panzer_expert fortress_buster }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	NOR_carl_gustav_fleischer={
+		name="Carl Gustav Fleischer"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/NOR/portrait_norway_carl_gustav_flesicher.tga"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trickster naval_invader trait_mountaineer hill_fighter infantry_expert invader_ii naval_liason }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NOR_charalambos_katsimitros={
+		name="Charalambos Katsimitros"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/GRE/portrait_gre_charalambos_katsimitros.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader swamp_fox trait_mountaineer jungle_rat infantry_expert naval_liason expert_improviser }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	NOR_henri_giraud={
+		name="Henri Giraud"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_henri_giraud.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_france_henri_giraud.dds"
+			}
+		}
+		corps_commander={
+			traits={ fake_skilled_staffer trait_cautious infantry_leader trait_engineer trait_mountaineer hill_fighter scavenger ambusher }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	NOR_georges_catroux={
+		name="Georges Catroux"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_alphonse_joseph_georges.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Alphonse_Joseph_Georges.dds"
+			}
+		}
+		corps_commander={
+			traits={ fake_skilled_staffer trait_reckless organizer infantry_leader trickster trait_mountaineer jungle_rat infantry_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	NOR_adolf_indrebo={
+		advisor={
+			slot = political_advisor
+			idea_token = NOR_adolf_indrebo
+			allowed  = {
+					original_tag  = NOR 
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="NOR_adolf_indrebo"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	NOR_trygve_halvdan_lie={
+		advisor={
+			slot = political_advisor
+			idea_token = NOR_trygve_halvdan_lie
+			allowed  = {
+					original_tag  = NOR 
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="NOR_trygve_halvdan_lie"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	NOR_armaments_nor={
+		advisor={
+			slot = political_advisor
+			idea_token = armaments_nor
+			allowed  = {
+					original_tag  = NOR
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="Arne Stormo"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	NOR_birger_ljungberg={
+		advisor={
+			slot = high_command
+			idea_token = NOR_birger_ljungberg
+			ledger  = army 
+				allowed  = {
+					original_tag  = NOR 
+				}
+				cost = 75
+				traits  = {
+					army_commando_2 
+				}
+		}
+		name="NOR_birger_ljungberg"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	NOR_wilhelm_von_tangen-hansteen={
+		advisor={
+			slot = high_command
+			idea_token = NOR_wilhelm_von_tangen-hansteen
+			ledger  = army 
+				allowed  = {
+					original_tag  = NOR 
+				}
+				cost = 75
+				traits  = {
+					army_infantry_2 
+				}
+		}
+		name="NOR_wilhelm_von_tangen-hansteen"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	NOR_alfred_roscher-lund={
+		advisor={
+			slot = high_command
+			idea_token = NOR_alfred_roscher-lund
+			ledger  = army 
+				allowed  = {
+					original_tag  = NOR 
+				}
+				cost = 75
+				traits  = {
+					army_concealment_3 
+				}
+		}
+		name="NOR_alfred_roscher-lund"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	NOR_konrad_sundlo={
+		advisor={
+			slot = theorist
+			idea_token = NOR_konrad_sundlo
+			ledger  = army 
+				allowed  = {
+					original_tag  = NOR 
+				}
+			    cost = 100
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="NOR_konrad_sundlo"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	NOR_stabber_nor={
+		advisor={
+			slot = political_advisor
+			idea_token = stabber_nor
+			allowed  = {
+					original_tag  = NOR
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="Are Theisen"
+		portraits={
+			army={
+				small="GFX_idea_gre_emmanouil_tsouderos"
+			}
+		}
+	}
+	NOR_jacob_von_der_lippe={
+		advisor={
+			slot = high_command
+			idea_token = NOR_jacob_von_der_lippe
+			ledger  = army 
+				allowed  = {
+					original_tag  = NOR 
+				}
+				cost = 75
+				traits  = {
+					army_armored_2 
+				}
+		}
+		name="NOR_jacob_von_der_lippe"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	NOR_smooth_nor={
+		advisor={
+			slot = political_advisor
+			idea_token = smooth_nor
+			allowed  = {
+					original_tag  = NOR
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="Victor Narum"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	NOR_nor_air_tacticalbombing={
+		advisor={
+			slot = high_command
+			idea_token = nor_air_tacticalbombing
+			ledger  = air 
+				allowed  = {
+					original_tag  = NOR 
+				}
+				cost = 75
+				traits  = {
+					air_tactical_bombing_1 
+				}
+		}
+		name="Vetle Krabsethve"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_warfare_theorist_african_2d"
+			}
+		}
+	}
+	NOR_crusader_nor={
+		advisor={
+			slot = political_advisor
+			idea_token = crusader_nor
+			allowed  = {
+					original_tag  = NOR
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="Eskil Kvamme"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	NOR_willhelm_von_tangen_hansteen={
+		advisor={
+			slot = army_chief
+			idea_token = NOR_willhelm_von_tangen_hansteen
+			allowed  = {
+					original_tag  = NOR 
+				}
+				cost = 75
+				traits  = {
+					army_chief_organizational_2 
+				}
+		}
+		name="NOR_willhelm_von_tangen_hansteen"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	NOR_gentlemen_nor={
+		advisor={
+			slot = political_advisor
+			idea_token = gentlemen_nor
+			allowed  = {
+					original_tag  = NOR
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="Børge Sandvik"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	NOR_halavdan_koht={
+		advisor={
+			slot = political_advisor
+			idea_token = NOR_halavdan_koht
+			allowed  = {
+					original_tag  = NOR 
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="Halavdan Koht"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+}

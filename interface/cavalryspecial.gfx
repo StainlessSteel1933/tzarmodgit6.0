@@ -1,0 +1,62 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_special_forces_cavalry_medium"
+		texturefile = "gfx/interface/technologies/special_forces_cavalry.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_desert_cavalry_medium"
+		texturefile = "gfx/interface/technologies/desert_cavalry.dds"
+		alwaystransparent = yes
+	}
+	SpriteType = {
+		name = "GFX_plain_cavalry_medium"
+		texturefile = "gfx/interface/technologies/plain_cavalry.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_military_police_cavalry_medium"
+		texturefile = "gfx/interface/technologies/military_police_cavalry.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_cavalry_sniper_medium"
+		texturefile = "gfx/interface/technologies/cavalry_sniper.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_fearless_cavalry_medium"
+		texturefile = "gfx/interface/technologies/fearless_cavalry.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_artillery_support_cavalry_medium"
+		texturefile = "gfx/interface/technologies/artillery_support_cavalry.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_agressive_cavalry_medium"
+		texturefile = "gfx/interface/technologies/agressive_cavalry.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_organized_cavalry_medium"
+		texturefile = "gfx/interface/technologies/organized_cavalry.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_cavalry_bg"
+		textureFile = "gfx/interface/technologies/doctrine_special_forces_cavalry_bg.dds"
+		alwaystransparent = yes		
+	}
+
+
+}

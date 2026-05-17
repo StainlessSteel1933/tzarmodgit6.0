@@ -1,0 +1,24 @@
+
+state={
+	id=775
+	name="STATE_775"
+
+	impassable = yes
+	history={
+		owner = FRA
+		add_core_of = 
+		buildings = {
+			infrastructure = 0
+
+		}
+
+	}
+
+	provinces={
+		4902 
+	}
+	manpower=18744
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=1.000
+}

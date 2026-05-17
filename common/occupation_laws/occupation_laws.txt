@@ -1,0 +1,81 @@
+autonomous_occupation = {
+	icon = 2
+	sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
+	default_law = yes
+	
+	visible = {
+		OR = { 
+			has_government = democratic
+			tag = BRA 
+			tag = MEX
+			tag = RAJ 
+			tag = SOV 
+		} 
+	}
+
+	state_modifier = {
+		compliance_gain 				= 0.12
+		resistance_target 				= -0.5
+		required_garrison_factor 		= -1	
+		resistance_damage_to_garrison 	= -1
+		local_non_core_manpower = 0.05
+	}
+}
+
+foreign_civilian_oversight = {
+	icon = 3
+	sound_effect = "Martial_Law_Interface_Foreign_Cvilian_Oversight"
+	
+	visible = {
+		NOT = { 
+			OR = { 
+				has_government = democratic
+				tag = BRA 
+				tag = MEX
+				tag = SOV
+				tag = RAJ 
+			}
+		}
+	}
+	
+	state_modifier = {
+		resistance_target 				= -0.10
+		required_garrison_factor 		= -0.50	
+		resistance_damage_to_garrison 	= -0.25	
+		compliance_gain 				= 0.000
+		local_factories 				= 0.00
+	}
+	starting_law = yes
+}
+
+harsh_quotas_occupation = {
+	icon = 9
+	sound_effect = "Martial_Law_Interface_Harsh_Quotas_Occupation"
+
+	visible = {
+		NOT = { 
+			OR = { 
+				has_government = democratic
+				tag = BRA 
+				tag = MEX
+				tag = SOV 
+				tag = RAJ 
+			} 
+		}
+	}
+	
+	state_modifier = {
+		resistance_target 				= -0.40
+		compliance_gain 				= -0.16
+		required_garrison_factor 		= 0.60
+		resistance_damage_to_garrison 	= 0.50		
+	
+		local_factories 				= 0.15
+		
+		repair_speed_infrastructure_factor 	= 0.25
+		repair_speed_arms_factory_factor = 0.25
+		repair_speed_industrial_complex_factor = 0.25
+		
+		custom_modifier_tooltip = "factory_sabotage_decrease_tooltip"
+	}
+}

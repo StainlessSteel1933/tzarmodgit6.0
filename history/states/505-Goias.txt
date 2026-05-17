@@ -1,0 +1,23 @@
+
+state={
+	id=505
+	name="STATE_505"
+
+	history={
+		owner = SWE
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		5115 
+	}
+	manpower=1662200
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

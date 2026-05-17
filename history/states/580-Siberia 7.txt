@@ -1,0 +1,26 @@
+
+state={
+	id=580
+	name="STATE_580"
+	impassable = yes
+	history={
+		victory_points = {
+			1659 1 
+		}
+		owner = SOV
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SOV
+		add_core_of = 
+	}
+
+	provinces={
+		1659 1744 1784 1812 4710 4715 4746 4774 4817 4846 7685 7733 7768 7796 7867 7895 10592 10604 10620 10692 12542 12574 12602 12630 12672 12700 
+	}
+	manpower=88126
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=3.000
+}

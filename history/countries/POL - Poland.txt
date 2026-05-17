@@ -1,0 +1,233 @@
+﻿capital = 10
+
+oob = "POL_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "POL_1936_naval_mtg"
+	else = {
+		set_naval_oob = "POL_1936_naval_legacy"
+	}
+}
+
+add_ideas = POL_militarism_focus
+add_ideas = POL_ideological_fanaticism
+
+set_research_slots = 0
+
+set_stability = 0.8
+
+
+# Starting tech
+set_technology = { 
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	motorised_infantry = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+	artillery1 = 1
+	interwar_antiair = 1
+	antiair1 = 1
+	antiair2 = 1
+	interwar_antitank = 1
+	antitank1 = 1
+	antitank2 = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	iw_small_airframe = 1
+		basic_medium_airframe = 1
+					aa_lmg = 1
+
+	trench_warfare = 1
+	grand_battle_plan = 1
+	prepared_defense = 1
+	grand_assault = 1
+	infantry_offensive = 1
+	armored_operations = 1
+	infiltration_assault = 1
+	radio = 1
+	#improved_light_spaa = 1
+	#improved_light_td = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_submarine = 1	
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+	}
+}
+
+create_equipment_variant = {
+				name = "7TP"
+				type = light_tank_chassis_2	
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+					main_armament_slot = tank_auto_cannon_2
+					turret_type_slot = tank_light_three_man_tank_turret
+					suspension_type_slot = tank_horstmann_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = secondary_turret_small_cannon
+					special_type_slot_3 = auto_loader
+					special_type_slot_4 = additional_machine_guns
+					special_type_slot_9 = empty
+				}
+				upgrades={
+					tank_nsb_engine_upgrade=11
+					tank_nsb_armor_upgrade=0
+				}
+}
+set_convoys = 10
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.9.8"
+	election_frequency = 36
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Władysław Sikorski"
+	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ignacy Mościcki"
+	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
+	picture = "Portrait_Poland_Ignacy_Moscicki.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Władysław Gomułka"
+	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wincenty Witos"
+	desc = "POLITICS_WINCENTY_WITOS_DESC"
+	picture = "GFX_POL_wincenty_witos"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Bolesław Piasecki"
+	desc = "POLITICS_BOLESLAW_PIASECKI_DESC"
+	picture = "GFX_POL_boleslaw_piasecki"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Władysław Sikorski"
+	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Władysław Bortnowski"
+	gfx = "GFX_POL_wladyslaw_bortnowski"
+	traits = {  thorough_planner }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Stanisław Kopański"
+	gfx = "GFX_POL_stanislav_kopanski"
+	traits = {  offensive_doctrine }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Władysław Anders"
+	gfx = "GFX_POL_wladislaw_anders"
+	traits = {  armor_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Roman Abraham"
+	gfx = "GFX_POL_roman_abraham"
+	traits = {  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Wincenty Kowalski"
+	gfx = "GFX_POL_wincenty_kowalski"
+	traits = { trickster }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}

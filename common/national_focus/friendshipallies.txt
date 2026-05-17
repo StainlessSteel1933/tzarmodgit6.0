@@ -1,0 +1,1929 @@
+joint_focus = {
+		id = ALLIED_cum
+		icon = GFX_focus_hol_the_fourth_ally
+		#prerequisite = { focus = }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 18
+		y = 6
+		
+		#relative_position_id = 
+		
+		cost = 5
+
+		offset = {
+			x = 0
+			y = 2
+			trigger = {
+				has_focus_tree = indian_focus
+			}
+		}
+		
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		}
+
+		completion_reward_joint_originator = {
+			army_experience = 100
+		}
+		
+		completion_reward_joint_member = {
+			army_experience = 30
+		}
+}
+joint_focus = {
+	id = ALLIED_China
+	icon = GFX_focus_attack_germany
+	text = "Volunteers to China"
+	prerequisite = {focus = ALLIED_cum}
+	dynamic = yes
+	x = 0
+	y = 1
+	relative_position_id = ALLIED_cum
+	cost = 2
+	cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			CHI = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = FRA
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = SOV
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = CAN
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = SAF
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = AST
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = RAJ
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = USA
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = MEX
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = NZL
+					modifier = cheat_opinion_modifier_good
+				}
+				add_opinion_modifier = {
+					target = HOL
+					modifier = cheat_opinion_modifier_good
+				}
+			}
+			ENG = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			FRA = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			SOV = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			CAN = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			SAF = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			AST = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			RAJ = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			USA = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			MEX = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			NZL = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+			HOL = {
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+		}		
+}
+
+
+joint_focus = {
+		id = ALLIED_international_zone
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = ALLIED_cum }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 4
+		y = 1
+		
+		relative_position_id = ALLIED_cum
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_manpower = -2000
+			add_tech_bonus = {
+				name = ALLIED_mp
+				bonus = 2.00
+				uses = 1
+				technology = tech_military_police = 1
+			}
+		}
+
+		completion_reward_joint_member = {
+			add_tech_bonus = {
+				name = ALLIED_mp
+				bonus = 1.00
+				uses = 1
+				technology = tech_military_police = 1
+			}
+		}
+}
+
+joint_focus = {
+		id = ALLIED_support_norman
+		icon = GFX_focus_generic_field_hostpital
+		prerequisite = { focus = ALLIED_international_zone }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = ALLIED_international_zone
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			
+			add_tech_bonus = {
+				name = SWI_spirit_of_saint_bernard
+				uses = 2
+				bonus = 1.0
+				category = hospital_tech
+			}
+		
+			CHI = {
+				add_ideas = CHI_norman_bethune_mission
+			}
+		}
+
+		completion_reward_joint_member = {
+			add_tech_bonus = {
+				name = SWI_spirit_of_saint_bernard
+				uses = 1
+				bonus = 1.0
+				category = hospital_tech
+			}
+		}
+}
+
+joint_focus = {
+		id = governments_in_exile_aid
+		icon = GFX_goal_continuous_increase_nu
+		prerequisite = { focus = ALLIED_cum }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = -2
+		y = 1
+		
+		relative_position_id = ALLIED_cum
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			FRA = { has_capitulated = yes }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_political_power = 20
+			add_war_support = 0.10
+			add_manpower = 5000
+		}
+
+		completion_reward_joint_member = {
+			add_war_support = 0.10
+			add_manpower = 5000
+		}
+}
+
+joint_focus = {
+		id = ALLIED_switerzland
+		icon = GFX_focus_SWI_swiss_guiding_principles
+		prerequisite = { focus = governments_in_exile_aid }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = -6
+		y = 1
+		
+		relative_position_id = governments_in_exile_aid
+
+		cost = 1
+
+		ai_will_do = {
+			factor = -100
+		}
+		
+		joint_trigger = {
+			
+		}
+
+		available = {
+			SWI = { has_capitulated = yes }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_ideas = GER_swiss_gold_exchange
+			#add_offsite_building = { type = arms_factory level = 1 }
+			
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+#joint_focus = {
+#		id = ALLIED_spirit_of_saint_bernard
+#		icon = GFX_focus_SWI_spirit_of_saint_bernard
+#		prerequisite = { focus = ALLIED_switerzland }
+#		#mutually_exclusive = { focus =  }
+#		dynamic = yes 
+		
+#		x = 0
+#		y = 1
+		
+#		relative_position_id = ALLIED_switerzland
+
+#		cost = 5
+
+#		ai_will_do = {
+#			factor = -100
+#		}
+		
+#		visible = {
+		
+#		}
+		
+#		joint_trigger = {
+ 			
+#		}
+
+#		available = {
+			
+#		}
+		
+#		bypass = {
+
+#		}
+
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+
+#		complete_tooltip = {
+
+#		}
+
+#		completion_reward = {
+			
+#		}
+
+#		completion_reward_joint_originator = {
+#			add_ideas = { SWI_spirit_of_saint_bernard_idea }
+#			add_tech_bonus = {
+#				name = SWI_spirit_of_saint_bernard
+#				uses = 2
+#				bonus = 1.5 
+#				category = hospital_tech
+#			}
+#		}
+
+#		completion_reward_joint_member = {
+#			add_ideas = { SWI_spirit_of_saint_bernard_idea }
+#		}
+#}
+
+joint_focus = {
+		id = ALLIED_poland
+		icon = GFX_focus_POL_prepare_for_the_inevitable
+		prerequisite = { focus = governments_in_exile_aid }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = governments_in_exile_aid
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+joint_focus = {
+		id = ALLIED_polishgov_exile
+		icon = GFX_focus_POL_prepare_for_the_inevitable
+		prerequisite = { focus = ALLIED_poland }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = ALLIED_poland
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_ideas = POL_polish_shock_battallions
+		}
+
+		completion_reward_joint_member = {
+			add_ideas = POL_polish_shock_battallions
+		}
+}
+
+
+joint_focus = {
+		id = ALLIED_poland_wojak
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		prerequisite = { focus = ALLIED_polishgov_exile }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 1
+		y = 1
+		
+		relative_position_id = ALLIED_polishgov_exile
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			 create_corps_commander = {
+			 	name = "Wojtek"
+			 	gfx = "GFX_portrait_POL_wojtek"
+			 	traits = { commando war_hero bearer_of_artillery organizer logistics_wizard }
+			 	skill = 7
+			 	attack_skill = 2
+			 	defense_skill = 5
+			 	planning_skill = 1
+				logistics_skill = 10
+			}
+			add_ideas = { allied_wojtek }
+		}
+
+		completion_reward_joint_member = {
+			add_ideas = { allied_wojtek }
+		}
+}
+
+
+joint_focus = {
+		id = ALLIED_poland_tank
+		icon = GFX_focus_POL_expand_polish_intelligence
+		prerequisite = { focus = ALLIED_polishgov_exile }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = -1
+		y = 1
+		
+		relative_position_id = ALLIED_polishgov_exile
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			has_tech = mechanised_infantry
+			has_tech = improved_medium_tank_chassis
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			create_equipment_variant = {
+				name = "BOLAND Medium Tank Chassis"
+				type = medium_tank_chassis_2	
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_medium_cannon_2
+					turret_type_slot = tank_medium_two_man_tank_turret
+					suspension_type_slot = tank_leafsupring_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = auto_loader
+					special_type_slot_4 = stabilizer
+					special_type_slot_9 = empty
+				}
+				upgrades={
+					tank_nsb_engine_upgrade=7
+					tank_nsb_armor_upgrade=0
+				}
+			}
+			create_equipment_variant = {
+				name = "BOLAND AA Tank Chassis"
+				type = medium_tank_aa_chassis_2
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_anti_air_cannon_2
+					turret_type_slot = tank_medium_one_man_tank_turret
+					suspension_type_slot = tank_interleaved_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = auto_loader
+					special_type_slot_4 = smoke_launcher
+					special_type_slot_9 = empty
+				}
+				upgrades={
+					tank_nsb_engine_upgrade=12
+					tank_nsb_armor_upgrade=10
+				}
+			}
+			
+				division_template = {
+					name = "Free Poland Tank Regiment" 		
+					division_names_group = POL_MEC_01
+
+					regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 0 y = 2 }
+						mechanized = { x = 0 y = 3 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 1 y = 1 }
+						mechanized = { x = 1 y = 2 }
+						mechanized = { x = 1 y = 3 }
+						medium_sp_anti_air_brigade = { x = 1 y = 4 }
+
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 2 y = 3 }
+						medium_armor = { x = 3 y = 0 }
+						medium_armor = { x = 3 y = 1 }
+						medium_armor = { x = 3 y = 2 }
+						medium_armor = { x = 3 y = 3 }
+						medium_armor = { x = 4 y = 0 }
+						medium_armor = { x = 4 y = 1 }
+						medium_armor = { x = 4 y = 2 }
+					}
+					
+					support = {
+						engineer = { x = 0 y = 0 }
+						light_tank_recon = { x = 0 y = 1 }
+						signal_company = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						maintenance_company = { x = 0 y = 4 }
+						field_hospital = { x = 0 y = 5 }
+						anti_air = { x = 0 y = 6 }
+						light_flame_tank = { x = 0 y = 7 }
+					}
+					
+				}
+		
+				random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Free Poland Tank Regiment\" division_template = \"Free Poland Tank Regiment\" start_experience_factor = 1.00" 
+							owner = ROOT
+						}	
+				}
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+#joint_focus = {
+#		id = ALLIED_support_polish_redarmy
+#		icon = GFX_focus_POL_prepare_for_the_inevitable
+#		prerequisite = { focus = ALLIED_poland }
+#		#mutually_exclusive = { focus =  }
+#		dynamic = yes 
+		
+#		x = 2
+#		y = 1
+		
+#		relative_position_id = ALLIED_poland
+
+#		cost = 5
+
+#		ai_will_do = {
+#			factor = -100
+#		}
+
+#		joint_trigger = {
+  			
+#		}
+
+#		available = {
+#			always = no
+#		}
+		
+#		bypass = {
+
+#		}
+
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+
+#		complete_tooltip = {
+
+#		}
+
+#		completion_reward = {
+			
+#		}
+
+#		completion_reward_joint_originator = {
+#			PRA = {
+#				transfer_state = 898
+#				add_manpower = 300000
+#				diplomatic_relation = {   country = SOV relation = military_access  active = yes  }
+#			}
+#			ROOT = {
+#				set_autonomy = {
+#						target = PRA
+#						autonomy_state = autonomy_puppet
+#				}
+#				diplomatic_relation = {   country = SOV relation = military_access  active = yes  }
+#			}
+#			build_railway = {
+#			path = { 3338 9041 6105 6016 9099 154 }
+#			}
+#		}
+
+#		completion_reward_joint_member = {
+			
+#		}
+#}
+
+#joint_focus = {
+#		id = ALLIED_sponsor_polish_redarmy
+#		icon = GFX_focus_generic_polish_deal
+#		prerequisite = { focus = ALLIED_support_polish_redarmy }
+#		#mutually_exclusive = { focus =  }
+#		dynamic = yes 
+		
+#		x = 0
+#		y = 1
+		
+#		relative_position_id = ALLIED_support_polish_redarmy
+
+#		cost = 10
+
+#		ai_will_do = {
+#			factor = -100
+#		}
+
+#		joint_trigger = {
+  			
+#		}
+
+#		available = {
+			
+#		}
+		
+#		bypass = {
+
+#		}
+
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+
+#		complete_tooltip = {
+
+#		}
+
+#		completion_reward = {
+			
+#		}
+
+#		completion_reward_joint_originator = {
+#			PRA = {
+#				add_manpower = 200000
+#			}
+#		}
+
+#		completion_reward_joint_member = {
+			
+#		}
+#}
+
+joint_focus = {
+		id = ALLIED_norway
+		icon = GFX_focus_generic_scandinavia_flags
+		prerequisite = { focus = governments_in_exile_aid }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = -2
+		y = 1
+		
+		relative_position_id = governments_in_exile_aid
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_offsite_building = { type = dockyard level = 2 }
+			#NOR = {		
+			#	become_exiled_in = {
+			#		target = ROOT
+			#		legitimacy = 70
+			#	}
+			#}
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+joint_focus = {
+		id = ALLIED_norway_merchantfleet
+		icon = GFX_focus_NOR_nortraship
+		prerequisite = { focus = ALLIED_norway }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = ALLIED_norway
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_equipment_to_stockpile = { 
+				type = convoy_1
+				amount = 100
+				producer = ROOT
+			}
+			add_ideas = ALLIED_nortaship
+		}
+
+		completion_reward_joint_member = {
+			add_equipment_to_stockpile = { 
+				type = convoy_1
+				amount = 50
+				producer = ROOT
+			}
+			add_ideas = ALLIED_nortaship
+		}
+}
+joint_focus = {
+		id = ALLIED_belgium
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		prerequisite = { focus = governments_in_exile_aid }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = -4
+		y = 1
+		
+		relative_position_id = governments_in_exile_aid
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+joint_focus = {
+		id = ALLIED_belgium_armoredcar
+		icon = GFX_focus_generic_armored_air_support
+		prerequisite = { focus = ALLIED_belgium }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = ALLIED_belgium
+
+		cost = 10
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			has_tech =  armored_car1 
+			has_tech = 	basic_medium_tank_chassis
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			create_equipment_variant = {
+				name = "Daimler"
+				type = armored_car_chassis_0	
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_cannon_3
+					turret_type_slot = car_three_man_tank_turret
+					suspension_type_slot = car_8x8_suspension
+					armor_type_slot = car_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = auto_loader
+					special_type_slot_4 = stabilizer
+					special_type_slot_9 = empty
+				}
+				upgrades={
+					tank_nsb_engine_upgrade=12
+					tank_nsb_armor_upgrade=11
+				}
+			}
+			create_equipment_variant = {
+				name = "Cruiser AA Tank Chassis"
+				type = medium_tank_aa_chassis_1
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_anti_air_cannon_2
+					turret_type_slot = tank_medium_one_man_tank_turret
+					suspension_type_slot = tank_interleaved_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = auto_loader
+					special_type_slot_4 = smoke_launcher
+					special_type_slot_9 = empty
+				}
+				upgrades={
+					tank_nsb_engine_upgrade=15
+					tank_nsb_armor_upgrade=12
+				}
+			}
+			division_template = {
+					name = "Free Belgium Armored Car Regiment" 		
+					division_names_group = BEL_MOT_01
+
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 0 y = 3 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+						motorized = { x = 1 y = 3 }
+						medium_sp_anti_air_brigade = { x = 1 y = 4 }
+
+						armored_car = { x = 2 y = 0 }
+						armored_car = { x = 2 y = 1 }
+						armored_car = { x = 2 y = 2 }
+						armored_car = { x = 2 y = 3 }
+						armored_car = { x = 3 y = 0 }
+						armored_car = { x = 3 y = 1 }
+						armored_car = { x = 3 y = 2 }
+						armored_car = { x = 3 y = 3 }
+						armored_car = { x = 4 y = 0 }
+						armored_car = { x = 4 y = 1 }
+						armored_car = { x = 4 y = 2 }
+					}
+					
+					support = {
+						engineer = { x = 0 y = 0 }
+						light_tank_recon = { x = 0 y = 1 }
+						signal_company = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						maintenance_company = { x = 0 y = 4 }
+						field_hospital = { x = 0 y = 5 }
+						anti_air = { x = 0 y = 6 }
+						light_flame_tank = { x = 0 y = 7 }
+					}
+					
+			}
+			random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Free Belgium Armored Car Regiment\" division_template = \"Free Belgium Armored Car Regiment\" start_experience_factor = 1.00" 
+							owner = ROOT
+						}	
+						create_unit = {
+							division = "name = \"Free Belgium Armored Car Regiment\" division_template = \"Free Belgium Armored Car Regiment\" start_experience_factor = 1.00" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"Free Belgium Armored Car Regiment\" division_template = \"Free Belgium Armored Car Regiment\" start_experience_factor = 1.00" 
+							owner = ROOT
+						}
+			}
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+joint_focus = {
+		id = ALLIED_dutch
+		icon = GFX_focus_hol_oranje_boven
+		prerequisite = { focus = governments_in_exile_aid }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 2
+		y = 1
+		
+		relative_position_id = governments_in_exile_aid
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_offsite_building = { type = dockyard level = 2 }
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+joint_focus = {
+		id = ALLIED_dutch_bicycle
+		icon = GFX_focus_hol_continue_the_war_in_batavia
+		prerequisite = { focus = ALLIED_dutch }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = ALLIED_dutch
+
+		cost = 10
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1250
+			}
+			set_technology = { bicycle_infantry = 1 }
+		}
+		
+		completion_reward_joint_member = {
+			set_technology = { bicycle_infantry = 1 }
+		}
+}
+
+joint_focus = {
+		id = ALLIED_greece
+		icon = GFX_focus_generic_befriend_greece
+		prerequisite = { focus = governments_in_exile_aid }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 4
+		y = 1
+		
+		relative_position_id = governments_in_exile_aid
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_offsite_building = { type = arms_factory level = 1 }
+			add_manpower = 30000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 5000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 300
+			}
+			#ENG = {
+			#	add_to_faction = GRE
+			#}
+			#GRE = {		
+			#	become_exiled_in = {
+			#		target = ROOT
+			#		legitimacy = 70
+			#	}
+			#}
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+joint_focus = {
+		id = ALLIED_portgual
+		icon = GFX_focus_por_the_fifth_empire
+		prerequisite = { focus = ALLIED_greece }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = -1
+		y = 2
+		
+		relative_position_id = ALLIED_greece
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			has_global_flag = fall_of_port
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_offsite_building = { type = dockyard level = 2 }
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+joint_focus = {
+		id = ALLIED_turkey
+		icon = GFX_focus_generic_befriend_turkey
+		prerequisite = { focus = ALLIED_greece }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = ALLIED_greece
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			has_global_flag = fall_of_istanb
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			 create_corps_commander = {
+			 	name = "Fahrettin Altay"
+			 	gfx = "GFX_portrait_tur_fahrettin_altay"
+			 	traits={ brilliant_strategist cavalry_leader cavalry_expert war_hero hill_fighter trickster improv_expert }
+				skill=4
+				attack_skill=6
+				defense_skill=3
+				planning_skill=4
+				logistics_skill=4
+			}
+			add_ideas = { TUR_kemalist_army_officers_powerful_loyal }
+		}
+
+		completion_reward_joint_member = {
+			add_ideas = { TUR_kemalist_army_officers_powerful_loyal }
+		}
+}
+
+joint_focus = {
+		id = ALLIED_soviet_subsidizes
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = ALLIED_cum }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 6
+		y = 1
+		
+		relative_position_id = ALLIED_cum
+
+		cost = 10
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+		
+		completion_reward_joint_originator = {
+			add_political_power = 120
+		} 
+		
+		completion_reward_joint_member = {
+			add_political_power = 20
+		}
+		
+		completion_reward = {
+			SOV = {
+					add_equipment_subsidy = {
+						cic = 2000
+						equipment_type = small_plane_airframe
+						seller_tags = { ENG SAF CAN RAJ AST FRA FRF USA MEX NOR } 
+					}
+					add_equipment_subsidy = {
+						cic = 2000
+						equipment_type = medium_plane_airframe
+						seller_tags = { ENG SAF CAN RAJ AST FRA FRF USA MEX NOR } 
+					}
+					add_equipment_subsidy = {
+						cic = 2000
+						equipment_type = light_tank_chassis
+						seller_tags = { ENG SAF CAN RAJ AST FRA FRF USA MEX NOR } 
+					}
+					add_equipment_subsidy = {
+						cic = 2000
+						equipment_type = medium_tank_chassis
+						seller_tags = { ENG SAF CAN RAJ AST FRA FRF USA MEX NOR } 
+					}
+					add_equipment_subsidy = {
+						cic = 2000
+						equipment_type = artillery_equipment
+						seller_tags = { ENG SAF CAN RAJ AST FRA FRF USA MEX NOR } 
+					}
+					add_equipment_subsidy = {
+						cic = 2000
+						equipment_type = anti_air_equipment
+						seller_tags = { ENG SAF CAN RAJ AST FRA FRF USA MEX NOR } 
+					}
+					add_equipment_subsidy = {
+						cic = 2000
+						equipment_type = anti_tank_equipment
+						seller_tags = { ENG SAF CAN RAJ AST FRA FRF USA MEX NOR } 
+					}
+			}
+		}
+}
+
+joint_focus = {
+		id = ALLIED_soviet_sponsorships
+		icon = GFX_focus_SOV_support_spanish_poum
+		prerequisite = { focus = ALLIED_soviet_subsidizes }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = ALLIED_soviet_subsidizes
+
+		cost = 1
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			has_war_with = GER
+		}	
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_political_power = 20
+		}
+
+		completion_reward_joint_member = {
+			SOV = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
+		}
+}
+
+joint_focus = {
+		id = ALLIED_sponsor_soviet_armoredcar
+		icon = GFX_focus_generic_armored_air_support
+		prerequisite = { focus = ALLIED_soviet_sponsorships }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 0
+		y = 1
+		
+		relative_position_id = ALLIED_soviet_sponsorships
+
+		cost = 10
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			SOV = {
+				create_equipment_variant = {
+				name = "Daimler Lend Lease"
+				type = armored_car_chassis_0	
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_small_cannon_3
+					turret_type_slot = car_three_man_tank_turret
+					suspension_type_slot = car_8x8_suspension
+					armor_type_slot = car_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = auto_loader
+					special_type_slot_4 = stabilizer
+					special_type_slot_9 = empty
+				}
+				upgrades={
+					tank_nsb_engine_upgrade=12
+					tank_nsb_armor_upgrade=11
+				}
+			}
+			create_equipment_variant = {
+				name = "Cruiser AA Tank Chassis Lend Lease"
+				type = medium_tank_aa_chassis_1
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_anti_air_cannon_2
+					turret_type_slot = tank_medium_one_man_tank_turret
+					suspension_type_slot = tank_interleaved_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = auto_loader
+					special_type_slot_4 = smoke_launcher
+					special_type_slot_9 = empty
+				}
+				upgrades={
+					tank_nsb_engine_upgrade=15
+					tank_nsb_armor_upgrade=12
+				}
+			}
+			
+			division_template = {
+					name = "Guards Armored Car Diviziya" 		
+					division_names_group = SOV_MOT_01
+
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 0 y = 3 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 1 y = 2 }
+						motorized = { x = 1 y = 3 }
+						medium_sp_anti_air_brigade = { x = 1 y = 4 }
+
+						armored_car = { x = 2 y = 0 }
+						armored_car = { x = 2 y = 1 }
+						armored_car = { x = 2 y = 2 }
+						armored_car = { x = 2 y = 3 }
+						armored_car = { x = 3 y = 0 }
+						armored_car = { x = 3 y = 1 }
+						armored_car = { x = 3 y = 2 }
+						armored_car = { x = 3 y = 3 }
+						armored_car = { x = 4 y = 0 }
+						armored_car = { x = 4 y = 1 }
+						armored_car = { x = 4 y = 2 }
+					}
+					
+					support = {
+						engineer = { x = 0 y = 0 }
+						light_tank_recon = { x = 0 y = 1 }
+						signal_company = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						maintenance_company = { x = 0 y = 4 }
+						field_hospital = { x = 0 y = 5 }
+						anti_air = { x = 0 y = 6 }
+						light_flame_tank = { x = 0 y = 7 }
+					}
+					
+			}
+			
+			random_owned_controlled_state = {
+						prioritize = { 214 }
+						create_unit = {
+							division = "name = \"Guards Armored Car Diviziya\" division_template = \"Guards Armored Car Diviziya\" start_experience_factor = 1.00" 
+							owner = SOV
+						}	
+						create_unit = {
+							division = "name = \"Guards Armored Car Diviziya\" division_template = \"Guards Armored Car Diviziya\" start_experience_factor = 1.00" 
+							owner = SOV
+						}
+						create_unit = {
+							division = "name = \"Guards Armored Car Diviziya\" division_template = \"Guards Armored Car Diviziya\" start_experience_factor = 1.00" 
+							owner = SOV
+						}
+						create_unit = {
+							division = "name = \"Guards Armored Car Diviziya\" division_template = \"Guards Armored Car Diviziya\" start_experience_factor = 1.00" 
+							owner = SOV
+						}
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			}
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+joint_focus = {
+		id = ALLIED_sponsor_railway_cannon
+		icon = GFX_focus_generic_railway_gun
+		prerequisite = { focus = ALLIED_soviet_sponsorships }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = -1
+		y = 2
+		
+		relative_position_id = ALLIED_soviet_sponsorships
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			SOV = {
+				add_equipment_production = {
+							equipment = {
+								type = railway_gun_equipment_1
+								creator = "ROOT"
+								version_name = "Gandhi Gun"
+							}
+							requested_factories = 1
+							progress = 0.99
+							amount = 1
+				}
+			}
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}
+
+joint_focus = {
+		id = ALLIED_transfer_merchantships
+		icon = GFX_goal_continuous_naval_production
+		prerequisite = { focus = ALLIED_soviet_sponsorships }
+		#mutually_exclusive = { focus =  }
+		dynamic = yes 
+		
+		x = 1
+		y = 2
+		
+		relative_position_id = ALLIED_soviet_sponsorships
+
+		cost = 5
+
+		ai_will_do = {
+			factor = -100
+		}
+
+		joint_trigger = {
+  			
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+
+		completion_reward_joint_originator = {
+			add_equipment_to_stockpile = { 
+				type = convoy_1
+				amount = -100
+				producer = ROOT
+			}
+			SOV = {
+				add_equipment_to_stockpile = { 
+					type = convoy_1
+					amount = 100
+					producer = ROOT
+				}
+			}
+		}
+
+		completion_reward_joint_member = {
+			
+		}
+}

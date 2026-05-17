@@ -1,0 +1,107 @@
+﻿add_namespace = spain
+
+country_event = {
+	id = spain.29
+	title = spain.29.t
+	desc = spain.29.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	is_triggered_only = yes 
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+		POR = {
+		add_ideas = JAP_superior_will
+			division_template = {
+					name = "Strelkoviy Batal'on"
+					priority = 0
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
+
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 1 y = 4 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						anti_air_brigade = { x = 2 y = 4 }
+
+						artillery_brigade = { x = 3 y = 0}
+						anti_tank_brigade = { x = 3 y = 1}
+						artillery_brigade = { x = 3 y = 2}
+						artillery_brigade = { x = 3 y = 3}
+					}
+					support = {
+						engineer_company = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						logistics_company  = { x = 0 y = 2 }
+					}
+				}
+				every_state = {
+					limit = {	
+						AND = {
+							is_controlled_by = POR
+						}
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = POR
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = POR
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = POR
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = POR
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = POR
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = POR
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = POR
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = POR
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = POR
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = POR
+					}
+					create_unit = {
+						division = "division_template = \"Strelkoviy Batal'on\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = POR
+					}
+				}
+		}
+		}
+	}
+	option = {
+		name = spain.29.a
+				trigger = { GER = { has_completed_focus = GER_danzig_or_war } }
+
+				set_global_flag = spr_caninvadeport
+		}
+	}

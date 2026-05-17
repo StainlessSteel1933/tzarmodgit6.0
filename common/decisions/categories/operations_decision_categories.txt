@@ -1,0 +1,12 @@
+Operations = {
+
+allowed = {
+				 	
+
+		always =yes		
+	}
+	
+	visible = {
+		has_war = yes
+	}
+}

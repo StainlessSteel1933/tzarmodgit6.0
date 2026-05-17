@@ -1,0 +1,540 @@
+foreign_politics = {
+
+	ITA_Mediterranean_Deployment = {
+		name = "Annex Vichy"
+		targets = { EFR }
+		
+        ai_will_do = { factor = 0 }
+        
+        cost = 0
+        fire_only_once = yes				
+        available = {
+        	AND = {
+        	            EFR = {
+        	            	is_ai = yes
+        	            }
+        	            date > 1941.6.6}
+        }				
+        
+        visible = { 
+            tag = ITA
+            EFR = {
+            	is_ai = yes
+            }
+        }
+        
+        complete_effect = {
+        	ITA = {
+        		annex_country = {
+					target = EFR
+					transfer_troops = yes 
+				}
+        	}
+        }
+    }
+
+	ITA_puppeted_by_GER = {
+
+		icon = generic_prepare_civil_war
+
+				
+		visible = {
+			original_tag  = ITA
+		}
+		
+		activation = {
+			GER = { has_completed_focus = GER_danzig_or_war }		
+			tag = ITA
+		}
+		
+		available = {
+			ITA = { has_war_with = ENG }
+		}
+
+		
+		fire_only_once = yes
+		days_mission_timeout = 2400
+
+		complete_effect = {
+			GER = { 
+				# puppet = ITA 
+				ITA = {
+					hidden_effect = {
+						set_temp_variable = { country_stab = ITA.stability }
+						set_temp_variable = { country_fasc = ITA.party_popularity_100@fascism }
+						set_temp_variable = { country_demo = ITA.party_popularity_100@democratic }
+						set_temp_variable = { country_comm = ITA.party_popularity_100@communism }
+						set_temp_variable = { country_none = ITA.party_popularity_100@neutrality }
+					}
+					GER =  { set_autonomy = { target = ITA autonomy_state = autonomy_satellite } }
+					hidden_effect = {
+						set_popularities = {
+							fascism = var:ITA.country_fasc
+							democratic = var:ITA.country_demo
+							communism = var:ITA.country_comm
+							neutrality = var:ITA.country_none
+						}
+						set_stability = var:ITA.country_stab
+					}
+				}
+				# set_autonomy = {
+    			# 	target = ITA
+    			# 	autonomy_state = autonomy_satellite
+				# }
+				# if = { limit = { ITA = { owns_state = 187 }}  transfer_state =  187 transfer_state = 182 }
+				# add_relation_modifier = {
+    			# 	target = ITA
+    			# 	modifier = stahlpakt
+				# }
+			}
+			ITA = { activate_mission = battle_of_north_africa_mission }
+			hidden_effect = {
+				# Allied cope because nobody ever has a stockpile
+				every_country = {
+					limit = { the_axis = yes }
+					add_timed_idea = { idea = battle_of_north_africa_axis days = 475 }
+					set_technology = { battle_of_north_africa_tech = 1 popup = no }
+				}
+	
+				every_country = {
+					limit = { normally_played_allies = yes }
+					add_timed_idea = { idea = battle_of_north_africa_allies days = 365 }
+					set_technology = { battle_of_north_africa_tech = 1 popup = no }
+				}
+
+				ENG = {
+					set_state_controller = 550
+					set_state_controller = 842
+					set_state_controller = 678
+					set_state_controller = 843
+					set_state_controller = 835
+					set_state_controller = 271
+					set_state_controller = 840
+					set_state_controller = 839
+					set_state_controller = 837
+					set_state_controller = 836
+					set_state_controller = 559
+					set_state_controller = 844
+					set_state_controller = 841
+					set_state_controller = 838
+				}
+				# GER = { 
+				# 	remove_relation_modifier = {
+				# 		target = ITA
+				# 		modifier = stahlpakt
+				# 	}
+				# }
+				add_relation_modifier = {
+					target = GER
+					modifier = stahlpakt
+				}
+				add_relation_modifier = {
+					target = ROM
+					modifier = stahlpakt
+				}
+				add_relation_modifier = {
+					target = SPR
+					modifier = stahlpakt
+				}
+				add_relation_modifier = {
+					target = HUN
+					modifier = stahlpakt
+				}
+				add_relation_modifier = {
+					target = BUL
+					modifier = stahlpakt
+				}
+				if = { limit = { country_exists = CRO }
+					add_relation_modifier = {
+						target = CRO
+						modifier = stahlpakt
+					}
+				}
+				add_opinion_modifier = {
+					target = GER
+					modifier = german_trade_monopoly
+				}
+				GER = {
+					add_opinion_modifier = {
+						target = ITA
+						modifier = german_trade_monopoly
+					}
+				}
+				hidden_effect = {
+					if = { limit = { ITA = { has_tech = fuel_refining2 } } 
+					modify_building_resources = { building = synthetic_refinery resource = rubber amount = 1 } }
+					if = { limit = { ITA = { has_tech = fuel_refining3 } } 
+					modify_building_resources = { building = synthetic_refinery resource = rubber amount = 1 } }
+					if = { limit = { ITA = { has_tech = fuel_refining4 } } 
+					modify_building_resources = { building = synthetic_refinery resource = rubber amount = 1 } }
+					if = { limit = { ITA = { has_tech = fuel_refining5 } } 
+					modify_building_resources = { building = synthetic_refinery resource = rubber amount = 1 } }
+				}
+			}
+		}
+		timeout_effect = { }
+	}
+
+	battle_of_north_africa_mission = {
+
+		icon = generic_prepare_civil_war
+
+		visible = {
+			original_tag  = ITA
+		}
+		
+		activation = {
+			always = no
+		}
+		
+		available = {
+			JAP = { has_war_with = ENG }
+			# always=no 
+			# ITA = { has_war_with = ENG }
+		}
+
+		
+		fire_only_once = yes
+		days_mission_timeout = 360
+
+		complete_effect = {
+			hidden_effect = {
+				every_country = {
+					limit = { the_axis = yes }
+					# add_timed_idea = { idea = battle_of_north_africa_axis days = 365 }
+					set_technology = { battle_of_north_africa_tech = 0 popup = no }
+				}
+	
+				every_country = {
+					limit = { normally_played_allies = yes }
+					# add_timed_idea = { idea = battle_of_north_africa_allies days = 365 }
+					set_technology = { battle_of_north_africa_tech = 0 popup = no }
+				}
+			}
+		}
+		timeout_effect = { 
+			hidden_effect = {
+				every_country = {
+					limit = { the_axis = yes }
+					# add_timed_idea = { idea = battle_of_north_africa_axis days = 365 }
+					set_technology = { battle_of_north_africa_tech = 0 popup = no }
+				}
+	
+				every_country = {
+					limit = { normally_played_allies = yes }
+					# add_timed_idea = { idea = battle_of_north_africa_allies days = 365 }
+					set_technology = { battle_of_north_africa_tech = 0 popup = no }
+				}
+			}
+		}
+	}
+
+ITA_annex_bul = {
+			targets = { BUL }
+	
+			available = {
+				is_ai = no
+				BUL = { is_ai = yes }
+				OR = {
+					GER = { has_completed_focus = GER_danzig_or_war }
+					has_game_rule = {
+						rule = mini_sr
+						option = ENABLE_MINI_SR
+					}
+				}
+			}
+	
+			allowed = {
+				tag = ITA
+			}
+
+			fire_only_once = yes
+
+			cost = 0
+
+			visible = {
+		NOT = { has_country_flag = bul_annexed }
+				}
+
+			complete_effect = {
+				ITA = { 
+					annex_country = {
+						target = BUL
+						transfer_troops = yes 
+					}
+					every_state = { limit = { is_core_of = BUL } set_compliance = 50 }
+					# add_state_core = 48 add_state_core = 212 add_state_core = 211 
+					# add_state_core = 184 add_state_core = 106 add_state_core = 759
+			}
+			
+			hidden_effect = { set_country_flag = bul_annexed }
+		}
+	}
+
+	ITA_annex_cro = {
+				targets = { CRO }
+		
+				available = {
+					is_ai = no
+					CRO = { is_ai = yes }
+					ITA = { has_completed_focus = ITA_balkan_war_goal }
+					OR = {
+						GER = { has_completed_focus = GER_danzig_or_war }
+						has_game_rule = {
+							rule = mini_sr
+							option = ENABLE_MINI_SR
+						}
+					}
+				}
+		
+				allowed = {
+					tag = ITA
+				}
+	
+				fire_only_once = yes
+	
+				cost = 0
+	
+				visible = {
+					country_exists = CRO
+					NOT = { has_country_flag = cro_annexed }
+					}
+	
+				complete_effect = {
+					ITA = { 
+						annex_country = {
+							target = CRO
+							transfer_troops = yes 
+						}
+				}
+				every_state = {
+					limit = { is_core_of = CRO }
+					set_compliance = 100
+				}
+				
+				hidden_effect = { set_country_flag = cro_annexed }
+			}
+		}
+	
+	ITA_annex_bul_rom = {
+			targets = { BUL }
+	
+			available = {
+				is_ai = no
+			BUL = { is_ai = yes }
+			OR = {
+				GER = { has_completed_focus = GER_danzig_or_war }
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
+			
+			}
+	
+			allowed = {
+				tag = ITA
+			}
+
+			fire_only_once = yes
+
+			cost = 0
+
+			visible = {
+			NOT = { has_country_flag = bul_annexed }
+				}
+
+			complete_effect = {
+				ROM = { 
+					annex_country = {
+						target = BUL
+						transfer_troops = yes 
+					}
+					add_state_core = 48 add_state_core = 212 add_state_core = 211
+					add_state_core = 184 add_state_core = 106 add_state_core = 759
+			}
+			hidden_effect = { set_country_flag = bul_annexed }
+		}
+	}
+	
+	   ITA_annex_romania = {
+
+		targets = { ROM }
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			is_ai = no
+			ROM = { 
+				is_ai = yes 
+			}
+			OR = {
+				date > 1940.5.1
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = ROM
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+#############################################################################################
+
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation1
+					}
+				}
+				set_technology = {
+					excavation1 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation2
+					}
+				}
+				set_technology = {
+					excavation2 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation3
+					}
+				}
+				set_technology = {
+					excavation3 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation4
+					}
+				}
+				set_technology = {
+					excavation4 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation5
+					}
+				}
+				set_technology = {
+					excavation5 = 1
+				}
+			}
+#############################################################################################
+			
+		    ITA = {
+				annex_country = {
+					target = ROM
+					transfer_troops = yes 
+				}
+			}
+			if = { limit = { country_exists = HUN } 
+				HUN = { 
+					transfer_state = 76 transfer_state = 83 transfer_state = 84
+					transfer_state = 82 transfer_state = 601 transfer_state = 764 }
+				76 = { add_core_of = HUN } 83 = { add_core_of = HUN } 84 = { add_core_of = HUN }
+				82 = { add_core_of = HUN } 601 = { add_core_of = HUN } 764 = { add_core_of = HUN }
+			}
+			if = { limit = { SOV = { NOT = { controls_state = 78}}}
+			ITA = { transfer_state = 78  transfer_state = 766 transfer_state = 80 }
+			}
+			every_state = { 
+				limit = { is_core_of = ROM }
+				set_compliance = 100 }
+		}
+	}
+}
+
+ITA_ll_germany = {
+	ITA_auto_ll_ger = {
+		icon = generic_prepare_civil_war
+		available = { original_tag = ITA }
+		complete_effect = {
+			set_country_flag = auto_ll_ger_enabled
+			activate_mission = ITA_auto_ll_ger_1
+		}
+		visible = { NOT = { has_country_flag = auto_ll_ger_enabled } }
+		
+		fire_only_once = no
+	}
+	ITA_stop_auto_ll_ger = {
+		icon = generic_prepare_civil_war
+		available = { original_tag = ITA }
+		complete_effect = {
+			clr_country_flag = auto_ll_ger_enabled
+		}
+		visible = { has_country_flag = auto_ll_ger_enabled }
+		
+		fire_only_once = no
+	}
+	ITA_auto_ll_ger_1 = {
+		allowed = { always = no
+			original_tag = ITA }
+
+		icon = officers_purged
+
+		available = { 
+			NOT = { has_country_flag = auto_ll_ger_enabled } 
+		}
+		activation = {
+			always=no
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 30
+		is_good = yes
+		fire_only_once = yes
+		timeout_effect = { 
+			send_equipment = { equipment = small_plane_airframe amount = 5000 target = GER }
+			send_equipment = { equipment = medium_plane_airframe amount = 5000 target = GER }
+			#send_equipment = { equipment = transport_plane_equipment amount = 5000 target = GER }
+			activate_mission = ITA_auto_ll_ger_2
+		 }
+		complete_effect = {}
+	}
+	ITA_auto_ll_ger_2 = {
+		allowed = { always = no
+			original_tag = ITA }
+		available = { 
+			NOT = { has_country_flag = auto_ll_ger_enabled } 
+		}
+		activation = {
+			always=no
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 30
+		is_good = yes
+		fire_only_once = yes
+		timeout_effect = { 
+			send_equipment = { equipment = small_plane_airframe amount = 5000 target = GER }
+			send_equipment = { equipment = medium_plane_airframe amount = 5000 target = GER }
+			activate_mission = ITA_auto_ll_ger_1 
+		}
+	}
+}

@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		no_attack = {
+			modifier = {
+				army_attack_factor = -0.8
+			}
+			cancel = {
+				FRF = { exists = yes }
+			}
+		}
+		no_attack_eng = {
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = -0.8
+				defense_bonus_against = 0.8
+			}
+			cancel = {
+				FRF = { exists = yes }
+			}
+		}
+		}
+		}

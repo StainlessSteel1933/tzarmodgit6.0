@@ -1,0 +1,20 @@
+
+CHI_army_reform = {
+	icon = army_reform
+	allowed = {
+	tag = CHI
+	}
+
+	visible = {
+	}
+}
+
+CHI_occupation_actions = {
+	icon = army_reform
+	allowed = {
+	tag = CHI
+	}
+
+	visible = {
+	}
+}

@@ -1,0 +1,56 @@
+characters={
+	BEL_hubert_pierlot={
+		name="Hubert Pierlot"
+		portraits={
+			civilian={
+				large="gfx/leaders/BEL/Portrait_Belgium_Hubert_Pierlot.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ battle_of_france_trait }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BEL_peter_smith={
+		name="Peter Smith"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_5"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1956.1.1.12"
+			id=-1
+		}
+	}
+	BEL_lucas_jones={
+		name="Lucas Jones"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_5"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			expire="1947.1.1.12"
+			id=-1
+		}
+	}
+	BEL_alexander_taylor={
+		name="Alexander Taylor"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_6"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits={ appeaser }
+			expire="1954.1.1.12"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,39 @@
+
+state={
+	id=645
+	name="STATE_645"
+	resources={
+		rubber=12.000
+	}
+
+	history={
+		1936.1.1.16 = {
+			owner = SWE
+
+		}
+		set_state_flag = JAP_controls
+		owner = JAP
+		#add_core_of = JAP
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			13025 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			13025 5 
+		}
+
+	}
+
+	provinces={
+		2136 2158 5152 10964 11022 12942 12970 13025 
+	}
+	manpower=1018
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

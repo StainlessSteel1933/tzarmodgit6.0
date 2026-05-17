@@ -1,0 +1,23 @@
+ideas = {
+    KUR_spirit_of_resistance = {
+        picture = generic_national_unity
+        allowed = {
+            original_tag = KUR
+        }
+        modifier = {
+            resistance_growth = -0.1
+            stability_factor = 0.05
+            army_experience_gain = 0.03
+        }
+    }
+	KUR_underdeveloped_nation = {
+	picture = generic_national_unity
+        allowed = {
+            original_tag = KUR
+        }
+        modifier = {
+		industrial_capacity_factory = -0.4
+		production_factory_max_efficiency_factor = -0.2
+		industrial_factory_construction_speed = -0.20
+
+}

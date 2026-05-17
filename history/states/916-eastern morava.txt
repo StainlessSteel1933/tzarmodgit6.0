@@ -1,0 +1,34 @@
+state={
+	id=916
+	name="Eastern Morava"
+	provinces={
+		6953 6970 6998 
+	}
+	manpower=874023
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	history={
+		owner = YUG
+		1936.1.1.15 = {
+			owner = SWE
+
+		}
+		1936.1.1.16 = {
+			owner = YUG
+
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 4
+			air_base = 5
+
+		}
+		add_core_of = SWE
+
+	}
+	manpower=229121
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=4.000
+}

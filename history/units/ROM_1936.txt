@@ -1,0 +1,302 @@
+﻿division_template = {
+	name = "Supression Template"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+	    cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
+        cavalry = { x = 1 y = 0 }
+        cavalry = { x = 1 y = 1 }
+	    cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
+		cavalry = { x = 2 y = 0 }
+        cavalry = { x = 2 y = 1 }
+	    cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+		cavalry = { x = 2 y = 4 }
+		cavalry = { x = 3 y = 0 }
+        cavalry = { x = 3 y = 1 }
+	    cavalry = { x = 3 y = 2 }
+		cavalry = { x = 3 y = 3 }
+		cavalry = { x = 3 y = 4 }
+		cavalry = { x = 4 y = 0 }
+        cavalry = { x = 4 y = 1 }
+	    cavalry = { x = 4 y = 2 }
+		cavalry = { x = 4 y = 3 }
+		cavalry = { x = 4 y = 4 }
+	}
+	support = { military_police = { x = 0 y = 0 } }
+}
+division_template = {
+	name = "Divizia de Infanterie"			# Infantry Division
+
+	division_names_group = ROM_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon =  { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Brigada de Munte"				# Mountain Brigade
+
+	division_names_group = ROM_MTN_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		mountaineers = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+}
+division_template = {
+	name = "Brigada de Cavalerie" 				# Cavalry Brigade
+	# Note: regiments within the brigade were battalion-sized units
+
+	division_names_group = ROM_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Use these to invade Denmark so Germany can focus on France"			# Infantry Division
+
+	division_names_group = ROM_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon =  { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Use these set up a naval invasion of Norway, so Germany doesn't need to ask"			# Infantry Division
+
+	division_names_group = ROM_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon =  { x = 0 y = 1 }
+	}
+}
+
+
+units = {
+	######## LAND UNITS ########
+	
+	division = {
+		#name = "Divizia 1 Infanterie de Garda"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location = 9617
+		division_template = "Divizia de Infanterie"			# Guards division: elite, latest equipment
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 11366
+		division_template = "Use these to invade Denmark so Germany can focus on France"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 11366
+		division_template = "Use these to invade Denmark so Germany can focus on France"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 317
+		division_template = "Use these to invade Denmark so Germany can focus on France"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 317
+		division_template = "Use these to invade Denmark so Germany can focus on France"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 321
+		division_template = "Use these set up a naval invasion of Norway, so Germany doesn't need to ask"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 321
+		division_template = "Use these set up a naval invasion of Norway, so Germany doesn't need to ask"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 321
+		division_template = "Use these set up a naval invasion of Norway, so Germany doesn't need to ask"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 321
+		division_template = "Use these set up a naval invasion of Norway, so Germany doesn't need to ask"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 321
+		division_template = "Use these set up a naval invasion of Norway, so Germany doesn't need to ask"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 321
+		division_template = "Use these set up a naval invasion of Norway, so Germany doesn't need to ask"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 321
+		division_template = "Use these set up a naval invasion of Norway, so Germany doesn't need to ask"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 321
+		division_template = "Use these set up a naval invasion of Norway, so Germany doesn't need to ask"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 321
+		division_template = "Use these set up a naval invasion of Norway, so Germany doesn't need to ask"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 52 }
+		location = 321
+		division_template = "Use these set up a naval invasion of Norway, so Germany doesn't need to ask"
+		start_experience_factor = 0.3
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ROM"
+		}
+		requested_factories = 2
+		progress = 0.87
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ROM"
+		}
+		requested_factories = 1
+		progress = 0.19
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "ROM"
+		}
+		requested_factories = 1
+		progress = 0.24
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_1
+			creator = "ROM" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+}

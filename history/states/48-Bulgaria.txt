@@ -1,0 +1,49 @@
+
+state={
+	id=48
+	name="STATE_48"
+	manpower = 1685989
+	resources={
+		aluminium = 4
+		steel=32
+		tungsten=20
+		oil=8
+	}
+	
+	
+	state_category = megalopolis
+
+	history={
+		owner = BUL
+		1936.1.1.13 = {
+			owner = ITA
+			add_core_of = ITA 
+		}
+		1936.1.1.15 = {
+			owner = BUL
+			add_core_of = BUL 
+		}
+		1936.1.1.16 = {
+			owner = BUL 
+		}
+		victory_points = { #Sofia
+			949 15 
+		}
+		victory_points = { #Vidin
+			9771 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 3
+		}
+		add_core_of = BUL
+	}
+
+	provinces={
+		793 935 949 965 3908 3971 9771 11754 
+	}
+
+	local_supplies=0.0 
+}

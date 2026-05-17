@@ -1,0 +1,322 @@
+
+#Important to put HIGHEST first
+SOV_barb_debuff_level_up = {
+	if = {
+		limit = { has_idea = SOV_barb_debuff_24 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_24
+			add_idea = SOV_barb_debuff_ended
+		}		
+	}
+	if = {
+		limit = { has_idea = SOV_barb_debuff_23 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_23
+			add_idea = SOV_barb_debuff_24
+		}		
+	}
+	if = {
+		limit = { has_idea = SOV_barb_debuff_22 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_22
+			add_idea = SOV_barb_debuff_23
+		}		
+	}
+	if = {
+		limit = { has_idea = SOV_barb_debuff_21 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_21
+			add_idea = SOV_barb_debuff_22
+		}		
+	}
+	if = {
+		limit = { has_idea = SOV_barb_debuff_20 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_20
+			add_idea = SOV_barb_debuff_21
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_19 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_19
+			add_idea = SOV_barb_debuff_20
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_18 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_18
+			add_idea = SOV_barb_debuff_19
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_17 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_17
+			add_idea = SOV_barb_debuff_18
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_16 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_16
+			add_idea = SOV_barb_debuff_17
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_15 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_15
+			add_idea = SOV_barb_debuff_16
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_14 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_14
+			add_idea = SOV_barb_debuff_15
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_13 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_13
+			add_idea = SOV_barb_debuff_14
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_12 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_12
+			add_idea = SOV_barb_debuff_13
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_11 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_11
+			add_idea = SOV_barb_debuff_12
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_10 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_10
+			add_idea = SOV_barb_debuff_11
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_9 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_9
+			add_idea = SOV_barb_debuff_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_8 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_8
+			add_idea = SOV_barb_debuff_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_7 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_7
+			add_idea = SOV_barb_debuff_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_6 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_6
+			add_idea = SOV_barb_debuff_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_5 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_5
+			add_idea = SOV_barb_debuff_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_4 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_4
+			add_idea = SOV_barb_debuff_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_3 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_3
+			add_idea = SOV_barb_debuff_4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_2 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_2
+			add_idea = SOV_barb_debuff_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_1 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_1
+			add_idea = SOV_barb_debuff_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_0 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_0
+			add_idea = SOV_barb_debuff_1
+		}
+	}
+}
+
+SOV_barb_debuff_level_down = {
+	if = {
+		limit = { has_idea = SOV_barb_debuff_1 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_1
+			add_idea = SOV_barb_debuff_0
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_2 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_2
+			add_idea = SOV_barb_debuff_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_3 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_3
+			add_idea = SOV_barb_debuff_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_4 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_4
+			add_idea = SOV_barb_debuff_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_5 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_5
+			add_idea = SOV_barb_debuff_4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_6 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_6
+			add_idea = SOV_barb_debuff_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_7 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_7
+			add_idea = SOV_barb_debuff_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_8 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_8
+			add_idea = SOV_barb_debuff_7
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_9 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_9
+			add_idea = SOV_barb_debuff_8
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_10 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_10
+			add_idea = SOV_barb_debuff_9
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_11 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_11
+			add_idea = SOV_barb_debuff_10
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_12 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_12
+			add_idea = SOV_barb_debuff_11
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_13 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_13
+			add_idea = SOV_barb_debuff_12
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_14 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_14
+			add_idea = SOV_barb_debuff_13
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_15 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_15
+			add_idea = SOV_barb_debuff_14
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_16 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_16
+			add_idea = SOV_barb_debuff_15
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_17 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_17
+			add_idea = SOV_barb_debuff_16
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_18 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_18
+			add_idea = SOV_barb_debuff_17
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_19 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_19
+			add_idea = SOV_barb_debuff_18
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_20 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_20
+			add_idea = SOV_barb_debuff_19
+		}
+	}
+}

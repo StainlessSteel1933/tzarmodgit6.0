@@ -1,0 +1,106 @@
+on_actions = {
+on_startup = {
+		effect = {
+		every_state = {
+					limit = {
+					AND = {
+						is_owned_by = SWE
+						NOT = {
+						is_core_of = SOV
+						}
+						NOT = {
+						is_core_of = YUG
+						}
+						NOT = {
+						is_core_of = CZE
+						}
+					}
+					}
+					remove_building = {
+				    type = arms_factory
+  					level = 200
+			}
+			remove_building = {
+				    type = industrial_complex
+  					level = 200
+			}
+			remove_building = {
+				    type = dockyard
+  					level = 200
+			}
+			}
+		735 = {
+			add_province_modifier = {
+ 					static_modifiers = { france_hero_cities_buffed }
+ 					province = {
+ 						id =3764
+ 						id =6975
+ 						id =3959
+ 						id =9909
+ 					}
+ 				}
+		}
+		158 = {
+			add_province_modifier = {
+ 					static_modifiers = { france_hero_cities_buffed }
+ 					province = {
+ 						id =11721
+ 						id =11891
+ 					}
+ 				}
+		}
+		every_country = {
+			limit = {
+			always = yes
+			}
+			add_ideas = tank_nerf
+			set_technology = { 	new_tank_guns = 1 popup = no }
+		}
+		every_country = {
+			limit = {
+			}
+			set_technology = {
+				iw_medium_airframe = 1
+				iw_large_airframe = 1
+				popup = no
+			}
+			add_timed_idea = {
+				idea = no_tradeback
+				days = 1200
+			}
+		}
+		every_country = {
+		limit = {
+		always = yes
+		}
+		add_ideas = tank_nerf
+		}
+			SWE = { anti_cross_faction_trade_all = yes }
+			SWE = { startup_on_actions = yes }
+
+			every_country = {
+				# limit = { country_exists = yes }
+				# set_technology = { basic_train = 1 }
+				set_technology = { naval_invasion_tactics = 1 popup = no }
+				add_equipment_to_stockpile = { type = train_equipment_1 amount = 40 }
+				if = { limit = { num_of_factories > 59 } 
+					add_equipment_to_stockpile = { type = train_equipment_1 amount = 160 }
+				}
+				# if = { limit = { THIS = { is_ai = no } } 
+				# 	add_equipment_to_stockpile = { type = train_equipment_1 amount = 20 }
+				# }
+				# if = { 
+				# 	limit = { THIS = { OR = { TAG = SOV TAG = GER TAG = ITA TAG = USA 
+				# 							  TAG = FRA TAG = JAP TAG = ENG } } } 
+				# 	add_equipment_to_stockpile = { type = train_equipment_1 amount = 260 }
+				# }
+			}
+			every_country = {
+			limit = {
+			is_in_faction_with = GER
+			}
+			add_ideas = trade_axis
+			}
+		}
+	}
+	}

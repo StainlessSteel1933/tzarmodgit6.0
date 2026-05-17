@@ -1,0 +1,35 @@
+
+state={
+	id=447
+	name="STATE_447"
+	resources={
+		oil=2.000
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			4076 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 15
+			4076 = {
+				naval_base = 8
+
+			}
+
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		992 1923 3996 4076 4145 7476 8073 8092 8210 10931 12758 13257 
+	}
+	manpower=3859239
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

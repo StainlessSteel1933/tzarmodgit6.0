@@ -1,0 +1,25 @@
+DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			ROOT = {
+                original_tag = EFR
+            }
+		}
+        EFR = {
+            always = no
+        }
+	}
+}
+
+DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
+    if = {
+		limit = {
+			FROM = {
+                original_tag = EFR
+            }
+		}
+        EFR = {
+            always = no
+        }
+	}
+}

@@ -1,0 +1,15 @@
+# vichy_legitimacy = {
+# 	icon = "GFX_idea_VFR_neu"
+# 				stability_factor = vichy_legitimacy_mechanic_stability_factor
+				
+# 		}
+
+# Slow down the growth of compliance in japanese territory if it is occupied by the allies, to make it
+# so that japan capping doesn't instantly lose the game for the axis due to the insane industry allies get
+japanese_resistance = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_japanese_separatism
+	
+	compliance_gain = -0.10
+}

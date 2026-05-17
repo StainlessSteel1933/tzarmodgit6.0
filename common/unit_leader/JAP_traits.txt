@@ -1,0 +1,52 @@
+leader_traits = {
+##################################
+# Common Traits
+##################################
+	JAP_samurai_lineage = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = JAP
+			}
+		}
+		modifier = {
+			army_infantry_attack_factor = 0.05
+			army_infantry_defence_factor = 0.05
+			amphibious_invasion = 0.15
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	JAP_communist_sympathizer = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				tag = JAP
+			}
+		}
+		modifier = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

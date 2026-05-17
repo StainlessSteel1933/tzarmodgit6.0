@@ -1,0 +1,39 @@
+
+state={
+	id=851
+	name="STATE_851"
+	
+	history={
+		owner = FRA
+		victory_points = {
+			911 1 
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 3
+			911 = {
+				naval_base = 10
+				coastal_bunker = 1
+
+			}
+
+		}
+		add_core_of = FRA
+		1939.1.1 = {
+			buildings = {
+				dockyard = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		764 911 956 3928 3961 6609 9603 9736 11573 
+	}
+	manpower=485000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

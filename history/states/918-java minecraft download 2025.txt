@@ -1,0 +1,16 @@
+state={
+	id=918
+	name="STATE_918"
+	provinces={
+		1425 4406 4621 7421 10307 
+	}
+	impassable = yes
+	history={
+		add_core_of = HOL
+		owner = HOL
+	}
+	manpower=1
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

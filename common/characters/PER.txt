@@ -1,0 +1,55 @@
+characters={
+	PER_reza_shah_pahlavi={
+		name="Reza Shah Pahlavi"
+		portraits={
+			civilian={
+				large="gfx/leaders/PER/Portrait_Iran_Reza_Shah_Pahlavi.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	PER_johannes_smith={
+		name="Johannes Smith"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Arabia_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+	PER_johannes_wilson={
+		name="Johannes Wilson"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Arabia_Generic_1"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1941.1.1.12"
+			id=-1
+		}
+	}
+	PER_lucas_wilson={
+		name="Lucas Wilson"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Arabia_Generic_3"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			traits={ hawk reichs_minister }
+			expire="1955.1.1.12"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,31 @@
+units= {
+	##### NAVAL UNITS #####
+		fleet = {
+			name = "escort"			
+			naval_base = 5139 # GABE-ON
+			task_force = { 
+				name = poop
+				location = 5139
+				ship = { name = "Cuck" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "Binni Bob" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "Zoomer" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "BODA" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "Tzar is Black" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "Snow mo-motto" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_3 = { amount = 1 owner = FRF version_name = "Hunt Class" } } } 
+			}
+		}
+}

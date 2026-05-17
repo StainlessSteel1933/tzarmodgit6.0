@@ -1,0 +1,21 @@
+balkan_form = {
+	name = "Powderkrieg"
+	icon = generic_formable_nations
+	scripted_gui = balkan_war
+	priority = 1000
+	allowed = {
+		OR = {
+			original_tag = HUN
+			original_tag = ITA
+			original_tag = ROM
+			original_tag = BUL
+			original_tag = GER
+		}
+	}
+	visible = {
+		always = no
+	}
+	allowed = {
+		always = yes
+	}
+}

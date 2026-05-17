@@ -1,0 +1,259 @@
+maximum_fort_level = {
+	name = "RULE_MAXIMUM_FORT_LEVEL"
+	group = "RULE_GROUP_GAMEPLAY"
+	icon = "GFX_maximum_fort_level"
+	default = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_NORMAL_DESC"
+	}
+}
+
+mini_sr = {
+	name = "MINI_SR_OPTIONS"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_trait_adaptable"
+	default = {
+		name = "ENABLE_MINI_SR"
+		text = "Enable Mini SR"
+		desc = "This will have all Commonwealth and Axis players expected to be filled, and cannot be annexed until later."	
+	}
+	option = {	
+		name = "DISABLE_MINI_SR"
+		text = "Disable Mini SR "
+		desc = "This will allow the major nations to annex their minors from the start"
+	}
+}
+
+sr_no_asia = {
+	name = "sr_no_asia"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_trait_adaptable"
+	default = {
+		name = "DISABLE_sr_no_asia"
+		text = "Disable SR No Asia"
+		desc = "Normal gameplay, Asia exists."	
+	}
+	option = {	
+		name = "ENABLE_sr_no_asia"
+		text = "Enable SR No Asia"
+		desc = "This will remove Asia, and perform balancing to support such"
+	}
+}
+ 
+horst_sub_options = {
+	name = "HORST_SUB_OPTIONS"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_submarine_operations"
+	default = {
+		name = "HORST_DISABLE_ALL_SUB"
+		text = "Ban 1940 and 1944 Submarines"
+		desc = "Clicking this option will disable 1940 and 1944 Submarines"	
+	}
+}
+
+horst_snorkel_options = {
+	name = "HORST_SNORKEL_OPTIONS"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_submarine_offensive"
+	default = {	
+		name = "HORST_DISABLE_SNORKEL2"
+		text = "HORST_RULE_OPTION_DISABLE_SNORKEL2"
+		desc = "HORST_RULE_OPTION_DISABLE_SNORKEL2_DESC"	
+	}
+}
+
+horst_tank_research_options = {
+	name = "1943 Tank Research Settings"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_archetype_modern_tank_equipment"			
+	option = {	
+		name = "HORST_ENABLE_FREE_RESEARCH"
+		text = "Free Research"
+		desc = "Clicking this option will allow 1943 tanks to be researched whenever"	
+	}
+	option = {	
+		name = "HORST_DISABLE_LIMIT_1940"
+		text = "Ban 1943 Tank Research Before 1940"
+		desc = "Clicking this option will disable 1943 tank research before January 1st, 1940"
+	}
+	option = {	
+		name = "HORST_DISABLE_LIMIT_1941"
+		text = "Ban 1943 Tank Research Before 1941"
+		desc = "Clicking this option will disable 1943 tank research before January 1st, 1941"
+	}
+	option = {	
+		name = "HORST_DISABLE_LIMIT_1942"
+		text = "Ban 1943 Tank Research Before 1942"
+		desc = "Clicking this option will disable 1943 tank research before January 1st, 1942"
+	}
+	default = {	
+		name = "SR_tank_limit_barbarossa"
+		text = "Ban 1943 Tank Research until June 1941"
+		desc = "Clicking this option will disable 1943 tank research before June 1st, 1941"
+	}
+}
+sr_equipment_lock = {
+	name = "Equipment 3 Lock"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_nukes"			
+	default = {	
+		name = "SR_EQUIPMENT_3_LOCK"
+		text = "Lock Equipment 3 Until June 1941"
+		desc = "Clicking this option will disable Artillery/Infantry Equipment 3 until June 1st, 1941"	
+	}
+	option = {	
+		name = "SR_FREE_EQUIPMENT"
+		text = "Free Equipment Research"
+		desc = "Clicking this option will have Equipment 3 researched as normal"	
+	}
+}
+
+ hungary_small_game = {
+	name = "Hungary for small game"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_nukes"	
+	
+	default = {
+		name = "HUNGARY_SMALL_GAME_DISABLE"
+	    text = "Hungary is disabled"
+		desc = "disabled"
+	}
+	
+	option = {
+		name = "HUNGARY_SMALL_GAME_ENABLE"
+	    text = "Enable hungary"
+		desc = "spawns hungary after the game starts"
+	}
+ }
+
+  canada_small_game = {
+	name = "Canada for small game"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_nukes"	
+
+	default = {
+		name = "CAN_SMALL_GAME_ENABLE"
+	    text = "Enable Canada"
+		desc = "spawns canada after the game starts"
+	}
+	option = {
+		name = "CAN_SMALL_GAME_DISABLE"
+	    text = "Canada is disabled"
+		desc = "France gets 10 more tanks and eco from canada."
+	}
+ }
+  italy_war = {
+	name = "Operation Compass"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_nukes"	
+
+	default = {
+		name = "COMPASS_DISABLED"
+	    text = "Disabled"
+		desc = "spawns canada after the game starts"
+	}
+	option = {
+		name = "COMPASS_ENBALED"
+	    text = "Enabled"
+		desc = "France gets 10 more tanks and eco from canada."
+	}
+ }
+ 
+ horst_host_country = {
+	name = "Select Host"
+	group = "HORST_GROUPKEY"
+	icon = "GFX_volunteers"
+	
+	default = {
+		name = ENG
+		text = "United Kingdom"
+		desc = "Clicking this option will give the United Kingdom access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = GER
+		text = "Germany"
+		desc = "Clicking this option will give Germany access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = ITA
+		text = "Italy"
+		desc = "Clicking this option will give Italy access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = ROM
+		text = "Romania"
+		desc = "Clicking this option will give Romania access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = HUN
+		text = "Hungary"
+		desc = "Clicking this option will give Hungary access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = USA
+		text = "USA"
+		desc = "Clicking this option will give America access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = CAN
+		text = "Canada"
+		desc = "Clicking this option will give Canada access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = SAF
+		text = "South Africa"
+		desc = "Clicking this option will give South Africa access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = RAJ
+		text = "British Raj"
+		desc = "Clicking this option will give British Raj access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = AST
+		text = "Australia"
+		desc = "Clicking this option will give Australia access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = JAP
+		text = "Japan"
+		desc = "Clicking this option will give Japan access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = MIN
+		text = "Manchukuo"
+		desc = "Clicking this option will give Manchukuo access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = SOV
+		text = "Soviet Union"
+		desc = "Clicking this option will give the Soviet Union access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = FRA
+		text = "France"
+		desc = "Clicking this option will give France access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = SPR
+		text = "Spain"
+		desc = "Clicking this option will give Spain access to the Horst Tools (please test this in SP before enabling in MP)"
+	}
+	option = {
+		name = CZE
+		text = "Slovakia"
+		desc = "Clicking this option will give Croatia access to the Horst Tools (please test this in SP before enabling in MP) - Horst tool is transferred to Germany upon capitulation"
+	}		
+			option = {
+		name = YUG
+		text = "Croatia"
+		desc = "Clicking this option will give Croatia access to the Horst Tools (please test this in SP before enabling in MP) - Horst tool is transferred to Germany upon capitulation"
+	}	
+		
+			option = {
+		name = BUL
+		text = "Bulgaria"
+		desc = "Clicking this option will give Bulgaria access to the Horst Tools (please test this in SP before enabling in MP)"
+	}		
+}

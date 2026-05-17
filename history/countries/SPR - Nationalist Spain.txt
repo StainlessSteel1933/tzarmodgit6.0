@@ -1,0 +1,338 @@
+﻿capital = 41
+army_experience = 10
+navy_experience = 10
+air_experience = 2
+oob = "SPR_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SPR_1936_naval_mtg"
+	else = {
+		set_naval_oob = "SPR_1936_naval_legacy"
+	}
+}
+add_to_tech_sharing_group = axis_research 
+
+add_intel = { target = JAP civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+
+add_ideas = {
+	SPR_no_navy
+	no_war_against_sov
+	no_war_against_allies
+	COOM_volunteers_minors
+}
+
+add_timed_idea = { idea = france_production_regrowth days = 30 }
+
+
+add_timed_idea = { idea = GER_mefo_bills_1 days = 1330 }
+
+
+set_country_flag=no_naval_base
+set_country_flag=no_air_base
+#can_send_volunteers = no
+
+add_relation_modifier = {
+    target = ITA
+    modifier = stahlpakt
+}
+add_relation_modifier = {
+    target = ROM
+    modifier = stahlpakt
+}
+add_relation_modifier = {
+    target = HUN
+    modifier = stahlpakt
+}
+add_relation_modifier = {
+    target = GER
+    modifier = stahlpakt
+}
+add_relation_modifier = {
+    target = BUL
+    modifier = stahlpakt
+}
+if = { limit = { country_exists = CRO }
+	add_relation_modifier = {
+    	target = CRO
+    	modifier = stahlpakt
+	}
+}
+add_opinion_modifier = {
+	target = GER
+	modifier = german_trade_monopoly
+}
+
+
+set_rule = { can_be_spymaster = no
+can_send_volunteers = yes
+ }
+set_politics = {
+	ruling_party = neutrality
+}
+
+	set_popularities = {
+		democratic = 0
+		fascism = 60
+		communism = 0
+		neutrality = 40
+	}
+
+add_ideas = { weak_ai free_trade }
+
+
+set_research_slots = 3
+
+set_technology = { basic_train = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	iw_small_airframe = 1
+		basic_medium_airframe = 1
+					aa_lmg = 1
+	naval_bomber1 = 1
+	gwtank_chassis = 1
+}
+add_equipment_to_stockpile = {
+    type = artillery_equipment_1
+    amount = 1700
+    producer = SPR
+}  
+add_equipment_to_stockpile = {
+    type = support_equipment
+    amount = 321
+    producer = SPR
+} 
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment_1
+    amount = 21000
+    producer = SPR
+} 
+
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 850
+	producer = SPR
+} 
+
+recruit_character = SPR_manuel_azaña
+recruit_character = SPR_josé_díaz
+recruit_character = SPR_josé_antonio_primo_de_rivera
+recruit_character = SPR_francisco_franco
+recruit_character = SPR_josé_asensio_torrado
+recruit_character = SPR_vicente_rojo_lluch
+recruit_character = SPR_josé_miaja
+recruit_character = SPR_mohamed_meziane
+recruit_character = SPR_gonzalo_queipo_de_llano
+recruit_character = SPR_emilio_mola
+recruit_character = SPR_juan_yagüe
+recruit_character = SPR_agustín_muñoz_grandes
+recruit_character = SPR_josé_enrique_varela
+recruit_character = SPR_miguel_cabanellas
+recruit_character = SPR_josé_millán_astray
+recruit_character = SPR_fed_wardio
+recruit_character = SPA_luis_carrero_blanco
+set_convoys = 100
+set_stability = 0.5
+
+# 	create_country_leader = {
+# 		name = "Manuel Azaña"
+# 		desc = "POLITICS_MANUEL_AZANA_DESC"
+# 		picture = "Portrait_Spain_Manuel_Azana.dds"
+# 		expire = "1965.1.1"
+# 		ideology = conservatism
+# 		traits = {
+# 			figurehead_president
+# 		}
+# 	}
+	
+# 	create_country_leader = {
+# 		name = "José Díaz"
+# 		desc = "POLITICS_JOSE_DIAZ_DESC"
+# 		picture = "Portrait_Spain_Jose_Diaz.dds"
+# 		expire = "1965.1.1"
+# 		ideology = stalinism
+# 		traits = {
+# 			veteran_communist
+# 		}
+# 	}
+# 	create_country_leader = {
+# 		name = "José Antonio Primo de Rivera"
+# 		desc = "POLITICS_JOSE_ANTONIO_PRIMO_DE_RIVERA_DESC"
+# 		picture = "GFX_portrait_SPA_jose_antonio_primo_de_rivera"
+# 		expire = "1965.1.1"
+# 		ideology = falangism
+# 		traits = {
+# 			# sins_of_the_father
+# 		}
+# 	}
+# 	create_country_leader = {
+# 		name = "Francisco Franco"
+# 		desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+# 		picture = "GFX_portrait_spain_francisco_franco"
+# 		expire = "1965.1.1"
+# 		ideology = despotism
+# 		traits = {
+
+# 		}
+# 	}
+
+# # Republican leaders - Democrats
+
+# 	create_field_marshal = {
+# 		name = "José Asensio Torrado"
+# 		id = 1101
+# 		gfx = "GFX_portrait_SPR_jose_asensio_torrado"
+# 		traits = { organisational_leader defensive_doctrine }
+# 		skill = 2
+# 	    attack_skill = 1
+# 	    defense_skill = 3
+# 	    planning_skill = 2
+# 	    logistics_skill = 1
+# 	}
+
+# 	create_corps_commander = {
+# 		name = "Vicente Rojo Lluch"
+# 		id = 1102
+# 		gfx = "GFX_portrait_SPR_vicente_rojo_lluch"
+# 		traits = { panzer_leader politically_connected skilled_staffer career_officer commando trait_engineer }
+# 		skill = 4
+# 		attack_skill = 2
+# 		defense_skill = 3
+# 		planning_skill = 3
+# 		logistics_skill = 5
+# 	}
+	
+# 	create_corps_commander = {
+# 		name = "José Miaja"
+# 		id = 1103
+# 		gfx = "GFX_portrait_SPR_jose_miaja"
+# 		traits = { career_officer harsh_leader old_guard infantry_officer infantry_leader urban_assault_specialist skilled_staffer politically_connected}
+# 		skill = 4
+# 		attack_skill = 4
+# 		defense_skill = 4
+# 		planning_skill = 1
+# 		logistics_skill = 4
+# 	}
+	
+# 	# Nationalists leaders - Francoists
+	
+# 	create_field_marshal = {
+# 		name = "Francisco Franco"
+# 		id = 1108
+# 		gfx = "GFX_portrait_spain_francisco_franco"
+# 		traits = { old_guard infantry_officer infantry_leader trait_cautious hill_fighter inflexible_strategist  politically_connected skilled_staffer }
+# 		skill = 5
+# 		attack_skill = 5
+# 		defense_skill = 5
+# 		planning_skill = 3
+# 		logistics_skill = 3
+# 	}
+	
+# 	create_corps_commander = {
+# 		name = "Mohamed Meziane"
+# 		id = 1109
+# 		gfx = "GFX_portrait_SPA_mohamed_meziane"
+# 		traits = { harsh_leader career_officer desert_fox skilled_staffer trait_SPA_nationalist_sympathies }
+# 		skill = 4
+# 	    attack_skill = 5
+# 	    defense_skill = 2
+# 	    planning_skill = 3
+# 	    logistics_skill = 3
+# 	}
+	
+# 	create_corps_commander = { # Could fit for all 3 factions
+# 		name = "Gonzalo Queipo de Llano"
+# 		id = 1110
+# 		gfx = "GFX_portrait_SPA_gonzalo_queipo_de_llano"
+# 		traits = { trait_SPA_nationalist_sympathies desert_fox career_officer trickster infantry_leader cavalry_officer panzer_leader skilled_staffer old_guard trait_reckless brilliant_strategist}
+# 	skill = 5
+# 		attack_skill = 7
+# 		defense_skill = 1
+# 		planning_skill = 4
+# 		logistics_skill = 2
+# 	}
+	
+# 	# Nationalists leaders - Fascists
+	
+# 	create_field_marshal = {
+# 		name = "Emilio Mola"
+# 		id = 1111
+# 		gfx = "GFX_portrait_SPA_emilio_mola"
+# 		traits = { organisational_leader trait_cautious thorough_planner trait_SPA_nationalist_sympathies }
+# 		skill = 3
+# 	    attack_skill = 2
+# 	    defense_skill = 2
+# 	    planning_skill = 4
+# 	    logistics_skill = 2
+# 	}
+	
+# 	create_corps_commander = {
+# 		name = "Juan Yagüe"
+# 		id = 1112
+# 		gfx = "GFX_portrait_SPA_juan_yague"
+# 		traits = { brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies }
+# 		skill = 3
+# 	    attack_skill = 4
+# 	    defense_skill = 2
+# 	    planning_skill = 2
+# 	    logistics_skill = 2
+# 	}
+	
+# 	create_corps_commander = {
+# 		name = "Agustín Muñoz Grandes"
+# 		id = 1113
+# 		gfx = "GFX_portrait_SPA_augustin_muynoz_grandes"
+# 		traits = { armor_officer panzer_leader trickster hill_fighter trait_cautious trait_SPA_nationalist_sympathies}
+# 		skill = 4
+# 		attack_skill = 4
+# 		defense_skill = 5
+# 		planning_skill = 4
+# 		logistics_skill = 5
+# 	}
+	
+# 	# Nationalists leaders - Carlists
+	
+# 	create_corps_commander = {
+# 		name = "José Enrique Varela"
+# 		id = 1114
+# 		gfx = "GFX_portrait_SPA_jose_enrique_varela"
+# 		traits = { organizer infantry_leader hill_fighter trait_SPA_nationalist_sympathies }
+# 		skill = 4
+# 	    attack_skill = 6
+# 	    defense_skill = 2
+# 	    planning_skill = 3
+# 	    logistics_skill = 2
+# 	}
+	
+# 	create_corps_commander = {
+# 		name = "Miguel Cabanellas"
+# 		id = 1115
+# 		gfx = "GFX_portrait_SPA_miguel_cabanellas"
+# 		traits = { cavalry_officer armor_officer old_guard organizer trait_SPA_nationalist_sympathies }
+# 		skill = 4
+# 	    attack_skill = 1
+# 	    defense_skill = 7
+# 	    planning_skill = 2
+# 	    logistics_skill = 3
+# 	}
+	
+# 	create_corps_commander = {
+# 		name = "José Millán Astray"
+# 		id = 1116
+# 		gfx = "GFX_portrait_SPA_jose_millan_astray"
+# 		traits = { war_hero trait_reckless trait_SPA_nationalist_sympathies }
+# 		skill = 4
+# 	    attack_skill = 4
+# 	    defense_skill = 3
+# 	    planning_skill = 2
+# 	    logistics_skill = 5
+# 	}

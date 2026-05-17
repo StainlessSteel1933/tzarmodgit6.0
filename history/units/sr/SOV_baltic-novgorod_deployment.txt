@@ -1,0 +1,1067 @@
+﻿	division_template = {
+
+		name = "Baltic-Novgorod"
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 3 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 2 y = 1 }
+			infantry = { x = 3 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 2 }			
+		}
+
+
+		support = {
+		engineer = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		}
+	}
+
+	units = {
+
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9275
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}	
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9275
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3333
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3333
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11259
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11259
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 319
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 319
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3298
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3298
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11222
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11222
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 10493
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 10493
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9240
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9240
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9317
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9317
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9501
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9501
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3388
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3388
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11302
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11302
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 592
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 592
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9485
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9485
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6408
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6408
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 308
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 308
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11291
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11291
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6381
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6381
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6178
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6178
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9221
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9221
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6099
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6099
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9079
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9079
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 496
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 496
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3152
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3152
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11426
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11426
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11057
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11057
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11127
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11127
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11443
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11443
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 4640
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 4640
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 104
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 104
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 126
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 126
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9120
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9120
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9408
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9408
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11202
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11202
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6324
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6324
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11392
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11392
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6242
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6242
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9353
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9353
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9386
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9386
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 323
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 323
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 387
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 387
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6293
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6293
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 354
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 354
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9287
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9287
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11234
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11234
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 207
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 207
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9254
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9254
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9331
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9331
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 248
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 248
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3344
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3344
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9242
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9242
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6225
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6225
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 320
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 320
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11304
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11304
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9319
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9319
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 95
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 95
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11097
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11097
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3053
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3053
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3120
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3120
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11186
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11186
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9234
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9234
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9098
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9098
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6139
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6139
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 181
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 181
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11080
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11080
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9097
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9097
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11139
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11139
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11032
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11032
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6197
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6197
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6174
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6174
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 79
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 79
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11068
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11068
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3089
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3089
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11072
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11072
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 117
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 117
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 117
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3072
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3072
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9164
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9164
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9197
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9197
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9212
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 9212
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6154
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6154
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 71
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 71
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6035
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6035
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3110
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 3110
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6095
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 6095
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11174
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 11174
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 70
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		division = {	
+			start_equipment_factor = 0.01 start_experience_factor = 0.3
+			location = 70
+			division_template = "Baltic-Novgorod"
+			force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		}
+		
+
+
+	}

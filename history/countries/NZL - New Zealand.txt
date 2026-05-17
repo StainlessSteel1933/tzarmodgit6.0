@@ -1,0 +1,324 @@
+﻿capital = 284
+army_experience = 10
+navy_experience = 10
+air_experience = 2
+oob = "NZL_1936"
+
+# Starting tech
+set_stability = 0.8
+set_war_support = 0.3
+
+set_research_slots = 3
+set_rule = { can_be_spymaster = no }
+
+add_intel = { target = SOV civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+
+add_timed_idea = { idea = france_production_regrowth days = 30 }
+
+set_technology = { basic_train = 1
+	interwar_antiair = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gwtank_chassis = 1
+	gw_artillery = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	iw_small_airframe = 1
+	naval_bomber1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	motorised_infantry = 1
+	interwar_antitank = 1
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 168
+	producer = NZL
+}  
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 30
+	producer = NZL
+} 
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 1300
+	producer = NZL
+} 
+
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 140
+	producer = NZL
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 400
+	producer = NZL
+} 
+
+if = {
+
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_ideas = SAF_the_commonwealth
+	add_to_tech_sharing_group = commonwealth_research
+	add_ideas = COOM_volunteers_minors
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.11.27"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 100
+}
+# create_country_leader = {
+# 	name = "Michael Joseph Savage"
+# 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+# 	picture = "GFX_NZL_michael_joseph_savage"
+# 	expire = "1965.1.1"
+# 	ideology = socialism
+# 	traits = {
+# 		#
+# 	}
+# }
+
+# create_country_leader = {
+# 	name = "Sidney Holland"
+# 	desc = "POLITICS_SIDNEY_HOLLAND_DESC"
+# 	picture = "GFX_NZL_sidney_holland"
+# 	expire = "1965.1.1"
+# 	ideology = centrism
+# 	traits = {
+# 		#
+# 	}
+# }
+
+# create_country_leader = {
+# 	name = "John Ormond"
+# 	desc = "POLITICS_JOHN_ORMOND_DESC"
+# 	picture = "GFX_NZL_john_ormond"
+# 	expire = "1965.1.1"
+# 	ideology = fascism_ideology
+# 	traits = {
+# 		#
+# 	}
+# }
+
+# create_country_leader = {
+# 	name = "Elsie Farrelly"
+# 	desc = "POLITICS_JOHN_ORMOND_DESC"
+# 	picture = "GFX_NZL_elsie_farrelly"
+# 	expire = "1965.1.1"
+# 	ideology = marxism
+# 	traits = {
+# 		#
+# 	}
+# }
+
+set_convoys = 70
+
+# create_field_marshal = {
+# 	name = "Bernard Freyberg"
+# 	gfx = "GFX_NZL_bernard_freyberg"
+# 	traits = { jungle_rat organizer inflexible_strategist skilled_staffer politically_connected media_personality }
+# 	skill = 6
+# 	attack_skill = 5
+# 	defense_skill = 5
+# 	planning_skill = 4
+# 	logistics_skill = 5
+# }
+
+# create_corps_commander = {
+# 	name = "Robert Row"
+# 	gfx = "GFX_NZL_robert_row"
+# 	traits = { naval_invader jungle_rat infantry_leader infantry_officer career_officer war_hero }
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 4
+# 	planning_skill = 2
+# 	logistics_skill = 3
+# }
+
+# create_corps_commander = {
+# 	name = "William Stevens"
+# 	gfx = "GFX_NZL_william_stevens"
+# 	traits = { panzer_leader armor_officer trickster trait_cautious career_officer }
+# 	skill = 4
+# 	attack_skill = 5
+# 	defense_skill = 4
+# 	planning_skill = 2
+# 	logistics_skill = 3
+# }
+
+# create_navy_leader = {
+# 	name = "Edmund Rupert Drummond"
+# 	gfx = "GFX_NZL_edmund_drummond"
+# 	traits = { chief_engineer fleet_protector spotter blockade_runner }
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 3
+# 	maneuvering_skill = 5
+# 	coordination_skill = 3
+# }
+
+# create_navy_leader = {
+# 	name = "Neil Anderson"
+# 	gfx = "GFX_NZL_peter_phipps"
+# 	traits = { bold navy_career_officer superior_tactician fly_swatter blue_water_expert }
+# 	skill = 5
+# 	attack_skill = 3
+# 	defense_skill = 4
+# 	maneuvering_skill = 5
+# 	coordination_skill = 5
+# }
+recruit_character = NZL_michael_joseph_savage
+recruit_character = NZL_sidney_holland
+recruit_character = NZL_john_ormond
+recruit_character = NZL_elsie_farrelly
+recruit_character = NZL_bernard_freyberg
+recruit_character = NZL_robert_row
+recruit_character = NZL_william_stevens
+recruit_character = NZL_edmund_rupert_drummond
+recruit_character = NZL_neil_anderson
+recruit_character = NZL_r_a_cochrane
+recruit_character = NZL_l_p_peterson
+recruit_character = NZL_robert_manion
+recruit_character = NZL_walter_nash
+recruit_character = NZL_j_c_nichols
+recruit_character = NZL_dropbear
+recruit_character = NZL_edward_puttick
+recruit_character = NZL_norris_stephen_falla
+recruit_character = NZL_trevor_handley
+recruit_character = NZL_keith_j_holyoake
+recruit_character = NZL_a_j_stallworthy
+recruit_character = NZL_eric_prendergast
+recruit_character = NZL_arthur_dawes
+recruit_character = NZL_w_a_veitch_milne
+recruit_character = NZL_h_e_horan
+recruit_character = NZL_h_d_mcgregor
+recruit_character = NZL_w_h_stratton
+recruit_character = NZL_fred_warden
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Leander Class"
+		type = light_cruiser_1
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_gun_upgrade = 2
+			ship_anti_air_upgrade = 2
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Danae Class"
+		type = ship_hull_cruiser_1
+		name_group = NZL_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+		improved_secondary_battery = 1
+		cruiser_submarines = 1
+	}
+}
+
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		# Ship variants #
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		# Light Cruisers #
+		create_equipment_variant = {
+			name = "Leander Class"
+			type = ship_hull_cruiser_2
+			name_group = NZL_CL_HISTORICAL
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				front_1_custom_slot = ship_anti_air_1
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_light_medium_battery_1
+			}
+		}
+	}
+}

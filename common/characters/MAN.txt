@@ -1,0 +1,906 @@
+characters={
+		MAN_yonimitsu_kasahara={
+		name=MAN_yonimitsu_kasahara
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_3"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = MAN_yonimitsu_kasahara
+			ledger = army
+			allowed = {
+				original_tag = MIN
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	MAN_kyoiji_tomonaga={
+		name=MAN_kyoiji_tomonaga
+		portraits={
+			army={
+				small="GFX_idea_generic_air_asia_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = MAN_kyoiji_tomonaga
+			ledger = army
+			allowed = {
+				original_tag = MIN
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	MAN_hesehn_tiemei={
+		name=MAN_hesehn_tiemei
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = MAN_hesehn_tiemei
+			ledger = army
+			allowed = {
+				original_tag = MIN
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	MAN_zhang_haipeng={
+		name="Zhang Haipeng"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_MAN_zhang_haipeng.dds"
+			}
+			army={
+				large="gfx/leaders/MIN/portrait_man_zhang_haipeng.dds"
+			}
+		}
+		
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = MAN_zhang_haipeng
+			ledger = army
+			
+			traits = {
+				mobile_warfare_expert
+			}
+		}
+		
+		field_marshal={
+			traits={ organizer infantry_leader trickster trait_engineer panzer_leader trait_mountaineer hill_fighter logistics_wizard panzer_expert scavenger infantry_expert expert_improviser }
+			skill=5
+			attack_skill=2
+			defense_skill=2
+			planning_skill=7
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_hung_zhehuang={
+		name=MAN_hung_zhehuang
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_1"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = MAN_hung_zhehuang
+			ledger = army
+			allowed = {
+				original_tag = MIN
+			}
+			
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	MAN_shigeru_honjo={
+		name="Shigeru Honjo"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_shigeru_honjo.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Shigeru_Honjo.dds"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = MAN_shigeru_honjo
+			ledger = army
+			allowed = {
+				original_tag = MIN
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits={ adaptable old_guard organizer cavalry_leader logistics_wizard thorough_planner inspirational_leader cavalry_expert }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_masatane_kanda={
+		name="Masatane Kanda"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_masatane_kanda.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Masatane_Kanda.dds"
+			}
+		}
+		field_marshal={
+			traits={ adaptable trait_cautious organizer cavalry_leader logistics_wizard offensive_doctrine thorough_planner organisational_leader combined_arms_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	MAN_kanji_ishiwara={
+		name="Kanji Ishiwara"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_kanji_ishiwara.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Kanji_Ishiwara.dds"
+			}
+		}
+		field_marshal={
+			traits={ JAP_samurai_lineage organizer trickster panzer_leader jungle_rat logistics_wizard fast_planner organisational_leader panzer_expert expert_improviser }
+			skill=5
+			attack_skill=1
+			defense_skill=1
+			planning_skill=8
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_kenkichi_ueda={
+		name="Kenkichi Ueda"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_kenkichi_ueda.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Kenkichi_Ueda.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = MAN_kenkichi_ueda
+			allowed = {
+				original_tag = MIN
+			}
+			traits = {
+				war_industrialist 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits={ bearer_of_artillery old_guard trait_reckless infantry_leader commando logistics_wizard defensive_doctrine organisational_leader infantry_expert }
+			skill=6
+			attack_skill=3
+			defense_skill=3
+			planning_skill=7
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_harukichi_hyakutake={
+		name="Harukichi Hyakutake"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_harukichi_hyakutake.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Harukichi_Hyakutake.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = MAN_harukichi_hyakutake
+			allowed = {
+				original_tag = MIN
+			}
+			traits = {
+				silent_workhorse 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits={ inflexible_strategist organizer infantry_leader winter_specialist logistics_wizard unyielding_defender organisational_leader inspirational_leader }
+			skill=5
+			attack_skill=1
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_tomoyuki_yamashita={
+		name="Tomoyuki Yamashita"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_tomoyuki_yamashita.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Tomoyuki_Yamashita.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = MAN_tomoyuki_yamashita
+			allowed = {
+				original_tag = MIN
+			}
+			traits = {
+				captain_of_industry 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits={ brilliant_strategist JAP_samurai_lineage organizer infantry_leader trickster trait_engineer commando naval_invader trait_mountaineer jungle_rat aggressive_assaulter organisational_leader fortress_buster infantry_expert }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	MAN_hisaichi_terauchii={
+		name="Hisaichi Terauchii"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_hisaichi_terauchi.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Hisaichi_Terauchi.dds"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = MAN_hisaichi_terauchii
+			allowed = {
+				original_tag = MIN
+			}
+			traits = {
+				army_armored_3 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}  
+		field_marshal={
+			traits={ JAP_samurai_lineage organizer infantry_leader trait_engineer trait_mountaineer hill_fighter jungle_rat urban_assault_specialist logistics_wizard inspirational_leader infantry_expert expert_improviser }
+			skill=5
+			attack_skill=1
+			defense_skill=1
+			planning_skill=8
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_seishiro_itagaki={
+		name="Seishiro Itagaki"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_seishiro_itagaki.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Seishiro_Itagaki.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = MAN_seishiro_itagaki
+			allowed = {
+				original_tag = MIN
+			}
+			traits = {
+				smooth_talking_charmer 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits={ inflexible_strategist JAP_samurai_lineage infantry_leader logistics_wizard defensive_doctrine unyielding_defender infantry_expert guerilla_fighter }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	MAN_shunroku_hata={
+		name="Shunroku Hata"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_shunroku_hata.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Shunroku_Hata.dds"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = MAN_shunroku_hata
+			allowed = {
+				original_tag = MIN
+			}
+			traits = {
+				army_chief_offensive_2 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ JAP_samurai_lineage organizer trickster trait_engineer panzer_leader panzer_expert fortress_buster expert_improviser }
+			skill=5
+			attack_skill=4
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	MAN_shizuichi_tanaka={
+		name="Shizuichi Tanaka"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_shizuichi_tanaka.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Shizuichi_Tanaka.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trickster naval_invader hill_fighter urban_assault_specialist infantry_expert invader_ii expert_improviser }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	MAN_kenji_doihara={
+		name="Kenji Doihara"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_kenji_doihara.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Kenji_Doihara.dds"
+			}
+		}
+		corps_commander={
+			traits={ adaptable cavalry_leader trickster hill_fighter urban_assault_specialist cavalry_expert fortress_buster expert_improviser }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	MAN_keisuke_fujie={
+		name="Keisuke Fujie"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_keisuke_fujie.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Keisuke_Fujie.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery fake_skilled_staffer infantry_leader trickster trait_engineer scavenger ambusher guerilla_fighter }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	MAN_masaharu_homma={
+		name="Masaharu Homma"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_masaharu_homma.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Masaharu_Homma.dds"
+			}
+		}
+		corps_commander={
+			traits={ fake_skilled_staffer_sov trait_cautious infantry_leader trickster commando ambusher skirmisher guerilla_fighter }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	MAN_otozo_yamada={
+		name="Otozo Yamada"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_otozo_yamada.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Otozo_Yamada.dds"
+			}
+		}
+		corps_commander={
+			traits={ fake_skilled_staffer_sov cavalry_leader trickster cavalry_expert ambusher expert_improviser guerilla_fighter }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	MAN_hitoshi_imamura={
+		name="Hitoshi Imamura"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_hitoshi_imamura.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Hitoshi_Imamura.dds"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist trait_engineer commando naval_invader ranger fortress_buster infantry_expert invader_ii expert_improviser }
+			skill=5
+			attack_skill=2
+			defense_skill=2
+			planning_skill=7
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	MAN_takashi_sakai={
+		name="Takashi Sakai"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_takashi_sakai.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Takashi_Sakai.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious organizer infantry_leader trait_engineer commando urban_assault_specialist fortress_buster infantry_expert paratrooper guerilla_fighter }
+			skill=5
+			attack_skill=2
+			defense_skill=4
+			planning_skill=6
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	MAN_jo_iimura={
+		name="Jo Iimura"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_jo_iimura.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Jo_Iimura.dds"
+			}
+		}
+		corps_commander={
+			traits={ adaptable cavalry_leader trickster trait_engineer commando naval_invader combined_arms_expert cavalry_expert camouflage_expert }
+			skill=5
+			attack_skill=1
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_rikichi_ando={
+		name="Rikichi Ando"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_rikichi_ando.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Rikichi_Ando.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery organizer trickster desert_fox swamp_fox trait_mountaineer hill_fighter combined_arms_expert cavalry_expert guerilla_fighter }
+			skill=6
+			attack_skill=3
+			defense_skill=3
+			planning_skill=7
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_naruhiko_higashikuni={
+		name="Naruhiko Higashikuni"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_naruhiko_higashikuni.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Naruhiko_Higashikuni.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery organizer trickster trait_mountaineer hill_fighter combined_arms_expert cavalry_expert ambusher }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_yasuji_okamura={
+		name="Yasuji Okamura"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_yasuji_okamura.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Yasuji_Okamura.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless trait_engineer panzer_leader winter_specialist ranger panzer_expert scavenger ambusher }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	MAN_hatazo_adachi={
+		name="Hatazo Adachi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_hatazo_adachi.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Hatazo_Adachi.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless JAP_samurai_lineage organizer trickster trait_engineer panzer_leader desert_fox trait_mountaineer hill_fighter panzer_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	MAN_sadao_araki={
+		name="Sadao Araki"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_sadao_araki.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Sadao_Araki.dds"
+			}
+		}
+		corps_commander={
+			traits={ JAP_samurai_lineage organizer trickster trait_engineer panzer_leader naval_invader panzer_expert fortress_buster invader_ii naval_liason }
+			skill=5
+			attack_skill=1
+			defense_skill=3
+			planning_skill=8
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	MAN_kiichiro_higuchi={
+		name="Kiichiro Higuchi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_kiichiro_higuchi.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Kiichiro_Higuchi.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious infantry_leader trickster desert_fox trait_mountaineer urban_assault_specialist infantry_expert expert_improviser }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	MAN_toshizo_nishio={
+		name="Toshizo Nishio"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_toshizo_nishio.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Toshizo_Nishio.dds"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist infantry_leader trickster trait_engineer naval_invader trait_mountaineer scavenger infantry_expert naval_liason }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=7
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	MAN_yoshijiro_umezu={
+		name="Yoshijiro Umezu"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_yoshijiro_umezu.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Yoshijiro_Umezu.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery trait_cautious trickster trait_engineer panzer_leader commando panzer_expert skirmisher guerilla_fighter }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	MAN_iwane_matsui={
+		name="Iwane Matsui"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_iwane_matsui.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Iwane_Matsui.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery old_guard trait_reckless infantry_leader trickster trait_mountaineer jungle_rat infantry_expert expert_improviser }
+			skill=5
+			attack_skill=2
+			defense_skill=2
+			planning_skill=6
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_kuniaki_koiso={
+		name="Kuniaki Koiso"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_kuniaki_koiso.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Kuniaki_Koiso.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery old_guard JAP_samurai_lineage organizer infantry_leader trait_engineer ranger urban_assault_specialist fortress_buster infantry_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_akira_muto={
+		name="Akira Muto"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_JAP_akira_muto.dds"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_Akira_Muto.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery infantry_leader trickster desert_fox trait_mountaineer hill_fighter infantry_expert guerilla_fighter }
+			skill=5
+			attack_skill=2
+			defense_skill=2
+			planning_skill=6
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_zhang_jinghui={
+		name="Zhang Jinghui"
+		portraits={
+			army={
+				small="GFX_portrait_man_zhang_jinghui_small"
+			}
+			army={
+				large="GFX_portrait_man_zhang_jinghui"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trickster trait_engineer ranger scavenger infantry_expert expert_improviser }
+			skill=5
+			attack_skill=2
+			defense_skill=1
+			planning_skill=7
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_aisin_gioro_xiqia={
+		name="Aisin Gioro Xiqia"
+		portraits={
+			army={
+				small="GFX_portrait_man_aisin_gioro_xiqia_small"
+			}
+			army={
+				large="GFX_portrait_man_aisin_gioro_xiqia"
+			}
+		}
+		corps_commander={
+			traits={ trickster trait_engineer panzer_leader trait_mountaineer panzer_expert fortress_buster expert_improviser }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	MAN_yoshiko_kawashima={
+		name="Yoshiko Kawashima"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_MAN_yoshiko_kawashima.dds"
+			}
+			army={
+				large="gfx/leaders/MIN/portrait_man_yoshiko_kawashima.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trickster trait_engineer naval_invader trait_mountaineer infantry_expert invader_ii expert_improviser }
+			skill=5
+			attack_skill=2
+			defense_skill=1
+			planning_skill=6
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	MAN_aisin_gioro_puyi={
+		name="Aisin Gioro Puyi"
+		portraits={
+			civilian={
+				large="gfx/leaders/MIN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+			}
+		}
+		country_leader={
+			ideology=rexism
+			expire="1960.1.1.1"
+			id=-1
+		}
+	}
+	MAN_nalan_kangan={
+		name="Nalan Kang'an"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Asia_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1951.1.1.12"
+			id=-1
+		}
+	}
+	MAN_hesehn_zhanshan={
+		name="Hesehn Zhanshan"
+		portraits={
+			civilian={
+				large="GFX_portrait_asia_generic_4"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ smooth_talking_charmer2 }
+			expire="1946.1.1.12"
+			id=-1
+		}
+	}
+	MAN_zhao_linge={
+		name="Zhao Linge"
+		portraits={
+			civilian={
+				large="GFX_portrait_asia_generic_4"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ armaments_organizer editor }
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+}

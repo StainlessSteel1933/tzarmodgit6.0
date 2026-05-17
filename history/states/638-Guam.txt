@@ -1,0 +1,35 @@
+state=
+{
+	id=638
+	name="STATE_638"
+	state_category = small_island
+	manpower=75153
+	
+	resources={
+		rubber=8 
+	}
+	
+	history=
+	{
+				1936.1.1.16 = {
+			owner = SWE 
+		}
+		owner = USA
+		set_state_flag = USA_controls
+		buildings = {
+			infrastructure = 3 #was: 5
+			12140 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			12140 1
+		 }
+
+	}
+	provinces={
+		12140
+	}
+
+	local_supplies=0.0 
+}

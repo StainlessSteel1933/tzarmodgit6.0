@@ -1,0 +1,418 @@
+equipment_modules = {
+	tank_light_one_man_tank_turret = {
+		abbreviation = "l1m"
+		category = tank_light_turret_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_tank
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_small_main_armament
+			}
+		}
+		forbid_equipment_type_exact_match_for_category = {
+			tank_medium_main_armament = armor
+			tank_heavy_main_armament = armor
+			tank_super_heavy_main_armament = armor
+		}
+		forbid_equipment_type = artillery
+		forbid_equipment_type = anti_tank
+		add_stats = {
+			build_cost_ic = 0.75
+			breakthrough = 6
+		}
+		
+	}
+
+	tank_light_two_man_tank_turret = {
+		abbreviation = "l2m"
+		category = tank_light_turret_type
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_small_main_armament
+			}
+		}
+		forbid_equipment_type_exact_match_for_category = {
+			tank_medium_main_armament = armor
+			tank_heavy_main_armament = armor
+			tank_super_heavy_main_armament = armor
+		}
+		add_stats = {
+			build_cost_ic = 1.00
+			breakthrough = 8
+		}
+		
+		multiply_stats = {
+			air_attack = -0.25
+		}
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+	}
+
+	tank_light_three_man_tank_turret = {
+		abbreviation = "l3m"
+		category = tank_light_turret_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type_exact_match_for_category = {
+			tank_medium_main_armament = armor
+			tank_heavy_main_armament = armor
+			tank_super_heavy_main_armament = armor
+		}
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_small_main_armament
+			}
+		}
+		add_stats = {
+			build_cost_ic = 1.5
+			maximum_speed = -0.25
+			breakthrough = 13
+		}
+		
+		multiply_stats = {
+			air_attack = -0.25
+		}
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+	}
+
+	tank_light_fixed_superstructure_turret = {
+		abbreviation = "lfs"
+		category = tank_light_turret_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+		allow_equipment_type = artillery
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+			}
+		}
+		forbid_equipment_type_exact_match_for_category = {
+			tank_medium_main_armament = armor
+			tank_heavy_main_armament = armor
+			tank_super_heavy_main_armament = armor
+		}
+
+		
+		add_stats = {
+			build_cost_ic = 2
+			reliability = 0.2
+			defense = 3
+		}
+
+		multiply_stats = {
+			breakthrough = -0.8
+			soft_attack = 0.15
+			hard_attack = 0.3
+		}
+
+	}
+	
+
+	tank_medium_fixed_superstructure_turret = {
+		abbreviation = "mfs"
+		category = tank_medium_turret_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+		forbid_equipment_type_exact_match_for_category = {
+			tank_heavy_main_armament = armor
+			tank_super_heavy_main_armament = armor
+		}
+
+		
+		
+		add_stats = {
+			build_cost_ic = 4
+			reliability = 0.2
+			defense = 3
+		}
+
+		multiply_stats = {
+			breakthrough = -0.75
+			soft_attack = 0.15
+			hard_attack = 0.3
+		}
+
+		can_convert_from = {
+			module = tank_medium_turret_type
+			convert_cost_ic = 1.5
+		}
+
+	}
+
+	tank_heavy_two_man_tank_turret = {
+		abbreviation = "h2m"
+		category = tank_heavy_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_heavy_main_armament
+			}
+		}
+		
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+
+		add_stats = {
+			build_cost_ic = 5.75
+			breakthrough = 20
+		}
+
+		multiply_stats = {
+
+		}
+
+	}
+
+	tank_heavy_three_man_tank_turret = {
+		abbreviation = "h3m"
+		category = tank_heavy_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+
+		
+		
+		add_stats = {
+			build_cost_ic = 6.5
+			breakthrough = 25
+		}
+
+		multiply_stats = {
+
+		}
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+	}
+
+	tank_heavy_fixed_superstructure_turret = {
+		abbreviation = "hfs"
+		category = tank_heavy_turret_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+		allow_equipment_type = artillery
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+				tank_super_heavy_main_armament
+			}
+		}
+		forbid_equipment_type_exact_match_for_category = {
+			tank_super_heavy_main_armament = armor
+		}
+		
+		
+		add_stats = {
+			build_cost_ic = 7
+			reliability = 0.2
+			defense = 3
+		}
+
+		multiply_stats = {
+			breakthrough = -0.60
+			soft_attack = 0.15
+			hard_attack = 0.3
+		}
+
+		can_convert_from = {
+			module = tank_heavy_turret_type
+			convert_cost_ic = 5
+		}
+
+	}
+
+	tank_super_heavy_three_man_tank_turret = {
+		abbreviation = "s3m"
+		category = tank_super_heavy_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+				tank_super_heavy_main_armament
+			}
+		}
+		add_stats = {
+			build_cost_ic = 10
+			reliability = -0.1
+			maximum_speed = -0.2
+			breakthrough = 24
+		}
+		multiply_stats = {
+			hard_attack = -0.1
+		}
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+	}
+
+	tank_medium_one_man_tank_turret = {
+		abbreviation = "m1m"
+		category = tank_medium_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+			}
+		}
+		add_stats = {
+			build_cost_ic = 2
+			breakthrough = 6
+			
+		}
+		
+		
+		multiply_stats = {
+
+		}
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+	}
+
+	tank_medium_two_man_tank_turret = {
+		abbreviation = "m2m"
+		category = tank_medium_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+			}
+		}
+		add_stats = {
+			build_cost_ic = 3
+			breakthrough = 12
+		}
+		
+		
+		multiply_stats = {
+
+		}
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+	}
+
+	tank_medium_three_man_tank_turret = {
+		abbreviation = "m3m"
+		category = tank_medium_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+			}
+		}
+		add_stats = {
+			build_cost_ic = 4
+			maximum_speed = -0.25
+			breakthrough = 18
+		}
+		
+		
+		multiply_stats = {
+
+		}
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+	}
+
+
+	tank_super_heavy_three_man_tank_turret = {
+		abbreviation = "s3m"
+		category = tank_super_heavy_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+				tank_super_heavy_main_armament
+			}
+		}
+		add_stats = {
+			build_cost_ic = 10
+			reliability = -0.1
+			maximum_speed = -0.2
+			breakthrough = 24
+		}
+		multiply_stats = {
+
+		}
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+	}
+
+	tank_super_heavy_four_man_tank_turret = {
+		abbreviation = "s4m"
+		category = tank_super_heavy_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+				tank_super_heavy_main_armament
+			}
+		}
+		add_stats = {
+			build_cost_ic = 12
+			reliability = -0.25
+			maximum_speed = -0.5
+			breakthrough = 35
+		}
+		
+		
+		multiply_stats = {
+			
+		}
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+	}
+
+	tank_modern_tank_turret = {
+		abbreviation = "mbt"
+		category = tank_modern_turret_type
+		sfx = sfx_ui_sd_module_turret
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+		add_stats = {
+			build_cost_ic = 8
+			breakthrough = 24
+		}
+		
+		
+		multiply_stats = {
+
+		}
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+	}
+}

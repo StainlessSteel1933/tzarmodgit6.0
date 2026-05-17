@@ -1,0 +1,154 @@
+#Category only allowed for SOV
+SOV_barb_debuff_category = {
+
+	SOV_barb_debuff_mission = {
+
+		allowed = { always = no
+			original_tag = SOV }
+
+		icon = officers_purged
+
+		available = {
+			tag = gay
+		}
+		activation = {
+			always=no
+		}
+
+		#cost = SOV_barb_debuff_counter?10
+
+		selectable_mission = no
+		days_mission_timeout = 8
+		is_good = no
+		fire_only_once = yes
+
+		cancel_trigger = { 
+			hidden_trigger = {
+					NOT = { SOV_has_barb_debuff = yes }
+			}
+		}
+
+		# days_remove = SOV_extend_barb_debuff_days?0
+		# remove_effect = {
+		# 	SOV_barb_debuff_level_up = yes
+		# 	if = {
+		# 		limit = {
+		# 			check_variable = { var = SOV_barb_debuff_counter value = 15 compare = less_than }
+		# 		}
+		# 		set_variable = { var = SOV_barb_debuff_counter value = 10 }
+		# 	}
+		# 	add_to_variable = { var = SOV_barb_debuff_counter value = 10 }
+
+		# 	hidden_effect = {
+		# 		activate_mission = SOV_barb_debuff_mission
+		# 	}
+		# }
+
+		# complete_effect = {
+		# 	#custom_effect_tooltip = SOV_barb_debuff_mission_tt
+		# 	#custom_effect_tooltip = SOV_barb_debuff_effect_in_days
+		# 	effect_tooltip = {
+		# 		SOV_barb_debuff_level_up = yes
+		# 	}
+		# 	hidden_effect = {
+		# 		set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
+		# 	}
+		# }
+
+		complete_effect = {
+		
+		}
+
+		timeout_effect = {
+#custom_effect_tooltip = SOV_barb_debuff_mission_tt
+			#custom_effect_tooltip = SOV_barb_debuff_effect_in_days
+			hidden_effect = {
+				set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
+			}
+			# Only decrease the purge penalty during the non-winter months
+			# this is to delay Soviets becoming fully operational during the winter
+			# and then easily battleplanning the axis come spring
+			if = { limit = { OR = { date < 1941.10.15 date > 1942.4.1 } }
+				SOV_barb_debuff_level_up = yes
+			}
+				
+			if = {
+				limit = {
+					check_variable = { var = SOV_barb_debuff_counter value = 15 compare = less_than }
+				}
+				set_variable = { var = SOV_barb_debuff_counter value = 10 }
+			}
+			add_to_variable = { var = SOV_barb_debuff_counter value = 10 }
+
+			hidden_effect = {
+				if = { 
+					limit = { date > 1942.4.1 } activate_mission = SOV_barb_debuff_slow_mission
+				}
+				else = { activate_mission = SOV_barb_debuff_mission }
+			}
+		}
+		# ai_will_do = {
+		# 	factor = 200
+		# }
+	}
+
+
+
+
+
+
+
+	SOV_barb_debuff_slow_mission = {
+
+		allowed = { always = no
+			original_tag = SOV }
+
+		icon = officers_purged
+
+		available = {
+			tag = gay
+		}
+		activation = {
+			always=no
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 25
+		is_good = no
+		fire_only_once = yes
+
+		cancel_trigger = { 
+			hidden_trigger = {
+					NOT = { SOV_has_barb_debuff = yes }
+			}
+		}
+
+		complete_effect = {
+		
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
+			}
+			# Only decrease the purge penalty during the non-winter months
+			# this is to delay Soviets becoming fully operational during the winter
+			# and then easily battleplanning the axis come spring
+			if = { limit = { OR = { date < 1942.10.15 date > 1943.3.5 } }
+				SOV_barb_debuff_level_up = yes
+			}
+				
+			if = {
+				limit = {
+					check_variable = { var = SOV_barb_debuff_counter value = 15 compare = less_than }
+				}
+				set_variable = { var = SOV_barb_debuff_counter value = 10 }
+			}
+			add_to_variable = { var = SOV_barb_debuff_counter value = 10 }
+
+			hidden_effect = {
+				activate_mission = SOV_barb_debuff_slow_mission
+			}
+		}
+	}
+}

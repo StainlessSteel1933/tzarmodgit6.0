@@ -1,0 +1,218 @@
+﻿division_template = {
+
+	name = "Ethiopian Garrisons"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 } 
+
+	}
+}
+
+units = {
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 12766
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 12766
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 12766
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 2072
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 2072
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 2072
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 1984
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 1984
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 7944
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 7944
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 7944
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 5097
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 5097
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 5097
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 5010
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 5010
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 4954
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 4954
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 7980
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 7980
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 8036
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 8036
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 12856
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 12856
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 10734
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 10734
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 7912
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 7912
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 2009
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 2009
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 5091
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 5091
+		division_template = "Ethiopian Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+}

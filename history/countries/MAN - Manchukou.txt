@@ -1,0 +1,93 @@
+﻿set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 100
+}
+capital = 328
+set_war_support = 0.6
+oob = "MAN_1936"
+set_technology = { 
+	basic_train = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1 
+	gw_artillery = 1
+	tech_mountaineers = 1
+	iw_small_airframe = 1	
+	motorised_infantry = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	interwar_antiair = 1
+}
+army_experience = 10
+navy_experience = 10
+air_experience = 2
+set_stability = 0.25 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.8
+
+
+
+add_timed_idea = { idea = france_production_regrowth days = 30 }
+
+recruit_character = MAN_hesehn_tiemei
+recruit_character = MAN_kyoiji_tomonaga
+recruit_character = MAN_yonimitsu_kasahara
+#recruit_character = MAN_guan_xingde
+recruit_character = MAN_zhang_haipeng
+recruit_character = MAN_shigeru_honjo
+recruit_character = MAN_masatane_kanda
+recruit_character = MAN_kanji_ishiwara
+recruit_character = MAN_kenkichi_ueda
+recruit_character = MAN_harukichi_hyakutake
+recruit_character = MAN_tomoyuki_yamashita
+recruit_character = MAN_hisaichi_terauchii
+recruit_character = MAN_seishiro_itagaki
+recruit_character = MAN_shunroku_hata
+recruit_character = MAN_shizuichi_tanaka
+recruit_character = MAN_kenji_doihara
+recruit_character = MAN_keisuke_fujie
+recruit_character = MAN_masaharu_homma
+recruit_character = MAN_otozo_yamada
+recruit_character = MAN_hitoshi_imamura
+recruit_character = MAN_takashi_sakai
+recruit_character = MAN_jo_iimura
+recruit_character = MAN_rikichi_ando
+recruit_character = MAN_naruhiko_higashikuni
+recruit_character = MAN_yasuji_okamura
+recruit_character = MAN_hatazo_adachi
+recruit_character = MAN_sadao_araki
+recruit_character = MAN_kiichiro_higuchi
+recruit_character = MAN_toshizo_nishio
+recruit_character = MAN_yoshijiro_umezu
+recruit_character = MAN_iwane_matsui
+recruit_character = MAN_kuniaki_koiso
+recruit_character = MAN_akira_muto
+recruit_character = MAN_zhang_jinghui
+recruit_character = MAN_aisin_gioro_xiqia
+recruit_character = MAN_yoshiko_kawashima
+recruit_character = MAN_aisin_gioro_puyi
+recruit_character = MAN_nalan_kangan
+recruit_character = MAN_hesehn_zhanshan
+recruit_character = MAN_zhao_linge
+set_fuel_ratio = 1
+
+
+set_research_slots = 4
+anti_cross_faction_trade_allies = yes
+
+add_ideas = {
+	Jap_temp_chi
+	MAN_south_manchuria_railway_company
+	MAN_banditry
+	# armyandnavy_idea
+	MAN_low_legitimacy_5
+	low_economic_mobilisation
+	COOM_volunteers_minors
+} 
+add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 8000 }
+
+set_convoys = 15

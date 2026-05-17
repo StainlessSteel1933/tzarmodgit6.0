@@ -1,0 +1,1883 @@
+focus_tree = {
+
+	id = slovakia_sex
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = CZE
+		}
+	}
+	
+
+	default = no
+	shared_focus = AXIS_cum
+	continuous_focus_position = { x = 100 y = 1000 }
+### industry before annex
+	focus = {
+		id = SLO_begin_industrialization
+		icon = GFX_goal_generic_construction
+		x = 5
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			NOT = {
+				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		text = "Begin Industrial Expansion"
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+			}
+				70 = {
+					add_extra_state_shared_building_slots = 5
+				}
+				71 = {add_extra_state_shared_building_slots = 5}
+				73 = {add_extra_state_shared_building_slots = 5}
+		}
+	}
+	focus = {
+		id = SLO_balanced_investments
+		icon = GFX_goal_generic_construct_military
+		x = -2
+		y = 1
+		mutually_exclusive = {focus = SLO_prioritize_slovakia focus = SLO_prioritize_Czechia}
+		prerequisite = { focus = SLO_begin_industrialization }
+		relative_position_id = SLO_begin_industrialization
+
+		cost = 10
+		text = "Balanced Investments"
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			NOT = {
+				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.15
+			every_owned_state = {
+				limit = {
+					is_core_of = CZE
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SLO_investments_in_both_captials
+		prerequisite = {focus = SLO_balanced_investments }
+		icon = GFX_goal_generic_air_production
+		x = 0
+		y = 1
+		relative_position_id = SLO_balanced_investments
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "Investments in Both Capitals"
+		available = {
+			NOT = {
+				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			9 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			70 = {
+				set_state_category = large_city
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_victory_points = {
+					province = 9692
+					value = 10
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = SLO_university_of_bratislava
+		icon = GFX_focus_research2
+		x = -1
+		y = 1
+		relative_position_id = SLO_german_advisors
+		prerequisite = {focus = SLO_german_advisors}
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "University of Bratislava"
+		available = {
+			NOT = {
+				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			70 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = SLO_prioritize_slovakia
+		icon = GFX_focus_chi_army_reform
+		x = 2
+		y = 1
+		prerequisite = { focus = SLO_begin_industrialization }
+		mutually_exclusive = {focus = SLO_prioritize_Czechia focus = SLO_balanced_investments}
+		relative_position_id = SLO_begin_industrialization
+
+		cost = 10
+		text = "Prioritize Slovakia"
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			NOT = {
+				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			add_stability = -0.1
+			70 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		id = Czech_small_arms
+		icon = GFX_goal_generic_army_artillery
+		x = 1
+		y = 3
+		relative_position_id = SLO_prioritize_Czechia
+		prerequisite = {focus = Czech_tanks}
+		cost = 10
+		text = "Czech Howitzers"
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			NOT = {
+				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 8000 producer = CZE }
+		}
+	}
+	focus = {
+		id = Czech_tanks
+		icon = GFX_focus_ITA_ferrea_mole_ferreo_cuore
+		prerequisite = {focus = SLO_balanced_investments focus = SLO_prioritize_Czechia}
+		x = -2
+		y = 1
+		relative_position_id = SLO_balanced_investments
+
+		cost = 10
+		text = "Czech Tanks"
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			NOT = {
+				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				set_technology = {
+				heavy_guns = 1
+				basic_medium_tank_chassis = 1
+				new_tank_guns = 1
+				radio_tech_1 = 1
+				shit_modules = 1
+				armor_tech_1 = 1
+				gwtank_chassis = 1
+			}
+			create_equipment_variant = {
+						name = "Czech Basic Medium Tanks"
+						type = medium_tank_chassis_1
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_high_velocity_cannon
+							turret_type_slot = tank_medium_two_man_tank_turret
+							suspension_type_slot = tank_interleaved_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = wet_ammo_storage
+							special_type_slot_3 = extra_ammo_storage
+							special_type_slot_4 = squeezebore_adaptor
+							special_type_slot_9 = apcr_ammo
+						}
+						upgrades={
+							tank_nsb_engine_upgrade=8
+							tank_nsb_armor_upgrade=2
+						}
+					}
+			}
+					add_equipment_to_stockpile = {
+						type = medium_tank_chassis_1
+						amount = 2000
+						variant_name = "Czech Basic Medium Tanks"
+					}
+					custom_effect_tooltip = SLO_Czech_mediums_tt
+			}
+		}
+	focus = {
+		id = Slovak_small_arms
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = -2
+		y = 1
+		prerequisite = {focus = SLO_balanced_investments focus = SLO_prioritize_slovakia}
+		relative_position_id = SLO_prioritize_slovakia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "Slovak Small Arms"
+		available = {
+			NOT = {
+				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = CZE }
+			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1000 producer = CZE }
+		}
+	}
+	focus = {
+		id = SLO_expand_national_defence
+		icon = GFX_focus_secret_rearmament
+		prerequisite = {focus = SLO_prioritize_slovakia}
+		x = 0
+		y = 1
+		relative_position_id = SLO_prioritize_slovakia
+		Text = "Expansion of Small Arms Production"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			NOT = {
+				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			71 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			add_ideas = ROM_local_development 
+		}
+	}
+	focus = {
+		id = SLO_promote_military
+		icon = GFX_goal_rhineland
+		x = 1
+		y = 1
+		prerequisite = {focus = SLO_give_up_carapthia}
+		relative_position_id = SLO_give_up_carapthia
+		text = "Military Propaganda"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			NOT = {
+				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = SPA_expand_conscription
+			add_war_support = 0.1
+		}
+	}
+
+		focus = {
+		id = SLO_expanding_bratislava
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 2
+		y = 1
+		prerequisite = {focus = SLO_prioritize_slovakia}
+		relative_position_id = SLO_prioritize_slovakia
+		text = "Expansion of Bratislava"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			NOT = {
+				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			70 = {
+				set_state_category = megalopolis
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_victory_points = {
+					province = 9692
+					value = 30
+				}
+			}
+		}
+	}
+
+### main tree after germany annexes czechoslovakia
+	focus = {
+		id = SLO_nation_reborn
+		icon = GFX_focus_ITA_generic_fascist_workers
+		x = 18
+		y = 0
+		text = "Nation Reborn"
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		GER = {
+				has_completed_focus = GER_end_of_czechoslovakia
+				}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.2
+			add_research_slot = 1
+			70 = {
+				add_extra_state_shared_building_slots = 6
+				
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SLO_german_advisors
+		prerequisite = {focus = SLO_nation_reborn}
+		mutually_exclusive = {focus = SLO_slovakian_goverment}
+		icon = GFX_focus_SWI_fortify_border_with_germany
+		relative_position_id = SLO_nation_reborn
+		x = -4
+		y = 1
+		text = "German Advisors"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = SLO_german_investments
+		prerequisite = {focus = SLO_german_advisors focus = SLO_slovakian_goverment}
+		icon = GFX_focus_generic_tank_production
+		relative_position_id = SLO_german_advisors
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "Investments From Germany"
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			70 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			71 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SLO_give_up_carapthia
+		prerequisite = {focus = SLO_german_investments}
+		prerequisite = {FOCUS = SLO_german_Porsche}
+		icon = GFX_focus_hun_assassinate_horthy
+		relative_position_id = SLO_german_advisors
+		x = 2
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "Surrender Carpathia"
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			70 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			HUN = {
+				transfer_state = 73
+			}
+			add_stability = -0.1
+		}
+	}
+	focus = {
+		id = SLO_german_trade_agreement
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = SLO_german_advisors
+		prerequisite = {focus = SLO_unity focus = SLO_more_german_investments}#focus = SLO_give_up_carapthia}
+		x = 4
+		y = 5
+		text = "Trade Agreement With Germany"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			71 = {
+				set_state_category = megalopolis
+			}
+			add_relation_modifier = {
+				target = GER
+				modifier = ROM_license_german_equipment
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = SLO_tungsten_mines
+		icon = GFX_focus_generic_tungsten
+		relative_position_id = SLO_german_trade_agreement
+		prerequisite = {focus = SLO_german_trade_agreement}
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "Tungsten Mines"
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			70 = {
+				add_resource = {
+					type = tungsten
+					amount = 23
+				}
+			}
+			70 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = SAF_expand_the_mining_industry
+				bonus = 1.0
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+		}
+	}
+	focus = {
+		id = SLO_invite_romanians
+		icon = GFX_focus_invite_romania
+		relative_position_id = SLO_german_trade_agreement
+		prerequisite = {focus = SLO_german_trade_agreement}
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "Invite Romanian Companies"
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			71 = {
+				add_resource = {
+					type = oil
+					amount = 18
+				}
+			}
+			71 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = SAF_expand_the_mining_industry
+				bonus = 1.0
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+		}
+	}
+	focus = {
+		id = SLO_expand_steel_production
+		icon = GFX_focus_generic_steel
+		relative_position_id = SLO_german_trade_agreement
+		prerequisite = {focus = SLO_german_trade_agreement}
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "Expansion of Steel Production"
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			70 = {
+				add_resource = {
+					type = steel
+					amount = 38
+				}
+			}
+			70 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = SAF_expand_the_mining_industry
+				bonus = 1.0
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+		}
+	}
+	focus = {
+		id = SLO_more_german_investments
+		icon = GFX_focus_ETH_adopt_the_lira
+		relative_position_id = SLO_german_advisors
+		prerequisite = {focus = SLO_give_up_carapthia}
+		
+		x = 0
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "German Investments in Central Slovakia"
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			70 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = SLO_german_industrial_conerns
+		icon = GFX_focus_mex_privatisation
+		relative_position_id = SLO_more_german_investments
+		prerequisite = {focus = SLO_more_german_investments}
+		
+		x = 2
+		y = 1
+
+		cost = 10
+		text = "German Industrial Support"
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = { FRA_mandatory_work_service }
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = SLO_Invite_ss_generals
+		icon = GFX_focus_generic_military_mission
+		relative_position_id = SLO_more_german_investments
+		prerequisite = {focus = SLO_more_german_investments}
+		
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "SS Advisors"
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = SPA_fascist_economic_aid
+			add_tech_bonus = {
+				name = SPA_fascist_economic_aid
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = SLO_ss_armored_units
+		icon = GFX_focus_generic_combined_arms
+		relative_position_id = SLO_Invite_ss_generals
+		prerequisite = {focus = SLO_Invite_ss_generals}
+		
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "SS Armored Batalions"
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			hidden_effect = {
+				set_technology = {
+					improved_heavy_tank_chassis = 1
+					heavy_guns2 = 1
+					radio_tech_2 = 1
+					shit_guns = 1
+				}
+				create_equipment_variant = {
+						name = "Panzerkampfwagen VI Tiger Ausf. E"
+						type = heavy_tank_chassis_2
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_heavy_cannon_2
+							turret_type_slot = tank_heavy_three_man_tank_turret
+							suspension_type_slot = tank_interleaved_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = secondary_turret_small_cannon
+							special_type_slot_2 = secondary_turret_small_cannon
+							special_type_slot_3 = tank_radio_2
+							special_type_slot_4 = wet_ammo_storage
+							special_type_slot_9 = hvap_ammo
+						}
+						upgrades={
+							tank_nsb_engine_upgrade=16
+							# tank_nsb_armor_upgrade=5
+						}
+					}
+					add_equipment_to_stockpile = { type = heavy_tank_chassis_2 amount = 500 variant_name = "Panzerkampfwagen VI Tiger Ausf. E" }
+					load_oob = SLO_SS_focus
+			}
+					custom_effect_tooltip = "Spawns 2 fully equiped ELITE German heavy tanks."
+
+					custom_effect_tooltip = "     "
+		}
+	}
+	focus = {
+		id = SLO_ss_elite_training
+		icon = GFX_focus_ger_oppose_hitler
+		relative_position_id = SLO_Invite_ss_generals
+		prerequisite = {focus = SLO_Invite_ss_generals}
+		
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "SS Standards of Training"
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = SLO_unlock_ss_tt
+			hidden_effect = {
+				set_technology = {
+				ss_inf_tech = 1
+			}
+			}
+		}
+	}
+	focus = {
+		id = SLO_german_Porsche
+		icon = GFX_focus_generic_armored_air_support
+		prerequisite = {focus = SLO_german_advisors}
+		relative_position_id = SLO_german_advisors
+		x = 1
+		y = 1
+		text = "Investments From Porsche"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = "We will recieve old german tanks produced by Porsche."
+						create_equipment_variant = {
+						name = "Outdated Porche Medium Tanks"
+						type = medium_tank_chassis_1
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_high_velocity_cannon
+							turret_type_slot = tank_medium_two_man_tank_turret
+							suspension_type_slot = tank_interleaved_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_1
+							special_type_slot_2 = wet_ammo_storage
+							special_type_slot_3 = extra_ammo_storage
+							special_type_slot_4 = squeezebore_adaptor
+							special_type_slot_9 = apcr_ammo
+						}
+						upgrades={
+							tank_nsb_engine_upgrade=3
+							tank_nsb_armor_upgrade=0
+						}
+					
+			}
+					add_equipment_to_stockpile = {
+						type = medium_tank_chassis_1
+						amount = 465
+						variant_name = "Outdated Porche Medium Tanks"
+					}
+		}
+	}
+	focus = {
+		id = SLO_slovakian_goverment
+		mutually_exclusive = {focus = SLO_german_advisors}
+		prerequisite = {focus = SLO_nation_reborn}
+		icon = GFX_focus_generic_fascist_propaganda
+		relative_position_id = SLO_nation_reborn
+		x = 4
+		y = 1
+		text = "Slovak Goverment"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = SLO_unity
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		relative_position_id = SLO_slovakian_goverment
+		prerequisite = {focus = SLO_slovakian_goverment}
+		x = 0
+		y = 3
+		text = "United Slovakia"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			71 = {
+				set_state_category = megalopolis
+			}
+			70 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SLO_ukr_mountains
+		icon = GFX_goal_generic_territory_or_war
+		relative_position_id = SLO_unity
+		prerequisite = {focus = SLO_unity}
+		x = 2
+		y = 1
+		text = "Trainings in Mountains"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = ROM_mountain_artillery_tech_tt
+			hidden_effect = { set_technology = { mountain_gun = 1 } }
+		}
+	}
+	focus = {
+		id = SLO_masters_in_urban_warfare
+		icon = GFX_goal_generic_fortify_city
+		relative_position_id = SLO_unity
+		prerequisite = {focus = SLO_unity}
+		x = -2
+		y = 1
+		text = "Masters of Urban Warfare"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = SLO_mountain_artillery_tech_tt
+			hidden_effect = { set_technology = { urban_gun = 1 } }
+		}
+	}
+	focus = {
+		id = SLO_promote_unity
+		prerequisite = {focus = SLO_slovakian_goverment}
+		icon = GFX_focus_generic_fascist_troops
+		relative_position_id = SLO_slovakian_goverment
+		x = 3
+		y = 1
+		text = "Unification of Slovaks"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = HUN_interventionism_2
+		}
+	}
+	focus = {
+		id = SLO_manpower_from_southern_slovakia
+		icon = GFX_focus_generic_population_growth
+		prerequisite = {focus = SLO_promote_unity}
+		relative_position_id = SLO_slovakian_goverment
+		x = 4
+		y = 2
+		text = "Migration from Southern Slovakia"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			73 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			664 = {
+				add_manpower = -557434
+			}
+			70 = {
+				add_manpower = 403121
+			}
+			71 = {
+				add_manpower = 157438
+			}
+		}
+	}
+	focus = {
+		id = SLO_manpower_from_southern_Czhech_states
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = {focus = SLO_promote_unity}
+		relative_position_id = SLO_slovakian_goverment
+		x = 2
+		y = 2
+		text = "Migration from Eastern Czechia"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			73 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			75 = {
+				add_manpower = -1345650
+				
+			}
+			70 = {
+				add_manpower = 1345650
+			}
+		}
+	}
+	focus = {
+		id = SLO_slovakian_paramilitary_brigades
+		prerequisite = {focus = SLO_slovakian_goverment}
+		icon = GFX_focus_SWI_helvetic_junta
+		relative_position_id = SLO_slovakian_goverment
+		x = -2
+		y = 1
+		text = "Paramiliary Brigades"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			73 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SLO_expand_small_arms_production
+		icon = GFX_goal_generic_small_arms
+		prerequisite = {focus = SLO_slovakian_paramilitary_brigades}
+		relative_position_id = SLO_slovakian_paramilitary_brigades
+		x = -1
+		y = 1
+		text = "Rifle Production"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			73 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 15000 producer = CZE }
+		}
+	}
+	focus = {
+		id = SLO_expand_arty_production
+		prerequisite = {focus = SLO_slovakian_paramilitary_brigades}
+		icon = GFX_goal_generic_army_artillery2
+		relative_position_id = SLO_slovakian_paramilitary_brigades
+		x = 1
+		y = 1
+		text = "Expansion of Artillery Production"
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			73 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = SOV_Mass_Production
+		}
+	}
+	
+### army tree
+	focus = {
+		id = Army_research1
+		icon = GFX_focus_generic_little_entente
+		x = 30
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "Army Expansion"
+		available = {
+				
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 100
+		}
+	}
+	focus = {
+		id = Army_research_manpower
+		icon = GFX_focus_generic_little_entente
+		relative_position_id = Army_research1
+		prerequisite = {
+			focus = Army_research1
+		}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "Expansion of Reserves"
+		available = {
+				
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = ROM_reserve_divisions
+		}
+	}
+	focus = {
+		id = Army_research2
+		prerequisite = {focus = SLO_german_advisors}
+		icon = GFX_goal_generic_army_tanks
+		x = -3
+		y = 1
+		relative_position_id = SLO_german_advisors
+		cost = 5
+		text = "Czech Tank Designs"
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				technology = basic_medium_tank_chassis
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 3	
+				uses = 1
+				technology = improved_medium_tank_chassis
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+			}
+		}
+	}
+		focus = {
+		id = Army_research2_1
+		prerequisite = {focus = Army_research2}
+		icon = GFX_focus_generic_truck
+		x = -1
+		y = 1
+		relative_position_id = Army_research2
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "Mechanized Infantry"
+		available = {
+				
+		}
+
+		bypass = {
+
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_armored_cavalry
+				bonus = 1.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+			focus = {
+		id = Army_research2_2
+		prerequisite = {focus = Army_research2}
+		icon = GFX_focus_generic_combined_arms
+		x = 1
+		y = 1
+		relative_position_id = Army_research2
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "Czech Tank Plants"
+		available = {
+				
+		}
+
+		bypass = {
+
+		}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = ROM_gun_ic
+		}
+	}
+	focus = {
+		id = Army_research3
+		prerequisite = {focus = Army_research1}
+		icon = GFX_goal_generic_cavalry
+		x = 2
+		y = 1
+		relative_position_id = Army_research1
+		cost = 10
+		text = "Revision of Our Doctrine"
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = Army_research4
+		prerequisite = {focus = Army_research1}
+		icon = GFX_goal_generic_army_artillery2
+		x = -2
+		y = 1
+		relative_position_id = Army_research1
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+		text = "Artillery Innovations"
+		available = {
+				
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_artillery_modernization
+				bonus = 1.0
+				uses = 3
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = ROM_artillery_modernization
+				bonus = 1.0
+				uses = 3
+				category = rocketry
+			}
+		}
+	}
+		focus = {
+		id = Army_research5
+		icon = GFX_goal_generic_small_arms
+		x = -3
+		y = 2
+		prerequisite = {focus = Army_research4}
+		relative_position_id = Army_research1
+		cost = 7
+		text = "ZK-383"
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_modern_at_guns
+				bonus = 1.0
+				uses = 2
+				category = cat_anti_tank
+			}
+		}
+	}
+	focus = {
+		id = Army_research6
+		icon = GFX_focus_generic_paratrooper
+		x = 0
+		y = 2
+		prerequisite = {focus = Army_research4}
+		prerequisite = {focus = Army_research3}
+		relative_position_id = Army_research1
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+
+		}
+		text = "Commandos Training"
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_vanatori_de_munte
+				bonus = 1.0
+				uses = 2
+				category = mountaineers_tech
+			}
+			add_tech_bonus = {
+				name = ROM_vanatori_de_munte
+				bonus = 1.0
+				uses = 1
+				category = mountaineers_tech
+			}
+		}
+	}
+	focus = {
+		id = Army_research_at
+		icon = GFX_focus_generic_paratrooper
+		x = -2
+		y = 3
+		prerequisite = {focus = Army_research4}
+		prerequisite = {focus = Army_research3}
+		relative_position_id = Army_research1
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+
+		}
+		text = "Local Anti-Tank Development"
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_modern_at_guns
+				bonus = 1.0
+				uses = 2
+				category = cat_anti_tank
+			}
+		}
+	}
+				focus = {
+		id = Army_research7
+		prerequisite = {focus = Army_research6}
+		icon = GFX_goal_generic_CAS
+		x = 0
+		y = 3
+		relative_position_id = Army_research1
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+
+		}
+		text = "Winter Clothing"
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = ROM_winter_mountain_training
+		}
+	}
+}
+	

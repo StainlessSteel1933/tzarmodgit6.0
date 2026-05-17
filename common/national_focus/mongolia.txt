@@ -1,0 +1,879 @@
+focus_tree = {
+	id = mongolia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = MON
+		}
+		
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 2000 y = 2000 }
+	
+  # Collectivization Tree
+
+	focus = {
+		id = MON_collectivisation
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 5
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		available = {
+
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_collectivisation_1
+				add_idea = MON_collectivisation_2			
+			}
+			add_political_power = 200
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 8
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_buddhist_prosecution
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_collectivisation }
+
+		available_if_capitulated = yes
+		
+		relative_position_id = MON_collectivisation
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = MON_trial_of_the_llamas
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_buddhist_prosecution }
+
+		available_if_capitulated = yes
+		
+		relative_position_id = MON_buddhist_prosecution
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+	
+	focus = {
+		id = MON_crush_the_counter_revolutionaries
+		icon = GFX_focus_generic_soviet_politics
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_trial_of_the_llamas }
+
+		available_if_capitulated = yes
+		
+		relative_position_id = MON_trial_of_the_llamas
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	
+	focus = {
+		id = MON_sack_the_monastries
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_crush_the_counter_revolutionaries }
+
+		available_if_capitulated = yes
+		
+		relative_position_id = MON_crush_the_counter_revolutionaries
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			add_stability = -0.1
+			add_timed_idea = { idea = MON_monastries days = 1400 }
+		}
+	}
+	
+	focus = {
+		id = MON_the_purge
+		icon = GFX_focus_SOV_military_purge
+		x = 9
+		y = 1
+		cost = 15
+		prerequisite = { focus = MON_collectivisation }
+		available = {
+			has_government = communism
+			date > 1937.1.1
+		}
+		
+		
+		available_if_capitulated = yes
+		
+		available = {
+
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		complete_tooltip = {
+			
+		}
+
+		completion_reward = {
+			add_timed_idea = { idea = MON_purge_1 days = 360 }
+		}
+	}
+	
+	
+	focus = {
+		id = MON_follow_the_soviets
+		icon = GFX_focus_generic_join_comintern
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_the_purge }
+		relative_position_id = MON_the_purge
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = MON_finish_collectivisation
+		icon = GFX_goal_generic_soviet_construction
+		x = 3
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_collectivisation }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_collectivisation_2
+				add_idea = MON_collectivisation_3		
+			}
+			add_political_power = 150
+			330 = {
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_collectivised_society
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_finish_collectivisation }
+		relative_position_id = MON_finish_collectivisation
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_collectivisation_3
+				add_idea = MON_collectivisation_4
+			}
+			add_political_power = 300
+			330 = {
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_support_pan_mongolism
+		icon = GFX_focus_por_workers_of_iberia
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = MON_collectivised_society}
+		relative_position_id = MON_collectivised_society
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_stability = 0.1 
+		}
+	}
+
+	focus = {
+		id = MON_mobilize_the_steppes
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = MON_support_pan_mongolism }
+		relative_position_id = MON_support_pan_mongolism
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = MON_mobilize_steppes
+		}
+	}
+	
+
+  # University Sub Path
+
+	
+	focus = {
+		id = MON_choibalsan_university
+		icon = GFX_focus_generic_socialist_science
+		x = 7
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_collectivisation }
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = MON_soviet_experts
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_choibalsan_university }
+		relative_position_id = MON_choibalsan_university
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		available = {
+		}
+
+		completion_reward = {
+			add_ideas = MON_sov_advisors
+			every_army_leader = {
+				add_skill_level = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_support_the_anti_fascist_war
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_soviet_experts }
+		relative_position_id = MON_soviet_experts
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		available = {
+			SOV = { has_war_with = GER }
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = MON
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1000
+				producer = MON
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 1000
+				producer = MON
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_soviet_science
+		icon = GFX_focus_research
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_support_the_anti_fascist_war }
+		relative_position_id = MON_support_the_anti_fascist_war
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+  # Industrail Deveoplment
+	
+	focus = {
+		id = MON_industrial_development
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = MON_collectivisation }
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 20
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_nomad_1
+				add_idea = MON_nomad_2		
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_forced_urbanisation
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = MON_industrial_development }
+		relative_position_id = MON_industrial_development
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			330 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			add_stability = -0.05
+		}
+	}
+	
+	focus = {
+		id = MON_soviet_investments
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_forced_urbanisation }
+		relative_position_id = MON_forced_urbanisation
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = MON_sov_investments
+		}
+	}
+	
+	focus = {
+		id = MON_soviet_model
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_soviet_investments }
+		relative_position_id = MON_soviet_investments
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_nomad_2
+				add_idea = MON_nomad_3	
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_local_arms_production
+		icon = GFX_focus_war_production
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_soviet_model }
+		relative_position_id = MON_soviet_model
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_industrialised_nation
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_local_arms_production }
+		relative_position_id = MON_local_arms_production
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			remove_ideas = MON_nomad_3
+			767 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+		}
+	}
+	
+  # The Traditional Way
+
+
+  # Army
+
+	focus = {
+		id = MON_mongolia_people_army
+		icon = GFX_focus_SOV_organization_centralization_discipline
+		x = 13
+		y = 2
+		cost = 2
+		prerequisite = { focus = MON_collectivisation }
+		ai_will_do = {
+			factor = 8
+		}
+
+		completion_reward = {
+			army_experience = 150
+		}
+	}
+
+	focus = {
+		id = MON_army_modernisation
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = MON_mongolia_people_army }
+		x = -2
+		y = 1
+		relative_position_id = MON_mongolia_people_army
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			army_experience = 100
+		}
+	}
+	
+	focus = {
+		id = MON_new_rifles
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = MON_army_modernisation }
+		x = -1
+		y = 1
+		relative_position_id = MON_army_modernisation
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_new_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = MON_new_rifles }
+		x = 0
+		y = 1
+		relative_position_id = MON_new_rifles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_motorisation
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = MON_army_modernisation }
+		x = 1
+		y = 1
+		relative_position_id = MON_army_modernisation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 1.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_armour
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = MON_motorisation }
+		x = 0
+		y = 1
+		relative_position_id = MON_motorisation
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MONgaria
+				bonus = 1.15
+				uses = 2
+				category = armor
+			}
+			add_tech_bonus = {
+					name = GER_soviet_treaty
+					bonus = 1.5
+					uses = 2
+					technology = shit_guns
+					technology = medium_guns2
+					technology = medium_guns3
+					technology = heavy_guns3
+					technology = heavy_guns2
+					}
+		}
+	}
+	
+	focus = {
+		id = MON_tactical_innovations
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = MON_armour }
+		prerequisite = { focus = MON_new_artillery }
+		x = -1
+		y = 1
+		relative_position_id = MON_armour
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = MONgaria
+				cost_reduction = 0.40
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_army_traditions
+		icon = GFX_goal_generic_medium_air
+		prerequisite = { focus = MON_mongolia_people_army }
+		x = 2
+		y = 1
+		relative_position_id = MON_mongolia_people_army
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			army_experience = 100
+		}
+	}
+	
+	focus = {
+		id = MON_legacy_of_khanate
+		icon = GFX_focus_ger_great_red_menace
+		prerequisite = { focus = MON_army_traditions }
+		x = -1
+		y = 1
+		relative_position_id = MON_army_traditions
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			add_ideas = MON_spirit_of_genghis_idea
+			add_corps_commander_role = {
+				character = MON_khan
+				traits = { cavalry_leader war_hero brilliant_strategist trait_engineer }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 6
+				logistics_skill = 6
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_spirit_of_genghis
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = MON_army_traditions }
+		x = 1
+		y = 1
+		relative_position_id = MON_army_traditions
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 27
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = MON_buyannmeh
+		}
+	}
+
+}		

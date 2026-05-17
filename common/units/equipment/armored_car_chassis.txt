@@ -1,0 +1,422 @@
+# All equipment based on light tank chassis
+# change all module slots to use existing tank tech , except keep and edit turret modules and others like suspension etc.
+equipments = {
+
+	armored_car_chassis = {
+		year = 1938
+	
+		is_archetype = yes
+		is_buildable = no
+		is_convertable = yes
+		picture = archetype_armored_car_equipment			
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+
+		
+
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament
+					#car_medium_main_armament
+				}
+			}
+
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					car_light_turret_type
+					#car_medium_turret_type
+				}
+			}
+
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					car_suspension_type
+				}
+			}
+
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					car_armor_type
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					
+					tank_special_module
+					tank_radio_module
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					
+					tank_special_module
+					tank_radio_module
+				}
+			}
+		}
+		module_count_limit = {
+			module = sloped_armor
+			count < 2
+		}	
+		#module_count_limit = {
+		#	category = 
+		#	count < 2
+		#}
+		module_count_limit = {
+			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
+		#module_count_limit = {
+		#	category = 
+		#	count < 2 #one secondary turrets only
+		#}
+		# module_count_limit = {
+		# 	module = smoke_launchers
+		# 	count < 3
+		# }
+		module_count_limit = {
+			module = amphibious_drive
+			count < 2
+		}
+		module_count_limit = {
+			module = wet_ammo_storage
+			count < 2
+		}
+
+		module_count_limit = {
+			module = squeezebore_adaptor
+			count < 2
+		}
+
+		module_count_limit = {
+			module = armor_skirts
+			count < 2
+		}
+
+		module_count_limit = {
+			module = dozer_blade
+			count < 2
+		}
+
+		module_count_limit = {
+			module = easy_maintenance
+			count < 2
+		}
+		module_count_limit = {
+			module = auto_loader
+			count < 2
+		}
+		module_count_limit = {
+			module = additional_machine_guns
+			count < 2
+		}
+		module_count_limit = {
+			module = extra_ammo_storage
+			count < 2
+		}	
+		
+		lend_lease_cost = 10
+		manpower = 2
+
+	}
+
+	armored_car_chassis_0 = { #
+		abbreviation = "ac0"
+		derived_variant_name = armored_car_equipment_0
+		visual_level = 0
+		year = 1936
+		archetype = armored_car_chassis
+		priority = 2000
+		module_slots = inherit
+		build_cost_ic = 0.5
+		reliability = 1
+		breakthrough = 10
+		hardness 	= 0.2
+		soft_attack = -6
+		hard_attack = -6
+		maximum_speed = 6
+		armor_value = 5
+		fuel_consumption = 1.5
+		resources = {
+			steel = 1
+		}
+		default_modules = {
+			main_armament_slot = empty	
+			turret_type_slot = car_three_man_tank_turret
+			suspension_type_slot = car_4x4_suspension
+			armor_type_slot = car_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = empty
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			#tank_nsb_gun_upgrade
+			tank_nsb_armor_upgrade
+		}
+	}
+
+	armored_car_chassis_1 = { #nuts
+		abbreviation = "ac1"
+		derived_variant_name = armored_car_equipment_1
+		visual_level = 0
+		year = 1940
+		archetype = armored_car_chassis
+		priority = 2000
+		module_slots = inherit
+		parent = armored_car_chassis_0
+		build_cost_ic = 5
+		reliability = 1.1
+		armor_value = 15
+		soft_attack = -6
+		hard_attack = -6
+		maximum_speed = 6.5
+		hardness 	= 0.35
+		defense = 1
+		breakthrough = 10
+		fuel_consumption = 1.5
+		resources = {
+			steel = 1
+		}
+		default_modules = {
+			main_armament_slot = empty
+			turret_type_slot = car_three_man_tank_turret
+			suspension_type_slot = car_4x4_suspension
+			armor_type_slot = car_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty
+			special_type_slot_3 = empty
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			#tank_nsb_gun_upgrade
+			tank_nsb_armor_upgrade
+		}
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament
+					#car_medium_main_armament
+				}
+			}
+
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					car_light_turret_type
+					#car_medium_turret_type
+				}
+			}
+
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					car_suspension_type
+				}
+			}
+
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					car_armor_type
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					
+				}
+			}
+
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					
+				}
+			}
+
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					
+				}
+			}
+			special_type_slot_9 = {
+				required = no
+				allowed_module_categories = {
+				tank_special_ammo
+				}
+			}
+
+		}
+	}
+
+	armored_car_chassis_2 = { #there is no at sadge
+		abbreviation = "ac2"
+		derived_variant_name = armored_car_equipment_2
+		visual_level = 0
+		year = 1942
+		archetype = armored_car_chassis
+		priority = 2000
+		module_slots = inherit
+		parent = armored_car_chassis_1
+		build_cost_ic = 6
+		reliability = 1.2
+		armor_value = 25
+		soft_attack = -6
+		hard_attack = -6
+		maximum_speed = 7
+		hardness 	= 0.4
+		defense = 2
+		breakthrough = 12
+		fuel_consumption = 1.5
+		resources = {
+			steel = 1
+		}
+		default_modules = {
+			main_armament_slot = empty
+			turret_type_slot = car_three_man_tank_turret
+			suspension_type_slot = car_4x4_suspension
+			armor_type_slot = car_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			#tank_nsb_gun_upgrade
+			tank_nsb_armor_upgrade
+		}
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament
+					#car_medium_main_armament
+				}
+			}
+
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					car_light_turret_type
+					#car_medium_turret_type
+				}
+			}
+
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					car_suspension_type
+				}
+			}
+
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					car_armor_type
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					
+				}
+			}
+
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					
+				}
+			}
+
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					
+				}
+			}
+			special_type_slot_9 = {
+				required = no
+				allowed_module_categories = {
+				tank_special_ammo
+				}
+			}
+			special_type_slot_10 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					
+				}
+			}
+		}
+		
+	}
+
+	
+
+}

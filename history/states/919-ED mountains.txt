@@ -1,0 +1,19 @@
+state={
+	id=919
+	name="STATE_919"
+	provinces={
+		1546 2129 5135 7269 7570 7585 8235 8250 10436 10954 10990 11004 11018 12428 12931 
+	}
+	history={
+		add_core_of = SWE
+				1936.1.1.16 = {
+			owner = SWE 
+		}
+		owner = AST
+	}
+	impassable = yes
+	manpower=1
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

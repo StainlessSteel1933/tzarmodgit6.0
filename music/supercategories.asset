@@ -1,0 +1,20 @@
+category = {
+	name = "Super Events"
+	soundeffects = {
+	    super_barbarossa
+	    super_eastern_front
+	    super_endsieg
+	    super_geacps
+	    super_japanese_surrender
+	    super_pacific_war
+	    super_russo_japanese_war
+	    super_sino_japanese_war
+	    super_soviet_end
+	    super_supercategories.asset
+	    super_superevents.asset
+	    super_supers.asset
+	    super_super_nuke
+	    super_ww2
+	}
+	compressor = master_compressor
+}

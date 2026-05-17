@@ -1,0 +1,101 @@
+on_actions = {
+	on_weekly = {
+		effect = {
+			### ITALY
+			set_variable = {
+				var = TEMP_ITA
+				value = ITA.num_of_military_factories
+			}
+			divide_variable = {
+			    var = TEMP_ITA
+			    value = ITA.num_of_civilian_factories
+			    tooltip = divide_var_by_100_tt
+			}
+			divide_variable = {
+			    var = TEMP_ITA
+			    value = 90
+			    tooltip = divide_var_by_100_tt
+			}
+			#round_variable = TEMP_ITA
+			add_to_variable = { 
+				global.ITA_POWER = TEMP_ITA
+			}
+			### HUNGARY
+			set_variable = {
+				var = TEMP_HUN
+				value = HUN.num_of_military_factories
+			}
+			divide_variable = {
+			    var = TEMP_HUN
+			    value = HUN.num_of_civilian_factories
+			    tooltip = divide_var_by_100_tt
+			}
+			divide_variable = {
+			    var = TEMP_HUN
+			    value = 25
+			    tooltip = divide_var_by_100_tt
+			}
+			#round_variable = TEMP_HUN
+			add_to_variable = { 
+				global.HUN_POWER = TEMP_HUN
+			}
+			### ROMANIA
+			set_variable = {
+				var = TEMP_ROM
+				value = ROM.num_of_military_factories
+			}
+			divide_variable = {
+			    var = TEMP_ROM
+			    value = ROM.num_of_civilian_factories
+			    tooltip = divide_var_by_100_tt
+			}
+			divide_variable = {
+			    var = TEMP_ROM
+			    value = 30
+			    tooltip = divide_var_by_100_tt
+			}
+			#round_variable = TEMP_ROM
+			add_to_variable = { 
+				global.ROM_POWER = TEMP_ROM
+			}
+			### BULGARIA
+			set_variable = {
+				var = TEMP_BUL
+				value = BUL.num_of_military_factories
+			}
+			divide_variable = {
+			    var = TEMP_BUL
+			    value = BUL.num_of_civilian_factories
+			    tooltip = divide_var_by_100_tt
+			}
+			divide_variable = {
+			    var = TEMP_BUL
+			    value = 30
+			    tooltip = divide_var_by_100_tt
+			}
+			#round_variable = TEMP_BUL
+			add_to_variable = { 
+				global.BUL_POWER = TEMP_BUL
+			}
+			### GERMANY
+			set_variable = {
+				var = TEMP_GER
+				value = GER.num_of_military_factories
+			}
+			divide_variable = {
+			    var = TEMP_GER
+			    value = GER.num_of_civilian_factories
+			    tooltip = divide_var_by_100_tt
+			}
+			divide_variable = {
+			    var = TEMP_GER
+			    value = 90
+			    tooltip = divide_var_by_100_tt
+			}
+			#round_variable = TEMP_GER
+			add_to_variable = { 
+				global.GER_POWER = TEMP_GER
+			}
+		}
+	}
+}

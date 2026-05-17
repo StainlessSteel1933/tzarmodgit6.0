@@ -1,0 +1,56 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+		
+	fleet = {
+		name = "Base Naval Cádiz"
+		naval_base = 6906  #Cádiz
+		task_force = {
+			name = "Escuadrón de Cartagena"
+			location = 6906  #Cartagena/Murcia
+			ship = { name = "RN Caio Duilio" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
+			ship = { name = "RN Andrea Doria" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
+			ship = { name = "RN Caio Duilio" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
+			ship = { name = "RN Andrea Doria" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
+			ship = { name = "RI Zara" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
+			ship = { name = "RI Gorizia" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
+			ship = { name = "RI Emanuele Filiberto Duca d'Aosta" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Muzio Attendolo" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Eugenio di Savoia" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Raimondo Montecuccoli" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Attilio Regolo" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Giuseppe Garibaldi" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Giuseppe Garibaldi" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Muzio Attendolo" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Eugenio di Savoia" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Raimondo Montecuccoli" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Attilio Regolo" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Giuseppe Garibaldi" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RI Giuseppe Garibaldi" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ITA version_name = "Duca degli Abruzzi Class" } } } 
+			ship = { name = "RCT Maestrale" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+			ship = { name = "RCT Grecale" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+			ship = { name = "RCT Libeccio" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+			ship = { name = "RCT Scirocco" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+			ship = { name = "RCT Maestrale" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+			ship = { name = "RCT Grecale" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+			ship = { name = "RCT Libeccio" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+			ship = { name = "RCT Scirocco" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+			ship = { name = "RCT Maestrale" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+			ship = { name = "RCT Grecale" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+			ship = { name = "RCT Libeccio" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+			ship = { name = "RCT Scirocco" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } } 
+		}
+	}
+		
+} 
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+
+	
+}

@@ -1,0 +1,512 @@
+characters={
+	SPA_luis_carrero_blanco={ # Francoist
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPA_luis_carrero_blanco
+			portraits={
+				army={
+					large="GFX_portrait_SPA_luis_carrero_blanco"
+					small=GFX_portrait_SPA_luis_carrero_blanco_small
+				}
+			}
+			advisor={
+				slot = navy_chief
+				idea_token = SPA_luis_carrero_blanco
+				allowed = {
+					has_dlc = "La Resistance"
+					original_tag = SPR
+				}
+				visible = {
+					NOT = {
+						tag = SPD
+						tag = SPC
+					}
+				}
+				available = {
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 100
+			}
+			
+			navy_leader={
+				traits={ trait_SPA_nationalist_sympathies seawolf }
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				maneuvering_skill=2
+				coordination_skill=1
+				legacy_id=1118
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			name=SPA_luis_carrero_blanco
+			portraits={
+				army={
+					small="GFX_idea_generic_navy_europe_1"
+				}
+			}
+			advisor={
+				slot = navy_chief
+				idea_token = SPA_luis_carrero_blanco
+				name = SPA_luis_carrero_blanco
+				allowed = {
+					NOT = {
+						has_dlc = "La Resistance"
+					}
+					original_tag = SPR
+				}
+				visible = {
+					has_government = fascism
+				}
+				available = {
+					has_government = fascism
+				}
+				traits = {
+					navy_chief_old_guard
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+			}
+		}
+	}
+	
+	SPR_fed_wardio ={
+		name="Federico Wardio"
+		portraits={
+			civilian={
+				small=GFX_portrait_NOR_johan_ludwig_mowinckel_small
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SPR_fed_wardio
+			cost = 75.000
+			traits  = {
+				 NOR_shipping_capitalist
+			}
+		}
+	}
+	
+	SPR_manuel_azaña={
+		name="Manuel Azaña"
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/Portrait_Spain_Manuel_Azana.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MANUEL_AZANA_DESC"
+			ideology=conservatism
+			traits={ figurehead_president }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = manuel_azana
+			allowed  = {
+				original_tag  = SPR 
+			}
+			traits  = {
+				war_industrialist
+			}
+			cost = 150.000
+		}
+	}
+	SPR_josé_díaz={
+		name="José Díaz"
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/Portrait_Spain_Jose_Diaz.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JOSE_DIAZ_DESC"
+			ideology=stalinism
+			traits={ veteran_communist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SPR_josé_antonio_primo_de_rivera={
+		name="José Antonio Primo de Rivera"
+		portraits={
+			civilian={
+				large="GFX_portrait_SPA_jose_antonio_primo_de_rivera"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = jose_antonio_primo_de_rivera
+			allowed  = {
+				original_tag  = SPR 
+			}
+			traits  = {
+				captain_of_industry 
+			}
+		}
+		country_leader={
+			desc="POLITICS_JOSE_ANTONIO_PRIMO_DE_RIVERA_DESC"
+			ideology=falangism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SPR_francisco_franco={
+		name="Francisco Franco"
+		portraits={
+			civilian={
+				large="GFX_portrait_spain_francisco_franco"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = francisco_franco
+			ledger = army 
+			allowed  = {
+				original_tag  = SPR 
+			}
+			traits  = {
+				army_chief_offensive_2 
+			}
+			cost = 150.000
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist trait_cautious infantry_officer politically_connected logistics_wizard panzer_leader ranger organizer}
+			skill=5
+			attack_skill=7
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1108
+		}
+		country_leader={
+			desc="POLITICS_FRANCISCO_FRANCO_DESC"
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SPR_josé_asensio_torrado={
+		name="José Asensio Torrado"
+		portraits={
+			army={
+				small="GFX_portrait_SPR_jose_asensio_torrado_small"
+			}
+			army={
+				large="GFX_portrait_SPR_jose_asensio_torrado"
+			}
+		}
+		field_marshal={
+			traits={ defensive_doctrine infantry_leader desert_fox ranger commando }
+			skill=5
+			attack_skill=7
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=1101
+		}
+	}
+	SPR_vicente_rojo_lluch={
+		name="Vicente Rojo Lluch"
+		portraits={
+			army={
+				small="GFX_portrait_SPR_vicente_rojo_lluch_small"
+			}
+			army={
+				large="GFX_portrait_SPR_vicente_rojo_lluch"
+			}
+		}
+		corps_commander={
+			traits={ career_officer politically_connected skilled_staffer trait_engineer panzer_leader commando }
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=1102
+		}
+	}
+	SPR_josé_miaja={
+		name="José Miaja"
+		portraits={
+			army={
+				small="GFX_portrait_SPR_jose_miaja_small"
+			}
+			army={
+				large="GFX_portrait_SPR_jose_miaja"
+			}
+		}
+		corps_commander={
+			traits={ old_guard ranger harsh_leader politically_connected infantry_leader skilled_staffer urban_assault_specialist }
+			skill=4
+			attack_skill=7
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=4
+			legacy_id=1103
+		}
+	}
+	SPR_mohamed_meziane={
+		name="Mohamed Meziane"
+		portraits={
+			army={
+				small="GFX_portrait_SPA_mohamed_meziane_small"
+			}
+			army={
+				large="GFX_portrait_SPA_mohamed_meziane"
+			}
+		}
+		corps_commander={
+			traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies skilled_staffer desert_fox }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1109
+		}
+	}
+	SPR_gonzalo_queipo_de_llano={
+		name="Gonzalo Queipo de Llano"
+		portraits={
+			army={
+				small="GFX_portrait_SPA_gonzalo_queipo_de_llano_small"
+			}
+			army={
+				large="GFX_portrait_SPA_gonzalo_queipo_de_llano"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = gonzalo_queipo_de_llano
+			ledger  = army 
+			allowed  = {
+				original_tag  = SPR 
+			}
+			traits  = {
+				army_armored_3 
+			}
+			cost = 150.000
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		corps_commander={
+			traits={ old_guard brilliant_strategist career_officer trait_reckless cavalry_officer trait_SPA_nationalist_sympathies ranger skilled_staffer trickster panzer_leader desert_fox }
+			skill=5
+			attack_skill=7
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=1110
+		}
+	}
+	SPR_emilio_mola={
+		name="Emilio Mola"
+		portraits={
+			army={
+				small="GFX_portrait_SPA_emilio_mola_small"
+			}
+			army={
+				large="GFX_portrait_SPA_emilio_mola"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = emilio_mola
+			ledger  = army 
+				allowed  = {
+					original_tag  = SPR 
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				cost = 150.000
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		field_marshal={
+			traits={ trait_cautious trait_SPA_nationalist_sympathies thorough_planner organisational_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1111
+		}
+	}
+	SPR_juan_yagüe={
+		name="Juan Yagüe"
+		portraits={
+			army={
+				small="GFX_portrait_SPA_juan_yague_small"
+			}
+			army={
+				large="GFX_portrait_SPA_juan_yague"
+			}
+		}
+		
+			advisor={
+			slot = high_command
+			idea_token = juan_yagüe
+			ledger  = army 
+				allowed  = {
+					original_tag  = SPR 
+				}
+				traits  = {
+					army_logistics_2 
+				}
+				cost = 150.000
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		corps_commander={
+			traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1112
+		}
+	}
+	SPR_agustín_muñoz_grandes={
+		name="Agustín Muñoz Grandes"
+		portraits={
+			army={
+				small="GFX_portrait_SPA_augustin_muynoz_grandes_small"
+			}
+			army={
+				large="GFX_portrait_SPA_augustin_muynoz_grandes"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = agustín_muñoz_grandes
+			ledger  = army 
+				allowed  = {
+					original_tag  = SPR 
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				cost = 150.000
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer trait_SPA_nationalist_sympathies trickster panzer_leader hill_fighter }
+			skill=4
+			attack_skill=4
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=1113
+		}
+	}
+	SPR_josé_enrique_varela={
+		name="José Enrique Varela"
+		portraits={
+			army={
+				small="GFX_portrait_SPA_jose_enrique_varela_small"
+			}
+			army={
+				large="GFX_portrait_SPA_jose_enrique_varela"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = josé_enrique_varela
+			ledger  = army 
+				allowed  = {
+					original_tag  = SPR 
+				}
+				traits  = {
+					army_commando_3 
+				}
+				cost = 150.000
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		corps_commander={
+			traits={ trait_SPA_nationalist_sympathies organizer infantry_leader hill_fighter }
+			skill=4
+			attack_skill=6
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1114
+		}
+	}
+	SPR_miguel_cabanellas={
+		name="Miguel Cabanellas"
+		portraits={
+			army={
+				small="GFX_portrait_SPA_miguel_cabanellas_small"
+			}
+			army={
+				large="GFX_portrait_SPA_miguel_cabanellas"
+			}
+		}
+		corps_commander={
+			traits={ old_guard cavalry_officer armor_officer trait_SPA_nationalist_sympathies organizer }
+			skill=4
+			attack_skill=1
+			defense_skill=7
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1115
+		}
+	}
+	SPR_josé_millán_astray={
+		name="José Millán Astray"
+		portraits={
+			army={
+				small="GFX_portrait_SPA_jose_millan_astray_small"
+			}
+			army={
+				large="GFX_portrait_SPA_jose_millan_astray"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless war_hero trait_SPA_nationalist_sympathies }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=5
+			legacy_id=1116
+		}
+		advisor={
+			slot = theorist
+			idea_token = jose_millan_astray
+			ledger  = army 
+				allowed  = {
+					original_tag  = SPR 
+				}
+				research_bonus  = {
+					land_doctrine  = 0.150
+				}
+				traits  = {
+					military_theorist 
+				}
+				cost = 150.000
+		}
+	}
+}

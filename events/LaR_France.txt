@@ -1,0 +1,36 @@
+﻿#La Resistance France events
+
+###   ##  #   ### ### ###  ##   ##  #       #   # ###  ##  #   ### #  #  ##  ### 
+#  # #  # #    #   #   #  #  # #  # #       #   #  #  #  # #   #   ## # #  # #   
+###  #  # #    #   #   #  #    #### #        # #   #  #  # #   ##  # ## #    ##  
+#    #  # #    #   #   #  #  # #  # #        # #   #  #  # #   #   #  # #  # #   
+#     ##  ### ###  #  ###  ##  #  # ###       #   ###  ##  ### ### #  #  ##  ### 
+
+
+add_namespace = lar_france_political_violence
+
+# right wing riots
+country_event = {
+	id = lar_france_political_violence.1
+	title = lar_france_political_violence.1.t
+	desc = lar_france_political_violence.1.desc
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+
+	option = {
+		name = lar_france_political_violence.1.b #prosecute
+	}
+}
+
+# communist riots
+country_event = {
+	id = lar_france_political_violence.2
+	title = lar_france_political_violence.1.t
+	desc = lar_france_political_violence.2.desc
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+
+	option = {
+		name = lar_france_political_violence.1.b #prosecute
+	}
+}

@@ -1,0 +1,387 @@
+﻿division_template = {
+	name = "Dywizja Piechoty"		
+	division_names_group = POL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		anti_air_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		anti_tank_brigade = { x = 4 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+		anti_air = { x = 0 y = 5 }
+	}
+}
+division_template = {
+	name = "Light Tank Division"
+
+	division_names_group = POL_Arm_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }	
+		light_armor = { x = 2 y = 3 }
+		motorized x = 3 y = 0 }
+        motorized x = 3 y = 1 }
+		motorized x = 3 y = 2 }
+        motorized x = 3 y = 3 }
+		motorized x = 4 y = 0 }
+        motorized x = 4 y = 1 }
+		motorized x = 4 y = 2 }
+        motorized x = 4 y = 3 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        light_tank_recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+		field_hospital = { x = 0 y = 5 }
+		anti_air = { x = 0 y = 6 }
+	}
+}
+	units = {
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 3544
+		division_template = "Dywizja Piechoty"
+	}
+
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 9508
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 9508
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 9508
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 6464
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 6464
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 13205
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 13205
+		division_template = "Dywizja Piechoty"
+	}
+
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 9427
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 9427
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 11413
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 3410
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 466
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 6431
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 6460
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 9425
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 3743
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 548
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 548
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 243
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 6401
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 362
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 362
+		division_template = "Dywizja Piechoty"
+	}
+		division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 3295
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 3230
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 6259
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 9290
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 9316
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 11329
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 11357
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 400
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 3254
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 506
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 506
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 584
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 584
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 3586
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 3586
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 11428
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 493
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 11430
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 3324
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 389
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.45
+		name = "Dywizja"
+		location = 3544
+		division_template = "Light Tank Division"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.45
+		name = "Dywizja"
+		location = 3544
+		division_template = "Light Tank Division"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 6567
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 6567
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 3482
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 3482
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 6416
+		division_template = "Dywizja Piechoty"
+	}
+	division = {
+		start_equipment_factor = 1.00 start_experience_factor = 0.3
+		name = "Dywizja"
+		location = 6416
+		division_template = "Dywizja Piechoty"
+	}
+}
+	

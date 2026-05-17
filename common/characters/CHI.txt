@@ -1,0 +1,57 @@
+characters={
+	CHI_chiang_kaishek={
+		name="Chiang Kai-Shek"
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/Portrait_China_Chiang_Kai_Shek.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ the_young_magnate }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHI_mao_zedong={
+		name="Mao Zedong"
+		portraits={
+			civilian={
+				large="GFX_portrait_prc_mao_zedong"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHI_zhang_jiang={
+		name="Zhang Jiang"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Asia_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			expire="1943.1.1.12"
+			id=-1
+		}
+	}
+	CHI_kwong_shen={
+		name="Kwong Shen"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Asia_Generic_3"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+}

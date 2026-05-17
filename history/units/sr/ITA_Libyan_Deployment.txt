@@ -1,0 +1,204 @@
+﻿division_template = {
+
+	name = "Libyan Garrisons"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 } 
+
+	}
+}
+
+units = {
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 12082
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 1060
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 4060
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 10120
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 4136
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 1130
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 1130
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 9992
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 12476
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 4151
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 12094
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 10123
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 11954
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 11954
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 4120
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 1127
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 7209
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 4194
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 1149
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 1149
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 1189
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 12039
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 12082
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 1060
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 4060
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 10120
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 4136
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 1130
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 9992
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = 0.3
+		location = 12476
+		division_template = "Libyan Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+}

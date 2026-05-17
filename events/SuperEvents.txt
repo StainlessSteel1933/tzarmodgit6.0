@@ -1,0 +1,549 @@
+################
+# SUPER EVENTS #
+################
+
+add_namespace = super
+add_namespace = super_info
+
+country_event = { #info
+	id = super_info.1
+	title = super_info.1.t
+	desc = super_info.1.d
+	picture = GFX_super_event_picture
+
+	is_triggered_only = yes
+	
+	fire_only_once = no
+
+	option = { #changelog
+		name = super_info.1.a
+		country_event = { id = super_info.2 }
+	}
+	option = { #bye
+		name = super_info.1.b
+	}
+}
+
+country_event = { #changelog
+	id = super_info.2
+	title = super_info.2.t
+	desc = super_info.2.d
+	picture = GFX_report_event_physics_lab_01
+
+	is_triggered_only = yes
+	
+	fire_only_once = no
+
+	option = { #bye
+		name = super_info.2.a
+	}
+}
+
+country_event = {	#ww2
+	id = super.1
+	title = super.1.t
+	desc = super.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			GER = { has_government = fascism }
+			OR = {
+				GER = { has_offensive_war_with = ENG }
+				GER = { has_offensive_war_with = FRA }
+			}
+			NOT = {
+				has_global_flag = 1_sr_ev
+			}
+		}
+	}
+
+	option = {
+		name = super.1.a
+		every_country = {
+		        set_country_flag = GER_WW2
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_ww2"
+		#WW2 Flag
+		set_global_flag = 1_sr_ev
+		set_country_flag = Super_WW2
+	}
+}
+
+country_event = {	#Second Sino Japanese War
+	id = super.2
+	title = super.2.t
+	desc = super.2.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		JAP = { has_war_with = CHI }
+	}
+
+	option = {
+		name = super.2.a
+		every_country = {
+		        set_country_flag = JAP_Sino_Japanese
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_sino_japanese_war"
+	}
+}
+
+
+country_event = {	#Pacific War
+	id = super.4
+	title = super.4.t
+	desc = super.4.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		USA = { has_defensive_war_with = JAP }
+	}
+	
+	option = {
+		name = super.4.a
+		every_country = {
+		        set_country_flag = USA_Pacific_War
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_pacific_war"
+	}
+}
+
+country_event = {	#Barb
+	id = super.5
+	title = super.5.t
+	desc = super.5.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			GER = { has_offensive_war_with = SOV }
+			GER = { has_government = fascism }
+		}
+	}
+	
+	option = {
+		name = super.5.a
+		every_country = {
+		        set_country_flag = GER_Barbarossa
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_barbarossa"
+	}
+}
+
+country_event = {	#Fall of UK
+	id = super.13
+	title = super.13.t
+	desc = super.13.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			NOT = {
+				country_exists = ENG
+			}
+			ENG = { has_capitulated = yes }
+		}
+	}
+	
+	option = {
+		name = super.13.a
+		every_country = {
+		        set_country_flag = ENG_fall
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_british_collapse"
+	}
+}
+
+country_event = {	#Fall of Germany
+	id = super.14
+	title = super.14.t
+	desc = super.14.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			NOT = {
+				country_exists = GER
+			}
+			GER = { has_capitulated = yes }
+		}
+	}
+	
+	option = {
+		name = super.14.a
+		every_country = {
+		        set_country_flag = GER_fall
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_fall_germany"
+	}
+}
+
+country_event = {	#Fall of Russia
+	id = super.15
+	title = super.15.t
+	desc = super.15.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			NOT = {
+				country_exists = SOV
+			}
+			SOV = {
+				NOT = {
+					owns_state = 219
+				}
+			 }
+		}
+	}
+	
+	option = {
+		name = super.15.a
+		every_country = {
+		        set_country_flag = SOV_fall
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_soviet_end"
+	}
+}
+
+country_event = {	#Fall of Japan
+	id = super.16
+	title = super.16.t
+	desc = super.16.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			OR = {
+				NOT = {
+					country_exists = JAP
+				}
+				JAP = { has_capitulated = yes }
+			}
+			date < 1940.1.1
+		}
+	}
+	
+	option = {
+		name = super.16.a
+		every_country = {
+		        set_country_flag = JAP_fall
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_japanese_surrender"
+	}
+}
+
+country_event = {	#Fall of USA
+	id = super.17
+	title = super.17.t
+	desc = super.17.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			NOT = {
+				country_exists = USA
+			}
+			USA = { has_capitulated = yes }
+		}
+	}
+	
+	option = {
+		name = super.17.a
+		every_country = {
+		        set_country_flag = USA_fall
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_fall_america"
+	}
+}
+
+country_event = {	#1st Nuke
+	id = super.18
+	title = super.18.t
+	desc = super.18.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = first_nuke_dropped
+	}
+	
+	option = {
+		name = super.18.a
+		every_country = {
+		        set_country_flag = SP_Nuke
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_nuke"
+	}
+}
+
+country_event = { #Endsieg
+	id = super.28
+	title = super.28.t
+	desc = super.28.d 
+	picture = GFX_report_event_diplomatic_message
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		GER = { has_government = fascism }
+		
+		OR = { #Berlin
+			GER = { has_full_control_of_state = 64 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 64
+			}
+		}
+		OR = { #Vienna
+			GER = { has_full_control_of_state = 4 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 4
+			}
+		}
+		OR = { #London
+			GER = { has_full_control_of_state = 126 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 126
+			}
+		}
+		OR = { #Paris
+			GER = { has_full_control_of_state = 16 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 16
+			}
+		}
+		OR = { #Amsterdam
+			GER = { has_full_control_of_state = 7 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 7
+			}
+		}
+		OR = { #Brussels
+			GER = { has_full_control_of_state = 6 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 6
+			}
+		}
+		OR = { #Rome
+			GER = { has_full_control_of_state = 2 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 2
+			}
+		}
+		OR = { #Athens
+			GER = { has_full_control_of_state = 47 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 47
+			}
+		}
+		OR = { #Prague
+			GER = { has_full_control_of_state = 9 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 9
+			}
+		}
+		OR = { #Warsaw
+			GER = { has_full_control_of_state = 10 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 10
+			}
+		}
+		OR = { #Copenhagen
+			GER = { has_full_control_of_state = 37 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 37
+			}
+		}
+		OR = { #Oslo
+			GER = { has_full_control_of_state = 110 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 110
+			}
+		}
+		OR = { #Bucharest
+			GER = { has_full_control_of_state = 46 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 46
+			}
+		}
+		OR = { #Budapest
+			GER = { has_full_control_of_state = 43 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 43
+			}
+		}
+		OR = { #Belgrade
+			GER = { has_full_control_of_state = 107 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 107
+			}
+		}
+		OR = { #Sofia
+			GER = { has_full_control_of_state = 48 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 48
+			}
+		}
+		OR = { #Kiev
+			GER = { has_full_control_of_state = 202 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 202
+			}
+		}
+		OR = { #Leningrad
+			GER = { has_full_control_of_state = 195 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 195
+			}
+		}
+		OR = { #Moscow
+			GER = { has_full_control_of_state = 219 }
+			any_other_country = {
+				is_in_faction_with = GER
+				has_full_control_of_state = 219
+			}
+		}
+	}
+	
+	option = {
+		name = super.28.a 
+		every_country = {
+				set_country_flag = GER_Endsieg
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_endsieg"
+	}
+}
+
+country_event = { #2nd Russo-Japanese War
+	id = super.39
+	title = super.39.t
+	desc = super.39.d
+	picture = GFX_report_event_diplomatic_message
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		JAP = { has_war_with = SOV }
+	}
+	
+	option = {
+		name = super.39.a
+		every_country = {
+				set_country_flag = JAP_Russo
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_russo_japanese_war"
+	}
+}
+
+country_event = { #Co-Prosperity
+	id = super.41
+	title = super.41.t
+	desc = super.41.d
+	picture = GFX_report_event_diplomatic_message
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		JAP = {
+			has_completed_focus = Victory_in_the_Pacific
+		}
+	}
+	
+	option = {
+		name = super.41.a
+		every_country = {
+				set_country_flag = JAP_GEACPS
+				set_country_flag = Super_Event_Visible}
+		sound_effect = "super_geacps"
+	}
+}

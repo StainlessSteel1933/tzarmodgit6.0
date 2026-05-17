@@ -1,0 +1,195 @@
+RAJ_army_dynamic_modifier = {
+
+	enable = { always = yes }
+
+	icon = GFX_idea_raj_all_india_forward_bloc
+
+	special_forces_attack_factor = RAJ_special_forces_attack_factor #0.05
+	special_forces_defence_factor = RAJ_special_forces_defence_factor #0.05
+	special_forces_out_of_supply_factor = RAJ_special_forces_out_of_supply_factor # 0.1
+	conscription_factor = RAJ_conscription_factor #0.1
+	supply_consumption_factor = RAJ_supply_consumption_factor #-0.05
+	max_dig_in_factor = RAJ_army_max_dig_in_factor #0.1
+	army_core_defence_factor = RAJ_army_core_defence_factor #0.05
+	army_infantry_attack_factor = RAJ_infantry_attack
+	motorized_attack_factor = RAJ_motorized_attack
+	mechanized_attack_factor = RAJ_mechanized_attack
+	out_of_supply_factor = RAJ_out_of_supply
+	army_armor_attack_factor = RAJ_armor_attack
+	army_artillery_attack_factor = RAJ_army_artillery_attack_factor
+	heat_attrition_factor = RAJ_heat
+	army_org_factor = RAJ_army_org_factor
+	army_attack_factor = RAJ_army_attack
+	cavalry_attack_factor = RAJ_cav_attack
+	cavalry_defence_factor = RAJ_cav_defence
+	org_loss_when_moving = RAJ_org_loss
+	extra_marine_supply_grace = RAJ_marine_grace
+	max_planning = RAJ_max_planning
+	planning_speed = RAJ_planning_speed_factor
+	army_speed_factor = RAJ_army_speed_factor #-0.1
+	naval_invasion_capacity = RAJ_naval_invasion_capacity #10
+	air_superiority_bonus_in_combat = RAJ_air_superiority_bonus_in_combat #0.05
+	army_attack_against_major_factor = RAJ_tyranny
+	
+	army_core_attack_factor = RAJ_core_attack_factor
+	army_armor_defence_factor = RAJ_army_armor_defence_factor
+	coordination_bonus = RAJ_military_coordination_bonus
+	modifier_army_sub_unit_cavalry_speed_factor = RAJ_modifier_army_sub_unit_cavalry_speed_factor
+	modifier_army_sub_unit_militia_attack_factor = RAJ_peoples_army_militia_attack
+	modifier_army_sub_unit_militia_defence_factor = RAJ_peoples_army_militia_defence
+	minimum_training_level = RAJ_military_minimum_training_level
+	initiative_factor = RAJ_military_initiative_factor
+	land_bunker_effectiveness_factor = RAJ_land_bunker_effectiveness_factor
+	land_night_attack = RAJ_land_night_attack
+	cas_damage_reduction = RAJ_modifier_cas_damage_reduction
+	coastal_bunker_effectiveness_factor = RAJ_coastal_bunker_effectiveness_factor
+	no_supply_grace = RAJ_no_supply_grace
+	breakthrough_factor = RAJ_breakthrough_factor
+	supply_combat_penalties_on_core_factor = RAJ_supply_combat_penalties_on_core_factor
+	
+	modifier_army_sub_unit_camelry_speed_factor = RAJ_modifier_army_sub_unit_camelry_speed_factor
+	modifier_army_sub_unit_camelry_attack_factor = RAJ_modifier_army_sub_unit_camelry_attack_factor
+	modifier_army_sub_unit_marine_attack_factor = RAJ_modifier_army_sub_unit_marine_attack_factor
+	
+	
+	
+}
+
+
+idea_RAJ_sikh_approval = {
+	icon = GFX_modifiers_RAJ_sikh_approval
+	state_production_speed_buildings_factor = 0.15
+	local_supplies = 0.2
+	local_manpower = 0.3
+
+	remove_trigger = {	
+		CONTROLLER = {
+			AND = {
+				NOT = { is_raj_or_raj_inheritor = yes }
+				NOT = { is_subject_of = RAJ }
+			}
+		}	
+	}
+}
+
+
+idea_RAJ_sikh_approval_1 = {
+	icon = GFX_modifiers_RAJ_sikh_approval
+	state_production_speed_buildings_factor = 0.15
+	local_supplies = 0.2
+	local_manpower = 0.15
+
+	remove_trigger = {	
+		CONTROLLER = {
+			AND = {
+				NOT = { is_raj_or_raj_inheritor = yes }
+				NOT = { is_subject_of = RAJ }
+			}
+		}	
+	}
+}
+
+
+idea_RAJ_sikh_approval_2 = {
+	icon = GFX_modifiers_RAJ_sikh_approval
+	state_production_speed_buildings_factor = 0.15
+	local_supplies = 0.2
+
+	remove_trigger = {	
+		CONTROLLER = {
+			AND = {
+				NOT = { is_raj_or_raj_inheritor = yes }
+				NOT = { is_subject_of = RAJ }
+			}
+		}	
+	}
+}
+
+idea_RAJ_indian_railways = {
+	icon = GFX_idea_ARG_invest_in_railways 
+	production_speed_rail_way_factor = RAJ_indian_railway_production_speed_rail_way_factor 
+	production_speed_supply_node_factor = RAJ_indian_railway_production_speed_supply_node_factor
+	production_speed_infrastructure_factor = RAJ_indian_railway_production_speed_infrastructure_factor 
+	industrial_capacity_factory = RAJ_indian_railway_industrial_capacity_factory
+	stability_factor = RAJ_indian_railway_stability_factor
+}
+
+idea_RAJ_rural_development = {
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	state_resources_factor = 0.15
+	state_production_speed_buildings_factor = 0.15
+	local_building_slots = 2
+}
+
+idea_RAJ_large_scale_urbanization = {
+	icon = GFX_modifiers_generic_construction
+	local_manpower = 0.15
+	local_supplies = 0.2
+	state_production_speed_buildings_factor = 0.25
+	local_building_slots_factor = 0.25
+}
+
+# RAJ Loyalist Branch
+RAJ_a_loyal_government = {
+	enable = { always = yes }
+
+	icon = GFX_idea_RAJ_loyal_government
+
+	#Starting
+	political_power_factor = RAJ_a_loyal_government_political_power_factor #0.05
+	master_ideology_drift = RAJ_a_loyal_government_master_ideology_drift #0.3
+
+	#Later
+	consumer_goods_factor = RAJ_a_loyal_government_consumer_goods_factor #-0.1
+	political_advisor_cost_factor = RAJ_a_loyal_government_political_advisor_cost_factor  #-0.5
+	party_popularity_stability_factor = RAJ_a_loyal_government_party_popularity_stability_factor #0.1
+	resistance_target = RAJ_a_loyal_government_resistance_target
+	resistance_damage_to_garrison = RAJ_a_loyal_government_resistance_damage_to_garrison
+	extra_trade_to_overlord_factor = RAJ_a_loyal_government_extra_trade_to_overlord_factor
+	conscription_factor = RAJ_a_loyal_government_conscription_factor
+	research_speed_factor = RAJ_a_loyal_government_research_speed_factor
+	industrial_capacity_dockyard = RAJ_a_loyal_government_industrial_capacity_dockyard
+	industrial_capacity_factory = RAJ_a_loyal_government_industrial_capacity_factory
+	
+	production_speed_buildings_factor = RAJ_loyal_government_production_speed_buildings_factor
+	local_resources_factor = RAJ_loyal_government_local_resources_factor
+	production_speed_rail_way_factor = RAJ_loyal_government_production_speed_rail_way_factor 
+	production_speed_supply_node_factor = RAJ_loyal_government_production_speed_supply_node_factor
+	autonomy_gain = RAJ_loyal_government_autonomy_gain
+	
+}
+
+#RAJ
+idea_RAJ_independence_movement = { #STATE MODIFIER
+	enable = { always = yes }
+	icon = GFX_idea_RAJ_independence_movement
+	resistance_activity = RAJ_resistance_activity_independence_movement
+	resistance_target  = RAJ_resistance_target_independence_movement
+	autonomy_gain = RAJ_autonomy_gain_independence_movement
+	communism_drift = RAJ_communism_drift_independence_movement
+	political_power_factor = RAJ_independence_movement_pp
+	research_speed_factor = RAJ_independence_movement_research
+	production_speed_industrial_complex_factor = RAJ_independence_movement_civ
+	stability_factor = RAJ_independence_movement_stability
+	consumer_goods_factor = RAJ_independence_movement_consumer_goods
+	industrial_capacity_factory = RAJ_independence_movement_industrial_capacity_factory
+	production_speed_infrastructure_factor = RAJ_independence_movement_infra
+	production_factory_efficiency_gain_factor = RAJ_independence_movement_factory_efficiency_gain_factor
+	stability_weekly = RAJ_independence_movement_stability_weekly
+	surrender_limit = RAJ_independence_movement_surrender_limit
+
+}
+
+idea_RAJ_royal_indian_navy = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_navy_bonus
+	experience_gain_navy = RAJ_royal_indian_navy_xp_gain
+
+	navy_anti_air_attack_factor = RAJ_royal_indian_navy_navy_anti_air_attack_factor
+	repair_speed_factor = RAJ_royal_indian_navy_repair_speed_factor
+	naval_coordination = RAJ_royal_indian_navy_naval_coordination
+	navy_capital_ship_defence_factor =	RAJ_royal_indian_navy_capital_ship_defence_factor  
+	navy_screen_defence_factor = RAJ_royal_indian_navy_screen_defence_factor
+	
+
+}

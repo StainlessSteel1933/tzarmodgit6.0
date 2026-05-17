@@ -1,0 +1,19 @@
+units= {
+	##### NAVAL UNITS #####
+		fleet = {
+		name = "Forces Navales Françaises"			
+		naval_base = 4948 # DAKar
+			task_force = { 
+				name = FNF
+				location = 4948
+				ship = { name = "Richelieu" definition = battleship start_experience_factor = 0.50 equipment = { ship_hull_heavy_2 = { amount = 1 owner = FRF version_name = "Richelieu Class"  } } } 
+				ship = { name = "Suffren" definition = heavy_cruiser start_experience_factor = 0.50 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "Suffren Class"  } } } 
+				ship = { name = "Galissonnière" definition = light_cruiser start_experience_factor = 0.50 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "La Galissonnière Class"  } } } 
+				ship = { name = "Gloire" definition = light_cruiser start_experience_factor = 0.50 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "La Galissonnière Class"  } } } 
+				ship = { name = "Montcalm" definition = light_cruiser start_experience_factor = 0.50 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "La Galissonnière Class"  } } } 
+				ship = { name = "Georges Leygues" definition = light_cruiser start_experience_factor = 0.50 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "La Galissonnière Class"  } } } 
+				ship = { name = "Fantasque" definition = light_cruiser start_experience_factor = 0.50 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "La Galissonnière Class"  } } } 
+				ship = { name = "" definition = light_cruiser start_experience_factor = 0.50 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "La Galissonnière Class"  } } } 
+			}
+		}
+}

@@ -1,0 +1,29 @@
+state={
+	id=900
+	name="Mountains"
+	provinces={
+		27 102 188 199 3059 3090 3093 3094 3114 3180 3188 6080 6114 6136 6184 6204 6216 9032 9047 9127 9135 9170 9227 11037 11135 11198 
+	}
+	history = {
+		owner = NOR
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 1
+			air_base = 4
+			6115 = {
+				naval_base = 6
+				coastal_bunker = 3
+
+			}
+
+		}
+		add_core_of = NOR
+	}
+	impassable = yes
+	state_category=wasteland
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

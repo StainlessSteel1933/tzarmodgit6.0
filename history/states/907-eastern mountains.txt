@@ -1,0 +1,24 @@
+state={
+	id=907
+	name="STATE_907"
+	provinces={
+		711 3689 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			711 1
+		}
+		add_core_of = ROM
+
+	}
+	manpower=52700
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=9.000
+}

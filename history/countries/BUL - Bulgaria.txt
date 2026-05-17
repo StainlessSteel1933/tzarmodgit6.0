@@ -1,0 +1,278 @@
+﻿capital = 48
+
+oob = "BUL_1936"
+army_experience = 10
+navy_experience = 10
+air_experience = 2
+add_ideas = {
+	limited_conscription
+	#no_training 
+	BUL_second_national_catastrophe
+	BUL_army_restrictions
+	COOM_volunteers_minors
+}
+
+
+add_timed_idea = { idea = GER_mefo_bills_1 days = 1330 }
+
+
+add_timed_idea = { idea = france_production_regrowth days = 30 }
+
+set_stability = 0.65
+set_war_support = 0.30
+
+set_research_slots = 3
+
+diplomatic_relation = {   country = AUS relation = military_access  active = yes  }
+diplomatic_relation = {   country = ITA relation = military_access  active = yes  }
+
+add_intel = { target = JAP civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+
+add_to_tech_sharing_group = axis_research 
+
+add_relation_modifier = {
+    target = ITA
+    modifier = stahlpakt
+}
+add_relation_modifier = {
+    target = ROM
+    modifier = stahlpakt
+}
+add_relation_modifier = {
+    target = SPR
+    modifier = stahlpakt
+}
+add_relation_modifier = {
+    target = HUN
+    modifier = stahlpakt
+}
+add_relation_modifier = {
+    target = GER
+    modifier = stahlpakt
+}
+if = { limit = { country_exists = CRO }
+	add_relation_modifier = {
+    	target = CRO
+    	modifier = stahlpakt
+	}
+}
+add_opinion_modifier = {
+	target = GER
+	modifier = german_trade_monopoly
+}
+
+
+set_rule = { can_be_spymaster = no }
+
+set_technology = { basic_train = 1
+	interwar_antiair = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	iw_small_airframe = 1
+	gw_artillery = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1	
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	trench_warfare = 1
+	transport = 1
+	armored_car1 = 1
+	interwar_antitank = 1
+}
+
+set_variable = {
+    var = min_fuel
+    value = 0.800
+}
+
+set_convoys = 100
+add_equipment_to_stockpile = {
+         type = artillery_equipment_1
+         amount = 505
+         producer = BUL
+}  
+add_equipment_to_stockpile = {
+         type = support_equipment
+         amount = 90
+         producer = BUL
+} 
+
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 8000
+         producer = BUL
+} 
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 4000
+	producer = BUL
+} 
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+    amount = 240
+    producer = BUL
+}
+
+
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1931.6.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 24
+	fascism = 44
+	communism = 2
+	neutrality = 30
+}
+
+recruit_character = BUL_nikola_totev_markov
+recruit_character = BUL_boris_iii
+recruit_character = BUL_georgi_dimitrov
+recruit_character = BUL_nikola_petkov
+recruit_character = BUL_hristo_lukov
+recruit_character = BUL_vladimir_stoychev
+recruit_character = BUL_konstantin_ivanov_bekyarov
+recruit_character = BUL_georgi_nikolov_popov
+recruit_character = BUL_teodosi_daskalov
+recruit_character = BUL_ivan_valkov
+recruit_character = BUL_kiril_stanchev
+recruit_character = BUL_asen_dobrev_nikolov
+recruit_character = BUL_blagoi_ivanov
+recruit_character = BUL_georgi_ivanov_kyoseivanov
+recruit_character = BUL_dobri_bozhilov
+recruit_character = BUL_stoyan_stoyanov
+recruit_character = BUL_konstantin_muraviev
+recruit_character = BUL_bonyu_stoev_pironkov
+recruit_character = BUL_kiril_dimitrov_yanchule
+recruit_character = BUL_vasil_boydev
+recruit_character = BUL_nikola_hadzipetkov
+recruit_character = BUL_atanas_pavlov_zhilkov
+recruit_character = BUL_bogdan_filov
+recruit_character = BUL_federian_wardilov
+
+# create_country_leader = {
+# 	name = "Boris III"
+# 	desc = "POLITICS_BORIS_III_DESC"
+# 	picture = "Portrait_Bulgaria_Boris_III.dds"
+# 	expire = "1965.1.1"
+# 	ideology = despotism
+# 	traits = {
+# 		#
+# 	}
+# }
+
+# create_country_leader = {
+# 	name = "Georgi Dimitrov"
+# 	desc = "POLITICS_GEORGI_DIMITROV_DESC"
+# 	picture = "Portrait_Bulgaria_Georgi_Dimitrov.dds"
+# 	expire = "1965.1.1"
+# 	ideology = leninism
+# 	traits = {
+# 		#
+# 	}
+# }
+
+# create_country_leader = {
+# 	name = "Nikola Petkov"
+# 	desc = "POLITICS_NIKOLA_PETKOV_DESC"
+# 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+# 	expire = "1965.1.1"
+# 	ideology = socialism
+# 	traits = {
+# 		#
+# 	}
+# }
+
+ create_country_leader = {
+ 	name = "Boris III"
+	desc = "POLITICS_BORIS_III_DESC"
+ 	picture = "Portrait_Bulgaria_Boris_III.dds"
+ 	expire = "1965.1.1"
+ 	ideology = fascism_ideology
+ 	traits = {
+ 		#
+ 	}
+ }
+
+# create_corps_commander = {
+# 	name = "Nikola Totev Markov"
+# 	portrait_path = "gfx/leaders/BUL/Nikola_Totev_Markov.tga"
+# 	traits = { panzer_leader ranger trickster trait_engineer skilled_staffer infantry_officer media_personality career_officer brilliant_strategist}
+# 	skill = 5
+# 	attack_skill = 5
+# 	defense_skill = 4
+# 	planning_skill = 4
+# 	logistics_skill = 4
+# }
+
+# create_corps_commander = {
+# 	name = "Hristo Lukov"
+# 	picture = "portrait_bul_hristo_lukov.dds"
+# 	traits = { naval_invader trait_engineer commando infantry_officer trait_reckless desert_fox }
+# 	skill = 4
+# 	attack_skill = 5
+# 	defense_skill = 2
+# 	planning_skill = 3
+# 	logistics_skill = 3
+# }
+# create_corps_commander = {
+# 	name = "Vladimir Stoychev"
+# 	portrait_path = "gfx/leaders/Europe/portrait_europe_generic_land_19.dds"
+# 	traits = { panzer_leader trait_engineer trickster cavalry_leader cavalry_officer trait_reckless skilled_staffer desert_fox }
+# 	skill = 5
+# 	attack_skill = 6
+# 	defense_skill = 2
+# 	planning_skill = 4
+# 	logistics_skill = 4
+# }
+
+# create_field_marshal = {
+# 	name = "Konstantin Ivanov Bekyarov"
+# 	portrait_path = "gfx/leaders/BUL/Konstantin_Ivanov_Bekyarov.tga"
+# 	traits = { panzer_leader trait_engineer skilled_staffer infantry_officer media_personality career_officer brilliant_strategist}
+# 	skill = 5
+# 	attack_skill = 6
+# 	defense_skill = 4
+# 	planning_skill = 4
+# 	logistics_skill = 4
+# }
+
+# create_field_marshal = {
+# 	name = "Georgi Nikolov Popov"
+# 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+# 	traits = { old_guard inflexible_strategist politically_connected defensive_doctrine organizer ranger}
+# 	skill = 5
+# 	attack_skill = 3
+# 	defense_skill = 6
+# 	planning_skill = 2
+# 	logistics_skill = 7
+# }
+# create_corps_commander = {
+# 	name = "Teodosi Daskalov"
+# 	picture = "Portrait_BUL_Teodosi_Daskalov.tga"
+# 	traits = { organizer infantry_officer old_guard politically_connected trait_engineer career_officer skilled_staffer harsh_leader}
+# 	skill = 4
+# 	attack_skill = 3
+# 	defense_skill = 3
+# 	planning_skill = 2
+# 	logistics_skill = 5
+# }
+# create_corps_commander = {
+# 	name = "Ivan Valkov"
+# 	picture = "Portrait_BUL_Ivan_Valkov.tga"
+# 	traits = { war_hero brilliant_strategist media_personality infantry_officer infantry_leader desert_fox }
+# 	skill = 5
+# 	attack_skill = 5
+# 	defense_skill = 3
+# 	planning_skill = 5
+# 	logistics_skill = 3
+# }
+

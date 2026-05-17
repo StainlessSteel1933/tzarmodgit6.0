@@ -1,0 +1,29 @@
+state=
+{
+	id=625
+	name="STATE_625"
+	manpower = 1138724
+	resources = {
+		steel=8
+	}
+	state_category = rural
+	history=
+	{
+				1936.1.1.16 = {
+			owner = SWE 
+		}
+		victory_points = {
+			1311 5
+		 }
+		owner = USA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = USA
+	}
+	provinces={
+		1224 1311 1340 4269 4373 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,56 @@
+characters={
+	SWE_per_albin_hansson={
+		name="Per Albin Hansson"
+		portraits={
+			civilian={
+				large="gfx/leaders/SWE/Portrait_Sweden_Per_Albin_Hansson.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SWE_john_taylor={
+		name="John Taylor"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_5"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={ war_industrialist financial_expert }
+			expire="1949.1.1.12"
+			id=-1
+		}
+	}
+	SWE_lucas_williams={
+		name="Lucas Williams"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_6"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			expire="1946.1.1.12"
+			id=-1
+		}
+	}
+	SWE_jim_wilson={
+		name="Jim Wilson"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_4"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits={ financial_expert }
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+}

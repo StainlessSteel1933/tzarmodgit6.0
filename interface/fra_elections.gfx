@@ -1,0 +1,28 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_ss_soldat_gui"
+	texturefile = "gfx/interface/scripted_gui/ss_soldat_gui.png"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_ss_button_gui"
+	texturefile = "gfx/interface/scripted_gui/ss_button_gui.dss"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_ss_background_gui"
+	texturefile = "gfx/interface/scripted_gui/ss_background_gui.png"			
+	}	
+
+	SpriteType = {
+	name = "GFX_ss_runes_gui"
+	texturefile = "gfx/interface/scripted_gui/ss_runes_gui.png"			
+	}
+	
+	SpriteType = {
+	name = "GFX_ss_balkenkrauz_gui"
+	texturefile = "gfx/interface/scripted_gui/ss_balkenkrauz_gui.png"			
+	}
+	
+}

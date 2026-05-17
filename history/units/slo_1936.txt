@@ -1,0 +1,109 @@
+division_template = {
+	name = "Mediums"
+	division_names_group = GER_Arm_01					
+	
+	regiments = {
+		mechanized = { x =  0 y = 0 }
+	    mechanized = { x =  0 y = 1 }
+		mechanized = { x =  0 y = 2 }
+		mechanized = { x =  0 y = 3 }
+
+		mechanized = { x =  1 y = 0 }
+		mechanized = { x =  1 y = 1 }
+		mechanized = { x =  1 y = 2 }
+		mechanized = { x =  1 y = 3 }
+		medium_sp_anti_air_brigade = { x = 4 y = 3 }
+
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_armor = { x = 3 y = 2 }
+		medium_armor = { x = 3 y = 3 }
+		medium_armor = { x = 4 y = 0 }
+		medium_armor = { x = 4 y = 1 }
+		medium_armor = { x = 4 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+        light_tank_recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+		field_hospital = { x = 0 y = 5 }
+		anti_air = { x = 0 y = 6 }
+		flamethrower = { x = 0 y = 7 }
+	}
+}
+division_template = {
+	# The elite mountaineers Germany starts with
+	name = "Gebirgsjäger"
+	division_names_group = GER_Mnt_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		anti_air_brigade = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 3 }
+	}
+	support = { 
+		engineer = { x = 0 y = 0 }
+    	recon = { x = 0 y = 1 } 
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+		flamethrower = { x = 0 y = 5 }
+		artillery = { x = 0 y = 6 }
+	}
+}
+division_template = {
+	name = "Infanterie-Division"
+
+	division_names_group = GER_Inf_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		anti_air_brigade = { x = 2 y = 2 }
+anti_air_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+		anti_air = { x = 0 y = 5 }
+		logistics_company = { x = 0 y = 6}
+	}
+}

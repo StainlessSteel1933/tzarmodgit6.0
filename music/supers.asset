@@ -1,0 +1,66 @@
+sound = {
+  name = "barbarossa"
+   file = "menu/barbarossa.wav"
+    volume = 2
+    always_load = yes
+}
+sound = {
+  name = "eastern_front"
+   file = "menu/eastern_front.wav"
+    volume = 1
+    always_load = yes
+}
+sound = {
+  name = "endsieg"
+   file = "menu/endsieg.wav"
+    volume = 1
+    always_load = yes
+}
+sound = {
+  name = "geacps"
+   file = "menu/geacps.wav"
+    volume = 1
+    always_load = yes
+}
+sound = {
+  name = "japanese_surrender"
+   file = "menu/japanese_surrender.wav"
+    volume = 1
+    always_load = yes
+}
+sound = {
+  name = "pacific_war"
+   file = "menu/pacific_war.wav"
+    volume = 1
+    always_load = yes
+}
+sound = {
+  name = "russo_japanese_war"
+   file = "menu/russo_japanese_war.wav"
+    volume = 1
+    always_load = yes
+}
+sound = {
+  name = "sino_japanese_war"
+   file = "menu/sino_japanese_war.wav"
+    volume = 1
+    always_load = yes
+}
+sound = {
+  name = "soviet_end"
+   file = "menu/soviet_end.wav"
+    volume = 1
+    always_load = yes
+}
+sound = {
+  name = "super_nuke"
+   file = "menu/super_nuke.wav"
+    volume = 1
+    always_load = yes
+}
+sound = {
+  name = "ww2"
+   file = "menu/ww2.wav"
+    volume = 1
+    always_load = yes
+}

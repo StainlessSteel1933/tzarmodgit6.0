@@ -1,0 +1,171 @@
+defined_text = { # global
+	name = croatiaDesc
+	text = {
+		trigger = {
+			has_global_flag = HUN_cro
+		}
+		localization_key = hunCro
+	}
+	text = {
+		trigger = {
+			has_global_flag = ITA_cro
+		}
+		localization_key = itaCro
+	}
+	text = {
+		trigger = {
+			has_global_flag = cro_tie
+		}
+		localization_key = croTie
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = croUn
+	}
+}
+defined_text = { # global
+	name = serbiaDesc
+	text = {
+		trigger = {
+			has_global_flag = BUL_ser
+		}
+		localization_key = bulSer
+	}
+	text = {
+		trigger = {
+			has_global_flag = ITA_ser
+		}
+		localization_key = itaSer
+	}
+	text = {
+		trigger = {
+			has_global_flag = SER_tie
+		}
+		localization_key = serTie
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = setUn
+	}
+}
+defined_text = { # global
+	name = resourcesDesc
+	text = {
+		trigger = {
+			has_global_flag = GER_control_resources
+		}
+		localization_key = resGer
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = resBal
+	}
+}
+defined_text = { # global
+	name = greeceDesc
+	text = {
+		trigger = {
+			has_global_flag = ITA_gre
+		}
+		localization_key = greIta
+	}
+	text = {
+		trigger = {
+			has_global_flag = ITA_partial_gre
+		}
+		localization_key = greParIta
+	}
+	text = {
+		trigger = {
+			has_global_flag = BUL_gre
+		}
+		localization_key = greBul
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = greUn
+	}
+}
+defined_text = { # global
+	name = dobrujaDesc
+	text = {
+		trigger = {
+			has_global_flag = ROM_dob
+		}
+		localization_key = dobRom
+	}
+	text = {
+		trigger = {
+			has_global_flag = ROM_part_dob
+		}
+		localization_key = dobParRom
+	}
+	text = {
+		trigger = {
+			has_global_flag = BUL_dob
+		}
+		localization_key = dobBul
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = dobUn
+	}
+}
+defined_text = { # global
+	name = transDesc
+	text = {
+		trigger = {
+			has_global_flag = HUN_tra
+		}
+		localization_key = traHun
+	}
+	text = {
+		trigger = {
+			has_global_flag = HUN_part_tra
+		}
+		localization_key = traParHun
+	}
+	text = {
+		trigger = {
+			has_global_flag = HUN_part_s_tra
+		}
+		localization_key = traParSHun
+	}
+	text = {
+		trigger = {
+			has_global_flag = ROM_hold
+		}
+		localization_key = traRom
+	}
+	text = {
+		trigger = {
+			has_global_flag = ROM_push
+		}
+		localization_key = traPRom
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = traUn
+	}
+}
+defined_text = { # global
+	name = gainDesc
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = gainLoc
+	}
+}

@@ -1,0 +1,181 @@
+form_greater_german_reich_category = {
+
+	form_greater_german_reich = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			is_subject = no
+			has_full_control_of_state = 85
+			has_full_control_of_state = 86
+			has_full_control_of_state = 188
+			has_full_control_of_state = 762
+			has_full_control_of_state = 69
+			has_full_control_of_state = 74
+			has_full_control_of_state = 4
+			has_full_control_of_state = 152
+			has_full_control_of_state = 153
+			has_full_control_of_state = 28
+			has_full_control_of_state = 8
+			
+			all_owned_state = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		visible = {
+			AND = {
+				original_tag = GER
+				has_government = fascism
+				has_country_leader = { ruling_only = yes name = "Adolf Hitler" }
+			}
+			NOT = { has_global_flag = form_greater_german_reich_flag }
+			OR = {
+				AND = {
+					has_war_with = FRA
+					FRA = { has_capitulated = yes }
+				}
+				AND = {
+					owns_state = 16
+					has_full_control_of_state = 16
+				}
+			}
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GER_greater_german_reich
+			hidden_effect = {
+				set_global_flag = form_greater_german_reich_flag
+			}
+		}
+	}
+}
+form_iberia_cat = {
+	form_greater_iberian_reich = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SPR
+		}
+
+		available = {
+		controls_state = 112
+		}
+
+		visible = {
+			original_tag = SPR
+			NOT = { has_global_flag = form_greater_spain_reich_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = IBERIA_UNIFIED
+			every_state = {
+			limit = {
+			is_core_of = POR
+			}
+			add_core_of = SPR
+			}
+			add_stability = 0.1
+			hidden_effect = {
+				set_global_flag = form_greater_spain_reich_flag	
+			}
+		}
+	}
+}
+form_roman_empire_category = {
+
+	form_roman_empire = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+		controls_state = 118
+		controls_state = 183
+		controls_state = 116
+		controls_state = 679
+		}
+
+		visible = {
+			original_tag = ITA
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = SPQR_UNIFIED
+			custom_effect_tooltip = form_spqr_core_mare_nostrum_states_tt
+			
+			add_stability = 0.1
+
+		}
+	}
+	triumph_in_egypt_improve = {
+
+		icon = generic_form_nation
+		name = "Merda egiziana"
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+		controls_state = 679
+		controls_state = 447
+		controls_state = 857
+		has_idea = axis_victory_in_egypt
+		date>1942.3.1
+		}
+
+		visible = {
+			original_tag = ITA
+		}
+
+		complete_effect = {
+		every_country = {
+		limit = {
+		has_idea = axis_victory_in_egypt
+		}
+		swap_ideas = {
+		remove_idea = axis_victory_in_egypt
+		add_idea = axis_victory_in_egypt2
+		}
+		}
+		}
+		}
+	}
+	triumph_in_egypt_barb = {
+
+		icon = generic_form_nation
+		name = "Reclaiming Cairo"
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+		controls_state = 679
+		controls_state = 447
+		controls_state = 857
+		not = {
+			OR = {
+				has_idea = axis_victory_in_egypt
+				has_idea = axis_victory_in_egypt2
+				}
+			}
+		date>1940.6.1
+		}
+
+		visible = {
+			original_tag = ITA
+		}
+
+		complete_effect = {
+			add_ideas = {axis_victory_in_egypt}
+		}
+	}
+	}

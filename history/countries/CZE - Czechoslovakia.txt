@@ -1,0 +1,94 @@
+﻿capital = 9
+add_to_tech_sharing_group = axis_research 
+oob = "slo_1936"
+army_experience = 10
+navy_experience = 10
+air_experience = 2
+set_technology = {
+	basic_light_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	fuel_silos = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	marines = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	iw_small_airframe = 1
+	tech_logistics_company = 1
+	transport = 1
+	mtg_transport = 1
+	interwar_antitank = 1
+}
+diplomatic_relation = {   country = AUS relation = military_access  active = yes  }
+diplomatic_relation = {   country = ITA relation = military_access  active = yes  }
+
+add_timed_idea = { idea = france_production_regrowth days = 30 }
+
+add_intel = { target = JAP civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+
+
+add_opinion_modifier = {
+	
+}
+
+add_ideas = { CZE_arms_industry 
+	COOM_volunteers_minors
+}
+
+recruit_character = CZE_karl_albrecht
+recruit_character = CZE_edvard_benesh
+recruit_character = CZE_jozef_tiso
+recruit_character = CZE_klement_gottwald
+recruit_character = CZE_vojtyech_luzha
+recruit_character = CZE_josef_shnejdarek
+recruit_character = CZE_richard_tesarzhik
+recruit_character = CZE_sergej_vojcechovsky
+recruit_character = CZE_frantishek_havlik
+recruit_character = CZE_rudolf_viest
+recruit_character = CZE_alois_vicherek
+recruit_character = CZE_antonin_hasal
+recruit_character = CZE_jaroslav_fajfr
+recruit_character = CZE_jan_golian
+recruit_character = CZE_karel_janousek
+recruit_character = CZE_josef_frantisek
+recruit_character = CZE_ludvik_krejci
+recruit_character = CZE_karel_vaclav_petrik
+recruit_character = CZE_karel_kuttelwascher
+recruit_character = CZE_ludvik_svoboda
+recruit_character = CZE_frantisek_havel
+recruit_character = CZE_stefan_osusky
+recruit_character = CZE_ferdinand_catlos
+recruit_character = CZE_jozef_tiso
+recruit_character = CZE_vojtech_tuka
+recruit_character = CZE_konrad_henlein
+recruit_character = CZE_gustav_husak
+
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1935.5.19"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	neutrality = 0
+	fascism = 100
+	communism = 0
+}
+
+add_equipment_to_stockpile = { type = light_tank_chassis_2 variant_name = "breakthrough tank" amount = 500 }
+add_equipment_to_stockpile = { type = support_equipment amount = 500 producer = CZE } 
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = CZE } 
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2000 producer = CZE } 
+add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 800 producer = CZE }
+add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 500 producer = CZE }

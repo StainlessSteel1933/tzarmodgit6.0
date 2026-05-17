@@ -1,0 +1,9 @@
+strategic_region={
+	id=278
+	name="THE ROCK"
+	provinces={
+		3979 4135 13228 
+	}
+	weather={
+	}
+}

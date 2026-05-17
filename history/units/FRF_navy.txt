@@ -1,0 +1,23 @@
+units= {
+	##### NAVAL UNITS #####
+		fleet = {
+		name = "Forces Navales Françaises Libres"			
+		naval_base = 5139 # GABE-ON
+			task_force = { 
+				name = FNFL
+				location = 5139
+				ship = { name = "Paris" definition = battleship start_experience_factor = 0.50 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = FRF version_name = "Courbet Class"  } } } 
+				ship = { name = "Courbet" definition = battleship start_experience_factor = 0.50 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = FRF version_name = "Courbet Class"  } } } 
+				ship = { name = "Le Triomphant" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } } 
+				ship = { name = "" definition = destroyer start_experience_factor = 0.50 equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } } 
+			}
+		}
+}

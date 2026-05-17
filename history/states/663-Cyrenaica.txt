@@ -1,0 +1,28 @@
+
+state={
+	id=663
+	name="STATE_663"
+	resources={
+		oil=8.000
+		rubber=2.000
+	}
+
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 1
+			air_base = 10
+
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		928 1060 1062 1140 1186 1994 3889 3927 4060 4063 4112 4127 4133 4200 5004 5136 6912 6992 7063 7076 7130 7139 7206 9861 9921 9929 9941 9977 10038 10041 10049 10104 10360 10754 10785 11848 11898 11951 12022 12025 12079 12438 13078 
+	}
+	manpower=8808
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

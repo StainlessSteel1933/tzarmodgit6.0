@@ -1,0 +1,33 @@
+﻿###########################
+# Hungarian Events
+###########################
+
+add_namespace = hungary
+
+country_event = {
+	id = hungary.2
+	title = hungary.2.t
+	desc = hungary.2.d
+	picture = GFX_report_event_second_vienna_award_pact
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary.999.a
+		if = { limit = { country_exists = HUN }
+			ROM = { add_ideas = rom_refugees }
+			HUN = { transfer_state = 76 }
+			76 = { add_manpower = -250000 }
+			84 = { add_manpower = 150000 }
+			83 = { add_manpower = 100000 }
+		}
+		
+		hidden_effect = {
+			 76 = { add_extra_state_shared_building_slots = 8 }
+			 set_province_name = { id = 9670 name = "Marosvásárhely" }
+			 set_province_name = { id = 6711 name = "Kolozsvár" }
+			 set_province_name = { id = 3696 name = "Nagyvárad" }
+			 76 = { set_compliance = 80 }
+		}
+	}
+}

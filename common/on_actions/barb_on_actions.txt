@@ -1,0 +1,65 @@
+on_actions = {
+
+	on_weekly_SOV = {
+		effect = {
+				#Rewriting barb code so it doesn't use inefficient on_state_control_changed
+			if = {
+				limit = {
+					SOV = { AND = { has_war_with = GER NOT = { has_idea = SOV_barb_debuff_ended } } }
+				}
+				if = { limit = { 202 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_kiev } } } }
+					202 = { set_state_flag = sr_fall_of_kiev }
+					news_event = news.104
+				}
+				if = { limit = { 137 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_sevastopol } } } }
+					137 = { set_state_flag = sr_fall_of_sevastopol }
+					news_event = news.107
+				}
+				if = { limit = { 242 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_smolensk } } } }
+					242 = { set_state_flag = sr_fall_of_smolensk }
+					# if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
+					news_event = news.336
+				}
+				if = { limit = { 218 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_rostov } } } }
+					218 = { set_state_flag = sr_fall_of_rostov }
+					news_event = news.337
+				}
+				if = { limit = { 219 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_moscow } } } }
+					219 = { set_state_flag = sr_fall_of_moscow }
+					if = {
+						limit = {
+							date < 1942.1.1
+						}
+						SOV = {
+							kill_country_leader = yes
+							create_country_leader = {
+								name = "Lavrenty Beriya"
+								desc = ""
+								picture = GFX_portrait_SOV_lavrenty_beriya
+								expire = "1965.1.1"
+								ideology = stalinism
+								traits = {
+								}
+							}
+						}
+						news_event = news.1006
+					}
+					news_event = news.106
+					if = { limit = { date <  1942.5.1 } SOV = { add_ideas = SOV_Danger_To_Heartland } }
+				}
+				if = { limit = { 195 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_leningrad } } } }
+					195 = { set_state_flag = sr_fall_of_leningrad } 
+					news_event = news.103
+				}
+				if = { limit = { 217 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_stalingrad } } } }
+					217 = { set_state_flag = sr_fall_of_stalingrad }
+					# if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
+					news_event = news.105
+				}
+				if = { limit = { 220 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_kursk } } } }
+					220 = { set_state_flag = sr_fall_of_kursk } 
+				}
+			}	
+		}
+	}
+}

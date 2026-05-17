@@ -1,0 +1,84 @@
+equipment_modules = {
+	
+### Engine Types
+
+	tank_gasoline_engine = {
+		abbreviation = "gas"
+		category = tank_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 4
+			fuel_consumption = 2
+			maximum_speed = 3
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+		}
+
+	}
+
+	tank_diesel_engine = {
+		abbreviation = "die"
+		category = tank_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 4 
+			fuel_consumption = 2
+			reliability = 0.35
+			maximum_speed = 2
+		}
+	}
+
+	tank_petrol_electric_engine = {
+		abbreviation = "pel"
+		category = tank_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			fuel_consumption = 2
+			build_cost_ic = 5
+			reliability = -0.3
+			breakthrough = 2
+			defense = 2
+		}
+		multiply_stats = {
+			breakthrough = 0.15
+			defense = 0.15
+			build_cost_ic = 0.10
+		}
+	}
+
+	tank_gas_turbine_engine = {
+		abbreviation = "tur"
+		category = tank_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 5
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 2
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+
+	tank_holzgas_engine = {
+		abbreviation = "hzg"
+		category = tank_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 3
+			reliability = -0.1
+		}
+
+		multiply_stats = {
+			maximum_speed = -0.1		
+		}
+	}
+}

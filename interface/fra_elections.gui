@@ -1,0 +1,82 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "fra_elections_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height= 230 }
+		background = {
+		position = { x = 0 y = -16 }
+		name = "Background"
+		spriteType = "GFX_ss_background_gui"
+	}
+		
+		instantTextBoxType = {
+			name ="fra_elections_text_box"
+			position = { x = 100 y = 16 }
+			font = "hoi4_typewriter16"
+			text = "fra_elections_desc"
+			format = center
+			maxWidth = 318
+			
+		}
+
+
+		containerWindowType = {
+			name = "fra_ui_window_2"
+			position = { x = 5 y = 0 }
+			size = { width = 50 height= 64 }
+
+					iconType = {
+					name = "ss_loyalty"
+					spriteType = "GFX_ss_runes_gui"
+					position = { x = 170 y = 146 }
+				
+				
+				}
+
+					iconType = {
+					name = "ss_loyalty_container"
+					spriteType = "GFX_generic_text_bg_48"
+					position = { x = 170 y = 194 }
+
+				}
+				
+					instantTextBoxType = {
+					name ="FRA_support_for_right_num"
+					position = { x = 170 y = 198 }
+					font = "hoi_18mbs"
+					text = "FRA_support_for_right_num"
+					format = center
+					maxWidth = 50
+					pdx_tooltip = ss_loyalty_tooltip
+
+				}
+		}
+		
+			iconType = {
+			name = "FRA_right_side"
+			spriteType = "GFX_ss_balkenkrauz_gui"
+			position = { x = 290 y = 146 }
+		}
+		
+			iconType = {
+			name = "heer_loyalty_container"
+			spriteType = "GFX_generic_text_bg_48"
+			position = { x = 290 y = 194 }
+		}
+		
+			instantTextBoxType = {
+			name ="heer_loyalty_output"
+			position = { x = 290 y = 198 }
+			font = "hoi_18mbs"
+			text = "FRA_support_for_left_num"
+			format = center
+			maxWidth = 50
+			pdx_tooltip = heer_loyalty_tooltip
+
+		}			
+	
+	}
+}
+
+

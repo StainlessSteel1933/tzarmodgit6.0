@@ -1,0 +1,91 @@
+ideas = {
+	country = { 
+		
+		CHI_war_of_resistance_2 = {
+
+			name = CHI_war_of_resistance
+
+			picture = chi_war_of_resistance2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.15
+			}
+		}
+	 	
+	CHI_sacred_war = {
+
+			name = "The"
+
+			picture = chi_war_of_resistance2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				cas_damage_reduction = 0.5
+			}
+		}
+	
+
+		CHI_eight = {
+
+			name = "8"
+
+			picture = chi_war_of_resistance2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				militia_attack_factor = 0.15
+				surrender_limit = 0.60
+			}
+		}
+	
+		CHI_years = {
+
+			name = "Years"
+
+			picture = chi_war_of_resistance2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.15
+			}
+		}
+	}
+}

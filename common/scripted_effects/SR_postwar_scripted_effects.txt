@@ -1,0 +1,382 @@
+axis_defeat_without_sov = {
+set_global_flag = axis_lost
+	every_country = {
+		limit = { the_axis = yes }
+		add_timed_idea = { idea = cold_war_timer days = 60 }
+		every_country = {
+			limit = { has_war_with = ROOT }
+			add_timed_idea = { idea = cold_war_timer days = 60 }
+			white_peace = {
+				tag = ROOT
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = reset_cross_faction_trade
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = reset_cross_faction_trade
+				}
+			}
+		}
+		set_equipment_fraction = 0.0
+
+	}
+	USA =  { set_autonomy = { target = GER autonomy_state = autonomy_dominion } }
+	USA =  { set_autonomy = { target = ITA autonomy_state = autonomy_dominion } }
+	ENG =  { set_autonomy = { target = GRE autonomy_state = autonomy_dominion } }
+	ENG =  { set_autonomy = { target = ALB autonomy_state = autonomy_dominion } }
+	ENG =  { set_autonomy = { target = BEL autonomy_state = autonomy_dominion } }
+	ENG =  { set_autonomy = { target = HOL autonomy_state = autonomy_dominion } }
+	SOV =  { set_autonomy = { target = HUN autonomy_state = autonomy_dominion } }
+	SOV =  { set_autonomy = { target = ROM autonomy_state = autonomy_dominion } }
+	SOV =  { set_autonomy = { target = BUL autonomy_state = autonomy_dominion } }
+	SOV =  { set_autonomy = { target = CZE autonomy_state = autonomy_dominion } }
+	SOV =  { set_autonomy = { target = YUG autonomy_state = autonomy_dominion } }
+	SOV = {
+	add_to_faction = YUG
+	}
+	ENG = {
+		add_to_faction = ITA
+		add_to_faction = GER
+		add_to_faction = SPR
+	}
+	GER = { 
+		set_capital = { state= 355 } set_politics = { ruling_party = democratic } 
+		add_popularity = { ideology = democratic popularity = 1.0 }
+		set_cosmetic_tag = GER_west_ger
+	}
+	ITA = { 
+		set_politics = { ruling_party = democratic } 
+		add_popularity = { ideology = democratic popularity = 1.0 }
+		set_cosmetic_tag = ITA_repub
+	}
+	514 = {transfer_state_to = FRF}
+	513 = {transfer_state_to = FRF}
+	459 = {transfer_state_to = FRF}
+	460 = {transfer_state_to = FRF}
+	461 = {transfer_state_to = FRF}
+	462 = {transfer_state_to = FRF}
+	736 = {transfer_state_to = YUG}
+	853 = {transfer_state_to = YUG}
+	345 = {transfer_state_to = YUG}
+	102 = {transfer_state_to = YUG}
+	45 = {transfer_state_to = YUG}
+	764 = {transfer_state_to = YUG}
+	107 = {transfer_state_to = YUG}
+	108 = {transfer_state_to = YUG}
+	803 = {transfer_state_to = YUG}
+	106 = {transfer_state_to = YUG}
+	802 = {transfer_state_to = YUG}
+	105 = {transfer_state_to = YUG}
+	76 = {transfer_state_to = ROM}
+	664 = {transfer_state_to = CZE}
+	4 = {transfer_state_to = AUS}
+	152 = {transfer_state_to = AUS}
+	153 = {transfer_state_to = AUS}
+	848 = {transfer_state_to = AUS}
+	665 = {transfer_state_to = FRF}
+	458 = {transfer_state_to = FRF}
+	798 = {transfer_state_to = FRF}
+	291 = {transfer_state_to = ENG}
+	77 = {transfer_state_to = BUL}
+	676 = {transfer_state_to = ENG}
+	every_state = {
+	limit = {
+	is_owned_by = EFR
+	}
+	transfer_state_to = FRF
+	}
+	every_state = {
+		limit = { is_core_of = POR }
+		transfer_state_to = POR
+	}
+	every_state = {
+		limit = { is_core_of = FRF }
+		transfer_state_to = FRF
+	}
+	every_state = {
+		limit = { is_core_of = BUL }
+		transfer_state_to = BUL
+	}
+	every_state = {
+		limit = { is_core_of = SWI }
+		transfer_state_to = SWI
+	}
+	every_state = {
+	limit = {
+	is_core_of = YUG
+	}
+	transfer_state_to = YUG
+	}
+	every_state = {
+	limit = {
+	is_core_of = CZE
+	}
+	transfer_state_to = CZE
+	}
+	every_state = {
+	limit = {
+	is_core_of = GRE
+	}
+	transfer_state_to = GRE
+	}
+	every_state = {
+	limit = {
+	is_core_of = BEL
+	}
+	transfer_state_to = BEL
+	}
+	every_state = {
+	limit = {
+	is_core_of = HOL
+	}
+	transfer_state_to = HOL
+	}
+	every_state = {
+	limit = {
+	is_core_of = DEN
+	}
+	transfer_state_to = DEN
+	}
+	every_state = {
+	limit = {
+	is_core_of = NOR
+	}
+	transfer_state_to = NOR
+	}
+	every_state = {
+	limit = {
+	is_core_of = ALB
+	}
+	transfer_state_to = ALB
+	}
+	FRF = { set_cosmetic_tag = FRF_liberated }
+	every_state = {
+		limit = {
+			is_core_of = POL
+		}
+		transfer_state_to = POL
+	}
+
+}
+axis_defeat = {
+	set_global_flag = axis_lost
+	every_country = {
+		limit = { the_axis = yes }
+		add_timed_idea = { idea = cold_war_timer days = 60 }
+		every_country = {
+			limit = { has_war_with = ROOT }
+			add_timed_idea = { idea = cold_war_timer days = 60 }
+			white_peace = {
+				tag = ROOT
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = reset_cross_faction_trade
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = reset_cross_faction_trade
+				}
+			}
+		}
+		set_equipment_fraction = 0.0
+	}
+	USA =  { set_autonomy = { target = GER autonomy_state = autonomy_dominion } }
+	USA =  { set_autonomy = { target = ITA autonomy_state = autonomy_dominion } }
+	ENG =  { set_autonomy = { target = GRE autonomy_state = autonomy_dominion } }
+	ENG =  { set_autonomy = { target = ALB autonomy_state = autonomy_dominion } }
+	ENG =  { set_autonomy = { target = BEL autonomy_state = autonomy_dominion } }
+	ENG =  { set_autonomy = { target = HOL autonomy_state = autonomy_dominion } }
+	SOV =  { set_autonomy = { target = HUN autonomy_state = autonomy_dominion } }
+	SOV =  { set_autonomy = { target = ROM autonomy_state = autonomy_dominion } }
+	SOV =  { set_autonomy = { target = BUL autonomy_state = autonomy_dominion } }
+	SOV =  { set_autonomy = { target = CZE autonomy_state = autonomy_dominion } }
+	SOV =  { set_autonomy = { target = YUG autonomy_state = autonomy_dominion } }
+	SOV = {
+	add_to_faction = YUG
+	}
+	ENG = {
+		add_to_faction = ITA
+		add_to_faction = GER
+		add_to_faction = SPR
+	}
+	GER = { 
+		set_capital = { state= 355 } set_politics = { ruling_party = democratic } 
+		add_popularity = { ideology = democratic popularity = 1.0 }
+		set_cosmetic_tag = GER_west_ger
+	}
+	ITA = { 
+		set_politics = { ruling_party = democratic } 
+		add_popularity = { ideology = democratic popularity = 1.0 }
+		set_cosmetic_tag = ITA_repub
+	}
+	HUN = { 
+		set_politics = { ruling_party = communism } 
+		add_popularity = { ideology = communism popularity = 1.0 }
+		set_cosmetic_tag = HUN_SSR
+		add_ideas = closed_economy
+		add_ideas = comintern_economic_integration
+	}
+	ROM = { 
+		set_politics = { ruling_party = communism } 
+		add_popularity = { ideology = communism popularity = 1.0 }
+		set_cosmetic_tag = ROM_SSR
+		add_ideas = closed_economy
+		add_ideas = comintern_economic_integration
+	}
+	BUL = { 
+		set_politics = { ruling_party = communism } 
+		add_popularity = { ideology = communism popularity = 1.0 }
+		set_cosmetic_tag = BUL_SSR
+		add_ideas = closed_economy
+		add_ideas = comintern_economic_integration
+	}
+	YUG = { 
+		set_politics = { ruling_party = communism } 
+		add_popularity = { ideology = communism popularity = 1.0 }
+		set_cosmetic_tag = BUL_SSR
+		add_ideas = closed_economy
+		add_ideas = comintern_economic_integration
+	}
+	CZE = { 
+		set_politics = { ruling_party = communism } 
+		add_popularity = { ideology = communism popularity = 1.0 }
+		set_cosmetic_tag = BUL_SSR
+		add_ideas = closed_economy
+		add_ideas = comintern_economic_integration
+	}
+	SOV = {
+		add_to_faction = HUN
+		add_to_faction = BUL
+		add_to_faction = ROM
+		add_to_faction = YUG
+	}
+	514 = {transfer_state_to = FRF}
+	513 = {transfer_state_to = FRF}
+	459 = {transfer_state_to = FRF}
+	460 = {transfer_state_to = FRF}
+	461 = {transfer_state_to = FRF}
+	462 = {transfer_state_to = FRF}
+	736 = {transfer_state_to = YUG}
+	853 = {transfer_state_to = YUG}
+	345 = {transfer_state_to = YUG}
+	102 = {transfer_state_to = YUG}
+	45 = {transfer_state_to = YUG}
+	764 = {transfer_state_to = YUG}
+	107 = {transfer_state_to = YUG}
+	108 = {transfer_state_to = YUG}
+	803 = {transfer_state_to = YUG}
+	106 = {transfer_state_to = YUG}
+	802 = {transfer_state_to = YUG}
+	105 = {transfer_state_to = YUG}
+	76 = {transfer_state_to = ROM}
+	664 = {transfer_state_to = CZE}
+	4 = {transfer_state_to = AUS}
+	152 = {transfer_state_to = AUS}
+	153 = {transfer_state_to = AUS}
+	848 = {transfer_state_to = AUS}
+	665 = {transfer_state_to = FRF}
+	458 = {transfer_state_to = FRF}
+	798 = {transfer_state_to = FRF}
+	291 = {transfer_state_to = ENG}
+	77 = {transfer_state_to = BUL}
+	676 = {transfer_state_to = ENG}
+	every_state = {
+	limit = {
+	is_owned_by = EFR
+	}
+	transfer_state_to = FRF
+	}
+	every_state = {
+		limit = { is_core_of = POR }
+		transfer_state_to = POR
+	}
+	every_state = {
+		limit = { is_core_of = FRF }
+		transfer_state_to = FRF
+	}
+	every_state = {
+		limit = { is_core_of = BUL }
+		transfer_state_to = BUL
+	}
+	every_state = {
+		limit = { is_core_of = SWI }
+		transfer_state_to = SWI
+	}
+	every_state = {
+	limit = {
+	is_core_of = YUG
+	}
+	transfer_state_to = YUG
+	}
+	every_state = {
+	limit = {
+	is_core_of = CZE
+	}
+	transfer_state_to = CZE
+	}
+	every_state = {
+	limit = {
+	is_core_of = GRE
+	}
+	transfer_state_to = GRE
+	}
+	every_state = {
+	limit = {
+	is_core_of = BEL
+	}
+	transfer_state_to = BEL
+	}
+	every_state = {
+	limit = {
+	is_core_of = HOL
+	}
+	transfer_state_to = HOL
+	}
+	every_state = {
+	limit = {
+	is_core_of = DEN
+	}
+	transfer_state_to = DEN
+	}
+	every_state = {
+	limit = {
+	is_core_of = NOR
+	}
+	transfer_state_to = NOR
+	}
+	every_state = {
+	limit = {
+	is_core_of = ALB
+	}
+	transfer_state_to = ALB
+	}
+	FRF = { set_cosmetic_tag = FRF_liberated }
+	every_state = {
+		limit = {
+			is_core_of = POL
+		}
+		transfer_state_to = SOV
+	}
+	every_country = {limit = {is_ai = no} add_ideas_timed = {idea = france_production_regrowth days = 30 }}
+	188 = {transfer_state_to = SOV}
+	64 = {transfer_state_to = SOV}
+	61 = {transfer_state_to = SOV}
+	62 = {transfer_state_to = SOV}
+	63 = {transfer_state_to = SOV}
+	5 = {transfer_state_to = SOV}
+	763 = {transfer_state_to = SOV}
+	65 = {transfer_state_to = SOV}
+	66 = {transfer_state_to = SOV}
+	67 = {transfer_state_to = SOV}
+	68 = {transfer_state_to = SOV}
+	722 = {transfer_state_to = SOV}
+	news_event = { hours = 24 id = news.400 }
+	SWE = {
+		country_event = { days = 60 id = srevents.999 }
+	}
+}

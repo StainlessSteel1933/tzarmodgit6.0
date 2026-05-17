@@ -1,0 +1,19 @@
+state={
+	id=899
+	name="Frankfurt"
+	provinces={
+		589 3574 6444 6488 9486 11560 
+	}
+	history = {
+		owner = GER
+		add_core_of = GER
+		set_demilitarized_zone = yes
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	manpower=620543
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=megalopolis
+}

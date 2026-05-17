@@ -1,0 +1,23 @@
+state={
+	id=353
+	name="STATE_896"
+	provinces={
+		3254 
+	}
+	state_category = pastoral
+
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 2
+
+		}
+		
+		add_core_of = POL
+		
+
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,32 @@
+state={
+	id=456
+	name="STATE_456"
+	provinces={
+		921 1028 1057 1064 1151 2090 2168 5006 5093 7026 7073 7136 7156 8103 10786 10893 11999 12044 12071 12870 
+	}
+	history={
+		victory_points = {
+			11792 1 
+		}
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			12071 3 
+		}
+		victory_points = {
+			7144 1 
+		}
+		victory_points = {
+			5093 50 
+		}
+		add_core_of = SWE
+
+	}
+	manpower=4224516
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

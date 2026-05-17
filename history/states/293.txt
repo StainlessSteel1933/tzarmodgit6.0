@@ -1,0 +1,23 @@
+
+state={
+	id=293
+	name="STATE_899"
+
+	history={
+		owner = FRA
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		10812 10829 10915 12751 12838 
+	}
+	manpower=1163674
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

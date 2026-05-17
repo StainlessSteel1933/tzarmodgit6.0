@@ -1,0 +1,33 @@
+state=
+{
+	id=518
+	name="STATE_518"
+	manpower = 224000
+	
+	state_category = town
+
+	history=
+	{
+				1936.1.1.16 = {
+			owner = SWE 
+		}
+		owner = AST
+		victory_points = {
+			2189 1 
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			arms_factory = 2
+			2189 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = AST
+	}
+	provinces={
+		2183 2189 5181 5187 10665 12645
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=819
+	name="STATE_819"
+
+	history={
+		owner = MON
+		1936.1.1.15 = {
+			owner = SOV 
+		}
+		1936.1.1.13 = {
+			owner = SOV
+			add_core_of = SOV
+
+		}
+		1936.1.1.16 = {
+			owner = MON
+
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			12557 1 
+		}
+		add_core_of = MON
+
+	}
+
+	provinces={
+		1743 1868 4792 4873 7823 10578 10647 10708 12557 12629 12665 
+	}
+	manpower=88250
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

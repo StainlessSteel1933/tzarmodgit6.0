@@ -1,0 +1,1127 @@
+focus_tree = {
+	id = freefrench_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = FRF
+		}
+	}
+
+	default = no
+
+	shared_focus = ALLIED_cum
+	###FREE FRANCE PART
+	
+	focus = {
+		id = FRF_france_libre
+		icon = GFX_goal_support_democracy
+		x = 8
+		y = 0
+		cost = 0.1
+
+		available_if_capitulated = yes
+
+		available = {
+			is_ai = no
+			GER = {
+				owns_state = 16
+			}
+		}
+
+		completion_reward = {
+			remove_ideas = neutrality_idea3
+			army_experience = 800
+			set_technology = {
+				improved_medium_tank_chassis = 1
+				heavy_guns2 = 1
+				shit_guns = 1
+				radio_tech_2 = 1
+				mechanised_infantry2 = 1
+				improved_infantry_weapons = 1
+			}
+			add_political_power = 300
+			add_stability = 0.25
+			add_equipment_to_stockpile = { type = train_equipment_1 amount = 150 }
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 150
+				producer = FRF
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 7000 producer = FRF }
+		    add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 600 producer = FRF }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = FRF }
+			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 500 producer = FRF }
+			add_equipment_to_stockpile = { type = anti_tank_equipment_1  amount = 500 producer = FRF }
+			add_equipment_to_stockpile = { type = motorized_equipment amount = 1000 producer = FRF }
+			add_popularity = {
+				popularity = 0.15
+				ideology = democratic
+			}
+			set_technology = {infantry_equipment_2 = 1}
+
+			create_equipment_variant = {
+				name = "Improved Medium Tank Chassis"
+				type = medium_tank_chassis_2	
+				parent_version = 0
+				allow_without_tech = yes
+				modules = {
+					main_armament_slot = tank_high_velocity_cannon_2
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_horstmann_suspension
+					armor_type_slot = tank_cast_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = secondary_turret_hmg
+					special_type_slot_3 = auto_loader
+					special_type_slot_4 = additional_machine_guns
+					special_type_slot_9 = apcr_ammo_2
+					special_type_slot_10 = smoke_launchers
+				}
+				upgrades={
+					tank_nsb_engine_upgrade=3
+					tank_nsb_armor_upgrade=0
+				}
+			}
+			create_equipment_variant = {
+				name = "Improved SPAA"
+				type = medium_tank_aa_chassis_2
+				allow_without_tech = yes
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_anti_air_cannon_2
+					turret_type_slot = tank_medium_two_man_tank_turret
+					suspension_type_slot = tank_horstmann_suspension
+					armor_type_slot = tank_cast_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = secondary_turret_small_cannon
+					special_type_slot_3 = auto_loader
+					special_type_slot_4 = additional_machine_guns
+					special_type_slot_9 = apcr_ammo_2
+				}
+				upgrades={
+					tank_nsb_engine_upgrade=14
+					tank_nsb_armor_upgrade=14
+				}
+			}
+			add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 600 }
+			add_equipment_to_stockpile = { type = medium_tank_aa_chassis_2 amount = 100 }
+			custom_effect_tooltip = "    "
+			# custom_effect_tooltip = FRF_tank_spawn
+			custom_effect_tooltip = "Will spawn 4 fully equipped Medium Tanks"
+			load_oob = FRF_tanks
+			if = {
+				limit = {
+					AND = {
+						has_game_rule = { rule = canada_small_game option = CAN_SMALL_GAME_DISABLE }
+						has_start_date = 1936.1.1.13
+					}
+				}
+				custom_effect_tooltip = "Spawns additional 8 allied tanks."
+				load_oob = small_game_frf
+			}
+			custom_effect_tooltip = "    "
+			custom_effect_tooltip = FRF_inf_spawn
+			load_oob = FRF_infantry
+
+			539 = {
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+				add_resource = {
+					type = tungsten
+					amount = 5
+				}
+				add_resource = {
+					type = chromium
+					amount = 5
+				}
+			}
+			every_military_industrial_organization = {
+					add_mio_size = 5
+					
+			}
+		
+		}
+	}
+	
+	focus = {
+		id = FRF_gold_reserve
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = FRF_france_libre }
+        # prerequisite = { focus = FRF_intervention_in_west_africa }
+		x = 2
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = AST_invest_in_victory_2
+		}
+	}
+
+	focus = {
+		id = FRF_naval_production
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = FRF_gold_reserve }
+		relative_position_id = FRF_gold_reserve
+		x = 0
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRF_navy_reform
+				bonus = 1.0
+				uses = 2
+				category = tp_tech
+		}
+		539 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+	focus = {
+		id = FRF_revive_civilian_construction
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = FRF_gold_reserve }
+		x = 4
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			539 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRF_rebuild_military_production
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = FRF_gold_reserve }
+		
+		x = 0
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			539 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRF_develop_our_resources
+		icon = GFX_goal_generic_construction2
+		prerequisite = {
+			focus = FRF_rebuild_military_production
+			focus = FRF_revive_civilian_construction
+			# focus = FRF_revive_naval_construction
+		}
+		x = 2
+		y = 3
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			539 = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+				add_resource = {
+					type = tungsten
+					amount = 15
+				}
+				add_resource = {
+					type = chromium
+					amount = 5
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRF_research_efforts
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = {
+			focus = FRF_france_libre
+		}
+		relative_position_id = FRF_france_libre
+		x = -2
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_tech_sharing_group = commonwealth_research
+			add_ideas = FRF_national_bureau_of_statistics
+		}
+	}
+	
+	focus = {
+		id = FRF_refinery_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = {
+			# focus = FRF_research_efforts
+			# focus = FRF_develop_our_resources
+		}
+		x = 2
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = { 
+			has_war_with = JAP
+		}
+
+		completion_reward = {
+			add_ideas = { refinery_effort }			
+			add_tech_bonus = {
+				name = FRF_rubber
+				bonus = 0.5
+				uses = 3
+				category = synth_resources
+			}
+		}
+	}
+	
+	focus = {
+		id = FRF_sway_west_africa
+		icon = GFX_goal_generic_position_armies
+		x = 8
+		y = 1
+
+		prerequisite = { 
+			focus = FRF_france_libre
+		}
+		relative_position_id = FRF_france_libre
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			# OR = {
+				# has_legitimacy > 80
+				date > 1940.8.1
+			# }
+		}		
+		
+		bypass = {
+			controls_state = 272
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			transfer_state = 342	
+			transfer_state = 293
+			transfer_state = 786
+			transfer_state = 557
+			transfer_state = 272
+			transfer_state = 556
+			transfer_state = 780
+			transfer_state = 298
+			transfer_state = 779
+			transfer_state = 781
+			transfer_state = 776
+			transfer_state = 777
+			transfer_state = 778
+			transfer_state = 782
+			
+			hidden_effect = {
+				create_equipment_variant = {
+					name = "La Galissonnière Class"
+					type = ship_hull_cruiser_1
+					name_group = FRA_CL_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_medium_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+						mid_1_custom_slot = ship_light_medium_battery_2
+						mid_2_custom_slot = ship_light_medium_battery_2
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+				}
+			
+				create_equipment_variant = {
+					name = "Suffren Class"				# Duquesne and Suffren classes
+					type = ship_hull_cruiser_1
+					name_group = FRA_CA_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_medium_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+						mid_1_custom_slot = ship_medium_battery_1
+						mid_2_custom_slot = ship_medium_battery_1
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+		
+				}	
+			
+				create_equipment_variant = {
+					name = "Richelieu Class"
+					type = ship_hull_heavy_2
+					name_group = FRA_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_bc_2
+						front_1_custom_slot = ship_heavy_battery_2
+						mid_1_custom_slot = ship_heavy_battery_2
+						mid_2_custom_slot = ship_heavy_battery_2
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+				}
+				load_oob = FRF_defect_navy
+				country_event = srevents.14
+			}
+		}
+	}
+
+	# focus = {
+	# 	id = FRF_intervention_in_central_africa
+	# 	icon = GFX_goal_generic_position_armies
+	# 	x = 0
+	# 	y = 1
+
+	# 	prerequisite = { 
+	# 		focus = FRF_intervention_in_west_africa
+	# 	}
+	# 	relative_position_id = FRF_intervention_in_west_africa
+		
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available = {
+	# 		# has_legitimacy > 20
+	# 		date > 1940.3.5
+	# 	}
+		
+	# 	bypass = {
+	# 		controls_state = 539
+	# 	}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = yes
+	# 	completion_reward = {
+	# 		transfer_state = 539
+	# 		transfer_state = 772
+	# 	}
+	# }
+	focus = {
+		id = FRF_intervention_in_madagascar
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+
+		prerequisite = { 
+			focus = FRF_sway_west_africa
+		}
+		relative_position_id = FRF_sway_west_africa
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		# OR = {
+		# has_legitimacy > 60
+		date > 1941.1.1
+		# }
+		}
+		
+		bypass = {
+		controls_state = 543
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			transfer_state = 543
+			#transfer_state = 295 
+			#transfer_state = 718 
+			#transfer_state = 538 
+			#transfer_state = 768 
+			#transfer_state = 769 
+		}
+	}
+
+	focus = {
+		id = FRF_reform_our_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = FRF_france_libre }
+		x = 8
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 50
+			# add_tech_bonus = {
+			# 	name = FRF_army_reform
+			# 	bonus = 1.0
+			# 	uses = 3
+			# 	category = land_doctrine
+			# }
+
+		}
+	}
+
+	focus = {
+		id = FRF_reequip_our_forces
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = FRF_reform_our_doctrine }
+		relative_position_id = FRF_reform_our_doctrine
+		x = 0
+		y = 1
+		cost = 5
+ 
+		available_if_capitulated = yes
+
+		completion_reward = {
+		    add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 15000 producer = FRF }
+		    add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1200 producer = FRF }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = FRF }
+			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 500 producer = FRF }
+			add_equipment_to_stockpile = { type = anti_tank_equipment_1  amount = 500 producer = FRF }
+			add_equipment_to_stockpile = { type = motorized_equipment amount = 300 producer = FRF }
+	    }
+	}
+	
+	focus = {
+		id = FRF_colonial_recruitment
+		icon = GFX_focus_FRA_end_colonial_policy_2
+		prerequisite = { focus = FRF_reequip_our_forces }
+		relative_position_id = FRF_reform_our_doctrine
+		x = 0
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = FRA_colonial_recruitment
+		}
+	}
+
+	focus = {
+		id = FRF_modernize_our_equipment
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = FRF_colonial_recruitment }
+		relative_position_id = FRF_reform_our_doctrine
+		x = -1
+		y = 3
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#add_ideas = production_cult
+			add_tech_bonus = {
+				name = FRF_artillery_focus
+				bonus = 1.00 
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = FRF_regiment_of_artillery
+				bonus = 1.00 
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = FRF_artillery_focus
+				bonus = 1.00 
+				uses = 1
+				technology = tech_logistics_company3
+				technology = tech_logistics_company4
+			}
+		}
+	}
+	
+	focus = {
+		id = FRF_modernize_our_armor_force
+		name = "Tank Modernisation"
+		icon = GFX_focus_war_production
+		prerequisite = { focus = FRF_colonial_recruitment }
+		relative_position_id = FRF_reform_our_doctrine
+		x = 1
+		y = 3
+		cost = 5
+
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			add_ideas = GDU_armored_operation_idea
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				technology = basic_medium_tank_chassis
+			}
+			add_tech_bonus = {
+				name = FRF_armor
+				bonus = 1.00 
+				# ahead_reduction = 0.5
+				uses = 1
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = improved_medium_tank_chassis
+				technology = improved_heavy_tank_chassis
+			}
+			add_tech_bonus = {
+				name = FRF_mechanized_focus
+				bonus = 1.00 
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+			add_tech_bonus = {
+				name = FRF_artillery_focus
+				bonus = 1.00 
+				uses = 1
+				technology = tech_logistics_company3
+				technology = tech_logistics_company4
+			}
+		}
+	}
+	
+	focus = {
+		id = FRF_electronics
+		icon = GFX_goal_generic_radar
+		prerequisite = { 
+		   focus = FRF_modernize_our_equipment 
+		   focus = FRF_modernize_our_armor_force
+		}
+		relative_position_id = FRF_reform_our_doctrine
+		x = 0
+		y = 4
+
+		cost = 5
+
+        available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRF_walkie_talkie
+				bonus = 1.00 
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	
+	focus = {
+		id = FRF_air_two_doctrine
+		icon = GFX_goal_generic_air_doctrine
+	 	prerequisite = { focus = FRF_france_libre }
+		x = 14
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 25
+
+			add_tech_bonus = {
+				name = FRF_air_doctrine
+				bonus = 1.00 
+				uses = 3
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = FRF_fighter_two_focus
+		icon = GFX_goal_generic_air_fighter
+	 	prerequisite = { focus = FRF_air_two_doctrine }
+		relative_position_id = FRF_air_two_doctrine
+		x = 0
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+
+		completion_reward = {
+            set_technology = { improved_small_airframe = 1 }
+		}
+	}
+	
+	focus = {
+		id = FRF_air_squadron
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { 
+		   focus = FRF_fighter_two_focus
+		}
+		relative_position_id = FRF_fighter_two_focus
+		x = 0
+		y = 1
+
+		cost = 2
+
+        available_if_capitulated = yes
+		
+		available = {
+				SOV = { has_war_with = GER }
+            }
+ 
+		completion_reward = {
+			custom_effect_tooltip = FRF_fighters
+			SOV = {
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe
+					amount = 100
+					producer = FRF
+				}
+			}
+		}
+	}
+	
+	# focus = {
+	# 	id = FRF_infantry
+	# 	icon = GFX_goal_generic_axis_build_infantry
+	# 	prerequisite = { focus = FRF_france_libre }
+	#     # mutually_exclusive = { 
+	# 	#     focus = FRF_tanks
+	# 	# 	}
+	# 	x = 10
+	# 	y = 1
+	# 	cost = 1
+
+	# 	available_if_capitulated = yes
+	# 	completion_reward = {
+	# 		custom_effect_tooltip = FRF_inf_spawn
+	# 		load_oob = "FRF_infantry"
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = FRF_tanks
+	# 	icon = GFX_goal_generic_armys
+	# 	prerequisite = { focus = FRF_france_libre }
+	#     # mutually_exclusive = { 
+	# 	# 	focus = FRF_infantry
+	# 	# 	}
+	# 	x = 11
+	# 	y = 1
+	# 	cost = 1
+
+	# 	available_if_capitulated = yes
+
+	# 	completion_reward = {
+	# 		create_equipment_variant = {
+	# 			name = "Improved Medium Tank Chassis"
+	# 			type = medium_tank_chassis_2
+	# 			parent_version = 0
+	# 			modules = {
+	# 				main_armament_slot = tank_medium_cannon_2
+	# 				turret_type_slot = tank_medium_three_man_tank_turret
+	# 				suspension_type_slot = tank_interleaved_suspension
+	# 				armor_type_slot = tank_welded_armor
+	# 				engine_type_slot = tank_gasoline_engine
+	# 				special_type_slot_1 = tank_radio_2
+	# 				special_type_slot_2 = secondary_turret_small_cannon
+	# 				special_type_slot_3 = extra_ammo_storage
+	# 				special_type_slot_4 = wet_ammo_storage
+	# 			}
+	# 			upgrades={
+	# 				tank_nsb_engine_upgrade=5
+	# 				tank_nsb_armor_upgrade=5
+	# 			}
+	# 		}
+	# 		add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 }
+	# 		custom_effect_tooltip = "    "
+	# 		# custom_effect_tooltip = FRF_tank_spawn
+	# 		custom_effect_tooltip = "Will spawn 4 fully equipped Medium Tanks"
+	# 		load_oob = "FRF_tanks"
+
+	# 		custom_effect_tooltip = "    "
+	# 		custom_effect_tooltip = FRF_inf_spawn
+	# 		load_oob = "FRF_infantry"
+	# 	}
+	# }
+		focus = {
+			id = FRF_restart_production 
+			icon = GFX_goal_generic_construct_mil_factory
+			prerequisite = { focus = FRF_rebuild_military_production }
+			relative_position_id = FRF_rebuild_military_production
+			x = 0
+			y = 1
+			cost = 5
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				772 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = FRF_restart_construction
+			icon = GFX_goal_generic_construct_civ_factory
+			prerequisite = { focus = FRF_revive_civilian_construction }
+			relative_position_id = FRF_revive_civilian_construction
+			x = 0
+			y = 1
+			cost = 5
+
+			ai_will_do = {
+				factor = 1000
+			}
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				772 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = FRF_guinea_bauxite
+			icon = GFX_goal_generic_construct_civilian
+			prerequisite = { focus = FRF_develop_our_resources }
+			relative_position_id = FRF_develop_our_resources
+			x = -2
+			y = 1
+			cost = 5
+
+			ai_will_do = {
+				factor = 1000
+			}
+			available = { owns_state = 780 }
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				780 = {
+					add_resource = {
+						type = aluminium
+						amount = 34
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = FRF_rwanda_tungsten
+			icon = GFX_goal_generic_construct_civilian
+			prerequisite = { focus = FRF_develop_our_resources }
+			relative_position_id = FRF_develop_our_resources
+			x = 0
+			y = 1
+			cost = 5
+
+			ai_will_do = {
+				factor = 1000
+			}
+			available = { owns_state = 768 }
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				768 = {
+					add_resource = {
+						type = tungsten
+						amount = 21
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = FRF_african_iron
+			icon = GFX_goal_generic_construct_civilian
+			prerequisite = { focus = FRF_develop_our_resources }
+			relative_position_id = FRF_develop_our_resources
+			x = 2
+			y = 1
+			cost = 5
+			available = { owns_state = 779 }
+
+			ai_will_do = {
+				factor = 1000
+			}
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				780 = {
+					add_resource = {
+						type = steel
+						amount = 6
+					}
+				}
+				778 = {
+					add_resource = {
+						type = steel
+						amount = 5
+					}
+				}
+				773 = {
+					add_resource = {
+						type = steel
+						amount = 7
+					}
+				}
+				779 = {
+					add_resource = {
+						type = steel
+						amount = 6
+					}
+				}
+				781 = {
+					add_resource = {
+						type = steel
+						amount = 2
+					}
+				}
+				556 = {
+					add_resource = {
+						type = steel
+						amount = 3
+					}
+				}
+			}
+		}
+
+	focus = {
+		id = FRA_the_free_french_navy
+		icon = GFX_goal_generic_build_navy
+		x = 3
+		y = 1
+		
+		prerequisite = { 
+			focus = FRF_france_libre
+		}
+		relative_position_id = FRF_france_libre
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			set_technology = { pre_dreadnoughts = 1 }
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 50
+			}
+			create_navy_leader = {
+				name = "Emilie Muselier"
+				GFX = GFX_portrait_fra_emilie_muselier
+				skill = 3
+				traits = { bold blockade_runner superior_tactician spotter concealment_expert }
+				attack_skill = 3
+				defense_skill = 3
+				maneuvering_skill = 3
+				coordination_skill = 4
+			}
+			create_equipment_variant = {
+				name = "Courbet Class"
+				type = ship_hull_pre_dreadnought
+				name_group = FRA_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+					front_1_custom_slot = ship_heavy_battery_1
+					mid_1_custom_slot = ship_heavy_battery_1
+					mid_2_custom_slot = ship_heavy_battery_1
+					rear_1_custom_slot = ship_heavy_battery_1
+				}
+			}
+			create_equipment_variant = {
+				name = "Chacal Class"				# represents Chacal, Guépard, Agile, and Vauquelin classes
+				type = ship_hull_light_1
+				name_group = FRA_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_light_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = light_ship_engine_2
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_torpedo_1
+					rear_1_custom_slot = ship_torpedo_1
+				}
+		
+			}
+			load_oob = FRF_navy
+		}
+	}
+
+	focus = {
+			id = FRF_bearn
+			icon = GFX_goal_generic_build_navy
+			prerequisite = { focus = FRA_the_free_french_navy }
+			relative_position_id = FRA_the_free_french_navy
+			x = -1
+			y = 1
+			cost = 2
+
+			ai_will_do = {
+				factor = 1000
+			}
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				create_equipment_variant = {
+					name = "Béarn Class"
+					type = ship_hull_carrier_conversion_bb
+					name_group = FRA_CV_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_1
+						fixed_ship_secondaries_slot = ship_secondaries_1
+						mid_1_custom_slot = ship_deck_space
+					}
+				}
+				add_equipment_production = {
+							equipment = {
+								type = ship_hull_carrier_conversion_bb
+								creator = "FRF"
+								version_name = "Béarn Class"
+							}
+							requested_factories = 10
+							progress = 0.90
+							amount = 1
+				}
+			}
+	}
+
+	focus = {
+			id = FRF_destroyer_lease
+			icon = GFX_goal_generic_build_navy
+			prerequisite = { focus = FRA_the_free_french_navy }
+			relative_position_id = FRA_the_free_french_navy
+			x = 1
+			y = 1
+			cost = 2
+
+			ai_will_do = {
+				factor = 1000
+			}
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				set_technology = {improved_ship_hull_light = 1}
+				create_equipment_variant = {
+					name = "Hunt Class"				
+					type = ship_hull_light_3
+					name_group = FRA_DD_HISTORICAL
+					parent_version = 0
+					modules = {
+							fixed_ship_battery_slot = ship_light_battery_3
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = empty
+							fixed_ship_torpedo_slot = ship_torpedo_2
+							fixed_ship_engine_slot = light_ship_engine_3
+							front_1_custom_slot = ship_light_battery_3
+							mid_1_custom_slot = ship_light_battery_3
+							rear_1_custom_slot = ship_torpedo_2
+					}
+				}
+				load_oob = FRF_destroyerlease
+			}
+	}
+}

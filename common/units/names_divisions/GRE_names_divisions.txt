@@ -1,0 +1,123 @@
+GRE_INF_01 = 
+{
+	name = "Metaxas' Guards"
+
+	for_countries = { GRE }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRE_INF_01 }
+
+	fallback_name = "%dth Guard Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Guard Division" }
+		2 = { "%dnd Guard Division" }
+		3 = { "%drd Guard Division" }
+		4 = { "%dth Guard Division" }
+		5 = { "%dth Guard Division" }
+		6 = { "%dth Guard Division" }
+		7 = { "%dth Guard Division" }
+		8 = { "%dth Guard Division" }		
+		9 = { "%dth Guard Division" }
+		10 = { "%dth Guard Division" }
+		11 = { "%dth Guard Division" }
+		12 = { "%dth Guard Division" }
+		13 = { "%dth Guard Division" }
+		14 = { "%dth Guard Division" }
+		15 = { "%dth Guard Division" }
+		16 = { "%dth Guard Division" }
+		17 = { "%dth Guard Division" }
+		18 = { "%dth Guard Division" }
+		19 = { "%dth Guard Division" }
+		20 = { "%dth Guard Division" }		
+	}
+}
+
+GRE_INF_02 = 
+{
+	name = "Leonidas' Hoplites"
+
+	for_countries = { GRE }
+
+	 
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRE_INF_02 }
+
+	fallback_name = "%dth Leonidas' Hoplite Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Leonidas' Hoplite Division" }
+		2 = { "%dnd Leonidas' Hoplite Division" }
+		3 = { "%drd Leonidas' Hoplite Division" }
+		4 = { "%dth Leonidas' Hoplite Division" }
+		5 = { "%dth Leonidas' Hoplite Division" }
+		6 = { "%dth Leonidas' Hoplite Division" }
+		7 = { "%dth Leonidas' Hoplite Division" }
+		8 = { "%dth Leonidas' Hoplite Division" }		
+		9 = { "%dth Leonidas' Hoplite Division" }
+		10 = { "%dth Leonidas' Hoplite Division" }
+		11 = { "%dth Leonidas' Hoplite Division" }
+		12 = { "%dth Leonidas' Hoplite Division" }
+		13 = { "%dth Leonidas' Hoplite Division" }
+		14 = { "%dth Leonidas' Hoplite Division" }
+		15 = { "%dth Leonidas' Hoplite Division" }
+		16 = { "%dth Leonidas' Hoplite Division" }
+		17 = { "%dth Leonidas' Hoplite Division" }
+		18 = { "%dth Leonidas' Hoplite Division" }
+		19 = { "%dth Leonidas' Hoplite Division" }
+		20 = { "%dth Leonidas' Hoplite Division" }		
+	}
+}
+
+GRE_INF_03 = 
+{
+	name = "Themistokles' Hoplites"
+
+	for_countries = { GRE }
+
+	 
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRE_INF_03 }
+
+	fallback_name = "%dth Themistokles' Hoplite Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Themistokles' Hoplites Division" }
+		2 = { "%dnd Themistokles' Hoplites Division" }
+		3 = { "%drd Themistokles' Hoplites Division" }
+		4 = { "%dth Themistokles' Hoplites Division" }
+		5 = { "%dth Themistokles' Hoplites Division" }
+		6 = { "%dth Themistokles' Hoplites Division" }
+		7 = { "%dth Themistokles' Hoplites Division" }
+		8 = { "%dth Themistokles' Hoplites Division" }		
+		9 = { "%dth Themistokles' Hoplites Division" }
+		10 = { "%dth Themistokles' Hoplites Division" }
+		11 = { "%dth Themistokles' Hoplites Division" }
+		12 = { "%dth Themistokles' Hoplites Division" }
+		13 = { "%dth Themistokles' Hoplites Division" }
+		14 = { "%dth Themistokles' Hoplites Division" }
+		15 = { "%dth Themistokles' Hoplites Division" }
+		16 = { "%dth Themistokles' Hoplites Division" }
+		17 = { "%dth Themistokles' Hoplites Division" }
+		18 = { "%dth Themistokles' Hoplites Division" }
+		19 = { "%dth Themistokles' Hoplites Division" }
+		20 = { "%dth Themistokles' Hoplites Division" }		
+	}
+}

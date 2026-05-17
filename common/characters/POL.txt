@@ -1,0 +1,68 @@
+characters={
+	POL_władysław_sikorski={
+		name="Władysław Sikorski"
+		portraits={
+			civilian={
+				large="gfx/leaders/POL/Portrait_Poland_Wladyslaw_Sikorski.dds"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POL_ignacy_mościcki={
+		name="Ignacy Mościcki"
+		portraits={
+			civilian={
+				large="gfx/leaders/POL/Portrait_Poland_Ignacy_Moscicki.dds"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POL_władysław_gomułka={
+		name="Władysław Gomułka"
+		portraits={
+			civilian={
+				large="gfx/leaders/POL/Portrait_Poland_Wladyslaw_Gomulka.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POL_wincenty_witos={
+		name="Wincenty Witos"
+		portraits={
+			civilian={
+				large="GFX_POL_wincenty_witos"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POL_lucas_taylor={
+		name="Lucas Taylor"
+		portraits={
+			civilian={
+				large="GFX_Portrait_europe_generic_7"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			traits={ tenacious_negotiator reluctant_interventionist }
+			expire="1947.1.1.12"
+			id=-1
+		}
+	}
+}

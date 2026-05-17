@@ -1,0 +1,26 @@
+state={
+	id=873
+	name="STATE_873"
+	resources = {
+		tungsten=5
+		steel=12
+		# moved this from canberra to here cuz idk it doesnt exist pepw
+	}
+	provinces={
+		2116 2221 5198 10941 12949 
+	}
+	history = {
+		buildings = {
+			infrastructure = 1
+		}
+				1936.1.1.16 = {
+			owner = SWE 
+		}
+		owner = AST
+		add_core_of = AST
+	}
+	state_category = pastoral
+	manpower=10000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,157 @@
+﻿division_template = {
+	name = "Morit Diviziin"			# Cavalry Division
+
+	division_names_group = MON_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+}
+division_template = {
+	name = "Mediums" 				# Represents regular mechanized corps (4 existed in 1935-38); 
+	division_names_group = SOV_MEC_01
+	# Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge 
+	# (2x M/L tank + 1x mot), and 2x mech bge (2x L tank + 1x mot)
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	    mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_armor = { x = 3 y = 2 }
+		medium_armor = { x = 3 y = 3 }
+		medium_armor = { x = 4 y = 0 }
+		medium_armor = { x = 4 y = 1 }
+		medium_armor = { x = 4 y = 2 }
+		medium_sp_anti_air_brigade = { x = 4 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+        light_tank_recon = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+		field_hospital = { x = 0 y = 5 }
+		anti_air = { x = 0 y = 6 }
+	}
+}
+
+units = {
+	##### Mongol Ardyn Armiin #####
+}
+
+
+##### No notable air force (only about 6 aircraft in 1936) #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "MON"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = train_equipment_1
+			creator = "MON" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "MON" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "MON" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = squad_equipment_0
+			creator = "MON" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = radio_equipment_0
+	# 		creator = "MON" 
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.1
+	# 	efficiency = 50
+	# }
+
+	# add_equipment_production = { 
+	# 	equipment = { 
+	# 		type = motorized_equipment_1 
+	# 		creator = "MON" 
+	# 	} 
+
+	# 	requested_factories = 1 
+	# 	progress = 0.1 
+	# 	efficiency = 50 
+	# } 
+	
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "MON" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = sf_equipment_0
+			creator = "MON" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+}

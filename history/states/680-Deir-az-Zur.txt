@@ -1,0 +1,26 @@
+
+state={
+	id=680
+	name="STATE_680"
+
+	history={
+		owner = ENG
+		victory_points = {
+			901 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		1578 1606 1634 2111 3942 6883 7513 10383 10934 12316 12442 12919 
+	}
+	manpower=324110
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=4.000
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=661
+	name="STATE_661"
+	resources={
+		oil=15
+		rubber=6
+	}
+	history={
+		owner = ITA
+		victory_points = {
+			3786 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SWE
+
+	}
+
+	provinces={
+		909 947 1174 3786 3951 3964 3983 4051 4117 4176 4962 6808 6871 6877 7154 9811 9901 10037 10067 10884 11831 11860 11940 12082 
+	}
+	manpower=17617
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

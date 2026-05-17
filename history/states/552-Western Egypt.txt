@@ -1,0 +1,21 @@
+state={
+	id=552
+	name="STATE_552"
+	provinces={
+		961 1206 4008 4124 6148 6925 7216 9830 10056 10097 11311 11810 12771 
+	}
+	impassable = yes
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = SWE
+
+	}
+	manpower=18539
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,95 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#Custom North Africa state array -> Make africa longer and more fun?
+			458 = { add_to_array = { global.north_africa_state_array = THIS } }
+			665 = { add_to_array = { global.north_africa_state_array = THIS } }
+			448 = { add_to_array = { global.north_africa_state_array = THIS } }
+			661 = { add_to_array = { global.north_africa_state_array = THIS } }
+			449 = { add_to_array = { global.north_africa_state_array = THIS } }
+			662 = { add_to_array = { global.north_africa_state_array = THIS } }
+			663 = { add_to_array = { global.north_africa_state_array = THIS } }
+			450 = { add_to_array = { global.north_africa_state_array = THIS } }
+			451 = { add_to_array = { global.north_africa_state_array = THIS } }
+			452 = { add_to_array = { global.north_africa_state_array = THIS } }
+			447 = { add_to_array = { global.north_africa_state_array = THIS } }
+			446 = { add_to_array = { global.north_africa_state_array = THIS } }
+			453 = { add_to_array = { global.north_africa_state_array = THIS } }
+			454 = { add_to_array = { global.north_africa_state_array = THIS } }
+			456 = { add_to_array = { global.north_africa_state_array = THIS } }
+			798 = { add_to_array = { global.north_africa_state_array = THIS } }
+			488 = { add_to_array = { global.north_africa_state_array = THIS } }
+			797 = { add_to_array = { global.north_africa_state_array = THIS } }
+			551 = { add_to_array = { global.north_africa_state_array = THIS } }
+
+
+
+			for_each_scope_loop = {
+				array = global.north_africa_state_array
+				add_province_modifier = { static_modifiers = { battle_of_north_africa } 
+					province = { all_provinces = yes }  
+				}
+				# if = {
+				# 	limit = {
+				# 		air_base > 1
+				# 	}
+				# 	set_building_level = {
+				# 		type = air_base
+				# 		level = 1
+				# 	}
+				# 	controller = {
+				# 		PREV = { save_event_target_as = GDU_badairport1 }
+				# 		country_event = { id = gduairlimiter.1 }
+				# 	}
+				# }
+
+			}
+		}
+	}	
+	
+	on_startup = {
+		effect = {
+			640 = { add_to_array = { global.burma_state_array = THIS } }
+			288 = { add_to_array = { global.burma_state_array = THIS } }
+			799 = { add_to_array = { global.burma_state_array = THIS } }
+			688 = { add_to_array = { global.burma_state_array = THIS } }
+			289 = { add_to_array = { global.burma_state_array = THIS } }
+			724 = { add_to_array = { global.burma_state_array = THIS } }
+			336 = { add_to_array = { global.burma_state_array = THIS } }
+			741 = { add_to_array = { global.burma_state_array = THIS } }
+			670 = { add_to_array = { global.burma_state_array = THIS } }
+			671 = { add_to_array = { global.burma_state_array = THIS } }
+		
+
+
+			for_each_scope_loop = {
+				array = global.burma_state_array
+				add_province_modifier = { static_modifiers = { South_East_Asia_Front } 
+					province = { all_provinces = yes }  
+				}
+
+			}
+		}
+	}
+	on_startup = {
+	effect = {
+		if = {
+				limit = {
+					has_game_rule = {
+						rule = debloat_equipment
+						option = DNIGG_ENBALED
+					}
+				}
+				every_country = {
+				limit = {
+				}
+				add_timed_idea = {
+				    idea = inf_debloat
+				    days = 9999
+				}
+				}
+
+			}
+	}
+	}
+}

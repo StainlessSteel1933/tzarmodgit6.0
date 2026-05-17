@@ -1,0 +1,3152 @@
+#Category only allowed for GER
+
+War_economy = {
+	GER_decrease_unemployment = {
+		icon = GFX_decision_generic_consumer_goods
+		name = "Decrease Unemployment"
+		allowed = { tag = GER }
+
+		cost = 100	
+		visible = {
+				date<1939.8.1
+		}
+		days_remove = 100
+
+		#modifier = {
+		#	civilian_factory_use = 5
+		#}
+
+		
+		available = {
+			is_ai = no
+				GER = {
+					has_completed_focus = GER_four_year_plan
+				}
+		}
+		
+		complete_effect = {
+		GER_economy_up = yes
+		}
+	}
+	exploit_western_workers = {
+		icon = GFX_decision_generic_consumer_goods
+		name = "Decrease Unemployment"
+		allowed = { tag = GER }
+
+		cost = 150	
+		visible = {
+				GER = {
+					has_completed_focus = GER_four_year_plan 
+				}
+				date>1939.10.1
+		}
+		days_remove = 120
+
+		#modifier = {
+		#	civilian_factory_use = 5
+		#}
+
+		
+		available = {
+			is_ai = no
+				GER = {
+					has_completed_focus = GER_four_year_plan
+				}
+		}
+		
+		complete_effect = {
+		GER_economy_up = yes
+		}
+	}
+	exploit_french_workers = {
+		icon = GFX_decision_generic_consumer_goods
+		name = "Exploit French Workers"
+		allowed = { tag = GER }
+
+		cost = 75	
+		visible = {
+				GER = {
+					has_completed_focus = GER_four_year_plan 
+				}
+				date>1940.3.1
+		}
+		days_remove = 80
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 10
+		}
+
+		
+		available = {
+			is_ai = no
+				GER = {
+					has_completed_focus = GER_four_year_plan
+				}
+		}
+		
+		complete_effect = {
+		GER_economy_up = yes
+		}
+	}
+	exploit_benelux_workers = {
+		icon = GFX_decision_generic_consumer_goods
+		name = "Exploit Belgian Workers"
+		allowed = { tag = GER }
+
+		cost = 120	
+		visible = {
+				date>1939.12.1
+		}
+		days_remove = 80
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 10
+		}
+
+		
+		available = {
+			is_ai = no
+				GER = {
+					has_completed_focus = GER_four_year_plan
+				}
+		}
+		
+		complete_effect = {
+		GER_economy_up = yes
+		}
+	}
+	Ig_farben_polska = {
+		icon = GFX_decision_rubber
+		name = "Establish IG Farben Rubber Factory in Poland"
+		allowed = { tag = GER }
+
+		cost = 50	
+		visible = {
+				GER = {
+					has_completed_focus = GER_four_year_plan 
+				}
+		}
+		days_remove = 45
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 15
+		}
+
+		
+		available = {
+		owns_state = 10
+			is_ai = no
+				GER = {
+					has_completed_focus = GER_four_year_plan
+				}
+		}
+		
+		complete_effect = {
+			GER_economy_down = yes
+			modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = rubber
+        	   amount = 1
+			}
+		}
+	}
+	GER_establish_steel_factories_in_the_north = {
+		name = "Construction of Steel Mills in the North"
+		icon = GFX_decision_steel
+			
+		allowed = { tag = GER }
+
+		cost = 50	
+		visible = {
+				GER = {
+					has_completed_focus = GER_four_year_plan 
+				}
+		}
+		days_remove = 30
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		
+		available = {
+		}
+		
+		complete_effect = {
+		GER_economy_down = yes
+			59 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	GER_establish_steel_factories_in_the_south = {
+		icon = GFX_decision_steel
+		name = "Construction of Steel Mills in the South"	
+		allowed = { tag = GER }
+
+		cost = 50	
+		visible = {
+				GER = {
+					has_completed_focus = GER_four_year_plan 
+				}
+		}
+		days_remove = 30
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		
+		available = {
+		date>1939.5.1
+		}
+		
+		complete_effect = {
+		GER_economy_down = yes
+			54 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	GER_economic_strain = {
+		icon = generic_prepare_civil_war
+		name = "Degradation of our Economy"
+		allowed = { tag = GER }
+
+		cost = 50	
+		visible = {
+				GER = {
+					has_completed_focus = GER_four_year_plan 
+				}
+		}
+		available = {
+			always = no
+		}
+		allowed = {
+			always = no
+			#added through on_action
+			tag = GER
+		}
+
+		fire_only_once = no
+		is_good = no
+
+
+		fire_only_once = no
+		days_mission_timeout = 120
+
+		visible = {
+			GER = { has_completed_focus = GER_four_year_plan }
+		}
+
+        timeout_effect = {
+			hidden_effect = {
+					activate_mission = GER_economic_strain
+				}
+				GER_economy_down = yes
+			}
+
+		}
+		GER_economic_strain2 = {
+		icon = generic_prepare_civil_war
+		name = "Degradation of our Economy"
+		allowed = { tag = GER }
+
+		cost = 50	
+		visible = {
+				GER = {
+					has_completed_focus = GER_four_year_plan 
+				}
+		}
+		available = {
+			always = no
+		}
+		allowed = {
+			always = no
+			#added through on_action
+			tag = GER
+		}
+
+		fire_only_once = no
+		is_good = no
+
+
+		fire_only_once = no
+		days_mission_timeout = 120
+
+		visible = {
+			GER = { has_completed_focus = GER_four_year_plan }
+		}
+
+        timeout_effect = {
+			hidden_effect = {
+					activate_mission = GER_economic_strain2
+				}
+				GER_economy_down = yes
+			}
+
+		}
+		GER_capitulate_FRA = {
+		name = "French Campaign"
+		icon = generic_prepare_civil_war
+			
+		allowed = { tag = GER }
+
+		cost = 50	
+		visible = {
+				GER = {
+					has_completed_focus = GER_four_year_plan 
+				}
+		}
+		available = {
+			owns_state = 16
+		}
+		allowed = {
+			always = no
+			#added through on_action
+			tag = GER
+		}
+
+		fire_only_once = no
+		is_good = no
+
+
+		fire_only_once = no
+		days_mission_timeout = 100
+
+		visible = {
+			GER = { has_completed_focus = GER_four_year_plan }
+		}
+
+        timeout_effect = {
+				GER_economy_down = yes
+			}
+
+		}
+		GER_capitulate_POL = {
+		name = "Polish Campaign"
+		icon = generic_prepare_civil_war
+			
+		allowed = { tag = GER }
+
+		cost = 50	
+		visible = {
+				GER = {
+					has_completed_focus = GER_four_year_plan 
+				}
+		}
+		available = {
+			owns_state = 10
+		}
+		allowed = {
+			always = no
+			#added through on_action
+			tag = GER
+		}
+
+		fire_only_once = no
+		is_good = no
+
+
+		fire_only_once = no
+		days_mission_timeout = 20
+
+		visible = {
+			GER = { has_completed_focus = GER_four_year_plan }
+		}
+
+        timeout_effect = {
+				GER_economy_down = yes
+			}
+
+		}
+
+		}
+	Einheitspakt_economy = {
+	
+	GER_Invest_in_Spanish_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Spanish Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			SPR = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Spanish_Military_Production_cancel = {
+	name = "Cancel Spanish Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Spanish_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Spanish_Military_Production
+			SPR = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Bulgarian_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Bulgarian Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			BUL = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Bulgarian_Military_Production_cancel = {
+	name = "Cancel Bulgarian Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Bulgarian_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Bulgarian_Military_Production
+			BUL = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Hungarian_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Hungarian Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			HUN = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Hungarian_Military_Production_cancel = {
+	name = "Cancel Hungarian Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Hungarian_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Hungarian_Military_Production
+			HUN = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Romanian_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Romanian Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			ROM = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Romanian_Military_Production_cancel = {
+	name = "Cancel Romanian Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Romanian_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Romanian_Military_Production
+			ROM = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Slovakian_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Slovakian Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			CZE = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Slovakian_Military_Production_cancel = {
+	name = "Cancel Slovakian Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Slovakian_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Slovakian_Military_Production
+			CZE = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Croatian_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Croatian Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		complete_effect = {
+			YUG = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Croatian_Military_Production_cancel = {
+	name = "Cancel Croatian Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Croatian_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Croatian_Military_Production
+			YUG = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Italian_Military_Production = {
+		icon = GFX_decision_faction_gre_fascist
+		name = "Invest in Italian Military Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+			ITA = {
+					add_ideas = GER_Economic_Investment
+				}
+		}
+	}
+	GER_Invest_in_Italian_Military_Production_cancel = {
+	name = "Cancel Italian Military Production"
+		icon = GFX_decision_faction_gre_fascist
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Italian_Military_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Italian_Military_Production
+			ITA = {
+					remove_ideas =  GER_Economic_Investment
+				}
+		}
+	}
+	
+	GER_Invest_in_Italian_Naval_Production = {
+		icon = GFX_decision_generic_merge_plant_ship
+		name = "Invest in Italian Naval Production"	
+		allowed = { tag = GER }
+
+		cost = 0	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = -1
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 2
+		}
+		
+		complete_effect = {
+			ITA = {
+					add_ideas = GER_Naval_Investment
+				}
+		}
+	}
+	GER_Invest_in_Italian_Naval_Production_cancel = {
+	name = "Cancel Italian Naval Production"
+		icon = GFX_decision_generic_merge_plant_ship
+		available = {
+		}
+		visible = {
+			has_decision = GER_Invest_in_Italian_Naval_Production
+		}
+		fire_only_once = no
+		modifier = {
+		}
+		cost = 0
+		complete_effect = {
+			remove_decision = GER_Invest_in_Italian_Naval_Production
+			ITA = {
+					remove_ideas = GER_Naval_Investment
+				}
+		}
+	}
+	
+	GER_Build_Danube_Dam = {
+		icon = GFX_decision_NOR_prepare_state_dem_3
+		name = "Build Danube Dams"	
+		allowed = { tag = GER }
+
+		cost = 25		
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = 60
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		complete_effect = {
+			46 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    instant_build = yes
+                    province = {
+                        id = 6658
+                    }
+                }
+			}
+			
+			48 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    instant_build = yes
+                    province = {
+                        id = 9771
+                    }
+                }
+			}
+			
+			43 = {
+                add_extra_state_shared_building_slots = 4
+                add_building_construction = {
+                    type = dam
+                    level = 1
+                    instant_build = yes
+                    province = {
+                        id = 9660
+                    }
+                }
+			}
+		}
+		
+	}
+
+	GER_Build_Rubber_Plantations = {
+		icon = GFX_decision_rubber
+		name = "Build Rubber Plantations"	
+		allowed = { tag = GER }
+
+		cost = 25	
+		visible = {
+				GER = {
+					has_completed_focus = GER_establish_the_Einheitspakt 
+				}
+		}
+		days_remove = 60
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		complete_effect = {
+			448 = {
+				add_resource = {
+					type = Rubber
+					amount = 20
+				}
+			}
+		}
+	}	
+}
+	
+
+
+operations = {
+
+	GER_make_allies_declare_on_SOV = {
+		icon = generic_prepare_civil_war
+				
+		allowed = { tag = GER }
+
+		fire_only_once = yes
+					
+		visible = {
+				GER = {
+					has_completed_focus = GER_ussr_war_goal 
+				}
+		}
+		
+		available = {
+			is_ai = no
+				GER = {
+					has_completed_focus = GER_ussr_war_goal 
+				}
+		}
+		
+		complete_effect = {
+			ROM = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+			}
+			BUL = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+			}
+			HUN = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+			}
+			SPR = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+			}
+			CRO = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+			}
+			GER = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+			}
+		}
+	}
+	
+	GER_make_allies_declare_on_free_france = {
+		icon = generic_prepare_civil_war
+			
+		allowed = { tag = GER }
+
+		fire_only_once = yes
+					
+		visible = {
+				FRA = {
+					has_capitulated	= yes				
+				}
+		}
+		
+		available = {
+				FRA = {
+					has_capitulated = yes
+ 				}
+		}
+		
+		complete_effect = {
+			ROM = {
+				declare_war_on = {
+					target = FRF
+					type = annex_everything
+				}
+			}
+			BUL = {
+				declare_war_on = {
+					target = FRF
+					type = annex_everything
+				}
+			}
+			HUN = {
+				declare_war_on = {
+					target = FRF
+					type = annex_everything
+				}
+			}
+			SPR = {
+				declare_war_on = {
+					target = FRF
+					type = annex_everything
+				}
+			}
+			CRO = {
+				declare_war_on = {
+					target = FRF
+					type = annex_everything
+				}
+			}
+		}
+	}
+	
+	GER_make_allies_declare_on_NORWAY = {
+		icon = generic_prepare_civil_war
+			
+		allowed = { tag = GER }
+
+		fire_only_once = yes
+					
+		visible = {
+				GER = {
+					has_completed_focus = GER_weserubung 
+				}
+		}
+		
+		available = {
+			is_ai = no
+				GER = {
+					has_completed_focus = GER_weserubung 
+				}
+		}
+		
+		complete_effect = {
+			ROM = {
+				declare_war_on = {
+					target = NOR
+					type = annex_everything
+				}
+			}
+			BUL = {
+				declare_war_on = {
+					target = NOR
+					type = annex_everything
+				}
+			}
+			HUN = {
+				declare_war_on = {
+					target = NOR
+					type = annex_everything
+				}
+			}
+			SPR = {
+				declare_war_on = {
+					target = NOR
+					type = annex_everything
+				}
+			}
+			CRO = {
+				declare_war_on = {
+					target = NOR
+					type = annex_everything
+				}
+			}
+		}
+	}
+	
+	GER_make_allies_declare_on_Denmark = {
+		icon = generic_prepare_civil_war
+			
+		allowed = { tag = GER }
+
+		fire_only_once = yes
+					
+		visible = {
+				GER = {
+					has_completed_focus = GER_weserubung 
+				}
+		}
+		
+		available = {
+			is_ai = no
+				GER = {
+					has_completed_focus = GER_weserubung 
+				}
+		}
+		
+		complete_effect = {
+			ROM = {
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+			}
+			BUL = {
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+			}
+			HUN = {
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+			}
+			SPR = {
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+			}
+			CRO = {
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	GER_invade_iran = {
+
+			targets = { PER }
+		
+			allowed = { tag = GER }
+
+			fire_only_once = yes
+					
+			visible = {	 }
+			
+			available =  {
+				291 = { is_controlled_by_ROOT_or_ally = yes }
+				ITA = { has_completed_focus = ITA_mare_nostrum_bba }
+				NOT = {
+					has_global_flag = iran_front_clown
+				}
+			}
+		
+			complete_effect = {	
+				# SOV = { country_event = { id = iran.2 days = 0 } }
+				# ENG = { country_event = { id = iran.3 days = 0 } }
+				news_event = { id = news.411 days = 0 }
+
+				SOV = {
+					transfer_state = 266
+					transfer_state = 416
+					transfer_state = 418
+					
+					transfer_state = 419
+					
+					transfer_state = 420
+					hidden_effect = {
+						419 = { add_core_of = SOV }
+						416 = { add_core_of = SOV }
+						420 = {	
+							add_extra_state_shared_building_slots = 1
+							add_state_modifier = {
+								modifier = {
+									local_non_core_manpower = 0.5
+								}
+							}				
+						}
+					}
+				}
+				ENG = {
+					transfer_state = 417
+					transfer_state = 412
+					transfer_state = 413
+					transfer_state = 411
+					transfer_state = 414
+					transfer_state = 421
+					transfer_state = 410
+					load_oob = ENG_IRAN
+				}
+				set_global_flag = iran_front_clown
+			}
+		
+		}
+		
+	GER_westwall = {
+
+		icon = generic_construction
+		
+		allowed = { 
+		OR = {
+		tag = GER
+		tag = HUN
+		tag = ROM
+		tag = SPR
+		tag = ITA
+		tag = BUL
+		tag = YUG
+			}
+		}
+		available = {
+			GER = { 	
+					controls_state = 50 
+					controls_state = 55
+					controls_state = 51
+				}
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 15
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+				50 = {
+					add_building_construction = {
+						type = bunker
+						province = 11640
+						level = 4
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6712
+						level = 4
+					}
+					add_building_construction = {
+						type = bunker
+						province = 3530
+						level = 4
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6542
+						level = 4
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6568
+						level = 4
+					}
+				}
+				55 = {
+					add_building_construction = {
+						type = bunker
+						province = 589
+						level = 4
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6488
+						level = 4
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6444
+						level = 4
+					}
+				}
+				51 = {	
+					add_building_construction = {
+						type = bunker
+						province = 529
+						level = 4
+					}		
+					add_building_construction = {
+						type = bunker
+						province = 6570
+						level = 4
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6469
+						level = 4
+					}
+					add_building_construction = {
+						type = bunker
+						province = 3512
+						level = 4
+					}
+				}
+			
+		}
+	}
+
+	GER_Gothic_Line = {
+
+		icon = generic_construction
+		
+		visible = { has_war_with = ENG }
+		
+		allowed = {
+		   OR = {
+		tag = GER
+		tag = HUN
+		tag = ROM
+		tag = SPR
+		tag = ITA
+		tag = BUL
+		tag = YUG
+			}
+		}
+		available = {
+			ITA = { 	
+					controls_state = 162 
+					controls_state = 161
+				}
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 15
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+				162 = {
+					add_building_construction = {
+						type = bunker
+						province = 6973
+						level = 4
+					}
+					add_building_construction = {
+						type = bunker
+						province = 1616
+						level = 4
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11889
+						level = 4
+					}
+	
+				}
+				161 = {
+					add_building_construction = {
+						type = bunker
+						province = 9924
+						level = 4
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6985
+						level = 4
+					}
+					add_building_construction = {
+						type = bunker
+						province = 782
+						level = 4
+					}
+	
+				}
+	
+			
+		}
+	}
+	
+	GER_Defend_Berlin = {
+
+		icon = generic_construction
+
+		visible = {has_war_with = SOV}
+
+		allowed = {
+		   OR = {
+		tag = GER
+		tag = HUN
+		tag = ROM
+		tag = SPR
+		tag = ITA
+		tag = BUL
+		tag = YUG
+			}
+		}
+		available = {
+			GER = { 	
+					controls_state = 68 
+				}
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 15
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+				63 = {
+					add_building_construction = {
+						type = bunker
+						province = 6282
+						level = 3
+					}
+				}
+				62 = {
+					add_building_construction = {
+						type = bunker
+						province = 3207
+						level = 3
+					}
+				}
+				64 = {
+					add_building_construction = {
+						type = bunker
+						province = 9496
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11505
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9761
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6521
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11853
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11880
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9858
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11444
+						level = 3
+					}
+				}
+				68 = {
+					add_building_construction = {
+						type = bunker
+						province = 3572
+						level = 3
+					}
+				}
+				66 = {
+					add_building_construction = {
+						type = bunker
+						province = 3438
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6595
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 552
+						level = 3
+					}
+				}
+			
+		}
+	}
+	
+	GER_Panther-Wontan_Line_South = {
+
+		icon = generic_construction
+		
+		visible = {has_war_with = SOV}
+		
+		allowed = {
+		   OR = {
+		tag = GER
+		tag = HUN
+		tag = ROM
+		tag = SPR
+		tag = ITA
+		tag = BUL
+		tag = YUG
+			}
+		}
+		available = {
+			GER = { 	
+					controls_state = 202 
+					controls_state = 203 
+					controls_state = 226 
+					controls_state = 200
+				}
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 15
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+				200 = {
+					add_building_construction = {
+						type = bunker
+						province = 11700
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6596
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11405
+						level = 3
+					}
+				}
+				226 = {
+					add_building_construction = {
+						type = bunker
+						province = 11437
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9433
+						level = 3
+					}
+				}
+				203 = {
+					add_building_construction = {
+						type = bunker
+						province = 6478
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 3468
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 488
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11454
+						level = 3
+					}
+				}
+				202 = {
+					add_building_construction = {
+						type = bunker
+						province = 3494
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 525
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6978
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 3543
+						level = 3
+					}add_building_construction = {
+						type = bunker
+						province = 9658
+						level = 3
+					}
+				}
+		}
+	}
+	
+	
+	GER_Panther-Wontan_Line_Center = {
+
+		icon = generic_construction
+		
+		visible = {has_war_with = SOV}
+
+		allowed = {
+		   OR = {
+		tag = GER
+		tag = HUN
+		tag = ROM
+		tag = SPR
+		tag = ITA
+		tag = BUL
+		tag = YUG
+			}
+		}
+		available = {
+			GER = { controls_state = 207 
+					controls_state = 206 
+					controls_state = 204 
+					controls_state = 194
+				}
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 15
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+				194 = {
+					add_building_construction = {
+						type = bunker
+						province = 3507
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9249
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6219
+						level = 3
+					}
+				}
+				204 = {
+					add_building_construction = {
+						type = bunker
+						province = 6373
+						level = 3
+					}
+				}
+				206 = {
+					add_building_construction = {
+						type = bunker
+						province = 3378
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9289
+						level = 3
+					}
+				}
+				207 = {
+					add_building_construction = {
+						type = bunker
+						province = 3331
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 6938
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9241
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11241
+						level = 3
+					}
+				}
+		}
+	}
+	
+	GER_Panther-Wontan_Line_North = {
+
+		icon = generic_construction
+		
+		visible = {has_war_with = SOV}
+
+		allowed = {
+		   OR = {
+		tag = GER
+		tag = HUN
+		tag = ROM
+		tag = SPR
+		tag = ITA
+		tag = BUL
+		tag = YUG
+			}
+		}
+		available = {
+			GER = { controls_state = 208 
+					controls_state = 263 
+					controls_state = 210 
+				}
+								
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 15
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+				210 = {
+					add_building_construction = {
+						type = bunker
+						province = 6293
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11234
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9331
+						level = 3
+					}
+				}
+				263 = {
+					add_building_construction = {
+						type = bunker
+						province = 320
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 9234
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 11109
+						level = 3
+					}
+					add_building_construction = {
+						type = bunker
+						province = 117
+						level = 3
+					}
+				}
+				208 = {
+					add_building_construction = {
+						type = bunker
+						province = 6197
+						level = 3
+					}
+				}
+				195 = {
+					add_building_construction = {
+						type = bunker
+						province = 6174
+						level = 3
+					}
+				}
+		}
+	}
+		
+	GER_barbarossa_mission_Stalingrad = {
+
+		icon = GFX_decision_SOV_socialism_in_one_country
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			217 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.075
+			add_stability = 0.075
+			GER_economy_up = yes
+		}
+
+		timeout_effect = {
+			add_war_support = -0.075
+			GER_economy_down = yes
+			add_stability = -0.075
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	GER_barbarossa_mission_Rostov = {
+
+		icon = GFX_decision_SOV_socialism_in_one_country
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			218 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.075
+			add_stability = 0.075
+			GER_economy_up = yes
+		}
+
+		timeout_effect = {
+			add_war_support = -0.075
+			add_stability = -0.075
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	GER_barbarossa_mission_Crimea = {
+
+		icon = GFX_decision_SOV_socialism_in_one_country
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			137 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.075
+			add_stability = 0.075
+		}
+
+		timeout_effect = {
+			add_war_support = -0.075
+			add_stability = -0.075
+			GER_economy_down = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+		
+	GER_barbarossa_mission_moscow = {
+
+		icon = GFX_decision_SOV_socialism_in_one_country
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			219 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.075
+			add_stability = 0.075
+			GER_economy_up = yes
+		}
+
+		timeout_effect = {
+			add_war_support = -0.075
+			add_stability = -0.075
+			GER_economy_down = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	GER_barbarossa_mission_lenin = {
+
+		icon = GFX_decision_SOV_socialism_in_one_country
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			195 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.075
+			add_stability = 0.075
+			GER_economy_up = yes
+		}
+
+		timeout_effect = {
+			add_war_support = -0.075
+			add_stability = -0.075
+			GER_economy_down = yes
+		}
+	}
+	
+	GER_barbarossa_mission_kiev = {
+
+		icon = GFX_decision_SOV_socialism_in_one_country
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			202 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.075
+			add_stability = 0.075
+		}
+
+		timeout_effect = {
+			add_war_support = -0.075
+			add_stability = -0.075
+			GER_economy_down = yes
+		}
+	}
+	
+	GER_wunder_sturm = {
+	
+		icon = GFX_decision_generic_prepare_civil_war
+		
+		available = {
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_completed_focus = GER_wunderwaffe
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				name = GER_wonder
+				bonus = 0.75
+				ahead_reduction = 1
+				uses = 1
+				technology = advanced_infantry_weapons2
+			}
+		}
+		complete_effect = {
+			
+		}
+	}
+	
+	GER_wunder_V2 = {
+	
+		icon = generic_construction
+
+		available = {
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_completed_focus = GER_wunderwaffe
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				name = GER_wonder
+				bonus = 1
+				ahead_reduction = 2
+				uses = 3
+				category = rocketry
+			}
+		}
+		complete_effect = {
+			
+		}
+	}
+	
+	GER_wunder_vampir = {
+	
+		icon = GFX_decision_generic_prepare_civil_war
+
+		available = {
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_completed_focus = GER_wunderwaffe
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				name = GER_wonder
+				bonus = 0.75
+				ahead_reduction = 1
+				uses = 2
+				category = night_vision
+			}
+		}
+		complete_effect = {
+		}
+	}
+	
+	GER_wunder_wasserfall = {
+	
+		icon = generic_construction
+
+		available = {
+			always = no
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_completed_focus = GER_wunderwaffe
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_ideas = GER_wasserfall
+		}
+		complete_effect = {
+		
+		}
+	}
+	
+	GER_wunder_fritz_x = {
+	
+		icon = GFX_decision_generic_air
+
+		available = {
+			has_tech = advanced_computing_machine
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_completed_focus = GER_wunderwaffe
+		}
+		days_remove = 365
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			add_ideas = GER_fritz_x
+		}
+		complete_effect = {
+		}
+	}
+	
+	
+	
+
+	GER_wunder_hs132 = {
+	
+		icon = GFX_decision_generic_air
+
+		available = {
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_completed_focus = GER_wunderwaffe
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 8
+		}
+		remove_effect = {
+			set_technology = { advanced_large_airframe = 1 }
+		}
+		complete_effect = {
+		
+		}
+	}
+	
+
+
+
+GER_case_anton = {
+
+	icon = generic_prepare_civil_war
+		
+	allowed = { OR = { tag = EFR tag = GER }}
+				
+	visible = {	date > 1948.1.1	}
+		
+		available =  {
+		OR = { NOT = { EFR = { controls_state = 460 } }   
+		NOT = { EFR = { controls_state = 22 } } 
+		NOT = { EFR = { controls_state = 513 } }
+		NOT = { EFR = { controls_state = 31 } }
+		NOT = { EFR = { controls_state = 21 } }
+			}
+		}
+		
+		activation = { EFR = { has_war_with = ENG }}
+
+		days_mission_timeout = 60
+		
+		timeout_effect = {  GER = { add_to_faction = EFR } }
+	
+		complete_effect = {	GER = { puppet = EFR }	
+		}
+	
+	}
+	    GER_annex_vichy = {
+
+		targets = { EFR }
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			is_ai = no
+		EFR = { is_ai = yes }
+		OR = { 
+			EFR = { is_puppet_of = GER	}
+			AND = { EFR = { is_puppet = no 	 is_in_faction_with = GER  } }
+			date>1942.11.10
+			}
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = EFR
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+		hidden_effect = { EFR = { set_equipment_fraction = 0 }}
+		annex_country = { target = EFR	}
+		ITA = { transfer_state = 32 transfer_state = 21 transfer_state = 514 transfer_state = 851}
+		}
+		}
+	
+    GER_annex_hungary = {
+
+		targets = { HUN }
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			is_ai = no
+			HUN = { 
+				is_ai = yes 
+			}
+			OR = {
+				date > 1940.5.1
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
+			
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = HUN
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+ 			GER = { 
+				#############################################################################################
+			}
+			GER = { 
+				annex_country = {
+					target = HUN
+					transfer_troops = yes 
+				}
+			}
+			hidden_effect = {
+				# GER = { 
+				# 	transfer_state = 155
+				# 	transfer_state = 43
+				# 	transfer_state = 154
+				# 	transfer_state = 664
+				# 	transfer_state = 70
+				# 	transfer_state = 71
+				# 	transfer_state = 73
+				# 	transfer_state = 45
+				# 	transfer_state = 764
+				# }
+			}
+			every_state = { 
+				limit = { is_core_of = HUN }
+				set_compliance = 100 }
+			}
+		
+	}
+	GER_barbarossa_mission = {
+
+		icon = generic_operation
+
+		allowed = {
+			always = no
+			original_tag = GER
+		}
+
+		available = {
+				OR = { any_allied_country = { 	has_full_control_of_state = 219 }
+			GER  = { 	has_full_control_of_state = 219 }
+			}
+	OR = { any_allied_country = { 	has_full_control_of_state = 195 }
+			GER  = { 	has_full_control_of_state = 195 }
+			}			
+	OR = { any_allied_country = { 	has_full_control_of_state = 202 }
+			GER  = { 	has_full_control_of_state = 202 }
+			}			
+				OR = { any_allied_country = { 	has_full_control_of_state = 217 }
+			GER  = { 	has_full_control_of_state = 217 }
+			}
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.1
+			custom_effect_tooltip = barbarossa_mission_tt
+		}
+
+		timeout_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	
+
+		GER_defeat_dday = {
+
+		icon = generic_operation
+
+		allowed = {
+			always = no
+			#added through on_action
+			tag = GER
+		}
+
+		available = {
+
+			custom_trigger_tooltip = {
+				tooltip = GER_defeat_dday_tt
+			}
+
+			340 = { is_controlled_by_allied_country = no }
+			346 = { is_controlled_by_allied_country = no }
+			735 = { is_controlled_by_allied_country = no }
+			21 = { is_controlled_by_allied_country = no }
+			18 = { is_controlled_by_allied_country = no }
+			31 = { is_controlled_by_allied_country = no }
+			19 = { is_controlled_by_allied_country = no }
+			23 = { is_controlled_by_allied_country = no }
+			30 = { is_controlled_by_allied_country = no }
+			14 = { is_controlled_by_allied_country = no }
+			15 = { is_controlled_by_allied_country = no }
+			785 = { is_controlled_by_allied_country = no }
+			29 = { is_controlled_by_allied_country = no }
+			6 = { is_controlled_by_allied_country = no }
+			7 = { is_controlled_by_allied_country = no }
+			36 = { is_controlled_by_allied_country = no }
+			56 = { is_controlled_by_allied_country = no }
+			59 = { is_controlled_by_allied_country = no }
+			58 = { is_controlled_by_allied_country = no }
+			99 = { is_controlled_by_allied_country = no }
+			61 = { is_controlled_by_allied_country = no }
+			62 = { is_controlled_by_allied_country = no }
+			63 = { is_controlled_by_allied_country = no }
+			85 = { is_controlled_by_allied_country = no }
+			788 = { is_controlled_by_allied_country = no }
+			763 = { is_controlled_by_allied_country = no }
+		}
+
+		days_mission_timeout = 999
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			set_global_flag = GDU_dday_defeated
+			clr_global_flag = GDU_dday_started
+			add_war_support = 0.2
+			add_stability = 0.2
+
+			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 8000 producer = USA }
+			add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 2000 producer = USA }
+
+			add_equipment_to_stockpile = { type = anti_air_equipment_2 amount = 500 producer = USA }
+			add_equipment_to_stockpile = { type = anti_air_equipment_3 amount = 150 producer = USA }
+
+			add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 800 producer = USA }
+			add_equipment_to_stockpile = { type = artillery_equipment_3 amount = 200 producer = USA }
+
+			add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 600 producer = USA }
+			add_equipment_to_stockpile = { type = anti_tank_equipment_3 amount = 150 producer = USA }
+
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1000 producer = USA }
+			add_equipment_to_stockpile = { type = mechanized_equipment_2 amount = 700 producer = USA }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = USA }
+
+			add_equipment_to_stockpile = { type = heavy_tank_equipment_2 amount = 200 producer = USA }
+			add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 200 producer = USA }
+			add_equipment_to_stockpile = { type = medium_tank_equipment_2 amount = 3000 producer = USA }
+
+			add_timed_idea = { idea = GER_triumph_dday_idea days = 365 }
+			USA = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			ENG = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			CAN = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			SAF = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			AST = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			NZL = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			RAJ = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			FRF = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+
+
+		}
+
+		timeout_effect = {
+			set_global_flag = GDU_dday_succeeded
+ 			set_global_flag = GDU_dday_started
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+} 
+
+#Category only allowed for GER
+GER_military_buildup = {
+
+GER_expedition_bul = {
+
+		icon = generic_tank
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus =  GER_anti_comitern_pact 
+
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_stalingrad_sent }
+						NOT = { BUL = {  has_country_flag = BUL_dankus } }
+			BUL = { is_ai = no }
+		}
+
+		complete_effect = {
+			BUL = {
+create_field_marshal = {
+    name = "Ingrad Stahl"
+    picture = "Portrait_Baltic_Alfred_von_Randow.tga"
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+    skill = 5
+    attack_skill = 7
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+
+}
+BUL = { set_country_flag = BUL_stalin }
+
+set_global_flag = GER_stalingrad_sent
+			}
+		}
+
+}
+
+GER_expedition_hun = {
+
+		icon = generic_tank
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_stalingrad_sent }
+			NOT = { HUN = { has_country_flag = HUN_dankus } }
+					HUN = { is_ai = no }
+		}
+
+		complete_effect = {
+			HUN = {
+create_field_marshal = {
+    name = "Ingrad Stahl"
+    picture = "Portrait_Baltic_Alfred_von_Randow.tga"
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+    skill = 5
+    attack_skill = 7
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+
+}
+HUN = { set_country_flag = HUN_stalin }
+
+set_global_flag = GER_stalingrad_sent
+			}
+		}
+
+}
+
+
+GER_expedition_rom = {
+
+		icon = generic_tank
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_stalingrad_sent }
+			NOT = { ROM = { has_country_flag = ROM_dankus } }
+					ROM = { is_ai = no }
+		}
+
+		complete_effect = {
+			ROM = {
+create_field_marshal = {
+    name = "Ingrad Stahl"
+    picture = "Portrait_Baltic_Alfred_von_Randow.tga"
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+    skill = 5
+    attack_skill = 7
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
+
+}
+ROM = { set_country_flag = ROM_stalin }
+set_global_flag = GER_stalingrad_sent
+			}
+		}
+
+}
+
+GER_expedition2_bul = {
+
+		icon = generic_tank
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus =  GER_anti_comitern_pact 
+
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_dankus_sent }
+			BUL = { is_ai = no }
+			NOT = { BUL = { has_country_flag = BUL_stalin  } }
+		}
+
+		complete_effect = {
+			BUL = {
+create_field_marshal = {
+    name = "Edvin Lemmor"
+    picture = "Portrait_Baltic_Johan_Laidoner.tga"
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+    skill = 5
+    attack_skill = 6
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 5
+
+}
+BUL = { set_country_flag = BUL_dankus }
+set_global_flag = GER_dankus_sent
+			}
+		}
+
+}
+
+GER_expedition2_hun = {
+
+		icon = generic_tank
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_dankus_sent }
+					HUN = { is_ai = no }
+								NOT = { HUN = { has_country_flag = HUN_stalin  } }
+		}
+
+		complete_effect = {
+			HUN = {
+create_field_marshal = {
+    name = "Edvin Lemmor"
+    picture = "Portrait_Baltic_Johan_Laidoner.tga"
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+    skill = 5
+    attack_skill = 6
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 5
+
+}
+
+set_global_flag = GER_dankus_sent
+HUN = { set_country_flag = HUN_dankus }
+			}
+		}
+
+}
+
+
+GER_expedition2_rom = {
+
+		icon = generic_tank
+
+			allowed = { 
+		original_tag = GER
+		}
+		
+		available = {
+		has_completed_focus = GER_anti_comitern_pact 
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			NOT = { has_global_flag = GER_dankus_sent }
+					ROM = { is_ai = no }
+								NOT = { ROM = { has_country_flag = ROM_stalin } } 
+
+		}
+
+		complete_effect = {
+			ROM = {
+create_field_marshal = {
+    name = "Edvin Lemmor"
+    picture = "Portrait_Baltic_Johan_Laidoner.tga"
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
+    skill = 5
+    attack_skill = 6
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 5
+
+}
+ROM = { set_country_flag = ROM_dankus }
+set_global_flag = GER_dankus_sent
+			}
+		}
+
+}
+}
+
+special_projects = {
+
+	GER_relocate_industry_civ = {
+		icon = generic_construction
+		available = {
+			NOT = {
+				any_state = {
+					OR = { is_core_of = FRF is_core_of = BEL is_core_of = HOL }
+					is_controlled_by  = GER
+					industrial_complex > 0
+				}
+			}
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+			tag = GER
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 1
+
+		visible = {
+			GER = { has_war_with = ENG }
+		}
+
+        timeout_effect = {
+			random_controlled_state = {
+				limit = {
+					OR = { is_core_of = FRF is_core_of = BEL is_core_of = HOL }
+					# is_controlled_by  = GER
+					industrial_complex > 0
+				}
+				remove_building = {type = industrial_complex level = 1}
+				GER = {
+					random_owned_controlled_state = {
+						limit = { is_core_of = GER }
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+   				 			type = industrial_complex
+   				 			level = 1
+  				 			instant_build = yes
+				 		}
+					}
+				}
+				hidden_effect = {
+					damage_building = { type = industrial_complex damage = 0.2 }
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						any_state = {
+							OR = { is_core_of = FRF is_core_of = BEL is_core_of = HOL }
+							is_controlled_by  = GER
+							industrial_complex > 0
+						}
+					}
+					activate_mission = GER_relocate_industry_civ
+				}
+			}
+			custom_effect_tooltip = GER_relocate_industry_civ
+		}
+	}
+
+	GER_relocate_industry_mil = {
+		icon = generic_construction
+		# highlight_states = {
+		# 	state = 19
+		# }
+		available = {
+			NOT = {
+				any_state = {
+					OR = { is_core_of = FRF is_core_of = BEL is_core_of = HOL }
+					is_controlled_by  = GER
+					arms_factory > 0
+				}
+			}
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+			tag = GER
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 1
+
+		visible = {
+			GER = { has_war_with = ENG }
+		}
+
+        timeout_effect = {
+			random_controlled_state = {
+				limit = {
+					OR = { is_core_of = FRF is_core_of = BEL is_core_of = HOL }
+					arms_factory > 0
+				}
+				remove_building = {type = arms_factory level = 1}
+				GER = {
+					random_owned_controlled_state = {
+						limit = { is_core_of = GER }
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+   				 			type = arms_factory
+   				 			level = 1
+  				 			instant_build = yes
+				 		}
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						any_state = {
+							OR = { is_core_of = FRF is_core_of = BEL is_core_of = HOL }
+							is_controlled_by  = GER
+							arms_factory > 0
+						}
+					}
+					activate_mission = GER_relocate_industry_mil
+				}
+			}
+			custom_effect_tooltip = GER_relocate_industry_mil
+		}
+	}
+
+	prevent_cuck = { 
+	icon = generic_form_nation
+		
+		cost = 0
+		
+			allowed = { original_tag = GER }
+			
+		available = {
+				
+		}
+		
+		fire_only_once = no
+
+		visible = {
+		has_country_flag = can_get_cucked 
+		has_completed_focus = GER_danzig_or_war
+		}
+
+		fire_only_once = no
+
+		complete_effect  = {
+					clr_country_flag = can_get_cucked
+					set_country_flag = cuck_prevented
+
+			ROM = {
+			add_opinion_modifier = {
+    target = HUN
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			add_opinion_modifier = {
+    target = BUL
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			add_opinion_modifier = {
+    target = SPR
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			add_opinion_modifier = {
+    target = ITA
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			add_opinion_modifier = {
+    target = FIN
+    modifier = anti_cross_faction_trade
+}
+			}
+				ROM = {
+			add_opinion_modifier = {
+    target = SIA
+    modifier = anti_cross_faction_trade
+}
+			}
+				ROM = {
+			add_opinion_modifier = {
+    target = MIN
+    modifier = anti_cross_faction_trade
+}
+			}
+				ROM = {
+			add_opinion_modifier = {
+    target = JAP
+    modifier = anti_cross_faction_trade
+}
+			}
+		
+	}
+}
+
+	allow_cuck = { 
+	icon = generic_form_nation
+		
+		cost = 0
+		
+			allowed = { original_tag = GER }
+			
+		available = {
+				
+		}
+		
+		fire_only_once = no
+
+		visible = {
+		has_country_flag = cuck_prevented 
+		has_completed_focus = GER_danzig_or_war
+		}
+
+		fire_only_once = no
+
+		complete_effect  = {
+					clr_country_flag = cuck_prevented
+					set_country_flag = can_get_cucked
+
+			ROM = {
+			remove_opinion_modifier = {
+    target = HUN
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			remove_opinion_modifier = {
+    target = BUL
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			remove_opinion_modifier = {
+    target = SPR
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			remove_opinion_modifier = {
+    target = ITA
+    modifier = anti_cross_faction_trade
+}
+			}
+					ROM = {
+			remove_opinion_modifier = {
+    target = FIN
+    modifier = anti_cross_faction_trade
+}
+			}
+			ROM = {
+			remove_opinion_modifier = {
+    target = SIA
+    modifier = anti_cross_faction_trade
+}
+			}
+			ROM = {
+			remove_opinion_modifier = {
+    target = MIN
+    modifier = anti_cross_faction_trade
+}
+			}
+			ROM = {
+			remove_opinion_modifier = {
+    target = JAP
+    modifier = anti_cross_faction_trade
+}
+			}
+		
+	}
+}
+
+
+	GER_add_chromium = { 
+		
+		targets = { SPR }
+		
+		cost = 0
+		
+		allowed = { original_tag = GER }
+			
+		
+		fire_only_once = no
+
+		visible = {
+			NOT = {
+				has_country_flag = GER_chromium_converted
+			}
+		}
+		complete_effect  = {
+			add_resource = {
+				type = tungsten	
+				amount = -150
+				state = 171
+			}
+			
+			add_resource = {
+				type = chromium	
+				amount = 150
+				state = 171
+			}
+
+			set_country_flag = GER_chromium_converted
+		}
+	}
+
+	GER_remove_chromium = { 
+		
+		targets = { SPR }
+
+		cost = 0
+		
+		allowed = { original_tag = GER }
+			
+		available = {
+			has_tech = improved_heavy_tank_chassis
+		}
+		
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = GER_chromium_converted
+		}
+
+		fire_only_once = no
+
+		complete_effect  = {
+			add_resource = {
+				type = tungsten	
+				amount = 150
+				state = 171
+			}
+			
+			add_resource = {
+				type = chromium	
+				amount = -150
+				state = 171
+			}
+
+			clr_country_flag = GER_chromium_converted
+		}
+	}		
+}

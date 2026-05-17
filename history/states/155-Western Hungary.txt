@@ -1,0 +1,44 @@
+
+state={
+	id=155
+	name="STATE_155"
+	resources={
+		oil=17
+		steel=18
+	}
+
+	history={
+		owner = HUN
+		1936.1.1.13 = {
+			owner = ROM
+			add_core_of = ROM 
+		}
+		1936.1.1.15 = {
+			owner = HUN
+			add_core_of = HUN 
+		}
+		1936.1.1.16 = {
+			owner = HUN 
+		}
+		victory_points = {
+			11610 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 3
+
+		}
+		add_core_of = HUN
+
+	}
+
+	provinces={
+		682 686 701 3670 3680 3683 6685 6703 6720 7470 9624 9643 9676 11610 11627 11663 11739 13125 
+	}
+	manpower=2197605
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

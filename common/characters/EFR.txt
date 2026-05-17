@@ -1,0 +1,57 @@
+characters={
+	EFR_phillipe_pétain={
+		name="Phillipe Pétain"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Philippe_Petain.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ lion_of_verdun }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	EFR_jonas_smith={
+		name="Jonas Smith"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Africa_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	EFR_marcus_smith={
+		name="Marcus Smith"
+		portraits={
+			civilian={
+				large="GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ captain_of_industry compassionate_gentleman }
+			expire="1943.1.1.12"
+			id=-1
+		}
+	}
+	EFR_alex_walker={
+		name="Alex Walker"
+		portraits={
+			civilian={
+				large="GFX_Portrait_South_Africa_Political_Leader_Generic"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			traits={ compassionate_gentleman }
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+}

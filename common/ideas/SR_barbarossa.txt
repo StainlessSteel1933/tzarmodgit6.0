@@ -1,0 +1,1195 @@
+ideas = {
+
+	country = {
+
+		SOV_barb_debuff_0 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.40
+				army_attack_factor = -0.04
+				army_defence_factor = -0.04
+				max_dig_in = -4.0
+				#army_morale_factor = -0.39
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.40
+					air_attack = -0.40
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.40
+					air_attack = -0.40
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.40
+					air_ground_attack = -0.40
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.40
+					air_ground_attack = -0.40
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_1 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.38
+				army_attack_factor = -0.038
+				army_defence_factor = -0.038
+				max_dig_in = -3.8
+				#army_morale_factor = -0.39
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.38
+					air_attack = -0.38
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.38
+					air_attack = -0.38
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.38
+					air_ground_attack = -0.38
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.38
+					air_ground_attack = -0.38
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_2 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.36
+				army_attack_factor = -0.036
+				army_defence_factor = -0.036
+				max_dig_in = -3.6
+				#army_morale_factor = -0.36
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.36
+					air_attack = -0.36
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.36
+					air_attack = -0.36
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.36
+					air_ground_attack = -0.36
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.36
+					air_ground_attack = -0.36
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_3 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.34
+				army_attack_factor = -0.034
+				army_defence_factor = -0.034
+				max_dig_in = -3.4
+				#army_morale_factor = -0.33
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.34
+					air_attack = -0.34
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.34
+					air_attack = -0.34
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.34
+					air_ground_attack = -0.34
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.34
+					air_ground_attack = -0.34
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_4 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.32
+				army_attack_factor = -0.032
+				army_defence_factor = -0.032
+				max_dig_in = -3.2
+				#army_morale_factor = -0.30
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.32
+					air_attack = -0.32
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.32
+					air_attack = -0.32
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.32
+					air_ground_attack = -0.32
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.32
+					air_ground_attack = -0.32
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_5 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.30
+				army_attack_factor = -0.030
+				army_defence_factor = -0.030
+				max_dig_in = -3.0
+				#army_morale_factor = -0.30
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.30
+					air_attack = -0.30
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.30
+					air_attack = -0.30
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.30
+					air_ground_attack = -0.30
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.30
+					air_ground_attack = -0.30
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_6 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.28
+				army_attack_factor = -0.028
+				army_defence_factor = -0.028
+				max_dig_in = -2.8
+				#army_morale_factor = -0.27
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.28
+					air_attack = -0.28
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.28
+					air_attack = -0.28
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.28
+					air_ground_attack = -0.28
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.28
+					air_ground_attack = -0.28
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_7 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.26
+				army_attack_factor = -0.026
+				army_defence_factor = -0.026
+				max_dig_in = -2.6
+				#army_morale_factor = -0.24
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.26
+					air_attack = -0.26
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.26
+					air_attack = -0.26
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.26
+					air_ground_attack = -0.26
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.26
+					air_ground_attack = -0.26
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_8 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = {}
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.24
+				army_attack_factor = -0.024
+				army_defence_factor = -0.024
+				max_dig_in = -2.4
+				#army_morale_factor = -0.21
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.24
+					air_attack = -0.24
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.24
+					air_attack = -0.24
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.24
+					air_ground_attack = -0.24
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.24
+					air_ground_attack = -0.24
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_9 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.22
+				army_attack_factor = -0.022
+				army_defence_factor = -0.022
+				max_dig_in = -2.2
+				#army_morale_factor = -0.18
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.22
+					air_attack = -0.22
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.22
+					air_attack = -0.22
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.22
+					air_ground_attack = -0.22
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.22
+					air_ground_attack = -0.22
+					instant = yes
+				}
+			}
+		}
+		SOV_barb_debuff_10 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.20
+				army_attack_factor = -0.020
+				army_defence_factor = -0.020
+				max_dig_in = -2.0
+				#army_morale_factor = -0.15
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.20
+					air_attack = -0.20
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.20
+					air_attack = -0.20
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.20
+					air_ground_attack = -0.20
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.20
+					air_ground_attack = -0.20
+					instant = yes
+				}
+			}
+		}
+		SOV_barb_debuff_11 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.18
+				army_attack_factor = -0.018
+				army_defence_factor = -0.018
+				max_dig_in = -1.8
+				#army_morale_factor = -0.12
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.18
+					air_attack = -0.18
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.18
+					air_attack = -0.18
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.18
+					air_ground_attack = -0.18
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.18
+					air_ground_attack = -0.18
+					instant = yes
+				}
+			}
+		}
+		SOV_barb_debuff_12 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.16
+				army_attack_factor = -0.016
+				army_defence_factor = -0.016
+				max_dig_in = -1.6
+				#army_morale_factor = -0.09
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.16
+					air_attack = -0.16
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.16
+					air_attack = -0.16
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.16
+					air_ground_attack = -0.16
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.16
+					air_ground_attack = -0.16
+					instant = yes
+				}
+			}
+		}
+		SOV_barb_debuff_13 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.14
+				army_attack_factor = -0.014
+				army_defence_factor = -0.014
+				max_dig_in = -1.4
+				#army_morale_factor = -0.06
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.14
+					air_attack = -0.14
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.14
+					air_attack = -0.14
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.14
+					air_ground_attack = -0.14
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.14
+					air_ground_attack = -0.14
+					instant = yes
+				}
+			}
+		}
+		SOV_barb_debuff_14 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.12
+				army_attack_factor = -0.012
+				army_defence_factor = -0.012
+				max_dig_in = -1.2
+				#army_morale_factor = -0.03
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.12
+					air_attack = -0.12
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.12
+					air_attack = -0.12
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.12
+					air_ground_attack = -0.12
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.12
+					air_ground_attack = -0.12
+					instant = yes
+				}
+			}
+		}
+		SOV_barb_debuff_15 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.10
+				army_attack_factor = -0.010
+				army_defence_factor = -0.010
+				max_dig_in = -1.0
+				#army_morale_factor = -0.00
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.10
+					air_attack = -0.10
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.10
+					air_attack = -0.10
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.10
+					air_ground_attack = -0.10
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.10
+					air_ground_attack = -0.10
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_16 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.09
+				army_attack_factor = -0.009
+				army_defence_factor = -0.009
+				max_dig_in = -0.9
+				#army_morale_factor = -0.00
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.09
+					air_attack = -0.09
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.09
+					air_attack = -0.09
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.09
+					air_ground_attack = -0.09
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.09
+					air_ground_attack = -0.09
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_17 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.08
+				army_attack_factor = -0.008
+				army_defence_factor = -0.008
+				max_dig_in = -0.8
+				#army_morale_factor = -0.00
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.08
+					air_attack = -0.08
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.08
+					air_attack = -0.08
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.08
+					air_ground_attack = -0.08
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.08
+					air_ground_attack = -0.08
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_18 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.07
+				army_attack_factor = -0.007
+				army_defence_factor = -0.007
+				max_dig_in = -0.7
+				#army_morale_factor = -0.00
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.07
+					air_attack = -0.07
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.07
+					air_attack = -0.07
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.07
+					air_ground_attack = -0.07
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.07
+					air_ground_attack = -0.07
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_19 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.06
+				army_attack_factor = -0.006
+				army_defence_factor = -0.006
+				max_dig_in = -0.6
+				#army_morale_factor = -0.00
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.06
+					air_attack = -0.06
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.06
+					air_attack = -0.06
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.06
+					air_ground_attack = -0.06
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.06
+					air_ground_attack = -0.06
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_20 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.05
+				army_attack_factor = -0.005
+				army_defence_factor = -0.005
+				max_dig_in = -0.5
+				#army_morale_factor = -0.00
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.05
+					air_attack = -0.05
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.05
+					air_attack = -0.05
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.05
+					air_ground_attack = -0.05
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.05
+					air_ground_attack = -0.05
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_21 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.04
+				army_attack_factor = -0.004
+				army_defence_factor = -0.004
+				max_dig_in = -0.4
+				#army_morale_factor = -0.00
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.04
+					air_attack = -0.04
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.04
+					air_attack = -0.04
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.04
+					air_ground_attack = -0.04
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.04
+					air_ground_attack = -0.04
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_22 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.03
+				army_attack_factor = -0.003
+				army_defence_factor = -0.003
+				max_dig_in = -0.3
+				#army_morale_factor = -0.00
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.03
+					air_attack = -0.03
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.03
+					air_attack = -0.03
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.03
+					air_ground_attack = -0.03
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.03
+					air_ground_attack = -0.03
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_23 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.02
+				army_attack_factor = -0.002
+				army_defence_factor = -0.002
+				max_dig_in = -0.2
+				#army_morale_factor = -0.00
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.02
+					air_attack = -0.02
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.02
+					air_attack = -0.02
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.02
+					air_ground_attack = -0.02
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.02
+					air_ground_attack = -0.02
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_24 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = { }
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.01
+				army_attack_factor = -0.001
+				army_defence_factor = -0.001
+				max_dig_in = -0.1
+				#army_morale_factor = -0.00
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = -0.01
+					air_attack = -0.01
+					instant = yes
+				}
+				heavy_small_plane_airframe = {
+					air_agility = -0.01
+					air_attack = -0.01
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.01
+					air_ground_attack = -0.01
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.01
+					air_ground_attack = -0.01
+					instant = yes
+				}
+			}
+		}
+
+		SOV_barb_debuff_ended = {
+			name = "Officer Corp Reformed"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			available = {}
+			
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = 0.00
+				army_attack_factor = 0.000
+				army_defence_factor = 0.000
+				max_dig_in = 0.0
+				#army_morale_factor = 0.00
+			}
+		}
+	}
+}
