@@ -311,6 +311,24 @@ ideas = {
 				non_core_manpower = 0.03
 			}
 		}
+		FRA_ger_attack = {
+			picture = generic_army_war_college
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+			}
+		}
 		FRA_france_undividable = {
 			picture = FRA_undividable
 			allowed = {

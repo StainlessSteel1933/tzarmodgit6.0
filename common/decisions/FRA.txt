@@ -1,11 +1,10 @@
 FRA_bop_decisions = {
 	FRA_bop_1 = {
-		name = "Seize Civilian Property"
+		name = "Investments into civilian infrastructure"
 		fire_only_once = no
 		visible = {
 		}
 		cost = 10
-		
 		complete_effect = {
 			14 = {
 				add_extra_state_shared_building_slots = 4
@@ -15,7 +14,7 @@ FRA_bop_decisions = {
 				value = -0.1
 			}
 			16 = {
-			add_extra_state_shared_building_slots =1
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -26,100 +25,92 @@ FRA_bop_decisions = {
 	}
 	FRA_bop_2 = {
 		name = "Stabilize the country"
-		fire_only_once = no
+		fire_only_once = yes
 		visible = {
 		}
-		cost = 20
-		
+		cost = 10
 		complete_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
 				value = 0.05
 			}
-		}	
+		}
 	}
 	FRA_bop_2_5 = {
 		name = "Rally the left"
 		fire_only_once = no
 		visible = {
-				has_completed_focus = Fra_left_wing
+			has_completed_focus = Fra_left_wing
 		}
 		cost = 35
-		
 		complete_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
 				value = 0.1
 			}
-		}	
+		}
 	}
 	FRA_bop_3_5 = {
 		name = "Rally the right"
 		fire_only_once = no
 		visible = {
-				has_completed_focus = Fra_right_wing
+			has_completed_focus = Fra_right_wing
 		}
 		cost = 35
-		
 		complete_effect = {
 			add_power_balance_value = {
 				id = FRA_violence
 				value = 0.1
 			}
-		}	
-	}
-	FRA_bop_3 = {
-		name = "Ban Right Wing Parties"
-		fire_only_once = yes
-		visible = {
-			AND = {
-				date>1937.1.1
-				has_completed_focus = Fra_left_wing
-			}
 		}
-		cost = 80
-		
-		complete_effect = {
-			add_power_balance_value = {
-				id = FRA_violence
-				value = 0.25
-			}
-		}	
 	}
-	FRA_bop_4 = {
-		name = "Ban Left Wing Parties"
-		fire_only_once = yes
-		visible = {
-			has_completed_focus = FRA_support_right
-		}
-		cost = 100
-		
-		complete_effect = {
-			add_power_balance_value = {
-				id = FRA_violence
-				value = 0.25
-			}
-		}	
-	}
+	# FRA_bop_3 = {
+	# 	name = "Ban Right Wing Parties"
+	# 	fire_only_once = yes
+	# 	visible = {
+	# 		AND = {
+	# 			date> 1937.1.1
+	# 			has_completed_focus = Fra_left_wing
+	# 		}
+	# 	}
+	# 	cost = 80
+	# 	complete_effect = {
+	# 		add_power_balance_value = {
+	# 			id = FRA_violence
+	# 			value = 0.25
+	# 		}
+	# 	}	
+	# }
+	# FRA_bop_4 = {
+	# 	name = "Ban Left Wing Parties"
+	# 	fire_only_once = yes
+	# 	visible = {
+	# 		has_completed_focus = FRA_support_right
+	# 	}
+	# 	cost = 100
+	# 	complete_effect = {
+	# 		add_power_balance_value = {
+	# 			id = FRA_violence
+	# 			value = 0.25
+	# 		}
+	# 	}	
+	# }
 }
+
 FRA_elections = {
 	FRA_elections = {
 		icon = GFX_decision_generic_political_address
 		name = "French Elections of 1936"
 		available = {
-			date>1936.5.4
+			date > 1936.5.4
 		}
-
 		is_good = yes
-
 		allowed = {
 			#added through on_action
 			tag = FRA
 		}
-
 		fire_only_once = yes
 		days_mission_timeout = 122
-
 		visible = {
 			NOT = {
 				OR = {
@@ -128,43 +119,33 @@ FRA_elections = {
 				}
 			}
 		}
-
-        timeout_effect = {
-        if = {
-	        limit = {
-	        	check_variable = {
-	        		FRA_support_for_right < 50
-	        	}
-	        }
-	        	custom_effect_tooltip = FRA_left_win
-	        	complete_national_focus = Fra_left_wing
-	    }
-        if = {
-	        limit = {
-	        	check_variable = {
-	        		FRA_support_for_right > 49
-	        	}
-	        }
-	        custom_effect_tooltip = FRA_right_win
-	        complete_national_focus = Fra_right_wing
-        }
-        if = {
-        limit = {
-        FRA = {
-        NOT = {
-        has_completed_focus = FRA_elections
-        }
-        }
-        }
-        hidden_effect = {
-                complete_national_focus = FRA_election}
-        }
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						FRA_support_for_right < 50
+					}
+				}
+				custom_effect_tooltip = FRA_left_win
+				complete_national_focus = Fra_left_wing
+			}
+			if = {
+				limit = {
+					check_variable = {
+						FRA_support_for_right > 49
+					}
+				}
+				custom_effect_tooltip = FRA_right_win
+				complete_national_focus = Fra_right_wing
+			}
+			complete_national_focus = FRA_election
 			hidden_effect = {
 			}
 			#custom_effect_tooltip = GER_relocate_industry_mil
 		}
 	}
 }
+
 FRA_indutry_tzar = {
 	FRA_industry_1 = {
 		name = "Industrial Expansion"
@@ -176,12 +157,16 @@ FRA_indutry_tzar = {
 			has_country_flag = FRA_eco_1
 		}
 		cost = 15
-		
 		complete_effect = {
 			14 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
 				add_extra_state_shared_building_slots = 4
 			}
-			fra_cg_upgrade_effect = yes 
+			fra_cg_upgrade_effect = yes
 			custom_effect_tooltip = FRA_cg_upgrade
 		}
 	}
@@ -195,17 +180,16 @@ FRA_indutry_tzar = {
 			has_country_flag = FRA_eco_1
 		}
 		cost = 35
-		
 		complete_effect = {
 			16 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
-			fra_cg_upgrade_effect = yes 
+			fra_cg_upgrade_effect = yes
 			custom_effect_tooltip = FRA_cg_upgrade
 		}
 	}
@@ -220,18 +204,26 @@ FRA_indutry_tzar = {
 		}
 		cost = 40
 		complete_effect = {
-			add_to_variable = { FRA_north_eco = 1 }
+			add_to_variable = {
+				FRA_north_eco = 1
+			}
 			28 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 5
 					instant_build = yes
 				}
 			}
-			add_to_variable = { FRA_cg = -0.04 }
-			add_to_variable = { FRA_output = 0.05 }
-			add_to_variable = { FRA_eff_ret = 0.015 }
+			add_to_variable = {
+				FRA_cg = -0.04
+			}
+			add_to_variable = {
+				FRA_output = 0.05
+			}
+			add_to_variable = {
+				FRA_eff_ret = 0.015
+			}
 			custom_effect_tooltip = FRA_small_eco_upgrade
 		}
 	}
@@ -246,18 +238,31 @@ FRA_indutry_tzar = {
 		}
 		cost = 60
 		complete_effect = {
-			add_to_variable = { FRA_north_eco = 1 }
+			add_to_variable = {
+				FRA_north_eco = 1
+			}
 			29 = {
 				add_extra_state_shared_building_slots = 7
 				add_building_construction = {
 					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
 					level = 3
 					instant_build = yes
 				}
 			}
-			add_to_variable = { FRA_cg = -0.04 }
-add_to_variable = { FRA_output = 0.05 }
-add_to_variable = { FRA_eff_ret = 0.015 } 
+			add_to_variable = {
+				FRA_cg = -0.04
+			}
+			add_to_variable = {
+				FRA_output = 0.05
+			}
+			add_to_variable = {
+				FRA_eff_ret = 0.015
+			}
 			custom_effect_tooltip = FRA_small_eco_upgrade
 		}
 	}
@@ -272,18 +277,26 @@ add_to_variable = { FRA_eff_ret = 0.015 }
 		}
 		cost = 50
 		complete_effect = {
-			add_to_variable = { FRA_north_eco = 1 }
+			add_to_variable = {
+				FRA_north_eco = 1
+			}
 			18 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 6
 					instant_build = yes
 				}
 			}
-			add_to_variable = { FRA_cg = -0.04 }
-add_to_variable = { FRA_output = 0.05 }
-add_to_variable = { FRA_eff_ret = 0.015 } 
+			add_to_variable = {
+				FRA_cg = -0.04
+			}
+			add_to_variable = {
+				FRA_output = 0.05
+			}
+			add_to_variable = {
+				FRA_eff_ret = 0.015
+			}
 			custom_effect_tooltip = FRA_small_eco_upgrade
 		}
 	}
@@ -294,17 +307,24 @@ add_to_variable = { FRA_eff_ret = 0.015 }
 			NOT = {
 				has_war = yes
 			}
-			check_variable = {FRA_north_eco > 2 }
+			check_variable = {
+				FRA_north_eco > 2
+			}
 		}
 		complete_effect = {
-			add_to_variable = { FRA_cg = -0.04 }
-		add_to_variable = { FRA_cap = 0.025 }
-		add_to_variable = { FRA_output = 0.05 }
+			add_to_variable = {
+				FRA_cg = -0.04
+			}
+			add_to_variable = {
+				FRA_cap = 0.025
+			}
+			add_to_variable = {
+				FRA_output = 0.05
+			}
 			custom_effect_tooltip = FRA_big_upgrade_eco
 		}
 	}
-
-	### south
+	### south ;;
 	FRA_Civ_industry_south_1 = {
 		name = "Civil Works in Bouches Du Rhone"
 		fire_only_once = yes
@@ -316,7 +336,9 @@ add_to_variable = { FRA_eff_ret = 0.015 }
 		}
 		cost = 40
 		complete_effect = {
-			add_to_variable = { FRA_south_eco = 1 }
+			add_to_variable = {
+				FRA_south_eco = 1
+			}
 			21 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -325,9 +347,15 @@ add_to_variable = { FRA_eff_ret = 0.015 }
 					instant_build = yes
 				}
 			}
-			add_to_variable = { FRA_cg = -0.04 }
-add_to_variable = { FRA_output = 0.05 }
-add_to_variable = { FRA_eff_ret = 0.015 } 
+			add_to_variable = {
+				FRA_cg = -0.04
+			}
+			add_to_variable = {
+				FRA_output = 0.05
+			}
+			add_to_variable = {
+				FRA_eff_ret = 0.015
+			}
 			custom_effect_tooltip = FRA_small_eco_upgrade
 		}
 	}
@@ -342,18 +370,26 @@ add_to_variable = { FRA_eff_ret = 0.015 }
 		}
 		cost = 60
 		complete_effect = {
-			add_to_variable = { FRA_south_eco = 1 }
+			add_to_variable = {
+				FRA_south_eco = 1
+			}
 			20 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
-			add_to_variable = { FRA_cg = -0.04 }
-add_to_variable = { FRA_output = 0.05 }
-add_to_variable = { FRA_eff_ret = 0.015 } 
+			add_to_variable = {
+				FRA_cg = -0.04
+			}
+			add_to_variable = {
+				FRA_output = 0.05
+			}
+			add_to_variable = {
+				FRA_eff_ret = 0.015
+			}
 			custom_effect_tooltip = FRA_small_eco_upgrade
 		}
 	}
@@ -368,18 +404,26 @@ add_to_variable = { FRA_eff_ret = 0.015 }
 		}
 		cost = 80
 		complete_effect = {
-			add_to_variable = { FRA_south_eco = 1 }
+			add_to_variable = {
+				FRA_south_eco = 1
+			}
 			19 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 8
 					instant_build = yes
 				}
 			}
-			add_to_variable = { FRA_cg = -0.04 }
-add_to_variable = { FRA_output = 0.05 }
-add_to_variable = { FRA_eff_ret = 0.015 } 
+			add_to_variable = {
+				FRA_cg = -0.04
+			}
+			add_to_variable = {
+				FRA_output = 0.05
+			}
+			add_to_variable = {
+				FRA_eff_ret = 0.015
+			}
 			custom_effect_tooltip = FRA_small_eco_upgrade
 		}
 	}
@@ -390,199 +434,136 @@ add_to_variable = { FRA_eff_ret = 0.015 }
 			NOT = {
 				has_war = yes
 			}
-			check_variable = {FRA_south_eco > 2 }
+			check_variable = {
+				FRA_south_eco > 2
+			}
 		}
 		complete_effect = {
-			add_to_variable = { FRA_cg = -0.04 }
-		add_to_variable = { FRA_cap = 0.025 }
-		add_to_variable = { FRA_output = 0.05 }
+			add_to_variable = {
+				FRA_cg = -0.04
+			}
+			add_to_variable = {
+				FRA_cap = 0.025
+			}
+			add_to_variable = {
+				FRA_output = 0.05
+			}
 			custom_effect_tooltip = FRA_big_upgrade_eco
 		}
 	}
 }
+
 FRA_relocation = {
 }
-FRA_move_capital = {
-FRA_move_capital_casablanca = {
-icon = generic_operation
-
-allowed = {
-original_tag = FRF
-
-}
-
-		available = {
-			has_capitulated = yes 
-			FRF = { controls_state = 461 }
-		}
-		
-		visible = {
-		#has_game_rule = {  rule = horst_vichy_france    option = HORST_DISABLE_VICHY_FRANCE   }
-		#FRA = { controls_state = 461 }
-		}
-		
-		cost = 0
-		
-		complete_effect = {
-		FRF = { set_capital = { state = 461 } }
-		}
-	}
-		
-FRA_move_capital_gabon = {
-icon = generic_operation
-
-allowed = {
-original_tag = FRF
-}
-		available = {
-		has_capitulated = yes 
-		FRF = { controls_state = 539 }
-		}
-		visible = {
-			#FRA = { controls_state = 539 }
-		}
-		
-		cost = 0
-		
-		complete_effect = {
-		FRF = { set_capital = { state = 539 } }
-		}
-}
-FRA_move_capital_guiana = {
-	icon = generic_operation
-	
-	allowed = {
-	original_tag = FRF
-	}
-			available = {
-			has_capitulated = yes 
-			FRF = { controls_state = 310 }
-			}
-			visible = {
-				#FRA = { controls_state = 310 }
-			}
-			
-			cost = 0
-			
-			complete_effect = {
-			FRF = { set_capital = { state = 310 } }
-			}
-	}
-}
-	
 
 operations = {
-
-
-
-    FRA_annex_saf = {
-
-		targets = { SAF }
-
-		allowed = {
-			original_tag = FRF
-		}
-
-		available = {
-			is_ai = no
-			SAF = { 
-				is_ai = yes 
-			}
-			date > 1940.5.1
-		}
-			
-		cost = 0
-			
-		visible = {
-			country_exists = SAF
-		}
-			
-		fire_only_once = yes
-	
-		complete_effect = {
-		
-		if = { limit = { NOT = { SAF = { has_completed_focus = SAF_secure_interests_in_africa }}}	
-					transfer_state = 542
-					transfer_state = 545
-					transfer_state = 771
-					transfer_state = 770
-					transfer_state = 546
-					transfer_state = 547
-					transfer_state = 548
-		}
-
-			if = {
-				limit = {
-					SAF = {
-						has_tech = excavation1
-					}
-				}
-				set_technology = {
-					excavation1 = 1
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						has_tech = excavation2
-					}
-				}
-				set_technology = {
-					excavation2 = 1
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						has_tech = excavation3
-					}
-				}
-				set_technology = {
-					excavation3 = 1
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {
-						has_tech = excavation4
-					}
-				}
-				set_technology = {
-					excavation4 = 1
-				}
-			}
-
-			if = {
-				limit = {
-					SAF = {  has_tech = excavation5 }
-				}
-				set_technology = { excavation5 = 1 }
-			}
-
-		    FRF = {
-				annex_country = {
-					target = SAF
-					transfer_troops = yes 
-				}
-			}
-			FRF = { 
-				add_state_core = 541
-				add_state_core = 275
-				add_state_core = 719
-				add_state_core = 681
-			}
-			SAF = {
-				remove_state_core = 541
-				remove_state_core = 275
-				remove_state_core = 719
-				remove_state_core = 681
-			}
-		}
-	}
-	}
+	# FRA_annex_saf = {
+	# 	targets = {
+	# 		SAF
+	# 	}
+	# 	allowed = {
+	# 		original_tag = FRF
+	# 	}
+	# 	available = {
+	# 		is_ai = no
+	# 		SAF = {
+	# 			is_ai = yes
+	# 		}
+	# 		date > 1940.5.1
+	# 	}
+	# 	cost = 0
+	# 	visible = {
+	# 		country_exists = SAF
+	# 	}
+	# 	fire_only_once = yes
+	# 	complete_effect = {
+	# 		if = {
+	# 			limit = {
+	# 				NOT = {
+	# 					SAF = {
+	# 						has_completed_focus = SAF_secure_interests_in_africa
+	# 					}
+	# 				}
+	# 			}
+	# 			transfer_state = 542
+	# 			transfer_state = 545
+	# 			transfer_state = 771
+	# 			transfer_state = 770
+	# 			transfer_state = 546
+	# 			transfer_state = 547
+	# 			transfer_state = 548
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				SAF = {
+	# 					has_tech = excavation1
+	# 				}
+	# 			}
+	# 			set_technology = {
+	# 				excavation1 = 1
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				SAF = {
+	# 					has_tech = excavation2
+	# 				}
+	# 			}
+	# 			set_technology = {
+	# 				excavation2 = 1
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				SAF = {
+	# 					has_tech = excavation3
+	# 				}
+	# 			}
+	# 			set_technology = {
+	# 				excavation3 = 1
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				SAF = {
+	# 					has_tech = excavation4
+	# 				}
+	# 			}
+	# 			set_technology = {
+	# 				excavation4 = 1
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				SAF = {
+	# 					has_tech = excavation5
+	# 				}
+	# 			}
+	# 			set_technology = {
+	# 				excavation5 = 1
+	# 			}
+	# 		}
+	# 		FRF = {
+	# 			annex_country = {
+	# 				target = SAF
+	# 				transfer_troops = yes
+	# 			}
+	# 		}
+	# 		FRF = {
+	# 			add_state_core = 541
+	# 			add_state_core = 275
+	# 			add_state_core = 719
+	# 			add_state_core = 681
+	# 		}
+	# 		SAF = {
+	# 			remove_state_core = 541
+	# 			remove_state_core = 275
+	# 			remove_state_core = 719
+	# 			remove_state_core = 681
+	# 		}
+	# 	}
+	# }
+}
 
 war_measures = {
 	# FRA_battle_2 = {
@@ -594,7 +575,6 @@ war_measures = {
 	# 	activation = {
 	# 		always=no
 	# 	}
-
 	# 	selectable_mission = no
 	# 	days_mission_timeout = 7
 	# 	is_good = yes
@@ -609,66 +589,46 @@ war_measures = {
 	# 		}
 	# 	}
 	# }
-
-
-# 		FRA_puppeted_by_ENG = {
-
-# 		icon = generic_prepare_civil_war
-
-				
-# 	visible = {
-# 			original_tag  = FRA
-# 		}
-		
-# 			activation = {
-# 		GER = { has_completed_focus = GER_danzig_or_war }		
-# 		tag = FRA
-# 		}
-		
-# 		available = {
-# 		FRA = { has_war_with = GER }
-
-# 		}
-
-		
-# 		fire_only_once = yes
-# 		days_mission_timeout = 2400
-
-# 		complete_effect = {
-# ENG = { puppet = FRA 
-		
-# 		set_autonomy = {
-#     target = FRA
-#     autonomy_state = autonomy_dominion
-# }
-# 		}
-# 		}
-# 		timeout_effect = {
-# 		}
-# 	}
-
-    FRA_surrender = {
-
+	# 		FRA_puppeted_by_ENG = {
+	# 		icon = generic_prepare_civil_war
+	# 	visible = {
+	# 			original_tag  = FRA
+	# 		}
+	# 			activation = {
+	# 		GER = { has_completed_focus = GER_danzig_or_war }		
+	# 		tag = FRA
+	# 		}
+	# 		available = {
+	# 		FRA = { has_war_with = GER }
+	# 		}
+	# 		fire_only_once = yes
+	# 		days_mission_timeout = 2400
+	# 		complete_effect = {
+	# ENG = { puppet = FRA 
+	# 		set_autonomy = {
+	#     target = FRA
+	#     autonomy_state = autonomy_dominion
+	# }
+	# 		}
+	# 		}
+	# 		timeout_effect = {
+	# 		}
+	# 	}
+	FRA_surrender = {
 		icon = generic_operation
-
 		allowed = {
 			original_tag = FRA
 		}
-
 		available = {
 			date < 1940.9.1
 		}
-			
 		cost = 0
-			
 		visible = {
 			has_war_with = GER
 			has_capitulated = no
 			surrender_progress > 50
 		}
-			
 		fire_only_once = yes
-	
 		complete_effect = {
 			FRA = {
 				add_timed_idea = {
@@ -677,7 +637,7 @@ war_measures = {
 				}
 			}
 		}
-	}	
+	}
 }
 
 Battle_for_France = {
@@ -686,65 +646,66 @@ Battle_for_France = {
 		icon = generic_construction
 		available = {
 			NOT = {
-			any_state = {
-							is_core_of = FRA
-							is_controlled_by  = FRA
-							is_on_continent = europe
-							industrial_complex > 2
-						}
+				any_state = {
+					is_core_of = FRA
+					is_controlled_by = FRA
+					is_on_continent = europe
+					industrial_complex > 2
+				}
 			}
-
 		}
-
 		is_good = yes
-
 		allowed = {
 			always = no
 			#added through on_action
 			tag = FRA
 		}
-
 		fire_only_once = no
 		days_mission_timeout = 1
-
 		visible = {
 		}
+		timeout_effect = {
 
-        timeout_effect = {
-       		add_to_variable = {
-       			FRA_defence = -0.005
-       		}
+
+			add_to_variable = {
+				FRA_defence = -0.005
+			}
 			random_controlled_state = {
 				limit = {
-					AND = {is_on_continent = europe is_fully_controlled_by = FRA}
+					is_on_continent = europe
+					is_fully_controlled_by = FRA
 					industrial_complex > 0
 				}
-				remove_building = {type = industrial_complex level = 1}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_to_variable = {
+					var:FRA.evacedCivs = 1
+				}
 			}
 			FRA = {
-					539 = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-   				 			type = industrial_complex
-   				 			level = 1
-  				 			instant_build = yes
-				 		}
+				539 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
 					}
+				}
 			}
-							if = {
-								limit = {
-								and = {
-																	any_state = {
-																		is_core_of = FRA
-																		is_controlled_by  = FRA
-																		is_on_continent = europe
-																		industrial_complex > 0
-																	}
-																	date<1940.12.12
-																}}
-								activate_mission = FRA_TZAR_RELOCATION_CIV
-							}
-			#custom_effect_tooltip = GER_relocate_industry_mil
+			if = {
+				limit = {
+					any_state = {
+						is_core_of = FRA
+						is_controlled_by = FRA
+						is_on_continent = europe
+						industrial_complex > 0
+					}
+					# date < 1940.12.12
+				}
+				activate_mission = FRA_TZAR_RELOCATION_CIV
+			}
 		}
 	}
 	FRA_TZAR_RELOCATION_MIL = {
@@ -754,28 +715,23 @@ Battle_for_France = {
 			NOT = {
 				any_state = {
 					is_core_of = FRA
-					is_controlled_by  = FRA
+					is_controlled_by = FRA
 					is_on_continent = europe
 					arms_factory > 2
 				}
 			}
 		}
-
 		is_good = yes
-
 		allowed = {
 			always = no
 			tag = FRA
 		}
-
 		fire_only_once = no
 		days_mission_timeout = 1
-
 		visible = {
-			date<1940.12.1
+			date < 1940.12.1
 		}
-
-        timeout_effect = {
+		timeout_effect = {
 			random_controlled_state = {
 				limit = {
 					AND = {
@@ -784,17 +740,23 @@ Battle_for_France = {
 						arms_factory > 2
 					}
 				}
-				remove_building = {type = arms_factory level = 1}
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
 			}
+			add_to_variable = {
+					var:FRA.evacedMills = 1
+				}
 			FRA = {
-					539 = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-   				 			type = arms_factory
-   				 			level = 1
-  				 			instant_build = yes
-				 		}
+				539 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
 					}
+				}
 			}
 			hidden_effect = {
 				if = {
@@ -802,18 +764,18 @@ Battle_for_France = {
 						and = {
 							any_state = {
 								is_core_of = FRA
-								is_controlled_by  = FRA
+								is_controlled_by = FRA
 								is_on_continent = europe
 								arms_factory > 0
 							}
-							date<1940.12.12
+							# date < 1940.12.12
 						}
 					}
 					activate_mission = FRA_TZAR_RELOCATION_MIL
 				}
 			}
 		}
-			#custom_effect_tooltip = GER_relocate_industry_mil
+		#custom_effect_tooltip = GER_relocate_industry_mil
 	}
 	FRA_held = {
 		name = "Battle for france"
@@ -821,23 +783,22 @@ Battle_for_France = {
 		available = {
 			always = no
 		}
-
 		is_good = yes
-
 		allowed = {
 			always = no
 			tag = FRA
 		}
-
 		fire_only_once = no
 		days_mission_timeout = 1
-
-        timeout_effect = {
+		timeout_effect = {
 			if = {
 				limit = {
 					casualties > 1000000
 				}
-				set_technology = { french_anti_battleplan = 1 popup = yes } 
+				set_technology = {
+					french_anti_battleplan = 1
+					popup = yes
+				}
 			}
 			if = {
 				limit = {
@@ -848,9 +809,11 @@ Battle_for_France = {
 				}
 				set_global_flag = France_capitulated
 			}
-			add_to_variable = { FRA_battle_weeks_held = 1}
+			add_to_variable = {
+				FRA_battle_weeks_held = 1
+			}
 			activate_mission = FRA_held
 		}
-			#custom_effect_tooltip = GER_relocate_industry_mil
+		#custom_effect_tooltip = GER_relocate_industry_mil
 	}
 }

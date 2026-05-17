@@ -26,7 +26,7 @@ FRA_Army = { #NATIONAL SPIRIT - Civilian
 	name = "French Army"
  	enable = { always = yes }
  	icon = GFX_idea_eng_imperial_conscription
- 	armor_attack_factor = FRA_tank 
+ 	# armor_attack_factor = FRA_tank 
  	max_planning = FRA_planning
  	max_dig_in = FRA_entr
  	army_defence_against_minor_factor = FRA_anti_minor
@@ -44,7 +44,8 @@ FRA_Army = { #NATIONAL SPIRIT - Civilian
  	surrender_limit = FRA_cap_limit
  	monthly_population = FRA_pop_growth
  }
-YUG_internal_divide = { #NATIONAL SPIRIT - Civilian
+ 
+ YUG_internal_divide = { #NATIONAL SPIRIT - Civilian
 	enable = { always = yes }
 	
 	icon = GFX_idea_ARG_maintain_neutrality
