@@ -2,7 +2,6 @@ equipment_modules = {
 	tank_bogie_suspension = {
 		abbreviation = "bog"
 		category = tank_suspension_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			build_cost_ic = 1.5
@@ -14,11 +13,10 @@ equipment_modules = {
 	tank_interleaved_suspension = {
 		abbreviation = "int"
 		category = tank_suspension_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			build_cost_ic = 3.7
-			armor_value = 0.2
+			armor_value = 10
 		}
 		dismantle_cost_ic  = 2
 
@@ -34,7 +32,6 @@ equipment_modules = {
 	tank_wheeled_suspension = {
 		abbreviation = "whe"
 		category = tank_non_tracked_suspension_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			reliability = -0.2
@@ -50,7 +47,6 @@ equipment_modules = {
     	tank_unsprung_suspension = {
 		abbreviation = "usn"
 		category = tank_suspension_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			build_cost_ic = 0.5
@@ -65,7 +61,6 @@ equipment_modules = {
 	tank_horstmann_suspension = {
 		abbreviation = "hrs"
 		category = tank_suspension_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			build_cost_ic = 2.5
@@ -79,7 +74,6 @@ equipment_modules = {
 	tank_rubber_scissor_suspension = {
 		abbreviation = "rub"
 		category = tank_suspension_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			build_cost_ic = 2.5
@@ -94,7 +88,6 @@ equipment_modules = {
 	tank_torsion_bar_suspension = {
 		abbreviation = "tor"
 		category = tank_suspension_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			build_cost_ic = 3
@@ -106,7 +99,6 @@ equipment_modules = {
 	tank_christie_suspension = {
 		abbreviation = "chr"
 		category = tank_suspension_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			build_cost_ic = 1.8
@@ -122,7 +114,6 @@ equipment_modules = {
 	tank_half_track_suspension = {
 		abbreviation = "htr"
 		category = tank_non_tracked_suspension_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			build_cost_ic = 3

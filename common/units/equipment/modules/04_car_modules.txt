@@ -6,7 +6,6 @@ equipment_modules = {
 	car_gasoline_engine = {
 		abbreviation = "cgas"
 		category = car_engine_type
-		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
 			build_cost_ic = 0.5
@@ -21,7 +20,6 @@ equipment_modules = {
 	car_diesel_engine = {
 		abbreviation = "cdie"
 		category = car_engine_type
-		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
 			build_cost_ic = 0.5
@@ -37,7 +35,6 @@ equipment_modules = {
 	car_riveted_armor = {
 		abbreviation = "cra"
 		category = car_armor_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			hardness = -0.05
@@ -53,7 +50,6 @@ equipment_modules = {
 	car_welded_armor = {
 		abbreviation = "cwa"
 		category = car_armor_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			defense = 2
@@ -69,7 +65,6 @@ equipment_modules = {
 	car_cast_armor = {
 		abbreviation = "cwa"
 		category = car_armor_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			defense = 3
@@ -88,7 +83,6 @@ equipment_modules = {
 	car_4x4_suspension = {
 		abbreviation = "4x4"
 		category = car_suspension_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			build_cost_ic = 0.75
@@ -109,7 +103,6 @@ equipment_modules = {
 	car_6x6_suspension = {
 		abbreviation = "6x6"
 		category = car_suspension_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			build_cost_ic = 1
@@ -126,7 +119,6 @@ equipment_modules = {
 	car_8x8_suspension = {
 		abbreviation = "8x8"
 		category = car_suspension_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			build_cost_ic = 1.5
@@ -151,7 +143,6 @@ equipment_modules = {
 	car_one_man_tank_turret = {
 		abbreviation = "cl1m"
 		category = car_light_turret_type
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 0.25
@@ -168,7 +159,6 @@ equipment_modules = {
 	car_two_man_tank_turret = {
 		abbreviation = "cl2m"
 		category = car_light_turret_type
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 0.5
@@ -188,7 +178,6 @@ equipment_modules = {
 	car_three_man_tank_turret = {
 		abbreviation = "cl3m"
 		category = car_light_turret_type
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 0.75
@@ -212,7 +201,6 @@ equipment_modules = {
 	car_three_man_tank_turret_aa = {
 		abbreviation = "cl3maa"
 		category = car_light_turret_type
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 1.25
@@ -242,7 +230,6 @@ equipment_modules = {
 	car_nft_two_man_tank_turret = {
 		abbreviation = "nft2"
 		category = car_light_turret_type
-		sfx = sfx_ui_sd_module_turret
 
 		allowed_module_categories = {
 			main_armament_slot = {
@@ -270,7 +257,6 @@ equipment_modules = {
 	car_lmg = {
 		abbreviation = "clmg"
 		category = car_small_main_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			soft_attack = 4
@@ -284,7 +270,6 @@ equipment_modules = {
 	car_machine_gun = {
 		abbreviation = "chmg"
 		category = car_small_main_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			soft_attack = 6
@@ -298,7 +283,6 @@ equipment_modules = {
 	car_aa_mg = {
 		abbreviation = "caamg"
 		category = car_small_main_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			soft_attack = 5
@@ -316,7 +300,6 @@ equipment_modules = {
 	car_aa_cannon = {
 		abbreviation = "caac"
 		category = car_small_main_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			soft_attack = 8
@@ -337,7 +320,6 @@ equipment_modules = {
 	car_AT_rifle = {
 		abbreviation = "catr"
 		category = car_small_main_armament
-		sfx = sfx_ui_sd_module_turret
 		#allow_equipment_type = anti_tank
 
 		add_stats = {
@@ -357,7 +339,6 @@ equipment_modules = {
 	car_high_velocity_cannon = {
 		abbreviation = "chv1"
 		category = car_small_main_armament
-		sfx = sfx_ui_sd_module_turret
 		#allow_equipment_type = anti_tank
 
 		add_stats = {
@@ -377,7 +358,6 @@ equipment_modules = {
 	car_flamethrower = { #Hans, hol den Flammenwerfer!
 		abbreviation = "cflt"
 		category = car_small_main_armament
-		sfx = sfx_ui_sd_module_turret
 		#allow_equipment_type = flame
 
 		add_stats = {
@@ -397,7 +377,6 @@ equipment_modules = {
 	car_auto_cannon = {
 		abbreviation = "cac1"
 		category = car_small_main_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			soft_attack = 12
@@ -417,7 +396,6 @@ equipment_modules = {
 	car_auto_cannon_2 = {
 		abbreviation = "cac2"
 		category = car_small_main_armament
-		sfx = sfx_ui_sd_module_turret
 		parent = car_auto_cannon
 		add_stats = {
 			soft_attack = 18
@@ -437,7 +415,6 @@ equipment_modules = {
 	car_small_cannon = {
 		abbreviation = "csc1"
 		category = car_small_main_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			soft_attack = 10
@@ -456,7 +433,6 @@ equipment_modules = {
 	car_small_cannon_2 = {
 		abbreviation = "csc2"
 		category = car_small_main_armament
-		sfx = sfx_ui_sd_module_turret
 		parent = car_small_cannon
 		add_stats = {
 			soft_attack = 15
@@ -475,7 +451,6 @@ equipment_modules = {
 	car_infantry_support_gun = {
 		abbreviation = "ccs"
 		category = car_medium_main_armament
-		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			soft_attack = 22
 			hard_attack = 4
@@ -493,7 +468,6 @@ equipment_modules = {
 	car_medium_cannon = {
 		abbreviation = "cmc1"
 		category = car_medium_main_armament
-		sfx = sfx_ui_sd_module_turret
 		#allow_equipment_type = anti_tank
 
 		add_stats = {
@@ -516,7 +490,6 @@ equipment_modules = {
 	car_vision_ports = {
 		abbreviation = "cvp"
 		category = car_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 0.5
@@ -533,7 +506,6 @@ equipment_modules = {
 	car_stabilizer = {
 		abbreviation = "cstab"
 		category = car_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 0.5
@@ -550,7 +522,6 @@ equipment_modules = {
 	car_smoke_launchers = {
 		abbreviation = "csmok"
 		category = car_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 0.2
@@ -567,7 +538,6 @@ equipment_modules = {
 	car_extra_ammo_storage = {
 		abbreviation = "cextra"
 		category = car_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			reliability = -0.1
@@ -586,7 +556,6 @@ equipment_modules = {
 	car_wet_ammo_storage = {
 		abbreviation = "cwet"
 		category = car_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			reliability = 0.05
@@ -603,7 +572,6 @@ equipment_modules = {
 	car_easy_maintenance = {
 		abbreviation = "ceasy"
 		category = car_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			reliability = 0.1
@@ -617,7 +585,6 @@ equipment_modules = {
 	car_additional_machine_guns = {
 		abbreviation = "cmg"
 		category = car_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			soft_attack = 2
@@ -635,7 +602,6 @@ equipment_modules = {
 	car_expanded_fuel_tank = {
 		abbreviation = "cfuel"
 		category = car_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			fuel_capacity = 60

@@ -4,7 +4,6 @@ equipment_modules = {
 	tank_radio_1 = {
 		abbreviation = "rad1"
 		category = tank_radio_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 0.75
@@ -20,7 +19,6 @@ equipment_modules = {
 		abbreviation = "rad2"
 		category = tank_radio_module
 		parent = tank_radio_1
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 1
@@ -36,7 +34,6 @@ equipment_modules = {
 		abbreviation = "rad3"
 		category = tank_radio_module
 		parent = tank_radio_2
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 1.25
@@ -50,7 +47,6 @@ equipment_modules = {
 	stabilizer = {
 		abbreviation = "stab"
 		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 1.75
@@ -66,7 +62,6 @@ equipment_modules = {
 	smoke_launchers = {
 		abbreviation = "smok"
 		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			defense = 3
@@ -82,7 +77,6 @@ equipment_modules = {
 	extra_ammo_storage = {
 		abbreviation = "extra"
 		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			reliability = -0.05
@@ -96,7 +90,6 @@ equipment_modules = {
 	wet_ammo_storage = {
 		abbreviation = "wet"
 		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			defense = 4
@@ -111,7 +104,6 @@ equipment_modules = {
 		basic_toolkit = {
 		abbreviation = "btk"
 		category = tank_special_module	
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 0.2
@@ -124,7 +116,6 @@ equipment_modules = {
 		wide_tracks = {
 		abbreviation = "wtr"
 		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			reliability = 0.2		
@@ -140,7 +131,6 @@ equipment_modules = {
 	squeezebore_adaptor = {
 		abbreviation = "sque"
 		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 		hard_attack = 3
@@ -155,7 +145,6 @@ equipment_modules = {
 	armor_skirts = {
 		abbreviation = "skirt"
 		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			armor_value = 4
@@ -172,7 +161,6 @@ equipment_modules = {
 	dozer_blade = {
 		abbreviation = "dozer"
 		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			defense = 5.5
@@ -187,7 +175,6 @@ equipment_modules = {
 	auto_loader = {
 		abbreviation = "auto"
 		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 2.5
@@ -202,7 +189,6 @@ equipment_modules = {
 	easy_maintenance = {
 		abbreviation = "easy"
 		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			reliability = 0.25
@@ -215,7 +201,6 @@ equipment_modules = {
 	expanded_fuel_tank = {
 		abbreviation = "fuel"
 		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			fuel_capacity = 300

@@ -8,7 +8,6 @@ equipment_modules = {
 	sloped_armor = {
 		abbreviation = "slop"
 		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 		}
@@ -21,7 +20,6 @@ equipment_modules = {
 	tank_riveted_armor = {
 		abbreviation = "riv"
 		category = tank_armor_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			armor_value = -3
@@ -39,7 +37,6 @@ equipment_modules = {
 	tank_cast_armor = {
 		abbreviation = "cas"
 		category = tank_armor_type
-		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
 			defense = 3
@@ -56,7 +53,6 @@ equipment_modules = {
 	tank_welded_armor = {
 		abbreviation = "wel"
 		category = tank_armor_type
-		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
 			defense = 2
@@ -85,7 +81,6 @@ equipment_modules = {
 	lc_heavy_naval_guns = {
 		abbreviation = "hng"
 		category = lc_main_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 40 #LC Needs breakthrough
@@ -112,7 +107,6 @@ equipment_modules = {
 	lc_super_heavy_railway_gun = {
 		abbreviation = "shrwg"
 		category = lc_main_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 30 #LC Needs breakthrough
@@ -141,7 +135,6 @@ equipment_modules = {
 	lc_high_impact_obliterator_cannon = {
 		abbreviation = "hioc"
 		category = lc_main_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 25 #LC Needs breakthrough
@@ -169,7 +162,6 @@ equipment_modules = {
 	lc_heavy_anti_air_platform = {
 		abbreviation = "haap"
 		category = lc_main_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 20 #LC Needs breakthrough
@@ -202,7 +194,6 @@ equipment_modules = {
 	lc_medium_naval_guns = {
 		abbreviation = "mng"
 		category = lc_secondary_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 25 #LC Needs breakthrough
@@ -229,7 +220,6 @@ equipment_modules = {
 	lc_hull_mounted_railway_gun = {
 		abbreviation = "hmrwg"
 		category = lc_secondary_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 15 #LC Needs breakthrough
@@ -258,7 +248,6 @@ equipment_modules = {
 	lc_super_heavy_howitzer = {
 		abbreviation = "shh"
 		category = lc_secondary_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 20 #LC Needs breakthrough
@@ -289,7 +278,6 @@ equipment_modules = {
 	lc_heavy_high_velocity_cannons = {
 		abbreviation = "hhvc"
 		category = lc_secondary_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 15 #LC Needs breakthrough
@@ -317,7 +305,6 @@ equipment_modules = {
 	lc_heavy_anti_air_battery = {
 		abbreviation = "haab"
 		category = lc_secondary_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 10 #LC Needs breakthrough
@@ -349,7 +336,6 @@ equipment_modules = {
 	lc_medium_cannon_turret = {
 		abbreviation = "mct"
 		category = lc_additional_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 8 #Improved Medium Cannon: 4
@@ -377,7 +363,6 @@ equipment_modules = {
 	lc_assault_gun = {
 		abbreviation = "asg"
 		category = lc_additional_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 16 #Heavy Howitzer: -4
@@ -407,7 +392,6 @@ equipment_modules = {
 	lc_high_velocity_cannon_turret = {
 		abbreviation = "hvct"
 		category = lc_additional_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 4 #LC Needs breakthrough
@@ -435,7 +419,6 @@ equipment_modules = {
 	lc_light_anti_air_battery = {
 		abbreviation = "laab"
 		category = lc_additional_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			soft_attack = 10 #Advanced AA Cannon: 10
@@ -461,7 +444,6 @@ equipment_modules = {
 	lc_flamethrower_turret = {
 		abbreviation = "ftt"
 		category = lc_additional_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 8 #LC Needs breakthrough
@@ -484,7 +466,6 @@ equipment_modules = {
 	lc_rocket_launcher = {
 		abbreviation = "rol"
 		category = lc_additional_armament
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			breakthrough = 4 #Improved Rocket Launcher: -4
@@ -518,7 +499,6 @@ equipment_modules = {
 	lc_radio_1 = {
 		abbreviation = "lcrad1"
 		category = lc_radio_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 2 #was 1
@@ -534,7 +514,6 @@ equipment_modules = {
 		abbreviation = "lcrad2"
 		category = lc_radio_module
 		parent = lc_radio_1
-		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
 			build_cost_ic = 4 #was 2
@@ -550,7 +529,6 @@ equipment_modules = {
 		abbreviation = "lcrad3"
 		category = lc_radio_module
 		parent = lc_radio_2
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 6 #was 3
@@ -565,7 +543,6 @@ equipment_modules = {
 	lc_command_center = {
 		abbreviation = "coc"
 		category = lc_radio_module
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 8 #Advanced Radio: 2.5
@@ -580,7 +557,6 @@ equipment_modules = {
 	lc_aircraft_catapult = {
 		abbreviation = "acc"
 		category = lc_aerial_deployment
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			recon = 5
@@ -595,7 +571,6 @@ equipment_modules = {
 	lc_helipad = {
 		abbreviation = "hel"
 		category = lc_aerial_deployment
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			recon = 8
@@ -610,7 +585,6 @@ equipment_modules = {
 	lc_armored_skirts = {
 		abbreviation = "ask"
 		category = lc_external_features
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			armor_value = 6 #Armored Skirts: 3
@@ -623,7 +597,6 @@ equipment_modules = {
 	lc_smoke_generators = {
 		abbreviation = "smoker"
 		category = lc_external_features
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			defense = 2 #Smoke Launchers: 2
@@ -636,7 +609,6 @@ equipment_modules = {
 	lc_obstacle_clearance_gear = {
 		abbreviation = "ocg"
 		category = lc_external_features
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			entrenchment = 4 #Dozer Blade: 1
@@ -649,7 +621,6 @@ equipment_modules = {
 	lc_radar = {
 		abbreviation = "rdr"
 		category = lc_external_features
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 10 #Advanced Radio: 2.5
@@ -664,7 +635,6 @@ equipment_modules = {
 	lc_internal_fuel_tanks = {
 		abbreviation = "eft"
 		category = lc_structural_features
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			fuel_capacity = 150 #Fuel Drum: 100
@@ -677,7 +647,6 @@ equipment_modules = {
 	lc_internal_ammunition_compartments = {
 		abbreviation = "extra"
 		category = lc_structural_features
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			reliability = -0.05 #Extra Ammo Storage: -0.1
@@ -690,7 +659,6 @@ equipment_modules = {
 	lc_wet_ammunition_storage = {
 		abbreviation = "wets"
 		category = lc_structural_features
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			reliability = 0.15 #Wet Ammunition Storage: 0.15
@@ -702,7 +670,6 @@ equipment_modules = {
 	lc_bunker_emplacement = {
 		abbreviation = "bke"
 		category = lc_structural_features
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			defense = 10
@@ -718,7 +685,6 @@ equipment_modules = {
 	lc_stabilizers = {
 		abbreviation = "stabs"
 		category = lc_structural_features
-		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
 			build_cost_ic = 3 #Stabilizer: 2
