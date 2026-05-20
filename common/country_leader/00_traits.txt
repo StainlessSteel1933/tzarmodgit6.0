@@ -4832,6 +4832,10 @@ tank_refurbishment_plant = { #NSB
 		experience_gain_army = 0.20
 		experience_gain_air = 0.05
 		experience_gain_navy = 0.05
+		new_mobile_warfare_mastery_gain_factor = 0.15
+		superior_firepower_mastery_gain_factor = 0.15
+		grand_battleplan_mastery_gain_factor = 0.15
+		mass_assault_mastery_gain_factor = 0.15
 		
 		ai_will_do = {
 			factor = 500
@@ -4843,7 +4847,7 @@ tank_refurbishment_plant = { #NSB
 		experience_gain_army = 0.20
 		experience_gain_air = 0.05
 		experience_gain_navy = 0.05
-		cat_mobile_warfare_cost_factor = -0.05
+		new_mobile_warfare_mastery_gain_factor = 0.15
 		ai_will_do = {
 			factor = 500
 		}
@@ -4854,7 +4858,7 @@ tank_refurbishment_plant = { #NSB
 		experience_gain_army = 0.20
 		experience_gain_air = 0.05
 		experience_gain_navy = 0.05
-		cat_superior_firepower_cost_factor = -0.05
+		superior_firepower_mastery_gain_factor = 0.15
 		ai_will_do = {
 			factor = 500
 		}
@@ -4865,7 +4869,7 @@ tank_refurbishment_plant = { #NSB
 		experience_gain_army = 0.20
 		experience_gain_air = 0.05
 		experience_gain_navy = 0.05
-		cat_grand_battle_plan_cost_factor = -0.05
+		grand_battleplan_mastery_gain_factor = 0.15
 		ai_will_do = {
 			factor = 500
 		}
@@ -4876,7 +4880,7 @@ tank_refurbishment_plant = { #NSB
 		experience_gain_army = 0.20
 		experience_gain_air = 0.05
 		experience_gain_navy = 0.05
-		cat_mass_assault_cost_factor = -0.05
+		mass_assault_mastery_gain_factor = 0.15
 		ai_will_do = {
 			factor = 500
 		}
