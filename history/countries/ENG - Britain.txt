@@ -308,7 +308,12 @@ add_to_faction = AST
 add_to_faction = NZL
 add_to_faction = SAF
 add_to_faction = RAJ
-add_to_faction = NOR		
+add_to_faction = NOR	
+
+add_faction_goal_slot = {
+	category  = short_term
+	value = 4
+}	
 
 # Order matters - here Chamberlain becomes starting leader
 
