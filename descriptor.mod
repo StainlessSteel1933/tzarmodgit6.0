@@ -49,7 +49,7 @@ replace_path="common/units/equipment/upgrades"
 replace_path="common/units"
 replace_path="common/ai_strategy"
 replace_path="common/military_industrial_organization"
-replace_path="gfx/loadingscreens"
+
 replace_path="gfx/interface/equipmentdesigner/graphic_db"
 name="tzarmod"
 picture="thumbnail.png"
