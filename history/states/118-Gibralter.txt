@@ -25,6 +25,9 @@ state={
 		victory_points = {
 			4135 5	
 		}
+		add_dynamic_modifier = {
+			modifier = ENG_da_rock
+		}
 	}
 
 	provinces={

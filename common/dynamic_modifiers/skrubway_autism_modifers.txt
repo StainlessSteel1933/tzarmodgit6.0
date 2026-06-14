@@ -1,0 +1,113 @@
+ENG_army_dynamic_modifier = {
+
+	enable = { always = yes }
+
+	icon = GFX_idea_eng_service_overseas
+	
+	motorized_attack_factor = ENG_motorized_attack_factor
+	mechanized_attack_factor = ENG_mechanized_attack_factor
+	army_armor_attack_factor = ENG_army_armor_attack_factor
+	army_artillery_attack_factor = ENG_army_artillery_attack_factor
+	army_armor_defence_factor = ENG_army_armor_defence_factor
+	heat_attrition_factor = ENG_heat_attrition_factor
+	conscription_factor = ENG_conscription_factor
+	army_infantry_attack_factor = ENG_army_infantry_attack_factor
+	cavalry_attack_factor = ENG_cavalry_attack_factor
+	cavalry_defence_factor = ENG_cavalry_defence_factor
+}
+
+ENG_far_flung_empire_dynamic_modifier = {
+
+	enable = { always = yes }
+
+	icon = GFX_idea_ARG_envoy_to_london
+	
+	state_production_speed_bunker_factor = ENG_state_production_speed_bunker_factor
+	state_production_speed_coastal_bunker_factor = ENG_state_production_speed_coastal_bunker_factor
+	production_speed_naval_base_factor = ENG_production_speed_naval_base_factor
+	land_bunker_effectiveness_factor = ENG_land_bunker_effectiveness_factor
+	coastal_bunker_effectiveness_factor = ENG_coastal_bunker_effectiveness_factor
+	
+}
+
+ENG_fortified_position = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_defense
+
+	remove_trigger = { # ROOT refers to the state on which the modifier is added
+		ROOT = {
+			controller = {
+				NOT = { original_tag = ENG }
+				NOT = { is_in_faction_with = ENG }
+			}
+		}
+	}
+
+	local_supplies = 0.15
+	pocket_penalty = -0.35
+	army_defence_factor = 0.05
+	
+}
+
+ENG_jew_militia = {
+	enable = { always = yes }
+
+	icon = GFX_idea_citizen_militia_1
+
+	remove_trigger = { # ROOT refers to the state on which the modifier is added
+		ROOT = {
+			controller = {
+				NOT = { original_tag = ENG }
+				NOT = { is_in_faction_with = ENG }
+			}
+		}
+	}
+	local_supplies = 0.30
+	pocket_penalty = -0.60
+	enemy_attrition = 0.15
+	enemy_army_speed_factor = -0.3
+}
+
+ENG_budget_strain_dynamic_modifier = {
+
+	enable = { always = yes }
+
+	icon = GFX_idea_HUN_revaluing_the_pengo
+	
+	custom_modifier_tooltip = ENG_budget_strain_consumer_goods_factor_tt
+	consumer_goods_factor = ENG_budgetary_strain
+}
+
+ENG_da_rock = {
+	enable = { always = yes }
+
+	icon = GFX_idea_eng_the_sun_never_sets
+
+	remove_trigger = { # ROOT refers to the state on which the modifier is added
+		ROOT = {
+			controller = {
+				NOT = { original_tag = ENG }
+				NOT = { is_in_faction_with = ENG }
+			}
+		}
+	}
+	local_supplies = 0.30
+	army_defence_factor = 0.25
+}
+
+ENG_husky_state_mod = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_naval_invade_britain
+
+	remove_trigger = { # ROOT refers to the state on which the modifier is added
+		ROOT = {
+			controller = {
+				NOT = { original_tag = ITA }
+				NOT = { is_in_faction_with = ITA }
+			}
+		}
+	}
+	max_dig_in_factor = -0.5
+}

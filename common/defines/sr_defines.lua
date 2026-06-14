@@ -1,5 +1,8 @@
 -- If you're reading this, don't say anything about this, this is a secret between us (๑>؂•̀๑) (decreased from 4.5 vanilla value to 4.0).
 
+NDefines.NIntel.ARMY_MIN_INTEL_RATIO_NEEDED_FOR_DISPLAYING_FAKE_ENEMY_INTEL_IN_LEDGER = 1.5
+NDefines.NIntel.ARMY_MIN_INTEL_RATIO_NEEDED_FOR_REVEALING_FAKE_ENEMY_INTEL = 1.5
+
 NDefines.NNavy.DOMINANCE_DAILY_GAIN_FACTOR = 0.5
 NDefines.NNavy.DOMINANCE_DAILY_LOSS_FACTOR = 0.1
 NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 1							-- base days needed to prepare a naval invasion

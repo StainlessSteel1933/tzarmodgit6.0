@@ -1,0 +1,77 @@
+
+#### INGERLAND
+
+
+ENG_budget_strain_cat = {
+	icon = HUN_revaluing_the_pengo
+
+	allowed = {
+		original_tag = ENG
+	}
+	priority = 50
+	visible = {
+		
+	}
+}
+
+ENG_fortified_position_cat = {
+	icon = generic_supply_depot
+
+	allowed = {
+		original_tag = ENG
+	}
+	priority = 50
+	visible = {
+		
+	}
+}
+
+ENG_stat_giving_operation_cat = {
+	icon = generic_supply_depot
+
+	allowed = {
+		original_tag = ENG
+	}
+	priority = 50
+	visible = {
+		
+	}
+}
+
+ENG_other_operation_cat = {
+	icon = generic_supply_depot
+
+	allowed = {
+		original_tag = ENG
+	}
+	priority = 50
+	visible = {
+		
+	}
+}
+
+ENG_arm_contracts = {
+	icon = generic_supply_depot
+
+	allowed = {
+		original_tag = ENG
+	}
+	priority = 50
+	visible = {
+		
+	}
+
+}
+
+ENG_factory_evac_cat = {
+	icon = generic_supply_depot
+
+	allowed = {
+		original_tag = ENG
+	}
+	priority = 50
+	visible = {
+		
+	}
+
+}
