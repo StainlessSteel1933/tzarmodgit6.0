@@ -279,7 +279,7 @@ air_subdoctrine_aerial_reconnaissance = {
     xp_type = air
 
     visible = {
-    	has_dlc = "La Resistance"
+    	
     }
 
     available = {

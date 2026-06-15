@@ -78,9 +78,7 @@ sp_land_flamethrower_tank = {
 		}
 
 		enable_equipment_modules = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
+			
 			lc_flamethrower_turret
 		}
 
@@ -147,12 +145,9 @@ sp_land_military_engineering_vehicles = {
 		}
 
 		country_effects = {
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
-				SP_create_variant_based_on_country_assault_engineer = yes
-			}
+			
+			SP_create_variant_based_on_country_assault_engineer = yes
+			
 
 			custom_effect_tooltip = {
 				localization_key = SP_UNLOCK_TECH
@@ -214,7 +209,7 @@ sp_land_land_cruiser = {
 	project_tags = sp_tag_tank
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	available = {
@@ -946,7 +941,7 @@ sp_land_super_heavy_howitzer = {
 	project_tags = sp_tag_artillery
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 	
 	available = {
@@ -1082,7 +1077,7 @@ sp_land_self_propelled_super_heavy_howitzer = {
 
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	special_project_parent = {
@@ -1245,9 +1240,7 @@ sp_land_super_heavy_railway_gun = {
 		}
 
 		enable_equipment_modules = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
+			
 			lc_super_heavy_railway_gun
 		}
 
@@ -1299,7 +1292,7 @@ sp_land_multi_charge_large_caliber_gun = {
 	project_tags = sp_tag_artillery
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	special_project_parent = {
@@ -1543,7 +1536,7 @@ sp_land_stronghold_network = {
 	project_tags = sp_tag_artillery
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 	
 	available = {

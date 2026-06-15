@@ -16,7 +16,7 @@ sp_air_bouncing_bomb = {
 	}
 
 	allowed = {
-		has_dlc = "Gotterdammerung"		
+				
 	}
 
 	available = { 
@@ -197,7 +197,7 @@ sp_air_earthshaker_bomb = {
 	}
 
 	allowed = {
-		has_dlc = "Gotterdammerung"		
+				
 	}
 
 	available = { 
@@ -391,7 +391,7 @@ sp_air_intercontinental_bomber = {
 	project_tags = sp_tag_aircraft
 
 	allowed = {
-		has_dlc = "Gotterdammerung"	
+			
 	}
 
 	available = { 
@@ -592,7 +592,7 @@ sp_air_mothership_aircraft = {
 	complexity = sp_complexity.medium 
 
 	allowed = {
-		has_dlc = "Gotterdammerung"		
+				
 	}
 
 	generic_prototype_rewards = {
@@ -1370,7 +1370,7 @@ sp_air_supersonic_jet = {
 	complexity = sp_complexity.large
 
 	allowed = {
-		has_dlc = "Gotterdammerung"		
+				
 	}
 	
 	breakthrough_cost = {
@@ -1575,7 +1575,7 @@ sp_air_helicopter = {
 	}
 
 	allowed = {
-		has_dlc = "Gotterdammerung"		
+				
 	}
 
 	breakthrough_cost = {
@@ -1618,10 +1618,7 @@ sp_air_helicopter = {
 		}
 
 		enable_equipment_modules = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-				has_dlc = "No Step Back"
-			}
+			
 			lc_helipad #Module for Land Cruiser
 		}
 	}

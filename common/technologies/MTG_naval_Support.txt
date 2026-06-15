@@ -2257,7 +2257,7 @@ technologies = {
 		underway_replenishment_convoy_cost = -0.2
 
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {

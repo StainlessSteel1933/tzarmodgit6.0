@@ -189,7 +189,7 @@ submarine_coastal_defense = {
         is_special_project_completed = sp:sp_naval_midget_submarine
     }
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+
     }
 
     submarine = {
@@ -253,7 +253,7 @@ coastal_minelaying = {
         always = yes
     }
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+
     }
 
     naval_mines_effect_reduction = 0.1
@@ -311,7 +311,7 @@ long_range_submarines = {
         
     }
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+
     }
 
     naval_torpedo_hit_chance_factor = 0.1

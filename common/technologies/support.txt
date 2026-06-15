@@ -2084,12 +2084,9 @@ technologies = {
 		}
 
 		on_research_complete = {
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
+
 				SP_create_variant_based_on_country_armored_engineer = yes
-			}
+			
 		}
 
 		ai_will_do = {
@@ -2138,12 +2135,9 @@ technologies = {
 		}
 
 		on_research_complete = {
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
+
 				SP_create_variant_based_on_country_armored_maintenance = yes
-			}
+			
 		}
 
 		ai_will_do = {
@@ -2197,12 +2191,9 @@ technologies = {
 		}
 
 		on_research_complete = {
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
+			
 				SP_create_variant_based_on_country_armored_signal = yes
-			}
+			
 		}
 
 		ai_will_do = {
@@ -2227,7 +2218,7 @@ technologies = {
 
 	sp_helicopter_transport_pods_tech = {
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {
@@ -2272,7 +2263,7 @@ technologies = {
 
 	sp_helicopter_artillery_observers_tech = {
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {
@@ -2322,7 +2313,7 @@ technologies = {
 
 	sp_helicopter_med_evac_tech = {
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {
@@ -2377,7 +2368,7 @@ technologies = {
 
 	sp_armored_motorized_military_police_tech = {
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {

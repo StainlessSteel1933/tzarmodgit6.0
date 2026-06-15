@@ -1615,10 +1615,7 @@ equipment_modules = {
 
 
 equipment_modules = {
-	limit = {
-		has_dlc = "Gotterdammerung"
-		has_dlc = "No Step Back"
-	}
+
 
 ################################
 ######## MAIN ARMAMENT #########

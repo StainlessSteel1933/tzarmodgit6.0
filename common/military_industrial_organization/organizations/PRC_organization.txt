@@ -705,7 +705,7 @@ PRC_harbin_aircraft_industry_group_organization = {
  	allowed = {
  		tag = PRC
  		has_dlc = "No Compromise, No Surrender"
- 		has_dlc = "Gotterdammerung"
+ 		
  	}
 
 
@@ -776,7 +776,7 @@ PRC_harbin_aircraft_industry_group_organization_non_gtd = { ## No Helicopters
  		tag = PRC
  		has_dlc = "No Compromise, No Surrender"
  		NOT = { 
- 			has_dlc = "Gotterdammerung" 
+ 			 
 		}
  	}
 

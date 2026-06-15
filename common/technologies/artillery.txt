@@ -1565,7 +1565,7 @@ technologies = {
 	sp_artillery_rocket_assisted_projectiles_tech = {
 
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {
@@ -1618,7 +1618,7 @@ technologies = {
 	sp_artillery_purpose_built_gun_motor_carriages_tech = {
 		
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {
@@ -1671,7 +1671,7 @@ technologies = {
 	sp_shock_hardening_techniques = {
 		
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {
@@ -1708,7 +1708,7 @@ technologies = {
 
 	sp_variable_time_fuze_shells = {
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {

@@ -2021,7 +2021,7 @@ technologies = {
 
 	sp_armored_lc_naval_engine_conversion_tech = {
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {
@@ -2095,7 +2095,7 @@ technologies = {
 
 	sp_armored_lc_transmission_improvements_tech = {
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {
@@ -2189,7 +2189,7 @@ technologies = {
 
 	sp_armored_lc_specialized_field_manuals_tech = {
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {
@@ -2259,7 +2259,7 @@ technologies = {
 
 	sp_armored_lc_weapon_fire_control_tech = {
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {
@@ -2323,7 +2323,7 @@ technologies = {
 
 	sp_armored_lc_high_impact_obliterator_cannon_tech = {
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}
 
 		allow = {

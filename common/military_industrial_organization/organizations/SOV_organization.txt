@@ -2768,7 +2768,7 @@ SOV_gaz_organization = {
 			}
 			AND = {
 				tag = AFG
-				has_dlc = "Graveyard of Empires"
+				
 			}
 			NOR_AAT = yes
 		}

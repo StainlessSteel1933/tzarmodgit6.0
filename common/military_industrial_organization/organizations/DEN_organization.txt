@@ -24,7 +24,7 @@ DEN_orlogsvaerftet_organization = {
     icon = GFX_idea_DEN_orlogsvaerftet_organization
     allowed = { 
         tag = DEN
-        has_dlc = "Arms Against Tyranny"
+        
     }
 
     tree_header_text = {
@@ -139,7 +139,7 @@ DEN_burmeister_wain_organization = {
     icon = GFX_idea_DEN_burmeister_wain_organization
     allowed = { 
         tag = DEN
-        has_dlc = "Arms Against Tyranny"
+        
     } 
 
     tree_header_text = {
@@ -275,7 +275,7 @@ DEN_flyvertroppernes_organization = {
     icon = GFX_idea_DEN_flyvertroppernes_organization
     allowed = { 
         tag = DEN
-        has_dlc = "Arms Against Tyranny"
+        
     } 
 
     tree_header_text = {
@@ -378,7 +378,7 @@ DEN_flyvemaskinevaerksted_organization = {
     icon = GFX_idea_DEN_flyvemaskinevaerksted_organization
     allowed = { 
         tag = DEN
-        has_dlc = "Arms Against Tyranny"
+        
     } 
 
     override_trait = {
@@ -487,7 +487,7 @@ DEN_DISA_organization = {
     icon = GFX_idea_DEN_DISA_organization
     allowed = { 
         tag = DEN
-        has_dlc = "Arms Against Tyranny"
+        
     }  
 
     add_trait = { 
@@ -552,7 +552,7 @@ DEN_haerens_tekniske_korps_organization = {
     icon = GFX_idea_DEN_haerens_tekniske_korps_organization
     allowed = { 
         tag = DEN
-        has_dlc = "Arms Against Tyranny"
+        
     }  
 
     override_trait = {
@@ -763,7 +763,7 @@ DEN_triangel_organization = {
     icon = GFX_idea_DEN_triangel_organization
     allowed = { 
         tag = DEN
-        has_dlc = "Arms Against Tyranny"  
+          
     }  
 
     tree_header_text = {

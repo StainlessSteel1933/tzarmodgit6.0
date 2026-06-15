@@ -13,7 +13,7 @@ NOR_thunes_mekaniske_verksted_organization = {
     icon = GFX_idea_NOR_thunes_mekaniske_vaerksted
     allowed = { 
         tag = NOR
-        has_dlc = "Arms Against Tyranny"
+        
     }
 
     equipment_type = {  
@@ -163,7 +163,7 @@ NOR_karljohansvern_verft_organization = {
     icon = GFX_idea_NOR_karljohansvern_verft
     allowed = { 
         tag = NOR
-        has_dlc = "Arms Against Tyranny"
+        
     } 
 
     trait = {
@@ -260,7 +260,7 @@ NOR_marinens_flyvebaatfabrikk_organization = {
     icon = GFX_idea_NOR_marinens_flyvebaatfabrikk
     allowed = { 
         tag = NOR
-        has_dlc = "Arms Against Tyranny"
+        
     }
 
     initial_trait = {
@@ -314,7 +314,7 @@ NOR_raufoss_ammunisjonsfabrikker_organization = {
     icon = GFX_idea_NOR_raufoss_ammunisjonsfabrikker
     allowed = { 
         tag = NOR
-        has_dlc = "Arms Against Tyranny"
+        
     }  
 
     trait = { 
@@ -346,7 +346,7 @@ NOR_kongsberg_vaapenfabrikk_organization = {
     icon = GFX_idea_NOR_kongsberg_vaapenfabrikk
     allowed = { 
         tag = NOR
-        has_dlc = "Arms Against Tyranny"
+        
     }
     initial_trait = {
         
@@ -367,7 +367,7 @@ NOR_norsk_spraengstofindustri_organization = {
     icon = GFX_idea_NOR_norsk_Spraengstofindustri
     allowed = { 
         tag = NOR
-        has_dlc = "Arms Against Tyranny"  
+          
     }  
 }
 
@@ -376,7 +376,7 @@ NOR_cadillac_organization = { #MM: This is a perfect candidate to become a new U
     icon = GFX_idea_NOR_cadillac
     allowed = { 
         tag = NOR
-        has_dlc = "Arms Against Tyranny"  
+          
     }  
     available = {
         FROM = { NOT = { has_war_with = USA } } #This is a bit weird since the MIO does not exist in USA, but consistent with other foreign MIOs requisites

@@ -21,7 +21,7 @@ mountaineers_1 = {
     }
 
     visible = {
-    	has_dlc = "Arms Against Tyranny"
+
     }
 
     ai_will_do = {
@@ -112,7 +112,7 @@ mountaineers_2 = {
     }
 
     visible = {
-    	has_dlc = "Arms Against Tyranny"
+
     }
 
     ai_will_do = {
@@ -223,7 +223,7 @@ marines_1 = {
     }
 
     visible = {
-    	has_dlc = "Arms Against Tyranny"
+
     }
 
     ai_will_do = {
@@ -331,7 +331,7 @@ marines_2 = {
     }
 
     visible = {
-    	has_dlc = "Arms Against Tyranny"
+
     }
 
     ai_will_do = {
@@ -443,7 +443,7 @@ paratroopers_1 = {
     }
 
     visible = {
-    	has_dlc = "Arms Against Tyranny"
+
     }
     ai_will_do = {
         base = 1
@@ -542,7 +542,7 @@ paratroopers_2 = {
     }
 
     visible = {
-    	has_dlc = "Arms Against Tyranny"
+
     }
 
     ai_will_do = {
@@ -629,7 +629,7 @@ rangers_1 = {
     }
 
     visible = {
-    	has_dlc = "No Compromise, No Surrender"
+
     }
 
     ai_will_do = {
@@ -742,7 +742,7 @@ rangers_2 = {
     }
 
     visible = {
-    	has_dlc = "No Compromise, No Surrender"
+
     }
 
     ai_will_do = {

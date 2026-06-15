@@ -404,7 +404,6 @@ RAJ_GOE_j_r_d_tata= {
 			idea_token = RAJ_GOE_tara_singh
 			allowed = {
 				original_tag = RAJ
-				has_dlc = "Graveyard of Empires"
 			}
 			visible = {
 			

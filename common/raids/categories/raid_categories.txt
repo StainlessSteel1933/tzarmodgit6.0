@@ -1,14 +1,14 @@
 categories = {
 
 	air_raids = {
-	    visible = { has_dlc = "Gotterdammerung" }
+	    visible = {  }
 	    intel_source = air
 	}
 	
 
 	paratrooper_raids = {
 	    intel_source = air
-	    visible = { has_dlc = "Gotterdammerung" }
+	    visible = {  }
 		available = {
 		    has_tech = paratroopers
 		}

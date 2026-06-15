@@ -198,7 +198,6 @@ buildings = {
 	}
 
 	stronghold_network = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
 		show_on_map = 1
 		has_destroyed_mesh = yes
 		base_cost = 15000
@@ -319,7 +318,6 @@ buildings = {
 	}
 
 	mega_gun_emplacement = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
 		hide_if_missing_tech = yes
 		show_on_map = 1
 		base_cost = 20000
@@ -378,7 +376,6 @@ buildings = {
 	}
 	
 	naval_headquarters = {
-		dlc_allowed = { has_dlc = "No Compromise, No Surrender" }
 		show_on_map = 1
 		base_cost = 10000
 		per_controlled_building_extra_cost = 5000
@@ -465,7 +462,6 @@ buildings = {
 	}
 
 	commercial_nuclear_reactor = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
 		hide_if_missing_tech = yes
 		missing_tech_loc = { 
 			localization_key = SP_BUILDING_MISSING_PROJECT

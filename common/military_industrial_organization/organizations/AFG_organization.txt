@@ -12,7 +12,7 @@
  	include = generic_tank_organization
  	#icon = GFX_idea_BRA_bernardini
  	allowed = {	
- 		has_dlc = "Graveyard of Empires"
+ 		
  		tag = AFG
  	}
 
@@ -41,7 +41,7 @@ AFG_naval_organization = {
 	include = generic_escort_ship_organization
 	#icon = GFX_idea_BRA_arsenal_de_marinha
 	allowed = {
-		has_dlc = "Graveyard of Empires"
+		
 		# TODO_JUNO: Add correct DLC check!
 		tag = AFG
 	}
@@ -70,7 +70,7 @@ AFG_aircraft_organization = {
 	include = generic_general_aircraft_organization
 	#icon = GFX_idea_BRA_bernardini
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		tag = AFG
 	}
 
@@ -97,7 +97,7 @@ AFG_infantry_organization = {
 	include = generic_infantry_equipment_organization
 	#icon = GFX_idea_BRA_bernardini
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		tag = AFG
 	}
 
@@ -114,7 +114,7 @@ AFG_khyber_pass_rifling_org = {
 	research_categories = { infantry_weapons }
 
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		tag = AFG
 	}
 	available = {
@@ -209,7 +209,7 @@ AFG_artillery_organization = {
 	include = generic_artillery_organization
 	#icon = GFX_idea_BRA_bernardini
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		tag = AFG
 	}
 

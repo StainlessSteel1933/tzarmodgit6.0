@@ -377,7 +377,7 @@ sp_naval_nuclear_submarine = {
 	complexity = sp_complexity.insane
 	prototype_time = sp_time.prototype.long	
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	special_project_parent = {
@@ -571,7 +571,7 @@ sp_naval_rocket_launching_submarine = {
 	complexity = sp_complexity.medium 
 	prototype_time = sp_time.prototype.long
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	special_project_parent = {
@@ -766,7 +766,7 @@ sp_naval_nuclear_missile_submarine = {
 	complexity = sp_complexity.large 
 	prototype_time = sp_time.prototype.very_long 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	special_project_parent = {
@@ -1351,7 +1351,7 @@ sp_naval_aip_engine = {
 	}
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 	
 	available = { 
@@ -1524,7 +1524,7 @@ sp_naval_anechoic_tiles = {
 	}
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 	
 	available = { 
@@ -2475,7 +2475,7 @@ sp_naval_modern_battleship = {
 	}
 
 	allowed = {
-	has_dlc = "Gotterdammerung"
+	
 	}
 	
 	available = {
@@ -2817,7 +2817,7 @@ sp_naval_modern_carrier = {
 	}
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 	
 	available = {
@@ -3152,7 +3152,7 @@ sp_naval_ice_carrier = {
 	}
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 	
 	available = {
@@ -3358,7 +3358,7 @@ sp_naval_underway_replenishment = {
 	}
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 	
 	available = {
@@ -3495,7 +3495,7 @@ sp_naval_proximity_fuze = {
 	}
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	available = {

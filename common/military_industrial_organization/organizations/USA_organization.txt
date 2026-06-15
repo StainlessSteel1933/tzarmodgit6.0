@@ -1391,7 +1391,7 @@ USA_ford_motor_company_organization = {
 			AND = {
 				original_TAG = BRA
 				# TODO_JUNO: Add juno DLC name here!!
-				has_dlc = "Arms Against Tyranny"
+				
 			}
 			AND = {
 				original_tag = PHI 
@@ -1633,7 +1633,7 @@ USA_sikorsky_organization = {
 	
 	allowed = {	
 		original_tag = USA 
-		has_dlc = "Gotterdammerung"		
+				
 	}
 }
 

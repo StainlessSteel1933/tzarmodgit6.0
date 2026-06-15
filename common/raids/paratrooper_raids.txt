@@ -40,7 +40,7 @@ types = {
 		command_power = 25 # command power allocation cost
 
 		allowed = {
-			has_dlc = "Gotterdammerung"
+			
 		}
 		# Raid Type is visible
 		visible = {
@@ -327,7 +327,7 @@ types = {
 		command_power = 25 # command power allocation cost
 
 		allowed = {
-			has_dlc = "Gotterdammerung"
+			
 		}
 		# Raid Type is visible
 		visible = {

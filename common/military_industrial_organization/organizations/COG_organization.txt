@@ -204,7 +204,7 @@ COG_explosifs_congo_organization = {
 	icon = GFX_idea_societe_africain_de_explosifes
 	allowed = { 
 		tag = COG
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	available = {

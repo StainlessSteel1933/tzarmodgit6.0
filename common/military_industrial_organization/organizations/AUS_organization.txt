@@ -14,8 +14,8 @@ AUS_ansaldo_organization = {
 	icon = GFX_idea_AUS_ansaldo
 	allowed = {
 		original_TAG = AUS
-		has_dlc = "Arms Against Tyranny" 
-		has_dlc = "Gotterdammerung"
+		 
+		
 	}
 	available = {
 		owner = { has_completed_focus = AUS_invite_foreign_tank_designers }
@@ -40,12 +40,12 @@ AUS_stabilimento_tecnico_triestino_organization = {
 		OR = {
 			AND = {
 				original_TAG = AUS
-				has_dlc = "Arms Against Tyranny" 
-				has_dlc = "Gotterdammerung"
+				 
+				
 			}
 			AND = {
 				tag = HUN 
-				has_dlc = "Gotterdammerung"
+				
 			}
 		}
 	}
@@ -131,12 +131,12 @@ AUS_ELIN_organization = {
 		OR = {
 			AND = {
 				original_TAG = AUS
-				has_dlc = "Arms Against Tyranny" 
-				has_dlc = "Gotterdammerung"
+				 
+				
 			}
 			AND = {
 				tag = HUN 
-				has_dlc = "Gotterdammerung"
+				
 			}
 		}
 	}
@@ -245,8 +245,8 @@ AUS_phonix_fleugzeugwerke_organization = {
 	icon = GFX_idea_AUS_phonix_fleugzeugwerke
 	allowed = {
 		original_TAG = AUS
-		has_dlc = "Arms Against Tyranny" 
-		has_dlc = "Gotterdammerung"
+		 
+		
 	}
 
 	equipment_type = {
@@ -401,12 +401,12 @@ AUS_osterreichische_fleugzeugfabrik_organization = {
 		OR = {
 			AND = {
 				original_TAG = AUS
-				has_dlc = "Arms Against Tyranny" 
-				has_dlc = "Gotterdammerung"
+				 
+				
 			}
 			AND = {
 				tag = HUN 
-				has_dlc = "Gotterdammerung"
+				
 			}
 		}
 	}
@@ -496,8 +496,8 @@ AUS_hirtenberger_organization = {
 	icon = GFX_idea_generic_artillery_manufacturer_2
 	allowed = {
 		original_TAG = AUS
-		has_dlc = "Arms Against Tyranny" 
-		has_dlc = "Gotterdammerung"
+		 
+		
 	}
 
 	add_trait = { 
@@ -549,8 +549,8 @@ AUS_steyr_organization = {
 	icon = GFX_idea_AUS_steyr
 	allowed = {
 		original_TAG = AUS
-		has_dlc = "Arms Against Tyranny" 
-		has_dlc = "Gotterdammerung"
+		 
+		
 	}
 
 	add_trait = { 
@@ -583,8 +583,8 @@ AUS_graf_and_stift_organization = {
 	icon = GFX_idea_AUS_graf_and_stift
 	allowed = {
 		original_tag = AUS
-		has_dlc = "Arms Against Tyranny" 
-		has_dlc = "Gotterdammerung"
+		 
+		
 	}
 	available = {
 		owner = { has_completed_focus = AUS_graf_und_stift_focus }
@@ -700,8 +700,8 @@ AUS_osterreichische_saurerwerke_organization = {
 	icon = GFX_idea_AUS_saurer
 	allowed = {
 		original_tag = AUS
-		has_dlc = "Arms Against Tyranny" 
-		has_dlc = "Gotterdammerung"
+		 
+		
 		has_dlc = "La Resistance"
 
 	}
@@ -846,8 +846,8 @@ AUS_osterreichische_saurerwerke_organization_no_lar = {
 	icon = GFX_idea_AUS_saurer 
 	allowed = {
 		original_tag = AUS
-		has_dlc = "Arms Against Tyranny" 
-		has_dlc = "Gotterdammerung"
+		 
+		
 		NOT = { has_dlc = "La Resistance" } 
 	}
 	available = {

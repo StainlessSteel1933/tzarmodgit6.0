@@ -1887,7 +1887,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 
 				custom_effect_tooltip = available_mio_tt
@@ -2397,7 +2397,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 
 				custom_effect_tooltip = available_mio_tt
@@ -3305,7 +3305,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 
 				custom_effect_tooltip = available_mio_tt
@@ -3399,7 +3399,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 
 				custom_effect_tooltip = available_mio_tt
@@ -3686,7 +3686,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 				mio:HUN_mwg_raba_organization = {
 					add_mio_funds = 1500

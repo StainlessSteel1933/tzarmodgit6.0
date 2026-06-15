@@ -39,7 +39,7 @@ RAJ_supermarine_organization = {
 	
 	allowed = {	
 		tag = RAJ
-		has_dlc = "Arms Against Tyranny"
+		
 	}
 
 	equipment_type = {
@@ -143,12 +143,7 @@ RAJ_ammunition_factory_khadki_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_raj_rifle_factory_ishapore
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
-		OR = {
-			ROOT = { original_tag = BAN }
-			ROOT = { original_tag = PAK }
-			ROOT = { original_tag = RAJ }
-		}
+		original_tag = RAJ
 	}
 	name = RAJ_ammunition_factory_khadki
 	available = {
@@ -239,12 +234,7 @@ RAJ_ordnance_factory_kanpur_organization = {
 	icon = GFX_idea_raj_ammunition_factory_khadki
 	allowed = {	
 
-		has_dlc = "Graveyard of Empires"
-		OR = {
-			ROOT = { original_tag = BAN }
-			ROOT = { original_tag = PAK }
-			ROOT = { original_tag = RAJ }
-		}
+		original_tag = RAJ
 	}
 	name = RAJ_ordnance_factory_kanpur_uttar_pradesh
 	available = {
@@ -295,12 +285,8 @@ RAJ_ordnance_factory_medak_organization = {
 	icon = GFX_idea_raj_ordnance_factory_medak
 	allowed = {	
 
-		has_dlc = "Graveyard of Empires"
-		OR = {
-			ROOT = { original_tag = BAN }
-			ROOT = { original_tag = PAK }
-			ROOT = { original_tag = RAJ }
-		}
+		original_tag = RAJ
+		
 	}
 
 	available = {
@@ -372,7 +358,7 @@ RAJ_vauxhall_organization = {
 	icon = GFX_idea_vauxhall
 
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		original_tag = RAJ
 	}
 
@@ -384,7 +370,7 @@ RAJ_harland_wolff_organization = {
 	icon = GFX_idea_harland_wolff
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		original_tag = RAJ
 	}
 
@@ -396,7 +382,7 @@ RAJ_cammell_laird_organization = {
 	icon = GFX_idea_cammell_laird
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		original_tag = RAJ
 	}
 
@@ -408,7 +394,7 @@ RAJ_yarrow_shipbuilders_organization = {
 	icon = GFX_idea_yarrow_shipbuilders
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		original_tag = RAJ
 	}
 
@@ -419,7 +405,7 @@ RAJ_john_brown_organization = {
 	icon = GFX_idea_john_brown_company
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		original_tag = RAJ
 	}
 
@@ -431,7 +417,7 @@ RAJ_hawker_organization = {
 	icon = GFX_idea_hawker
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		original_tag = RAJ
 	}
 
@@ -442,7 +428,7 @@ RAJ_de_havilland_organization = {
 	icon = GFX_idea_de_havilland
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		original_tag = RAJ
 	}
 
@@ -454,7 +440,7 @@ RAJ_fairey_aviation_organization = {
 	icon = GFX_idea_fairey_aviation
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		original_tag = RAJ
 	}
 
@@ -465,7 +451,7 @@ RAJ_avro_organization = {
 	icon = GFX_idea_avro
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		original_tag = RAJ
 	}
 }
@@ -485,7 +471,7 @@ RAJ_crossley_motors_organization = {
 	icon = GFX_idea_ENG_crossley_motors
 	
 	allowed = {	
-		has_dlc = "Graveyard of Empires"
+		
 		original_tag = RAJ
 	}
 }

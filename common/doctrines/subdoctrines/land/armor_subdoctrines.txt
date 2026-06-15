@@ -11,7 +11,7 @@ armored_spearhead = {
         always = yes
     }
     visible = {
-        has_dlc = "La Resistance"
+        
     }
 
     ai_will_do = {
@@ -80,81 +80,81 @@ armored_spearhead = {
     }
 }
 
-armored_spearhead_no_lar = {
-    track = armor
-    name = SUBDOCTRINE_ARMORED_SPEARHEAD
-    description = SUBDOCTRINE_ARMORED_SPEARHEAD_DESC
-    icon = GFX_doctrine_armored_spearhead_medium
+# armored_spearhead_no_lar = {
+#     track = armor
+#     name = SUBDOCTRINE_ARMORED_SPEARHEAD
+#     description = SUBDOCTRINE_ARMORED_SPEARHEAD_DESC
+#     icon = GFX_doctrine_armored_spearhead_medium
 
-    xp_cost = 100
-    xp_type = army
+#     xp_cost = 100
+#     xp_type = army
 
-    available = {
-        always = yes
-    }
-    visible = {
-        NOT = {
-            has_dlc = "La Resistance"
-        }
-    }
+#     available = {
+#         always = yes
+#     }
+#     visible = {
+#         NOT = {
+#             has_dlc = "La Resistance"
+#         }
+#     }
 
-    ai_will_do = {
+#     ai_will_do = {
 
-        base = 1
-        modifier = {
-            factor = 25
-            original_tag = GER
-        }
-        modifier = {
-            factor = 0.5
-            is_major = no
-        }
-    }
+#         base = 1
+#         modifier = {
+#             factor = 25
+#             original_tag = GER
+#         }
+#         modifier = {
+#             factor = 0.5
+#             is_major = no
+#         }
+#     }
 
-    # EFFECTS
-    enable_tactic = tactic_breakthrough
+#     # EFFECTS
+#     enable_tactic = tactic_breakthrough
 
-    rewards = {
-        force_concentration = {
-        #1
-            category_tanks= {
-                max_organisation = 2
-                default_morale = 0.05
-            }
-        }
-        armored_breakthrough_exploits = {
-        #2
-            category_all_armor = {
-                breakthrough = 0.1
-            }
-        }
-        local_reserves = {
-        #3
-            recon = {
-                max_organisation = 10
-            }
+#     rewards = {
+#         force_concentration = {
+#         #1
+#             category_tanks= {
+#                 max_organisation = 2
+#                 default_morale = 0.05
+#             }
+#         }
+#         armored_breakthrough_exploits = {
+#         #2
+#             category_all_armor = {
+#                 breakthrough = 0.1
+#             }
+#         }
+#         local_reserves = {
+#         #3
+#             recon = {
+#                 max_organisation = 10
+#             }
 
-            light_armor = {
-                default_morale = 0.1
-                max_organisation = 3
-            }
-        }
-        tactical_reconnaissance = {
-        #4
-            category_all_armor = {
-                breakthrough = 0.1
-            }
-        }
-        assault_detachments = {
-        #5
+#             light_armor = {
+#                 default_morale = 0.1
+#                 max_organisation = 3
+#             }
+#         }
+#         tactical_reconnaissance = {
+#         #4
+#             category_all_armor = {
+#                 breakthrough = 0.1
+#             }
+#         }
+#         assault_detachments = {
+#         #5
             
-             category_tanks= {
-                max_organisation = 3
-                breakthrough = 0.2
-            }
-        }
-    }
-}
+#              category_tanks= {
+#                 max_organisation = 3
+#                 breakthrough = 0.2
+#             }
+#         }
+#     }
+# }
 
 armored_infantry_support = {
     track = armor
@@ -464,10 +464,7 @@ armored_cavalry = {
         always = yes
     }
     visible = {
-       AND = {
-            has_dlc = "No Compromise, No Surrender"
-            has_dlc = "La Resistance"
-        }
+
     }
 
     ai_will_do = {
@@ -572,118 +569,118 @@ armored_cavalry = {
     }
 }
 
-armored_cavalry_no_lar = {
-    track = armor
-    name = SUBDOCTRINE_ARMORED_CAVALRY
-    description = SUBDOCTRINE_ARMORED_CAVALRY_DESC
-    icon = GFX_doctrine_armored_cavalry_medium
+# armored_cavalry_no_lar = {
+#     track = armor
+#     name = SUBDOCTRINE_ARMORED_CAVALRY
+#     description = SUBDOCTRINE_ARMORED_CAVALRY_DESC
+#     icon = GFX_doctrine_armored_cavalry_medium
 
-    xp_cost = 100
-    xp_type = army
+#     xp_cost = 100
+#     xp_type = army
 
-    available = {
-        always = yes
-    }
-    visible = {
-        has_dlc = "No Compromise, No Surrender"
-        NOT = {
-            has_dlc = "La Resistance"
-        }
-    }
+#     available = {
+#         always = yes
+#     }
+#     visible = {
+#         has_dlc = "No Compromise, No Surrender"
+#         NOT = {
+#             has_dlc = "La Resistance"
+#         }
+#     }
 
-    ai_will_do = {
+#     ai_will_do = {
 
-        base = 1
-        modifier = {
-            factor = 25
-            OR = {
-                original_tag = ITA 
-                original_tag = JAP 
-            }
-        }
+#         base = 1
+#         modifier = {
+#             factor = 25
+#             OR = {
+#                 original_tag = ITA 
+#                 original_tag = JAP 
+#             }
+#         }
 
-    }
+#     }
 
-    motorized = {
-        max_organisation = 5
-        defense = 0.1
-    }
-    mechanized =  {
-        max_organisation = 5
-        defense = 0.05
-    }
-    # EFFECTS
-    rewards = {
-        cruiser_tanks = {
-            light_armor = {
-                maximum_speed = 0.1
-                max_organisation = 5
-                breakthrough = 0.05
-            }
-        }
-        quick_response_force = {
-            motorized_military_police = {
-                    battalion_mult = {
-                        category = category_vehicle_infantry
-                        suppression_factor = 0.05
-                    }
+#     motorized = {
+#         max_organisation = 5
+#         defense = 0.1
+#     }
+#     mechanized =  {
+#         max_organisation = 5
+#         defense = 0.05
+#     }
+#     # EFFECTS
+#     rewards = {
+#         cruiser_tanks = {
+#             light_armor = {
+#                 maximum_speed = 0.1
+#                 max_organisation = 5
+#                 breakthrough = 0.05
+#             }
+#         }
+#         quick_response_force = {
+#             motorized_military_police = {
+#                     battalion_mult = {
+#                         category = category_vehicle_infantry
+#                         suppression_factor = 0.05
+#                     }
     
-            }
+#             }
             
-        }
-        speed_as_armour = {
-            light_armor = {
-                maximum_speed = 0.05
-                breakthrough = 0.05
-            }
-            motorized = {
-                maximum_speed = 0.05
+#         }
+#         speed_as_armour = {
+#             light_armor = {
+#                 maximum_speed = 0.05
+#                 breakthrough = 0.05
+#             }
+#             motorized = {
+#                 maximum_speed = 0.05
     
-            }
-            mechanized = {
-                maximum_speed = 0.05
-                breakthrough = 0.05
-            }
-        }
-        fighting_reconnaissance = {
-            recon = {
-                max_organisation = 3
-                 soft_attack = 0.05
-            }
-            light_tank_recon = {
-                max_organisation = 2
-                soft_attack = 0.05
-            }
-            anti_tank_battery = {
-                max_organisation = 2
-                ap_attack = 0.05
-            }
-        }
-        sustained_deployments = {
-            light_armor = {
-                max_organisation = 5
-                soft_attack = 0.05
-                hard_attack = 0.1
-                default_morale = 0.15
-            }
-            mechanized = {
-                max_organisation = 5
-                soft_attack = 0.05
-                default_morale = 0.1
-            }
-            motorized = {
-                max_organisation = 5
-                soft_attack = 0.05
-                default_morale = 0.1
-            }
-            mot_fire_support = {
-                max_organisation = 5
-                soft_attack = 0.05
-                default_morale = 0.1
-            }
-        }
-    }
-}
+#             }
+#             mechanized = {
+#                 maximum_speed = 0.05
+#                 breakthrough = 0.05
+#             }
+#         }
+#         fighting_reconnaissance = {
+#             recon = {
+#                 max_organisation = 3
+#                  soft_attack = 0.05
+#             }
+#             light_tank_recon = {
+#                 max_organisation = 2
+#                 soft_attack = 0.05
+#             }
+#             anti_tank_battery = {
+#                 max_organisation = 2
+#                 ap_attack = 0.05
+#             }
+#         }
+#         sustained_deployments = {
+#             light_armor = {
+#                 max_organisation = 5
+#                 soft_attack = 0.05
+#                 hard_attack = 0.1
+#                 default_morale = 0.15
+#             }
+#             mechanized = {
+#                 max_organisation = 5
+#                 soft_attack = 0.05
+#                 default_morale = 0.1
+#             }
+#             motorized = {
+#                 max_organisation = 5
+#                 soft_attack = 0.05
+#                 default_morale = 0.1
+#             }
+#             mot_fire_support = {
+#                 max_organisation = 5
+#                 soft_attack = 0.05
+#                 default_morale = 0.1
+#             }
+#         }
+#     }
+# }
 
 tank_destroyer_force = {
      track = armor
@@ -695,7 +692,7 @@ tank_destroyer_force = {
     xp_type = army
 
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+
     }
 
     ai_will_do = {

@@ -370,7 +370,7 @@ deep_battle = {
     }
 
     visible = {
-            has_dlc = "La Resistance"
+
     }
 
     ai_will_do = {
@@ -489,132 +489,132 @@ deep_battle = {
     }
 }
 
-deep_battle_no_lar = {
-    track = operations
-    name = SUBDOCTRINE_DEEP_BATTLE
-    description = SUBDOCTRINE_DEEP_BATTLE_DESC
-    icon = GFX_doctrine_deep_battle_medium
-    xp_cost = 100
-    xp_type = army
+# deep_battle_no_lar = {
+#     track = operations
+#     name = SUBDOCTRINE_DEEP_BATTLE
+#     description = SUBDOCTRINE_DEEP_BATTLE_DESC
+#     icon = GFX_doctrine_deep_battle_medium
+#     xp_cost = 100
+#     xp_type = army
 
-    available = {
-        always = yes
-    }
-    visible = {
-        NOT = {
-            has_dlc = "La Resistance"
-        }
-    }
+#     available = {
+#         always = yes
+#     }
+#     visible = {
+#         NOT = {
+#             has_dlc = "La Resistance"
+#         }
+#     }
 
-    ai_will_do = {
+#     ai_will_do = {
 
-        base = 1
-        modifier = {
-            factor = 50
-            original_tag = SOV
-        }
+#         base = 1
+#         modifier = {
+#             factor = 50
+#             original_tag = SOV
+#         }
 
-        modifier = {
-            factor = 0.5
-            is_major = no
-        }
+#         modifier = {
+#             factor = 0.5
+#             is_major = no
+#         }
 
-    }
+#     }
 
-    # EFFECTS
-    enable_tactic = tactic_backhand_blow
-    category_tanks = {
-        max_organisation = 4
-    }
-
-
-    ai_will_do = { }
-
-    rewards = {
-        bounding_overwatch = {
-        #1
-            recon = {
-                battalion_mult = {
-                    category = category_light_infantry
-                    soft_attack = 0.05
-                    defense = 0.05
-                }
-            }
-            mot_recon = {
-                battalion_mult = {
-                    category = category_light_infantry
-                    soft_attack = 0.05
-                    defense = 0.05
-                }
-            }
-            light_tank_recon = {
-                battalion_mult = {
-                    category = category_light_infantry
-                    soft_attack = 0.05
-                    defense = 0.05
-                }
-            }
-            category_vehicle_infantry = {
-                max_organisation = 2
-            }
-
-        }
-        operational_concentration = {
-        #2
-            category_tanks = {
-                max_organisation = 4
-            }
-            mechanized = {
-                max_organisation = 10
-            }
-            land_reinforce_rate = 0.05
-        }
-        maskirovka = {
-        #3
-            army_intel_to_others = -10.0
-            airforce_intel_to_others = -5.0
-            army_intel_factor = 0.05
+#     # EFFECTS
+#     enable_tactic = tactic_backhand_blow
+#     category_tanks = {
+#         max_organisation = 4
+#     }
 
 
-        }
-        breakthrough_priority = {
-        #4
-            org_loss_when_moving = -0.2
-            category_vehicle_infantry = {
-                max_organisation = 10
-                default_morale = 0.1
-            }
-            category_tanks = {
-                max_organisation = 2
-            }
-            category_all_armor = {
-                default_morale = 0.1
-            }
-            mechanized = {
-                breakthrough = 0.1
-            }
-        }
-        operational_depth_control = {
-        #5
-            org_loss_when_moving = -0.1
-            land_reinforce_rate = 0.05
-            recon = {
-                battalion_mult = {
-                    category = category_light_infantry
-                    max_organisation = 10
-                    add = yes
-                }
-            }
-            light_tank_recon = {
-                battalion_mult = {
-                    category = category_light_infantry
-                    max_organisation = 10
-                    add = yes
-                }
-            }
-        }
-    }
-}
+#     ai_will_do = { }
+
+#     rewards = {
+#         bounding_overwatch = {
+#         #1
+#             recon = {
+#                 battalion_mult = {
+#                     category = category_light_infantry
+#                     soft_attack = 0.05
+#                     defense = 0.05
+#                 }
+#             }
+#             mot_recon = {
+#                 battalion_mult = {
+#                     category = category_light_infantry
+#                     soft_attack = 0.05
+#                     defense = 0.05
+#                 }
+#             }
+#             light_tank_recon = {
+#                 battalion_mult = {
+#                     category = category_light_infantry
+#                     soft_attack = 0.05
+#                     defense = 0.05
+#                 }
+#             }
+#             category_vehicle_infantry = {
+#                 max_organisation = 2
+#             }
+
+#         }
+#         operational_concentration = {
+#         #2
+#             category_tanks = {
+#                 max_organisation = 4
+#             }
+#             mechanized = {
+#                 max_organisation = 10
+#             }
+#             land_reinforce_rate = 0.05
+#         }
+#         maskirovka = {
+#         #3
+#             army_intel_to_others = -10.0
+#             airforce_intel_to_others = -5.0
+#             army_intel_factor = 0.05
+
+
+#         }
+#         breakthrough_priority = {
+#         #4
+#             org_loss_when_moving = -0.2
+#             category_vehicle_infantry = {
+#                 max_organisation = 10
+#                 default_morale = 0.1
+#             }
+#             category_tanks = {
+#                 max_organisation = 2
+#             }
+#             category_all_armor = {
+#                 default_morale = 0.1
+#             }
+#             mechanized = {
+#                 breakthrough = 0.1
+#             }
+#         }
+#         operational_depth_control = {
+#         #5
+#             org_loss_when_moving = -0.1
+#             land_reinforce_rate = 0.05
+#             recon = {
+#                 battalion_mult = {
+#                     category = category_light_infantry
+#                     max_organisation = 10
+#                     add = yes
+#                 }
+#             }
+#             light_tank_recon = {
+#                 battalion_mult = {
+#                     category = category_light_infantry
+#                     max_organisation = 10
+#                     add = yes
+#                 }
+#             }
+#         }
+#     }
+# }
 guerilla_war = {
     track = operations
     name = SUBDOCTRINE_GUERILLA_WAR
@@ -628,7 +628,7 @@ guerilla_war = {
         always = yes
     }
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+
     }
 
     ai_will_do = { 
@@ -852,7 +852,7 @@ expeditionary_warfare = {
     
     }
     visible = {
-        has_dlc = "No Compromise, No Surrender"
+
     }
 
     ai_will_do = {
@@ -919,7 +919,7 @@ dispersed_operations = {
     }
 
     visible = {
-        has_dlc = "Thunder at Our Gates"
+
     }
 
     ai_will_do = {

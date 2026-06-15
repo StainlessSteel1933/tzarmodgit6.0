@@ -183,7 +183,7 @@ BEL_cockerill_shipyards_organization = {
 			original_tag = BEL
 			original_tag = COG
 		}
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	available = {
@@ -420,7 +420,7 @@ BEL_renard_organization = {
 			original_tag = BEL
 			original_tag = COG
 		}
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	available = {
@@ -581,7 +581,7 @@ BEL_fn_herstal_organization = {
 	icon = GFX_idea_BEL_fn_herstal_organization
 	allowed = {
 		original_tag = BEL
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 
@@ -675,7 +675,7 @@ BEL_fonderie_royale_de_canons_liege_organization = {
 	icon = GFX_idea_BEL_fonderie_royale_de_canons_liege
 	allowed = {
 		original_tag = BEL
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	initial_trait = {
@@ -751,7 +751,7 @@ BEL_minerva_imperia_armored_car_organization = {
 			original_tag = BEL
 			original_tag = COG
 		}
-		has_dlc = "Gotterdammerung"
+		
 		has_dlc = "La Resistance"
 	}
 
@@ -832,7 +832,7 @@ BEL_minerva_imperia_motorized_organization = {
 			original_tag = BEL
 			original_tag = COG
 		}
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	available = {
@@ -906,7 +906,7 @@ BEL_laboratoire_aerotechnique_de_belgique_organization = {
 	
 	allowed = {	
 		original_tag = BEL 
-		has_dlc = "Gotterdammerung"		
+				
 	}
 }
 
@@ -916,6 +916,6 @@ BEL_ateliers_metallurgiques_tubize_organization = {
 
 	allowed = {	
 		original_tag = BEL 
-		has_dlc = "Gotterdammerung"		
+				
 	}
 }

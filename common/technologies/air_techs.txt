@@ -624,7 +624,7 @@ technologies = {
 
 	supersonic_fighter1 = {
 		allow_branch = {
-			has_dlc = "Gotterdammerung"		
+					
 		}
 
 		allow = {

@@ -1982,7 +1982,7 @@ technologies = {
 
 	sp_centrifugal_jet_tech = {
 		allow_branch = {
-			has_dlc = "Gotterdammerung"
+			
 		}
 		
 		allow = {
@@ -2031,7 +2031,7 @@ technologies = {
 
 	reinforced_wings_mothership = {
 		allow_branch = {
-			 has_dlc = "Gotterdammerung"
+			 
 		}	
 
 		allow = {

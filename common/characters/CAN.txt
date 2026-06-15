@@ -467,7 +467,6 @@ characters={
 			idea_token = CAN_george_jones
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			traits = {
 				navy_anti_submarine_2
@@ -645,7 +644,6 @@ characters={
 			idea_token = CAN_leo_richer_lafleche
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			traits = {
 				popular_figurehead 
@@ -665,7 +663,6 @@ characters={
 			idea_token = CAN_james_ilsley
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			traits = {
 				war_industrialist 
@@ -685,7 +682,6 @@ characters={
 			idea_token = CAN_louis_st_laurent
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			available = {
 				has_completed_focus = CAN_compromise_with_quebec 
@@ -709,7 +705,6 @@ characters={
 			cost = 150.000
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 			available = {
 				has_completed_focus = CAN_crown_corporations 

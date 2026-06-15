@@ -13,43 +13,18 @@ CZE_ckd_organization = {
 	icon = GFX_idea_CZE_ckd
 	
 	allowed = {	
-		OR = {
-			tag = CZE
-			tag = RKH
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-		}
+		original_tag = CZE
 	}
 
 	visible = {
 		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+			limit = { FROM = { original_tag = GER } }
+			FROM = { has_completed_focus = GER_end_of_czechoslovakia }
 		}
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CZE } }
-			}
-			FROM = { NOT = { has_war_with = CZE } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_CZE_ckd_organization_flag
-				}
-			}
-		}
+		
 	}
 
 	add_trait = {
@@ -63,17 +38,11 @@ CZE_ckd_organization = {
 		visible = {
 			FROM = { 
 				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-				NOT = {
-					has_completed_focus = CZE_kickstart_rapid_rearmanent 
-				}
 			}
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_keep_focus_on_weapon_exports
-			}
+
 		}
 
 		production_bonus = {
@@ -103,9 +72,7 @@ CZE_ckd_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_the_tvp_project
-			}
+
 		}
 
 		all_parents = { generic_mio_streamlined_production }
@@ -124,39 +91,15 @@ CZE_tatra_organization = {
 	include = generic_medium_tank_organization
 	icon = GFX_idea_CZE_tatra
 	allowed = {
-		OR = {
-			tag = CZE
-			tag = RKH
-			tag = POL
-		}
+		original_tag = CZE
 	}
 
 	available = {
-		FROM = {
-			if = {
-				limit = {
-					original_tag = POL
-				}
-				has_completed_focus = POL_join_CZE_military
-				OR = {
-					controls_state = 9
-					any_subject_country = {
-						controls_state = 9
-					}	
-				}
-			}
-		}
+		
 	}
 
 	visible = {
-		FROM = {
-			if = {
-				limit = {
-					original_tag = POL
-				}
-				has_completed_focus = POL_join_CZE_military
-			}
-		}
+		
 	}
 
 	add_trait = { 
@@ -168,16 +111,11 @@ CZE_tatra_organization = {
 		position = { x=3 y=3 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_grow_tatras_capabilities
-			}
+			
 		}
 
 		all_parents = { generic_mio_trait_simplified_turret_design generic_mio_trait_armor_steel_working }
@@ -193,64 +131,15 @@ CZE_skoda_armor_organization = {
 	icon = GFX_idea_CZE_skoda_armor
 	
 	allowed = {	
-		OR = {
-			tag = CZE
-			tag = SLO
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-			AND = {
-				tag = HUN 
-				has_dlc = "Gotterdammerung"
-			}
-			AND = {
-				tag = PER
-				has_dlc = "Graveyard of Empires"
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
+		original_tag = CZE
 	}
 	
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
-		IF = {
-			limit = { FROM = { original_tag = HUN } }
-			FROM = { has_completed_focus = wuw_HUN_integrate_bohemian_and_austrian_industries }
-		}
-		IF = {
-			limit = { FROM = { original_tag = PER } }
-			FROM = { has_completed_focus = PER_czech_tanks }
-		}
+		
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CZE } }
-			}
-			FROM = { NOT = { has_war_with = CZE } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_CZE_skoda_armor_organization_flag
-				}
-			}
-		}
-		IF = {
-			limit = { FROM = { original_tag = PER } }
-			FROM = { has_completed_focus = PER_czech_tanks }
-		}
+		
 	}
 
 	add_trait = {
@@ -262,20 +151,12 @@ CZE_skoda_armor_organization = {
 		position = { x=9 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-				NOT = {
-					has_completed_focus = CZE_kickstart_rapid_rearmanent 
-				}
-			}
+			
 		}
 
 		
 		available = {
-			FROM = {
-				has_completed_focus = CZE_keep_focus_on_weapon_exports
-			}
+			
 		}
 
 		production_bonus = {
@@ -298,16 +179,11 @@ CZE_skoda_armor_organization = {
 		relative_position_id = generic_mio_trait_standardized_components
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_redouble_tank_development_efforts
-			}
+			
 		}
 
 		all_parents = { generic_mio_trait_standardized_components }
@@ -327,65 +203,15 @@ CZE_skoda_plzen_tank_destroyer_organization = {
 	icon = GFX_idea_CZE_skoda_plzen
 
 	allowed = {
-		OR = {
-			tag = CZE
-			tag = AUS
-			tag = SLO
-			tag = POL
-		}
-		has_dlc = "Peace For Our Time"
+		original_tag = CZE
 	}
 
 	available = {
-		if = {
-			limit = {
-				FROM = {
-					original_tag = CZE
-				}
-			}
-			FROM = {
-				has_completed_focus = CZE_rearmed_and_retooled
-			}
-		}
-		if = {
-			limit = {
-				FROM = {
-					original_tag = AUS
-				}
-			}
-			FROM = {
-				controls_state = 9
-			}
-		}
-		if = {
-			limit = {
-				FROM = {
-					original_tag = POL
-				}
-			}
-			FROM = {
-				has_completed_focus = POL_join_CZE_military
-				OR = {
-					controls_state = 9
-					any_subject_country = {
-						controls_state = 9
-					}	
-				}
-			}
-		}
+		
 	}
 
 	visible = {
-		if = {
-			limit = {
-				FROM = {
-					original_tag = POL
-				}
-			}
-			FROM = {
-				has_completed_focus = POL_join_CZE_military
-			}
-		}
+		
 	}
 }
 
@@ -399,21 +225,14 @@ CZE_skoda_works_german_organization = {
 	}
 
 	available = {
-		FROM = { #state_is_fully_controlled_by_ROOT_or_subject = yes tooltip's FROM and Subject names don't show up in this context. It would of course be a better check to use if not for this
-			OR = {
-				controls_state = 9
-				any_subject_country = {
-					controls_state = 9
-				}	
-			}
+		IF = {
+			limit = { FROM = { original_tag = GER } }
+			FROM = { has_completed_focus = GER_end_of_czechoslovakia }
 		}
 	}
 
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = GER } }
-			FROM = { has_completed_focus = GER_integrate_czech_manufacturers }
-		}
+		
 	}
 
 	add_trait = {
@@ -448,21 +267,14 @@ CZE_bohmische_mahrische_maschinenfabrik_ag_german_organization = {
 	}
 
 	available = {
-		FROM = { #state_is_fully_controlled_by_ROOT_or_subject = yes tooltip's FROM and Subject names don't show up in this context. It would of course be a better check to use if not for this
-			OR = {
-				controls_state = 9
-				any_subject_country = {
-					controls_state = 9
-				}	
-			}
+		IF = {
+			limit = { FROM = { original_tag = GER } }
+			FROM = { has_completed_focus = GER_end_of_czechoslovakia }
 		}
 	}
 
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = GER } }
-			FROM = { has_completed_focus = GER_integrate_czech_manufacturers }
-		}
+		
 	}
 
 	add_trait = {
@@ -562,10 +374,7 @@ CZE_skoda_shipyards_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_CZE_skoda_shipyards
 	allowed = { 
-		OR = {
-			tag = CZE
-			tag = RKH
-		}
+		original_tag = CZE
 	}
 
 	equipment_type = {
@@ -593,42 +402,15 @@ CZE_avia_organization = {
 	include = generic_light_aircraft_organization
 	icon = GFX_idea_CZE_avia
 	allowed = { 
-		OR = {
-			tag = CZE 
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
-			}
-		}
+		original_tag = CZE
 	}
 
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
+		
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CZE } }
-			}
-			FROM = { NOT = { has_war_with = CZE } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_CZE_avia_organization_flag
-				}
-			}
-		}
+		
 	}
 
 	add_trait = {
@@ -647,10 +429,7 @@ CZE_avia_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_joint_stock_schemes
-				NOT = { has_country_flag = CZE_mio_trait_walter_co_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -686,10 +465,7 @@ CZE_avia_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_diversify_bata
-				NOT = { has_country_flag = CZE_mio_trait_bata_corporation_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -714,17 +490,7 @@ CZE_ckd_praga_organization = {
 	include = generic_multi_role_aircraft_organization
 	icon = GFX_idea_CZE_ckd_praga
 	allowed = { 
-		OR = {
-			tag = CZE
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-			AND = {
-				tag = HUN 
-				has_dlc = "Gotterdammerung"
-			}
-		}
+		original_tag = CZE
 	}
 
 	tree_header_text = {
@@ -773,16 +539,11 @@ CZE_ckd_praga_organization = {
 		relative_position_id = generic_mio_trait_upgraded_engines
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_grow_ckd_secondary_facilities
-			}
+			
 		}
 
 		any_parent = { generic_mio_trait_light_airframe  generic_mio_trait_medium_airframe }
@@ -801,17 +562,11 @@ CZE_ckd_praga_organization = {
 		position = { x=9 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_joint_stock_schemes
-				NOT = { has_country_flag = CZE_mio_trait_walter_co_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -840,17 +595,11 @@ CZE_ckd_praga_organization = {
 		position = { x=9 y=1 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_diversify_bata
-				NOT = { has_country_flag = CZE_mio_trait_bata_corporation_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -876,10 +625,7 @@ CZE_aero_organization = {
 	icon = GFX_idea_CZE_aero
 
 	allowed = {
-		OR = {
-			original_tag = CZE
-			tag = RKH
-		}
+		original_tag = CZE
 	}
 
 	equipment_type = {
@@ -902,17 +648,11 @@ CZE_aero_organization = {
 		position = { x=9 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_joint_stock_schemes
-				NOT = { has_country_flag = CZE_mio_trait_walter_co_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -941,17 +681,11 @@ CZE_aero_organization = {
 		position = { x=9 y=1 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_diversify_bata
-				NOT = { has_country_flag = CZE_mio_trait_bata_corporation_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -976,11 +710,8 @@ CZE_letov_organization = {
 	include = generic_heavy_aircraft_organization
 	icon = GFX_idea_CZE_letov
 	allowed = { 
-		OR = {
 			tag = CZE
-			tag = SLO
-			tag = RKH
-		}
+
 	}
 
 	add_trait = {
@@ -992,17 +723,11 @@ CZE_letov_organization = {
 		position = { x=0 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_joint_stock_schemes
-				NOT = { has_country_flag = CZE_mio_trait_walter_co_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -1031,17 +756,11 @@ CZE_letov_organization = {
 		position = { x=0 y=1 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_diversify_bata
-				NOT = { has_country_flag = CZE_mio_trait_bata_corporation_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -1066,11 +785,8 @@ CZE_benees_mraz_organization = {
 	include = generic_range_focused_aircraft_organization
 	icon = GFX_idea_CZE_benes_mraz
 	allowed = {
-		has_dlc = "Peace For Our Time"
-		OR = {
-			tag = CZE
-			tag = RKH
-		}
+		original_tag = CZE
+		
 	}
 
 	add_trait = {
@@ -1082,17 +798,11 @@ CZE_benees_mraz_organization = {
 		position = { x=0 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_joint_stock_schemes
-				NOT = { has_country_flag = CZE_mio_trait_walter_co_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -1121,17 +831,11 @@ CZE_benees_mraz_organization = {
 		position = { x=0 y=1 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_diversify_bata
-				NOT = { has_country_flag = CZE_mio_trait_bata_corporation_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -1156,7 +860,7 @@ CZE_zlin_aircraft_organization = {
 	include = generic_high_agility_fighter_aircraft_organization
 	icon = GFX_idea_CZE_zlin_aircraft
 	allowed = {
-		has_dlc = "Peace For Our Time"
+
 		tag = CZE
 	}
 
@@ -1169,17 +873,11 @@ CZE_zlin_aircraft_organization = {
 		position = { x=9 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_joint_stock_schemes
-				NOT = { has_country_flag = CZE_mio_trait_walter_co_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -1208,17 +906,11 @@ CZE_zlin_aircraft_organization = {
 		position = { x=9 y=1 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_diversify_bata
-				NOT = { has_country_flag = CZE_mio_trait_bata_corporation_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -1246,21 +938,13 @@ CZE_avia_german_organization = {
 	icon = GFX_idea_CZE_avia
 
 	allowed = {
-		has_dlc = "Peace For Our Time"
-		OR = {
 			original_tag = GER
-			tag = RKH
-		}
 	}
 
 	available = {
-		FROM = {
-			OR = {
-				controls_state = 9
-				any_subject_country = {
-					controls_state = 9
-				}	
-			}
+		IF = {
+			limit = { FROM = { original_tag = GER } }
+			FROM = { has_completed_focus = GER_end_of_czechoslovakia }
 		}
 	}
 
@@ -1271,10 +955,7 @@ CZE_avia_german_organization = {
 	research_categories = {	mio_cat_all_light_fighter_and_modules }
 
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = GER } }
-			FROM = { has_completed_focus = GER_integrate_czech_manufacturers }
-		}
+		
 	}
 
 	add_trait = {
@@ -1315,10 +996,7 @@ CZE_avia_german_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = GER_aerodynamic_research_institute
-				NOT = { has_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -1346,16 +1024,11 @@ CZE_avia_german_organization = {
 		position = { x=9 y=1 }
 
 		visible = {
-			FROM = { 
-				original_tag = GER
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				NOT = { has_country_flag = CZE_mio_trait_walter_co_german_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -1391,49 +1064,15 @@ CZE_zbrojovka_brno_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_CZE_zbrojovka_brno
 	allowed = {
-		OR = {
-			tag = CZE
-			tag = RKH
-			AND = {
-				has_dlc = "Peace For Our Time"
-				tag = ETH
-			}
-		}
+		original_tag = CZE
 	}
 
 	visible = {
-		OR = {
-			FROM = {
-				original_tag = CZE
-			}
-			if = {
-				limit = {
-					FROM = {
-						original_tag = ETH
-					}
-				}
-				FROM = {
-					has_global_flag = second_italo_ethiopian_war_flag
-					has_country_flag = CZE_zbrojovka_brno_is_smuggling_guns_in
-				}
-			}
-		}
+		
 	}
 
 	available = {
-		if = {
-			limit = {
-				FROM = {
-					has_global_flag = second_italo_ethiopian_war_flag
-					original_tag = ETH
-				}
-			}
-			FROM = {
-				NOT = {
-					has_war_with = CZE
-				}
-			}
-		}
+		
 	}
 
 	add_trait = {
@@ -1445,16 +1084,11 @@ CZE_zbrojovka_brno_organization = {
 		position = { x=0 y=0 }
 
 		available = {
-			FROM = {
-				has_global_flag = second_italo_ethiopian_war_flag
-			}
+			
 		}
 		
 		visible = {
-			FROM = { 
-				original_tag = ETH
-				has_global_flag = second_italo_ethiopian_war_flag
-			}
+			
 		}
 
 		organization_modifier = {
@@ -1478,20 +1112,12 @@ CZE_zbrojovka_brno_organization = {
 		relative_position_id = generic_mio_trait_drum_pattern_sights
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-				NOT = {
-					has_completed_focus = CZE_kickstart_rapid_rearmanent 
-				}
-			}
+			
 		}
 
 		
 		available = {
-			FROM = {
-				has_completed_focus = CZE_keep_focus_on_weapon_exports
-			}
+			
 		}
 
 		production_bonus = {
@@ -1509,79 +1135,15 @@ CZE_ceska_zbrojovka_uhersky_brod_organization = {
 	include = CZE_automatic_weapons_equipment_organization
 	icon = GFX_idea_CZE_ceska_zbrojovka_uhersky_brod
 	allowed = { 
-		has_dlc = "Peace For Our Time"
-		OR = {
-			tag = CZE
-			tag = SLO
-			tag = GER
-			tag = RKH
-			tag = POL
-		}
+		original_tag = CZE
 	}
 
 	visible = {
-		if = {
-			limit = {
-				FROM = {
-					original_tag = GER
-				}
-			}
-			FROM = {
-				has_completed_focus = GER_integrate_czech_manufacturers
-			}
-		}
-		if = {
-			limit = {
-				FROM = {
-					original_tag = POL
-				}
-			}
-			FROM = {
-				has_completed_focus = POL_join_CZE_military
-			}
-		}
+		
 	}
 
 	available = {
-		if = {
-			limit = {
-				FROM = {
-					original_tag = CZE
-				}
-			}
-			FROM = {
-				has_completed_focus = CZE_establish_a_armament_factory_in_uhersky_brod
-			}
-		}
-		if = {
-			limit = {
-				FROM = {
-					OR = {
-						original_tag = GER
-						original_tag = SLO
-						original_tag = POL
-					}
-				}
-			}
-			FROM = { #state_is_fully_controlled_by_ROOT_or_subject = yes tooltip's FROM and Subject names don't show up in this context. It would of course be a better check to use if not for this
-				OR = {
-					controls_state = 75
-					any_subject_country = {
-						controls_state = 75
-					}	
-				}
-			}
-		}
-		if = {
-			limit = {
-				FROM = {
-					original_tag = POL
-				}
-			}
-			FROM = {
-				has_completed_focus = POL_join_CZE_military
-			}
-		}
+		
 	}
 
 	add_trait = {
@@ -1593,19 +1155,11 @@ CZE_ceska_zbrojovka_uhersky_brod_organization = {
 		position = { x=9 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-				NOT = {
-					has_completed_focus = CZE_kickstart_rapid_rearmanent 
-				}
-			}
+			
 		}
 		
 		available = {
-			FROM = {
-				has_completed_focus = CZE_keep_focus_on_weapon_exports
-			}
+			
 		}
 
 		production_bonus = {
@@ -1627,17 +1181,11 @@ CZE_ceska_zbrojovka_uhersky_brod_organization = {
 		position = { x=9 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_joint_stock_schemes
-				NOT = { has_country_flag = CZE_mio_trait_walter_co_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -1668,16 +1216,11 @@ CZE_ceska_zbrojovka_uhersky_brod_organization = {
 		position = { x=9 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = GER
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				NOT = { has_country_flag = CZE_mio_trait_walter_co_german_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -1702,51 +1245,15 @@ CZE_skoda_artillery_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_CZE_skoda_artillery
 	allowed = {
-		OR = {
-			tag = CZE 
-			tag = SLO
-			tag = RKH
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
-			}
-		}
+		original_tag = CZE
 	}
 
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
+		
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = {
-					NOT = {
-						OR = {
-							original_tag = CZE 
-							original_tag = SLO
-						}
-					} 
-				}
-			}
-			FROM = { NOT = { has_war_with = CZE } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_CZE_skoda_artillery_organization_flag
-				}
-			}
-		}
+		
 	}
 
 	add_trait = {
@@ -1758,19 +1265,11 @@ CZE_skoda_artillery_organization = {
 		position = { x=9 y=1 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-				NOT = {
-					has_completed_focus = CZE_kickstart_rapid_rearmanent 
-				}
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_keep_focus_on_weapon_exports
-			}
+			
 		}
 
 		production_bonus = {
@@ -1793,16 +1292,11 @@ CZE_skoda_artillery_organization = {
 		relative_position_id = generic_mio_trait_advanced_barrel_forging
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_expand_skoda_offices
-			}
+			
 		}
 
 		all_parents = { generic_mio_trait_advanced_barrel_forging }
@@ -1827,16 +1321,11 @@ CZE_skoda_artillery_organization = {
 		#relative_position_id = generic_mio_trait_advanced_barrel_forging
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_expand_skoda_offices
-			}
+			
 		}
 
 		#all_parents = { generic_mio_trait_advanced_barrel_forging }
@@ -1854,10 +1343,7 @@ CZE_praga_organization = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_CZE_praga
 	allowed = {
-		OR = {
-			tag = CZE
-			tag = RKH
-		}
+		original_tag = CZE
 	}
 
 	add_trait = {
@@ -1869,16 +1355,11 @@ CZE_praga_organization = {
 		position = { x=9 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_expand_praga
-			}
+			
 		}
 
 		production_bonus = {
@@ -1900,17 +1381,11 @@ CZE_praga_organization = {
 		position = { x=9 y=1 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_diversify_bata
-				NOT = { has_country_flag = CZE_mio_trait_bata_corporation_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -1935,10 +1410,7 @@ CZE_ringhoffer_tatra_organization = {
 	include = generic_armored_car_organization
 	icon = GFX_idea_CZE_tatra
 	allowed = {	
-		OR = {
-			tag = CZE
-			tag = RKH
-		}
+		original_tag = CZE
 	}
 
 	add_trait = {
@@ -1951,16 +1423,11 @@ CZE_ringhoffer_tatra_organization = {
 		relative_position_id = generic_mio_trait_standardized_components
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_grow_tatras_capabilities
-			}
+			
 		}
 
 		all_parents = { generic_mio_trait_standardized_components }
@@ -1979,17 +1446,11 @@ CZE_ringhoffer_tatra_organization = {
 		position = { x=9 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_diversify_bata
-				NOT = { has_country_flag = CZE_mio_trait_bata_corporation_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -2014,40 +1475,15 @@ CZE_zbrojovka_vsetin_organization = {
 	include = generic_support_equipment_organization
 	icon = GFX_idea_CZE_zbrojovka_vsetin
 	allowed = {
-		has_dlc = "Peace For Our Time"
-		OR = {
-			tag = CZE
-			tag = POL
-			tag = RKH
-		}
+		original_tag = CZE
 	}
 
 	available = {
-		FROM = {
-			if = {
-				limit = {
-					original_tag = POL
-				}
-				has_completed_focus = POL_join_CZE_industry
-				OR = {
-					controls_state = 9
-					any_subject_country = {
-						controls_state = 9
-					}	
-				}
-			}
-		}
+		
 	}
 
 	visible = {
-		FROM = {
-			if = {
-				limit = {
-					original_tag = POL
-				}
-				has_completed_focus = POL_join_CZE_industry
-			}
-		}
+		
 	}
 
 	add_trait = {
@@ -2059,17 +1495,11 @@ CZE_zbrojovka_vsetin_organization = {
 		position = { x=9 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_diversify_bata
-				NOT = { has_country_flag = CZE_mio_trait_bata_corporation_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -2094,39 +1524,15 @@ CZE_CKD_plzen_organization = {
 	include = generic_train_organization
 	icon = GFX_idea_CZE_ckd_plzen
 	allowed = {
-		has_dlc = "Peace For Our Time"
-		OR = {
-			tag = CZE
-			tag = POL
-		}
+		original_tag = CZE
 	}
 
 	available = {
-		FROM = {
-			if = {
-				limit = {
-					original_tag = POL
-				}
-				has_completed_focus = POL_join_CZE_rails
-				OR = {
-					controls_state = 9
-					any_subject_country = {
-						controls_state = 9
-					}	
-				}
-			}
-		}
+		
 	}
 
 	visible = {
-		FROM = {
-			if = {
-				limit = {
-					original_tag = POL
-				}
-				has_completed_focus = POL_join_CZE_rails
-			}
-		}
+		
 	}
 
 	initial_trait = {
@@ -2154,16 +1560,11 @@ CZE_CKD_plzen_organization = {
 		relative_position_id = generic_mio_trait_joint_stock_scheme
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_grow_ckd_secondary_facilities
-			}
+			
 		}
 
 		all_parents = { generic_mio_trait_joint_stock_scheme }
@@ -2182,17 +1583,11 @@ CZE_CKD_plzen_organization = {
 		position = { x=9 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_diversify_bata
-				NOT = { has_country_flag = CZE_mio_trait_bata_corporation_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -2219,7 +1614,7 @@ CZE_praga_aviation_organization = {
 	
 	allowed = {	
 		original_tag = CZE
-		has_dlc = "Gotterdammerung"		
+				
 	}
 
 	add_trait = {
@@ -2231,16 +1626,11 @@ CZE_praga_aviation_organization = {
 		position = { x=7 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_expand_praga
-			}
+			
 		}
 
 		production_bonus = {
@@ -2264,19 +1654,11 @@ CZE_praga_aviation_organization = {
 		any_parent = { CZE_mio_trait_expanded_production_facilities_praga_aviation }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-				NOT = {
-					has_completed_focus = CZE_kickstart_rapid_rearmanent 
-				}
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_keep_focus_on_weapon_exports
-			}
+			
 		}
 
 		production_bonus = {
@@ -2298,17 +1680,11 @@ CZE_praga_aviation_organization = {
 		position = { x=9 y=0 }
 
 		visible = {
-			FROM = { 
-				original_tag = CZE
-				has_dlc = "Peace For Our Time"
-			}
+			
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = CZE_diversify_bata
-				NOT = { has_country_flag = CZE_mio_trait_bata_corporation_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
