@@ -2057,12 +2057,13 @@ technologies = {
 	}
 	motorcycle_infantry_1 = {
 
-		# enable_subunits = {
-			
-		# }
-
 		enable_equipments = {
 			motorbike_equipment_1
+		}
+
+		enable_subunits = {
+			bm_motorcycle_units
+			bm_motorcycle_recon
 		}
 
 		#enable_equipment_modules = {
@@ -2410,6 +2411,9 @@ technologies = {
 
 		enable_subunits = {
 			mechanized
+			bm_mechanized_artillery
+			bm_mechanized_anti_air
+			bm_mechanized_anti_tank
 		}
 
 		enable_equipments = {
