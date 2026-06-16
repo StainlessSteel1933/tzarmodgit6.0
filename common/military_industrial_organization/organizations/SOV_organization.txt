@@ -498,69 +498,14 @@ SOV_okmo_organization = {
 	icon = GFX_idea_okmo
 	
 	allowed = {	
-		OR = {
-			tag = SOV 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				FROM = { original_tag = CHI }
-				has_dlc = "No Compromise, No Surrender"
-			}
-		}
+		tag = SOV
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
-		}
-
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_okmo_mio_flag
-				}
-			}
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = SOV
-				}
-				#is_in_faction_with = SOV
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = CHI }
-			}
-			FROM = { has_country_flag = SOV_accepted_OKMO }
-		}
+		
 	}
 	visible = {
-		IF = {
-			limit = {
-				has_dlc = "No Compromise, No Surrender"
-				FROM = { original_tag = CHI }
-			}
-			FROM = { 
-				OR ={
-					has_completed_focus = CHI_utilize_the_albazinian_contact
-					has_completed_focus = CHI_secure_the_soviet_border
-				} 
-				NOT = {
-					has_country_flag = SOV_accepted_Morozov
-					has_country_flag = SOV_accepted_Astrov
-				}
-			}
-		}
+		
 	}
 
 	override_trait = {
@@ -1000,41 +945,11 @@ SOV_nevskoye_design_bureau_organization = {
 	icon = GFX_idea_nevskoye_design_bureau
 	
 	allowed = {	
-		OR = {
-			tag = SOV 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-		}
+		tag = SOV
 	}
 	
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
-		}
-
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_nevskoye_mio_flag
-				}
-			}
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = SOV
-				}
-				#is_in_faction_with = SOV
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
+		
 	}
 
 	add_trait = { #MTG version
@@ -1927,13 +1842,7 @@ SOV_ilyushin_design_bureau_organization = {
 	icon = GFX_idea_ilyushin_design_bureau
 	
 	allowed = {	
-		OR = {
-			tag = SOV 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-		}
+		tag = SOV
 	}
 	
 	available = {
@@ -1943,31 +1852,7 @@ SOV_ilyushin_design_bureau_organization = {
 			}
 			FROM = { NOT = { has_country_flag = SOV_ilyushin_design_bureau_dissolved_flag } }
 		}
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
-		}
 
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_ilyushin_mio_flag
-				}
-			}
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = SOV
-				}
-				#is_in_faction_with = SOV
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
 	}
 
 	add_trait = { 
@@ -2472,30 +2357,11 @@ SOV_grabin_design_bureau_organization = {
 	icon = GFX_idea_grabin_design_bureau
 	
 	allowed = {	
-		OR = {
-			tag = SOV 
-			AND = {
-				tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-		}
+		tag = SOV
 	}
 	
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
-		}
-
-		IF = {
-			limit = { FROM = { original_tag = GRE } }
-			FROM = {
-				has_completed_focus = GRE_appeal_to_the_soviet_union 
-			}
-		}
+		
 	}
 
 	add_trait = { 
@@ -2748,30 +2614,7 @@ SOV_gaz_organization = {
 	icon = GFX_idea_gaz
 	
 	allowed = {	
-		OR = {
-			tag = SOV 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-			AND = {
-				tag = ARG
-				has_dlc = "Trial of Allegiance" #TODO_Eildih fix DLC
-			}
-			AND = {
-				tag = BRA
-				has_dlc = "Trial of Allegiance" #TODO MH fix DLC
-			}
-			AND = {
-				tag = AFG
-				
-			}
-			NOR_AAT = yes
-		}
+		tag = SOV
 	}
 
 	visible = {

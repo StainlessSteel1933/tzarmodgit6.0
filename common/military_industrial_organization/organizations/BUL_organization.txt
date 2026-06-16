@@ -36,7 +36,7 @@ BUL_varna_naval_dockyard_organization = {
 	
 	allowed = {	
 		tag = BUL
-		has_dlc = "Battle for the Bosporus"
+		  
 	}
 	
 	available = {
@@ -95,12 +95,7 @@ BUL_dar_organization = {
 	}
 
 	available = {
-		if = {
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			FROM = { has_completed_focus = BUL_darzhavna_aeroplanna_rabotilnitsa }
-		}
+		
 	}
 
 	add_trait = { 
@@ -133,11 +128,11 @@ BUL_kaproni_bulgarski_organization = {
 	
 	allowed = {	
 		tag = BUL
-		has_dlc = "Battle for the Bosporus"
+		
 	}
 
 	available = {
-		FROM = { has_completed_focus = BUL_kaproni_bulgarski }
+		
 	}
 
 	add_trait = { 
@@ -188,7 +183,7 @@ BUL_dvf_organization = {
 	
 	allowed = {	
 		tag = BUL
-		has_dlc = "Battle for the Bosporus"
+		
 	}
 	
 	available = {
@@ -225,7 +220,7 @@ BUL_dvf_sopot_organization = {
 	
 	allowed = {	
 		tag = BUL
-		has_dlc = "Battle for the Bosporus"
+		
 	}
 
 	available = {
