@@ -14,7 +14,7 @@ AST_nuffield_mechanizations_and_aero_organization = {
 	icon = GFX_idea_AST_nuffield_mechanizations_and_aero
 	allowed = {
 		original_TAG = AST
-		has_dlc = "Thunder at Our Gates"
+		
 	}
 
 	add_trait = { 

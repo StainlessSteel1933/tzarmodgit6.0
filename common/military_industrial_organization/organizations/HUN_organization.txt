@@ -193,9 +193,9 @@ HUN_mrt_aircraft_organization = {
 			mio_cat_eq_all_large_plane
 		}
 		
-		equipment_bonus = {
+		# equipment_bonus = {
 			
-		}
+		# }
 
 		production_bonus = {
 			production_cost_factor = -0.05
