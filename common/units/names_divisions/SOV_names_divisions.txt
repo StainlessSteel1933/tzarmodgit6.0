@@ -1544,11 +1544,10 @@ SOV_GTC_01 =
 }
 
 
-SOV_CAV_02 = #COSSACK CAVALRY
-{
+SOV_CAV_02 = { #COSSACK CAVALRY 
 	name = "Cossack Cavalry Division"
 
-	for_countries = { SOV UKR }
+	for_countries = { SOV }
 
 	can_use = {
 		OR = {
@@ -1556,7 +1555,6 @@ SOV_CAV_02 = #COSSACK CAVALRY
 				tag = SOV
 				has_completed_focus = SOV_restore_cossack_units
 			}
-			tag = UKR
 		}
 	}
 
@@ -1855,31 +1853,31 @@ SOV_INF_02 =
 	}
 }
 
-SOV_INF_03 = 
-{
-	name = "Ruki"
+# SOV_INF_03 = 
+# {
+# 	name = "Ruki"
 
-	for_countries = { SOV }
+# 	for_countries = { SOV }
 
-	can_use = { 
-		has_completed_focus = SOV_the_eyes_fear
-		always = yes
-	}
+# 	can_use = { 
+# 		has_completed_focus = SOV_the_eyes_fear
+# 		always = yes
+# 	}
 
-	division_types = { "infantry" }
+# 	division_types = { "infantry" }
 
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { SOV_INF_01 }
+# 	# Number reservation system will tie to another group.
+# 	#link_numbering_with = { SOV_INF_01 }
 
-	fallback_name = "%dya Ruki"
+# 	fallback_name = "%dya Ruki"
 
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
+# 	# Names with numbers (only one number per entry). 
+# 	# It's okay to have gaps in numbering.
+# 	ordered =
+# 	{
 
-	}
-}
+# 	}
+# }
 
 SOV_JAP_INF = {
 	name = "Japanese Expeditionary Force"
@@ -1899,8 +1897,8 @@ SOV_JAP_INF = {
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered =
-	{
+	# ordered =
+	# {
 
-	}
+	# }
 }
