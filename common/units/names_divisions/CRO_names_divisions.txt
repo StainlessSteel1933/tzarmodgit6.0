@@ -31,7 +31,7 @@
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
 
-YUG_INF_01 = 
+CRO_INF_01 = 
 {
 	name = "Infantry Divisions"
 
@@ -42,7 +42,7 @@ YUG_INF_01 =
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	# link_numbering_with = { YUG_MTN_01 }
+	# link_numbering_with = { CRO_MTN_01 }
 
 	fallback_name = "%d. Pesadijska Divizija"
 
@@ -74,7 +74,7 @@ YUG_INF_01 =
 	}
 }
 
-YUG_CAV_01 = 
+CRO_CAV_01 = 
 {
 	name = "Cavalry Divisions"
 
@@ -107,7 +107,7 @@ YUG_CAV_01 =
 	}
 }
 
-YUG_MOT_01 = 
+CRO_MOT_01 = 
 {
 	name = "Motorised Divisions"
 
@@ -118,7 +118,7 @@ YUG_MOT_01 =
 	division_types = { "motorized" }
 
 	# Number reservation system will tie to another group.
-	# link_numbering_with = { YUG_MEC_01 }
+	# link_numbering_with = { CRO_MEC_01 }
 
 	fallback_name = "%d. Brza Divizija"
 
@@ -165,7 +165,7 @@ YUG_MOT_01 =
 	}
 }
 
-YUG_ARM_01 = 
+CRO_ARM_01 = 
 {
 	name = "Armoured Divisions"
 
@@ -176,7 +176,7 @@ YUG_ARM_01 =
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { YUG_INF_01 }
+	#link_numbering_with = { CRO_INF_01 }
 
 	fallback_name = "%d. Oklopna Divizija"
 
@@ -198,7 +198,7 @@ YUG_ARM_01 =
 	}
 }
 
-YUG_MEC_01 = 
+CRO_MEC_01 = 
 {
 	name = "Mechanised Divisions"
 
@@ -209,7 +209,7 @@ YUG_MEC_01 =
 	division_types = { "mechanized"  }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { YUG_MOT_01 }
+	link_numbering_with = { CRO_MOT_01 }
 
 	fallback_name = "%d. Mehanizirana Divizija"
 
@@ -231,7 +231,7 @@ YUG_MEC_01 =
 	}
 }
 
-YUG_GAR_01 = 
+CRO_GAR_01 = 
 {
 	name = "Garrison Divisions"
 
@@ -242,7 +242,7 @@ YUG_GAR_01 =
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { YUG_INF_01 YUG_MOT_01 YUG_MEC_01 }
+	#link_numbering_with = { CRO_INF_01 CRO_MOT_01 CRO_MEC_01 }
 
 	fallback_name = "%d. Hrvatska Divizija"
 
@@ -264,7 +264,7 @@ YUG_GAR_01 =
 	}
 }
 
-YUG_MAR_01 = 
+CRO_MAR_01 = 
 {
 	name = "Marine Divisions"
 
@@ -275,7 +275,7 @@ YUG_MAR_01 =
 	division_types = { "marine" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { YUG_GAR_01 }
+	#link_numbering_with = { CRO_GAR_01 }
 
 	fallback_name = "%d. Mornaricka Divizija"
 
@@ -297,7 +297,7 @@ YUG_MAR_01 =
 	}
 }
 
-YUG_MTN_01 = 
+CRO_MTN_01 = 
 {
 	name = "Mountain Divisions"
 
@@ -308,7 +308,7 @@ YUG_MTN_01 =
 	division_types = { "mountaineers" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { YUG_INF_01 }
+	link_numbering_with = { CRO_INF_01 }
 
 	fallback_name = "%d. Hrvatska (Gorska) Divizija"
 
@@ -330,7 +330,7 @@ YUG_MTN_01 =
 	}
 }
 
-YUG_PAR_01 = 
+CRO_PAR_01 = 
 {
 	name = "Paratrooper Divisions"
 

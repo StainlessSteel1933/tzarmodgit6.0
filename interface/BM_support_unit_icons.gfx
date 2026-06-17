@@ -1,0 +1,35 @@
+spriteTypes = {
+	
+
+	# FLAMETHOWER SUPPORT
+	# LARGE
+	spriteType = {
+		name = "GFX_unit_bm_flamethower_support_icon_medium"
+		textureFile = "gfx/bm_units/divisions_large/bm_flamethower_support.png"
+		noOfFrames = 2
+	}
+	# TEXTICON
+	spriteType = {
+		name = "GFX_unit_bm_flamethower_support_icon_small"
+		textureFile = "gfx/bm_units/texticons/bm_flamethower_support.png"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	
+	# MOTORCYCLE RECON
+	# LARGE
+	spriteType = {
+		name = "GFX_unit_bm_motorcycle_recon_icon_medium"
+		textureFile = "gfx/bm_units/divisions_large/bm_motorcycle_recon.png"
+		noOfFrames = 2
+	}
+	# TEXTICON
+	spriteType = {
+		name = "GFX_unit_bm_motorcycle_recon_icon_small"
+		textureFile = "gfx/bm_units/texticons/bm_motorcycle_recon.png"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+}

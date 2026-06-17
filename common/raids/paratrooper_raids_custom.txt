@@ -23,7 +23,7 @@ types = {
 		command_power = 20
 
 		allowed = {
-			has_dlc = "Gotterdammerung"
+			
 			original_tag = GER
 		}
 

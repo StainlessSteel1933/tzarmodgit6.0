@@ -933,7 +933,6 @@ HOL_dwight_eisenhower={
 			cost  = 100.000
 				allowed  = {
 					original_tag  = HOL
-					has_dlc = "Man the Guns"
 				}
 				available  = {
 					has_completed_focus  = HOL_binnenlands

@@ -100,7 +100,7 @@ track = fighter_aircraft
     icon = GFX_doctrine_low_echelon_support_medium
 
     visible = {
-    	has_dlc = "By Blood Alone"
+    	
     }
 
     xp_cost = 100

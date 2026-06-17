@@ -1,23 +1,103 @@
-﻿
-MAN_INF_01 = 
-{
-	name = "Infantry Division"
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
 
-	for_countries = { MIN }
+MAN_INF_01 = {
+	name = "Mixed Brigade"
 
-	 
+	for_countries = { MAN }
+
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { MAN_INF_01 }
+	link_numbering_with = { MAN_INF_02 }
+
+	fallback_name = "%d. Huncheng Lu"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Huncheng Lu" }			# Starting with what is what is currently in JAP OOBs
+		2 = { "%d. Huncheng Lu" }
+		3 = { "%d. Huncheng Lu" }
+		4 = { "%d. Huncheng Lu" }
+		5 = { "%d. Huncheng Lu" }			
+		6 = { "%d. Huncheng Lu" }			
+		7 = { "%d. Huncheng Lu" }			
+		8 = { "%d. Huncheng Lu" }			
+		9 = { "%d. Huncheng Lu" }			
+		10 = { "%d. Huncheng Lu" }			
+		11 = { "%d. Huncheng Lu" }			
+		12 = { "%d. Huncheng Lu" }			
+		13 = { "%d. Huncheng Lu" }			
+		14 = { "%d. Huncheng Lu" }			
+		15 = { "%d. Huncheng Lu" }			
+		16 = { "%d. Huncheng Lu" }			
+		17 = { "%d. Huncheng Lu" }			
+		18 = { "%d. Huncheng Lu" }			
+		19 = { "%d. Huncheng Lu" }			
+		20 = { "%d. Huncheng Lu" }			
+		21 = { "%d. Huncheng Lu" }			
+		22 = { "%d. Huncheng Lu" }			
+		23 = { "%d. Huncheng Lu" }			
+		24 = { "%d. Huncheng Lu" }			
+		25 = { "%d. Huncheng Lu" }			
+		26 = { "%d. Huncheng Lu" }			
+		27 = { "%d. Huncheng Lu" }			
+		28 = { "%d. Huncheng Lu" }			
+		29 = { "%d. Huncheng Lu" }			
+		30 = { "%d. Huncheng Lu" }			
+	}
+}
+
+MAN_INF_02 = {
+	name = "Infantry Division"
+
+	for_countries = { MAN }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MAN_INF_01 }
 
 	fallback_name = "%d Man'chu Bubing Shi"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered =
-	{
+	ordered = {
 		1 = { "%d Fang'tien Bubing Shi" }			# Starting with what is what is currently in JAP OOBs
 		2 = { "%d Fang'tien Bubing Shi" }
 		3 = { "%d Fang'tien Bubing Shi" }
@@ -51,25 +131,58 @@ MAN_INF_01 =
 	}
 }
 
-MAN_CAV_01 = 
-{
+MAN_CAV_01 = {
 	name = "Cavalry Division"
 
-	for_countries = { MIN }
+	for_countries = { MAN }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "cavalry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { MAN_INF_01 }
+	link_numbering_with = { MAN_CAV_02 }
+
+	fallback_name = "%d. Qibing Lu"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Qibing Lu" }
+		2 = { "%d. Qibing Lu" }
+		3 = { "%d. Qibing Lu" }
+		4 = { "%d. Qibing Lu" }
+		5 = { "%d. Qibing Lu" }
+		6 = { "%d. Qibing Lu" }
+		7 = { "%d. Qibing Lu" }
+		8 = { "%d. Qibing Lu" }
+		9 = { "%d. Qibing Lu" }
+		10 = { "%d. Qibing Lu" }
+		11 = { "%d. Qibing Lu" }
+		12 = { "%d. Qibing Lu" }
+		13 = { "%d. Qibing Lu" }
+		14 = { "%d. Qibing Lu" }
+		15 = { "%d. Qibing Lu" }
+	}
+}
+
+MAN_CAV_02 = {
+	name = "Cavalry Division"
+
+	for_countries = { MAN }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { MAN_CAV_01 }
 
 	fallback_name = "%d Man'chu Qibing Shi"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered =
-	{
+	ordered = {
 		1 = { "%d Man'chu Qibing Shi" }
 		2 = { "%d Man'chu Qibing Shi" }
 		3 = { "%d Man'chu Qibing Shi" }
@@ -88,13 +201,12 @@ MAN_CAV_01 =
 	}
 }
 
-MAN_MOT_01 = 
-{
+MAN_MOT_01 = {
 	name = "Motor Division"
 
-	for_countries = { MIN }
+	for_countries = { MAN }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "motorized" }
 
@@ -105,8 +217,7 @@ MAN_MOT_01 =
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered =
-	{
+	ordered = {
 		1 = { "%d Man'chu Jidonghua Shi" }		
 		2 = { "%d Man'chu Jidonghua Shi" }		
 		3 = { "%d Man'chu Jidonghua Shi" }		
@@ -125,13 +236,12 @@ MAN_MOT_01 =
 	}
 }
 
-MAN_MEC_01 = 
-{
+MAN_MEC_01 = {
 	name = "Mechanized Division"
 
-	for_countries = { MIN }
+	for_countries = { MAN }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "mechanized" }
 
@@ -142,8 +252,7 @@ MAN_MEC_01 =
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered =
-	{
+	ordered = {
 		1 = { "%d Man'chu Jixiehua Shi" }				
 		2 = { "%d Man'chu Jixiehua Shi" }		
 		3 = { "%d Man'chu Jixiehua Shi" }		
@@ -162,13 +271,12 @@ MAN_MEC_01 =
 	}
 }
 
-MAN_ARM_01 = 
-{
+MAN_ARM_01 = {
 	name = "Tank Division"
 
-	for_countries = { MIN }
+	for_countries = { MAN }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -179,8 +287,7 @@ MAN_ARM_01 =
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered =
-	{
+	ordered = {
 		1 = { "%d Man'chu Zhuangjia Shi" }
 		2 = { "%d Man'chu Zhuangjia Shi" }
 		3 = { "%d Man'chu Zhuangjia Shi" }
@@ -199,13 +306,12 @@ MAN_ARM_01 =
 	}
 }
 
-MAN_PAR_01 = 
-{
+MAN_PAR_01 = {
 	name = "Parachute Division"
 
-	for_countries = { MIN }
+	for_countries = { MAN }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "paratrooper" }
 
@@ -216,8 +322,7 @@ MAN_PAR_01 =
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered =
-	{
+	ordered = {
 		1 = { "%d Man'chu Sanbing Shi" }
 		2 = { "%d Man'chu Sanbing Shi" }
 		3 = { "%d Man'chu Sanbing Shi" }
@@ -231,13 +336,12 @@ MAN_PAR_01 =
 	}
 }
 
-MAN_MAR_01 = 
-{
+MAN_MAR_01 = {
 	name = "Marine Division"
 
-	for_countries = { MIN }
+	for_countries = { MAN }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "marine" }
 
@@ -248,8 +352,7 @@ MAN_MAR_01 =
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered =
-	{
+	ordered = {
 		1 = { "%d Man'chu Luzhan Dui Shi" }
 		2 = { "%d Man'chu Luzhan Dui Shi" }
 		3 = { "%d Man'chu Luzhan Dui Shi" }
@@ -263,13 +366,12 @@ MAN_MAR_01 =
 	}
 }
 
-MAN_MNT_01 = 
-{
+MAN_MNT_01 = {
 	name = "Mountain Division"
 
-	for_countries = { MIN }
+	for_countries = { MAN }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "mountaineers" }
 
@@ -280,8 +382,7 @@ MAN_MNT_01 =
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered =
-	{
+	ordered = {
 		1 = { "%d Fang'tien Bubing Shi" }			# Starting with what is what is currently in JAP OOBs
 		2 = { "%d Fang'tien Bubing Shi" }
 		3 = { "%d Fang'tien Bubing Shi" }
@@ -315,13 +416,12 @@ MAN_MNT_01 =
 	}
 }
 
-MAN_GAR_01 = 
-{
+MAN_GAR_01 = {
 	name = "Garrison Unit"
 
-	for_countries = { MIN }
+	for_countries = { MAN }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -332,8 +432,7 @@ MAN_GAR_01 =
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered =
-	{
+	ordered = {
 		1 = { "%d Qu Jun" }
 		2 = { "%d Qu Jun" }
 		3 = { "%d Qu Jun" }

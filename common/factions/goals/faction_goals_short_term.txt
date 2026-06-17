@@ -846,7 +846,7 @@ faction_goal_spy_master = {
 	group = FOCUS_FILTER_POLITICAL_CHARACTER
 	category = short_term
 	allowed = {
-		has_dlc = "La Resistance"
+
 	}
 	visible = {
 		FROM = {

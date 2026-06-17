@@ -396,9 +396,7 @@ sp_rockets_ballistic_missile = {
 		}
 
 		enable_equipments = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
+			
 			ballistic_missile_equipment_1
 		}
 		enable_equipments = {
@@ -728,7 +726,7 @@ sp_rockets_long_range_ballistic_missile = {
 		}
 	}
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	special_project_parent = {
@@ -901,7 +899,7 @@ sp_rockets_ground_to_air_missile = {
 	complexity = sp_complexity.large 
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 
 	special_project_parent = {

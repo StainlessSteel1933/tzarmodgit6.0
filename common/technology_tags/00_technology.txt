@@ -117,11 +117,7 @@ technology_categories = {
 	helicopter_tech
 	pykrete_tech
 	transport_planes_cat
-	generic
-	cl_tech
-	special_forces
-	tank_modules
-	
+
 	mio_cat_tech_all_armor_and_modules #Includes modules and chassis (DOES NOT INCLUDE ARMORED CARS)
 	mio_cat_tech_light_armor_and_modules #Includes modules and stand-alone Amphibious Chassis
 	mio_cat_tech_medium_armor_and_modules #Includes modules and Modern Tank
@@ -144,13 +140,6 @@ technology_categories = {
 }
 
 technology_folders = {
-	special_forces_doctrine_folder = {
-		available = {
-			always = yes
-		}
-		ledger = hidden #For now
-		doctrine = yes
-	}
 	infantry_folder = {
 		ledger = army
 	}
@@ -160,39 +149,45 @@ technology_folders = {
 	armour_folder = {
 		ledger = army
 		available = {
-		 	always = no
+			NOT = {
+				has_dlc = "No Step Back"
+			}
 		}
-	}
-	bba_air_techs_folder = {
-		available = {
-			always = yes
-		}
-		ledger = air
 	}
 	nsb_armour_folder = {
 		ledger = army
-		# available = {
-		# 	has_dlc = "No Step Back"
-		# }
+		available = {
+			has_dlc = "No Step Back"
+		}
 	}
 	artillery_folder = {
 		ledger = army
 	}
 	air_techs_folder = {
+		available = { NOT = { has_dlc = "By Blood Alone" } }
 		ledger = air
+	}
+	bba_air_techs_folder = {
 		available = {
-		 	always = no
+			has_dlc = "By Blood Alone"
 		}
+		ledger = air
 	}
 	naval_folder = {
 		available = {
-			always = no
+			not = { has_dlc = "Man the Guns" }
 		}
 		ledger = navy
 	}
 	mtgnavalfolder = {
 		available = {
-			always = yes
+			has_dlc = "Man the Guns"
+		}
+		ledger = navy
+	}
+	mtgnavalsupportfolder = {
+		available = {
+			has_dlc = "Man the Guns"
 		}
 		ledger = navy
 	}
@@ -207,10 +202,20 @@ technology_folders = {
 		ledger = navy
 		doctrine = yes
 	}
+	air_doctrine_folder = {
+		ledger = air
+		doctrine = yes
+	}
+	special_forces_doctrine_folder = {
+		available = {
+
+		}
+		ledger = hidden #For now
+		doctrine = yes
+	}
 	electronics_folder = {
 		ledger = civilian
 	}
-	#secret_weapons_folder
 }
 
  

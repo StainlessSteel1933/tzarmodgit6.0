@@ -1265,7 +1265,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = HOL_artillerie_inrichtingen_organization
@@ -1545,7 +1545,7 @@ focus_tree = {
 		completion_reward = {
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 				mio:HOL_fokker_organization = {
 					add_mio_size = 2
@@ -1742,7 +1742,7 @@ focus_tree = {
 		completion_reward = {
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 				mio:HOL_daf_organization = {
 					add_mio_size = 2

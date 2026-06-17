@@ -35,7 +35,6 @@ buildings = {
 
 
 	landmark_big_ben = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -63,7 +62,6 @@ buildings = {
 	}
 
 	landmark_colosseum = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -90,36 +88,34 @@ buildings = {
 		}
 	}
 
-	landmark_cristo_redentor = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
-		show_on_map = 1
-		base_cost = 20000
-		damage_factor = 0 # This building can't be damaged by regular strat bombing
-		icon_frame = 22
-		value = 5
+	# landmark_cristo_redentor = {
+	# 	show_on_map = 1
+	# 	base_cost = 20000
+	# 	damage_factor = 0 # This building can't be damaged by regular strat bombing
+	# 	icon_frame = 22
+	# 	value = 5
 		
-		is_buildable = no
-		disable_grow_animation = yes
-		spawn_point = landmark_spawn
-		repair_speed_factor = @landmark_repair_speed_factor
-		only_display_if_exists = yes
-		special_icon = GFX_cristo_redentor_icon_small
-		level_cap = {
-			province_max = 1
-		}
-		always_shown = yes
-		drawn_at_distance = yes
-		show_modifier = yes
-		country_modifiers = {
-			enable_for_controllers = { BRA }
-			modifiers = {
-				stability_factor = 0.05
-			}
-		}
-	}
+	# 	is_buildable = no
+	# 	disable_grow_animation = yes
+	# 	spawn_point = landmark_spawn
+	# 	repair_speed_factor = @landmark_repair_speed_factor
+	# 	only_display_if_exists = yes
+	# 	special_icon = GFX_cristo_redentor_icon_small
+	# 	level_cap = {
+	# 		province_max = 1
+	# 	}
+	# 	always_shown = yes
+	# 	drawn_at_distance = yes
+	# 	show_modifier = yes
+	# 	country_modifiers = {
+	# 		enable_for_controllers = { BRA }
+	# 		modifiers = {
+	# 			stability_factor = 0.05
+	# 		}
+	# 	}
+	# }
 
 	landmark_eiffel_tower = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -147,7 +143,6 @@ buildings = {
 	}
 	
 	landmark_statue_of_liberty = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -176,7 +171,6 @@ buildings = {
 	}
 
 	landmark_kremlin = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -204,7 +198,6 @@ buildings = {
 	}
 
 	landmark_hofburg_palace = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -232,7 +225,6 @@ buildings = {
 	}
 
 	landmark_berlin_reichstag = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -259,7 +251,6 @@ buildings = {
 	}
 
 	landmark_berlin_volkshalle = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -287,7 +278,6 @@ buildings = {
 	}
 
 	landmark_taj_mahal = {
-		dlc_allowed = { has_dlc = "Graveyard of Empires" }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -315,7 +305,6 @@ buildings = {
 	}
 
 	landmark_sadabad_complex = {
-		dlc_allowed = { has_dlc = "Graveyard of Empires" }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -343,7 +332,6 @@ buildings = {
 	}
 
 	landmark_hagia_sophia = {
-		dlc_allowed = { has_dlc = "Graveyard of Empires" }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -371,7 +359,6 @@ buildings = {
 	}
 
 	landmark_forbidden_city = {
-		dlc_allowed = { has_dlc = "No Compromise, No Surrender" }		###DLC NEEDS TO BE SPECIFIED!!
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -399,7 +386,6 @@ buildings = {
 	}
 
 	landmark_nanjing_presidential_palace = {
-		dlc_allowed = { has_dlc = "No Compromise, No Surrender" }		###DLC NEEDS TO BE SPECIFIED!!
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -427,7 +413,6 @@ buildings = {
 	}
 	
 	landmark_nanjing_presidential_palace_prc = {
-		dlc_allowed = { has_dlc = "No Compromise, No Surrender" }		###DLC NEEDS TO BE SPECIFIED!!
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -455,7 +440,6 @@ buildings = {
 	}
 
 	landmark_nanjing_presidential_palace_gen = {
-		dlc_allowed = { has_dlc = "No Compromise, No Surrender" }		###DLC NEEDS TO BE SPECIFIED!!
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -483,7 +467,6 @@ buildings = {
 	}
 
 	landmark_great_wall_section = {
-		#dlc_allowed = { has_dlc = "No Compromise, No Surrender" }		###DLC NEEDS TO BE SPECIFIED!!
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -511,7 +494,6 @@ buildings = {
 	}
 
 	landmark_tokyo_imperial_palace = {
-		dlc_allowed = { has_dlc = "No Compromise, No Surrender" }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -538,7 +520,6 @@ buildings = {
 	}
 
 	landmark_national_diet = {
-		dlc_allowed = { has_dlc = "No Compromise, No Surrender" }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -566,7 +547,6 @@ buildings = {
 	}
 
 	landmark_hakko_ichiu = {
-		dlc_allowed = { has_dlc = "No Compromise, No Surrender" }
 		show_on_map = 1
 		base_cost = 20000
 		damage_factor = 0 # This building can't be damaged by regular strat bombing
@@ -593,60 +573,60 @@ buildings = {
 		}
 	}
 
-	landmark_prague_castle = {
-		dlc_allowed = { has_dlc = "Peace For Our Time" }
-		show_on_map = 1
-		base_cost = 20000
-		damage_factor = 0 # This building can't be damaged by regular strat bombing
-		icon_frame = 22
-		value = 5
+	# landmark_prague_castle = {
+	# 	dlc_allowed = { has_dlc = "Peace For Our Time" }
+	# 	show_on_map = 1
+	# 	base_cost = 20000
+	# 	damage_factor = 0 # This building can't be damaged by regular strat bombing
+	# 	icon_frame = 22
+	# 	value = 5
 		
-		is_buildable = no
-		disable_grow_animation = yes
-		spawn_point = landmark_spawn
-		repair_speed_factor = @landmark_repair_speed_factor
-		only_display_if_exists = yes
-		special_icon = GFX_prague_castle_icon_small
-		level_cap = {
-			province_max = 1
-		}
-		always_shown = yes
-		show_modifier = yes
-		country_modifiers = {
-			enable_for_controllers = { CZE RKH }
-			modifiers = {
-				command_power_gain_mult = 0.05
-				political_power_factor = 0.02
-			}
-		}
-	}
+	# 	is_buildable = no
+	# 	disable_grow_animation = yes
+	# 	spawn_point = landmark_spawn
+	# 	repair_speed_factor = @landmark_repair_speed_factor
+	# 	only_display_if_exists = yes
+	# 	special_icon = GFX_prague_castle_icon_small
+	# 	level_cap = {
+	# 		province_max = 1
+	# 	}
+	# 	always_shown = yes
+	# 	show_modifier = yes
+	# 	country_modifiers = {
+	# 		enable_for_controllers = { CZE RKH }
+	# 		modifiers = {
+	# 			command_power_gain_mult = 0.05
+	# 			political_power_factor = 0.02
+	# 		}
+	# 	}
+	# }
 
-	landmark_bojnice_castle = {
-		dlc_allowed = { has_dlc = "Peace For Our Time" }
-		show_on_map = 1
-		base_cost = 20000
-		damage_factor = 0 # This building can't be damaged by regular strat bombing
-		icon_frame = 22
-		value = 5
+	# landmark_bojnice_castle = {
+	# 	dlc_allowed = { has_dlc = "Peace For Our Time" }
+	# 	show_on_map = 1
+	# 	base_cost = 20000
+	# 	damage_factor = 0 # This building can't be damaged by regular strat bombing
+	# 	icon_frame = 22
+	# 	value = 5
 		
-		is_buildable = no
-		disable_grow_animation = yes
-		spawn_point = landmark_spawn
-		repair_speed_factor = @landmark_repair_speed_factor
-		only_display_if_exists = yes
-		special_icon = GFX_bojnice_castle_icon_small
-		level_cap = {
-			province_max = 1
-		}
-		always_shown = yes
-		show_modifier = yes
-		country_modifiers = {
-			enable_for_controllers = { CZE SLO }
-			modifiers = {
-				stability_factor = 0.05
-			}
-		}
-	}
+	# 	is_buildable = no
+	# 	disable_grow_animation = yes
+	# 	spawn_point = landmark_spawn
+	# 	repair_speed_factor = @landmark_repair_speed_factor
+	# 	only_display_if_exists = yes
+	# 	special_icon = GFX_bojnice_castle_icon_small
+	# 	level_cap = {
+	# 		province_max = 1
+	# 	}
+	# 	always_shown = yes
+	# 	show_modifier = yes
+	# 	country_modifiers = {
+	# 		enable_for_controllers = { CZE SLO }
+	# 		modifiers = {
+	# 			stability_factor = 0.05
+	# 		}
+	# 	}
+	# }
 
 }
 

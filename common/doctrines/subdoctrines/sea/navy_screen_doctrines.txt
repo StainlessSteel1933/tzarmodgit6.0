@@ -127,7 +127,7 @@ hunter_killers = {
     }
 
     visible = {
-    	has_dlc = "No Compromise, No Surrender"
+
     }
     ai_will_do = { 
         base = 1
@@ -195,7 +195,7 @@ torpedo_primacy = {
    		always = yes
     }
     visible = {
-    	has_dlc = "No Compromise, No Surrender"
+
     }
     naval_night_attack = 0.25
 
@@ -253,7 +253,7 @@ anti_aircraft_cruisers = {
     }
 
     visible = {
-    	has_dlc = "No Compromise, No Surrender"
+
     }
     navy_anti_air_attack_factor = 0.2
 
@@ -312,7 +312,7 @@ screen_support_focus = {
 
     }
     visible = {
-    	has_dlc = "No Compromise, No Surrender"
+
     }
 
     navy_max_range_factor = 0.1
@@ -434,7 +434,7 @@ patrol_boats = {
    		always = yes
     }
     visible = {
-    	has_dlc = "No Compromise, No Surrender"
+
     }
 
     naval_retreat_chance_after_initial_combat = 0.25
