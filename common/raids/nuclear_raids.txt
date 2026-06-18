@@ -1,7 +1,7 @@
 types = {
 
 	nuclear_strike = {
-		days_to_prepare = 30
+		days_to_prepare = 1
 
 		category = nuclear_raids
 
@@ -246,7 +246,7 @@ types = {
 	nuclear_missile_strike = { #Only from Rocket Sites
 		category = nuclear_raids
 
-		days_to_prepare = 14
+		days_to_prepare = 1
 		speed_multiplier = 0.08
 		ai_will_do = {
 			base = 1

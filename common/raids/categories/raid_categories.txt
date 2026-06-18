@@ -1,16 +1,16 @@
 categories = {
 
 	air_raids = {
-	    visible = { has_dlc = "Gotterdammerung" }
+	    visible = {  }
 	    intel_source = air
-	    faction_influence_score_on_success = 200
+	    faction_influence_score_on_success = 1
 	}
 	
 
 	paratrooper_raids = {
 	    intel_source = air
-	    visible = { has_dlc = "Gotterdammerung" }
-	    faction_influence_score_on_success = 100
+	    visible = {  }
+	    faction_influence_score_on_success = 1
 		available = {
 		    has_tech = paratroopers
 		}
@@ -30,15 +30,9 @@ categories = {
 
 	land_infiltration_raids = {
 	    intel_source = army
-	    faction_influence_score_on_success = 50
+	    faction_influence_score_on_success = 1
 	    visible = {
-		    OR = {
-		    	AND = {
-					has_dlc = "No Compromise, No Surrender"
-					is_literally_china = yes
-				}
-				has_dlc = "Thunder at Our Gates"
-			}
+		    
 	    }
 		available = {
 
@@ -47,18 +41,9 @@ categories = {
 
 	naval_commando_raids = {
 		intel_source = naval
-		faction_influence_score_on_success = 50
+		faction_influence_score_on_success = 1
 		visible = {
-			OR = {
-				AND = {
-					has_dlc = "Thunder at Our Gates"
-					original_tag = INS
-				}
-				AND = {
-					has_dlc = "Thunder at Our Gates"
-					original_tag = AST
-				}
-			}
+			
 		}
 		available = {
 
