@@ -95,11 +95,11 @@ set_technology = { basic_train = 1
 
 	naval_bomber1 = 1
 		
-	mobile_warfare = 1
-	trade_interdiction = 1
-	convoy_interdiction_ti = 1
-	unrestricted_submarine_warfare = 1
-	raider_patrols = 1
+	# mobile_warfare = 1
+	# trade_interdiction = 1
+	# convoy_interdiction_ti = 1
+	# unrestricted_submarine_warfare = 1
+	# raider_patrols = 1
 	#formation_flying = 1
 	synth_oil_experiments = 1
 	tech_field_hospital = 1
@@ -114,11 +114,11 @@ set_technology = { basic_train = 1
 	# improved_light_spaa = 1
 	# improved_light_td = 1
 
-	air_superiority = 1
-	forward_interception = 1 
-	fighter_ace_initiative = 1 
-	dive_bombing = 1
-	armored_car_chassis_0 = 1
+	# air_superiority = 1
+	# forward_interception = 1 
+	# fighter_ace_initiative = 1 
+	# dive_bombing = 1
+	# armored_car_chassis_0 = 1
 	# armored_car1 = 1
 }
 

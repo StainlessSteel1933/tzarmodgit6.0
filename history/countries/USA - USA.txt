@@ -61,15 +61,15 @@ set_technology = { basic_train = 1
 		basic_medium_airframe = 1
 					aa_lmg = 1
 	basic_small_airframe = 1
-	superior_firepower = 1
-	base_strike = 1
+	# superior_firepower = 1
+	# base_strike = 1
 	motorised_infantry = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	motorised_infantry = 1
 	marines = 1
-	air_superiority = 1
-	forward_interception = 1 
+	# air_superiority = 1
+	# forward_interception = 1 
 	#fighter_ace_initiative = 1 	
 }
 
