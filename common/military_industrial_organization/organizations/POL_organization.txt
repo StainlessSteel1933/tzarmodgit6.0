@@ -55,21 +55,7 @@ POL_pzinz_organization = {
 	}
 
 	visible = {
-		if = { #Pfot
-			limit = {
-				FROM = {
-					original_tag = CZE
-				}
-			}
-			OR = {
-				10 = {
-					is_core_of = CZE
-				}
-				FROM = {
-					has_completed_focus = CZE_integrate_lost_territories
-				}
-			}
-		}
+		
 	}
 	
 	initial_trait = {
@@ -162,21 +148,7 @@ POL_stocznia_gdynia_organization = {
 	}
 
 	visible = {
-		if = { #Pfot
-			limit = {
-				FROM = {
-					original_tag = CZE
-				}
-			}
-			OR = {
-				807 = {
-					is_core_of = CZE
-				}
-				FROM = {
-					has_completed_focus = CZE_integrate_lost_territories
-				}
-			}
-		}
+		
 	}
 }
 

@@ -148,7 +148,7 @@ form_roman_empire_category = {
 		}
 		}
 		}
-	}
+	
 	triumph_in_egypt_barb = {
 
 		icon = generic_form_nation
@@ -178,4 +178,4 @@ form_roman_empire_category = {
 			add_ideas = {axis_victory_in_egypt}
 		}
 	}
-	}
+}

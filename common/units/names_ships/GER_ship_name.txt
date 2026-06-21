@@ -150,15 +150,7 @@ GER_TB_HISTORICAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-				has_completed_focus = GER_start_the_proletarian_revolution
-			}
-		}
+		
 	}
 
 	link_numbering_with = { GER_THEME_ANIMALS }
@@ -274,15 +266,7 @@ GER_MS_HISTORICAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-				has_completed_focus = GER_start_the_proletarian_revolution
-			}
-		}
+		
 	}
 
 	type = ship
@@ -304,14 +288,7 @@ GER_SS_HISTORICAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-			}
-		}
+		
 	}
 
 	type = ship
@@ -330,15 +307,7 @@ GER_CA_HISTORICAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-				has_completed_focus = GER_start_the_proletarian_revolution
-			}
-		}
+		
 	}
 
 	type = ship
@@ -409,14 +378,7 @@ GER_CL_HISTORICAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-			}
-		}
+		
 	}
 
 	type = ship
@@ -535,15 +497,7 @@ GER_CS_HISTORICAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-				has_completed_focus = GER_start_the_proletarian_revolution
-			}
-		}
+		
 	}
 
 	type = ship
@@ -806,15 +760,7 @@ GER_DD_HISTORICAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-				has_completed_focus = GER_start_the_proletarian_revolution
-			}
-		}
+		
 	}
 
 	type = ship
@@ -855,15 +801,7 @@ GER_CV_HISTORICAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-				has_completed_focus = GER_start_the_proletarian_revolution
-			}
-		}
+		
 	}
 
 	type = ship
@@ -903,15 +841,7 @@ GER_CVL_HISTORICAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-				has_completed_focus = GER_start_the_proletarian_revolution
-			}
-		}
+		
 	}
 
 	type = ship
@@ -959,14 +889,7 @@ GER_THEME_FISH = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-			}
-		}
+		
 	}
 
 	type = ship
@@ -1007,14 +930,7 @@ GER_THEME_ANIMALS = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-			}
-		}
+		
 	}
 
 	type = ship
@@ -1082,14 +998,7 @@ GER_THEME_RIVERS = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-			}
-		}
+		
 	}
 
 	type = ship
@@ -1136,15 +1045,7 @@ GER_THEME_GERMANIC = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-				has_completed_focus = GER_start_the_proletarian_revolution
-			}
-		}
+		
 	}
 
 	type = ship
@@ -1189,15 +1090,7 @@ GER_THEME_BATTLE = {
 	for_countries = { GER }
 
 	can_use = { 
-		NOT = {
-			OR = { 
-				has_completed_focus = GER_return_of_the_kaiser 
-				has_completed_focus = GER_the_monarchy_compromise
-				has_completed_focus = GER_revive_the_kaiserreich_ww
-				has_completed_focus = GER_the_monarchy_compromise_ww
-				has_completed_focus = GER_start_the_proletarian_revolution
-			}
-		}
+		
 	}
 
 	type = ship
@@ -1236,12 +1129,7 @@ GER_BB_IMPERIAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		OR = { 
-			has_completed_focus = GER_return_of_the_kaiser 
-			has_completed_focus = GER_the_monarchy_compromise
-			has_completed_focus = GER_revive_the_kaiserreich_ww
-			has_completed_focus = GER_the_monarchy_compromise_ww
-		}
+		
 	}
 	prefix = "SMS "
 	type = ship
@@ -1309,12 +1197,7 @@ GER_BC_IMPERIAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		OR = { 
-			has_completed_focus = GER_return_of_the_kaiser 
-			has_completed_focus = GER_the_monarchy_compromise
-			has_completed_focus = GER_revive_the_kaiserreich_ww
-			has_completed_focus = GER_the_monarchy_compromise_ww
-		}
+		
 	}
 	prefix = "SMS "
 	type = ship
@@ -1345,12 +1228,7 @@ GER_CA_IMPERIAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		OR = { 
-			has_completed_focus = GER_return_of_the_kaiser 
-			has_completed_focus = GER_the_monarchy_compromise
-			has_completed_focus = GER_revive_the_kaiserreich_ww
-			has_completed_focus = GER_the_monarchy_compromise_ww
-		}
+		
 	}
 	prefix = "SMS "
 	type = ship
@@ -1398,12 +1276,7 @@ GER_THEME_ANIMALS_IMPERIAL = {
 
 	can_use = { 
 		
-		OR = { 
-			has_completed_focus = GER_return_of_the_kaiser 
-			has_completed_focus = GER_the_monarchy_compromise
-			has_completed_focus = GER_revive_the_kaiserreich_ww
-			has_completed_focus = GER_the_monarchy_compromise_ww
-		}
+		
 		
 	}
 	prefix = "SMS "
@@ -1471,12 +1344,7 @@ GER_DD_IMPERIAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		OR = { 
-			has_completed_focus = GER_return_of_the_kaiser 
-			has_completed_focus = GER_the_monarchy_compromise
-			has_completed_focus = GER_revive_the_kaiserreich_ww
-			has_completed_focus = GER_the_monarchy_compromise_ww
-		}
+		
 	}
 	prefix = "SMS "
 	type = ship
@@ -1594,12 +1462,7 @@ GER_CV_IMPERIAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		OR = { 
-			has_completed_focus = GER_return_of_the_kaiser 
-			has_completed_focus = GER_the_monarchy_compromise
-			has_completed_focus = GER_revive_the_kaiserreich_ww
-			has_completed_focus = GER_the_monarchy_compromise_ww
-		}
+		
 	}
 
 	type = ship
@@ -1627,12 +1490,7 @@ GER_THEME_GERMANIC_IMPERIAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		OR = { 
-			has_completed_focus = GER_return_of_the_kaiser 
-			has_completed_focus = GER_the_monarchy_compromise
-			has_completed_focus = GER_revive_the_kaiserreich_ww
-			has_completed_focus = GER_the_monarchy_compromise_ww
-		}
+		
 	}
 
 	type = ship
@@ -1677,12 +1535,7 @@ GER_THEME_BATTLE_IMPERIAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		OR = { 
-			has_completed_focus = GER_return_of_the_kaiser 
-			has_completed_focus = GER_the_monarchy_compromise
-			has_completed_focus = GER_revive_the_kaiserreich_ww
-			has_completed_focus = GER_the_monarchy_compromise_ww
-		}
+		
 	}
 
 	type = ship
@@ -1721,12 +1574,7 @@ GER_THEME_FISH_IMPERIAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		OR = { 
-			has_completed_focus = GER_return_of_the_kaiser 
-			has_completed_focus = GER_the_monarchy_compromise
-			has_completed_focus = GER_revive_the_kaiserreich_ww
-			has_completed_focus = GER_the_monarchy_compromise_ww
-		}
+		
 	}
 
 	type = ship
@@ -1767,12 +1615,7 @@ GER_SS_IMPERIAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		OR = { 
-			has_completed_focus = GER_return_of_the_kaiser 
-			has_completed_focus = GER_the_monarchy_compromise
-			has_completed_focus = GER_revive_the_kaiserreich_ww
-			has_completed_focus = GER_the_monarchy_compromise_ww
-		}
+		
 	}
 
 	type = ship
@@ -1816,12 +1659,7 @@ GER_THEME_RIVERS_IMPERIAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		OR = { 
-			has_completed_focus = GER_return_of_the_kaiser 
-			has_completed_focus = GER_the_monarchy_compromise
-			has_completed_focus = GER_revive_the_kaiserreich_ww
-			has_completed_focus = GER_the_monarchy_compromise_ww
-		}
+		
 	}
 
 	type = ship
@@ -1865,12 +1703,7 @@ GER_CL_IMPERIAL = {
 	for_countries = { GER }
 
 	can_use = { 
-		OR = { 
-			has_completed_focus = GER_return_of_the_kaiser 
-			has_completed_focus = GER_the_monarchy_compromise
-			has_completed_focus = GER_revive_the_kaiserreich_ww
-			has_completed_focus = GER_the_monarchy_compromise_ww
-		}
+		
 	}
 	prefix = "SMS "
 	type = ship
@@ -2004,7 +1837,7 @@ GER_MR_HISTORICAL = { #Merchant Raiders
 	for_countries = { GER }
 
 	can_use = { 
-		has_completed_focus = GER_cruiser_warfare 
+		
 	}
 
 	type = ship
@@ -2023,198 +1856,198 @@ GER_MR_HISTORICAL = { #Merchant Raiders
 
 
 
-GER_PEOPLE_COMMUNIST = {
-	name = NAME_THEME_COMMUNIST_PEOPLE
+# GER_PEOPLE_COMMUNIST = {
+# 	name = NAME_THEME_COMMUNIST_PEOPLE
 
-	for_countries = { GER }
+# 	for_countries = { GER }
 
-	can_use = { 
-		OR = {
-			has_government = communism 
-			has_completed_focus = GER_start_the_proletarian_revolution
-		}
-	}
-	type = ship
+# 	can_use = { 
+# 		OR = {
+# 			has_government = communism 
+# 			has_completed_focus = GER_start_the_proletarian_revolution
+# 		}
+# 	}
+# 	type = ship
 
-	fallback_name = "Schiff %d"
+# 	fallback_name = "Schiff %d"
 	
-	# Named after different revolutionary people
-	ordered = {
-		1 = {"Artelt"} # Karl Artelt
-		2 = {"Popp"}  # Lothar Popp
-		3 = {"Matrosen"} 
-		4 = {"Haußmann"} # Conrad Haußmann
-		5 = {"Noske"} # Gustav Noske
-		6 = {"Barth"} # Emil Barth
-		7 = {"Ebert"} # Friedrich Ebert
-		8 = {"Liebknecht"} # Karl Liebknecht
-		9 = {"Scheidemann"} # Philipp Scheidemann
-		46 = {"Ledebour"} # Georg Ledebour 
-		10 = {"Laufenberg"} # Heinrich Laufenberg
-		47 = {"Adelung"} # Bernhard Adelung
-		11 = {"Zetkin"} # Clara Zetkin
-		48 = {"Rosa Luxemburg"}
-		12 = {"Levi"} # Paul Levi 
-		13 = {"Jogiches"} # Leo Jogiches
-		14 = {"Duncker"} # Hermann Duncker
-		15 = {"Eberlein"} # Hugo Eberlein
-		16 = {"Radek"} # Karl Radek
-		17 = {"Ausländer"} # Fritz Ausländer
-		18 = {"Hoernle"} # Edwin Hoernle
-		19 = {"Walcher"} # Jacob Walcher
-		20 = {"Westmeyer"} # Friedrich Westmeyer
-		21 = {"Rühle"} # Otto Rühle
-		22 = {"Mehring"} # Franz Mehring
-		23 = {"Meyer"} # Ernst Meyer
-		24 = {"Pieck"} # Wilhelm Pieck
-		25 = {"Arendsee"} # Martha Arendsee
-		26 = {"Thalheimer"} # Bertha Thalheimer
-		27 = {"Brandler"} # Heinrich Brandler
-		28 = {"Marchlewski"} # Julian Marchlewski
-		29 = {"Haase"} # Hugo Haase
-		30 = {"Kautsky"} # Karl Kautsky
-		31 = {"Bernstein"} # Eduard Bernstein
-		32 = {"Heckert"} # Fritz Heckert
-		33 = {"Grosz"} # George Grosz
-		34 = {"Frölich"} # Paul Frölich
-		35 = {"Ulbricht"} # Walter Ulbricht
-		36 = {"Thälmann"} # Ernst Thälmann
-		37 = {"Grotewohl"} # Otto Grotewohl
-		38 = {"Zaisser"} # Wilhelm Zaisser
-		39 = {"Bästlein"} # Bernard Bästlein
-		40 = {"Fischer"} # Ruth Fischer
-		41 = {"Schehr"} # John Schehr
-		42 = {"Weinert"} # Erich Weinert
-		43 = {"Marx"} # Karl Marx
-		44 = {"Engels"} # Friedrich Engels
-		45 = {"Severing"} # Carl Severing
-		49 = {"Hasselmann"} # Wilhelm Hasselmann
-		50 = {"Marchwitza"} # Hans Marchwitza
-		51 = {"Zietz"} # Luise Zietz
-		52 = {"Dittmann"} # Wilhelm Dittmann
-		53 = {"Remmele"} # Hermann Remmele
-		54 = {"Schubert"} # Hermann Schubert
-		55 = {"Buber-Neumann"} # Margarete Buber-Neumann
-		56 = {"Korsch"} # Karl Korsch
-		57 = {"Schwarz"} # Ernst Schwarz
-		58 = {"Sobottka"} # Gustav Sobottka
-	}
-}
+# 	# Named after different revolutionary people
+# 	ordered = {
+# 		1 = {"Artelt"} # Karl Artelt
+# 		2 = {"Popp"}  # Lothar Popp
+# 		3 = {"Matrosen"} 
+# 		4 = {"Haußmann"} # Conrad Haußmann
+# 		5 = {"Noske"} # Gustav Noske
+# 		6 = {"Barth"} # Emil Barth
+# 		7 = {"Ebert"} # Friedrich Ebert
+# 		8 = {"Liebknecht"} # Karl Liebknecht
+# 		9 = {"Scheidemann"} # Philipp Scheidemann
+# 		46 = {"Ledebour"} # Georg Ledebour 
+# 		10 = {"Laufenberg"} # Heinrich Laufenberg
+# 		47 = {"Adelung"} # Bernhard Adelung
+# 		11 = {"Zetkin"} # Clara Zetkin
+# 		48 = {"Rosa Luxemburg"}
+# 		12 = {"Levi"} # Paul Levi 
+# 		13 = {"Jogiches"} # Leo Jogiches
+# 		14 = {"Duncker"} # Hermann Duncker
+# 		15 = {"Eberlein"} # Hugo Eberlein
+# 		16 = {"Radek"} # Karl Radek
+# 		17 = {"Ausländer"} # Fritz Ausländer
+# 		18 = {"Hoernle"} # Edwin Hoernle
+# 		19 = {"Walcher"} # Jacob Walcher
+# 		20 = {"Westmeyer"} # Friedrich Westmeyer
+# 		21 = {"Rühle"} # Otto Rühle
+# 		22 = {"Mehring"} # Franz Mehring
+# 		23 = {"Meyer"} # Ernst Meyer
+# 		24 = {"Pieck"} # Wilhelm Pieck
+# 		25 = {"Arendsee"} # Martha Arendsee
+# 		26 = {"Thalheimer"} # Bertha Thalheimer
+# 		27 = {"Brandler"} # Heinrich Brandler
+# 		28 = {"Marchlewski"} # Julian Marchlewski
+# 		29 = {"Haase"} # Hugo Haase
+# 		30 = {"Kautsky"} # Karl Kautsky
+# 		31 = {"Bernstein"} # Eduard Bernstein
+# 		32 = {"Heckert"} # Fritz Heckert
+# 		33 = {"Grosz"} # George Grosz
+# 		34 = {"Frölich"} # Paul Frölich
+# 		35 = {"Ulbricht"} # Walter Ulbricht
+# 		36 = {"Thälmann"} # Ernst Thälmann
+# 		37 = {"Grotewohl"} # Otto Grotewohl
+# 		38 = {"Zaisser"} # Wilhelm Zaisser
+# 		39 = {"Bästlein"} # Bernard Bästlein
+# 		40 = {"Fischer"} # Ruth Fischer
+# 		41 = {"Schehr"} # John Schehr
+# 		42 = {"Weinert"} # Erich Weinert
+# 		43 = {"Marx"} # Karl Marx
+# 		44 = {"Engels"} # Friedrich Engels
+# 		45 = {"Severing"} # Carl Severing
+# 		49 = {"Hasselmann"} # Wilhelm Hasselmann
+# 		50 = {"Marchwitza"} # Hans Marchwitza
+# 		51 = {"Zietz"} # Luise Zietz
+# 		52 = {"Dittmann"} # Wilhelm Dittmann
+# 		53 = {"Remmele"} # Hermann Remmele
+# 		54 = {"Schubert"} # Hermann Schubert
+# 		55 = {"Buber-Neumann"} # Margarete Buber-Neumann
+# 		56 = {"Korsch"} # Karl Korsch
+# 		57 = {"Schwarz"} # Ernst Schwarz
+# 		58 = {"Sobottka"} # Gustav Sobottka
+# 	}
+# }
 
-GER_THEME_COMMUNIST_SLOGANS = {
-	name = NAME_THEME_COMMUNIST_SLOGANS
+# GER_THEME_COMMUNIST_SLOGANS = {
+# 	name = NAME_THEME_COMMUNIST_SLOGANS
 
-	for_countries = { GER }
+# 	for_countries = { GER }
 
-	can_use = { 
-		OR = {
-			has_government = communism 
-			has_completed_focus = GER_start_the_proletarian_revolution
-		}
-	}
+# 	can_use = { 
+# 		OR = {
+# 			has_government = communism 
+# 			has_completed_focus = GER_start_the_proletarian_revolution
+# 		}
+# 	}
 
-	type = ship
+# 	type = ship
 	
-	fallback_name = "Schiff %d"
+# 	fallback_name = "Schiff %d"
 	
-	# Revolutionary Slogans
-	ordered = {
-		1 = {"Die Rote Fahne"}
-		2 = {"Die Internationale"} 
-		3 = {"Proletarier aller Länder"} 
-		4 = {"Die Freiheit"} 
-		5 = {"Unsere Zeit"} 
-		6 = {"Vorwärts"} 
-		7 = {"Frieden und Sozialismus"} 
-		8 = {"Frieden und Einheit"} 
-		9 = {"Die Strahlende Zukunft der Menschheit"} 
-		10 = {"Roter Oktober"}
-		11 = {"Neues Deutschland"} 
-		12 = {"Gegen den Faschismus"}
-		13 = {"Gegen die Bourgeoisie"}
-		14 = {"Lang Lebe Spartakus"}
-		15 = {"Das Volk Hat Immer Recht"}
-		16 = {"Gegen den Imperialismus"}
-		17 = {"Die Permanente Revolution"}
-		18 = {"Antifaschistische Aktion"}
-		19 = {"Freies Volk"}
-		20 = {"Gegen den Strom"}
-		21 = {"Die Räterepublik"}
-		22 = {"Das Volksrecht"}
-		23 = {"Arbeitertribüne"}
-		24 = {"Der Klassenkampf"}
-		25 = {"Die Linke"}
-		26 = {"Die Kieler Matrosenaufstand"}
-		27 = {"Es Lebe die Sozialistische Republik"}
-		28 = {"Vereinigte Front"}
-		29 = {"Kronstadt"}
-		30 = {"Frieden und Syndikalismus"}
-		31 = {"Frieden und Anarchismus"}
-		32 = {"Gegen den Russischen Bolschewismus"}
-	}
-}
+# 	# Revolutionary Slogans
+# 	ordered = {
+# 		1 = {"Die Rote Fahne"}
+# 		2 = {"Die Internationale"} 
+# 		3 = {"Proletarier aller Länder"} 
+# 		4 = {"Die Freiheit"} 
+# 		5 = {"Unsere Zeit"} 
+# 		6 = {"Vorwärts"} 
+# 		7 = {"Frieden und Sozialismus"} 
+# 		8 = {"Frieden und Einheit"} 
+# 		9 = {"Die Strahlende Zukunft der Menschheit"} 
+# 		10 = {"Roter Oktober"}
+# 		11 = {"Neues Deutschland"} 
+# 		12 = {"Gegen den Faschismus"}
+# 		13 = {"Gegen die Bourgeoisie"}
+# 		14 = {"Lang Lebe Spartakus"}
+# 		15 = {"Das Volk Hat Immer Recht"}
+# 		16 = {"Gegen den Imperialismus"}
+# 		17 = {"Die Permanente Revolution"}
+# 		18 = {"Antifaschistische Aktion"}
+# 		19 = {"Freies Volk"}
+# 		20 = {"Gegen den Strom"}
+# 		21 = {"Die Räterepublik"}
+# 		22 = {"Das Volksrecht"}
+# 		23 = {"Arbeitertribüne"}
+# 		24 = {"Der Klassenkampf"}
+# 		25 = {"Die Linke"}
+# 		26 = {"Die Kieler Matrosenaufstand"}
+# 		27 = {"Es Lebe die Sozialistische Republik"}
+# 		28 = {"Vereinigte Front"}
+# 		29 = {"Kronstadt"}
+# 		30 = {"Frieden und Syndikalismus"}
+# 		31 = {"Frieden und Anarchismus"}
+# 		32 = {"Gegen den Russischen Bolschewismus"}
+# 	}
+# }
 
-GER_THEME_COMMUNIST_DDR = {
-	name = NAME_THEME_COMMUNIST_VOLKSMARINE
+# GER_THEME_COMMUNIST_DDR = {
+# 	name = NAME_THEME_COMMUNIST_VOLKSMARINE
 
-	for_countries = { GER }
+# 	for_countries = { GER }
 
-	can_use = { 
-		OR = {
-			has_government = communism 
-			has_completed_focus = GER_start_the_proletarian_revolution
-		}
-	}
+# 	can_use = { 
+# 		OR = {
+# 			has_government = communism 
+# 			has_completed_focus = GER_start_the_proletarian_revolution
+# 		}
+# 	}
 
-	type = ship
+# 	type = ship
 	
-	fallback_name = "Schiff %d"
+# 	fallback_name = "Schiff %d"
 	
-	# DDR Ships
-	ordered = {
-		1 = {"Angermünde"}
-		2 = {"Bad Doberan"} 
-		3 = {"Bergen"} 
-		4 = {"Bützow"} 
-		5 = {"Gadebusch"} 
-		6 = {"Grevesmühlen"} 
-		7 = {"Güstrow"} 
-		8 = {"Lübz"} 
-		9 = {"Ludwigslust"} 
-		10 = {"Parchim"}
-		11 = {"Perleberg"} 
-		12 = {"Prenzlau"}
-		13 = {"Ribnitz-Damgarten"}
-		14 = {"Teterow"}
-		15 = {"Waren"}
-		16 = {"Wismar"}
-		17 = {"Jasmund"}
-		18 = {"Nordperd"}
-		19 = {"Ueckermuende"}
-		20 = {"Rostock"}
-		21 = {"Berlin-Haupstadt der DDR"}
-		22 = {"Peenemünde"}
-		23 = {"Warnemünde"}
-		24 = {"Sassnitz"}
-		25 = {"Moskit"}
-		26 = {"Hans Beimler"}
-		27 = {"Lumme"}
-		28 = {"Willi Bänsch"}
-		29 = {"Dranske"}
-		30 = {"Wustrow"}
-		31 = {"Rügen"}
-		32 = {"Hiddensee"}
-		33 = {"Altmark"}
-		34 = {"Dresden"}
-		35 = {"Libelle"}
-		36 = {"Triton"}
-		37 = {"Krake"}
-		38 = {"Komet"}
-		39 = {"Stralsund"}
-		40 = {"Orkan"}
-		41 = {"Halle"}
-	}
-}
+# 	# DDR Ships
+# 	ordered = {
+# 		1 = {"Angermünde"}
+# 		2 = {"Bad Doberan"} 
+# 		3 = {"Bergen"} 
+# 		4 = {"Bützow"} 
+# 		5 = {"Gadebusch"} 
+# 		6 = {"Grevesmühlen"} 
+# 		7 = {"Güstrow"} 
+# 		8 = {"Lübz"} 
+# 		9 = {"Ludwigslust"} 
+# 		10 = {"Parchim"}
+# 		11 = {"Perleberg"} 
+# 		12 = {"Prenzlau"}
+# 		13 = {"Ribnitz-Damgarten"}
+# 		14 = {"Teterow"}
+# 		15 = {"Waren"}
+# 		16 = {"Wismar"}
+# 		17 = {"Jasmund"}
+# 		18 = {"Nordperd"}
+# 		19 = {"Ueckermuende"}
+# 		20 = {"Rostock"}
+# 		21 = {"Berlin-Haupstadt der DDR"}
+# 		22 = {"Peenemünde"}
+# 		23 = {"Warnemünde"}
+# 		24 = {"Sassnitz"}
+# 		25 = {"Moskit"}
+# 		26 = {"Hans Beimler"}
+# 		27 = {"Lumme"}
+# 		28 = {"Willi Bänsch"}
+# 		29 = {"Dranske"}
+# 		30 = {"Wustrow"}
+# 		31 = {"Rügen"}
+# 		32 = {"Hiddensee"}
+# 		33 = {"Altmark"}
+# 		34 = {"Dresden"}
+# 		35 = {"Libelle"}
+# 		36 = {"Triton"}
+# 		37 = {"Krake"}
+# 		38 = {"Komet"}
+# 		39 = {"Stralsund"}
+# 		40 = {"Orkan"}
+# 		41 = {"Halle"}
+# 	}
+# }
 
 
 ###### OLD NAMES #######

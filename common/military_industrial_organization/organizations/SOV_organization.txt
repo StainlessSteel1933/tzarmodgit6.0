@@ -78,148 +78,14 @@ SOV_morozov_design_bureau_organization = {
 	icon = GFX_idea_morozov_design_bureau
 	
 	allowed = {	
-		OR = {
-			tag = SOV
-			AND = {
-				tag = MEX 
-				has_dlc = "Man the Guns"
-			}
-			AND = {
-				OR = {
-					is_literally_china = yes
-					tag = MAN
-				} 
-				has_dlc = "Waking the Tiger"
-			}
-			NOR_AAT = yes
-			AND = {
-				original_tag = PHI 
-				has_dlc = "No Compromise, No Surrender"
-			}
-		}
+		tag = SOV
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
-		}
-
-		if = {
-			limit = {
-				FROM = {
-					original_tag = PHI
-				}
-			}
-			FROM = {
-				has_completed_focus = PHI_comitern
-			}
-		}
-
-		IF = {
-			limit = {
-				FROM = { tag = MEX }
-			}
-			FROM = { is_in_faction_with = SOV }
-		}
-		ELSE_IF = {
-			limit = {
-				hidden_trigger = {
-					NOT = { has_dlc = "No Compromise, No Surrender" }
-				}
-				FROM = {
-					OR = {
-						is_literally_china = yes
-						tag = MAN
-						tag = MEN
-					}
-				} 
-			}
-			FROM = { has_completed_focus = CHI_hire_soviet_designer }
-		}
-		ELSE_IF = {
-			limit = {
-				hidden_trigger = {
-					has_dlc = "No Compromise, No Surrender"
-					FROM = {
-						OR = {
-							is_literally_china_not_prc = yes
-							tag = MAN
-							tag = MEN
-						}
-					}
-				}
-			}
-			FROM = {
-				OR = {
-					has_country_flag = SOV_accepted_Morozov
-					has_completed_focus = CHI_sea_hire_soviet_designer
-				}
-			} 
-		}
-		ELSE_IF = {
-			limit = {
-				hidden_trigger = {
-					has_dlc = "No Compromise, No Surrender"
-					FROM = {
-						tag = PRC
-					}
-				}
-			}
-			PRC = {
-				custom_trigger_tooltip = {
-					tooltip = PRC_neighboring_SOV_tt
-					any_neighbor_country = {
-						OR = {
-							original_tag = SOV
-							AND = {
-								is_in_faction_with = SOV
-								is_neighbor_of = SOV
-							}
-							AND = {
-								is_in_faction_with = PRC
-								any_neighbor_country = {
-									OR = {
-										original_tag = SOV
-										AND = {
-											is_in_faction_with = SOV
-											is_neighbor_of = SOV
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {
-				FROM = { original_tag = NOR }
-			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
-		}
+		
 	}
 	visible = {
-		IF = {
-			limit = {
-				has_dlc = "No Compromise, No Surrender"
-				FROM = { original_tag = CHI }
-			}
-			FROM = { 
-				OR ={
-					has_completed_focus = CHI_utilize_the_albazinian_contact
-					has_completed_focus = CHI_secure_the_soviet_border
-				} 
-				NOT = {
-					has_country_flag = SOV_accepted_Astrov
-					has_country_flag = SOV_accepted_OKMO
-				}
-			}
-		}
+		
 	}
 
 	add_trait = { 
@@ -339,46 +205,13 @@ SOV_astrov_design_bureau_organization = {
 	icon = GFX_idea_astrov_design_bureau
 	
 	allowed = {
-		OR = {
-			original_tag = SOV
-			AND = {
-				original_tag = CHI
-				has_dlc = "No Compromise, No Surrender"
-			}
-		}	
+		original_tag = SOV	
 	}
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = CHI }
-			}
-			FROM = { has_country_flag = SOV_accepted_Astrov }
-		}
+		
 	}
 	visible = {
-		IF = {
-			limit = {
-				has_dlc = "No Compromise, No Surrender"
-				FROM = { original_tag = CHI }
-			}
-			FROM = { 
-				OR ={
-					has_completed_focus = CHI_utilize_the_albazinian_contact
-					has_completed_focus = CHI_secure_the_soviet_border
-				} 
-				NOT = {
-					has_country_flag = SOV_accepted_Morozov
-					has_country_flag = SOV_accepted_OKMO
-				}
-			}
-		}
+		
 	}
 
 	add_trait = { 
@@ -630,20 +463,11 @@ SOV_mytishchy_machine_building_plant_organization = {
 	icon = GFX_idea_SOV_mytishchy_machine_building_plant
 	
 	allowed = {	
-		OR = {
-			tag = SOV
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-		}
+		tag = SOV
 	}
 
 	visible = {
-		IF = { 
-			limit = { FROM = { original_tag = ETH } } 
-			FROM = { has_completed_focus = ETH_mytishchi-ababa_plant }
-		}
+		
 	}
 
 	available = {
@@ -773,41 +597,11 @@ SOV_kirov_organization = {
 	icon = GFX_idea_SOV_kirov
 	
 	allowed = {	
-		OR = {
-			original_tag = SOV
-			AND = {
-				tag = BEL
-				has_dlc = "Gotterdammerung"
-			}
-			AND = {
-			    tag = AST
-			    has_dlc = "Thunder at Our Gates"
-			}
-		}
+		original_tag = SOV
 	}
 
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
-		}
-
-		IF = {
-			limit = { 
-				FROM = { 
-					original_tag = BEL 
-				} 
-			}
-
-			FROM = { has_completed_focus = BEL_invite_soviet_tank_makers }
-		}
-
-		if = {
-		    limit = { FROM = { original_tag = AST } }
-		    FROM = { has_completed_focus = AST_westward_battles }
-		}
+		
 	}
 
 	override_trait = {
@@ -1078,60 +872,15 @@ SOV_rubin_design_bureau_organization = {
 	icon = GFX_idea_SOV_rubin_design_bureau
 	
 	allowed = {	
-		OR = {
-			tag = SOV
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-			AND = {
-				tag = ARG
-				has_dlc = "Trial of Allegiance"
-			}
-			AND = {
-				tag = BRA
-				has_dlc = "Trial of Allegiance"
-			}
-			NOR_AAT = yes
-		}
+		tag = SOV
 	}
 
 	visible = {
-		IF = { 
-			limit = { FROM = { original_tag = ETH } } 
-			FROM = { has_completed_focus = ETH_soviet-ethiopian_trade_agreement }
-		}
+		
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = NOR }
-			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = ARG }
-			}
-			FROM = { has_completed_focus = ARG_russian_manufacturers }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = BRA }
-			}
-			FROM = { has_completed_focus = BRA_soviet_arms_industry }
-		}
+		
 	}
 
 	add_trait = { #MTG version
@@ -1654,62 +1403,15 @@ SOV_mig_design_bureau_organization = {
 	icon = GFX_idea_mig_design_bureau
 	
 	allowed = {	
-		OR = {
-			tag = SOV
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
-			}
-			AND = {
-				tag = ARG
-				has_dlc = "Trial of Allegiance" 
-			}
-			AND = {
-				tag = BRA
-				has_dlc = "Trial of Allegiance" #TODO MH Change DLC
-			}
-		}
+		tag = SOV
 	}
 	
 	visible = {
-		IF = { 
-			limit = { FROM = { original_tag = ETH } } 
-			FROM = { has_completed_focus = ETH_soviet-ethiopian_trade_agreement }
-		}
-		IF = { 
-			limit = {
-				FROM = { tag = BRA }
-				has_dlc = "Trial of Allegiance"
-			}
-		}
+		
 	}
 
 	available = {
-		IF = { #Dissolve Bureau Purge
-			limit = {
-				FROM = { original_tag = SOV }
-			}
-			FROM = { NOT = { has_country_flag = SOV_mig_design_bureau_dissolved_flag } }
-		}
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = ARG }
-			}
-			FROM = { has_completed_focus = ARG_russian_manufacturers }
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = BRA }
-			}
-			FROM = { has_completed_focus = BRA_soviet_arms_industry }
-		}
+		
 	}
 
 	add_trait = { 
@@ -1985,26 +1687,11 @@ SOV_yakovlev_design_bureau_organization = {
 	icon = GFX_idea_yakovlev_design_bureau
 	
 	allowed = {	
-		OR = {
-			original_tag = SOV
-			AND = {
-			    tag = AST
-			    has_dlc = "Thunder at Our Gates"
-			}
-		}
+		original_tag = SOV
 	}
 
 	available = {
-		IF = { #Dissolve Bureau Purge
-			limit = {
-				FROM = { original_tag = SOV }
-			}
-			FROM = { NOT = { has_country_flag = SOV_yakovlev_design_bureau_dissolved_flag } }
-		}
-		if = {
-		    limit = { FROM = { original_tag = AST } }
-		    FROM = { has_completed_focus = AST_westward_battles }
-		}
+		
 	}
 
 	add_trait = { 
@@ -2618,64 +2305,11 @@ SOV_gaz_organization = {
 	}
 
 	visible = {
-		IF = { 
-			limit = { FROM = { original_tag = ETH } } 
-			FROM = { has_completed_focus = ETH_soviet-ethiopian_trade_agreement }
-		}
+		
 	}
 	
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = SOV } }
-			}
-			FROM = { NOT = { has_war_with = SOV } }
-		}
-
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_gaz_mio_flag
-				}
-			}
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = SOV
-				}
-				#is_in_faction_with = SOV
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
-		ELSE_IF = {
-			limit = {
-				FROM = { original_tag = NOR }
-			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = ARG }
-			}
-			FROM = { has_completed_focus = ARG_russian_manufacturers }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = BRA }
-			}
-			FROM = { has_completed_focus = BRA_soviet_arms_industry }
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = AFG }
-			}
-			FROM = { has_completed_focus = AFG_truck_factory }
-		}
+		
 	}
 
 	add_trait = { 
