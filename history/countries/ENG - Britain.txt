@@ -407,12 +407,13 @@ set_popularities = {
 }
 
 
-create_faction_from_template = faction_template_allies
+# create_faction_from_template = faction_template_allies
 
-	add_faction_goal_slot = {
-		category  = long_term
-		value = 1 
-	}
+# 	add_faction_goal_slot = {
+# 		category  = long_term
+# 		value = 1 
+# 	}
+create_faction = Allies
 
 add_to_faction = ENG
 
