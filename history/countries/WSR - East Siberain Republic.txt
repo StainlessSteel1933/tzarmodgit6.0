@@ -1,7 +1,7 @@
 capital = 572
 # Starting tech
 set_technology = {
-	new_tank_guns = 1
+	# new_tank_guns = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
@@ -45,7 +45,7 @@ set_technology = {
 
 add_ideas = {
 	limited_conscription
-	autraky_generic
+	# autraky_generic
 	planned_economy
 	prewar_training
 }

@@ -56,10 +56,10 @@ if = { limit = { country_exists = CRO }
     	modifier = stahlpakt
 	}
 }
-add_opinion_modifier = {
-	target = GER
-	modifier = german_trade_monopoly
-}
+# add_opinion_modifier = {
+# 	target = GER
+# 	modifier = german_trade_monopoly
+# }
 
 
 set_rule = { can_be_spymaster = no }
@@ -77,7 +77,6 @@ set_technology = { basic_train = 1
 	basic_light_tank_chassis = 1	
 	fuel_silos = 1
 	synth_oil_experiments = 1
-	trench_warfare = 1
 	transport = 1
 	armored_car1 = 1
 	interwar_antitank = 1

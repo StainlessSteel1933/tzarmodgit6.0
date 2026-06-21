@@ -11,7 +11,7 @@ if = {
 	}
 }
 add_dynamic_modifier = { modifier = YUG_internal_divide }
-add_dynamic_modifier = { modifer = YUG_navy }
+# add_dynamic_modifier = { modifer = YUG_navy }
 add_dynamic_modifier = { modifier = YUG_army }
 # xyz chatgpt modding lol
 # never use chatgpt to make dynamic modifers again :SKULL:
@@ -68,10 +68,10 @@ add_relation_modifier = {
 	target = BUL
 	modifier = stahlpakt
 }
-add_opinion_modifier = {
-	target = GER
-	modifier = german_trade_monopoly
-}
+# add_opinion_modifier = {
+# 	target = GER
+# 	modifier = german_trade_monopoly
+# }
 
 set_technology = {
 	
@@ -229,8 +229,7 @@ recruit_character = YUG_milan_nedic
 recruit_character = YUG_draza_mihailovic
 recruit_character = YUG_dimitrije_ljotic
 recruit_character = YUG_germogen_maximov
-if = {
-	limit = { has_dlc = "Man the Guns" }
+
 	# Submarines #
 	create_equipment_variant = {
 		name = "Hrabri Class"				
@@ -279,4 +278,3 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-}
