@@ -400,7 +400,7 @@ ENG_avro_organization = {
 	include = generic_heavy_aircraft_organization
 	icon = GFX_idea_avro
 	allowed = {	
-		
+		tag = ENG
 	}
 	available = {
 		
@@ -618,9 +618,9 @@ ENG_crewe_works_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = shadow_scheme_focus
-			}
+			# FROM = {
+			# 	has_completed_focus = shadow_scheme_focus
+			# }
 		}
 
 		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
@@ -677,10 +677,10 @@ ENG_crewe_works_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = general_rearmament_focus
+			# FROM = {
+			# 	has_completed_focus = general_rearmament_focus
 
-			}
+			# }
 		}
 
 		all_parents = { generic_mio_trait_compulsory_tank_designer }
