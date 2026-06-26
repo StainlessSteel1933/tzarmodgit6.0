@@ -1,0 +1,8 @@
+generic_election_empty_inlay_window = {
+
+    window_name = generic_election_empty_ui_window
+
+    internal = yes
+    visible = {
+        
+    }

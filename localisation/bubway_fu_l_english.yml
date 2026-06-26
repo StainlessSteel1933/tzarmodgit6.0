@@ -417,3 +417,5 @@ ENG_operation_husky_idea:0 "Operation Husky"
 ENG_contract_tt:0 "Unlock arms contract §YDecisions§!"
 
 operation_active:0 "§YAn Operation Underway§!"
+
+GENERIC_bg_empty_text_tt: "Elections are soon."
