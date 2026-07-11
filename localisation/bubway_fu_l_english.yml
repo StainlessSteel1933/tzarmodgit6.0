@@ -418,4 +418,56 @@ ENG_contract_tt:0 "Unlock arms contract §YDecisions§!"
 
 operation_active:0 "§YAn Operation Underway§!"
 
+#### election UI stuff
 GENERIC_bg_empty_text_tt: "Elections are soon."
+
+### HON HON LE FRANCE
+
+POPULARFRONT_bg_empty_text_tt: "The Popular Front has won the general election. We must select a Prime Minister soon."
+FRA_left_candidate_text:0 "§YThe Popular Front should be led by Leon Blum of the French Workers International he knows the workers come first!§!"
+FRA_right_candidate_text:0 "§YThe Popular Front should be led by Edouard Daladier and Parti Radical. Liberalism will guide us through this storm!§!"
+FRA_left_votes_count: "The §YS.F.I.O§! has §Y[?FRA_left_votes_var]§!% of the Democratic Votes."
+FRA_right_votes_count: "The §YPatri Radical§! has §Y[?FRA_right_votes_var]§!% of the Democratic Votes."
+
+FRA_left_win_count: "The §YS.F.I.O§! has [?FRA_left_election_win_count|0Y] Election Wins."
+FRA_right_win_count: "The §YParti Radical§! has [?FRA_right_election_win_count|0Y] Election Wins."
+
+FRA_left_win_count_trigger_tt: "The §YS.F.I.O§! has at least $COUNT|Y$ Election Wins."
+FRA_right_win_count_trigger_tt: "The §YParti Radical§! has at least $COUNT|Y$ Election Wins."
+
+FRA_left_confirmed_election_winner_text: "§YS.F.I.O§! §WELECTION WIN§!"
+FRA_right_confirmed_election_winner_text: "§YParti Radical§! §WELECTION WIN§!"
+FRA_next_election_countdown_text: "Next Election in:\n [?days_until_next_election|0Y] days"
+
+fra_poltical_violience_little_effect_tt: "Modifies §Y$FRA_violence$§! by:\n Stability: §R-5%§!"
+fra_poltical_violience_alot_effect_tt: "Modifies §Y$FRA_violence$§! by:\n Stability: §R-10%§!"
+fra_poltical_violience_littledown_effect_tt: "Modifies §Y$FRA_violence$§! by:\n Stability: §G+5%§!"
+fra_poltical_violience_alotdown_effect_tt: "Modifies §Y$FRA_violence$§! by:\n Stability: §G+10%§!"
+fra_pp_up_effect_tt: "Modifies §Y$FRA_violence$§! by:\n Political Power Gain: §G+0.25§!"
+FRA_cg_upgrade_tt: "Modifies §Y$FRA_economy$§! by:\n Consumer Goods: §Y-8%§!"
+FRA_economy_dynamic_modifier_tt: "Modifies §Y$FRA_economy$§! by:"
+FRA_Army_tt: "Modifies §Y$FRA_Army$§! by:"
+
+FRA_sfio_not_ruling_tt: "§YS.F.I.O§! is not leading the Popular Front."
+
+FRA_gamelin_gambit:0 "Gamelin's Gambit"
+FRA_gamelin_gambit_desc:0 "Gamelin has returned from another fruitless diplomatic mission to establish a Franco-Soviet Alliance againist Germany. Wait whos that behind him..."
+FRA_end_reforms:0 "End the Matignon Reforms"
+FRA_end_reforms_desc:0 "The state can no longer afford to continue the reforms promised under the Matignon Agreements with Germany on our door step. People will be unhappy about this."
+FRA_office_of_wheat:0 "National Wheat Office"
+FRA_office_of_wheat_desc:0 "The base of a stable country is food. By creating a National Office in charge of regulating crop prices we can help both the farmers and people by setting fair rates."
+FRA_cnrs:0 "National Center for Scientific Research"
+FRA_cnrs_desc:0 " "
+FRA_left_one:0 "Social Democracy"
+FRA_left_one_desc:0 " "
+FRA_right_one:0 "Liberalism"
+FRA_right_one_desc:0 " "
+FRA_left_two:0 "Social Democracy TWO!?"
+FRA_left_two_desc:0 "It was so good we decided to come out with a second one."
+FRA_leagacy_dreyfus:0 "The Legacy of Dreyfus"
+FRA_leagacy_dreyfus_desc:0 " "
+
+
+skrubwayevents.1.t:0 "Tukhachevsky Escapes"
+skrubwayevents.1.d:0 "The NKVD has reported the Tukhachevsky has slipped away from our custody when the French were in Moscow here on a diplomatic mission. Our sources in the French Left that he has been spotted in France."
+skrubwayevents.1.a:0 "I KNEW IT! RED BONAPARTIST!!"

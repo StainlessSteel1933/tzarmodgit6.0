@@ -13,6 +13,7 @@ FRA_economy = { #NATIONAL SPIRIT - Civilian
 	local_resources_factor = FRA_resources #0.10 -> Increase State Reserves
  	line_change_production_efficiency_factor = FRA_eff_ret #0.1 -> Industrial Modernization
  	industrial_capacity_factory = FRA_output #0.05 -> Steel Casting Industry / Shift to Armaments Production
+	production_factory_start_efficiency_factor = FRA_start_eff
 }
 FRA_violence = { #NATIONAL SPIRIT - Civilian
 	name = "French Politics"
@@ -43,6 +44,7 @@ FRA_Army = { #NATIONAL SPIRIT - Civilian
  	war_support_weekly = FRA_ww_army
  	surrender_limit = FRA_cap_limit
  	monthly_population = FRA_pop_growth
+	army_artillery_attack_factor = FRA_arty_attack
  }
  
  YUG_internal_divide = { #NATIONAL SPIRIT - Civilian

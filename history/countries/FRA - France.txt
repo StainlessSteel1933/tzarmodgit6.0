@@ -34,17 +34,17 @@ set_variable = {
 	FRA_south_eco = 0
 }
 
-set_variable = {
-	FRA_polical_instability = 3
-}
+# set_variable = {
+# 	FRA_polical_instability = 3
+# }
 
-set_variable = {
-	FRA_support_for_right = 36
-}
+# set_variable = {
+# 	FRA_support_for_right = 36
+# }
 
-set_variable = {
-	FRA_support_for_left = 64
-}
+# set_variable = {
+# 	FRA_support_for_left = 64
+# }
 
 set_variable = {
 	FRA_battle_weeks_held = 0
@@ -88,6 +88,10 @@ set_variable = {
 
 set_variable = {
 	FRA_eff_gain = 0
+}
+
+set_variable = {
+	FRA_start_eff = 0
 }
 
 set_variable = {
@@ -159,6 +163,10 @@ set_variable = {
 }
 
 set_variable = {
+	FRA_arty_attack = 0
+}
+
+set_variable = {
 	FRA_defence = 0.15
 }
 
@@ -213,6 +221,17 @@ add_dynamic_modifier = {
 add_dynamic_modifier = {
 	modifier = FRA_Army
 }
+
+#Democratic Elections
+set_variable = { FRA_ruling_party = 1 }
+set_variable = { FRA_left_votes_var = 60 }
+set_variable = { FRA_right_votes_var = 40 }
+set_variable = { FRA_left_votes_change_var = 0 } #UAP votes total daily decrease/increase
+set_variable = { FRA_right_votes_change_var = 0 } #ALP votes total daily decrease/increase
+# set_variable = { FRA_left_votes_daily_var = 0 } #UAP votes modifiers daily decrease/increase
+# set_variable = { FRA_right_votes_daily_var = 0 } #ALP votes modifiers daily decrease/increase
+# set_variable = { FRA_left_votes_daily_impact_var = 0 } #How much UAP votes daily decrease/increase ALP votes 
+# set_variable = { FRA_right_votes_daily_impact_var = 0 } #How much ALP votes daily decrease/increase UAP votes 
 
 # Starting tech
 set_technology = {
@@ -360,19 +379,21 @@ set_technology = {
 set_convoys = 250
 set_politics = {
 	ruling_party = democratic
-	last_election = "1932.5.1"
-	election_frequency = 48
+	last_election = "1934.5.1"
+	election_frequency = 24
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 70
-	communism = 30
+	democratic = 69
+	communism = 14
+	fascism = 6
+	neutrality = 11
 }
 
 add_ideas = {
 	COOM_volunteers_minors
-	FRA_ger_attack
+	# FRA_ger_attack
 }
 
 #Order matters here Daladier will start as leaders because added last
@@ -642,6 +663,10 @@ recruit_character = FRA_francois_hussenot
 recruit_character = FRA_louis_renault
 recruit_character = FRA_henri_edmond_fouche
 recruit_character = FRA_joseph_bethenod
+
+recruit_character = FRA_pierre_laval
+recruit_character = FRA_mikhail_tukhachevsky
+recruit_character = FRA_paul_reynaud
 # create_navy_leader = {
 # 	name = "François Darlan"
 # 		picture = "Portrait_France_Francois_Darlan.dds"

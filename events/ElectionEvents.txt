@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = election
+add_namespace = FRA_election_events
 
 # Test Election Event
 country_event = {
@@ -15,6 +16,86 @@ country_event = {
 	
 	option = {
 		name = election.1.a
+	}
+}
+
+country_event = { #Election concluded, info event FRANCE
+	id = FRA_election_events.1
+
+	title = {
+		text = FRA_election_events.1.t.a
+		trigger = {
+			check_variable = {
+				var = FRA_ruling_party
+				value = 0
+				compare = equals
+			}
+		}
+	}
+	title = {
+		text = FRA_election_events.1.t.b
+		trigger = {
+			check_variable = {
+				var = FRA_ruling_party
+				value = 1
+				compare = equals
+			}
+		}
+	}
+
+	desc = {
+		text = FRA_election_events.1.desc.a
+		trigger = {
+			check_variable = {
+				var = FRA_ruling_party
+				value = 0
+				compare = equals
+			}
+		}
+	}
+	desc = {
+		text = FRA_election_events.1.desc.b
+		trigger = {
+			check_variable = {
+				var = FRA_ruling_party
+				value = 1
+				compare = equals
+			}
+		}
+	}
+
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA_election_events.1.a
+
+		# hidden_effect = {
+		# 	AST_democratic_votes_decrease_5_effect = yes
+		# }
+
+		IF = {
+			limit = {
+				check_variable = {
+					var = FRA_ruling_party
+					value = 0 #UAP
+					compare = equals
+				}
+			}
+			custom_effect_tooltip = FRA_left_election_win
+		}
+
+		IF = {
+			limit = {
+				check_variable = {
+					var = FRA_ruling_party
+					value = 1 #ALP
+					compare = equals
+				}
+			}
+			custom_effect_tooltip = FRA_right_election_win
+		}
 	}
 }
 
