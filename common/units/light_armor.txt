@@ -70,8 +70,9 @@ sub_units = {
 			attack = -0.4
 		}
 		deep_desert = {
-			attack = -0.1
-			movement = -0.1
-		}	
+			attack = -0.75
+			movement = -0.75
+			defence = -0.75
+		}
 	}
 }

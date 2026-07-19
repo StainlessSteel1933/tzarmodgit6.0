@@ -40,7 +40,7 @@ ideas = {
 			}
 			
 			modifier = {				
-				send_volunteer_size = 2
+				send_volunteer_size = 1
 			}
 		}
 		
@@ -59,7 +59,7 @@ ideas = {
 			}
 			
 			modifier = {				
-				send_volunteer_size = 4
+				send_volunteer_size = 3
 			}
 		}
 		
@@ -460,7 +460,7 @@ ideas = {
 				# anti_air_brigade = { max_strength = 6 }
 				land_reinforce_rate = 0.10
 				supply_node_range = 0.05
-				army_strength_factor = 0.225
+				army_strength_factor = 0.45
 				supply_consumption_factor = -0.05
 			}
 			
@@ -491,7 +491,7 @@ ideas = {
 				# anti_tank_brigade = { max_strength = 3 }
 				# anti_air_brigade = { max_strength = 6 }
 				land_reinforce_rate = 0.06
-				army_strength_factor = 0.2
+				army_strength_factor = 0.4
 				army_org_factor = 0.05
 				dig_in_speed = 0.2
 			}

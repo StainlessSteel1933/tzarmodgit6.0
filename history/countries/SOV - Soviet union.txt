@@ -166,6 +166,7 @@ recruit_character = SOV_konstantin_vershinin
 recruit_character = SOV_kuzma_galitsky
 recruit_character = SOV_leonid_govorov
 recruit_character = SOV_maksim_purkayev
+recruit_character = SOV_tong_shangzhi
 recruit_character = SOV_markian_popov
 #recruit_character = SOV_maks_reyter
 recruit_character = SOV_mikhail_frinovsky
