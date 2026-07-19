@@ -1,0 +1,14 @@
+technologies = {
+	## cannot be researched
+	french_anti_battleplan = {
+		category_light_infantry = {
+			max_strength = -6.0
+		}
+
+		doctrine = yes
+		research_cost = 1
+		allow = {
+			always = no
+		}
+	}
+}
