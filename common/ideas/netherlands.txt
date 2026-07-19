@@ -1878,23 +1878,6 @@ ideas = {
 
 		}
 
-		HOL_no_defend_homeland = {
-
-			picture =  ger_revive_the_kaiserreich
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-						
-			modifier = {
-				army_attack_factor = -0.8
-				army_defence_factor = -0.8
-			}
-
-		}
-
 		HOL_german_defectors_1 = {
 
 			picture = ger_revive_the_kaiserreich
