@@ -2070,7 +2070,7 @@
 			focus = FRA_invest_in_the_colonies
 		}
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 0
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
