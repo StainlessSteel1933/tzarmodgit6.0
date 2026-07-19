@@ -395,10 +395,7 @@
 		relative_position_id = FRA_election
 		available = {
 			OR = {
-				OR = {
-					# has_completed_focus = FRA_military_investments
-					has_completed_focus = FRA_defensive_strategems
-				}
+				has_completed_focus = FRA_defensive_strategems
 				has_completed_focus = FRA_review_foreign_policy
 				has_completed_focus = FRA_united_france
 			}
