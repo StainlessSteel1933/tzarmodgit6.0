@@ -1899,568 +1899,568 @@ technologies = {
 		}
 	}
 
-	tankgun_tech_1 = {
+	# tankgun_tech_1 = {
 
 
-		path = {
-			leads_to_tech = tankgun_tech_2
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = tankgun_tech_3
-			research_cost_coeff = 1
-		}
-		# on_research_complete = {
-		# 	custom_effect_tooltip = engine_tech_1_tt
-		# }
-		show_effect_as_desc = yes
-		research_cost = 1
-		start_year = 1934
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 32 y = @1918 }
-		}
+	# 	path = {
+	# 		leads_to_tech = tankgun_tech_2
+	# 		research_cost_coeff = 1
+	# 	}
+	# 	path = {
+	# 		leads_to_tech = tankgun_tech_3
+	# 		research_cost_coeff = 1
+	# 	}
+	# 	# on_research_complete = {
+	# 	# 	custom_effect_tooltip = engine_tech_1_tt
+	# 	# }
+	# 	show_effect_as_desc = yes
+	# 	research_cost = 1
+	# 	start_year = 1934
+	# 	folder = {
+	# 		name = nsb_armour_folder
+	# 		position = { x = 32 y = @1918 }
+	# 	}
 
-		enable_equipment_modules = {
-			tank_heavy_machine_gun
-		}
+	# 	enable_equipment_modules = {
+	# 		tank_heavy_machine_gun
+	# 	}
 
-		ai_will_do = {
-			factor = 1
+	# 	ai_will_do = {
+	# 		factor = 1
 
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
 
-			modifier = {
-				factor = 1.1
-				date > "1937.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 1.1
+	# 			date > "1937.1.1"
+	# 		}
 
-			modifier = {
-				factor = 1.5
-				date > "1938.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			date > "1938.1.1"
+	# 		}
 
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-		}
+	# 		modifier = {
+	# 			factor = 2
+	# 			date > "1939.1.1"
+	# 		}
+	# 	}
 
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		mio_cat_tech_light_armor_and_modules
+	# 		mio_cat_tech_medium_armor_and_modules
+	# 		mio_cat_tech_heavy_armor_and_modules
+	# 	}
+	# 	special_project_specialization = { specialization_land }
+	# }
 
-	tankgun_tech_2 = {
-
-
-		path = {
-			leads_to_tech = tankgun_tech_4
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = tankgun_tech_6
-			research_cost_coeff = 1
-		}
-		# on_research_complete = {
-		# 	custom_effect_tooltip = engine_tech_1_tt
-		# }
-		show_effect_as_desc = yes
-		research_cost = 1
-		start_year = 1934
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 30 y = @1934 }
-		}
-
-		enable_equipment_modules = {
-			tank_auto_cannon
-			tank_small_cannon
-			tank_anti_air_cannon
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
-
-	tankgun_tech_3 = {
+	# tankgun_tech_2 = {
 
 
-		path = {
-			leads_to_tech = tankgun_tech_5
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = tankgun_tech_6
-			research_cost_coeff = 1
-		}
-		# on_research_complete = {
-		# 	custom_effect_tooltip = engine_tech_1_tt
-		# }
-		show_effect_as_desc = yes
-		research_cost = 1
-		start_year = 1934
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 34 y = @1934 }
-		}
+	# 	path = {
+	# 		leads_to_tech = tankgun_tech_4
+	# 		research_cost_coeff = 1
+	# 	}
+	# 	path = {
+	# 		leads_to_tech = tankgun_tech_6
+	# 		research_cost_coeff = 1
+	# 	}
+	# 	# on_research_complete = {
+	# 	# 	custom_effect_tooltip = engine_tech_1_tt
+	# 	# }
+	# 	show_effect_as_desc = yes
+	# 	research_cost = 1
+	# 	start_year = 1934
+	# 	folder = {
+	# 		name = nsb_armour_folder
+	# 		position = { x = 30 y = @1934 }
+	# 	}
 
-		enable_equipment_modules = {
-			tank_close_support_gun
-		}
+	# 	enable_equipment_modules = {
+	# 		tank_auto_cannon
+	# 		tank_small_cannon
+	# 		tank_anti_air_cannon
+	# 	}
 
-		ai_will_do = {
-			factor = 1
+	# 	ai_will_do = {
+	# 		factor = 1
 
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
 
-			modifier = {
-				factor = 1.1
-				date > "1937.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 1.1
+	# 			date > "1937.1.1"
+	# 		}
 
-			modifier = {
-				factor = 1.5
-				date > "1938.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			date > "1938.1.1"
+	# 		}
 
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-		}
+	# 		modifier = {
+	# 			factor = 2
+	# 			date > "1939.1.1"
+	# 		}
+	# 	}
 
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		mio_cat_tech_light_armor_and_modules
+	# 		mio_cat_tech_medium_armor_and_modules
+	# 		mio_cat_tech_heavy_armor_and_modules
+	# 	}
+	# 	special_project_specialization = { specialization_land }
+	# }
 
-	tankgun_tech_4 = {
-
-
-		# path = {
-		# 	leads_to_tech = engine_tech_2
-		# 	research_cost_coeff = 1
-		# }
-		# on_research_complete = {
-		# 	custom_effect_tooltip = engine_tech_1_tt
-		# }
-		show_effect_as_desc = yes
-		research_cost = 1
-		start_year = 1934
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 30 y = @1936 }
-		}
-
-		enable_equipment_modules = {
-			tank_small_cannon_2
-			tank_auto_cannon_2
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
-
-	tankgun_tech_5 = {
+	# tankgun_tech_3 = {
 
 
-		# path = {
-		# 	leads_to_tech = engine_tech_2
-		# 	research_cost_coeff = 1
-		# }
-		# on_research_complete = {
-		# 	custom_effect_tooltip = engine_tech_1_tt
-		# }
-		show_effect_as_desc = yes
-		research_cost = 1
-		start_year = 1936
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 34 y = @1936 }
-		}
+	# 	path = {
+	# 		leads_to_tech = tankgun_tech_5
+	# 		research_cost_coeff = 1
+	# 	}
+	# 	path = {
+	# 		leads_to_tech = tankgun_tech_6
+	# 		research_cost_coeff = 1
+	# 	}
+	# 	# on_research_complete = {
+	# 	# 	custom_effect_tooltip = engine_tech_1_tt
+	# 	# }
+	# 	show_effect_as_desc = yes
+	# 	research_cost = 1
+	# 	start_year = 1934
+	# 	folder = {
+	# 		name = nsb_armour_folder
+	# 		position = { x = 34 y = @1934 }
+	# 	}
 
-		enable_equipment_modules = {
-			tank_medium_howitzer
-		}
+	# 	enable_equipment_modules = {
+	# 		tank_close_support_gun
+	# 	}
 
-		ai_will_do = {
-			factor = 1
+	# 	ai_will_do = {
+	# 		factor = 1
 
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
 
-			modifier = {
-				factor = 1.1
-				date > "1937.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 1.1
+	# 			date > "1937.1.1"
+	# 		}
 
-			modifier = {
-				factor = 1.5
-				date > "1938.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			date > "1938.1.1"
+	# 		}
 
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-		}
+	# 		modifier = {
+	# 			factor = 2
+	# 			date > "1939.1.1"
+	# 		}
+	# 	}
 
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		mio_cat_tech_light_armor_and_modules
+	# 		mio_cat_tech_medium_armor_and_modules
+	# 		mio_cat_tech_heavy_armor_and_modules
+	# 	}
+	# 	special_project_specialization = { specialization_land }
+	# }
 
-	tankgun_tech_6 = {
-
-
-		path = {
-			leads_to_tech = tankgun_tech_7
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = tankgun_tech_8
-			research_cost_coeff = 1
-		}
-		# on_research_complete = {
-		# 	custom_effect_tooltip = engine_tech_1_tt
-		# }
-		show_effect_as_desc = yes
-		research_cost = 1
-		start_year = 1938
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 32 y = @1938 }
-		}
-
-		enable_equipment_modules = {
-			tank_medium_cannon
-			tank_high_velocity_cannon
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
-
-	tankgun_tech_7 = {
+	# tankgun_tech_4 = {
 
 
-		path = {
-			leads_to_tech = tankgun_tech_9
-			research_cost_coeff = 1
-		}
-		on_research_complete = {
-			custom_effect_tooltip = engine_tech_1_tt
-		}
-		show_effect_as_desc = yes
-		research_cost = 1
-		start_year = 1940
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 30 y = @1940 }
-		}
+	# 	# path = {
+	# 	# 	leads_to_tech = engine_tech_2
+	# 	# 	research_cost_coeff = 1
+	# 	# }
+	# 	# on_research_complete = {
+	# 	# 	custom_effect_tooltip = engine_tech_1_tt
+	# 	# }
+	# 	show_effect_as_desc = yes
+	# 	research_cost = 1
+	# 	start_year = 1934
+	# 	folder = {
+	# 		name = nsb_armour_folder
+	# 		position = { x = 30 y = @1936 }
+	# 	}
 
-		enable_equipment_modules = {
-			tank_medium_cannon_2
-			tank_high_velocity_cannon_2
+	# 	enable_equipment_modules = {
+	# 		tank_small_cannon_2
+	# 		tank_auto_cannon_2
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 1
+
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 1.1
+	# 			date > "1937.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			date > "1938.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 2
+	# 			date > "1939.1.1"
+	# 		}
+	# 	}
+
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		mio_cat_tech_light_armor_and_modules
+	# 		mio_cat_tech_medium_armor_and_modules
+	# 		mio_cat_tech_heavy_armor_and_modules
+	# 	}
+	# 	special_project_specialization = { specialization_land }
+	# }
+
+	# tankgun_tech_5 = {
+
+
+	# 	# path = {
+	# 	# 	leads_to_tech = engine_tech_2
+	# 	# 	research_cost_coeff = 1
+	# 	# }
+	# 	# on_research_complete = {
+	# 	# 	custom_effect_tooltip = engine_tech_1_tt
+	# 	# }
+	# 	show_effect_as_desc = yes
+	# 	research_cost = 1
+	# 	start_year = 1936
+	# 	folder = {
+	# 		name = nsb_armour_folder
+	# 		position = { x = 34 y = @1936 }
+	# 	}
+
+	# 	enable_equipment_modules = {
+	# 		tank_medium_howitzer
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 1
+
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 1.1
+	# 			date > "1937.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			date > "1938.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 2
+	# 			date > "1939.1.1"
+	# 		}
+	# 	}
+
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		mio_cat_tech_light_armor_and_modules
+	# 		mio_cat_tech_medium_armor_and_modules
+	# 		mio_cat_tech_heavy_armor_and_modules
+	# 	}
+	# 	special_project_specialization = { specialization_land }
+	# }
+
+	# tankgun_tech_6 = {
+
+
+	# 	path = {
+	# 		leads_to_tech = tankgun_tech_7
+	# 		research_cost_coeff = 1
+	# 	}
+	# 	path = {
+	# 		leads_to_tech = tankgun_tech_8
+	# 		research_cost_coeff = 1
+	# 	}
+	# 	# on_research_complete = {
+	# 	# 	custom_effect_tooltip = engine_tech_1_tt
+	# 	# }
+	# 	show_effect_as_desc = yes
+	# 	research_cost = 1
+	# 	start_year = 1938
+	# 	folder = {
+	# 		name = nsb_armour_folder
+	# 		position = { x = 32 y = @1938 }
+	# 	}
+
+	# 	enable_equipment_modules = {
+	# 		tank_medium_cannon
+	# 		tank_high_velocity_cannon
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 1
+
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 1.1
+	# 			date > "1937.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			date > "1938.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 2
+	# 			date > "1939.1.1"
+	# 		}
+	# 	}
+
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		mio_cat_tech_light_armor_and_modules
+	# 		mio_cat_tech_medium_armor_and_modules
+	# 		mio_cat_tech_heavy_armor_and_modules
+	# 	}
+	# 	special_project_specialization = { specialization_land }
+	# }
+
+	# tankgun_tech_7 = {
+
+
+	# 	path = {
+	# 		leads_to_tech = tankgun_tech_9
+	# 		research_cost_coeff = 1
+	# 	}
+	# 	on_research_complete = {
+	# 		custom_effect_tooltip = engine_tech_1_tt
+	# 	}
+	# 	show_effect_as_desc = yes
+	# 	research_cost = 1
+	# 	start_year = 1940
+	# 	folder = {
+	# 		name = nsb_armour_folder
+	# 		position = { x = 30 y = @1940 }
+	# 	}
+
+	# 	enable_equipment_modules = {
+	# 		tank_medium_cannon_2
+	# 		tank_high_velocity_cannon_2
 			
-		}
+	# 	}
 
-		ai_will_do = {
-			factor = 1
+	# 	ai_will_do = {
+	# 		factor = 1
 
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
 
-			modifier = {
-				factor = 1.1
-				date > "1937.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 1.1
+	# 			date > "1937.1.1"
+	# 		}
 
-			modifier = {
-				factor = 1.5
-				date > "1938.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			date > "1938.1.1"
+	# 		}
 
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-		}
+	# 		modifier = {
+	# 			factor = 2
+	# 			date > "1939.1.1"
+	# 		}
+	# 	}
 
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		mio_cat_tech_light_armor_and_modules
+	# 		mio_cat_tech_medium_armor_and_modules
+	# 		mio_cat_tech_heavy_armor_and_modules
+	# 	}
+	# 	special_project_specialization = { specialization_land }
+	# }
 
-	tankgun_tech_8 = {
-
-
-		path = {
-			leads_to_tech = tankgun_tech_9
-			research_cost_coeff = 1
-		}
-		# on_research_complete = {
-		# 	custom_effect_tooltip = engine_tech_1_tt
-		# }
-		show_effect_as_desc = yes
-		research_cost = 1
-		start_year = 1940
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 34 y = @1940 }
-		}
-
-		enable_equipment_modules = {
-			tank_heavy_cannon
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
-
-	tankgun_tech_9 = {
+	# tankgun_tech_8 = {
 
 
-		# path = {
-		# 	leads_to_tech = engine_tech_2
-		# 	research_cost_coeff = 1
-		# }
-		# on_research_complete = {
-		# 	custom_effect_tooltip = engine_tech_1_tt
-		# }
-		show_effect_as_desc = yes
-		research_cost = 1
-		start_year = 1942
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 32 y = @1942 }
-		}
+	# 	path = {
+	# 		leads_to_tech = tankgun_tech_9
+	# 		research_cost_coeff = 1
+	# 	}
+	# 	# on_research_complete = {
+	# 	# 	custom_effect_tooltip = engine_tech_1_tt
+	# 	# }
+	# 	show_effect_as_desc = yes
+	# 	research_cost = 1
+	# 	start_year = 1940
+	# 	folder = {
+	# 		name = nsb_armour_folder
+	# 		position = { x = 34 y = @1940 }
+	# 	}
 
-		enable_equipment_modules = {
-			tank_heavy_cannon_2
-			tank_high_velocity_cannon_3
-		}
+	# 	enable_equipment_modules = {
+	# 		tank_heavy_cannon
+	# 	}
 
-		ai_will_do = {
-			factor = 1
+	# 	ai_will_do = {
+	# 		factor = 1
 
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
 
-			modifier = {
-				factor = 1.1
-				date > "1937.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 1.1
+	# 			date > "1937.1.1"
+	# 		}
 
-			modifier = {
-				factor = 1.5
-				date > "1938.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			date > "1938.1.1"
+	# 		}
 
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-		}
+	# 		modifier = {
+	# 			factor = 2
+	# 			date > "1939.1.1"
+	# 		}
+	# 	}
 
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		mio_cat_tech_light_armor_and_modules
+	# 		mio_cat_tech_medium_armor_and_modules
+	# 		mio_cat_tech_heavy_armor_and_modules
+	# 	}
+	# 	special_project_specialization = { specialization_land }
+	# }
+
+	# tankgun_tech_9 = {
+
+
+	# 	# path = {
+	# 	# 	leads_to_tech = engine_tech_2
+	# 	# 	research_cost_coeff = 1
+	# 	# }
+	# 	# on_research_complete = {
+	# 	# 	custom_effect_tooltip = engine_tech_1_tt
+	# 	# }
+	# 	show_effect_as_desc = yes
+	# 	research_cost = 1
+	# 	start_year = 1942
+	# 	folder = {
+	# 		name = nsb_armour_folder
+	# 		position = { x = 32 y = @1942 }
+	# 	}
+
+	# 	enable_equipment_modules = {
+	# 		tank_heavy_cannon_2
+	# 		tank_high_velocity_cannon_3
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 1
+
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 1.1
+	# 			date > "1937.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			date > "1938.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 2
+	# 			date > "1939.1.1"
+	# 		}
+	# 	}
+
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		mio_cat_tech_light_armor_and_modules
+	# 		mio_cat_tech_medium_armor_and_modules
+	# 		mio_cat_tech_heavy_armor_and_modules
+	# 	}
+	# 	special_project_specialization = { specialization_land }
+	# }
 
 	########################
 	### SPECIAL PROJECTS ###
@@ -2941,4 +2941,492 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
+	#######################################
+	#### tank gun begins here #############
+	#######################################
+	
+	medium_guns = {	
+		special_project_specialization = { specialization_land }
+		path = {
+			leads_to_tech = medium_guns2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = shit_modules
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			tank_medium_cannon
+			tank_medium_howitzer
+			tank_auto_cannon_2	
+			tank_small_cannon_2
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -5 y = 3 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			
+		tank_modules
+		mio_cat_tech_light_armor_and_modules
+		generic
+		armor
+		}
+	}
+	
+	medium_guns2 = {	
+		special_project_specialization = { specialization_land }
+		path = {
+			leads_to_tech = medium_guns3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = shit_guns
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tank_ammo2
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			tank_medium_howitzer_2
+			tank_medium_cannon_2	
+			tank_anti_air_cannon_2
+			tank_small_cannon_3
+		}
+
+		research_cost = 1
+		start_year = 1941
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -5 y = @1941 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+		tank_modules
+		mio_cat_tech_light_armor_and_modules
+		generic
+		armor
+		}
+	}
+
+	tank_ammo2 = {	
+		special_project_specialization = { specialization_land }
+		enable_equipment_modules = {
+			HEAT_ammo
+		}
+
+		research_cost = 1
+		start_year = 1940
+		#folder = {
+		#	name = nsb_armour_folder
+		#	position = { x = -4 y = 8 }
+		#}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+		tank_modules
+		mio_cat_tech_light_armor_and_modules
+		generic
+		armor
+		}
+	}
+
+	tank_ammo = {
+		special_project_specialization = { specialization_land }
+		enable_equipment_modules = {
+			LRP_ammo
+			
+		}
+
+		research_cost = 1
+		start_year = 1940
+	#	folder = {
+	#		name = nsb_armour_folder
+	#		position = { x = -10 y = 8 }
+	#	}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+		tank_modules
+		mio_cat_tech_light_armor_and_modules
+		generic
+		armor
+		}
+	}
+
+	medium_guns3 = {	
+		special_project_specialization = { specialization_land }
+		allow = {
+			#date > 1941.1.1
+			OR = {
+				has_game_rule = {
+					rule = horst_tank_research_options
+					option = HORST_ENABLE_FREE_RESEARCH
+				}
+				AND = { 
+				has_game_rule = {
+					rule = horst_tank_research_options
+					option = HORST_DISABLE_LIMIT_1940
+				}
+				date > 1940.1.1
+				}
+				AND = { 
+				has_game_rule = {
+					rule = horst_tank_research_options
+					option = HORST_DISABLE_LIMIT_1941
+				}
+				date > 1941.1.1
+				}
+				AND = { 
+				has_game_rule = {
+					rule = horst_tank_research_options
+					option = SR_tank_limit_barbarossa
+				}
+				date > 1941.6.1
+				}
+					AND = { 
+				has_game_rule = {
+					rule = horst_tank_research_options
+					option = HORST_DISABLE_LIMIT_1942
+				}
+				date > 1942.1.1
+				}
+			}
+		}
+		enable_equipment_modules = {
+			tank_medium_cannon_3
+			tank_anti_air_cannon_3		
+			tank_rocket_launcher
+			tank_auto_cannon_3
+		}
+
+		research_cost = 0.5
+		start_year = 1944
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -5 y = @1944 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+		tank_modules
+		mio_cat_tech_light_armor_and_modules
+		generic
+		armor
+		}
+	}
+	shit_modules = {
+		special_project_specialization = { specialization_land }
+		enable_equipment_modules = {
+			apcr_ammo	
+			hesh_ammo
+			squeezebore_adaptor
+			secondary_turret_hmg
+		}
+
+		research_cost = 0.5
+		start_year = 1936
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -7 y = @1937 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+		tank_modules
+		mio_cat_tech_light_armor_and_modules
+		generic
+		armor
+		}
+	}
+	shit_guns = {
+		special_project_specialization = { specialization_land }
+		enable_equipment_modules = {	
+			dozer_blade
+			auto_loader
+			secondary_turret_small_cannon 
+			hvap_ammo
+			wet_ammo_storage
+		}
+
+		research_cost = 1
+		start_year = 1941
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -7 y = @1941 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+		tank_modules
+		mio_cat_tech_light_armor_and_modules
+		generic
+		armor
+		}
+	}
+
+	heavy_guns = {	
+		special_project_specialization = { specialization_land }
+		path = {
+			leads_to_tech = heavy_guns2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = shit_modules
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			tank_heavy_cannon
+			tank_high_velocity_cannon
+			tank_auto_cannon_2
+			tank_small_cannon_2
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -9 y = 3 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+		tank_modules
+		mio_cat_tech_light_armor_and_modules
+		generic
+		armor
+		}
+	}
+	
+	heavy_guns2 = {	
+		special_project_specialization = { specialization_land }
+		path = {
+			leads_to_tech = heavy_guns3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = shit_guns
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tank_ammo
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			tank_heavy_cannon_2		
+			tank_high_velocity_cannon_2
+			tank_anti_air_cannon_2
+			tank_small_cannon_3
+			lc_high_velocity_cannon_turret
+			lc_assault_gun
+			lc_heavy_high_velocity_cannons
+			lc_high_impact_obliterator_cannon
+		}
+
+		research_cost = 1
+		start_year = 1941
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -9 y = @1941 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+		tank_modules
+		mio_cat_tech_light_armor_and_modules
+		generic
+		armor
+		}
+	}
+	
+	heavy_guns3 = {	
+		special_project_specialization = { specialization_land }
+		allow = {
+			#date > 1941.1.1
+			OR = {
+				has_game_rule = {
+					rule = horst_tank_research_options
+					option = HORST_ENABLE_FREE_RESEARCH
+				}
+				AND = { 
+				has_game_rule = {
+					rule = horst_tank_research_options
+					option = HORST_DISABLE_LIMIT_1940
+				}
+				date > 1940.1.1
+				}
+				AND = { 
+				has_game_rule = {
+					rule = horst_tank_research_options
+					option = HORST_DISABLE_LIMIT_1941
+				}
+				date > 1941.1.1
+				}
+				AND = { 
+				has_game_rule = {
+					rule = horst_tank_research_options
+					option = SR_tank_limit_barbarossa
+				}
+				date > 1941.6.1
+				}
+					AND = { 
+				has_game_rule = {
+					rule = horst_tank_research_options
+					option = HORST_DISABLE_LIMIT_1942
+				}
+				date > 1942.1.1
+				}
+			}
+		}
+		enable_equipment_modules = {
+			tank_heavy_cannon_3
+			tank_high_velocity_cannon_3		
+			tank_anti_air_cannon_3
+			tank_small_cannon_3
+			tank_auto_cannon_3
+		}
+
+		research_cost = 0.5
+		start_year = 1944
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -9 y = 11 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+		tank_modules
+		mio_cat_tech_light_armor_and_modules
+		generic
+		armor
+		}
+	}
+		radio_tech_1 = {
+			special_project_specialization = { specialization_land }
+			enable_equipment_modules = { 
+			tank_radio_1
+			lc_radio_1
+		}
+
+		path = {
+			leads_to_tech = radio_tech_2
+			research_cost_coeff = 0.4
+		}
+
+		research_cost = 0.3
+		start_year = 1934
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 0 y = @1935 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			tank_modules
+			mio_cat_tech_light_armor_and_modules
+			armor
+			electronics
+		}
+	}	
+	
+	radio_tech_2 = {
+		special_project_specialization = { specialization_land }
+		enable_equipment_modules = {
+			tank_radio_2
+			lc_radio_2
+		}
+		
+		path = {
+			leads_to_tech = radio_tech_3
+			research_cost_coeff = 0.4
+		}	
+
+		research_cost = 0.35
+		start_year = 1938
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 0 y = @1938 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			tank_modules
+			mio_cat_tech_light_armor_and_modules
+			armor
+			electronics
+		}
+	}	
+	radio_tech_3 = {
+		special_project_specialization = { specialization_land }
+		enable_equipment_modules = {
+			tank_radio_3	
+			stabilizer	
+			lc_radio_3
+		}
+		allow = {
+		}
+		research_cost = 1.2
+		start_year = 1941
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 0 y = @1941 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			tank_modules
+			mio_cat_tech_light_armor_and_modules
+			armor
+		}
+	}
 }
