@@ -18,7 +18,7 @@ state={
 			industrial_complex = 4
 			11751 = {
 				naval_base = 5
-				land_facility = 1
+
 			}
 			11846 = {
 				naval_base = 2

@@ -12,6 +12,141 @@ characters={
 			id=-1
 		}
 	}
+	YUG_military_occuption = { 
+		name = "German Military Occuption"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_GER_oberste_heeresleitung
+			}	
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MNT_blazo_dukanovic = {
+		name = MNT_blazo_dukanovic
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MNT_blazo_dukanovic
+			}
+		}
+		
+
+		corps_commander = { 
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			
+		}
+	}
+	YUG_milan_nedic={
+		name=YUG_milan_nedic
+		portraits={
+			civilian={
+				large=GFX_portrait_YUG_milan_stojadinovic
+			}
+			army={
+				small="GFX_idea_YUG_milan_nedic"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YUG_milan_nedic
+			allowed  = {
+					original_tag  = YUG
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+	}
+	
+	YUG_draza_mihailovic={
+		name=YUG_draza_mihailovic
+		portraits={
+			army={
+				small="GFX_idea_YUG_draza_mihailovic"
+			}
+			
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = YUG_draza_mihailovic
+			allowed  = {
+					original_tag  = YUG
+				}
+				traits  = {
+					YUG_chetnik_trait
+				}
+				visible = {
+					OR = {
+						has_completed_focus = YUG_chetnik_ally
+						has_completed_focus = YUG_chetnik_serb
+					}
+				}
+		}
+	}
+	
+	YUG_dimitrije_ljotic={
+		name=YUG_dimitrije_ljotic
+		portraits={
+			army={
+				small="GFX_idea_YUG_dimitrije_ljotic"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YUG_dimitrije_ljotic
+			allowed  = {
+					original_tag  = YUG
+				}
+				traits  = {
+					reichs_prop
+				}
+			visible = {
+				OR = {
+					has_completed_focus = YUG_align_volkgermoids
+					
+				}
+			}
+		}
+	}
+	
+	YUG_germogen_maximov={
+		name=YUG_germogen_maximov
+		portraits={
+			army={
+				small="GFX_idea_SOV_metropolitan_aleksy"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = YUG_germogen_maximov
+			allowed  = {
+					original_tag  = YUG
+				}
+				traits  = {
+					orthodox_rabblerouser
+				}
+			visible = {
+				OR = {
+					has_completed_focus = YUG_crush_orthodoxy
+					
+				}
+			}
+		}
+	}
+	
+	
 	CRO_vladimir_laxa={
 		name="Vladimir Laxa"
 		portraits={
@@ -135,12 +270,12 @@ characters={
 			logistics_skill=4
 			legacy_id=-1
 		}
-		country_leader={
-			desc="ANTE_PAVELIC_DESC"
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
+		#country_leader={
+		#	desc="ANTE_PAVELIC_DESC"
+		#	ideology=fascism_ideology
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#}
 		advisor={
 			slot = army_chief
 			idea_token = ante_pavelic

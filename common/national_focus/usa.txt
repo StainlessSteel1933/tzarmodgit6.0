@@ -463,11 +463,23 @@ focus = {
 		cost = 5
 		
 		prerequisite = {  focus = USA_roosevelt_deal focus = USA_landon_deal  }
-		mutually_exclusive { focus = USA_neutrality_act }
+		mutually_exclusive = { focus = USA_neutrality_act }
 		available = {date > 1938.8.1 }	
 		relative_position_id=USA_reorganization_act
 		completion_reward = {
-			add_ideas = low_economic_mobilisation
+			if = {
+				limit = {
+					NOT = {	
+						has_idea = partial_economic_mobilisation
+					}
+				}
+				add_ideas = partial_economic_mobilisation	
+				else = {
+					add_political_power = 150
+				}
+			}
+			
+			
 			if= { limit={ has_completed_focus = USA_landon_deal	}
 						swap_ideas = { remove_idea = monroe_doctrine add_idea =  prepare_joining_the_allies }	
 
@@ -483,7 +495,7 @@ focus = {
 		y = 2
 		cost = 5
 		
-		mutually_exclusive { focus = USA_limited_intervention }
+		mutually_exclusive = { focus = USA_limited_intervention }
 		prerequisite = {  focus = USA_roosevelt_deal focus = USA_landon_deal  }
 		relative_position_id=USA_reorganization_act 
 		completion_reward = {
@@ -1898,7 +1910,18 @@ focus = {
 		completion_reward = {
 		
 				add_ideas = USA_navy_catchup 
-				add_ideas = partial_economic_mobilisation
+				if = {
+				limit = {
+					NOT = {	
+						has_idea = partial_economic_mobilisation
+					}
+				}
+				add_ideas = partial_economic_mobilisation	
+				else = {
+					add_political_power = 150
+				}
+				}
+				
 				
 		}
 	}
@@ -2446,7 +2469,7 @@ focus = {
 		available_if_capitulated = yes		
 		text = "Retake the Philippines"
 		available = {
-			NOT = { has_idea = war_plan_yellowx  }
+			# NOT = { has_idea = war_plan_yellowx  }
 			
 			
 				date > 1942.1.1
@@ -3611,7 +3634,7 @@ focus = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				set_technology = { #cruiser_submarines = 1 }
+				set_technology = { cruiser_submarines = 1 }
 			}
 		}
 	}

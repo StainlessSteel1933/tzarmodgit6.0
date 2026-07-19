@@ -5,6 +5,7 @@
 sub_units = {
 
 	anti_air_brigade = {
+		abbreviation = "ANA"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 301
@@ -16,11 +17,12 @@ sub_units = {
 			anti_air
 		}
 		
-		group = infantry
+		group = combat_support
 		
 		categories = {
 			category_army
 			category_line_artillery
+			category_anti_air
 		}		
 		
 		combat_width = 1
@@ -28,105 +30,43 @@ sub_units = {
 		#Size Definitions
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 2
+		max_strength = 0.6
 		manpower = 500
 		training_time = 120
-		weight = 1
+		weight = 0.5
 		
-		supply_consumption = 0.0
+		supply_consumption = 0.1
 
 		need = {
-			anti_air_equipment = 24
+			anti_air_equipment = 36
 		}
 
 		forest = {
-			attack = -0.05
-			movement = -0.05
+			attack = -0.1
+			movement = -0.1
 		}
 
 		jungle = {
-			attack = -0.3
-			movement = -0.3
-		}
-
-		marsh = {
-			attack = -0.15
-			movement = -0.15
-		}
-
-		river = {
-			attack = -0.10
-			movement = -0.15
-		}
-
-		amphibious = {
-			attack = -0.15
-		}
-	}
-	
-	mech_anti_air = {
-		sprite = infantry
-		map_icon_category = infantry
-		priority = 301
-		ai_priority = 10
-		active = yes
-		type = {
-			mechanized
-			anti_air
-		}
-		breakthrough = -0.5
-		group = armor
-		categories = {
-			category_army
-			category_line_artillery
-		}		
-		essential = {
-			mechanized_equipment
-		}	
-		combat_width = 1		
-		#Size Definitions
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 2.6
-		manpower = 300
-		training_time = 60
-		weight = 1
-		supply_consumption = 0.18
-		transport = mechanized_equipment
-		need = {
-			anti_air_equipment = 24
-			mechanized_equipment = 20
-		}
-		deep_desert = {attack = -0.3 defence = -0.6	movement = -0.2  }
-
-		forest = {
-			attack = -0.1
-		}
-			mountain = {
-							attack = -0.6
-			defence = -0.6
-			}
-		jungle = {
-			attack = -0.3
-			defence = -0.5
-		}
-		marsh = {
-			attack = -0.1
-		}
-		urban = {
 			attack = -0.2
-			defence = -0.15
+			movement = -0.2
 		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.2
+		}
+
 		river = {
 			attack = -0.2
 			movement = -0.2
 		}
+
 		amphibious = {
 			attack = -0.4
 		}
 	}
-	
 	mot_anti_air_brigade = {
+		abbreviation = "MAA"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 301
@@ -138,11 +78,12 @@ sub_units = {
 			anti_air
 		}
 		
-		group = armor
+		group = mobile_combat_support
 		
 		categories = {
 			category_army
 			category_line_artillery
+			category_mobile_and_mobile_combat_sup
 		}		
 		
 		combat_width = 1
@@ -150,45 +91,45 @@ sub_units = {
 		#Size Definitions
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = 2.3
-		manpower = 400
+		max_strength = 0.6
+		manpower = 500
 		training_time = 120
-		weight = 1
+		weight = 0.5
 		
-		supply_consumption = 0.11
-		# air_attack = -0.15
+		supply_consumption = 0.15
 		transport = motorized_equipment
+
+		essential = {
+			motorized_equipment
+		}
+
 		need = {
-			anti_air_equipment = 24
-			motorized_equipment = 20
+			anti_air_equipment = 36
+			motorized_equipment = 36
 		}
 
 		forest = {
-			attack = -0.15
+			attack = -0.1
 			movement = -0.5
 		}
 
 		jungle = {
-			attack = -0.3
+			attack = -0.2
 			movement = -0.5
 		}
 
 		marsh = {
-			attack = -0.3
+			attack = -0.2
 			movement = -0.2
 		}
 
 		river = {
-			attack = -0.3
+			attack = -0.2
 			movement = -0.2
 		}
 
 		amphibious = {
-			attack = -0.60
-		}
-		deep_desert = {
-			attack = -0.05
-			movement = -0.05
+			attack = -0.4
 		}
 	}
 }

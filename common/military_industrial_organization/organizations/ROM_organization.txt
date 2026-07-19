@@ -18,7 +18,7 @@ ROM_leonidas_works_organization = {
 		has_dlc = "Death or Dishonor"
 	}
 	available = {
-		#FROM = { has_completed_focus = ROM_mobile_tank_destroyers }
+		FROM = { has_completed_focus = ROM_mobile_tank_destroyers }
 	}
 	initial_trait = {
 		name = ROM_mio_trait_mobile_tank_destroyers
@@ -190,8 +190,8 @@ ROM_malaxa_organization = {
 	}
 	initial_trait = {
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
-			military_industrial_organization_funds_gain = 0.1
+			military_industrial_organization_research_bonus = -0.03
+			military_industrial_organization_funds_gain = -0.1
 		}
 	}
 }

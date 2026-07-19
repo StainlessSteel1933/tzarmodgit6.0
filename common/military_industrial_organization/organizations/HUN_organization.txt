@@ -8,6 +8,20 @@
 
  #################### 
 
+ HUN_hti_turan_organization = {
+ 	include = generic_medium_tank_organization
+ 	icon = GFX_idea_mw_aircraft #GFX_idea_HUN_hti_turan
+ 	
+ 	allowed = {	
+ 		original_tag = HUN
+ 		
+ 	}
+ 	
+ 	available = {
+ 		
+ 	}
+ }
+
  HUN_mavag_assault_guns_organization = {
  	include = generic_assault_guns_organization
  	icon = GFX_idea_HUN_mavag_assault_gun
@@ -31,6 +45,61 @@
  		
  	}
 
+ 	visible = {
+ 		IF = {
+ 			limit = {
+ 				FROM = {
+ 					original_tag = HUN
+ 				}
+ 			}
+ 			FROM = {
+ 				has_completed_focus = wuw_HUN_license_fiat_tankettes
+ 			}
+ 		}
+ 	}
+ 	
+ 	available = {
+ 		# When in a Foreign MIO, countries need to be at peace with original country
+ 		IF = {
+ 			limit = {
+ 				FROM = { NOT = { original_tag = ITA } }
+ 			}
+ 			FROM = { NOT = { has_war_with = ITA } }
+ 		}
+ 	}
+ }
+
+ HUN_henschel_organization = {
+ 	include = generic_heavy_tank_organization
+ 	icon = GFX_idea_henschel
+ 	
+ 	allowed = {	
+ 		original_tag = HUN 
+ 		
+ 	}
+
+ 	visible = {
+ 		IF = {
+ 			limit = {
+ 				FROM = {
+ 					original_tag = HUN
+ 				}
+ 			}
+ 			FROM = {
+ 				has_completed_focus = wuw_HUN_seek_german_contracts
+ 			}
+ 		}
+ 	}
+ 	
+ 	available = {
+ 		# When in a Foreign MIO, countries need to be at peace with original country
+ 		IF = {
+ 			limit = {
+ 				FROM = { NOT = { original_tag = GER } }
+ 			}
+ 			FROM = { NOT = { has_war_with = GER } }
+ 		}
+ 	}
  }
 
 #####################
@@ -43,15 +112,16 @@
  
 #####################
 
-
 HUN_ganz_danubius_organization = { 
 	include = generic_escort_ship_organization
 	icon = GFX_idea_HUN_ganz_danubius
 	allowed = { 
 		original_tag = HUN
-	
+		
 	}
-
+	available = {
+		
+	}
 }
 
 HUN_obudai_hajogyar_organization = { 
@@ -59,11 +129,13 @@ HUN_obudai_hajogyar_organization = {
 	icon = GFX_idea_HUN_obudai_hajogyar
 	allowed = { 
 		original_tag = HUN
-
+		
+		
 	}
-	
+	available = {
+		
+	}
 }
-
 
 ###########################
 
@@ -79,7 +151,12 @@ HUN_mw_aircraft_organization = {
 	include = generic_light_aircraft_organization
 	icon = GFX_idea_mw_aircraft
 	allowed = { 
-		tag = HUN
+		original_tag = HUN
+		
+	}
+
+	available = {
+		
 	}
 }
 
@@ -88,9 +165,15 @@ HUN_mavag_aircraft_organization = {
 	icon = GFX_idea_HUN_mavag_aircraft
 	allowed = { 
 		original_tag = HUN
-
+		
+		
 	}
 
+	available = {
+		FROM = {
+			has_completed_focus = wuw_HUN_establish_the_mavag_aircraft_factory
+		}
+	}
 }
 
 HUN_mrt_aircraft_organization = {
@@ -110,9 +193,9 @@ HUN_mrt_aircraft_organization = {
 			mio_cat_eq_all_large_plane
 		}
 		
-		equipment_bonus = {
+		# equipment_bonus = {
 			
-		}
+		# }
 
 		production_bonus = {
 			production_cost_factor = -0.05
@@ -121,6 +204,7 @@ HUN_mrt_aircraft_organization = {
 		}
 	}
 }
+
 ################################### 
 
 #   #  ##  ### ### ###  ### ### #   
@@ -131,7 +215,6 @@ HUN_mrt_aircraft_organization = {
 
 
 ###################################
-
 
 HUN_femaru_fegyver_es_gepgyar_organization = {
 	include = generic_infantry_equipment_organization
@@ -181,7 +264,7 @@ HUN_danuvia_inf_organization = {
 
 		all_parents = { generic_mio_trait_anti_tank_rifle }
 
-		position = { x = -1 y = 1 }
+		position = { x = 1 y = 1 }
 
 		visible = {
 			FROM = { original_tag = HUN }
@@ -291,7 +374,8 @@ HUN_digep_artillery = {
 	
 	allowed = {	
 		original_tag = HUN
-
+		
+		
 	}
 
 	available = {
@@ -308,7 +392,11 @@ HUN_mwg_raba_organization = {
 	icon = GFX_idea_HUN_mwg_raba
 	allowed = {	 
 		original_tag = HUN
-
+		
+		
 	}
 }
+
+
+
 

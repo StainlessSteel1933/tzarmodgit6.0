@@ -10,14 +10,20 @@ state=
 	state_category = rural
 	
 	history={
-		owner = ENG
+		owner = ITA
 		add_core_of = SWE
+		victory_points = { #Massaua
+			12766 1
+		}
 		victory_points = { #Asmara
 			13250 3
 		}
+		victory_points = { #Biscia
+			12723 1
+		}
 		buildings = {
 			infrastructure = 2
-			air_base = 10
+			air_base = 3
 			12766 = {
 				naval_base = 3
 			}

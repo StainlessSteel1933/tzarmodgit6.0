@@ -10,11 +10,11 @@
 DEBUG_generic_tank_organization = {
 	include = generic_tank_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -22,11 +22,11 @@ DEBUG_generic_tank_organization = {
 DEBUG_generic_infantry_tank_organization = {
 	include = generic_infantry_tank_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -34,11 +34,11 @@ DEBUG_generic_infantry_tank_organization = {
 DEBUG_generic_mobile_tank_organization = {
 	include = generic_mobile_tank_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -46,11 +46,11 @@ DEBUG_generic_mobile_tank_organization = {
 DEBUG_generic_medium_tank_organization = {
 	include = generic_medium_tank_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -58,11 +58,11 @@ DEBUG_generic_medium_tank_organization = {
 DEBUG_generic_heavy_tank_organization = {
 	include = generic_heavy_tank_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -70,11 +70,11 @@ DEBUG_generic_heavy_tank_organization = {
 DEBUG_generic_tank_refurbishment_plant_organization = {
 	include = generic_tank_refurbishment_plant_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -92,11 +92,11 @@ DEBUG_generic_tank_refurbishment_plant_organization = {
 DEBUG_generic_task_force_ship_organization = {
 	include = generic_task_force_ship_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -104,11 +104,11 @@ DEBUG_generic_task_force_ship_organization = {
 DEBUG_generic_battle_line_ship_organization = {
 	include = generic_battle_line_ship_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -116,11 +116,11 @@ DEBUG_generic_battle_line_ship_organization = {
 DEBUG_generic_escort_ship_organization = {
 	include = generic_escort_ship_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -128,11 +128,11 @@ DEBUG_generic_escort_ship_organization = {
 DEBUG_generic_raider_ship_organization = {
 	include = generic_raider_ship_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -140,11 +140,11 @@ DEBUG_generic_raider_ship_organization = {
 DEBUG_generic_submarine_organization = {
 	include = generic_submarine_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -152,11 +152,11 @@ DEBUG_generic_submarine_organization = {
 DEBUG_generic_black_sea_fleet_organization = {
 	include = generic_black_sea_fleet_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -175,11 +175,11 @@ DEBUG_generic_black_sea_fleet_organization = {
 DEBUG_generic_general_aircraft_organization = {
 	include = generic_general_aircraft_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -187,11 +187,11 @@ DEBUG_generic_general_aircraft_organization = {
 DEBUG_generic_light_aircraft_organization = {
 	include = generic_light_aircraft_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -199,11 +199,11 @@ DEBUG_generic_light_aircraft_organization = {
 DEBUG_generic_medium_aircraft_organization = {
 	include = generic_medium_aircraft_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -211,11 +211,11 @@ DEBUG_generic_medium_aircraft_organization = {
 DEBUG_generic_heavy_aircraft_organization = {
 	include = generic_heavy_aircraft_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -223,11 +223,11 @@ DEBUG_generic_heavy_aircraft_organization = {
 DEBUG_generic_cas_aircraft_organization = {
 	include = generic_cas_aircraft_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -235,11 +235,11 @@ DEBUG_generic_cas_aircraft_organization = {
 DEBUG_generic_naval_aircraft_organization = {
 	include = generic_naval_aircraft_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -247,11 +247,11 @@ DEBUG_generic_naval_aircraft_organization = {
 DEBUG_generic_multi_role_aircraft_organization = {
 	include = generic_multi_role_aircraft_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -259,11 +259,11 @@ DEBUG_generic_multi_role_aircraft_organization = {
 DEBUG_generic_high_agility_fighter_aircraft_organization = {
 	include = generic_high_agility_fighter_aircraft_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -271,11 +271,11 @@ DEBUG_generic_high_agility_fighter_aircraft_organization = {
 DEBUG_generic_range_focused_aircraft_organization = {
 	include = generic_range_focused_aircraft_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -294,11 +294,11 @@ DEBUG_generic_range_focused_aircraft_organization = {
 DEBUG_generic_artillery_organization = {
 	include = generic_artillery_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -306,11 +306,11 @@ DEBUG_generic_artillery_organization = {
 DEBUG_generic_infantry_equipment_organization = {
 	include = generic_infantry_equipment_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -318,11 +318,11 @@ DEBUG_generic_infantry_equipment_organization = {
 DEBUG_generic_support_equipment_organization = {
 	include = generic_support_equipment_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -330,11 +330,11 @@ DEBUG_generic_support_equipment_organization = {
 DEBUG_generic_motorized_mechanized_organization = {
 	include = generic_motorized_mechanized_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }
@@ -342,11 +342,11 @@ DEBUG_generic_motorized_mechanized_organization = {
 DEBUG_generic_armored_car_organization = {
 	include = generic_armored_car_organization
 	allowed = {	
-		has_dlc = "Arms Against Tyranny"
+		
 		is_debug = yes
 	}
 
-	visible = { #TODO_Manu: All this needs to be removed later on
+	visible = {
 		owner = { has_country_flag = mio_show_all_archetypes_flag }
 	}
 }

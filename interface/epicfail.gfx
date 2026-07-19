@@ -146,17 +146,9 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_antitank3_5_medium"
 		texturefile = "gfx/interface/technologies/at_sr.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_heavy_anti_tank_equipment_medium"
-		texturefile = "gfx/interface/technologies/axis_heavy_at_1.dds"
 	}
 	
-	SpriteType = {
-		name = "GFX_heavy_anti_tank_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/axis_heavy_at_2.dds"
-	}
+
 
 	SpriteType = {
 		name = "GFX_tech_flamethrower4_medium"

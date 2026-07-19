@@ -14,6 +14,10 @@ state={
 
 	history={
 		owner = HUN
+		1936.1.1.13 = {
+			owner = ROM
+			add_core_of = ROM 
+		}
 		1936.1.1.15 = {
 			owner = HUN
 			add_core_of = HUN 

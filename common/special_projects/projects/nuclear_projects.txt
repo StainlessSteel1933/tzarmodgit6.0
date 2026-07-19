@@ -273,7 +273,7 @@ sp_commercial_nuclear_reactor = {
 		resources = { steel=6 tungsten=4 chromium=7 }
 	}
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 	available = { 
 		FROM = {
@@ -417,7 +417,7 @@ sp_nuclear_engines = {
 		sp_commercial_nuclear_reactor
 	}
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 	available = { 
 		
@@ -486,6 +486,16 @@ sp_nuclear_bomb = {
 				set_technology = {
 					nukes = 1
 					popup = no
+				}
+				if = {
+					limit = {
+						not = {
+							has_variable = global.first_country_sp_nuclear_bomb
+						}
+					}
+					set_variable = {
+						global.first_country_sp_nuclear_bomb = ROOT
+					}
 				}
 			}
 		}
@@ -691,7 +701,7 @@ sp_thermo_nuclear_bomb = {
 		sp_nuclear_bomb
 	}
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 	available = { 
 		
@@ -794,7 +804,7 @@ sp_nuclear_warheads = {
 		sp_rockets_medium_range_ballistic_missile
 	}
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		
 	}
 	available = {
 	}

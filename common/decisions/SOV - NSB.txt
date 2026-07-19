@@ -2979,7 +2979,7 @@ SOV_gosproyektstroy_decision_category = {
 			base = 10
 		}
 
-		targets = { TUR ENG GER SWE }
+		targets = { USA ENG GER JAP }
 
 		#target_trigger = {
 		#	FROM = { SOV_is_valid_subject = yes }
@@ -3003,6 +3003,7 @@ SOV_gosproyektstroy_decision_category = {
 			has_idea = SOV_gosproyektstroy_1
 			NOT = { has_country_flag = SOV_gosproyektstroy_level_2_flag }
 			NOT = { has_country_flag = SOV_gosproyektstroy_level_3_flag }
+			country_exists = FROM
 			NOT = { has_war_with = FROM }
 			FROM = { SOV_is_valid_subject = yes }
 		}
@@ -3020,7 +3021,7 @@ SOV_gosproyektstroy_decision_category = {
 		remove_effect = {
 			if = {
 				limit = {
-					FROM = { tag = TUR }
+					FROM = { tag = USA }
 				}
 				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 1 } #USA
 				swap_ideas = {
@@ -3050,7 +3051,7 @@ SOV_gosproyektstroy_decision_category = {
 			}
 			else_if = {
 				limit = {
-					FROM = { tag = SWE }
+					FROM = { tag = JAP }
 				}
 				set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 4 } #JAP
 				swap_ideas = {

@@ -703,7 +703,7 @@ cro_industrial_effort:0 "Industrial Effort"
  FRF_intervention_in_madagascar:0 "Recapture Madagascar"
 
 # Japan Soviet focuses
- JAP_china_timer_tt:0 "Current days are: [?JAP_china_timer_flag:days|Y0]"
+
  JAP_attack_SOV_1of3:0 "Cap 1 of 3 CW --> Attack Soviets in '44"
  JAP_attack_SOV_2of3:0 "Cap 2 of 3 CW --> Attack Soviets in '43"
  JAP_attack_SOV_3of3:0 "Cap 3 of 3 CW --> Attack Soviets in '42"

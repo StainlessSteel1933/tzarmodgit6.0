@@ -1,6 +1,6 @@
 ﻿capital = 586 #Almaty
 
-oob = "KAZ_1936"
+# oob = "KAZ_1936"
 
 set_research_slots = 3
 
@@ -16,8 +16,7 @@ set_technology = {
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
-	mass_assault = 1
-	fleet_in_being = 1
+
 }
 if = {
 	limit = {
@@ -73,8 +72,8 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
-		#early_ship_hull_submarine = 1
-		#basic_ship_hull_submarine = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1

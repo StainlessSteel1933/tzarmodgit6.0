@@ -19,7 +19,7 @@ nigger = {
 		cost = 0
 			
 		visible = {
-			NZL = {is_ai = yes}
+
 		}
 
 		complete_effect = {

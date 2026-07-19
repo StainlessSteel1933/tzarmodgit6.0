@@ -1,0 +1,134 @@
+on_actions = {
+	on_new_term_election = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { original_tag = FRA }
+				}
+				FRA = {
+					if = { #Sets Parti Radical as ruling party
+						limit = {
+							OR = {
+								check_variable = {
+									var = FRA_right_votes_var
+									value = FRA_left_votes_var
+									compare = greater_than
+								}
+								AND = {
+									check_variable = {
+										var = FRA_right_votes_var
+										value = FRA_left_votes_var
+										compare = greater_than_or_equals
+									}
+									check_variable = {
+										var = FRA_ruling_party
+										value = 1
+										compare = equals
+									}
+								}
+							}
+						}
+						add_to_variable = {
+							var = FRA_right_election_win_count
+							value = 1
+						}
+						set_variable = {
+							var = FRA_ruling_party
+							value = 1
+						}
+						set_party_name = {
+							ideology = democratic
+							long_name = FRA_partiradical_party_long
+							name = FRA_partiradical_party
+						}
+						if = {
+							limit = {
+								has_character = FRA_Edouard_daladier
+							}
+							add_country_leader_role = {
+									character = FRA_Edouard_daladier
+									promote_leader = yes
+									country_leader = {
+										ideology = socialism
+										expire = "1989.1.1.1"
+									}
+							}
+						}
+						else = {
+							promote_character = FRA_Edouard_daladier
+						}
+						
+					}
+					else_if = { #Sets SFIO as ruling party
+						limit = {
+							OR = {
+								check_variable = {
+									var = FRA_left_votes_var
+									value = FRA_right_votes_var
+									compare = greater_than
+								}
+								AND = {
+									check_variable = {
+										var = FRA_left_votes_var
+										value = FRA_right_votes_var
+										compare = greater_than_or_equals
+									}
+									check_variable = {
+										var = FRA_ruling_party
+										value = 0
+										compare = equals
+									}
+								}
+							}
+						}
+						add_to_variable = {
+							var = FRA_left_election_win_count
+							value = 1
+						}
+						set_variable = {
+							var = FRA_ruling_party
+							value = 0
+						}
+						set_party_name = {
+							ideology = democratic
+							long_name = FRA_popularfront_party_long
+							name = FRA_popularfront_party
+						}
+						if = {
+							limit = {
+								has_character = FRA_leon_blum
+							}
+							add_country_leader_role = {
+									character = FRA_leon_blum
+									promote_leader = yes
+									country_leader = {
+										ideology = socialism
+										expire = "1989.1.1.1"
+									}
+							}
+						}
+						else = {
+							promote_character = FRA_leon_blum
+						}
+					}
+					clamp_variable = {
+						var = FRA_left_votes_var
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = FRA_right_votes_var
+						min = 0
+						max = 100
+					}
+					country_event = FRA_election_events.1
+					set_country_flag = {
+						flag = FRA_election_recently_concluded
+						days = 15 #Edit FRA_election_recently_concluded 
+						value = 1
+					}
+				}
+			}
+		}
+	}
+}

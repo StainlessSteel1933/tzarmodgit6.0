@@ -16,7 +16,7 @@ MEX_tga_organization = {
 		tag = MEX
 	}
 	available = {
-		#owner = { has_completed_focus = MEX_focus_tank_workshops }
+		owner = { has_completed_focus = MEX_focus_tank_workshops }
 	}
 }
 ### Foreign Subsidiaries

@@ -57,7 +57,10 @@ if = { limit = { country_exists = CRO }
     	modifier = stahlpakt
 	}
 }
-
+add_opinion_modifier = {
+	target = GER
+	modifier = german_trade_monopoly
+}
 
 
 set_rule = { can_be_spymaster = no

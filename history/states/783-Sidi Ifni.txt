@@ -11,7 +11,7 @@ state={
 			12857 1
 		}
 
-		owner = SWE
+		owner = SPR
 		
 		buildings = {
 			infrastructure = 1

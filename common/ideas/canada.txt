@@ -332,17 +332,17 @@ ideas = {
 
 			equipment_bonus = {
 			
-				CAS_equipment = {
-					air_range = 0.1
-					air_ground_attack = 0.05
-					instant = yes
-				}
+				# CAS_equipment = {
+				# 	air_range = 0.1
+				# 	air_ground_attack = 0.05
+				# 	instant = yes
+				# }
 
-				tac_bomber_equipment = {
-					air_range = 0.1
-					air_ground_attack = 0.05
-					instant = yes
-				}
+				# tac_bomber_equipment = {
+				# 	air_range = 0.1
+				# 	air_ground_attack = 0.05
+				# 	instant = yes
+				# }
 		
 				transport_plane_equipment = {
 					air_range = 0.1

@@ -11,11 +11,17 @@ state={
 		victory_points = {
 			2072 2 
 		}
-		owner = ENG
+		victory_points = {
+			13237 1 
+		}
+		victory_points = {
+			13238 1 
+		}
+		owner = ITA
 		add_core_of = SWE
 		1936.6.1 = {
-			owner = ENG
-			controller = ENG
+			owner = ITA
+			controller = ITA
 
 		}
 

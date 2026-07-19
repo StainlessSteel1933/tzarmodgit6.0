@@ -2471,6 +2471,9 @@ focus = {
         }
 
         completion_reward = {
+            custom_effect_tooltip = idea_RAJ_independence_movement_tt
+            add_to_variable = { RAJ_independence_movement_surrender_limit = 0.5 tooltip = surrender_limit_tt }
+
         }
     }
 

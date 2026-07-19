@@ -40,7 +40,7 @@ ideas = {
 			}
 			
 			modifier = {				
-				send_volunteer_size = 1
+				send_volunteer_size = 2
 			}
 		}
 		
@@ -59,7 +59,7 @@ ideas = {
 			}
 			
 			modifier = {				
-				send_volunteer_size = 3
+				send_volunteer_size = 4
 			}
 		}
 		
@@ -207,9 +207,9 @@ ideas = {
 				light_tank_chassis = {
 					build_cost_ic = -0.05  instant = yes
 				}
-				armored_car_chassis = {
-					build_cost_ic = -0.05  instant = yes
-				}	
+				# armored_car_chassis = {
+				# 	build_cost_ic = -0.05  instant = yes
+				# }	
 			}
 		
 			modifier = {
@@ -460,7 +460,7 @@ ideas = {
 				# anti_air_brigade = { max_strength = 6 }
 				land_reinforce_rate = 0.10
 				supply_node_range = 0.05
-				army_strength_factor = 0.45
+				army_strength_factor = 0.225
 				supply_consumption_factor = -0.05
 			}
 			
@@ -491,7 +491,7 @@ ideas = {
 				# anti_tank_brigade = { max_strength = 3 }
 				# anti_air_brigade = { max_strength = 6 }
 				land_reinforce_rate = 0.06
-				army_strength_factor = 0.4
+				army_strength_factor = 0.2
 				army_org_factor = 0.05
 				dig_in_speed = 0.2
 			}
@@ -830,22 +830,22 @@ ideas = {
 					air_attack = 0.10
 					instant = yes
 				}
-				heavy_small_plane_airframe = {
-					air_attack = 0.10
-					instant = yes
-				}
-				CAS_equipment = {
-					air_attack = 0.10
-					instant = yes
-				}
-				tac_bomber_equipment = {
-					air_attack = 0.10
-					instant = yes
-				}
-				strat_bomber_equipment = {
-					air_attack = 0.10
-					instant = yes
-				}
+				# heavy_small_plane_airframe = {
+				# 	air_attack = 0.10
+				# 	instant = yes
+				# }
+				# CAS_equipment = {
+				# 	air_attack = 0.10
+				# 	instant = yes
+				# }
+				# tac_bomber_equipment = {
+				# 	air_attack = 0.10
+				# 	instant = yes
+				# }
+				# strat_bomber_equipment = {
+				# 	air_attack = 0.10
+				# 	instant = yes
+				# }
 				jet_strat_bomber_equipment = {
 					air_attack = 0.10
 					instant = yes
@@ -858,22 +858,22 @@ ideas = {
 					air_attack = 0.10
 					instant = yes
 				} 
-				cv_CAS_equipment = {
-					air_attack = 0.10
-					instant = yes
-				}
-				nav_bomber_equipment = {
-					air_attack = 0.10
-					instant = yes
-				} 
-				cv_nav_bomber_equipment = {
-					air_attack = 0.10
-					instant = yes
-				} 
-				jet_small_plane_airframe = {
-					air_attack = 0.10
-					instant = yes
-				}
+				# cv_CAS_equipment = {
+				# 	air_attack = 0.10
+				# 	instant = yes
+				# }
+				# nav_bomber_equipment = {
+				# 	air_attack = 0.10
+				# 	instant = yes
+				# } 
+				# cv_nav_bomber_equipment = {
+				# 	air_attack = 0.10
+				# 	instant = yes
+				# } 
+				# jet_small_plane_airframe = {
+				# 	air_attack = 0.10
+				# 	instant = yes
+				# }
 				rocket_interceptor_equipment = {
 					air_attack = 0.10
 					instant = yes
@@ -898,22 +898,22 @@ ideas = {
 					air_attack = 0.20
 					instant = yes
 				}
-				heavy_small_plane_airframe = {
-					air_attack = 0.20
-					instant = yes
-				}
-				CAS_equipment = {
-					air_attack = 0.20
-					instant = yes
-				}
-				tac_bomber_equipment = {
-					air_attack = 0.20
-					instant = yes
-				}
-				strat_bomber_equipment = {
-					air_attack = 0.20
-					instant = yes
-				}
+				# heavy_small_plane_airframe = {
+				# 	air_attack = 0.20
+				# 	instant = yes
+				# }
+				# CAS_equipment = {
+				# 	air_attack = 0.20
+				# 	instant = yes
+				# }
+				# tac_bomber_equipment = {
+				# 	air_attack = 0.20
+				# 	instant = yes
+				# }
+				# strat_bomber_equipment = {
+				# 	air_attack = 0.20
+				# 	instant = yes
+				# }
 				jet_strat_bomber_equipment = {
 					air_attack = 0.20
 					instant = yes
@@ -926,22 +926,22 @@ ideas = {
 					air_attack = 0.20
 					instant = yes
 				} 
-				cv_CAS_equipment = {
-					air_attack = 0.20
-					instant = yes
-				}
-				nav_bomber_equipment = {
-					air_attack = 0.20
-					instant = yes
-				} 
-				cv_nav_bomber_equipment = {
-					air_attack = 0.20
-					instant = yes
-				} 
-				jet_small_plane_airframe = {
-					air_attack = 0.20
-					instant = yes
-				}
+				# cv_CAS_equipment = {
+				# 	air_attack = 0.20
+				# 	instant = yes
+				# }
+				# nav_bomber_equipment = {
+				# 	air_attack = 0.20
+				# 	instant = yes
+				# } 
+				# cv_nav_bomber_equipment = {
+				# 	air_attack = 0.20
+				# 	instant = yes
+				# } 
+				# jet_small_plane_airframe = {
+				# 	air_attack = 0.20
+				# 	instant = yes
+				# }
 				rocket_interceptor_equipment = {
 					air_attack = 0.20
 					instant = yes
@@ -966,22 +966,22 @@ ideas = {
 					air_attack = 0.30
 					instant = yes
 				}
-				heavy_small_plane_airframe = {
-					air_attack = 0.30
-					instant = yes
-				}
-				CAS_equipment = {
-					air_attack = 0.30
-					instant = yes
-				}
-				tac_bomber_equipment = {
-					air_attack = 0.30
-					instant = yes
-				}
-				strat_bomber_equipment = {
-					air_attack = 0.30
-					instant = yes
-				}
+				# heavy_small_plane_airframe = {
+				# 	air_attack = 0.30
+				# 	instant = yes
+				# }
+				# CAS_equipment = {
+				# 	air_attack = 0.30
+				# 	instant = yes
+				# }
+				# tac_bomber_equipment = {
+				# 	air_attack = 0.30
+				# 	instant = yes
+				# }
+				# strat_bomber_equipment = {
+				# 	air_attack = 0.30
+				# 	instant = yes
+				# }
 				jet_strat_bomber_equipment = {
 					air_attack = 0.30
 					instant = yes
@@ -994,22 +994,22 @@ ideas = {
 					air_attack = 0.30
 					instant = yes
 				} 
-				cv_CAS_equipment = {
-					air_attack = 0.30
-					instant = yes
-				}
-				nav_bomber_equipment = {
-					air_attack = 0.30
-					instant = yes
-				} 
-				cv_nav_bomber_equipment = {
-					air_attack = 0.30
-					instant = yes
-				} 
-				jet_small_plane_airframe = {
-					air_attack = 0.30
-					instant = yes
-				}
+				# cv_CAS_equipment = {
+				# 	air_attack = 0.30
+				# 	instant = yes
+				# }
+				# nav_bomber_equipment = {
+				# 	air_attack = 0.30
+				# 	instant = yes
+				# } 
+				# cv_nav_bomber_equipment = {
+				# 	air_attack = 0.30
+				# 	instant = yes
+				# } 
+				# jet_small_plane_airframe = {
+				# 	air_attack = 0.30
+				# 	instant = yes
+				# }
 				rocket_interceptor_equipment = {
 					air_attack = 0.30
 					instant = yes
@@ -1034,22 +1034,22 @@ ideas = {
 					air_attack = 0.40
 					instant = yes
 				}
-				heavy_small_plane_airframe = {
-					air_attack = 0.40
-					instant = yes
-				}
-				CAS_equipment = {
-					air_attack = 0.40
-					instant = yes
-				}
-				tac_bomber_equipment = {
-					air_attack = 0.40
-					instant = yes
-				}
-				strat_bomber_equipment = {
-					air_attack = 0.40
-					instant = yes
-				}
+				# heavy_small_plane_airframe = {
+				# 	air_attack = 0.40
+				# 	instant = yes
+				# }
+				# CAS_equipment = {
+				# 	air_attack = 0.40
+				# 	instant = yes
+				# }
+				# tac_bomber_equipment = {
+				# 	air_attack = 0.40
+				# 	instant = yes
+				# }
+				# strat_bomber_equipment = {
+				# 	air_attack = 0.40
+				# 	instant = yes
+				# }
 				jet_strat_bomber_equipment = {
 					air_attack = 0.40
 					instant = yes
@@ -1062,22 +1062,22 @@ ideas = {
 					air_attack = 0.40
 					instant = yes
 				} 
-				cv_CAS_equipment = {
-					air_attack = 0.40
-					instant = yes
-				}
-				nav_bomber_equipment = {
-					air_attack = 0.40
-					instant = yes
-				} 
-				cv_nav_bomber_equipment = {
-					air_attack = 0.40
-					instant = yes
-				} 
-				jet_small_plane_airframe = {
-					air_attack = 0.40
-					instant = yes
-				}
+				# cv_CAS_equipment = {
+				# 	air_attack = 0.40
+				# 	instant = yes
+				# }
+				# nav_bomber_equipment = {
+				# 	air_attack = 0.40
+				# 	instant = yes
+				# } 
+				# cv_nav_bomber_equipment = {
+				# 	air_attack = 0.40
+				# 	instant = yes
+				# } 
+				# jet_small_plane_airframe = {
+				# 	air_attack = 0.40
+				# 	instant = yes
+				# }
 				rocket_interceptor_equipment = {
 					air_attack = 0.40
 					instant = yes

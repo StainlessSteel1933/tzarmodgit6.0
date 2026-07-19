@@ -1,11 +1,13 @@
 sub_units = {
 	engineer = {
+		abbreviation = "ENG"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
 		active = no
 		affects_speed = no
+
 		type = {
 			infantry
 			support
@@ -16,15 +18,17 @@ sub_units = {
 		categories = {
 			category_front_line
 			category_support_battalions
+			category_divisional_support_battalions
 			category_army
 		}
 
-	
+
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
 		max_strength = 2
-		max_organisation = 45
+		max_organisation = 20
 		default_morale = 0.3
 		manpower = 300
 		training_time = 120
@@ -34,6 +38,12 @@ sub_units = {
 		supply_consumption = 0.02
 		
 		entrenchment = 2
+		
+		battalion_mult = {
+			category = category_light_infantry
+			entrenchment = 0.20
+			add = yes
+		}
 
 				
 		defense = 0.1
@@ -48,43 +58,45 @@ sub_units = {
 
 		need = {
 			infantry_equipment = 10
-			support_equipment = 15
+			support_equipment = 30
 		}
 
 		can_be_parachuted = yes
-
 		forest = {
-			defence = 0.075
+			defence = 0.25
 			movement = 0.05
 		}
 
 		hills = {
-			defence = 0.075
+			defence = 0.1
 		}
 
 		jungle = {
-			defence = 0.075
+			defence = 0.25
 		}
 
 		marsh = {
-			defence = 0.075
+			defence = 0.25
 			movement = 0.2
 		}
 
 		fort = {
 			attack = 0.1
-			defence = 0.075
+			defence = 0.25
 		}
 
 		river = {
-			defence = 0.075
+			defence = 0.25
 			movement = 0.25
 		}
 
 		amphibious = {
-			attack = 0.10
+			attack = 0.15
 		}
+
+		same_support_type = engineer
 	}
+	
 	pioneer_support = {
 		abbreviation = "PIO"
 		sprite = infantry
@@ -104,11 +116,14 @@ sub_units = {
 		categories = {
 			category_front_line
 			category_support_battalions
+			category_divisional_support_battalions
 			category_army
 			category_marines
+			category_marines_and_amphibious
 		}
 
-	
+
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
@@ -144,45 +159,107 @@ sub_units = {
 
 		need = {
 			infantry_equipment = 10
-			support_equipment = 25
+			support_equipment = 40
 		}
 
 		can_be_parachuted = yes
-		
-		forest = {
-			defence = 0.075
-			movement = 0.05
-		}
-
-		hills = {
-			defence = 0.075
-		}
-
-		jungle = {
-			defence = 0.075
-		}
 
 		marsh = {
-			attack = 0.1
-			defence = 0.1
+			attack = 0.10
+			defence = 0.20
 			movement = 0.2
 		}
 
 		fort = {
-			attack = 0.075
-			defence = 0.15
+			attack = 0.15
+			defence = 0.20
 		}
 
 		river = {
-			attack = 0.075
-			movement = 0.15
+			attack = 0.10
+			defence = 0.20
+			movement = 0.25
 		}
 		
 		same_support_type = engineer
 		
 	}
+
+	jungle_pioneers_support = { #ToA support for jungle/rainforest terrain
+		abbreviation = "JLS"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+		}
+
+		regimental = no
+		combat_width = 0
 	
-	
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 30
+		default_morale = 0.3
+		manpower = 500
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.1
+		can_be_parachuted = yes
+		acclimatization_hot_climate_gain_factor = 3
+
+		# Support nerfs to combat abilities
+		
+		entrenchment = 2
+		breakthrough = 0.3
+		defense = 0.05
+		
+		essential = {
+			infantry_equipment
+			support_equipment
+		}
+
+		need = {
+			infantry_equipment = 10
+			support_equipment = 40
+		}
+		
+		forest = {
+			attack = 0.1
+			defence = 0.05
+			movement = 0.3
+		}
+		
+		jungle = {
+			attack = 0.1
+			defence = 0.2
+			movement = 0.3
+		}
+
+		river = {
+			attack = 0.1
+			defence = 0.25
+			movement = 0.25
+		}
+
+
+		same_support_type = engineer
+	}
+
 
 	########################
 	### SPECIAL PROJECTS ###
@@ -208,12 +285,15 @@ sub_units = {
 		categories = {
 			category_front_line
 			category_support_battalions
+			category_divisional_support_battalions
 			category_tanks
 			category_all_armor
 			category_army
 		}
 
-	
+		
+
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
@@ -240,7 +320,7 @@ sub_units = {
 		breakthrough = 1.5 # more than reg engineers (0.5)
 
 		# Support nerfs to combat abilities
-		soft_attack = -0.1
+		soft_attack = -0.5
 
 		can_be_parachuted = no
 
@@ -253,38 +333,46 @@ sub_units = {
 			armored_support_vehicle = 20
 			support_equipment = 20
 		}
-				battalion_mult = {
-			category = category_all_armor
-			 breakthrough = 0.075
-			add = yes
-		}
+
 		forest = {
-			defence = 0.075
-			movement = 0.05
+			attack = 0.05 #More than reg eng (0)
+			defence = 0.1 #Less than reg engineers (0.25)
 		}
 
 		hills = {
-			defence = 0.075
+			attack = 0.05 # more than reg engineers (0)
+			defence = 0.1
 		}
 
 		jungle = {
-			defence = 0.075
+			attack = 0.05
+			defence = 0.1 #Less than reg engineers (0.25)
 		}
 
 		marsh = {
-			attack = 0.1
-			defence = 0.1
-			movement = 0.2
+			attack = 0.05 #More than reg eng (0)
+			defence = 0.1 #Less than reg engineers (0.25)
+			movement = 0.1 #Less than reg engineers (0.25)
 		}
 
 		fort = {
-			attack = 0.075
-			defence = 0.15
+			attack = 0.25 #More than reg engineers (0.1)
+			defence = 0.1 #Less than reg engineers (0.25)
 		}
 
 		river = {
-			attack = 0.075
-			movement = 0.15
+			attack = 0.05 #More than reg engineers (0)
+			defence = 0.1 #Less than reg engineers (0.25)
+			movement = 0.25
+		}
+
+		amphibious = {
+			attack = 0.15
+		}
+
+		urban = {
+			attack = 0.2 #More than regular enginners (0)
+			movement = 0.05 #More than reg engineers (0)
 		}
 
 		same_support_type = engineer
@@ -310,12 +398,14 @@ sub_units = {
 		categories = {
 			category_front_line
 			category_support_battalions
+			category_divisional_support_battalions
 			category_tanks
 			category_all_armor
 			category_army
 		}
 
-	
+
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
@@ -339,7 +429,7 @@ sub_units = {
 
 		battalion_mult = {
 			category = category_all_armor
-			# breakthrough = 0.05
+			breakthrough = 0.05
 			add = yes
 		}
 				
@@ -362,32 +452,52 @@ sub_units = {
 		}
 
 		forest = {
-			defence = 0.12
-			movement = 0.05
+			defence = 0.25
+			movement = 0.1 #More than reg engineers (0.05)
+		}
+
+		plains = {
+			movement = 0.1 #More than reg engineers (0)
+		}
+
+		desert = {
+			movement = 0.1 #More than reg engineers (0)
 		}
 
 		hills = {
-			defence = 0.075
+			defence = 0.1 #Same as reg engineers (0.1)
+			movement = 0.05 #More than reg engineers (0)
 		}
 
 		jungle = {
-			defence = 0.075
+			defence = 0.15 #Less than reg engineers (0.25)
+			movement = 0.05 #More than reg eng (0)
 		}
 
 		marsh = {
-			attack = 0.1
-			defence = 0.1
+			defence = 0.15 #Less than reg engineers (0.25)
 			movement = 0.2
 		}
 
 		fort = {
-			attack = 0.075
+			attack = 0.15 #More than reg engineers (0.1)
 			defence = 0.25
 		}
 
 		river = {
-			defence = 0.1
-			movement = 0.15
+			attack = 0.1 #More than reg engineers (0)
+			defence = 0.15 #Less than reg engineers (0.25)
+			movement = 0.4 #More than reg eng (0.25)
+		}
+
+		amphibious = {
+			attack = 0.2 #More than regular enginners (0.15)
+		}
+
+		urban = {
+			attack = 0.2 #More than regular enginners (0)
+			defence = 0.1 #More than reg eng (0)
+			movement = 0.1 #More than reg engineers (0)
 		}
 
 		same_support_type = engineer

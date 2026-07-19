@@ -328,8 +328,8 @@ ideas = {
 			picture = generic_pp_unity_bonus
 
 			available = {
-				country_exists = INS
-				INS = { is_subject_of = HOL }
+				# country_exists = INS
+				# INS = { is_subject_of = HOL }
 			}
 			
 			allowed = {
@@ -1127,7 +1127,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = neutrality
-					NOT = { has_completed_focus = HOL_the_only_man_in_the_dutch_government }
+					# NOT = { has_completed_focus = HOL_the_only_man_in_the_dutch_government }
 				}
 			}
 
@@ -1156,7 +1156,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = neutrality
-					NOT = { has_completed_focus = HOL_the_only_man_in_the_dutch_government }
+					# NOT = { has_completed_focus = HOL_the_only_man_in_the_dutch_government }
 				}
 			}
 
@@ -1874,23 +1874,6 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
-			}
-
-		}
-
-		HOL_no_defend_homeland = {
-
-			picture =  ger_revive_the_kaiserreich
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-						
-			modifier = {
-				army_attack_factor = -0.8
-				army_defence_factor = -0.8
 			}
 
 		}

@@ -35,7 +35,7 @@ state=
 			}
 			1055 = {
 				naval_base = 3
-				coastal_bunker = 5
+				coastal_bunker = 1
 				bunker = 1
 			}
 		}

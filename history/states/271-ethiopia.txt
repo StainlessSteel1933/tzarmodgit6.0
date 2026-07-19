@@ -13,7 +13,7 @@ state=
 
 	history = {
 		
-		owner = ENG
+		owner = ITA
 		buildings = {
 			infrastructure = 2
 			arms_factory = 2
@@ -31,8 +31,8 @@ state=
 		add_core_of = SWE
 
 		1936.6.1 = {
-			owner = ENG
-			controller = ENG
+			owner = ITA
+			controller = ITA
 		}
 	}
 

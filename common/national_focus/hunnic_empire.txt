@@ -262,7 +262,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_strengthen_horthys_reign
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 15
@@ -606,7 +606,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_the_hungarian_life_and_renewal_party
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 15
@@ -761,7 +761,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_empower_the_greenshirts
 
-		cost = 5
+		cost = 15
 
 		ai_will_do = {
 			factor = 15
@@ -805,7 +805,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_the_march_on_budapest
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -1020,7 +1020,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_government_of_national_unity
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
@@ -1211,7 +1211,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = wuw_HUN_heirs_of_the_huns
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
@@ -1887,7 +1887,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 
 				custom_effect_tooltip = available_mio_tt
@@ -2397,7 +2397,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 
 				custom_effect_tooltip = available_mio_tt
@@ -3305,7 +3305,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 
 				custom_effect_tooltip = available_mio_tt
@@ -3399,7 +3399,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 
 				custom_effect_tooltip = available_mio_tt
@@ -3686,7 +3686,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 				mio:HUN_mwg_raba_organization = {
 					add_mio_funds = 1500
@@ -4770,14 +4770,14 @@ focus_tree = {
 				parent_version = 0
 				allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 				modules = {
-					#fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_battery_slot = ship_heavy_battery_1
 					fixed_ship_anti_air_slot = ship_anti_air_2
 					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 					fixed_ship_radar_slot = empty
 					fixed_ship_engine_slot = heavy_ship_engine_1
 					fixed_ship_secondaries_slot = dp_ship_secondaries_1
-					#fixed_ship_armor_slot = ship_armor_bb_1
-					#front_1_custom_slot = ship_heavy_battery_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+					front_1_custom_slot = ship_heavy_battery_1
 					mid_1_custom_slot = ship_anti_air_2
 					mid_2_custom_slot = dp_ship_secondaries_1
 					rear_1_custom_slot = ship_heavy_battery_1

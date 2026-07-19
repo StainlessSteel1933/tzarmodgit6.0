@@ -12,23 +12,24 @@ ability = {
 			is_leading_army_group = no
 			is_border_war = no
 			OWNER = {
-					has_completed_focus = JAP_sea_purge_the_kodoha_faction
+				OR = {
+					has_completed_focus = JAP_warrior_spirit
+					has_completed_focus = SPA_cultivate_fanaticism
+				}
 			}
 		}
 		
 		cost = 0.05
 		duration = 168
-		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				org_damage_multiplier = -0.5
-				str_damage_multiplier = 0.5
-				
-				days = 7
-				tooltip = ABILITY_LAST_STAND_TOOLTIP
-			}
+
+		unit_modifiers = {
+			defence = 0.2
+			combat_entrenchment = 0.25
+			org_damage_multiplier = -1.0
+			str_damage_multiplier = 0.6
+			cannot_retreat_while_defending = 1.0
 		}
-		
+
 		ai_will_do = {
 			factor = -1
 			modifier = {
@@ -67,20 +68,16 @@ ability = {
 		}
 		
 		cost = 0.05
-		duration = 240 
-		
-		one_time_effect = {
-			add_temporary_buff_to_units = {
-				org_damage_multiplier = -0.7
-				str_damage_multiplier = 0.6
-				cannot_retreat_while_defending = 1.0
-				cannot_retreat_while_attacking = 1.0
-				
-				days = 10
-				tooltip = ABILITY_LAST_STAND_TOOLTIP
-			}
+		duration = 240
+
+		unit_modifiers = {
+			defence = 0.2
+			combat_entrenchment = 0.25
+			org_damage_multiplier = -1.0
+			str_damage_multiplier = 0.6
+			cannot_retreat_while_defending = 1.0
 		}
-		
+
 		ai_will_do = {
 			factor = -1
 			modifier = {
@@ -115,7 +112,7 @@ ability = {
 		}
 		
 		cost = 0.06
-		duration = 182
+		duration = 216
 		
 		unit_modifiers = {
 			planning_speed = 4.0

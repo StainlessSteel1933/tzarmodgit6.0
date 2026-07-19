@@ -1,0 +1,473 @@
+fra_election_inlay_window = {
+
+    window_name = fra_election_ui_window
+
+    internal = yes
+    visible = {
+        has_completed_focus = FRA_form_the_popular_front
+        has_government = democratic
+    }
+
+    scripted_progressbars = {
+        FRA_left_votes_progressbar = {
+            progress = FRA_left_votes_var
+        }
+        FRA_right_votes_progressbar = {
+            progress = FRA_right_votes_var
+        }
+        FRA_left_election_win_counter = {
+            progress = FRA_left_election_win_count
+        }
+        FRA_right_election_win_counter = {
+            progress = FRA_right_election_win_count
+        }
+    }
+
+    scripted_images = {
+        AST_winning_party_logo = {
+            GFX_FRA_leonblumpartylogo  = {
+                has_country_flag = FRA_election_recently_concluded
+                has_country_leader = {
+                    character = FRA_leon_blum
+                    ruling_only = yes
+                }
+                check_variable = {
+                    var = FRA_ruling_party
+                    value = 1
+                    compare = equals
+                }
+            }
+            GFX_FRA_edouardaladierpartylogo  = {
+                has_country_flag = FRA_election_recently_concluded
+                has_country_leader = {
+                    character = FRA_Edouard_daladier
+                    ruling_only = yes
+                }
+                check_variable = {
+                    var = FRA_ruling_party
+                    value = 1
+                    compare = equals
+                }
+            }
+            
+        }
+        post_election_background = {
+            GFX_AST_right_vs_left_campaign_decor_bg_win = {
+                has_country_flag = FRA_election_recently_concluded
+            }
+        }
+        FRA_left_leader = {
+            GFX_FRA_leonblumpartylogo = {
+                # NOT = { has_country_flag = ben_chifley_leads_alp }
+            }
+            # GFX_AST_labour_party_leader_ben_chifley = {
+            #     has_country_flag = ben_chifley_leads_alp
+            # }
+        }
+        FRA_right_leader = {
+            GFX_FRA_edouardaladierpartylogo = {
+                # NOT = { has_country_flag = billy_hughes_leads_uap }
+            }
+            # GFX_AST_united_australia_party_leader_billy_hughes = {
+            #     has_country_flag = billy_hughes_leads_uap
+            # }
+        }
+        FRA_left_campaign_pol_power_icon = {
+            GFX_pol_power_icon = {
+                # check_variable = {
+                #     var = AST_campaigning_for_party
+                #     value = 1
+                #     compare = equals
+                # }
+            }
+        }
+        FRA_left_campaign = {
+            GFX_AST_campaign_button_current = {
+                # check_variable = {
+                #     var = AST_campaigning_for_party
+                #     value = 1
+                #     compare = equals
+                # }
+            }
+            GFX_AST_campaign_button = {
+                # check_variable = {
+                #     var = AST_campaigning_for_party
+                #     value = 1
+                #     compare = not_equals
+                # }
+            }
+        }
+        FRA_right_campaign_pol_power_icon = {
+            GFX_pol_power_icon = {
+                # check_variable = {
+                #     var = AST_campaigning_for_party
+                #     value = 2
+                #     compare = equals
+                # }
+            }
+        }
+        FRA_right_campaign = {
+            GFX_AST_campaign_button_current = {
+                # check_variable = {
+                #     var = AST_campaigning_for_party
+                #     value = 2
+                #     compare = equals
+                # }
+            }
+            GFX_AST_campaign_button = {
+                # check_variable = {
+                #     var = AST_campaigning_for_party
+                #     value = 2
+                #     compare = not_equals
+                # }
+            }
+        }
+        AST_election_winner_ribbon = {
+            GFX_AST_right_vs_left_campaign_ribbon = {
+                has_country_flag = FRA_election_recently_concluded
+            }
+        }
+        AST_expected_election_winner = {
+            GFX_FRA_leonblumpartylogo = {
+                OR = {
+                    check_variable = {
+                        var = FRA_left_votes_var
+                        value = FRA_right_votes_var
+                        compare = greater_than
+                    }
+                    AND = {
+                        check_variable = {
+                            var = FRA_left_votes_var
+                            value = FRA_right_votes_var
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = FRA_ruling_party
+                            value = 0
+                            compare = equals
+                        }
+                    }
+                    AND = {
+                        has_country_flag = FRA_election_recently_concluded
+                        check_variable = {
+                            var = FRA_ruling_party
+                            value = 0
+                            compare = equals
+                        }
+                    }
+                }
+            }
+            GFX_FRA_edouardaladierpartylogo = {
+                OR = {
+                    check_variable = {
+                        var = FRA_right_votes_var
+                        value = FRA_left_votes_var
+                        compare = greater_than
+                    }
+                    AND = {
+                        check_variable = {
+                            var = FRA_right_votes_var
+                            value = FRA_left_votes_var
+                            compare = greater_than_or_equals
+                        }
+                        check_variable = {
+                            var = FRA_ruling_party
+                            value = 1
+                            compare = equals
+                        }
+                    }
+                    AND = {
+                        has_country_flag = FRA_election_recently_concluded
+                        check_variable = {
+                            var = FRA_ruling_party
+                            value = 1
+                            compare = equals
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #BUTTONS 
+ 	scripted_buttons = {
+        FRA_left_campaign = {
+            available = {
+                hidden_trigger = {
+                    NOT = { has_country_flag = FRA_election_recently_concluded }
+                }
+                custom_trigger_tooltip = {
+                    tooltip = POLITICAL_POWER
+                    has_political_power > 25
+                }
+                # custom_trigger_tooltip = {
+                #     tooltip = AST_cannot_campaign_for_two_parties_at_once		
+                #     check_variable = {
+                #         var = FRA_campaigning_for_party
+                #         value = 2
+                #         compare = not_equals
+                #     }
+                # }
+            }
+            click_effect = {
+                add_to_variable = {
+                        var = FRA_left_votes_var
+                        value = 5 
+                }
+                add_to_variable = {
+                        var = FRA_right_votes_var
+                        value = -5 
+                }
+                add_political_power = -25
+                # custom_effect_tooltip = AST_uap_election_campaign_tt
+                # if = {
+                #     limit = {
+                #         check_variable = {
+                #             var = FRA_campaigning_for_party
+                #             value = 1
+                #             compare = equals
+                #         }
+                #     }
+                #     # hidden_effect = {
+                #     #     remove_ideas = AST_election_campaign_pp_cost_hidden_idea
+                #     # }
+                # }
+                # else = { 
+                #     set_variable = {
+                #         var = FRA_campaigning_for_party
+                #         value = 1
+                #     }
+                #     # hidden_effect = {
+                #     #     add_ideas = AST_election_campaign_pp_cost_hidden_idea
+                #     # }
+                #     add_to_variable = {
+                #         var = FRA_left_votes_var
+                #         value = 0.1 
+                #     }
+                #     # AST_votes_change_effect = yes
+                # }
+            }
+        }
+        FRA_right_campaign = { 
+            available = {
+                hidden_trigger = {
+                    NOT = { has_country_flag = FRA_election_recently_concluded }
+                }
+                
+                custom_trigger_tooltip = {
+                    tooltip = POLITICAL_POWER
+                    has_political_power > 25
+                }
+                # custom_trigger_tooltip = {
+                #     tooltip = AST_cannot_campaign_for_two_parties_at_once		
+                #     check_variable = {
+                #         var = FRA_campaigning_for_party
+                #         value = 1
+                #         compare = not_equals
+                #     }
+                # }
+            }
+            click_effect = {
+                add_to_variable = {
+                        var = FRA_right_votes_var
+                        value = 5 
+                }
+                add_to_variable = {
+                        var = FRA_left_votes_var
+                        value = -5 
+                }
+                add_political_power = -25
+                # custom_effect_tooltip = AST_alp_election_campaign_tt
+                # if = {
+                #     limit = {
+                #         check_variable = {
+                #             var = FRA_campaigning_for_party
+                #             value = 2
+                #             compare = equals
+                #         }
+                #     }
+                #     # hidden_effect = {
+                #     #     remove_ideas = AST_election_campaign_pp_cost_hidden_idea
+                #     # }
+                # }
+                # else = {
+                #     set_variable = {
+                #         var = FRA_campaigning_for_party
+                #         value = 2
+                #     }
+                #     # hidden_effect = {
+                #     #     add_ideas = AST_election_campaign_pp_cost_hidden_idea
+                #     # }
+                #     add_to_variable = {
+                #         var = FRA_right_votes_var
+                #         value = 0.1 
+                #     }
+                #     # AST_votes_change_effect = yes
+                # }
+            }
+        }
+        # AST_form_unity_government = {
+        #     available = {
+        #         has_country_flag = AST_election_recently_concluded
+        #         OR = {
+        #             has_war = yes
+        #             threat > 0.5
+        #         }
+        #         OR = { 
+        #             AND = {
+        #                 custom_trigger_tooltip = { #Check if UAP won election
+        #                     tooltip =  AST_uap_won_election_tt
+        #                     check_variable = {
+        #                         var = AST_ruling_party
+        #                         value = 0 #UAP
+        #                         compare = equals
+        #                     }
+        #                 }
+        #                 custom_trigger_tooltip = { #Check if there are more ALP clusters to unlock
+        #                     tooltip =  AST_alp_less_than_3_wins_tt
+        #                     check_variable = {
+        #                         var = AST_alp_election_win_count
+        #                         value = 3
+        #                         compare = less_than
+        #                     }
+        #                 }
+        #             }
+        #             AND = {
+        #                 custom_trigger_tooltip = { #Check if ALP won election
+        #                     tooltip =  AST_alp_won_election_tt
+        #                     check_variable = {
+        #                         var = AST_ruling_party
+        #                         value = 1 #ALP
+        #                         compare = equals
+        #                     }
+        #                 }
+        #                 custom_trigger_tooltip = { #Check if there are more UAP clusters to unlock
+        #                     tooltip =  AST_uap_less_than_3_wins_tt
+        #                     check_variable = {
+        #                         var = AST_UAP_election_win_count
+        #                         value = 3
+        #                         compare = less_than
+        #                     }
+        #                 }
+        #             }
+        #         }
+        #     }
+        #     click_effect = {
+        #         custom_effect_tooltip = AST_natunity_desc
+        #         custom_effect_tooltip = effect_tt
+        #         add_political_power = -150
+ 
+        #         custom_effect_tooltip = AST_increased_focuses_become_available
+        #         mark_focus_tree_layout_dirty = yes
+        #         clr_country_flag = AST_election_recently_concluded
+
+        #         if = {
+        #             limit = {
+        #                 check_variable = {
+        #                     var = AST_ruling_party
+        #                     value = 1
+        #                     compare = equals
+        #                 }
+        #             }
+        #             if = {
+        #                 limit = {
+        #                     check_variable = {
+        #                         var = AST_uap_election_win_count
+        #                         value = 0
+        #                         compare = equals
+        #                     }
+        #                 }
+        #                 reduce_focus_completion_cost = {
+        #                     focus = { AST_solidarity_by_the_empire AST_wool_agreement AST_australian_war_cabinet AST_singapore_strategy }
+        #                     cost = -15
+        #                 }
+        #             }
+        #             else_if = {
+        #                 limit = {
+        #                     check_variable = {
+        #                         var = AST_uap_election_win_count
+        #                         value = 1
+        #                         compare = equals
+        #                     }
+        #                 }
+        #                 reduce_focus_completion_cost = {
+        #                     focus = { AST_british_war_cabinet AST_british_pacific_fleet AST_all_dressed_up AST_overseas_loyalties }
+        #                     cost = -15
+        #                 }
+        #             }
+        #             else_if = {
+        #                 limit = {
+        #                     check_variable = {
+        #                         var = AST_uap_election_win_count
+        #                         value = 2
+        #                         compare = equals
+        #                     }
+        #                 }
+        #                 reduce_focus_completion_cost = {
+        #                     focus = { AST_the_ultimate_overseas_duty AST_eastern_focus AST_australian_command AST_holding_the_battlefield }
+        #                     cost = -15
+        #                 }
+        #             }
+        #             add_to_variable = {
+        #                 var = AST_uap_election_win_count
+        #                 value = 1
+        #                 #tooltip = AST_uap_election_counter_increase
+        #             }
+        #         }
+        #         else_if = {
+        #             limit = {
+        #                 check_variable = {
+        #                     var = AST_ruling_party
+        #                     value = 0
+        #                     compare = equals
+        #                 }
+        #             }
+        #             if = {
+        #                 limit = {
+        #                     check_variable = {
+        #                         var = AST_alp_election_win_count
+        #                         value = 0
+        #                         compare = equals
+        #                     }
+        #                 }
+        #                 reduce_focus_completion_cost = {
+        #                     focus = { AST_no_foreign_battlefields AST_aerial_defense AST_ratify_westminster_adoption_act AST_administer_the_mandate AST_a_rational_request AST_volunteers }
+        #                     cost = -15
+        #                 }
+        #             }
+        #             else_if = {
+        #                 limit = {
+        #                     check_variable = {
+        #                         var = AST_alp_election_win_count
+        #                         value = 1
+        #                         compare = equals
+        #                     }
+        #                 }
+        #                 reduce_focus_completion_cost = {
+        #                     focus = { AST_until_the_tide_of_battle_swings AST_walls_and_whispers AST_united_states_as_our_keystone AST_war_loans }
+        #                     cost = -15
+        #                 }
+        #             }
+        #             else_if = {
+        #                 limit = {
+        #                     check_variable = {
+        #                         var = AST_alp_election_win_count
+        #                         value = 2
+        #                         compare = equals
+        #                     }
+        #                 }
+        #                 reduce_focus_completion_cost = {
+        #                     focus = { AST_bring_on_the_giant AST_conscription_at_last }
+        #                     cost = -15
+        #                 }
+        #             }
+        #             add_to_variable = {
+        #                 var = AST_alp_election_win_count
+        #                 value = 1
+        #             }
+        #         }
+        #         custom_effect_tooltip = AST_natunity_effect_update_tt
+        #     }
+        # }
+    }
+}

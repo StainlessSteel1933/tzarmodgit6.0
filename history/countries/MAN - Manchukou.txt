@@ -87,7 +87,6 @@ add_ideas = {
 	MAN_low_legitimacy_5
 	low_economic_mobilisation
 	COOM_volunteers_minors
-	trade_japan_min
 } 
 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 8000 }
 

@@ -1,11 +1,42 @@
-﻿
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
 RAJ_INF_01 = 
 {
 	name = "Infantry Division"
 
 	for_countries = { RAJ }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -36,10 +67,10 @@ RAJ_INF_01 =
 		25 = { "%dth Indian Division" }				
 		2 = { "%dnd Indian Division" }
 		36 = { "%dth Indian Division" }
-		12 = { "%dnd Indian Division" }
+		12 = { "%dth Indian Division" }
 		39 = { "%dth Indian Division" }
 		3 = { "%drd Indian 'Chindits' Division" }	
-		21 = { "%dnd Indian Division" }
+		21 = { "%dst Indian Division" }
 		1 = { "%dst Indian Division" }			# inactive and fictional units
 		13 = { "%dth Indian Division" }
 		15 = { "%dth Indian Division" }
@@ -127,7 +158,7 @@ RAJ_CAV_01 =
 
 	for_countries = { RAJ }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "cavalry" }
 
@@ -174,7 +205,7 @@ RAJ_MOT_01 =
 
 	for_countries = { RAJ }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "motorized" }
 
@@ -205,10 +236,10 @@ RAJ_MOT_01 =
 		26 = { "%dth Indian 'Tiger Head' Division" }
 		2 = { "%dnd Indian Motor Division" }
 		36 = { "%dth Indian Division" }
-		12 = { "%dnd Indian Motor Division" }
+		12 = { "%dth Indian Motor Division" }
 		39 = { "%dth Indian Motor Division" }
 		3 = { "%drd Indian 'Chindits' Division" }	
-		21 = { "%dnd Indian Motor Division" }
+		21 = { "%dst Indian Motor Division" }
 		1 = { "%dst Indian Motor Division" }	# inactive and fictional units
 		13 = { "%dth Indian Motor Division" }
 		15 = { "%dth Indian Motor Division" }
@@ -296,7 +327,7 @@ RAJ_MEC_01 =
 
 	for_countries = { RAJ }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "mechanized" }
 
@@ -327,10 +358,10 @@ RAJ_MEC_01 =
 		26 = { "%dth Indian 'Tiger Head' Division" }
 		2 = { "%dnd Indian Mechanized Div." }
 		36 = { "%dth Indian Division" }
-		12 = { "%dnd Indian Mechanized Div." }
+		12 = { "%dth Indian Mechanized Div." }
 		39 = { "%dth Indian Mechanized Div." }
 		3 = { "%drd Indian 'Chindits' Division" }	
-		21 = { "%dnd Indian Mechanized Div." }
+		21 = { "%dst Indian Mechanized Div." }
 		1 = { "%dst Indian Mechanized Div." }	# inactive and fictional units
 		13 = { "%dth Indian Mechanized Div." }
 		15 = { "%dth Indian Mechanized Div." }
@@ -418,7 +449,7 @@ RAJ_ARM_01 =
 
 	for_countries = { RAJ }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -437,7 +468,7 @@ RAJ_ARM_01 =
 		44 = { "%dth Indian Armoured Division" }
 		1 = { "%dst Indian Armoured Division" }		# quickly renamed divisions
 		2 = { "%dnd Indian Armoured Division" }
-		33 = { "%dth Indian Armoured Division" }	# fictional divisions, higher numbered first
+		33 = { "%drd Indian Armoured Division" }	# fictional divisions, higher numbered first
 		35 = { "%dth Indian Armoured Division" }
 		37 = { "%dth Indian Armoured Division" }
 		38 = { "%dth Indian Armoured Division" }
@@ -483,7 +514,7 @@ RAJ_PAR_01 =
 
 	for_countries = { RAJ }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "paratrooper" }
 
@@ -531,7 +562,7 @@ RAJ_MAR_01 =
 
 	for_countries = { RAJ }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "marine" }
 
@@ -573,7 +604,7 @@ RAJ_MNT_01 =
 
 	for_countries = { RAJ }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "mountaineers" }
 
@@ -605,9 +636,9 @@ RAJ_MNT_01 =
 		26 = { "%dth Indian 'Tiger Head' Division" }
 		2 = { "%dnd Indian Division" }
 		36 = { "%dth Indian Division" }
-		12 = { "%dnd Indian Division" }
+		12 = { "%dth Indian Division" }
 		39 = { "%dth Indian Division" }
-		21 = { "%dnd Indian Division" }
+		21 = { "%dst Indian Division" }
 		1 = { "%dst Indian Division" }			# inactive and fictional units
 		13 = { "%dth Indian Division" }
 		15 = { "%dth Indian Division" }
@@ -695,7 +726,7 @@ RAJ_GAR_01 =
 
 	for_countries = { RAJ }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -780,3 +811,89 @@ RAJ_GAR_01 =
 	}
 }
 
+RAJ_SIKH_01 = 
+{
+	name = "Sikh Division"
+
+	for_countries = { RAJ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { RAJ_INF_01 }
+
+	fallback_name = "%d Sikh Division"
+
+}
+
+RAJ_RGR_01 = {
+	name = "Chindit Units"
+
+	for_countries = { RAJ }
+
+	can_use = { always = yes }
+
+	division_types = { "ranger_battalion"  }
+
+	fallback_name = "%d Chindits"
+
+	# Names with numbers (only one number per entry)
+	ordered = {
+	1 = { "%dst Chindits" }
+	2 = { "%dnd Chindits" }
+	3 = { "%drd Chindits" }
+	4 = { "%dth Chindits" }
+	5 = { "%dth Chindits" }
+	6 = { "%dth Chindits" }
+	7 = { "%dth Chindits" }
+	8 = { "%dth Chindits" }
+	9 = { "%dth Chindits" }
+	10 = { "%dth Chindits" }
+	11 = { "%dth Chindits" }
+	12 = { "%dth Chindits" }
+	13 = { "%dth Chindits" }
+	14 = { "%dth Chindits" }
+	15 = { "%dth Chindits" }
+	16 = { "%dth Chindits" }
+	17 = { "%dth Chindits" }
+	18 = { "%dth Chindits" }
+	19 = { "%dth Chindits" }
+	20 = { "%dth Chindits" }
+	21 = { "%dst Chindits" }
+	22 = { "%dnd Chindits" }
+	23 = { "%drd Chindits" }
+	24 = { "%dth Chindits" }
+	25 = { "%dth Chindits" }
+	26 = { "%dth Chindits" }
+	27 = { "%dth Chindits" }
+	28 = { "%dth Chindits" }
+	29 = { "%dth Chindits" }
+	30 = { "%dth Chindits" }
+	31 = { "%dst Chindits" }
+	32 = { "%dnd Chindits" }
+	33 = { "%drd Chindits" }
+	34 = { "%dth Chindits" }
+	35 = { "%dth Chindits" }
+	36 = { "%dth Chindits" }
+	37 = { "%dth Chindits" }
+	38 = { "%dth Chindits" }
+	39 = { "%dth Chindits" }
+	40 = { "%dth Chindits" }
+	41 = { "%dst Chindits" }
+	42 = { "%dnd Chindits" }
+	43 = { "%drd Chindits" }
+	44 = { "%dth Chindits" }
+	45 = { "%dth Chindits" }
+	46 = { "%dth Chindits" }
+	47 = { "%dth Chindits" }
+	48 = { "%dth Chindits" }
+	49 = { "%dth Chindits" }
+	50 = { "%dth Chindits" }
+	51 = { "%dst Chindits" }
+	52 = { "%dnd Chindits" }
+	53 = { "%drd Chindits" }
+		
+	}
+}
