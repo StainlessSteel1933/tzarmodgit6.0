@@ -28,7 +28,8 @@ characters = {
 
 		}
 		instance = {
-			
+			allowed = {
+			}
 
 			name = JAP_emperor_hirohito
 
@@ -43,6 +44,12 @@ characters = {
 				traits = { warrior_code emperor_showa imperial_sanction }
 				expire = "1989.1.1.1"
 				id = 700
+			}
+
+			country_leader = {
+				ideology = despotism
+				expire = "1989.1.1.1"
+				id = -1
 			}
 
 		}
@@ -61,11 +68,11 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = despotism
-		#	expire = "1989.1.1.1"
-		#	id = -1
-		#}
+		country_leader = {
+			ideology = despotism
+			expire = "1989.1.1.1"
+			id = -1
+		}
 
 	}
 
@@ -332,7 +339,7 @@ characters = {
 		}
 
 		country_leader = {
-			ideology = japan_militarism_ideology
+			ideology = fascism_ideology
 			traits = { JAP_moderate_politician_neu }
 			expire = "1952.1.1.1"
 			id = -1
@@ -737,10 +744,10 @@ characters = {
 				grand_battle_plan_expert
 			}
 			on_add = {
-				JAP_small_army_faction_gain = yes
+				set_country_flag = JAP_small_army_faction_gain
 			}
 			on_remove = {
-				JAP_small_army_faction_loss = yes
+				clr_country_flag = JAP_small_army_faction_gain
 			}
 		}
 
@@ -785,10 +792,10 @@ characters = {
 				mobile_warfare_expert	# was military_theorist
 			}
 			on_add = {
-				JAP_small_army_faction_gain = yes
+				set_country_flag = JAP_small_army_faction_gain
 			}
 			on_remove = {
-				JAP_small_army_faction_loss = yes
+				clr_country_flag = JAP_small_army_faction_gain
 			}
 		}
 		
@@ -1835,10 +1842,10 @@ characters = {
 				naval_aviation_pioneer
 			}
 			on_add = {
-				JAP_small_naval_faction_gain = yes
+				set_country_flag = JAP_small_naval_faction_gain
 			}
 			on_remove = {
-				JAP_small_naval_faction_loss = yes
+				clr_country_flag = JAP_small_naval_faction_gain
 			}
 		}
 		
@@ -2325,10 +2332,10 @@ characters = {
 			}
 			traits = { naval_theorist }
 			on_add = {
-				JAP_small_naval_faction_gain = yes
+				set_country_flag = JAP_small_naval_faction_gain
 			}
 			on_remove = {
-				JAP_small_naval_faction_loss = yes
+				clr_country_flag = JAP_small_naval_faction_gain
 			}
 		}
 
@@ -2490,10 +2497,10 @@ characters = {
 				military_theorist
 			}
 			on_add = {
-				JAP_small_army_faction_gain = yes
+				set_country_flag = JAP_small_army_faction_gain
 			}
 			on_remove = {
-				JAP_small_army_faction_loss = yes
+				clr_country_flag = JAP_small_army_faction_gain
 			}
 		}
 
@@ -3483,10 +3490,10 @@ characters = {
 			}
 
 			on_add = {
-				JAP_small_government_faction_gain = yes
+				set_country_flag = JAP_small_government_faction_gain
 			}
 			on_remove = {
-				JAP_small_government_faction_loss = yes
+				clr_country_flag = JAP_small_government_faction_gain
 			}
 
 			ai_will_do = {
@@ -3939,10 +3946,10 @@ characters = {
 				JAP_state_shinto_advocate
 			}
 			on_add = {
-				JAP_small_army_faction_gain = yes
+				set_country_flag = JAP_small_army_faction_gain
 			}
 			on_remove = {
-				JAP_small_army_faction_loss = yes
+				clr_country_flag = JAP_small_army_faction_gain
 			}
 			ai_will_do = {
 				base = 1
@@ -4522,10 +4529,10 @@ characters = {
 			}
 
 			on_add = {
-				JAP_small_zaibatsu_faction_gain = yes
+				set_country_flag = JAP_small_zaibatsu_faction_gain
 			}
 			on_remove = {
-				JAP_small_zaibatsu_faction_loss = yes
+				clr_country_flag = JAP_small_zaibatsu_faction_gain
 			}
 
 		}
@@ -4693,10 +4700,10 @@ characters = {
 			}
 
 			on_add = {
-				JAP_small_zaibatsu_faction_gain = yes
+				set_country_flag = JAP_small_zaibatsu_faction_gain
 			}
 			on_remove = {
-				JAP_small_zaibatsu_faction_loss = yes
+				clr_country_flag = JAP_small_zaibatsu_faction_gain
 			}
 
 		}

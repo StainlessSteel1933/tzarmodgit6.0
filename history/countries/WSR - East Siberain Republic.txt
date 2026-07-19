@@ -45,7 +45,7 @@ set_technology = {
 
 add_ideas = {
 	limited_conscription
-	autraky_generic
+	autarky_generic
 	planned_economy
 	prewar_training
 }

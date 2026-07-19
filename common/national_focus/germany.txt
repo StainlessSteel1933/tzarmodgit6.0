@@ -39,11 +39,10 @@ focus_tree = {
 			add_political_power = 120
 			add_war_support = 0.1 
 			army_experience = 25
-			add_named_threat = { threat = 5 name = GER_rhineland 
-				hidden_effect = {
+			add_named_threat = { threat = 5 name = GER_rhineland }
+			hidden_effect = {
 				news_event = { hours = 6 id = news.25 }
-				}	
-			}	
+			}
 		}		
 	}
 
@@ -514,12 +513,10 @@ focus_tree = {
 		text = "Africa Taken"
 		icon = GFX_focus_ITA_mare_nostrum
 		prerequisite = { focus = GER_A_Stable_Economy }
-		x = 0
 		x = 1
 		y = 1
 		relative_position_id = GER_A_Stable_Economy
 		cost = 10
-		cost = 5
 		available = {
 			679 = {is_controlled_by_ROOT_or_ally = yes}
 			447 = {is_controlled_by_ROOT_or_ally = yes}
@@ -628,7 +625,7 @@ focus_tree = {
 		relative_position_id = GER_fall_gelb
 		available = {
 			has_completed_focus = GER_four_year_plan
-			date>1941.10.1
+			date > 1941.10.1
 		}
 		x = 2
 		y = 2
@@ -3186,7 +3183,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				set_technology = { #cruiser_submarines = 1 }
+				# set_technology = { cruiser_submarines = 1 }
 			}
 		}
 		
@@ -3219,7 +3216,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				set_technology = { #cruiser_submarines = 1 }
+				# set_technology = { cruiser_submarines = 1 }
 			}
 		}
 	}
@@ -4410,8 +4407,7 @@ focus_tree = {
 						cost = 1
 						
 						completion_reward = {
-							custom_effect_tooltip = "This focus is just here so you can see the effect of Total War
-							"
+						custom_effect_tooltip = "This focus is just here so you can see the effect of Total War"
 							add_ideas = the_great_turn
 						}
 					}

@@ -181,7 +181,7 @@ units = {
 		start_experience_factor = 0.01
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 	} 
-	v
+
 	division = { # "1a Divisione Alpina 'Taurinense'" 
 		division_name = {
 			is_name_ordered = yes

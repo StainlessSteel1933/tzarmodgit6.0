@@ -294,7 +294,7 @@ foreign_politics = {
              complete_effect = {
 
 
-                 JAP_big_army_faction_gain = yes
+                 set_country_flag = JAP_big_army_faction_gain
                  set_country_flag = {
                      flag = JAP_interfered_in_imperial_influence_flag
                      value = 1
@@ -331,7 +331,7 @@ foreign_politics = {
 	 		}
 	 		complete_effect = {
 
-	 			JAP_big_army_faction_loss = yes
+	 			clr_country_flag = JAP_big_army_faction_gain
 	 			set_country_flag = {
 	 				flag = JAP_interfered_in_imperial_influence_flag
 	 				value = 1
@@ -370,7 +370,7 @@ foreign_politics = {
 	 		complete_effect = {
 
 
-	 			JAP_big_naval_faction_gain = yes
+	 			set_country_flag = JAP_big_naval_faction_gain
 	 			set_country_flag = {
 	 				flag = JAP_interfered_in_imperial_influence_flag
 	 				value = 1
@@ -407,7 +407,7 @@ foreign_politics = {
 	 		complete_effect = {
 
 
-	 			JAP_big_naval_faction_loss = yes
+	 			clr_country_flag = JAP_big_naval_faction_gain
 	 			set_country_flag = {
 	 				flag = JAP_interfered_in_imperial_influence_flag
 	 				value = 1
@@ -448,7 +448,7 @@ foreign_politics = {
 	 		complete_effect = {
 
 
-	 			JAP_big_zaibatsu_faction_gain = yes
+	 			set_country_flag = JAP_big_zaibatsu_faction_gain
 	 			set_country_flag = {
 	 				flag = JAP_interfered_in_imperial_influence_flag
 	 				value = 1
@@ -485,7 +485,7 @@ foreign_politics = {
 
 	 		}
 	 		complete_effect = {
-	 			JAP_big_zaibatsu_faction_loss = yes
+	 			clr_country_flag = JAP_big_zaibatsu_faction_gain
 	 			set_country_flag = {
 	 				flag = JAP_interfered_in_imperial_influence_flag
 	 				value = 1
@@ -524,7 +524,7 @@ foreign_politics = {
 	 			}
 	 		}
 	 		complete_effect = {
-	 			JAP_big_government_faction_gain = yes
+	 			set_country_flag = JAP_big_government_faction_gain
 	 			set_country_flag = {
 	 				flag = JAP_interfered_in_imperial_influence_flag
 	 				value = 1
@@ -562,7 +562,7 @@ foreign_politics = {
 	 		}
 	 		complete_effect = {
 
-	 			JAP_big_government_faction_loss = yes
+	 			clr_country_flag = JAP_big_government_faction_gain
 	 			set_country_flag = {
 	 				flag = JAP_interfered_in_imperial_influence_flag
 	 				value = 1
@@ -614,7 +614,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_small_army_faction_gain = yes
+			set_country_flag = JAP_small_army_faction_gain
 		}
 	}
 	JAP_Danne_big_army_faction_increase_debugging = {
@@ -629,7 +629,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_big_army_faction_gain = yes
+			set_country_flag = JAP_big_army_faction_gain
 		}
 	}
 
@@ -645,7 +645,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_small_army_faction_loss = yes
+			clr_country_flag = JAP_small_army_faction_gain
 		}
 	}
 	JAP_Danne_big_army_faction_decrease_debugging = {
@@ -660,7 +660,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_big_army_faction_loss = yes
+			clr_country_flag = JAP_big_army_faction_gain
 		}
 	}
 
@@ -677,7 +677,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_small_naval_faction_gain = yes
+			set_country_flag = JAP_small_naval_faction_gain
 		}
 	}
 	JAP_Danne_big_navy_faction_increase_debugging = {
@@ -692,7 +692,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_big_naval_faction_gain = yes
+			set_country_flag = JAP_big_naval_faction_gain
 		}
 	}
 	JAP_Danne_small_navy_faction_decrease_debugging = {
@@ -707,7 +707,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_small_naval_faction_loss = yes
+			clr_country_flag = JAP_small_naval_faction_gain
 		}
 	}
 	JAP_Danne_big_navy_faction_decrease_debugging = {
@@ -722,7 +722,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_big_naval_faction_loss = yes
+			clr_country_flag = JAP_big_naval_faction_gain
 		}
 	}
 	#ZAIBATSU
@@ -738,7 +738,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_small_zaibatsu_faction_gain = yes
+			set_country_flag = JAP_small_zaibatsu_faction_gain
 		}
 	}
 	JAP_Danne_big_zaibatsu_faction_increase_debugging = {
@@ -753,7 +753,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_big_zaibatsu_faction_gain = yes
+			set_country_flag = JAP_big_zaibatsu_faction_gain
 		}
 	}
 	JAP_Danne_small_zaibatsu_faction_decrease_debugging = {
@@ -768,7 +768,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_small_zaibatsu_faction_loss = yes
+			clr_country_flag = JAP_small_zaibatsu_faction_gain
 		}
 	}
 	JAP_Danne_big_zaibatsu_faction_decrease_debugging = {
@@ -783,7 +783,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_big_zaibatsu_faction_loss = yes
+			clr_country_flag = JAP_big_zaibatsu_faction_gain
 		}
 	}
 	#GOVERNMENT
@@ -799,7 +799,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_small_government_faction_gain = yes
+			set_country_flag = JAP_small_government_faction_gain
 		}
 	}
 	JAP_Danne_big_government_faction_increase_debugging = {
@@ -814,7 +814,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_big_government_faction_gain = yes
+			set_country_flag = JAP_big_government_faction_gain
 		}
 	}
 	JAP_Danne_small_government_faction_decrease_debugging = {
@@ -829,7 +829,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_small_government_faction_loss = yes
+			clr_country_flag = JAP_small_government_faction_gain
 		}
 	}
 	JAP_Danne_big_government_faction_decrease_debugging = {
@@ -844,7 +844,7 @@ JAP_Danne_debugging = {
 			has_dynamic_modifier = { modifier = JAP_imperial_influence_dm }
 		}
 		complete_effect = {
-			JAP_big_government_faction_loss = yes
+			clr_country_flag = JAP_big_government_faction_gain
 		}
 	}
 	JAP_put_hirohito_in_house_arrest_debugging = {
@@ -6584,7 +6584,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_army_faction_gain = yes
+			set_country_flag = JAP_small_army_faction_gain
 			
 		}
 
@@ -6595,7 +6595,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_army_faction_loss = yes
+				clr_country_flag = JAP_small_army_faction_gain
 			}
 		}
 	}
@@ -6645,7 +6645,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_army_faction_gain = yes
+			set_country_flag = JAP_small_army_faction_gain
 			
 		}
 
@@ -6656,7 +6656,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_army_faction_loss = yes
+				clr_country_flag = JAP_small_army_faction_gain
 				
 			}
 		}
@@ -6762,7 +6762,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_army_faction_gain = yes
+			set_country_flag = JAP_small_army_faction_gain
 			
 			clr_country_flag = JAP_military_demands_conscription_law_change
 
@@ -6815,7 +6815,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_army_faction_loss = yes
+				clr_country_flag = JAP_small_army_faction_gain
 			}
 
 			hidden_effect = {
@@ -6940,7 +6940,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_army_faction_gain = yes
+			set_country_flag = JAP_small_army_faction_gain
 			
 			hidden_effect = {
 				IF = {
@@ -6983,7 +6983,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_army_faction_loss = yes
+				clr_country_flag = JAP_small_army_faction_gain
 			}
 			hidden_effect = {
 				IF = {
@@ -7056,7 +7056,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_army_faction_gain = yes
+			set_country_flag = JAP_small_army_faction_gain
 			
 		}
 
@@ -7067,7 +7067,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_army_faction_loss = yes
+				clr_country_flag = JAP_small_army_faction_gain
 				
 			}
 		}
@@ -7127,7 +7127,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_army_faction_gain = yes
+			set_country_flag = JAP_small_army_faction_gain
 			
 		}
 
@@ -7138,7 +7138,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_army_faction_loss = yes
+				clr_country_flag = JAP_small_army_faction_gain
 				
 			}
 		}
@@ -7187,7 +7187,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_army_faction_gain = yes
+			set_country_flag = JAP_small_army_faction_gain
 			
 		}
 
@@ -7198,7 +7198,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_army_faction_loss = yes
+				clr_country_flag = JAP_small_army_faction_gain
 				
 			}
 		}
@@ -7247,7 +7247,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_naval_faction_gain = yes
+			set_country_flag = JAP_small_naval_faction_gain
 			
 		}
 
@@ -7258,7 +7258,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_naval_faction_loss = yes
+				clr_country_flag = JAP_small_naval_faction_gain
 				
 			}
 		}
@@ -7309,7 +7309,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_naval_faction_gain = yes
+			set_country_flag = JAP_small_naval_faction_gain
 			
 		}
 
@@ -7320,7 +7320,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_naval_faction_loss = yes
+				clr_country_flag = JAP_small_naval_faction_gain
 				
 			}
 		}
@@ -7425,7 +7425,7 @@ JAP_imperial_influence_decision_cat = {
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
 			clr_country_flag = JAP_military_demands_conscription_law_change
-			JAP_small_naval_faction_gain = yes
+			set_country_flag = JAP_small_naval_faction_gain
 			
 			hidden_effect = {
 				IF = {
@@ -7475,7 +7475,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_naval_faction_loss = yes
+				clr_country_flag = JAP_small_naval_faction_gain
 				
 			}
 			hidden_effect = {
@@ -7563,7 +7563,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_naval_faction_gain = yes
+			set_country_flag = JAP_small_naval_faction_gain
 			
 		}
 
@@ -7574,7 +7574,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_naval_faction_loss = yes
+				clr_country_flag = JAP_small_naval_faction_gain
 				
 			}
 		}
@@ -7636,7 +7636,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_naval_faction_gain = yes
+			set_country_flag = JAP_small_naval_faction_gain
 			
 		}
 
@@ -7647,7 +7647,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_naval_faction_loss = yes
+				clr_country_flag = JAP_small_naval_faction_gain
 				
 			}
 		}
@@ -7697,7 +7697,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_naval_faction_gain = yes
+			set_country_flag = JAP_small_naval_faction_gain
 			
 		}
 
@@ -7708,7 +7708,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_naval_faction_loss = yes
+				clr_country_flag = JAP_small_naval_faction_gain
 				
 			}
 		}
@@ -7764,7 +7764,7 @@ JAP_imperial_influence_decision_cat = {
 			add_command_power = 25
 			add_war_support = 0.05
 			custom_effect_tooltip = generic_skip_one_line_tt
-			JAP_big_naval_faction_gain = yes
+			set_country_flag = JAP_big_naval_faction_gain
 		}
 
 		timeout_effect = { #Fails
@@ -7781,7 +7781,7 @@ JAP_imperial_influence_decision_cat = {
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 				
-				JAP_small_naval_faction_loss = yes
+				clr_country_flag = JAP_small_naval_faction_gain
 			}
 		}
 	}
@@ -7827,7 +7827,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_zaibatsu_faction_gain = yes
+			set_country_flag = JAP_small_zaibatsu_faction_gain
 			
 		}
 
@@ -7838,7 +7838,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_zaibatsu_faction_loss = yes
+				clr_country_flag = JAP_small_zaibatsu_faction_gain
 				
 			}
 		}
@@ -7896,7 +7896,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_zaibatsu_faction_gain = yes
+			set_country_flag = JAP_small_zaibatsu_faction_gain
 			
 		}
 
@@ -7907,7 +7907,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_zaibatsu_faction_loss = yes
+				clr_country_flag = JAP_small_zaibatsu_faction_gain
 				
 			}
 		}
@@ -7982,7 +7982,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_zaibatsu_faction_gain = yes
+			set_country_flag = JAP_small_zaibatsu_faction_gain
 			
 
 			hidden_effect = {
@@ -8021,7 +8021,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_zaibatsu_faction_loss = yes
+				clr_country_flag = JAP_small_zaibatsu_faction_gain
 			}
 
 			hidden_effect = {
@@ -8110,7 +8110,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_zaibatsu_faction_gain = yes
+			set_country_flag = JAP_small_zaibatsu_faction_gain
 			
 		}
 
@@ -8121,7 +8121,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_zaibatsu_faction_loss = yes
+				clr_country_flag = JAP_small_zaibatsu_faction_gain
 				
 			}
 		}
@@ -8170,7 +8170,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_government_faction_gain = yes
+			set_country_flag = JAP_small_government_faction_gain
 			
 		}
 
@@ -8181,7 +8181,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_government_faction_loss = yes
+				clr_country_flag = JAP_small_government_faction_gain
 				
 			}
 		}
@@ -8250,7 +8250,7 @@ JAP_imperial_influence_decision_cat = {
 
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_government_faction_gain = yes
+			set_country_flag = JAP_small_government_faction_gain
 			
 			hidden_effect = {
 				IF = {
@@ -8281,7 +8281,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_government_faction_loss = yes
+				clr_country_flag = JAP_small_government_faction_gain
 			}
 			hidden_effect = {
 				IF = {
@@ -8343,7 +8343,7 @@ JAP_imperial_influence_decision_cat = {
 			clr_country_flag = JAP_government_faction_demands_more_influence
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_government_faction_gain = yes
+			set_country_flag = JAP_small_government_faction_gain
 			
 		}
 
@@ -8355,7 +8355,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_government_faction_loss = yes
+				clr_country_flag = JAP_small_government_faction_gain
 				
 			}
 		}
@@ -8398,7 +8398,7 @@ JAP_imperial_influence_decision_cat = {
 			clr_country_flag = JAP_government_faction_demands_more_influence
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_government_faction_gain = yes
+			set_country_flag = JAP_small_government_faction_gain
 			
 		}
 
@@ -8410,7 +8410,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_government_faction_loss = yes
+				clr_country_flag = JAP_small_government_faction_gain
 				
 			}
 		}
@@ -8453,7 +8453,7 @@ JAP_imperial_influence_decision_cat = {
 			clr_country_flag = JAP_government_faction_demands_more_influence
 			JAP_faction_demand_finalize_mission_effect = yes
 			JAP_faction_demand_add_to_successful_missions = yes
-			JAP_small_government_faction_gain = yes
+			set_country_flag = JAP_small_government_faction_gain
 			
 		}
 
@@ -8465,7 +8465,7 @@ JAP_imperial_influence_decision_cat = {
 				hours = 1
 			}
 			effect_tooltip = {
-				JAP_small_government_faction_loss = yes
+				clr_country_flag = JAP_small_government_faction_gain
 				
 			}
 		}
