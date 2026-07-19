@@ -4,7 +4,7 @@ fra_election_inlay_window = {
 
     internal = yes
     visible = {
-        has_completed_focus = FRA_form_the_popular_front
+        has_completed_focus = FRA_election
         has_government = democratic
     }
 

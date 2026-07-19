@@ -449,6 +449,7 @@ FRA_economy_dynamic_modifier_tt: "Modifies §Y$FRA_economy$§! by:"
 FRA_Army_tt: "Modifies §Y$FRA_Army$§! by:"
 
 FRA_sfio_not_ruling_tt: "§YS.F.I.O§! is not leading the Popular Front."
+FRA_increase_parti_radical_support_tt: "Increase support for §YParti Radical§! by §G20%§!."
 
 FRA_gamelin_gambit:0 "Gamelin's Gambit"
 FRA_gamelin_gambit_desc:0 "Gamelin has returned from another fruitless diplomatic mission to establish a Franco-Soviet Alliance againist Germany. Wait whos that behind him..."

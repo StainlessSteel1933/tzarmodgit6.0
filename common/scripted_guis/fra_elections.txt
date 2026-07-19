@@ -1,12 +1,12 @@
 scripted_gui = {
-	fra_elections = {
+	# fra_elections = {
 	
-		context_type = decision_category 
+	# 	context_type = decision_category 
 		
-		window_name = "fra_elections_ui_window"
+	# 	window_name = "fra_elections_ui_window"
 
-		visible = { always = yes}
-	}
+	# 	visible = { always = yes}
+	# }
 	balkan_war = {
 		context_type = decision_category
 		window_name = "Balkan_war_ui_window"

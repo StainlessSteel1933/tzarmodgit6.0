@@ -5,6 +5,6 @@ generic_election_empty_inlay_window = {
     internal = yes
     visible = {
         NOT = {
-            has_completed_focus = FRA_form_the_popular_front
+            has_completed_focus = FRA_election
         }
     }
