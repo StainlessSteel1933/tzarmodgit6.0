@@ -118,6 +118,9 @@ technology_categories = {
 	pykrete_tech
 	transport_planes_cat
 
+	tank_modules
+	generic
+
 	mio_cat_tech_all_armor_and_modules #Includes modules and chassis (DOES NOT INCLUDE ARMORED CARS)
 	mio_cat_tech_light_armor_and_modules #Includes modules and stand-alone Amphibious Chassis
 	mio_cat_tech_medium_armor_and_modules #Includes modules and Modern Tank

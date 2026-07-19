@@ -3,7 +3,7 @@ technologies = {
 	basic_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
-		equipment_conversion_speed = 0.2
+		# equipment_conversion_speed = 0.2
 		
 		path = {
 			leads_to_tech = improved_machine_tools 
@@ -41,7 +41,7 @@ technologies = {
 	improved_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
-		equipment_conversion_speed = 0.2
+		# equipment_conversion_speed = 0.2
 
 		path = {
 			leads_to_tech = advanced_machine_tools 
@@ -79,7 +79,7 @@ technologies = {
 	advanced_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
-		equipment_conversion_speed = 0.2
+		# equipment_conversion_speed = 0.2
 		
 		path = {
 			leads_to_tech = assembly_line_production 
@@ -112,7 +112,7 @@ technologies = {
 	assembly_line_production = {
 	
 		production_factory_max_efficiency_factor = 0.1
-		equipment_conversion_speed = 0.2
+		# equipment_conversion_speed = 0.2
 		
 		path = {
 			leads_to_tech = flexible_line
@@ -313,9 +313,9 @@ technologies = {
 		
 		research_cost = 2
 		
-		XOR = {
-			dispersed_industry
-		}
+		# XOR = {
+		# 	dispersed_industry
+		# }
 		
 		folder = {
 			name = industry_folder
@@ -534,25 +534,19 @@ technologies = {
 	
 	dispersed_industry = {
 
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
-		#industrial_capacity_factory_powered = 0.05 
-		#industrial_capacity_dockyard_powered = 0.05 
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.15
-		global_building_slots_factor = 0.2
+		production_factory_start_efficiency_factor = 0.025
 		
 		path = {
 			leads_to_tech = dispersed_industry2 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 0.6
 		
-		XOR = {
-			concentrated_industry
-		}
+		# XOR = {
+		# 	concentrated_industry
+		# }
 		
 		folder = {
 			name = industry_folder
@@ -610,21 +604,15 @@ technologies = {
 	
 	dispersed_industry2 = {
 
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
-		#industrial_capacity_factory_powered = 0.075 
-		#industrial_capacity_dockyard_powered = 0.075 
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.10
-		global_building_slots_factor = 0.2
-		
+		production_factory_start_efficiency_factor = 0.025
+
 		path = {
 			leads_to_tech = dispersed_industry3 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 0.6
 		start_year = 1937
 		
 		folder = {
@@ -652,22 +640,16 @@ technologies = {
 	}
 	
 	dispersed_industry3 = {
-
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
-		#industrial_capacity_factory_powered = 0.075 #TODO SEA set value
-		#industrial_capacity_dockyard_powered = 0.075 #TODO SEA set value
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.10
-		global_building_slots_factor = 0.2
 		
+		line_change_production_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.025
+
 		path = {
 			leads_to_tech = dispersed_industry4 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 0.6
 		start_year = 1939
 		
 		folder = {
@@ -696,21 +678,15 @@ technologies = {
 	
 	dispersed_industry4 = {
 
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
-		#industrial_capacity_factory_powered = 0.1 
-		#industrial_capacity_dockyard_powered = 0.1 
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.10
-		global_building_slots_factor = 0.2
-		
+		line_change_production_efficiency_factor = 0.08
+		production_factory_start_efficiency_factor = 0.025
+
 		path = {
 			leads_to_tech = dispersed_industry5 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 0.6
 		start_year = 1941
 		
 		folder = {
@@ -738,18 +714,11 @@ technologies = {
 	}
 	
 	dispersed_industry5 = {
+		
+		line_change_production_efficiency_factor = 0.06
+		production_factory_start_efficiency_factor = 0.025
 
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
-		#industrial_capacity_factory_powered = 0.1 
-		#industrial_capacity_dockyard_powered = 0.1 
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
-		industry_air_damage_factor = -0.10
-		global_building_slots_factor = 0.2
-		
-		
-		research_cost = 2
+		research_cost = 0.6
 		start_year = 1943
 		
 		folder = {
