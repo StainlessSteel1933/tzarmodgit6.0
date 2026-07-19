@@ -28,6 +28,11 @@ technologies = {
 			leads_to_tech = tech_engineers
 			research_cost_coeff = 1
 		}
+		
+		path = {
+			leads_to_tech = tech_flamethrower
+			research_cost_coeff = 1
+		}
 
 		path = {
 			leads_to_tech = tech_recon
@@ -2439,4 +2444,222 @@ technologies = {
 		}
 	}
 
+	#### tzarmod flamethrower tech
+
+	tech_flamethrower = {
+		special_project_specialization = { specialization_land }
+		enable_subunits = {
+			flamethrower
+			light_flame_tank
+			medium_flame_tank
+			heavy_flame_tank
+			}
+		
+		enable_equipment_modules = {
+			flamethrower
+			# lc_flamethrower_turret
+		}
+		
+		path = {
+			leads_to_tech = tech_flamethrower2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @1936 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_flamethrower2 = {
+		special_project_specialization = { specialization_land }
+		flamethrower = {
+			soft_attack = 0.03
+			fort = {
+				defence = 0.05
+				attack = 0.10
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		light_flame_tank = {
+			soft_attack = 0.03
+			fort = {
+				defence = 0.05
+				attack = 0.10
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		medium_flame_tank = {
+			soft_attack = 0.03
+			fort = {
+				defence = 0.05
+				attack = 0.10
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		heavy_flame_tank = {
+			soft_attack = 0.03
+			fort = {
+				defence = 0.05
+				attack = 0.10
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		
+		path = {
+			leads_to_tech = tech_flamethrower3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @1939 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_flamethrower3 = {
+		special_project_specialization = { specialization_land }		
+		flamethrower = {
+			soft_attack = 0.03
+			urban = {
+				attack = 0.05	
+				defence = 0.05
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		light_flame_tank = {
+			soft_attack = 0.03
+			urban = {
+				attack = 0.05	
+				defence = 0.05
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		medium_flame_tank = {
+			soft_attack = 0.03
+			urban = {
+				attack = 0.05	
+				defence = 0.05
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		heavy_flame_tank = {
+			soft_attack = 0.03
+			urban = {
+				attack = 0.05	
+				defence = 0.05
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+
+
+		path = {
+			leads_to_tech = tech_flamethrower4
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @1942 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_flamethrower4 = {
+		special_project_specialization = { specialization_land }
+		flamethrower = {
+			soft_attack = 0.05
+			fort = {
+				attack = 0.1
+			}
+		}
+		light_flame_tank = {
+			soft_attack = 0.05
+			fort = {
+				attack = 0.1
+			}
+		}
+		medium_flame_tank = {
+			soft_attack = 0.05
+			fort = {
+				attack = 0.1
+			}
+		}
+		heavy_flame_tank = {
+			soft_attack = 0.05
+			fort = {
+				attack = 0.1
+			}
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @1945 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
 }

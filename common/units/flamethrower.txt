@@ -1,0 +1,78 @@
+sub_units = {
+	flamethrower = {
+		abbreviation = "FT"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		active = no
+		affects_speed = no
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			
+			category_army
+		}
+
+	
+		#combat_width = 1
+	
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 35
+		default_morale = 0.3
+		manpower = 500
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.05
+		
+		breakthrough = 0.65
+		soft_attack = -0.65
+		defense = -1.0
+
+		essential = {
+			support_equipment
+			infantry_equipment
+			artillery_equipment
+		}
+
+		need = {
+			support_equipment = 50
+			infantry_equipment = 250
+			artillery_equipment = 24
+		}
+
+		can_be_parachuted = yes
+
+		urban = {
+			defence = 0.05
+			attack = 0.05
+		}
+
+		marsh = {
+			movement = -0.05
+		}
+
+		fort = {
+			attack = 0.1
+			defence = 0.05
+		}
+
+		river = {
+			movement = -0.05
+		}
+
+		amphibious = {
+			movement = -0.05
+		}
+
+		same_support_type = flame
+	}
+}
