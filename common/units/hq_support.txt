@@ -29,7 +29,7 @@ sub_units = {
 		combat_width = 0
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		#Size Definitions
 		max_strength = 1
@@ -84,7 +84,7 @@ sub_units = {
 		combat_width = 0
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		#Size Definitions
 		max_strength = 1
@@ -144,7 +144,7 @@ sub_units = {
 		combat_width = 0
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		#Size Definitions
 		max_strength = 1
@@ -201,7 +201,7 @@ sub_units = {
 		combat_width = 0
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		#Size Definitions
 		max_strength = 1
@@ -248,7 +248,7 @@ sub_units = {
 		combat_width = 0
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		deployed_leader_modifiers = {
 			attrition = -0.1
@@ -309,7 +309,7 @@ sub_units = {
 		combat_width = 0
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		#Size Definitions
 		max_strength = 1
@@ -364,7 +364,7 @@ sub_units = {
 		combat_width = 0
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+	
 
 		#Size Definitions
 		max_strength = 1
@@ -419,7 +419,7 @@ sub_units = {
 		combat_width = 0
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		#Size Definitions
 		max_strength = 1
@@ -470,7 +470,7 @@ sub_units = {
 		combat_width = 0
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		#Size Definitions
 		max_strength = 1
@@ -522,7 +522,7 @@ sub_units = {
 		combat_width = 0
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		#Size Definitions
 		max_strength = 1
@@ -573,7 +573,7 @@ sub_units = {
 		combat_width = 0
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		#Size Definitions
 		max_strength = 1
@@ -617,10 +617,10 @@ sub_units = {
 		}
 
 		regimental = no
-		combat_width = 2
+		combat_width = 10
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		#Size Definitions
 		max_strength = 15
@@ -660,10 +660,10 @@ sub_units = {
 			category_vehicle_infantry
 		}
 
-		combat_width = 2
+		combat_width = 10
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		#Size Definitions
 		max_strength = 15
@@ -735,10 +735,10 @@ sub_units = {
 			category_paratroopers
 		}
 
-		combat_width = 2
+		combat_width = 10
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		#Size Definitions
 		max_strength = 14
@@ -780,11 +780,11 @@ sub_units = {
 		}
 
 
-		combat_width = 2
+		combat_width = 10
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
 		deployment_cost = 3
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		need = {
 			infantry_equipment = 40
@@ -851,10 +851,10 @@ sub_units = {
 			category_army
 		}
 
-		combat_width = 2
+		combat_width = 10
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
-		required_dlc = { "Thunder at Our Gates" }
+		
 
 		need = {
 			infantry_equipment = 40
@@ -929,7 +929,6 @@ sub_units = {
 		allow_in_army_hq = yes
 		allow_in_non_army_hq = no
 		deployment_cost = 3
-		required_dlc = { "Thunder at Our Gates" }
 
 		forest = {
 		    attack = -0.40
@@ -964,7 +963,7 @@ sub_units = {
 			attack = 0.1
 		}
 
-		combat_width = 2
+		combat_width = 10
 
 		need = {
 			infantry_equipment = 40
