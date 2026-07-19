@@ -102,8 +102,8 @@ sub_units = {
 
 		# EQUIPMENT NEEDED
 		need = {
-			anti_air_equipment = 30
-			mechanized_equipment = 10
+			anti_air_equipment = 36
+			mechanized_equipment = 36
 		}
 
 		# REQUIRED EQUIPMENT
@@ -178,8 +178,8 @@ sub_units = {
 
 		# EQUIPMENT NEEDED
 		need = {
-			artillery_equipment = 30
-			mechanized_equipment = 10
+			artillery_equipment = 36
+			mechanized_equipment = 36
 		}
 
 		# REQUIRED EQUIPMENT
@@ -263,8 +263,8 @@ sub_units = {
 		
 		# EQUIPMENT NEEDED
 		need = {
-			anti_tank_equipment = 30
-			mechanized_equipment = 10
+			anti_tank_equipment = 36
+			mechanized_equipment = 36
 		}
 
 		# REQUIRED EQUIPMENT
