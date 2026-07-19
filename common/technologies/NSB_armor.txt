@@ -2944,7 +2944,44 @@ technologies = {
 	#######################################
 	#### tank gun begins here #############
 	#######################################
-	
+	new_tank_guns = {	
+
+		path = {
+			leads_to_tech = heavy_guns
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = medium_guns
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			tank_close_support_gun
+			tank_auto_cannon
+			tank_anti_air_cannon
+			tank_heavy_machine_gun
+			
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -7 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+		tank_modules
+		mio_cat_tech_light_armor_and_modules
+		generic
+		armor
+		}
+	}
+
 	medium_guns = {	
 		special_project_specialization = { specialization_land }
 		path = {
@@ -3252,10 +3289,10 @@ technologies = {
 			tank_high_velocity_cannon_2
 			tank_anti_air_cannon_2
 			tank_small_cannon_3
-			lc_high_velocity_cannon_turret
-			lc_assault_gun
-			lc_heavy_high_velocity_cannons
-			lc_high_impact_obliterator_cannon
+			# lc_high_velocity_cannon_turret
+			# lc_assault_gun
+			# lc_heavy_high_velocity_cannons
+			# lc_high_impact_obliterator_cannon
 		}
 
 		research_cost = 1
