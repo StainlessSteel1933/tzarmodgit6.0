@@ -2268,7 +2268,7 @@ focus = {
 		complete_tooltip = {
 			army_experience = 75
 			custom_effect_tooltip = YUG_army_improvement_medium
-			add_to_variable = {YUG_army value = -0.15 }
+			# add_to_variable = {YUG_army value = -0.15 }
 		}
 	}
 
