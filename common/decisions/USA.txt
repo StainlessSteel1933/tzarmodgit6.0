@@ -609,7 +609,7 @@ war_measures = {
 		}
 
 		available = {
-			629 = { NOT = { is_controlled_by = USA }}
+			surrender_progress > 0.05
 		}
 
 		cost = 50

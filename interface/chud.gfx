@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_FRA_edouardaladierpartylogo"
+		texturefile = "gfx/interface/chud/edouardaladierpartylogo.png"
+	}
+
+	spriteType = {
+		name = "GFX_FRA_leonblumpartylogo"
+		texturefile = "gfx/interface/chud/leonblumpartylogo.png"
+	}
+
+}

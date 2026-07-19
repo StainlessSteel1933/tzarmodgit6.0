@@ -71,25 +71,25 @@ on_actions = {
 			}
 		}
 	}
-	on_startup = {
-	effect = {
-		if = {
-				limit = {
-					has_game_rule = {
-						rule = debloat_equipment
-						option = DNIGG_ENBALED
-					}
-				}
-				every_country = {
-				limit = {
-				}
-				add_timed_idea = {
-				    idea = inf_debloat
-				    days = 9999
-				}
-				}
+	# on_startup = {
+	# effect = {
+	# 	if = {
+	# 			limit = {
+	# 				has_game_rule = {
+	# 					rule = debloat_equipment
+	# 					option = DNIGG_ENBALED
+	# 				}
+	# 			}
+	# 			every_country = {
+	# 			limit = {
+	# 			}
+	# 			add_timed_idea = {
+	# 			    idea = inf_debloat
+	# 			    days = 9999
+	# 			}
+	# 			}
 
-			}
-	}
-	}
+	# 		}
+	# }
+	# }
 }

@@ -1930,7 +1930,6 @@ operations = {
 		icon = GFX_decision_generic_prepare_civil_war
 		
 		available = {
-			has_completed_focus = GER_wunderwaffe3
 		}
 
 		cost = 50
@@ -1940,7 +1939,7 @@ operations = {
 			factor = 0
 		}
 		visible = {
-			has_completed_focus = GER_wunderwaffe3
+			has_completed_focus = GER_wunderwaffe
 		}
 		days_remove = 180
 		modifier = {
@@ -1965,7 +1964,6 @@ operations = {
 		icon = generic_construction
 
 		available = {
-			has_completed_focus = GER_wunderwaffe3
 		}
 
 		cost = 50
@@ -1975,7 +1973,7 @@ operations = {
 			factor = 0
 		}
 		visible = {
-			has_completed_focus = GER_wunderwaffe3
+			has_completed_focus = GER_wunderwaffe
 		}
 		days_remove = 180
 		modifier = {
@@ -2000,7 +1998,6 @@ operations = {
 		icon = GFX_decision_generic_prepare_civil_war
 
 		available = {
-			has_completed_focus = GER_wunderwaffe3
 		}
 
 		cost = 50
@@ -2010,7 +2007,7 @@ operations = {
 			factor = 0
 		}
 		visible = {
-			has_completed_focus = GER_wunderwaffe3
+			has_completed_focus = GER_wunderwaffe
 		}
 		days_remove = 180
 		modifier = {
@@ -2044,7 +2041,7 @@ operations = {
 			factor = 0
 		}
 		visible = {
-			has_completed_focus = GER_wunderwaffe3
+			has_completed_focus = GER_wunderwaffe
 		}
 		days_remove = 180
 		modifier = {
@@ -2064,7 +2061,6 @@ operations = {
 
 		available = {
 			has_tech = advanced_computing_machine
-			has_completed_focus = GER_wunderwaffe3
 		}
 
 		cost = 50
@@ -2074,7 +2070,7 @@ operations = {
 			factor = 0
 		}
 		visible = {
-			has_completed_focus = GER_wunderwaffe3
+			has_completed_focus = GER_wunderwaffe
 		}
 		days_remove = 365
 		modifier = {
@@ -2104,7 +2100,7 @@ operations = {
 			factor = 0
 		}
 		visible = {
-			has_completed_focus = GER_wunderwaffe3
+			has_completed_focus = GER_wunderwaffe
 		}
 		days_remove = 180
 		modifier = {

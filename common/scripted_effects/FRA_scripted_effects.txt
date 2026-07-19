@@ -1,139 +1,168 @@
-remove_worker_shortage_effect = {	
-	if = {
-		limit = { has_idea = FRA_worker_shortage }
-		remove_ideas = FRA_worker_shortage
-	}
-	else_if = {
-		limit = { has_idea = FRA_full_employment }
-		remove_ideas = FRA_full_employment
-	}
-}
+# remove_worker_shortage_effect = {	
+# 	if = {
+# 		limit = { has_idea = FRA_worker_shortage }
+# 		remove_ideas = FRA_worker_shortage
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = FRA_full_employment }
+# 		remove_ideas = FRA_full_employment
+# 	}
+# }
 fra_small_eco_upgrade_effect = {
-	FRA = {
+		
 		add_to_variable = { FRA_cg = -0.04 }
 		add_to_variable = { FRA_output = 0.05 }
 		add_to_variable = { FRA_eff_ret = 0.015 }
-	}
+	
 }
 fra_big_eco_upgrade_effect = {
-	FRA = {
+	
 		add_to_variable = { FRA_cg = -0.04 }
 		add_to_variable = { FRA_cap = 0.025 }
 		add_to_variable = { FRA_output = 0.05 }
-	}
+	
 }
 fra_cg_upgrade_effect = {
-	FRA = {
-		add_to_variable = { FRA_cg = -0.08 }
-	}
-}
-remove_occupation_cost_effect = {
-	if = {
-		limit = { has_idea = FRA_occupation_costs_1 }
-		remove_ideas = FRA_occupation_costs_1
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_2
-		}
-		remove_ideas = FRA_occupation_costs_2
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_3
-		}
-		remove_ideas = FRA_occupation_costs_3
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_4
-		}
-		remove_ideas = FRA_occupation_costs_4
-	}
+	custom_effect_tooltip = FRA_cg_upgrade_tt
+	add_to_variable = { FRA_cg = -0.08 }
+	# FRA = {
+	# 	add_to_variable = { FRA_cg = -0.08 }
+	# }
 }
 
-reduce_occupation_cost_effect = {
-	if = {
-		limit = { has_idea = FRA_occupation_costs_1 }
-		remove_ideas = FRA_occupation_costs_1
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_2
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_2
-			add_idea = FRA_occupation_costs_1
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_3
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_3
-			add_idea = FRA_occupation_costs_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_4
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_4
-			add_idea = FRA_occupation_costs_3
-		}
-	}
+fra_poltical_violience_little_effect = {
+	custom_effect_tooltip = fra_poltical_violience_little_effect_tt
+	add_to_variable = { FRA_stab = -0.05 }
 }
 
-increase_occupation_cost_effect = {
-	if = {
-		limit = {
-			has_idea = FRA_occupation_costs_3
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_3
-			add_idea = FRA_occupation_costs_4
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_2
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_2
-			add_idea = FRA_occupation_costs_3
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = FRA_occupation_costs_1
-		}
-		swap_ideas = {
-			remove_idea = FRA_occupation_costs_1
-			add_idea = FRA_occupation_costs_2
-		}
-	}
-	else_if = {
-		limit = { 
-			NOT = { 
-				has_idea = FRA_occupation_costs_1
-				has_idea = FRA_occupation_costs_2
-				has_idea = FRA_occupation_costs_3
-				has_idea = FRA_occupation_costs_4 
-			}
-		}
-		add_ideas = FRA_occupation_costs_1
-	}
+fra_poltical_violience_alot_effect = {
+	custom_effect_tooltip = fra_poltical_violience_alot_effect_tt
+	add_to_variable = { FRA_stab = -0.1 }
 }
 
-FRA_right_wing_riot_effect = {
-		country_event = lar_france_political_violence.1
+fra_poltical_violience_littledown_effect = {
+	custom_effect_tooltip = fra_poltical_violience_littledown_effect_tt
+	add_to_variable = { FRA_stab = 0.05 }
 }
 
-FRA_communism_riot_effect = {
-		country_event = lar_france_political_violence.2
+fra_poltical_violience_alotdown_effect = {
+	custom_effect_tooltip = fra_poltical_violience_alotdown_effect_tt
+	add_to_variable = { FRA_stab = 0.1 }
 }
+
+fra_pp_up_effect = {
+	custom_effect_tooltip = fra_pp_up_effect_tt
+	add_to_variable = { FRA_pp_diplo = 0.25 }
+}
+
+### old gotterassram vichy scripted effects?
+# remove_occupation_cost_effect = {
+# 	if = {
+# 		limit = { has_idea = FRA_occupation_costs_1 }
+# 		remove_ideas = FRA_occupation_costs_1
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_idea = FRA_occupation_costs_2
+# 		}
+# 		remove_ideas = FRA_occupation_costs_2
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_idea = FRA_occupation_costs_3
+# 		}
+# 		remove_ideas = FRA_occupation_costs_3
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_idea = FRA_occupation_costs_4
+# 		}
+# 		remove_ideas = FRA_occupation_costs_4
+# 	}
+# }
+
+# reduce_occupation_cost_effect = {
+# 	if = {
+# 		limit = { has_idea = FRA_occupation_costs_1 }
+# 		remove_ideas = FRA_occupation_costs_1
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_idea = FRA_occupation_costs_2
+# 		}
+# 		swap_ideas = {
+# 			remove_idea = FRA_occupation_costs_2
+# 			add_idea = FRA_occupation_costs_1
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_idea = FRA_occupation_costs_3
+# 		}
+# 		swap_ideas = {
+# 			remove_idea = FRA_occupation_costs_3
+# 			add_idea = FRA_occupation_costs_2
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_idea = FRA_occupation_costs_4
+# 		}
+# 		swap_ideas = {
+# 			remove_idea = FRA_occupation_costs_4
+# 			add_idea = FRA_occupation_costs_3
+# 		}
+# 	}
+# }
+
+# increase_occupation_cost_effect = {
+# 	if = {
+# 		limit = {
+# 			has_idea = FRA_occupation_costs_3
+# 		}
+# 		swap_ideas = {
+# 			remove_idea = FRA_occupation_costs_3
+# 			add_idea = FRA_occupation_costs_4
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_idea = FRA_occupation_costs_2
+# 		}
+# 		swap_ideas = {
+# 			remove_idea = FRA_occupation_costs_2
+# 			add_idea = FRA_occupation_costs_3
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = {
+# 			has_idea = FRA_occupation_costs_1
+# 		}
+# 		swap_ideas = {
+# 			remove_idea = FRA_occupation_costs_1
+# 			add_idea = FRA_occupation_costs_2
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { 
+# 			NOT = { 
+# 				has_idea = FRA_occupation_costs_1
+# 				has_idea = FRA_occupation_costs_2
+# 				has_idea = FRA_occupation_costs_3
+# 				has_idea = FRA_occupation_costs_4 
+# 			}
+# 		}
+# 		add_ideas = FRA_occupation_costs_1
+# 	}
+# }
+
+# FRA_right_wing_riot_effect = {
+# 		country_event = lar_france_political_violence.1
+# }
+
+# FRA_communism_riot_effect = {
+# 		country_event = lar_france_political_violence.2
+# }
 
 FRA_fix_africa = {
 if = { limit = { GER = { controls_state = 741  } } FRA = { set_state_controller = 741  } }
@@ -161,7 +190,7 @@ if = { limit = { GER = { controls_state = 781  } } FRA = { set_state_controller 
 if = { limit = { GER = { controls_state = 776  } } FRA = { set_state_controller = 776  } }
 if = { limit = { GER = { controls_state = 777  } } FRA = { set_state_controller = 777  } }
 if = { limit = { GER = { controls_state = 515  } } FRA = { set_state_controller = 515  } }
-if = { limit = { GER = { controls_state = 775  } } FRA = { set_state_controller = 775  } }
+# if = { limit = { GER = { controls_state = 775  } } FRA = { set_state_controller = 775  } }
 
 if = { limit = { GER = { controls_state = 772  } } FRA = { set_state_controller = 772  } }
 if = { limit = { GER = { controls_state = 539  } } FRA = { set_state_controller = 539  } }

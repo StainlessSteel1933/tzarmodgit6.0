@@ -618,7 +618,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 				add_equipment_subsidy = {
 					cic = 1000

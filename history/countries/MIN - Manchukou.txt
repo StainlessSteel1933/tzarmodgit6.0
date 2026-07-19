@@ -26,7 +26,7 @@ set_technology = {
 army_experience = 10
 navy_experience = 10
 air_experience = 2
-set_stability = 0.6 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.25 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
 
@@ -87,7 +87,6 @@ add_ideas = {
 	MAN_low_legitimacy_5
 	low_economic_mobilisation
 	COOM_volunteers_minors
-	trade_japan_min
 } 
 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 8000 }
 

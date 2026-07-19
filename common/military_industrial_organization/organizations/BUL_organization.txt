@@ -36,7 +36,7 @@ BUL_varna_naval_dockyard_organization = {
 	
 	allowed = {	
 		tag = BUL
-		has_dlc = "Battle for the Bosporus"
+		  
 	}
 	
 	available = {
@@ -94,13 +94,8 @@ BUL_dar_organization = {
 		tag = BUL
 	}
 
-	available = { #TODO_Manu: Could do with a trait
-		if = {
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			FROM = { has_completed_focus = BUL_darzhavna_aeroplanna_rabotilnitsa }
-		}
+	available = {
+		
 	}
 
 	add_trait = { 
@@ -133,11 +128,11 @@ BUL_kaproni_bulgarski_organization = {
 	
 	allowed = {	
 		tag = BUL
-		has_dlc = "Battle for the Bosporus"
+		
 	}
 
 	available = {
-		FROM = { has_completed_focus = BUL_kaproni_bulgarski }
+		
 	}
 
 	add_trait = { 
@@ -188,11 +183,11 @@ BUL_dvf_organization = {
 	
 	allowed = {	
 		tag = BUL
-		has_dlc = "Battle for the Bosporus"
+		
 	}
 	
 	available = {
-		FROM = { has_completed_focus = BUL_darzhavna_voenna_fabrika }
+		
 	}
 
 	add_trait = { 
@@ -225,11 +220,11 @@ BUL_dvf_sopot_organization = {
 	
 	allowed = {	
 		tag = BUL
-		has_dlc = "Battle for the Bosporus"
+		
 	}
 
 	available = {
-		FROM = { has_completed_focus = BUL_found_dvf_sopot }
+		
 	}
 
 	add_trait = { 

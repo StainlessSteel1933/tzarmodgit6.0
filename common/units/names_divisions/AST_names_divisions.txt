@@ -1,4 +1,35 @@
-﻿
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
 
 AST_INF_01 = 
 {
@@ -6,7 +37,7 @@ AST_INF_01 =
 
 	for_countries = { AST }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -84,7 +115,7 @@ AST_CAV_01 =
 
 	for_countries = { AST }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "cavalry" }
 
@@ -161,7 +192,7 @@ AST_MOT_01 =
 
 	for_countries = { AST }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "motorized" }
 
@@ -208,7 +239,7 @@ AST_ARM_01 =
 
 	for_countries = { AST }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -255,7 +286,7 @@ AST_MEC_01 =
 
 	for_countries = { AST }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "mechanized"  }
 
@@ -302,7 +333,7 @@ AST_GAR_01 =
 
 	for_countries = { AST }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -375,7 +406,7 @@ AST_MAR_01 =
 
 	for_countries = { AST }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "marine" }
 
@@ -429,7 +460,7 @@ AST_MTN_01 =
 
 	for_countries = { AST }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "mountaineers" }
 
@@ -506,7 +537,7 @@ AST_PAR_01 =
 
 	for_countries = { AST }
 
-	 
+	can_use = { always = yes }
 
 	division_types = { "paratrooper" }
 
@@ -551,5 +582,77 @@ AST_PAR_01 =
 		30 = { "%dth Airborne Division" }
 
 		# AST didn't have any Marine divisions, these are all fictional.
+	}
+}
+
+AST_RGR_01 = {
+	name = "Jungle Divisions"
+
+	for_countries = { AST }
+
+	can_use = { always = yes }
+
+	division_types = { "ranger_battalion"  }
+
+	fallback_name = "%d Jungle Division"
+
+	link_numbering_with = { AST_INF_01 }
+
+	# Names with numbers (only one number per entry)
+	ordered = {
+	1 = { "%dst Jungle Division" }
+	2 = { "%dnd Jungle Division" }
+	3 = { "%drd Jungle Division" }
+	4 = { "%dth Jungle Division" }
+	5 = { "%dth Jungle Division" }
+	6 = { "%dth Jungle Division" }
+	7 = { "%dth Jungle Division" }
+	8 = { "%dth Jungle Division" }
+	9 = { "%dth Jungle Division" }
+	10 = { "%dth Jungle Division" }
+	11 = { "%dth Jungle Division" }
+	12 = { "%dth Jungle Division" }
+	13 = { "%dth Jungle Division" }
+	14 = { "%dth Jungle Division" }
+	15 = { "%dth Jungle Division" }
+	16 = { "%dth Jungle Division" }
+	17 = { "%dth Jungle Division" }
+	18 = { "%dth Jungle Division" }
+	19 = { "%dth Jungle Division" }
+	20 = { "%dth Jungle Division" }
+	21 = { "%dst Jungle Division" }
+	22 = { "%dnd Jungle Division" }
+	23 = { "%drd Jungle Division" }
+	24 = { "%dth Jungle Division" }
+	25 = { "%dth Jungle Division" }
+	26 = { "%dth Jungle Division" }
+	27 = { "%dth Jungle Division" }
+	28 = { "%dth Jungle Division" }
+	29 = { "%dth Jungle Division" }
+	30 = { "%dth Jungle Division" }
+	31 = { "%dst Jungle Division" }
+	32 = { "%dnd Jungle Division" }
+	33 = { "%drd Jungle Division" }
+	34 = { "%dth Jungle Division" }
+	35 = { "%dth Jungle Division" }
+	36 = { "%dth Jungle Division" }
+	37 = { "%dth Jungle Division" }
+	38 = { "%dth Jungle Division" }
+	39 = { "%dth Jungle Division" }
+	40 = { "%dth Jungle Division" }
+	41 = { "%dst Jungle Division" }
+	42 = { "%dnd Jungle Division" }
+	43 = { "%drd Jungle Division" }
+	44 = { "%dth Jungle Division" }
+	45 = { "%dth Jungle Division" }
+	46 = { "%dth Jungle Division" }
+	47 = { "%dth Jungle Division" }
+	48 = { "%dth Jungle Division" }
+	49 = { "%dth Jungle Division" }
+	50 = { "%dth Jungle Division" }
+	51 = { "%dst Jungle Division" }
+	52 = { "%dnd Jungle Division" }
+	53 = { "%drd Jungle Division" }
+		
 	}
 }

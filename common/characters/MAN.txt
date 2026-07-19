@@ -853,7 +853,7 @@ characters={
 		name="Aisin Gioro Puyi"
 		portraits={
 			civilian={
-				large="gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+				large="gfx/leaders/MIN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 			}
 		}
 		country_leader={

@@ -124,23 +124,6 @@ on_actions = {
 			}
 			}
 			}
-			on_startup = {
-		effect = {
-			every_country = {
-				limit = {
-					NOT = {
-						original_tag = ENG
-						original_tag = USA
-						original_tag = GER
-						original_tag = JAP
-						original_tag = ITA
-						original_tag = SOV
-					}
-				}
-					add_ideas = minors_no_air
-			}
-		}
-	}
 	on_startup = {
 		effect = {
 

@@ -38,7 +38,7 @@ state={
 			}
 
 		}
-		add_core_of = YUG
+		add_core_of = SWE
 
 	}
 

@@ -9,7 +9,7 @@ procure_guns = {
 			factor = 15
 			modifier = {
 				has_equipment = {
-					infantry_equipment < 1001
+					infantry_equipment < 1000
 				}
 				factor = 50
 			}
@@ -747,7 +747,7 @@ foreign_politics = {
 			every_country = { limit = { AND = { is_in_faction_with = ENG has_war = yes }  }
 			EFR = { declare_war_on = { target = PREV type = annex_everything }	} }
 			GER = { add_to_faction = EFR }
-			ITA = { transfer_state = 461 transfer_state = 462 transfer_state = 513 transfer_state = 459 transfer_state = 460 }
+			ENG = { transfer_state = 461 transfer_state = 462 transfer_state = 513 transfer_state = 459 transfer_state = 460 }
 			461 = { 
 				add_building_construction = {
 				type = infrastructure
@@ -1098,7 +1098,6 @@ icon = generic_political_discourse
 		available = {
 			has_equipment = { infantry_equipment > 5000 }
 			has_army_experience > 10
-			has_completed_focus = ENG_Gib_Fell
 			}
 
 		cost = 0
@@ -1122,7 +1121,7 @@ icon = generic_political_discourse
 		available = {
 			has_equipment = { infantry_equipment_1 > 30000 }
 			has_army_experience > 100
-			has_completed_focus = ENG_Gib_Fell
+			
 			}
 			
 			visible = { has_country_flag = ENG_ldv_created  } 
@@ -1145,7 +1144,7 @@ icon = generic_political_discourse
 		}
 
 		available = {
-			has_completed_focus = ENG_Gib_Fell
+			
 			}
 
 		cost = 250
@@ -1164,7 +1163,7 @@ icon = generic_political_discourse
 		}
 
 		available = {
-			has_completed_focus = ENG_Gib_Fell
+
 		}
 
 		cost = 0

@@ -1,0 +1,31 @@
+add_namespace = skrubwayevents
+
+#### tukhachevsky fleeing to france gives stalin schizo meter
+country_event = { 
+	id = skrubwayevents.1
+	title = skrubwayevents.1.t
+	desc = skrubwayevents.1.d 
+	picture = GFX_report_event_stalin_01  
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = skrubwayevents.1.a 
+		IF = {
+			limit = {
+				SOV ={
+					has_country_flag = SOV_paranoia_system_active_flag
+				}
+			}
+			SOV = {
+				SOV_paranoia_low_increase_effect = yes
+			}
+		}
+		else = {
+			SOV = {
+				add_stability = -0.01
+			}
+		}
+	}
+	
+}

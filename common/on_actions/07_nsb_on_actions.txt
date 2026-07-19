@@ -40,10 +40,10 @@ on_actions = {
 						state = 742 
 						NOT = { has_state_flag = dushanbe_flag }
 					}
-					OR = {
-						ROOT = { original_tag = TAJ }
-						ROOT = { original_tag = BUK }
-					}
+					# OR = {
+					# 	ROOT = { original_tag = TAJ }
+					# 	ROOT = { original_tag = BUK }
+					# }
 				}
 				742 = { 
 					set_state_name = SOV_Dushanbe 
@@ -64,7 +64,7 @@ on_actions = {
 						ROOT = {
 							OR = {
 								original_tag = GER
-								original_tag = DNZ
+								# original_tag = DNZ
 							}
 						}
 					}
@@ -82,66 +82,66 @@ on_actions = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					divisions_in_state = { state = FROM.FROM size > 0 }
-					FROM.FROM = { 
-						NOT = { has_state_flag = already_sabotaged_flag }
-					}
-					FROM = {
-						original_tag = POL
-						has_completed_focus = POL_sabotage_polish_industry
-					}
-				}
-				FROM.FROM = { 
-					set_state_flag = poland_state_withdrawn
-					state_event = { id = poland.23 trigger_for = controller }
-				}
-			}
-			if = {
-				limit = {
-					FROM.FROM = { state = 119 }
-				}
-				if = {
-					limit = {
-						ROOT = { original_tag = IRE }
-					}
-					set_province_name = {
-						id = 385
-						name = "Derry"
-					}
-				}
-				if = {
-					limit = {
-						ROOT = { original_tag = ENG }
-					}
-					reset_province_name = 385
-				}
-				if = {
-					limit = {
-						ROOT = { original_tag = NIR }
-					}
-					random_list = { #Difficult to say if an independent Northern Ireland would call it Derry or Londonderry, let's let the dice gods decide.
-						1 = {
-							set_province_name = {
-								id = 385
-								name = "Derry"
-							}
-							modifier = {
-								factor = 0
-								is_subject_of = ENG
-							}
-						}
-						1 = {
-							reset_province_name = 385
-							modifier = {
-								factor = 0
-								is_subject_of = IRE
-							}
-						}
-					}
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		divisions_in_state = { state = FROM.FROM size > 0 }
+			# 		FROM.FROM = { 
+			# 			NOT = { has_state_flag = already_sabotaged_flag }
+			# 		}
+			# 		FROM = {
+			# 			original_tag = POL
+			# 			has_completed_focus = POL_sabotage_polish_industry
+			# 		}
+			# 	}
+			# 	FROM.FROM = { 
+			# 		set_state_flag = poland_state_withdrawn
+			# 		state_event = { id = poland.23 trigger_for = controller }
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		FROM.FROM = { state = 119 }
+			# 	}
+			# 	if = {
+			# 		limit = {
+			# 			ROOT = { original_tag = IRE }
+			# 		}
+			# 		set_province_name = {
+			# 			id = 385
+			# 			name = "Derry"
+			# 		}
+			# 	}
+			# 	if = {
+			# 		limit = {
+			# 			ROOT = { original_tag = ENG }
+			# 		}
+			# 		reset_province_name = 385
+			# 	}
+			# 	if = {
+			# 		limit = {
+			# 			ROOT = { original_tag = NIR }
+			# 		}
+			# 		random_list = { #Difficult to say if an independent Northern Ireland would call it Derry or Londonderry, let's let the dice gods decide.
+			# 			1 = {
+			# 				set_province_name = {
+			# 					id = 385
+			# 					name = "Derry"
+			# 				}
+			# 				modifier = {
+			# 					factor = 0
+			# 					is_subject_of = ENG
+			# 				}
+			# 			}
+			# 			1 = {
+			# 				reset_province_name = 385
+			# 				modifier = {
+			# 					factor = 0
+			# 					is_subject_of = IRE
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+			# }
 		}
 
 		#SOVIET - If Death to Invaders Propaganda Campaign is active, manage the appropriate state modifier

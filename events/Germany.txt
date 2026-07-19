@@ -521,11 +521,6 @@ country_event = {
 			ahead_reduction = 2
 			technology = basic_medium_tank_chassis
 			}
-			add_tech_bonus = {
-			name = armor_bonus
-			ahead_reduction = 2
-			technology = basic_heavy_tank_chassis
-			}
 		add_tech_bonus = {
 			name = armor_bonus
 			bonus = 1.0
@@ -536,9 +531,8 @@ country_event = {
 		}
 		add_tech_bonus = {
 			name = armor_bonus
-			bonus = 1
+			bonus = 0.75
 			uses = 1
-			ahead_reduction = 0.25
 			technology = improved_heavy_tank_chassis
 		}
 		

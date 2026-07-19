@@ -1,5 +1,5 @@
 ideas = {
-
+	
 	country = {
 
 	FRA_surrender = {
@@ -19,7 +19,7 @@ ideas = {
 			modifier = {
 				surrender_limit = -0.60
 			}
-        }
+    }
 	
 		FRA_full_employment = {
 			picture = generic_production_bonus
@@ -148,7 +148,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_expected_value = -0.05
-				stability_factor = -0.05
+				# stability_factor = -0.05
 				production_speed_industrial_complex_factor = 0.15
 			}
 		}
@@ -550,29 +550,29 @@ ideas = {
 				
 			}
 		}
-		FRA_flying_artillery = {
-			picture = combined_bomber_offensive
-			allowed = {
-				original_tag = FRA
-				always = no
-			}
+		# FRA_flying_artillery = {
+		# 	picture = combined_bomber_offensive
+		# 	allowed = {
+		# 		original_tag = FRA
+		# 		always = no
+		# 	}
 
-			allowed_civil_war = {
-				always = yes
-			}
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
 
-			removal_cost = -1
+		# 	removal_cost = -1
 			
-			equipment_bonus = {
-					air_ground_attack = 0.15
-					instant = yes
-				}
-			}
+		# 	equipment_bonus = {
+		# 			air_ground_attack = 0.15
+		# 			instant = yes
+		# 		}
+		# 	}
 
-			modifier = {
+		# 	modifier = {
 				
-			}
-		}
+		# 	}
+		# }
 		FRA_down_with_marianne = {
 			picture = FRA_down_marianne
 			allowed = {
@@ -713,8 +713,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1 
 				industrial_capacity_factory = 0.15
+			}
 		}
-	}
 
 		VIC_guest_workers = {
 			picture = generic_exploit_mines
@@ -1488,8 +1488,8 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
-				stability_factor = 0.1
-				consumer_goods_expected_value = 0.03
+				stability_weekly = 0.002
+				consumer_goods_factor = 0.15
 			}
 		}
 
@@ -1509,203 +1509,205 @@ ideas = {
 				communism_drift = -0.25
 			}
 		}
-		}
-	
-	
-	
-	materiel_manufacturer = {
-			
-		designer = yes
-		
-		somua = {
-			cost = 75
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
 
-			research_bonus = {
-				motorized_equipment = 0.15
-			}
-			
-			traits = { motorized_equipment_manufacturer }
-
-		}
-		
-		mas = {
-			cost = 75		
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
-						
-			research_bonus = {
-				infantry_weapons = 0.15
-			}
-			
-			traits = { infantry_equipment_manufacturer }
-		}
-	
-		schneider = {
-			cost = 75		
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}		
-			
-			research_bonus = {
-				artillery = 0.15
-			}
-			
-			traits = { artillery_manufacturer }
-		}
 	}
+
 	
-	aircraft_manufacturer = {
+	
+	
+	# materiel_manufacturer = {
 			
-		designer = yes
+	# 	designer = yes
 		
-		morane_saulnier = {
-			cost = 75
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+	# 	somua = {
+	# 		cost = 75
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
+
+	# 		research_bonus = {
+	# 			motorized_equipment = 0.15
+	# 		}
 			
-			research_bonus = {
-				air_equipment = 0.1
-			}
-			
-			traits = { light_aircraft_manufacturer }
-		}
+	# 		traits = { motorized_equipment_manufacturer }
+
+	# 	}
 		
-		bloch = {
-			cost = 75	
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+	# 	mas = {
+	# 		cost = 75		
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 						
-			research_bonus = {
-				air_equipment = 0.1
-			}
+	# 		research_bonus = {
+	# 			infantry_weapons = 0.15
+	# 		}
 			
-			traits = { medium_aircraft_manufacturer }
-		}
+	# 		traits = { infantry_equipment_manufacturer }
+	# 	}
+	
+	# 	schneider = {
+	# 		cost = 75		
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}		
+			
+	# 		research_bonus = {
+	# 			artillery = 0.15
+	# 		}
+			
+	# 		traits = { artillery_manufacturer }
+	# 	}
+	# }
+	
+	# aircraft_manufacturer = {
+			
+	# 	designer = yes
 		
-		amiot = {
-			cost = 75	
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
-						
-			research_bonus = {
-				air_equipment = 0.1
-			}
+	# 	morane_saulnier = {
+	# 		cost = 75
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 			
-			traits = { heavy_aircraft_manufacturer }
-		}
+	# 		research_bonus = {
+	# 			air_equipment = 0.1
+	# 		}
+			
+	# 		traits = { light_aircraft_manufacturer }
+	# 	}
 		
-		levasseur = {
-			cost = 75	
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+	# 	bloch = {
+	# 		cost = 75	
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 						
-			research_bonus = {
-				air_equipment = 0.1
-			}
+	# 		research_bonus = {
+	# 			air_equipment = 0.1
+	# 		}
 			
-			traits = { naval_aircraft_manufacturer }
-		}
+	# 		traits = { medium_aircraft_manufacturer }
+	# 	}
+		
+	# 	amiot = {
+	# 		cost = 75	
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
+						
+	# 		research_bonus = {
+	# 			air_equipment = 0.1
+	# 		}
+			
+	# 		traits = { heavy_aircraft_manufacturer }
+	# 	}
+		
+	# 	levasseur = {
+	# 		cost = 75	
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
+						
+	# 		research_bonus = {
+	# 			air_equipment = 0.1
+	# 		}
+			
+	# 		traits = { naval_aircraft_manufacturer }
+	# 	}
 
 		
-	}
-	naval_manufacturer = {
+	# }
+	# naval_manufacturer = {
 
-		designer = yes
+	# 	designer = yes
 		
-		fcm = {
-			cost = 75			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
-			on_add = { hidden_effect = { make_naval_designers_free = yes } }
+	# 	fcm = {
+	# 		cost = 75			
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
+	# 		on_add = { hidden_effect = { make_naval_designers_free = yes } }
 						
-			research_bonus = {
-				naval_equipment = 0.15
-			}
+	# 		research_bonus = {
+	# 			naval_equipment = 0.15
+	# 		}
 			
-			traits = { med_fleet_naval_manufacturer }
-		}
-		aeb = {
-			picture = FRA_aeb		
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
-			on_add = { hidden_effect = { make_naval_designers_free = yes } }
-			cost = 75
-			research_bonus = {
-				naval_equipment = 0.15
-			}
+	# 		traits = { med_fleet_naval_manufacturer }
+	# 	}
+	# 	aeb = {
+	# 		picture = FRA_aeb		
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
+	# 		on_add = { hidden_effect = { make_naval_designers_free = yes } }
+	# 		cost = 75
+	# 		research_bonus = {
+	# 			naval_equipment = 0.15
+	# 		}
 			
-			traits = { convoy_escort_naval_manufacturer }
-		}
-		acl = {
-			picture = FRA_acl	
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
-			on_add = { hidden_effect = { make_naval_designers_free = yes } }
-			cost = 75	
-			research_bonus = {
-				naval_equipment = 0.15
-			}
+	# 		traits = { convoy_escort_naval_manufacturer }
+	# 	}
+	# 	acl = {
+	# 		picture = FRA_acl	
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
+	# 		on_add = { hidden_effect = { make_naval_designers_free = yes } }
+	# 		cost = 75	
+	# 		research_bonus = {
+	# 			naval_equipment = 0.15
+	# 		}
 			
-			traits = { atlantic_fleet_naval_manufacturer }
-		}
-		acf = {
-			picture = FRA_acf			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
-			on_add = { hidden_effect = { make_naval_designers_free = yes } }
-			cost = 75	
-			research_bonus = {
-				naval_equipment = 0.15
-			}
+	# 		traits = { atlantic_fleet_naval_manufacturer }
+	# 	}
+	# 	acf = {
+	# 		picture = FRA_acf			
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
+	# 		on_add = { hidden_effect = { make_naval_designers_free = yes } }
+	# 		cost = 75	
+	# 		research_bonus = {
+	# 			naval_equipment = 0.15
+	# 		}
 			
-			traits = { raiding_fleet_naval_manufacturer }
-		}
-	}
+	# 		traits = { raiding_fleet_naval_manufacturer }
+	# 	}
+	# }
 	
 	industrial_concern = {	
 		
@@ -1727,57 +1729,57 @@ ideas = {
 	}
 	
 	
-	theorist = {
-		charles_de_gaulle = {
-			ledger = army
+	# theorist = {
+		# charles_de_gaulle = {
+		# 	ledger = army
 						
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
-			available = {
-				OR = {
-					has_completed_focus = FRA_begin_rearmament
-					original_tag = FRF
-				}
-			}
+		# 	allowed = {
+		# 		OR = {
+		# 			original_tag = FRA
+		# 			original_tag = FRF
+		# 		}
+		# 	}
+		# 	available = {
+		# 		OR = {
+		# 			has_completed_focus = FRA_begin_rearmament
+		# 			original_tag = FRF
+		# 		}
+		# 	}
 			
-			cost = 75
+		# 	cost = 75
 						
-			research_bonus = {
-				land_doctrine = 0.10
-			}
+		# 	research_bonus = {
+		# 		land_doctrine = 0.10
+		# 	}
 			
-			traits = { blitzkrieg_theorist }
+		# 	traits = { blitzkrieg_theorist }
 
-			ai_will_do = {
-				factor = 1
-			}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
 
-		}
+		# }
 		
-		henri_giraud = {
-			ledger = army
+		# henri_giraud = {
+		# 	ledger = army
 						
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+		# 	allowed = {
+		# 		OR = {
+		# 			original_tag = FRA
+		# 			original_tag = FRF
+		# 		}
+		# 	}
 						
-			research_bonus = {
-				land_doctrine = 0.10
-			}
+		# 	research_bonus = {
+		# 		land_doctrine = 0.10
+		# 	}
 
-			ai_will_do = {
-				factor = 1
-			}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
 			
-			traits = { military_theorist }
-		}
+		# 	traits = { military_theorist }
+		# }
 		
 		# louis_kahn = {
 		# 	ledger = navy
@@ -1838,22 +1840,22 @@ ideas = {
 		# 	traits = { assault_avaition }
 		# }
 		
-		jean_marie_bergeret = {
-			ledger = air
+		# jean_marie_bergeret = {
+		# 	ledger = air
 						
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+		# 	allowed = {
+		# 		OR = {
+		# 			original_tag = FRA
+		# 			original_tag = FRF
+		# 		}
+		# 	}
 						
-			research_bonus = {
-				air_doctrine = 0.10
-			}
+		# 	research_bonus = {
+		# 		air_doctrine = 0.10
+		# 	}
 			
-			traits = { air_warfare_theorist }
-		}
+		# 	traits = { air_warfare_theorist }
+		# }
 		
 		# frederic_irene_joliot_curie = {
 		# 	ledger = army
@@ -1873,4 +1875,4 @@ ideas = {
 			
 		# 	traits = { nuclear_scientist }
 		# }
-	}	
+	# }	

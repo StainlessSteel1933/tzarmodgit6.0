@@ -277,9 +277,9 @@ focus_tree = {
 	focus = { 
 		ai_will_do = { factor = 1 }
 		id = SPA_Declare_war_PORT
+		mutually_exclusive = {focus= SPA_Declare_war_SOV}
 		available = {
-			GER = { has_completed_focus = GER_danzig_or_war}
-			NOT = { has_completed_focus = SPA_Declare_war_SOV }
+			has_global_flag = spr_caninvadeport
 		}
 		text = "Dreams of United Iberia"
 		prerequisite = { focus = SPA_fuse_the_parties }
@@ -306,13 +306,8 @@ focus_tree = {
 	focus = { 
 		ai_will_do = { factor = 1 }
 		id = SPA_Declare_war_SOV
+		mutually_exclusive = {focus= SPA_Declare_war_PORT}
 		available = {
-			if = {
-				limit = {
-					has_completed_focus = SPA_Declare_war_PORT
-				}
-				GER = { has_completed_focus = GER_fall_blau}
-				}
 		}
 		text = "Join the cause"
 		prerequisite = { focus = SPA_fuse_the_parties }
@@ -323,23 +318,11 @@ focus_tree = {
 		relative_position_id = SPA_fuse_the_parties
 		cost = 0.2
 
-		
-
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
 			remove_ideas = no_war_against_sov
 			remove_ideas = no_war_against_allies
-			custom_effect_tooltip = 
-			"If we have declared war exclusively on the allies, we will be able to join the war against the Soviet Union after Germany does Fall Blau, for a heavily reduced attack modifier, but our industry will suffer"
-		
-			if = {
-				limit = {
-					has_completed_focus = SPA_Declare_war_PORT
-				}
-				add_ideas = 
-					SPA_joined_sov_42
-				}
 		}
 	}
 
@@ -368,12 +351,11 @@ focus_tree = {
 			if = {
 				limit = {
 					NOT = {
-						has_idea = partial_economic_mobilisation
 						has_idea = war_economy
 						has_idea = tot_economic_mobilisation
 					}
 				}
-				add_ideas = partial_economic_mobilisation
+				add_ideas = war_economy
 			}
 			if = {
 				limit = {
@@ -1284,17 +1266,17 @@ focus_tree = {
 				basic_ship_hull_heavy = 1
 				panzerschiffe = 1
 				pre_dreadnoughts = 1
-				#early_ship_hull_submarine = 1
-				#basic_ship_hull_submarine = 1
+				early_ship_hull_submarine = 1
+				basic_ship_hull_submarine = 1
 				mtg_transport = 1
 				basic_torpedo = 1
 				improved_ship_torpedo_launcher = 1
 				basic_battery = 1
 				basic_light_battery = 1
-				#basic_medium_battery = 1
+				basic_medium_battery = 1
 				basic_heavy_battery = 1
-				#basic_secondary_battery = 1
-				#improved_secondary_battery = 1
+				basic_secondary_battery = 1
+				improved_secondary_battery = 1
 				basic_depth_charges = 1
 				sonar = 1
 				basic_cruiser_armor_scheme = 1

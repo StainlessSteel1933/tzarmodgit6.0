@@ -44,7 +44,10 @@ if = { limit = { country_exists = CRO }
     	modifier = stahlpakt
 	}
 }
-
+add_opinion_modifier = {
+	target = GER
+	modifier = german_trade_monopoly
+}
 
 
 set_technology = { 
@@ -61,7 +64,7 @@ set_technology = {
 	interwar_antiair = 1
 	basic_light_tank_chassis = 1
 	mobile_warfare = 1
-	armored_car1 = 1
+	armored_car_chassis_0 = 1
 	armored_car1 = 1
 	transport = 1
 	gwtank_chassis = 1
@@ -131,7 +134,7 @@ producer = HUN
 
 recruit_character = HUN_miklos_horthy
 recruit_character = HUN_matyas_rakosi
-# recruit_character = HUN_albert_aulich
+recruit_character = HUN_albert_aulich
 # recruit_character = HUN_atanas_shalapatov
 recruit_character = HUN_lajos_veress
 # recruit_character = HUN_jure_francetic

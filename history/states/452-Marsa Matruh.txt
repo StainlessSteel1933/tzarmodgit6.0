@@ -18,9 +18,6 @@ state={
 		victory_points = {
 			9989 1 
 		}
-		victory_points = {
-			6888 1
-		}
 		add_core_of = SWE
 
 	}

@@ -877,12 +877,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-
-				add_resource = {
-						type = rubber
-						amount = 200
-						state = 586
-					}
 				572 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
@@ -1413,7 +1407,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1849,7 +1843,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_research_slot = 1
 			add_to_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.05 }
 			add_to_variable = { SOV_defense_industry_production_factory_efficiency_gain_factor = -0.05 }
 			custom_effect_tooltip = SOV_pc_of_mechanical_engineering_ns_tt
@@ -2177,6 +2170,50 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = SOV_merge_naval_plants
+
+		icon = GFX_focus_SOV_merge_plants
+		prerequisite = { focus = SOV_merge_tank_and_materiel_plants }
+		x = 0
+		y = 1
+		relative_position_id = SOV_merge_tank_and_materiel_plants
+		cost = 5
+
+		available = {
+			
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			
+					mio:SOV_nevskoye_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_5
+					}
+
+					mio:SOV_rubin_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_363
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_190
+					}
+
+					mio:SOV_black_sea_shipyard_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_leninskaya_kuznitsa_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_340
+					}
+
+					mio:SOV_sevastopol_marine_plant_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_200
+					}
+		}
+	}
+
+
 	focus = {
 		id = SOV_strengthen_the_mobilization_plan
 		icon = GFX_focus_SOV_mobilization_plan
@@ -2226,6 +2263,25 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SOV_leningrad_polytechnical_institute
+		icon = GFX_focus_research
+		prerequisite = { focus = SOV_pc_of_mechanical_engineering focus = SOV_military_engineering_university}
+		x = 2
+		y = 0
+		relative_position_id = SOV_the_means_to_wage_war
+		cost = 5
+		dynamic = yes 
+		available = {
+			date>1940.6.1
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 
 	focus = {
 		id = SOV_soviet_atomic_bomb_project
@@ -6412,7 +6468,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			add_stability = 0.05
-			army_experience = 100
 			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
 			SOV_unlock_propaganda_campaign_slot_effect = yes
 		}

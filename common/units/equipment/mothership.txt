@@ -3,19 +3,7 @@ equipments = {
 		year = 1942
 
 		can_be_produced = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				NOT = {
-					#has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					#has_idea = BUL_army_restrictions
-				}
-			}
+			
 		}
 
 		is_archetype = yes
@@ -54,8 +42,8 @@ equipments = {
 		air_range = 3600
 		maximum_speed = 650
 		air_agility = 44 #57
-		air_attack = 165 #53
-		air_defence = 45  #8
+		air_attack = 190 #53
+		air_defence = 60  #8
 
 		upgrades = {
 			plane_gun_upgrade
@@ -75,7 +63,7 @@ equipments = {
 			aluminium = 8
 			rubber = 3
 		}
-		build_cost_ic = 500 #
+		build_cost_ic = 200 #
 		manpower = 100
 		fuel_consumption = 1.32
 

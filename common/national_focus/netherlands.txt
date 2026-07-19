@@ -679,7 +679,7 @@ focus_tree = {
 		prerequisite = { focus = HOL_curtail_colonial_autonomy }
 		available = {
 			has_capitulated = yes
-			FRA = { has_capitulated = yes }
+			
 				has_full_control_of_state = 335
 		}
 		icon = GFX_focus_hol_continue_the_war_in_batavia
@@ -1265,7 +1265,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = HOL_artillerie_inrichtingen_organization
@@ -1545,7 +1545,7 @@ focus_tree = {
 		completion_reward = {
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 				mio:HOL_fokker_organization = {
 					add_mio_size = 2
@@ -1742,7 +1742,7 @@ focus_tree = {
 		completion_reward = {
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					
 				}
 				mio:HOL_daf_organization = {
 					add_mio_size = 2
@@ -3175,14 +3175,14 @@ focus_tree = {
 					parent_version = 0
 					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
 					modules = {
-						#fixed_ship_battery_slot = ship_heavy_battery_1
+						fixed_ship_battery_slot = ship_heavy_battery_1
 						fixed_ship_anti_air_slot = ship_anti_air_2
 						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
 						fixed_ship_radar_slot = empty
 						fixed_ship_engine_slot = heavy_ship_engine_2
 						fixed_ship_secondaries_slot = dp_ship_secondaries_1
-						#fixed_ship_armor_slot = ship_armor_bb_1
-						#front_1_custom_slot = ship_heavy_battery_1
+						fixed_ship_armor_slot = ship_armor_bb_1
+						front_1_custom_slot = ship_heavy_battery_1
 						mid_1_custom_slot = ship_anti_air_2
 						mid_2_custom_slot = dp_ship_secondaries_1
 						rear_1_custom_slot = ship_heavy_battery_1

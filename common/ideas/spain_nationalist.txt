@@ -976,8 +976,6 @@ SPR_no_navy2 = {
 			}
 		}
 
-
-
 		SPA_crusade_against_democracy_6 = {
 
 			name = SPA_crusade_against_democracy
@@ -1122,22 +1120,6 @@ SPR_no_navy2 = {
 				ship_hull_heavy = {
 					build_cost_ic = -0.1 instant = yes
 				}
-			}
-		}
-
-		SPA_joined_sov_42 = {
-			name = SPA_joined_sov_42
-
-			picture = SPA_crusade_against_democracy
-
-			allowed = {
-				original_tag = SPR
-			}
-
-			modifier = {
-				consumer_goods_expected_value = 0.15
-					industrial_capacity_factory = -0.25
-					production_factory_max_efficiency_factor = -0.1
 			}
 		}
 	}

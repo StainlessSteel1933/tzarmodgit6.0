@@ -32,13 +32,6 @@ set_technology = { basic_train = 1
 		basic_medium_airframe = 1
 					aa_lmg = 1
 
-	trench_warfare = 1
-	grand_battle_plan = 1
-	prepared_defense = 1
-	grand_assault = 1
-	infantry_offensive = 1
-	armored_operations = 1
-	infiltration_assault = 1
 	radio = 1
 }
 
@@ -64,9 +57,7 @@ create_country_leader = {
 	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-		#
-	}
+
 }
 
 create_country_leader = {

@@ -1,60 +1,122 @@
 ability = {
-	# force_attack = {
-	# 	name = ABILITY_FORCE_ATTACK
-	# 	desc = ABILITY_FORCE_ATTACK_DESC
+	force_attack = {
+		name = ABILITY_FORCE_ATTACK
+		desc = ABILITY_FORCE_ATTACK_DESC
 		
-	# 	sound_effect = command_power_ability_offensive
-				
-	# 	type = army_leader
+		sound_effect = command_power_ability_offensive
 		
-	# 	allowed = {
-	# 		is_leading_army_group = no
-	# 		is_border_war = no
-	# 		OWNER = { NOT = { tag = EFR }}
-	# }
+		type = army_leader
 		
-	# 	cost = 0.22
-	# 	duration = 168
-		
-	# 	one_time_effect = {
-	# 		add_temporary_buff_to_units = {
-	# 			org_damage_multiplier = -1.0
-	# 			str_damage_multiplier = 0.6
-	# 			war_support_reduction_on_damage = 0.2
-	# 			days = 7
-	# 			tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
-	# 		}
-	# 	}
-	# }
+		allowed = {
+			is_leading_army_group = no
+			is_border_war = no
+			OWNER = {
+				if = {
+					limit = {
+						has_dlc = "Waking the Tiger"
+					}
+					NOT = {
+						has_completed_focus = CHI_dare_to_die_corps
+						has_completed_focus = JAP_advance_one_hundred_million_fireballs  
+						has_completed_focus = JAP_tennoheika_banzai  
+						has_completed_focus = CHI_sea_dare_to_die_corps  
+					}
+				}
 
-	# last_stand = {
-	# 	name = ABILITY_LAST_STAND
-	# 	desc = ABILITY_LAST_STAND_DESC
+				if = {
+					limit = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+					NOT = { 
+						has_completed_focus = CHI_know_thy_enemy
+					}
+				}
+			}
+		}
 		
-	# 	sound_effect = command_power_ability_offensive
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					has_war_support > 0.1
+					command_power > 1.5
+				}
+				check_variable = { num_units_offensive_combats > 6 }
+				
+				set_temp_variable = { temp = avg_offensive_combat_status }
+				check_variable = { temp > 0.45 }
+				check_variable = { ai_random > temp }
+				
+				add = 2
+			}
+		}
 		
-	# 	type = army_leader
+		cost = 0.22
+		duration = 168
+
+		unit_modifiers = {
+			offence = 0.2
+			breakthrough_factor = 0.25
+			org_damage_multiplier = -1.0
+			str_damage_multiplier = 0.6
+			war_support_reduction_on_damage = 0.2
+			cannot_retreat_while_attacking = 1.0
+		}
+	}
+
+	last_stand = {
+		name = ABILITY_LAST_STAND
+		desc = ABILITY_LAST_STAND_DESC
 		
-	# 	allowed = {
-	# 		is_leading_army_group = no
-	# 		is_border_war = no
-	# 		OWNER = { NOT = { has_completed_focus = JAP_warrior_spirit OR = { tag = EFR tag = POL tag = BEL tag = HOL tag = DEN  }   } }
-	# 	}
+		sound_effect = command_power_ability_offensive
 		
-	# 	cost = 0.44
-	# 	duration = 168
+		type = army_leader
 		
-	# 	one_time_effect = {
-	# 		add_temporary_buff_to_units = {
-	# 			org_damage_multiplier = -0.5
-	# 			str_damage_multiplier = 1.00
-	# 			# war_support_reduction_on_damage = 0.2
-	# 			days = 7
-	# 			tooltip = ABILITY_LAST_STAND_TOOLTIP
-	# 		}
-	# 	}
-	# }
-	
+		allowed = {
+			is_leading_army_group = no
+			is_border_war = no
+			OWNER = {
+				NOT = {
+					has_completed_focus = JAP_warrior_spirit
+					has_completed_focus = SPA_cultivate_fanaticism
+					has_completed_focus = SWE_winter_drill
+					has_completed_focus = JAP_issue_the_senjinkun_military_code
+					has_completed_focus = JAP_indoctrination_in_the_military_academy
+					has_completed_focus = PHI_utang_na_loob
+				}
+			}
+		}
+		
+		cost = 0.22
+		duration = 168
+
+		unit_modifiers = {
+			defence = 0.2
+			combat_entrenchment = 0.25
+			org_damage_multiplier = -1.0
+			str_damage_multiplier = 0.6
+			war_support_reduction_on_damage = 0.2
+			cannot_retreat_while_defending = 1.0
+		}
+
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					has_war_support > 0.4
+				}
+				
+				check_variable = { num_units_defensive_combats > 6 }
+				
+				set_temp_variable = { temp = avg_defensive_combat_status }
+				check_variable = { temp < 0.40 }
+				check_variable = { ai_random > temp }
+				
+				add = 2
+			}
+		}
+	}
+
 	staff_office_plan = {
 		name = ABILITY_STAFF_OFFICE_PLAN
 		desc = ABILITY_STAFF_OFFICE_PLAN_DESC
@@ -65,13 +127,33 @@ ability = {
 		
 		allowed = {
 			is_border_war = no
+			OWNER = {
+				NOT = {
+					has_completed_focus = JAP_the_art_of_warfare
+				}
+			}
 		}
 		
 		cost = 0.12
 		duration = 168
 		
 		unit_modifiers = {
-			planning_speed = 3.0
+			planning_speed = 4.0
+		}
+		
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					command_power > 2.0
+				}
+				check_variable = { num_units > 6 }
+				check_variable = { unit_ratio_ready_for_plan > 0.55 }
+				check_variable = { avg_unit_planning_ratio < 0.4 }
+				
+				add = 2
+			}
 		}
 	}
 	
@@ -88,12 +170,32 @@ ability = {
 		}
 		
 		unit_modifiers = {
-			fort = { attack = 0.1 }
+			fort = {
+				attack = 0.2
+			}
 			fortification_damage = 2.0
 			fortification_collateral_chance = 2.0
 		}
 		cost = 0.1
 		duration = 168
+		
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					command_power > 1.5
+				}
+				
+				set_temp_variable = { temp = num_units_offensive_combats }
+				check_variable = { temp > 6 }
+				set_temp_variable = { temp2 = num_units_offensive_combats_against@fort }
+				divide_temp_variable = { temp2 = temp }
+				check_variable = { temp2 > 0.5 }
+				
+				add = 2
+			}
+		}
 	}
 	
 	glider_planes = {
@@ -108,7 +210,7 @@ ability = {
 		}
 		
 		unit_modifiers = {
-			paratrooper_count_per_plane = 1.0
+			paratrooper_weight_factor = -0.10
 			paradrop_organization_factor = 2.0
 			paratrooper_aa_defense = 0.5
 		}
@@ -156,6 +258,41 @@ ability = {
 		duration = -1
 	}
 	
+	makeshift_bridges = {
+		name = ABILITY_MAKESHIFT_BRIDGES
+		desc = ABILITY_MAKESHIFT_BRIDGES_DESC
+		
+		type = army_leader
+		
+		allowed = {
+			has_ability = makeshift_bridges
+			is_border_war = no
+		}
+		
+		
+		unit_modifiers = {
+			river_crossing_factor = -0.4
+			river = {
+				attack = 0.2
+			}
+		}
+		
+		cost = 0.1
+		duration = 168
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					command_power > 2.0
+				}
+				check_variable = { num_units_crossing_river > 5 }
+				
+				add = 2
+			}
+		}
+	}
+	
 	extra_suplies = {
 		name = ABILITY_EXTRA_SUPLIES
 		desc = ABILITY_EXTRA_SUPLIES_DESC
@@ -165,6 +302,9 @@ ability = {
 		allowed = {
 			has_ability = extra_suplies
 			is_border_war = no
+			OWNER = {
+				NOT = { has_country_flag = has_quinine }
+			}
 		}
 		
 		unit_modifiers = {
@@ -178,5 +318,193 @@ ability = {
 		cost = 0.2
 		duration = 168
 		cooldown = 504
+	}
+	
+	requisition_winter_gear = {
+		name = ABILITY_REQUISITION_WINTER_GEAR
+		desc = ABILITY_REQUISITION_WINTER_GEAR_DESC
+		
+		type = army_leader
+		
+		allowed = {
+			has_ability = requisition_winter_gear
+			is_border_war = no
+		}
+		
+		unit_modifiers = {
+			acclimatization_cold_climate_gain_factor = 0.5
+		}
+		
+		cost = 0.1
+		duration = 168
+		
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					command_power > 2.0
+				}
+				check_variable = { num_units_on_climate@cold_climate > 8 }
+				set_temp_variable = { temp = avg_units_acclimation@cold_climate }
+				divide_temp_variable = { temp =  num_units }
+				check_variable = { temp < 0.5 }
+				
+				add = 2
+			}
+		}
+	}
+
+	extra_medics = {
+		name = ABILITY_EXTRA_MEDICS
+		desc = ABILITY_EXTRA_MEDICS_DESC
+		
+		sound_effect = ability_local_reserves
+		
+		type = army_leader
+		requires_deployed_hq = yes
+		
+		allowed = {
+			is_leading_army_group = no
+			is_border_war = no
+		}
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					has_war_support < 0.2
+					command_power > 2
+				}
+				check_variable = { num_units_offensive_combats > 6 }
+				
+				set_temp_variable = { temp = avg_offensive_combat_status }
+				check_variable = { temp > 0.2 }
+				check_variable = { ai_random > temp }
+				
+				add = 2
+			}
+		}
+		
+		
+		cost = 0.22
+		duration = 336
+		unit_modifiers = {
+			casualty_trickleback = 0.04
+		}
+	}
+
+	deeper_dig_in = {
+		name = ABILITY_DEEPER_DIG_IN
+		desc = ABILITY_DEEPER_DIG_IN_DESC
+		
+		sound_effect = ability_deeper_dig_in
+		
+		type = army_leader
+		requires_deployed_hq = yes
+		
+		allowed = {
+			is_border_war = no
+		}
+		
+		cost = 0.12
+		duration = 168
+		
+		unit_modifiers = {
+			dig_in_speed = 6.0
+		}
+		
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					command_power > 2.0
+				}
+				check_variable = { num_units > 6 }
+				check_variable = { unit_ratio_ready_for_plan > 0.6 }
+				check_variable = { avg_unit_entrenchment_ratio < 0.4 }
+				
+				add = 2
+			}
+		}
+	}
+
+	defense_in_depth = {
+		name = ABILITY_DEFENSE_IN_DEPTH
+		desc = ABILITY_DEFENSE_IN_DEPTH_DESC
+		sound_effect = ability_defence_in_depth
+		type = army_leader
+		requires_deployed_hq = yes
+		
+		allowed = {
+			is_border_war = no
+		}
+		
+		unit_modifiers = {
+			max_planning = -0.5
+			max_dig_in = 3
+		}
+		
+		cancelable = yes
+		cost = 0.1
+		duration = -1
+	}
+
+	front_overrun = {
+		name = ABILITY_FRONT_OVERRUN
+		desc = ABILITY_FRONT_OVERRUN_DESC
+		sound_effect = ability_front_overrun
+		type = army_leader
+		requires_deployed_hq = yes
+		
+		allowed = {
+			is_border_war = no
+		}
+		
+		unit_modifiers = {
+			org_loss_when_moving = -0.1
+			planning_decay_rate_factor = -0.2
+			str_damage_multiplier = 0.4
+		}
+		
+		cancelable = yes
+		cost = 0.1
+		duration = -1
+	}
+
+	rotating_reserves = {
+		name = ABILITY_ROTATING_RESERVES
+		desc = ABILITY_ROTATING_RESERVES_DESC
+		
+		sound_effect = ability_local_command
+		
+		type = army_leader
+		requires_deployed_hq = yes
+		
+		allowed = {
+			is_border_war = no
+		}
+		
+		cost = 0.12
+		duration = 168
+		
+		unit_modifiers = {
+			land_reinforce_rate = 0.06 
+		}
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					command_power > 6.0
+				}
+				check_variable = { num_units > 6 }
+				check_variable = { num_units_in_combat > 4}
+				check_variable = { avg_combat_status > 0.7}
+				
+				add = 2
+			}
+		}
 	}
 }

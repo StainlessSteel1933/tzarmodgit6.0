@@ -7,6 +7,7 @@ sub_units = {
 		ai_priority = 0
 		active = no
 		affects_speed = no
+
 		type = {
 			infantry
 			support
@@ -16,18 +17,24 @@ sub_units = {
 		
 		categories = {
 			category_support_battalions
+			category_divisional_support_battalions
 			category_army
 		}
-
-	
+		
+		battalion_mult = {
+			category = category_all_infantry
+			default_morale = 0.20
+		}
+		
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
 		max_strength = 1
-		max_organisation = 25	
+		max_organisation = 0	
 		default_morale = 0.3
 		manpower = 500
-		training_time = 120
+		training_time = 180
 
 		#Misc Abilities
 		weight = 0.1
@@ -35,25 +42,21 @@ sub_units = {
 		can_be_parachuted = yes
 		
 		# Important Ability
-		suppression_factor = 0.50
+		suppression_factor = 0.20
 
 		essential = {
 			infantry_equipment
 			support_equipment
 		}
-				# Support nerfs to combat abilitie
-		breakthrough = -0.65
-		soft_attack = -0.25
-		hard_attack = -0.65
-		defense = 0.4
 		
 		need = {
-			support_equipment = 50
-			infantry_equipment = 100
+			support_equipment = 10
+			infantry_equipment = 40
 		}
 
+		same_support_type = military_police # blocks adding other MP types to template
 	}
-	
+
 	motorized_military_police = {
 		abbreviation = "MMP"
 		sprite = motorized_military_police
@@ -72,6 +75,7 @@ sub_units = {
 		
 		categories = {
 			category_support_battalions
+			category_divisional_support_battalions
 			category_army
 		}
 		
@@ -84,7 +88,8 @@ sub_units = {
 			category = category_vehicle_infantry
 			suppression_factor = 0.20
 		}
-	
+		
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions

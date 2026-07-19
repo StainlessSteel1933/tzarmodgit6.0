@@ -116,6 +116,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
+			create_faction = JAP_greater_east_asian_co_prosperity_sphere
 		}
 	}
 
@@ -152,7 +153,6 @@ focus_tree = {
 		select_effect = {}
 		completion_reward = {
 			add_ideas = JAP_intervene_in_china_5
-			set_country_flag = JAP_china_timer
 			
 		#	add_named_threat = { threat = 10 name = JAP_CHIONE }
 			#add_ideas = JAP_war_with_chi1
@@ -266,24 +266,11 @@ focus_tree = {
 		}
 
 		available = {
-		AND = {
-			OR = {
-			date>1940.1.1
+		OR = {
 			CHI = {
-			surrender_progress > 0.5
+			surrender_progress > 0.78
 			}
-			}
-			has_country_flag = {
-				flag = JAP_china_timer
-				days > 540
-			}
-			custom_trigger_tooltip = {
-				tooltip = JAP_china_timer_tt
-				has_country_flag = {
-					flag = JAP_china_timer
-					days > 540
-				}
-			}
+			date > 1940.01.01
 		}
 		}
 

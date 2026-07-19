@@ -1,4 +1,59 @@
 characters={
+	FRA_leon_blum={
+		# advisor={
+		# 	slot = political_advisor
+		# 	idea_token = leon_blum
+		# 	allowed  = {
+		# 			or  = {
+		# 				original_tag  = FRA
+		# 				original_tag  = FRF
+		# 			}
+		# 		}
+		# 		available  = {
+		# 		}
+		# 		traits  = {
+		# 			democratic_reformer 
+		# 		}
+		# 		cost = 75.000
+		# 		do_effect  = {
+		# 			not  = {
+		# 				has_government  = democratic 
+		# 			}
+		# 		}
+		# 		ai_will_do  = {
+		# 			factor  = 0.000
+		# 		}
+		# }
+		name="leon_blum"
+		portraits={
+			army={
+				small="GFX_idea_leon_blum"
+			}
+			civilian = {
+				large="GFX_portrait_fra_leon_blum"
+			}
+		}
+		# country_leader={
+		# 	ideology=socialism
+		# 	traits={ stout_defender }
+		# 	expire="1965.1.1.1"
+		# 	id=-1
+		# }
+	}
+	FRA_pierre_laval={ #Democratic Leader
+		name=FRA_pierre_laval
+		portraits={
+			civilian={
+				large="GFX_portrait_fra_pierre_laval"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ stout_defender }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	FRA_Edouard_daladier={
 		name="Édouard Daladier"
 		portraits={
@@ -6,13 +61,13 @@ characters={
 				large="gfx/leaders/FRA/Portrait_France_Edouard_Daladier.dds"
 			}
 		}
-		country_leader={
-			desc="POLITICS_EDOUARD_DALADIER_DESC"
-			ideology=socialism
-			traits={ stout_defender }
-			expire="1965.1.1.1"
-			id=-1
-		}
+		# country_leader={
+		# 	desc="POLITICS_EDOUARD_DALADIER_DESC"
+		# 	ideology=socialism
+		# 	traits={ stout_defender }
+		# 	expire="1965.1.1.1"
+		# 	id=-1
+		# }
 	}
 	FRA_maurice_thorez={
 		name="Maurice Thorez"
@@ -41,6 +96,33 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+	}
+	FRA_mikhail_tukhachevsky={
+		name="Mikhail Tukhachevsky"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SOV_mikhail_tukhachevsky.dds"
+			}
+			army={
+				large="gfx/leaders/SOV/Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+			}
+		}	
+	
+		# available = {
+		# 	has_completed_focus = FRA_gamelin_gambit
+		# }
+		# field_marshal={
+		# 	visible = {
+		# 	has_completed_focus = FRA_gamelin_gambit
+		# 	}
+		# 	traits={ brilliant_strategist career_officer trait_reckless cavalry_leader skilled_staffer offensive_doctrine }
+		# 	skill=7
+		# 	attack_skill=7
+		# 	defense_skill=6
+		# 	planning_skill=3
+		# 	logistics_skill=4
+		# 	legacy_id=-1
+		# }
 	}
 	FRA_jean_de_lattre_de_tassigny={
 		name="Jean de Lattre de Tassigny"
@@ -513,16 +595,16 @@ characters={
 	FRA_georges_bonnet={
 		advisor={
 			slot = political_advisor
-			idea_token = georges_bonnet
+			idea_token = FRA_georges_bonnet
 			allowed  = {
 					original_tag  = FRA
 				}
 				available  = {
-					has_completed_focus  = FRA_form_the_popular_front 
+					has_completed_focus  = FRA_right_one
 				}
 				cost  = 75.000
 				traits  = {
-					appeaser 
+					JUNO_unpopular_economist
 				}
 				do_effect  = {
 				}
@@ -573,8 +655,9 @@ characters={
 					}
 				}
 				available  = {
+					has_completed_focus = FRA_laissez_faire
 				}
-				cost  = 150.000
+				cost  = 75
 				traits  = {
 					technocrat 
 				}
@@ -596,13 +679,13 @@ characters={
 			slot = political_advisor
 			idea_token = FRA_charles_tillon
 			allowed  = {
-					or  = {
 						original_tag  = FRA
-						original_tag  = FRF
-					}
 				}
 				traits  = {
-					armaments_organizer 
+					chair_of_the_unions
+				}
+				available = {
+					has_completed_focus = FRA_left_two
 				}
 				cost = 150.000
 				on_add  = {
@@ -616,7 +699,7 @@ characters={
 		name="FRA_charles_tillon"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
+				small="GFX_idea_generic_political_advisor_europe_2"
 			}
 		}
 	}
@@ -633,7 +716,7 @@ characters={
 				available  = {
 					or  = {
 						original_tag  = FRF
-						has_completed_focus  = FRA_form_the_popular_front 
+						has_completed_focus  = FRA_left_one
 					}
 				}
 				traits  = {
@@ -720,13 +803,10 @@ characters={
 			slot = political_advisor
 			idea_token = FRA_zivony_peshkov
 			allowed  = {
-					or  = {
 						original_tag  = FRA
-						original_tag  = FRF
-					}
 				}
 				traits  = {
-					war_industrialist 
+					JUNO_minister_of_foreign_affairs
 				}
 				cost = 150.000
 				on_add  = {
@@ -872,41 +952,6 @@ characters={
 			}
 		}
 	}
-	FRA_leon_blum={
-		advisor={
-			slot = political_advisor
-			idea_token = leon_blum
-			allowed  = {
-					or  = {
-						original_tag  = FRA
-						original_tag  = FRF
-					}
-				}
-				available  = {
-				}
-				traits  = {
-					democratic_reformer 
-				}
-				cost = 75.000
-				do_effect  = {
-					not  = {
-						has_government  = democratic 
-					}
-				}
-				ai_will_do  = {
-					factor  = 0.000
-				}
-		}
-		name="leon_blum"
-		portraits={
-			army={
-				small="GFX_idea_leon_blum"
-			}
-			civilian = {
-				large="GFX_portrait_fra_leon_blum"
-			}
-		}
-	}
 	FRA_marcel_gensoul={
 		advisor={
 			slot = navy_chief
@@ -932,18 +977,47 @@ characters={
 			}
 		}
 	}
+	FRA_paul_reynaud={
+		name=FRA_paul_reynaud
+		portraits={
+			army={
+				small=GFX_portrait_FRA_paul_reynaud_small
+			}
+			civilian = {
+				large = GFX_portrait_FRA_paul_reynaud
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_paul_reynaud
+			allowed  = {
+				original_tag  = FRA
+			}
+			traits  = {
+				war_industrialist
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}		
+	}
 	FRA_felix_gouin={
 		advisor={
 			slot = political_advisor
 			idea_token = FRA_felix_gouin
-			allowed  = {
-					or  = {
-						original_tag  = FRA
-						original_tag  = FRF
-					}
+				allowed  = {
+				original_tag  = FRA
+					
+				}
+				available = {
+					has_completed_focus = FRA_left_one
 				}
 				traits  = {
-					captain_of_industry 
+					JUNO_popular_lawyer
 				}
 				cost = 150.000
 				on_add  = {
@@ -957,7 +1031,7 @@ characters={
 		name="FRA_felix_gouin"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
+				small="GFX_idea_generic_political_advisor_europe_4"
 			}
 		}
 	}
