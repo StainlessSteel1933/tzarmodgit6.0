@@ -1259,16 +1259,13 @@
 					compare = greater_than_or_equals
 				}
 			}
+			NOT = {
+				has_completed_focus = Fra_left_wing
+			}
 			# custom_trigger_tooltip = {
 			# 	tooltip = "The National Union won"
 			# 	has_country_flag = Nation_union_won
 			# }
-		}
-
-		allow_branch = {
-			NOT = {
-				has_completed_focus = Fra_left_wing
-			}
 		}
 
 		prerequisite = {focus = FRA_election}
@@ -1323,15 +1320,13 @@
 					compare = greater_than_or_equals
 				}
 			}
+			NOT = {
+				has_completed_focus = Fra_right_wing
+			}
 			# custom_trigger_tooltip = {
 			# 	tooltip = "The left won"
 			# 	has_country_flag = Left_won
 			# }
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = Fra_right_wing
-			}
 		}
 		prerequisite = {focus = FRA_election}
 		relative_position_id = FRA_election
