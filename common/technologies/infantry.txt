@@ -483,7 +483,6 @@ technologies = {
 			paratrooper
 		}
 		enable_subunits = {
-			limit = { has_dlc = "Thunder at Our Gates"}
 			hq_paratrooper
 		}
 
@@ -556,11 +555,6 @@ technologies = {
 				}
 			}
 
-			modifier = {
-				factor = 5
-				tag = GER
-				has_completed_focus = GER_fallschirmjager
-			}
 		}
 	}
 
@@ -873,10 +867,6 @@ technologies = {
 
 	rangers_tech = {
 
-		allow_branch = {
-			has_dlc = "No Compromise, No Surrender"
-		}
-
 		enable_subunits = {
 			ranger_battalion
 		}
@@ -911,29 +901,6 @@ technologies = {
 			cat_special_forces_generic
 		}
 		
-		ai_will_do = {
-			factor = 0.7
-			
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 5
-				tag = JAP
-			}
-
-			modifier = {
-				factor = 5
-				tag = BRA
-			}
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
-		}
 	}
 
 	rangers_tech2 = {
@@ -1605,51 +1572,7 @@ technologies = {
 			infantry_weapons
 		}
 
-		ai_will_do = {
-			factor = 1
-
-			# All participants in this war will want to have this tech as early as possible
-			modifier = {
-				factor = 15
-				OR = {
-					original_tag = CHI
-					original_tag = PRC
-					original_tag = XSM
-					original_tag = SIK
-					original_tag = GXC
-					original_tag = SHX
-					original_tag = YUN
-					original_tag = MAN
-					original_tag = MEN
-					original_tag = JAP
-					original_tag = GSM
-					original_tag = NXM
-					original_tag = HBC
-					original_tag = SND
-					original_tag = GDC
-					original_tag = KHM
-				}
-			}
-
-			modifier = {
-				factor = 2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-		}
+		
 	}
 
 	support_weapons2 = {
@@ -1704,46 +1627,7 @@ technologies = {
 			infantry_weapons
 		}
 
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 5
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
-				factor = 2
-				date > "1938.1.6"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1940.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1941.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-		}
+		
 	}
 
 	support_weapons3 = {
@@ -2163,9 +2047,10 @@ technologies = {
 		}
 
 		enable_equipments = {
-			gw_armored_car_equipment
+			armored_car_chassis_0
+			# gw_armored_car_equipment
 		}
-		allow_branch = { has_dlc = "La Resistance" }
+
 		path = {
 			leads_to_tech = armored_car2
 			research_cost_coeff = 1
@@ -2212,7 +2097,8 @@ technologies = {
 	armored_car2 = {
 
 		enable_equipments = {
-			armored_car_equipment_1
+			armored_car_chassis_1
+			# armored_car_equipment_1
 		}
 
 		path = {
@@ -2261,7 +2147,8 @@ technologies = {
 	armored_car3 = {
 
 		enable_equipments = {
-			armored_car_equipment_2
+			armored_car_chassis_2
+			# armored_car_equipment_2
 		}
 
 		research_cost = 2
@@ -2278,9 +2165,9 @@ technologies = {
 		}
 		special_project_specialization = { specialization_land }
 
-		sub_technologies = {
-			armored_car_at_upgrade
-		}
+		# sub_technologies = {
+		# 	armored_car_at_upgrade
+		# }
 
 		ai_will_do = {
 			factor = 1
@@ -2306,48 +2193,48 @@ technologies = {
 		}
 	}
 
-	armored_car_at_upgrade = {
+	# armored_car_at_upgrade = {
 
-		enable_equipments = {
-			armored_car_at_equipment
-		}
-		special_project_specialization = { specialization_land }
+	# 	enable_equipments = {
+	# 		armored_car_at_equipment
+	# 	}
+	# 	special_project_specialization = { specialization_land }
 
-		research_cost = 1
-		start_year = 1942
-		sub_tech_index = 1
+	# 	research_cost = 1
+	# 	start_year = 1942
+	# 	sub_tech_index = 1
 
-		categories = {
-			motorized_equipment
-			armor
-			cat_armored_cars
-		}
+	# 	categories = {
+	# 		motorized_equipment
+	# 		armor
+	# 		cat_armored_cars
+	# 	}
 
-		special_project_specialization = { specialization_land }
+	# 	special_project_specialization = { specialization_land }
 
-		ai_will_do = {
-			factor = 1
+	# 	ai_will_do = {
+	# 		factor = 1
 
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 2
+	# 			date > "1942.1.1"
+	# 		}
 
-			modifier = {
-				factor = 2
-				date > "1943.1.1"
-			}
+	# 		modifier = {
+	# 			factor = 2
+	# 			date > "1943.1.1"
+	# 		}
 
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-			modifier = {
-				is_major = no
-				factor = 0.5
-			}
-		}
-	}
+	# 		modifier = {
+	# 			factor = 2
+	# 			date > "1944.1.1"
+	# 		}
+	# 		modifier = {
+	# 			is_major = no
+	# 			factor = 0.5
+	# 		}
+	# 	}
+	# }
 
  	SWE_lynx_armored_car = {
  		allow = { always = no }

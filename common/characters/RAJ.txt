@@ -46,7 +46,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ expert_improviser trickster cavalry_officer brave cavalry_leader cavalry_expert ascari_officer }
+			traits={ expert_improviser trickster cavalry_officer cavalry_leader cavalry_expert ascari_officer }
 			skill=3
 			attack_skill=8
 			defense_skill=3
@@ -533,7 +533,7 @@ RAJ_GOE_j_r_d_tata= {
 			}
 		}
 		field_marshal={
-			traits={ old_guard career_officer war_hero infantry_leader commando defensive_doctrine inspirational_leader infantry_expert ranger trait_mountaineer }
+			traits={ old_guard career_officer war_hero infantry_leader commando inspirational_leader infantry_expert ranger trait_mountaineer }
 			skill=5
 			attack_skill=6
 			defense_skill=4
@@ -556,7 +556,7 @@ RAJ_GOE_j_r_d_tata= {
 			}
 		}
 		field_marshal={
-			traits={ organizer career_officer infantry_leader skilled_staffer trait_engineer logistics_wizard defensive_doctrine thorough_planner expert_delegator }
+			traits={ organizer career_officer infantry_leader skilled_staffer trait_engineer logistics_wizard thorough_planner expert_delegator }
 			skill=6
 			attack_skill=4
 			defense_skill=5

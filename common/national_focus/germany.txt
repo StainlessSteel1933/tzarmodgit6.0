@@ -4726,25 +4726,25 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = GER_Recruit_The_SS
-		icon = GFX_focus_GER_appease_the_wehrmacht
-		prerequisite = { focus = GER_fall_gelb }
-		relative_position_id = GER_fall_gelb
-		x = 1
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-		}
-		available_if_capitulated = yes
+	# focus = {
+	# 	id = GER_Recruit_The_SS
+	# 	icon = GFX_focus_GER_appease_the_wehrmacht
+	# 	prerequisite = { focus = GER_fall_gelb }
+	# 	relative_position_id = GER_fall_gelb
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 5
+	# 	ai_will_do = {
+	# 		factor = 10
+	# 	}
+	# 	available = {
+	# 	}
+	# 	available_if_capitulated = yes
 
-		completion_reward = {
-			load_oob = "Waffen"
-		}
-	}
+	# 	completion_reward = {
+	# 		load_oob = "Waffen"
+	# 	}
+	# }
 
 			focus = {
 				id = GER_armament_miracle

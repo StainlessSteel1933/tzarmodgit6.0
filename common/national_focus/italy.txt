@@ -6142,8 +6142,8 @@ completion_reward = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
-			custom_effect_tooltip = "Gives access to Irregular infantry(OP)"
-			set_technology = { irregular_inf = 1 }
+			# custom_effect_tooltip = "Gives access to Irregular infantry(OP)"
+			# set_technology = { irregular_inf = 1 }
 			# REGIO ESERCITO
 			add_to_variable = { ITA_re_army_morale_factor = 0.05 }
 			add_to_variable = { ITA_re_conscription_factor = 0.05 }

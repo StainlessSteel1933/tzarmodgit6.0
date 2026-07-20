@@ -1129,7 +1129,7 @@ focus = {
 				country_leader = {
 					ideology = fascism_ideology
 					expire = "1965.1.1.1"
-					traits = {  ITA_head_of_the_national_committee }
+					# traits = {  ITA_head_of_the_national_committee }
 				}
 			}
 		}
