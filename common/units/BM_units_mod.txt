@@ -515,8 +515,8 @@ sub_units = {
 		transport = motorbike_equipment
 	
 		need = {
-			infantry_equipment = 80
-			motorbike_equipment = 80
+			infantry_equipment = 30
+			motorbike_equipment = 30
 		}
 
 		essential = {
