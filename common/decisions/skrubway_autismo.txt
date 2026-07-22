@@ -1,508 +1,508 @@
-ENG_fortified_position_cat = {
+# ENG_fortified_position_cat = {
 
-	ENG_fortified_1 = {
-		fire_only_once = no
-		visible = {
-		}
-		cost = 10
-		complete_effect = {
-			447 = {
-				add_dynamic_modifier = {
-					modifier = ENG_fortified_position
-					days = 180
-				}
-			}	
-		}
-	}
+# 	ENG_fortified_1 = {
+# 		fire_only_once = no
+# 		visible = {
+# 		}
+# 		cost = 10
+# 		complete_effect = {
+# 			447 = {
+# 				add_dynamic_modifier = {
+# 					modifier = ENG_fortified_position
+# 					days = 180
+# 				}
+# 			}	
+# 		}
+# 	}
 
-	ENG_fortified_2 = {
-		fire_only_once = no
-		visible = {
-		}
-		cost = 10
-		complete_effect = {
-			183 = {
-				add_dynamic_modifier = {
-					modifier = ENG_fortified_position
-					days = 180
-				}
-			}	
-		}
-	}
+# 	ENG_fortified_2 = {
+# 		fire_only_once = no
+# 		visible = {
+# 		}
+# 		cost = 10
+# 		complete_effect = {
+# 			183 = {
+# 				add_dynamic_modifier = {
+# 					modifier = ENG_fortified_position
+# 					days = 180
+# 				}
+# 			}	
+# 		}
+# 	}
 	
-	ENG_fortified_3 = {
-		fire_only_once = no
-		visible = {
-		}
-		cost = 10
-		complete_effect = {
-			116 = {
-				add_dynamic_modifier = {
-					modifier = ENG_fortified_position
-					days = 180
-				}
-			}	
-		}
-	}
+# 	ENG_fortified_3 = {
+# 		fire_only_once = no
+# 		visible = {
+# 		}
+# 		cost = 10
+# 		complete_effect = {
+# 			116 = {
+# 				add_dynamic_modifier = {
+# 					modifier = ENG_fortified_position
+# 					days = 180
+# 				}
+# 			}	
+# 		}
+# 	}
 	
-	ENG_fortified_4 = {
-		fire_only_once = no
-		visible = {
-		}
-		cost = 10
-		complete_effect = {
-			118 = {
-				add_dynamic_modifier = {
-					modifier = ENG_fortified_position
-					days = 180
-				}
-			}	
-		}
-	}
+# 	ENG_fortified_4 = {
+# 		fire_only_once = no
+# 		visible = {
+# 		}
+# 		cost = 10
+# 		complete_effect = {
+# 			118 = {
+# 				add_dynamic_modifier = {
+# 					modifier = ENG_fortified_position
+# 					days = 180
+# 				}
+# 			}	
+# 		}
+# 	}
 	
-	ENG_fortified_5 = {
-		fire_only_once = no
-		visible = {
-		}
-		cost = 10
-		complete_effect = {
-			1021 = {
-				add_dynamic_modifier = {
-					modifier = ENG_fortified_position
-					days = 180
-				}
-			}	
-		}
-	}
+# 	ENG_fortified_5 = {
+# 		fire_only_once = no
+# 		visible = {
+# 		}
+# 		cost = 10
+# 		complete_effect = {
+# 			1021 = {
+# 				add_dynamic_modifier = {
+# 					modifier = ENG_fortified_position
+# 					days = 180
+# 				}
+# 			}	
+# 		}
+# 	}
 	
-	ENG_fortified_6 = {
-		fire_only_once = no
-		visible = {
-		}
-		cost = 10
-		complete_effect = {
-			422 = {
-				add_dynamic_modifier = {
-					modifier = ENG_fortified_position
-					days = 180
-				}
-			}	
-		}
-	}
-	### this one below is rats of toburk lul
-	ENG_fortified_7 = {
-		fire_only_once = no
-		visible = {
-		}
-		available = {
-			451 = {	
-				controller = {
-					OR = {
-						original_tag = ENG
-						is_in_faction_with = ENG
-					}
-				}
-			}
-		}
+# 	ENG_fortified_6 = {
+# 		fire_only_once = no
+# 		visible = {
+# 		}
+# 		cost = 10
+# 		complete_effect = {
+# 			422 = {
+# 				add_dynamic_modifier = {
+# 					modifier = ENG_fortified_position
+# 					days = 180
+# 				}
+# 			}	
+# 		}
+# 	}
+# 	### this one below is rats of toburk lul
+# 	ENG_fortified_7 = {
+# 		fire_only_once = no
+# 		visible = {
+# 		}
+# 		available = {
+# 			451 = {	
+# 				controller = {
+# 					OR = {
+# 						original_tag = ENG
+# 						is_in_faction_with = ENG
+# 					}
+# 				}
+# 			}
+# 		}
 		
-		cost = 10
-		complete_effect = {
-			451 = {
-				add_dynamic_modifier = {
-					modifier = ENG_fortified_position
-					days = 180
-				}
-			}	
-		}
-	}
+# 		cost = 10
+# 		complete_effect = {
+# 			451 = {
+# 				add_dynamic_modifier = {
+# 					modifier = ENG_fortified_position
+# 					days = 180
+# 				}
+# 			}	
+# 		}
+# 	}
 
-}
+# }
 
-ENG_stat_giving_operation_cat = {	
+# ENG_stat_giving_operation_cat = {	
 	
-	ENG_operation_active_descion = {
+# 	ENG_operation_active_descion = {
 
-		icon = GFX_decision_CHL_carabineros
+# 		icon = GFX_decision_CHL_carabineros
 
-		allowed = {
-			original_tag = ENG
-		}
+# 		allowed = {
+# 			original_tag = ENG
+# 		}
 		
-		available = {
-			always = no
-		}
+# 		available = {
+# 			always = no
+# 		}
 
-		days_mission_timeout = 50
-		#days_remove = 1
+# 		days_mission_timeout = 50
+# 		#days_remove = 1
 
-		activation = {
-			OR = {
-				has_completed_focus = ENG_operation_compass_no_italy_war
-				has_completed_focus = ENG_operation_compass_yes_italy_war
-				has_completed_focus = ENG_operation_crusader_focus
-			}	
-		}
+# 		activation = {
+# 			OR = {
+# 				has_completed_focus = ENG_operation_compass_no_italy_war
+# 				has_completed_focus = ENG_operation_compass_yes_italy_war
+# 				has_completed_focus = ENG_operation_crusader_focus
+# 			}	
+# 		}
 
-		fixed_random_seed = no
+# 		fixed_random_seed = no
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		is_good = no
+# 		is_good = no
 
-		timeout_effect = {
-			clr_country_flag = operation_active
-		}
-	}
-	# ENG_operation_compass_d = {
-	# 	fire_only_once = no
-	# 	visible = {
-	# 	}
-	# 	available = {
-	# 		has_war_with = GER
-	# 	}
+# 		timeout_effect = {
+# 			clr_country_flag = operation_active
+# 		}
+# 	}
+# 	# ENG_operation_compass_d = {
+# 	# 	fire_only_once = no
+# 	# 	visible = {
+# 	# 	}
+# 	# 	available = {
+# 	# 		has_war_with = GER
+# 	# 	}
 		
-	# 	cost = 0
-	# 	complete_effect = {
-	# 			IF = {
-	# 				ENG = {
-	# 					NOT = {
-	# 						has_war_with = ITA 
-	# 					}
-	# 				}
-	# 				ITA = {
-	# 					declare_war_on = {
-	# 						target = ENG
-	# 						type = annex_everything
-	# 					}
-	# 				}
-	# 			}
-	# 			IF = {
-	# 				limit = {
-	# 					ENG = { has_war_with = ITA }
-	# 				}
-	# 				every_other_country = {
-	# 						limit = {
-	# 							is_in_faction_with = ROOT
-	# 							NOT = { tag = FRA }
-	# 						}
-	# 					ITA = {
-	# 						declare_war_on = {
-	# 							target = PREV
-	# 							type = annex_everything
-	# 						}
-	# 					}
-	# 					add_timed_idea = { idea = ENG_operation_compass_idea days = 60 }
-	# 				}
-	# 				ENG = { add_timed_idea = { idea = ENG_operation_compass_idea days = 60 } }
-	# 			}
-	# 	}
-	# }
-	# ENG_operation_crusader_d = {
-	# 	fire_only_once = no
-	# 	visible = {
-	# 	}
-	# 	available = {
+# 	# 	cost = 0
+# 	# 	complete_effect = {
+# 	# 			IF = {
+# 	# 				ENG = {
+# 	# 					NOT = {
+# 	# 						has_war_with = ITA 
+# 	# 					}
+# 	# 				}
+# 	# 				ITA = {
+# 	# 					declare_war_on = {
+# 	# 						target = ENG
+# 	# 						type = annex_everything
+# 	# 					}
+# 	# 				}
+# 	# 			}
+# 	# 			IF = {
+# 	# 				limit = {
+# 	# 					ENG = { has_war_with = ITA }
+# 	# 				}
+# 	# 				every_other_country = {
+# 	# 						limit = {
+# 	# 							is_in_faction_with = ROOT
+# 	# 							NOT = { tag = FRA }
+# 	# 						}
+# 	# 					ITA = {
+# 	# 						declare_war_on = {
+# 	# 							target = PREV
+# 	# 							type = annex_everything
+# 	# 						}
+# 	# 					}
+# 	# 					add_timed_idea = { idea = ENG_operation_compass_idea days = 60 }
+# 	# 				}
+# 	# 				ENG = { add_timed_idea = { idea = ENG_operation_compass_idea days = 60 } }
+# 	# 			}
+# 	# 	}
+# 	# }
+# 	# ENG_operation_crusader_d = {
+# 	# 	fire_only_once = no
+# 	# 	visible = {
+# 	# 	}
+# 	# 	available = {
 			
-	# 	}
+# 	# 	}
 
-	# 	complete_effect = {
-	# 		ENG = { add_timed_idea = { idea = ENG_operation_crusader_idea days = 60 } }
-	# 		every_other_country = {
-	# 			limit = {
-	# 				is_in_faction_with = ROOT
-	# 			}
-	# 			add_timed_idea = { idea = ENG_operation_crusader_idea days = 60 }
-	# 		}
-	# 	}
-	# }
-	# ENG_operation_husky_d = {
-	# 	fire_only_once = no
-	# 	visible = {
-	# 	}
-	# 	available = {
+# 	# 	complete_effect = {
+# 	# 		ENG = { add_timed_idea = { idea = ENG_operation_crusader_idea days = 60 } }
+# 	# 		every_other_country = {
+# 	# 			limit = {
+# 	# 				is_in_faction_with = ROOT
+# 	# 			}
+# 	# 			add_timed_idea = { idea = ENG_operation_crusader_idea days = 60 }
+# 	# 		}
+# 	# 	}
+# 	# }
+# 	# ENG_operation_husky_d = {
+# 	# 	fire_only_once = no
+# 	# 	visible = {
+# 	# 	}
+# 	# 	available = {
 			
-	# 	}
+# 	# 	}
 
-	# 	complete_effect = {
-	# 		ENG = { add_timed_idea = { idea = ENG_operation_husky_idea days = 60 } }
-	# 		every_other_country = {
-	# 			limit = {
-	# 				is_in_faction_with = ROOT
-	# 			}
-	# 			add_timed_idea = { idea = ENG_operation_husky_idea days = 60 }
-	# 		}
-	# 	}
-	# }
-}
+# 	# 	complete_effect = {
+# 	# 		ENG = { add_timed_idea = { idea = ENG_operation_husky_idea days = 60 } }
+# 	# 		every_other_country = {
+# 	# 			limit = {
+# 	# 				is_in_faction_with = ROOT
+# 	# 			}
+# 	# 			add_timed_idea = { idea = ENG_operation_husky_idea days = 60 }
+# 	# 		}
+# 	# 	}
+# 	# }
+# }
 
-ENG_arm_contracts = {
-	ENG_ford_focus_d = {
-		fire_only_once = no
-		visible = {
-			has_completed_focus = ENG_contact_ford
-		}
-		available = {
-			NOT = {
-				has_idea = ENG_ford_focus
-			}
-		}
+# ENG_arm_contracts = {
+# 	ENG_ford_focus_d = {
+# 		fire_only_once = no
+# 		visible = {
+# 			has_completed_focus = ENG_contact_ford
+# 		}
+# 		available = {
+# 			NOT = {
+# 				has_idea = ENG_ford_focus
+# 			}
+# 		}
 
-		complete_effect = {
-			add_timed_idea = { idea = ENG_ford_focus days = 70 }
-			custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
-			add_to_variable = { ENG_budgetary_strain = 0.05 tooltip = consumer_goods_factor_tt }
-		}
-	}
-	ENG_british_arms_discount_d = {
-		fire_only_once = no
-		visible = {
-			has_completed_focus = uk_small_arms_focus
-		}
-		available = {
-			NOT = {
-				has_idea = british_arms_discount
-			}
-		}
+# 		complete_effect = {
+# 			add_timed_idea = { idea = ENG_ford_focus days = 70 }
+# 			custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
+# 			add_to_variable = { ENG_budgetary_strain = 0.05 tooltip = consumer_goods_factor_tt }
+# 		}
+# 	}
+# 	ENG_british_arms_discount_d = {
+# 		fire_only_once = no
+# 		visible = {
+# 			has_completed_focus = uk_small_arms_focus
+# 		}
+# 		available = {
+# 			NOT = {
+# 				has_idea = british_arms_discount
+# 			}
+# 		}
 
-		complete_effect = {
-			add_timed_idea = { idea = british_arms_discount days = 70 }
-			custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
-			add_to_variable = { ENG_budgetary_strain = 0.05 tooltip = consumer_goods_factor_tt }
-		}
-	}
-	ENG_ici_contract_d = {
-		fire_only_once = no
-		visible = {
-			has_completed_focus = ENG_ici_filling_factories
-		}
-		available = {
-			NOT = {
-				has_idea = ENG_ici_contract
-			}
-		}
+# 		complete_effect = {
+# 			add_timed_idea = { idea = british_arms_discount days = 70 }
+# 			custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
+# 			add_to_variable = { ENG_budgetary_strain = 0.05 tooltip = consumer_goods_factor_tt }
+# 		}
+# 	}
+# 	ENG_ici_contract_d = {
+# 		fire_only_once = no
+# 		visible = {
+# 			has_completed_focus = ENG_ici_filling_factories
+# 		}
+# 		available = {
+# 			NOT = {
+# 				has_idea = ENG_ici_contract
+# 			}
+# 		}
 
-		complete_effect = {
-			add_timed_idea = { idea = ENG_ici_contract days = 70 }
-			custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
-			add_to_variable = { ENG_budgetary_strain = 0.05 tooltip = consumer_goods_factor_tt }
-		}
-	}
-	ENG_american_sherman_d = {
-		fire_only_once = no
-		visible = {
-			has_completed_focus = ENG_american_sherman
-		}
-		available = {
-			NOT = {
-				has_idea = ENG_sherman_hull_idea
-			}
-		}
+# 		complete_effect = {
+# 			add_timed_idea = { idea = ENG_ici_contract days = 70 }
+# 			custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
+# 			add_to_variable = { ENG_budgetary_strain = 0.05 tooltip = consumer_goods_factor_tt }
+# 		}
+# 	}
+# 	ENG_american_sherman_d = {
+# 		fire_only_once = no
+# 		visible = {
+# 			has_completed_focus = ENG_american_sherman
+# 		}
+# 		available = {
+# 			NOT = {
+# 				has_idea = ENG_sherman_hull_idea
+# 			}
+# 		}
 
-		complete_effect = {
-			add_timed_idea = { idea = ENG_sherman_hull_idea days = 70 }
-			custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
-			add_to_variable = { ENG_budgetary_strain = 0.1 tooltip = consumer_goods_factor_tt }
-		}
-	}
-	ENG_royal_cordilite_d = {
-		fire_only_once = no
-		visible = {
-			has_completed_focus = ENG_royal_cordilite
-		}
-		available = {
-			NOT = {
-				has_idea = ENG_cordilite_idea
-			}
-		}
+# 		complete_effect = {
+# 			add_timed_idea = { idea = ENG_sherman_hull_idea days = 70 }
+# 			custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
+# 			add_to_variable = { ENG_budgetary_strain = 0.1 tooltip = consumer_goods_factor_tt }
+# 		}
+# 	}
+# 	ENG_royal_cordilite_d = {
+# 		fire_only_once = no
+# 		visible = {
+# 			has_completed_focus = ENG_royal_cordilite
+# 		}
+# 		available = {
+# 			NOT = {
+# 				has_idea = ENG_cordilite_idea
+# 			}
+# 		}
 
-		complete_effect = {
-			add_timed_idea = { idea = ENG_cordilite_idea days = 70 }
-			custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
-			add_to_variable = { ENG_budgetary_strain = 0.1 tooltip = consumer_goods_factor_tt }
-		}
-	}
-}
+# 		complete_effect = {
+# 			add_timed_idea = { idea = ENG_cordilite_idea days = 70 }
+# 			custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
+# 			add_to_variable = { ENG_budgetary_strain = 0.1 tooltip = consumer_goods_factor_tt }
+# 		}
+# 	}
+# }
 
-ENG_factory_evac_cat = {
+# ENG_factory_evac_cat = {
 
-	ENG_civ_evac = {
-		icon = generic_construction
-		available = {
-			NOT = {
-				any_state = {
-					is_core_of = ENG
-					is_controlled_by = ENG
-					is_on_continent = europe
-					industrial_complex > 2
-				}
-			}
-		}
-		allowed = {
-			always = no
-			tag = ENG
-		}
-		fire_only_once = no
-		days_mission_timeout = 3
-		timeout_effect = {
-			random_controlled_state = {
-				limit = {
-					AND = {
-						is_on_continent = europe
-						is_controlled_by = ENG
-						is_core_of = ENG
-						industrial_complex > 0
-					}
-				}
-				remove_building = {
-					type = industrial_complex
-					level = 1
-				}
-				862 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					and = {
-						any_state = {
-							is_core_of = ENG
-							is_controlled_by = ENG
-							is_on_continent = europe
-							industrial_complex > 0
-						}
-					}
-				}
-				activate_mission = ENG_civ_evac
-			}
-		}
+# 	ENG_civ_evac = {
+# 		icon = generic_construction
+# 		available = {
+# 			NOT = {
+# 				any_state = {
+# 					is_core_of = ENG
+# 					is_controlled_by = ENG
+# 					is_on_continent = europe
+# 					industrial_complex > 2
+# 				}
+# 			}
+# 		}
+# 		allowed = {
+# 			always = no
+# 			tag = ENG
+# 		}
+# 		fire_only_once = no
+# 		days_mission_timeout = 3
+# 		timeout_effect = {
+# 			random_controlled_state = {
+# 				limit = {
+# 					AND = {
+# 						is_on_continent = europe
+# 						is_controlled_by = ENG
+# 						is_core_of = ENG
+# 						industrial_complex > 0
+# 					}
+# 				}
+# 				remove_building = {
+# 					type = industrial_complex
+# 					level = 1
+# 				}
+# 				862 = {
+# 					add_extra_state_shared_building_slots = 1
+# 					add_building_construction = {
+# 						type = industrial_complex
+# 						level = 1
+# 						instant_build = yes
+# 					}
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					and = {
+# 						any_state = {
+# 							is_core_of = ENG
+# 							is_controlled_by = ENG
+# 							is_on_continent = europe
+# 							industrial_complex > 0
+# 						}
+# 					}
+# 				}
+# 				activate_mission = ENG_civ_evac
+# 			}
+# 		}
 	
-	}
+# 	}
 
-	ENG_mil_evac = {
-		icon = generic_construction
-		available = {
-			NOT = {
-				any_state = {
-					is_core_of = ENG
-					is_controlled_by = ENG
-					is_on_continent = europe
-					arms_factory > 2
-				}
-			}
-		}
-		allowed = {
-			always = no
-			tag = ENG
-		}
-		fire_only_once = no
-		days_mission_timeout = 1
-		timeout_effect = {
-			random_controlled_state = {
-				limit = {
-					AND = {
-						is_on_continent = europe
-						is_controlled_by = ENG
-						is_core_of = ENG
-						arms_factory > 0
-					}
-				}
-				remove_building = {
-					type = arms_factory
-					level = 1
-				}
-				862 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					and = {
-						any_state = {
-							is_core_of = ENG
-							is_controlled_by = ENG
-							is_on_continent = europe
-							arms_factory > 0
-						}
-					}
-				}
-				activate_mission = ENG_mil_evac
-			}
-		}
+# 	ENG_mil_evac = {
+# 		icon = generic_construction
+# 		available = {
+# 			NOT = {
+# 				any_state = {
+# 					is_core_of = ENG
+# 					is_controlled_by = ENG
+# 					is_on_continent = europe
+# 					arms_factory > 2
+# 				}
+# 			}
+# 		}
+# 		allowed = {
+# 			always = no
+# 			tag = ENG
+# 		}
+# 		fire_only_once = no
+# 		days_mission_timeout = 1
+# 		timeout_effect = {
+# 			random_controlled_state = {
+# 				limit = {
+# 					AND = {
+# 						is_on_continent = europe
+# 						is_controlled_by = ENG
+# 						is_core_of = ENG
+# 						arms_factory > 0
+# 					}
+# 				}
+# 				remove_building = {
+# 					type = arms_factory
+# 					level = 1
+# 				}
+# 				862 = {
+# 					add_extra_state_shared_building_slots = 1
+# 					add_building_construction = {
+# 						type = arms_factory
+# 						level = 1
+# 						instant_build = yes
+# 					}
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					and = {
+# 						any_state = {
+# 							is_core_of = ENG
+# 							is_controlled_by = ENG
+# 							is_on_continent = europe
+# 							arms_factory > 0
+# 						}
+# 					}
+# 				}
+# 				activate_mission = ENG_mil_evac
+# 			}
+# 		}
 	
-	}
+# 	}
 	
-}
+# }
 
-ENG_budget_strain_cat ={
-	# ENG_budget_taxes = {
-	# 	fire_only_once = no
-	# 	visible = {
+# ENG_budget_strain_cat ={
+# 	# ENG_budget_taxes = {
+# 	# 	fire_only_once = no
+# 	# 	visible = {
 			
-	# 	}
-	# 	available = {
-	# 		original_tag = ENG
-	# 	}
-	# 	activation = {
-	# 		OR = {
-	# 			has_completed_focus = ENG_appeasement
-	# 			has_completed_focus = ENG_containment
-	# 		}
-	# 	}
-	# 	days_mission_timeout = 180
-	# 	is_good = no
-	# 	timeout_effect = {
-	# 			if = {
-	# 				limit = {
-	# 					has_dynamic_modifier = ENG_budget_strain_dynamic_modifier
-	# 				}
-	# 				custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
-	# 				add_to_variable = { ENG_budgetary_strain = -0.1 tooltip = consumer_goods_factor_tt }
-	# 				activate_mission = ENG_budget_taxes
-	# 			}
-	# 	} 
-	# }
+# 	# 	}
+# 	# 	available = {
+# 	# 		original_tag = ENG
+# 	# 	}
+# 	# 	activation = {
+# 	# 		OR = {
+# 	# 			has_completed_focus = ENG_appeasement
+# 	# 			has_completed_focus = ENG_containment
+# 	# 		}
+# 	# 	}
+# 	# 	days_mission_timeout = 180
+# 	# 	is_good = no
+# 	# 	timeout_effect = {
+# 	# 			if = {
+# 	# 				limit = {
+# 	# 					has_dynamic_modifier = ENG_budget_strain_dynamic_modifier
+# 	# 				}
+# 	# 				custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
+# 	# 				add_to_variable = { ENG_budgetary_strain = -0.1 tooltip = consumer_goods_factor_tt }
+# 	# 				activate_mission = ENG_budget_taxes
+# 	# 			}
+# 	# 	} 
+# 	# }
 
 
-	ENG_budget_taxes = {
+# 	ENG_budget_taxes = {
 
-		icon = generic_civil_support
+# 		icon = generic_civil_support
 
-		allowed = {
-			original_tag = ENG
-		}
+# 		allowed = {
+# 			original_tag = ENG
+# 		}
 		
-		available = {
-			always = no
-		}
+# 		available = {
+# 			always = no
+# 		}
 
-		days_mission_timeout = 180
-		#days_remove = 1
+# 		days_mission_timeout = 180
+# 		#days_remove = 1
 
-		activation = {
-			has_dynamic_modifier = ENG_budget_strain_dynamic_modifier	
-		}
+# 		activation = {
+# 			has_dynamic_modifier = ENG_budget_strain_dynamic_modifier	
+# 		}
 
-		fixed_random_seed = no
+# 		fixed_random_seed = no
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		is_good = no
+# 		is_good = no
 
-		timeout_effect = {
-					custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
-					add_to_variable = { ENG_budgetary_strain = -0.1 tooltip = consumer_goods_factor_tt }
-	 				activate_mission = ENG_budget_taxes
-		}
-	}
+# 		timeout_effect = {
+# 					custom_effect_tooltip = ENG_budget_strain_dynamic_modifier_tt
+# 					add_to_variable = { ENG_budgetary_strain = -0.1 tooltip = consumer_goods_factor_tt }
+# 	 				activate_mission = ENG_budget_taxes
+# 		}
+# 	}
 
-}
+# }

@@ -99,38 +99,38 @@ division_template = {
 		logistics_company = { x = 0 y =6 }
 	}
 }
-division_template = {
-	name = "RAF Armored Car Company"
+# division_template = {
+# 	name = "RAF Armored Car Company"
 
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
-		armored_car = { x = 2 y = 0 }
-		armored_car = { x = 2 y = 1 }
-		armored_car = { x = 2 y = 2 }
-		armored_car = { x = 2 y = 3 }
-		armored_car = { x = 3 y = 0 }
-		armored_car = { x = 3 y = 1 }
-		armored_car = { x = 3 y = 2 }
-		armored_car = { x = 3 y = 3 }
-		armored_car = { x = 4 y = 0 }
-		armored_car = { x = 4 y = 1 }
-		armored_car = { x = 4 y = 2 }
-		armored_car = { x = 4 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		armored_car_recon = { x = 0 y = 1 } 		
-		artillery = { x = 0 y = 2 }	
-		anti_air = { x = 0 y = 3 }	
-	}
-}
+# 	regiments = {
+# 		motorized = { x = 0 y = 0 }
+# 		motorized = { x = 0 y = 1 }
+# 		motorized = { x = 0 y = 2 }
+# 		motorized = { x = 0 y = 3 }
+# 		motorized = { x = 1 y = 0 }
+# 		motorized = { x = 1 y = 1 }
+# 		motorized = { x = 1 y = 2 }
+# 		motorized = { x = 1 y = 3 }
+# 		armored_car = { x = 2 y = 0 }
+# 		armored_car = { x = 2 y = 1 }
+# 		armored_car = { x = 2 y = 2 }
+# 		armored_car = { x = 2 y = 3 }
+# 		armored_car = { x = 3 y = 0 }
+# 		armored_car = { x = 3 y = 1 }
+# 		armored_car = { x = 3 y = 2 }
+# 		armored_car = { x = 3 y = 3 }
+# 		armored_car = { x = 4 y = 0 }
+# 		armored_car = { x = 4 y = 1 }
+# 		armored_car = { x = 4 y = 2 }
+# 		armored_car = { x = 4 y = 3 }
+# 	}
+# 	support = {
+# 		engineer = { x = 0 y = 0 }
+# 		armored_car_recon = { x = 0 y = 1 } 		
+# 		artillery = { x = 0 y = 2 }	
+# 		anti_air = { x = 0 y = 3 }	
+# 	}
+# }
 division_template = {
 	name = "Royal Marines"
 
@@ -161,108 +161,108 @@ division_template = {
 		anti_air = { x = 0 y = 3 }	
 	}
 }
-create_colonial_division_template = {
-  	subject = RAJ
-  	division_template = {
-    	name = "Gurkha Rifles"		
-    	regiments = {
-    		mountaineers = { x = 0 y = 0 }
-			mountaineers = { x = 0 y = 1 }
-			mountaineers = { x = 0 y = 2 }
-			mountaineers = { x = 0 y = 3 }
-			mountaineers = { x = 0 y = 4 }
-			mountaineers = { x = 1 y = 0 }
-			mountaineers = { x = 1 y = 1 }
-			mountaineers = { x = 1 y = 2 }
-			mountaineers = { x = 1 y = 3 }
-			mountaineers = { x = 1 y = 4 }
-			mountaineers = { x = 2 y = 0 }
-			artillery_brigade = { x = 3 y = 0 }
-			artillery_brigade = { x = 3 y = 1 }
-			artillery_brigade = { x = 3 y = 2 }
-			artillery_brigade = { x = 4 y = 0 }
-			artillery_brigade = { x = 4 y = 1 }
-			artillery_brigade = { x = 4 y = 2 }
-    	}
-    	support = {
-    		engineer = { x = 0 y = 0 }
-			recon = { x = 0 y = 1 } 		
-			artillery = { x = 0 y = 2 }	
-			anti_air = { x = 0 y = 3 }	 
-    	}
-  	}
-}
+# create_colonial_division_template = {
+#   	subject = RAJ
+#   	division_template = {
+#     	name = "Gurkha Rifles"		
+#     	regiments = {
+#     		mountaineers = { x = 0 y = 0 }
+# 			mountaineers = { x = 0 y = 1 }
+# 			mountaineers = { x = 0 y = 2 }
+# 			mountaineers = { x = 0 y = 3 }
+# 			mountaineers = { x = 0 y = 4 }
+# 			mountaineers = { x = 1 y = 0 }
+# 			mountaineers = { x = 1 y = 1 }
+# 			mountaineers = { x = 1 y = 2 }
+# 			mountaineers = { x = 1 y = 3 }
+# 			mountaineers = { x = 1 y = 4 }
+# 			mountaineers = { x = 2 y = 0 }
+# 			artillery_brigade = { x = 3 y = 0 }
+# 			artillery_brigade = { x = 3 y = 1 }
+# 			artillery_brigade = { x = 3 y = 2 }
+# 			artillery_brigade = { x = 4 y = 0 }
+# 			artillery_brigade = { x = 4 y = 1 }
+# 			artillery_brigade = { x = 4 y = 2 }
+#     	}
+#     	support = {
+#     		engineer = { x = 0 y = 0 }
+# 			recon = { x = 0 y = 1 } 		
+# 			artillery = { x = 0 y = 2 }	
+# 			anti_air = { x = 0 y = 3 }	 
+#     	}
+#   	}
+# }
 units = {
-	division= {	
-		location = 2097
-		division_template = "RAF Armored Car Company" 	
-		start_experience_factor = 0.5
-	}
-	division= {	
-		location = 2097
-		division_template = "RAF Armored Car Company" 	
-		start_experience_factor = 0.5
-	}
-	division= {	
-		location = 4135
-		division_template = "Gurkha Rifles" 	
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 4135
-		division_template = "Gurkha Rifles" 	
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 4135
-		division_template = "Gurkha Rifles" 	
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 4135
-		division_template = "Gurkha Rifles" 	
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 4135
-		division_template = "Gurkha Rifles" 	
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 4135
-		division_template = "Gurkha Rifles" 	
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 4135
-		division_template = "Gurkha Rifles" 	
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 4135
-		division_template = "Gurkha Rifles" 	
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 13228
-		division_template = "Gurkha Rifles" 	
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 13228
-		division_template = "Gurkha Rifles" 	
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 13228
-		division_template = "Gurkha Rifles" 	
-		start_experience_factor = 0.4
-	}
-	division= {	
-		location = 13228
-		division_template = "Gurkha Rifles" 	
-		start_experience_factor = 0.4
-	}
+	# division= {	
+	# 	location = 2097
+	# 	division_template = "RAF Armored Car Company" 	
+	# 	start_experience_factor = 0.5
+	# }
+	# division= {	
+	# 	location = 2097
+	# 	division_template = "RAF Armored Car Company" 	
+	# 	start_experience_factor = 0.5
+	# }
+	# division= {	
+	# 	location = 4135
+	# 	division_template = "Gurkha Rifles" 	
+	# 	start_experience_factor = 0.4
+	# }
+	# division= {	
+	# 	location = 4135
+	# 	division_template = "Gurkha Rifles" 	
+	# 	start_experience_factor = 0.4
+	# }
+	# division= {	
+	# 	location = 4135
+	# 	division_template = "Gurkha Rifles" 	
+	# 	start_experience_factor = 0.4
+	# }
+	# division= {	
+	# 	location = 4135
+	# 	division_template = "Gurkha Rifles" 	
+	# 	start_experience_factor = 0.4
+	# }
+	# division= {	
+	# 	location = 4135
+	# 	division_template = "Gurkha Rifles" 	
+	# 	start_experience_factor = 0.4
+	# }
+	# division= {	
+	# 	location = 4135
+	# 	division_template = "Gurkha Rifles" 	
+	# 	start_experience_factor = 0.4
+	# }
+	# division= {	
+	# 	location = 4135
+	# 	division_template = "Gurkha Rifles" 	
+	# 	start_experience_factor = 0.4
+	# }
+	# division= {	
+	# 	location = 4135
+	# 	division_template = "Gurkha Rifles" 	
+	# 	start_experience_factor = 0.4
+	# }
+	# division= {	
+	# 	location = 13228
+	# 	division_template = "Gurkha Rifles" 	
+	# 	start_experience_factor = 0.4
+	# }
+	# division= {	
+	# 	location = 13228
+	# 	division_template = "Gurkha Rifles" 	
+	# 	start_experience_factor = 0.4
+	# }
+	# division= {	
+	# 	location = 13228
+	# 	division_template = "Gurkha Rifles" 	
+	# 	start_experience_factor = 0.4
+	# }
+	# division= {	
+	# 	location = 13228
+	# 	division_template = "Gurkha Rifles" 	
+	# 	start_experience_factor = 0.4
+	# }
 	division= {	
 		location = 12003
 		division_template = "Territorial Force" 	
@@ -413,7 +413,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
-		industrial_manufacturer = mio:ENG_british_government_tea_stockpile_organization
+		industrial_manufacturer = mio:ENG_crewe_works_organization
 	}
 
 	add_equipment_production = {
@@ -426,36 +426,36 @@ instant_effect = {
 		efficiency = 50
 		industrial_manufacturer = mio:ENG_vauxhall_automotive_organization
 	}
-	add_equipment_production = {
-		equipment = {
-			type = mechanized_equipment_1
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-		industrial_manufacturer = mio:ENG_vauxhall_automotive_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = heavy_tank_chassis_1
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-		industrial_manufacturer = mio:ENG_vauxhall_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_chassis_1
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-		industrial_manufacturer = mio:ENG_vauxhall_organization
-	}
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = mechanized_equipment_1
+	# 		creator = "ENG" 
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.4
+	# 	efficiency = 50
+	# 	industrial_manufacturer = mio:ENG_vauxhall_automotive_organization
+	# }
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = heavy_tank_chassis_1
+	# 		creator = "ENG" 
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.4
+	# 	efficiency = 50
+	# 	industrial_manufacturer = mio:ENG_vauxhall_organization
+	# }
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = light_tank_chassis_1
+	# 		creator = "ENG" 
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.4
+	# 	efficiency = 50
+	# 	industrial_manufacturer = mio:ENG_vauxhall_organization
+	# }
 	# add_equipment_production = {
 	# 	equipment = {
 	# 		type = armored_car_equipment
