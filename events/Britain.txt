@@ -638,124 +638,124 @@ country_event = {
 }
 
 # Shadow Scheme Factories
-country_event = {
-    id = britain.24
-    title = britain.24.t
-    desc = britain.24.d
-    picture = GFX_report_event_generic_factory
+# country_event = {
+#     id = britain.24
+#     title = britain.24.t
+#     desc = britain.24.d
+#     picture = GFX_report_event_generic_factory
  
-    fire_only_once = yes
+#     fire_only_once = yes
  
-    trigger = {
-        original_tag = ENG
-        has_completed_focus = shadow_scheme_focus
-        has_war = yes
-    }
+#     trigger = {
+#         original_tag = ENG
+#         has_completed_focus = shadow_scheme_focus
+#         has_war = yes
+#     }
 
-    mean_time_to_happen = {
-        days = 7
-    }
+#     mean_time_to_happen = {
+#         days = 7
+#     }
 
-    option = {
-        name = britain.24.a
-        random_owned_controlled_state = {
-			limit = {
-				is_in_home_area = yes
-				free_building_slots = {
-					building = arms_factory
-					size > 1
-					include_locked = yes
-				}
-			}
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-			set_state_flag = shadow_scheme_2AF
-		}
-		random_owned_controlled_state = {
-			limit = {
-				is_in_home_area = yes
-				free_building_slots = {
-					building = arms_factory
-					size > 1
-					include_locked = yes
-				}
-			}
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-			set_state_flag = shadow_scheme_2AF
-		}
-    }
-}
+#     option = {
+#         name = britain.24.a
+#         random_owned_controlled_state = {
+# 			limit = {
+# 				is_in_home_area = yes
+# 				free_building_slots = {
+# 					building = arms_factory
+# 					size > 1
+# 					include_locked = yes
+# 				}
+# 			}
+# 			add_extra_state_shared_building_slots = 2
+# 			add_building_construction = {
+# 				type = arms_factory
+# 				level = 2
+# 				instant_build = yes
+# 			}
+# 			set_state_flag = shadow_scheme_2AF
+# 		}
+# 		random_owned_controlled_state = {
+# 			limit = {
+# 				is_in_home_area = yes
+# 				free_building_slots = {
+# 					building = arms_factory
+# 					size > 1
+# 					include_locked = yes
+# 				}
+# 			}
+# 			add_extra_state_shared_building_slots = 2
+# 			add_building_construction = {
+# 				type = arms_factory
+# 				level = 2
+# 				instant_build = yes
+# 			}
+# 			set_state_flag = shadow_scheme_2AF
+# 		}
+#     }
+# }
 
 #Operation Fork ultimatum
 
 
 
-country_event = {
-	id = AAT_britain_narvik.1
-	title = AAT_britain_narvik.1.t
-	desc = AAT_britain_narvik.1.desc
-	picture = GFX_report_event_degaulle_churchill
+# country_event = {
+# 	id = AAT_britain_narvik.1
+# 	title = AAT_britain_narvik.1.t
+# 	desc = AAT_britain_narvik.1.desc
+# 	picture = GFX_report_event_degaulle_churchill
 	
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			GER = {
-				set_variable = { GER_removing_narvik_offsite_civs = 0 }
-				subtract_from_variable = { GER_removing_narvik_offsite_civs =  GER_narvik_civs }
-			}
-		}
-	}
-	option = {
-		name = AAT_britain_narvik.1.a	#sounds good
-		ai_chance = { factor = 95 }
-		white_peace = { tag = SWE }
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		hidden_effect = {
+# 			GER = {
+# 				set_variable = { GER_removing_narvik_offsite_civs = 0 }
+# 				subtract_from_variable = { GER_removing_narvik_offsite_civs =  GER_narvik_civs }
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = AAT_britain_narvik.1.a	#sounds good
+# 		ai_chance = { factor = 95 }
+# 		white_peace = { tag = SWE }
 
-		if = {
-			limit = {
-				ENG = { has_variable = ENG_narvik_controller }
+# 		if = {
+# 			limit = {
+# 				ENG = { has_variable = ENG_narvik_controller }
 
-				var:ENG_narvik_controller = {
-					has_war_with = SWE 
-				}
-			}
+# 				var:ENG_narvik_controller = {
+# 					has_war_with = SWE 
+# 				}
+# 			}
 
-			var:ENG_narvik_controller = { white_peace = { tag = SWE } }
-		}
+# 			var:ENG_narvik_controller = { white_peace = { tag = SWE } }
+# 		}
 
-		GER = {  
-			add_offsite_building = {
-				type = industrial_complex
-				level = var:GER_removing_narvik_offsite_civs
-			}
+# 		GER = {  
+# 			add_offsite_building = {
+# 				type = industrial_complex
+# 				level = var:GER_removing_narvik_offsite_civs
+# 			}
 
-			country_event = { id = AAT_britain_narvik.4 }
-		}
-	}
+# 			country_event = { id = AAT_britain_narvik.4 }
+# 		}
+# 	}
 	
-	option = {
-		name = AAT_britain_narvik.1.b	#no way 
-		ai_chance = { factor = 5 }
-		add_political_power = -150
-		add_stability = -0.35
-		add_war_support = -0.35
+# 	option = {
+# 		name = AAT_britain_narvik.1.b	#no way 
+# 		ai_chance = { factor = 5 }
+# 		add_political_power = -150
+# 		add_stability = -0.35
+# 		add_war_support = -0.35
 
-		GER = {  
-			add_offsite_building = {
-				type = industrial_complex
-				level = var:GER_removing_narvik_offsite_civs
-			}
-		}
-	}
-}
+# 		GER = {  
+# 			add_offsite_building = {
+# 				type = industrial_complex
+# 				level = var:GER_removing_narvik_offsite_civs
+# 			}
+# 		}
+# 	}
+# }
 
 country_event = {
 	id = AAT_britain_narvik.2

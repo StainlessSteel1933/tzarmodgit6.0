@@ -419,6 +419,8 @@ focus_tree = {
 			custom_effect_tooltip = ENG_army_dynamic_modifier_tt
             add_to_variable = { ENG_mechanized_attack_factor = 0.08 tooltip = mechanized_attack_factor_tt }
 			add_to_variable = { ENG_motorized_attack_factor = 0.08 tooltip = motorized_attack_factor_tt }
+			add_to_variable = { ENG_army_armor_attack_factor = 0.08 tooltip = army_armor_attack_factor_tt }
+			add_to_variable = { ENG_army_armor_defence_factor = 0.08 tooltip = army_armor_defence_factor_tt }
 		}
 	}
 
@@ -441,23 +443,23 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ENG_yeomanry
-		icon = GFX_focus_generic_horse_studs
-		##overlay = GFX_focus_fast_overlay_generic_clock
-		prerequisite = {  focus = ENG_tommy_atkins_supremacy }
-		relative_position_id = ENG_tommy_atkins_supremacy
-		x = 2
-		y = 1
+	# focus = {
+	# 	id = ENG_yeomanry
+	# 	icon = GFX_focus_generic_horse_studs
+	# 	##overlay = GFX_focus_fast_overlay_generic_clock
+	# 	prerequisite = {  focus = ENG_tommy_atkins_supremacy }
+	# 	relative_position_id = ENG_tommy_atkins_supremacy
+	# 	x = 2
+	# 	y = 1
 		
-		cost = 5
+	# 	cost = 5
 
-		completion_reward = {
-			custom_effect_tooltip = ENG_army_dynamic_modifier_tt
-            add_to_variable = { ENG_cavalry_attack_factor = 0.08 tooltip = cavalry_attack_factor_tt }
-            add_to_variable = { ENG_cavalry_defence_factor = 0.08 tooltip = cavalry_defence_factor_tt }
-		}
-	}
+	# 	completion_reward = {
+	# 		custom_effect_tooltip = ENG_army_dynamic_modifier_tt
+    #         add_to_variable = { ENG_cavalry_attack_factor = 0.08 tooltip = cavalry_attack_factor_tt }
+    #         add_to_variable = { ENG_cavalry_defence_factor = 0.08 tooltip = cavalry_defence_factor_tt }
+	# 	}
+	# }
 
 	focus = {
 		id = ENG_avre
@@ -528,6 +530,79 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_david_stirling
+		}
+	}
+
+	focus = {
+		id = ENG_sarawakrangers_focus 
+
+		prerequisite = { focus = ENG_special_air_service }
+
+		icon = GFX_focus_CHI_guerrilla_warfare
+
+		x = -1
+		y = 1
+		relative_position_id = ENG_special_air_service
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}	
+
+		available = {
+			
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			hidden_effect = {
+				set_technology = { 
+					TOA_jungle_pioneers_support_tech = 1 
+					popup = no
+				}
+			}
+			custom_effect_tooltip = SMB_jungle_pioneers_tt
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+				
+				add_tech_bonus = {
+					name = ENG_sarawakrangers_focus
+					bonus = 0.5 
+					uses = 1
+					category = rangers_tech_cat
+				}
+		}
+	}
+
+	focus = {
+		id = ENG_long_range_desert
+
+		prerequisite = { focus = ENG_special_air_service }
+
+		icon = GFX_focus_PER_desert_training
+
+		x = 1
+		y = 1
+		relative_position_id = ENG_special_air_service
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}	
+
+		available = {
+			
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
 		}
 	}
 

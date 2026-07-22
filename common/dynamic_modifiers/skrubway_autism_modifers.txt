@@ -16,6 +16,7 @@ ENG_army_dynamic_modifier = {
 	cavalry_defence_factor = ENG_cavalry_defence_factor
 }
 
+
 ENG_far_flung_empire_dynamic_modifier = {
 
 	enable = { always = yes }
