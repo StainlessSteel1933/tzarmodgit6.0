@@ -47,27 +47,35 @@ equipments = {
 				allowed_module_categories = { light_ship_engine }
 			}
 
+			# mid_1_custom_slot = {
+			# 	required = no
+			# 	allowed_module_categories = {
+			# 		ship_torpedo
+			# 		ship_mine_warfare
+			# 		ship_mine_layer
+			# 		ship_anti_air
+			# 		ship_depth_charge
+			# 		ship_seaplane_tender
+			# 	}
+			# }
+			# rear_1_custom_slot = {
+			# 	required = no
+			# 	allowed_module_categories = {
+			# 		ship_torpedo
+			# 		ship_mine_warfare
+			# 		ship_mine_layer
+			# 		ship_anti_air
+			# 		ship_depth_charge
+			# 	}
+			# }		
 			mid_1_custom_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
-					ship_anti_air
 					ship_depth_charge
-					ship_seaplane_tender
 				}
 			}
-			rear_1_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
-					ship_anti_air
-					ship_depth_charge
-				}
-			}			
+			rear_1_custom_slot = mid_1_custom_slot	
 		}
 		
 		module_count_limit = {
@@ -80,6 +88,11 @@ equipments = {
 			count < 2
 		}
 		
+		module_count_limit = {
+			category = ship_torpedo
+			count < 3
+		}
+
 		default_modules = {
 			fixed_ship_battery_slot = empty
 			fixed_ship_anti_air_slot = empty
@@ -98,7 +111,7 @@ equipments = {
 		hg_attack = 0
 		
 		torpedo_attack = 0
-		sub_attack = 1
+		sub_attack = 10
 		
 		anti_air_attack = 0
 		
@@ -106,9 +119,9 @@ equipments = {
 
 		
 		surface_detection = 20
-		sub_detection = 2.5
+		sub_detection = 20
 		surface_visibility = 10
-		naval_speed = 32
+		naval_speed = 35
 		reliability = 0.80
 		
 		naval_range = 2000
@@ -163,8 +176,8 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
+					# ship_mine_warfare
+					# ship_mine_layer
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
@@ -176,8 +189,8 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
+					# ship_mine_warfare
+					# ship_mine_layer
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
@@ -236,8 +249,8 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
+					# ship_mine_warfare
+					# ship_mine_layer
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
@@ -249,8 +262,8 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
+					# ship_mine_warfare
+					# ship_mine_layer
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
@@ -263,7 +276,7 @@ equipments = {
 		resources = {
 			steel = 3
 		}
-		sub_detection = 3.5
+		# sub_detection = 3.5
 		surface_detection = 20
 		surface_visibility = 10
 		reliability = 0.90
@@ -309,8 +322,8 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
+					# ship_mine_warfare
+					# ship_mine_layer
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
@@ -322,8 +335,8 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
+					# ship_mine_warfare
+					# ship_mine_layer
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
@@ -334,8 +347,8 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
+					# ship_mine_warfare
+					# ship_mine_layer
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
@@ -344,7 +357,7 @@ equipments = {
 			}
 		}
 
-		sub_detection = 4
+		# sub_detection = 4
 		surface_detection = 20
 		reliability = 0.92
 		naval_range = 3500
