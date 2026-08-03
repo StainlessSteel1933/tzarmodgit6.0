@@ -90,7 +90,7 @@ units= {
 			ship = { name = "RN Giulio Cesare" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
 			ship = { name = "RN Conte di Cavour" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
 			ship = { name = "RN Napoli" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
-			ship = { name = "RN Vittorio Emmanuele" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
+			ship = { name = "RN Vittorio EmmanueleA" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
 			ship = { name = "RN Cristoforo Colombo" definition = battleship start_experience_factor = 0.6 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
 			ship = { name = "RN Regina Elena" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
 			# I Divisione Incrociatori
@@ -297,12 +297,12 @@ instant_effect = {
 			amount = 1 
 		} 
 
-		# CL: "RI Eugenio di Savoia" (Commissioned: 16-Jan, 1936)
+		# CL: "RI Eugenio di Savoia2" (Commissioned: 16-Jan, 1936)
 		add_equipment_production = { 
 			equipment = { 
 				type = ship_hull_cruiser_2 
 				creator = "ITA" 
-				version_name = ""Duca degli Abruzzi Class"" 
+				version_name = "Duca degli Abruzzi Class"
 			} 
 			name = "RI Eugenio di Savoia"
 			requested_factories = 1 
@@ -315,7 +315,7 @@ add_equipment_production = {
 			equipment = { 
 				type = ship_hull_cruiser_2 
 				creator = "ITA" 
-				version_name = ""Duca degli Abruzzi Class"" 
+				version_name = "Duca degli Abruzzi Class" 
 			} 
 			name = "RI Eugenio di Savoia"
 			requested_factories = 1 
@@ -326,19 +326,7 @@ add_equipment_production = {
 			equipment = { 
 				type = ship_hull_cruiser_2 
 				creator = "ITA" 
-				version_name = ""Duca degli Abruzzi Class"" 
-			} 
-			name = "RI Eugenio di Savoia"
-			requested_factories = 1 
-			progress = 0.95 
-			amount = 1 
-		} 
-		
-		add_equipment_production = { 
-			equipment = { 
-				type = ship_hull_cruiser_2 
-				creator = "ITA" 
-				version_name = ""Duca degli Abruzzi Class"" 
+				version_name = "Duca degli Abruzzi Class"
 			} 
 			name = "RI Eugenio di Savoia"
 			requested_factories = 1 
@@ -350,7 +338,7 @@ add_equipment_production = {
 			equipment = { 
 				type = ship_hull_cruiser_2 
 				creator = "ITA" 
-				version_name = ""Duca degli Abruzzi Class"" 
+				version_name = "Duca degli Abruzzi Class" 
 			} 
 			name = "RI Eugenio di Savoia"
 			requested_factories = 1 
@@ -362,7 +350,7 @@ add_equipment_production = {
 			equipment = { 
 				type = ship_hull_cruiser_2 
 				creator = "ITA" 
-				version_name = ""Duca degli Abruzzi Class"" 
+				version_name = "Duca degli Abruzzi Class" 
 			} 
 			name = "RI Eugenio di Savoia"
 			requested_factories = 1 
@@ -374,7 +362,19 @@ add_equipment_production = {
 			equipment = { 
 				type = ship_hull_cruiser_2 
 				creator = "ITA" 
-				version_name = ""Duca degli Abruzzi Class"" 
+				version_name = "Duca degli Abruzzi Class" 
+			} 
+			name = "RI Eugenio di Savoia"
+			requested_factories = 1 
+			progress = 0.95 
+			amount = 1 
+		} 
+		
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_cruiser_2 
+				creator = "ITA" 
+				version_name = "Duca degli Abruzzi Class" 
 			} 
 			name = "RI Eugenio di Savoia"
 			requested_factories = 1 
@@ -386,7 +386,7 @@ add_equipment_production = {
 			equipment = { 
 				type = ship_hull_cruiser_2 
 				creator = "ITA" 
-				version_name = ""Duca degli Abruzzi Class"" 
+				version_name = "Duca degli Abruzzi Class"
 			} 
 			name = "RI Eugenio di Savoia"
 			requested_factories = 1 
@@ -398,7 +398,7 @@ add_equipment_production = {
 			equipment = { 
 				type = ship_hull_cruiser_2 
 				creator = "ITA" 
-				version_name = ""Duca degli Abruzzi Class"" 
+				version_name = "Duca degli Abruzzi Class" 
 			} 
 			name = "RI Eugenio di Savoia"
 			requested_factories = 1 
@@ -411,7 +411,7 @@ add_equipment_production = {
 			equipment = { 
 				type = ship_hull_cruiser_2 
 				creator = "ITA" 
-				version_name = ""Duca degli Abruzzi Class"" 
+				version_name = "Duca degli Abruzzi Class" 
 			} 
 			name = "RI Eugenio di Savoia 3"
 			requested_factories = 1 

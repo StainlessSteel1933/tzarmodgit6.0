@@ -136,7 +136,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Division d'Infanterie Motorisée"	# Division d'Infanterie Motorisée
+	name = "Division d'Infanterie Motorisee"	# Division d'Infanterie Motorisée
 	
 	name = "Mediums"
 	division_names_group = FRA_MEC_01					
@@ -613,7 +613,7 @@ units = {
 	}
 	division = {
 		location = 11506
-		division_template = "Division d'Infanterie Motorisée"
+		division_template = "Division d'Infanterie Motorisee"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}

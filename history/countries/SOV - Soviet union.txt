@@ -615,7 +615,8 @@ set_research_slots = 4
 set_stability = 0.5
 set_war_support = 0.3
 # Starting tech
-set_technology = { #WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched
+set_technology = {
+# WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched
 	shocktroops = 1
 	tech_logistics_company = 1
 	tech_maintenance_company = 1
