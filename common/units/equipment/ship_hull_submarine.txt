@@ -32,10 +32,10 @@ equipments = {
 				allowed_module_categories = { sub_ship_engine }
 			}
 			rear_1_custom_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					ship_torpedo_sub
-					ship_mine_layer_sub
+					# ship_mine_layer_sub
 				}
 			}
 		}
@@ -68,7 +68,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 22
+		sub_visibility = 41
 		naval_speed = 13
 		reliability = 0.60
 		
@@ -128,7 +128,7 @@ equipments = {
 			rear_1_custom_slot = empty
 			fixed_ship_engine_slot = sub_ship_engine_2
 		}
-		sub_visibility = 20
+		sub_visibility = 36
 		naval_speed = 17
 		reliability = 0.70
 		naval_dominance_factor = 11
@@ -159,7 +159,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo_sub
-					ship_mine_layer_sub
+					# ship_mine_layer_sub
 				}
 			}
 			mid_1_custom_slot = {
@@ -179,7 +179,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 18
+		sub_visibility = 32
 		naval_speed = 18
 		reliability = 0.75
 		
@@ -208,7 +208,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo_sub
-					ship_mine_layer_sub
+					# ship_mine_layer_sub
 				}
 			}
 			mid_1_custom_slot = {
@@ -228,7 +228,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 16
+		sub_visibility = 30
 		naval_speed = 18
 		reliability = 0.80
 
@@ -259,7 +259,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_torpedo_sub
 					ship_airplane_launcher
-					ship_mine_layer_sub
+					# ship_mine_layer_sub
 					ship_extra_fuel_tank
 					ship_light_battery_sub
 				}
@@ -276,7 +276,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo_sub
-					ship_mine_layer_sub
+					# ship_mine_layer_sub
 					ship_airplane_launcher
 					ship_extra_fuel_tank
 				}
@@ -289,7 +289,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 20
+		sub_visibility = 36
 		naval_speed = 16
 		reliability = 0.75
 		naval_dominance_factor = 10
@@ -319,7 +319,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_torpedo_sub
 					ship_airplane_launcher
-					ship_mine_layer_sub
+					# ship_mine_layer_sub
 					ship_extra_fuel_tank
 				}
 			}
@@ -349,7 +349,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 
-		sub_visibility = 18
+		sub_visibility = 36
 		naval_speed = 18
 		reliability = 0.75
 		
@@ -381,7 +381,7 @@ equipments = {
 			fixed_ship_engine_slot = inherit
 		}
 		
-		sub_visibility = 15
+		sub_visibility = 25
 		naval_speed = 8.3
 		reliability = 0.60
 		
@@ -416,7 +416,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_torpedo_sub
 					ship_airplane_launcher
-					ship_mine_layer_sub
+					# ship_mine_layer_sub
 					ship_extra_fuel_tank
 				}
 			}
@@ -439,7 +439,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo_sub
-					ship_mine_layer_sub
+					# ship_mine_layer_sub
 					ship_airplane_launcher
 				}
 			}
@@ -452,7 +452,7 @@ equipments = {
 			fixed_ship_engine_slot = sub_ship_nuclear_engine_1
 		}
 		
-		sub_visibility = 16
+		sub_visibility = 36
 		naval_speed = 20
 		reliability = 0.75
 		
@@ -485,7 +485,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo_sub
-					ship_mine_layer_sub
+					# ship_mine_layer_sub
 					ship_extra_fuel_tank
 				}
 			}
@@ -503,7 +503,7 @@ equipments = {
 			}						
 		}
 
-		sub_visibility = 20
+		sub_visibility = 41
 		naval_speed = 18
 		reliability = 0.75
 		
