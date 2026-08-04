@@ -847,10 +847,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = reinforced_wings_mothership
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = reinforced_wings_mothership
+		# 	research_cost_coeff = 1
+		# }
 		
 		research_cost = 2
 		start_year = 1940
@@ -2029,133 +2029,133 @@ technologies = {
 		}
 	}
 
-	reinforced_wings_mothership = {
-		allow_branch = {
+	# reinforced_wings_mothership = {
+	# 	allow_branch = {
 			 
-		}	
+	# 	}	
 
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_air_mothership_aircraft
-			}
-		}
+	# 	allow = {
+	# 		ROOT = {
+	# 			is_special_project_completed = sp:sp_air_mothership_aircraft
+	# 		}
+	# 	}
 
-		is_special_project_tech = yes
+	# 	is_special_project_tech = yes
 				
-		path = {
-			leads_to_tech = miniature_fighters
-			research_cost_coeff = 1
-		}	
-		research_cost = 1.75
-		start_year = 1942
+	# 	path = {
+	# 		leads_to_tech = miniature_fighters
+	# 		research_cost_coeff = 1
+	# 	}	
+	# 	research_cost = 1.75
+	# 	start_year = 1942
 
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = @mothership_x_bba y = 7 }
-		}
+	# 	folder = {
+	# 		name = bba_air_techs_folder
+	# 		position = { x = @mothership_x_bba y = 7 }
+	# 	}
 
-		folder = {
-			name = air_techs_folder
-			position = { x = @mothership_x y = 7 }
-		}
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = @mothership_x y = 7 }
+	# 	}
 
-		categories = {
-			heavy_air
-			air_equipment
-			cat_strategic_bomber
-			mio_cat_all_heavy_aircraft_and_modules
-		}
-		mothership = {
-			air_defence = 0.08
-		}
-		special_project_specialization = { specialization_air }	
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# 	categories = {
+	# 		heavy_air
+	# 		air_equipment
+	# 		cat_strategic_bomber
+	# 		mio_cat_all_heavy_aircraft_and_modules
+	# 	}
+	# 	mothership = {
+	# 		air_defence = 0.08
+	# 	}
+	# 	special_project_specialization = { specialization_air }	
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 
-	miniature_fighters = {
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_air_mothership_aircraft
-			}
-		}
+	# miniature_fighters = {
+	# 	allow = {
+	# 		ROOT = {
+	# 			is_special_project_completed = sp:sp_air_mothership_aircraft
+	# 		}
+	# 	}
 
-		is_special_project_tech = yes
+	# 	is_special_project_tech = yes
 
-		path = {
-			leads_to_tech = aerial_hangars
-			research_cost_coeff = 1
-		}	
+	# 	path = {
+	# 		leads_to_tech = aerial_hangars
+	# 		research_cost_coeff = 1
+	# 	}	
 
-		research_cost = 1.5
-		start_year = 1944
+	# 	research_cost = 1.5
+	# 	start_year = 1944
 
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = @mothership_x_bba y = 10 }
-		}
+	# 	folder = {
+	# 		name = bba_air_techs_folder
+	# 		position = { x = @mothership_x_bba y = 10 }
+	# 	}
 
-		folder = {
-			name = air_techs_folder
-			position = { x = @mothership_x y = 10 }
-		}
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = @mothership_x y = 10 }
+	# 	}
 
-		categories = {
-			heavy_air
-			air_equipment
-			cat_strategic_bomber
-			mio_cat_all_heavy_aircraft_and_modules
-		}
-		special_project_specialization = { specialization_air }	
-		mothership = {
-			air_agility = 0.06
-			air_attack = 0.06
-			fuel_consumption_factor = -0.08
-		}
+	# 	categories = {
+	# 		heavy_air
+	# 		air_equipment
+	# 		cat_strategic_bomber
+	# 		mio_cat_all_heavy_aircraft_and_modules
+	# 	}
+	# 	special_project_specialization = { specialization_air }	
+	# 	mothership = {
+	# 		air_agility = 0.06
+	# 		air_attack = 0.06
+	# 		fuel_consumption_factor = -0.08
+	# 	}
 
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 
-	aerial_hangars = {
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_air_mothership_aircraft
-			}
-		}
+	# aerial_hangars = {
+	# 	allow = {
+	# 		ROOT = {
+	# 			is_special_project_completed = sp:sp_air_mothership_aircraft
+	# 		}
+	# 	}
 
-		is_special_project_tech = yes
+	# 	is_special_project_tech = yes
 
-		research_cost = 1.75
-		start_year = 1946
+	# 	research_cost = 1.75
+	# 	start_year = 1946
 
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = @mothership_x_bba y = 13 }
-		}
+	# 	folder = {
+	# 		name = bba_air_techs_folder
+	# 		position = { x = @mothership_x_bba y = 13 }
+	# 	}
 
-		folder = {
-			name = air_techs_folder
-			position = { x = @mothership_x y = 13 }
-		}
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = @mothership_x y = 13 }
+	# 	}
 
-		categories = {
-			heavy_air
-			air_equipment
-			cat_strategic_bomber
-			mio_cat_all_heavy_aircraft_and_modules
-		}
-		special_project_specialization = { specialization_air }			
-		mothership = {
-			air_agility = 0.1
-			air_range = 0.2
-			air_attack = 0.1
-		}
+	# 	categories = {
+	# 		heavy_air
+	# 		air_equipment
+	# 		cat_strategic_bomber
+	# 		mio_cat_all_heavy_aircraft_and_modules
+	# 	}
+	# 	special_project_specialization = { specialization_air }			
+	# 	mothership = {
+	# 		air_agility = 0.1
+	# 		air_range = 0.2
+	# 		air_attack = 0.1
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 }
