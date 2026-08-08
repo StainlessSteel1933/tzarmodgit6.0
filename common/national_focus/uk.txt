@@ -188,7 +188,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			# add_ideas = ENG_arty_nerf
+			add_ideas = ENG_arty_nerf
 			add_research_slot = 1
 			add_tech_bonus = {
 				name = armor_bonus
@@ -3052,67 +3052,69 @@ technology = improved_medium_airframe
 		}
 	}
 	
-	# focus = {
-	# 	id = ENG_operation_cum_pass
-	# 	available = { 
+	focus = {
+		id = ENG_operation_cum_pass
+		available = { 
 			
-	# 	}
+		}
 
-	# 	continue_if_invalid = yes
-	# 	prerequisite = { focus = ENG_chiefs_of_staff_committee }
-	# 	icon = GFX_focus_eng_chiefs_of_staff_committee
-	# 	x = -1
-	# 	y = 1
-	# 	relative_position_id = ENG_chiefs_of_staff_committee
-	# 	cost = 5
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 	}	
-	# 	completion_reward = {
-	# 		add_timed_idea = { idea = ENG_operation_cumpass days = 80 }
+		continue_if_invalid = yes
+		prerequisite = { focus = ENG_chiefs_of_staff_committee }
+		icon = GFX_focus_eng_chiefs_of_staff_committee
+		x = -1
+		y = 1
+		relative_position_id = ENG_chiefs_of_staff_committee
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_timed_idea = { idea = ENG_operation_cumpass days = 80 }
 			
-	# 		every_country = {
-	# 			limit = {
-	# 				is_subject_of = ROOT
-	# 			}
-	# 			add_timed_idea = { idea = ENG_operation_cumpass days = 80 }
-	# 		}
-	# 		FRF = { add_timed_idea = { idea = ENG_operation_cumpass days = 80 } }
-	# 	}
-	# }
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				add_timed_idea = { idea = ENG_operation_cumpass days = 80 }
+			}
+			FRF = { add_timed_idea = { idea = ENG_operation_cumpass days = 80 } }
+		}
+	}
 	
-	# focus = {
-	# 	id = ENG_Sudan_fall
-	# 	available = { 
-	# 		551 = { 
-	# 					NOT = { is_controlled_by = ENG }
-	# 				}
-			
-	# 	}
+	focus = {
+		id = ENG_Sudan_fall
+		available = { 
+			551 = { 
+						NOT = { is_controlled_by = ENG }
+					}
+			NOT = {
+				has_idea = ENG_operation_cumpass
+			}
+		}
 
-	# 	continue_if_invalid = yes
-	# 	prerequisite = { focus = ENG_chiefs_of_staff_committee }
-	# 	icon = GFX_focus_eng_chiefs_of_staff_committee	
-	# 	relative_position_id = ENG_operation_cum_pass
-	# 	text = "Recover Sudan"
-	# 	x = 0
-	# 	y = 1
-	# 	cost = 2
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 	}	
-	# 	completion_reward = {
-	# 		add_timed_idea = { idea = ENG_operation_cumpass days = 180 }
+		continue_if_invalid = yes
+		prerequisite = { focus = ENG_chiefs_of_staff_committee }
+		icon = GFX_focus_eng_chiefs_of_staff_committee	
+		relative_position_id = ENG_operation_cum_pass
+		text = "Recover Sudan"
+		x = 0
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_timed_idea = { idea = ENG_operation_cumpass days = 180 }
 			
-	# 		every_country = {
-	# 			limit = {
-	# 				is_subject_of = ROOT
-	# 			}
-	# 			add_timed_idea = { idea = ENG_operation_cumpass days = 100 }
-	# 		}
-	# 		FRF = { add_timed_idea = { idea = ENG_operation_cumpass days = 100 } }
-	# 	}
-	# }
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				add_timed_idea = { idea = ENG_operation_cumpass days = 100 }
+			}
+			FRF = { add_timed_idea = { idea = ENG_operation_cumpass days = 100 } }
+		}
+	}
 	
 	focus = {
 		id = ENG_Gib_Fell

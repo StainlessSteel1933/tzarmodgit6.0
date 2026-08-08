@@ -1,6 +1,78 @@
 ideas = {
 
 	country = {
+		
+		ENG_operation_cumpass = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				
+				supply_node_range = 0.5
+			}
+
+			picture = eng_special_air_service
+			
+			removal_cost = -1			
+			
+		}
+		
+		ENG_Sudan_Buff = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				
+				army_morale_factor = 0.1
+				supply_node_range = 0.25
+				production_speed_air_base_factor=0.20
+				production_speed_infrastructure_factor=0.20
+				production_speed_supply_node_factor = 0.25
+				production_speed_rail_way_factor = 0.25
+				supply_consumption_factor = -0.1
+			}
+
+			picture = eng_special_air_service
+			
+			removal_cost = -1			
+			
+		}
+		
+		ENG_arty_nerf = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+			name = "Focus On Tanks"
+			picture = generic_production_bonus
+			
+			modifier = {
+				army_infantry_defence_factor = -0.04
+				army_armor_defence_factor = 0.16
+				army_armor_attack_factor = 0.16
+			}
+			research_bonus = {
+				light_air = -0.075
+			}		
+			}
+			
 		george_v = {
 			
 			allowed = {
