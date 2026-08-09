@@ -7,7 +7,8 @@ state={
 	state_category = metropolis
 	
 	resources={
-		steel=71 # was: 120
+		steel = 71 # was: 120
+		coal = 51 # initial distribution
 	}
 
 	history={
@@ -26,7 +27,6 @@ state={
 			arms_factory = 2
 			industrial_complex = 3
 			air_base = 10
-			anti_air_building = 2
 			11297 = {
 				naval_base = 5
 			}

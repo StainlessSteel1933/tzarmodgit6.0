@@ -4,13 +4,12 @@ state={
 	resources={
 		oil=2.000
 	}
-	
-history={
-	1936.1.1.16 = {
-			owner = SWE 
-		}
-		owner = CHI
-		add_core_of = SWE
+
+	history={
+		owner = SWE
+		
+		
+		add_core_of = CHI
 		buildings = {
 			infrastructure = 1
 
@@ -34,6 +33,6 @@ history={
 	manpower=368200
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	impassable = yes
+
 	local_supplies=1.0 
 }

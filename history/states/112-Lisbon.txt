@@ -1,9 +1,9 @@
 state={
 	id=112
 	name="STATE_112"
-	#resources={ #moved to shewa ethopia
-		#tungsten=50.000
-	#}
+	resources={
+		tungsten= 32 #was: 50.000
+	}
 
 	history={
 		owner = POR

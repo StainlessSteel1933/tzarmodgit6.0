@@ -7,7 +7,7 @@ state={
 	state_category = city
 	
 	resources={
-		steel=28 # was: 48
+		steel=100 # was: 48
 	}
 
 	history={
@@ -22,8 +22,6 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 			air_base = 5
-			stronghold_network = 1
-
 		}
 		add_core_of = FRA
 	}

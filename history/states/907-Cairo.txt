@@ -1,0 +1,38 @@
+state={
+	id=907
+	name="STATE_907"
+	provinces={
+		992 1068 1080 3996 4055 4143 7011 7030 7117 7188 9957 10031 10126 11974 12004 13426 13428 13429 13430 13431 13432 13433 13434 13435 13437 13438 13439 13440 13441 13442 13443 13444 13448 13449 13450 13451 13452 13453 13454 13455 13456 13457 13463 13464 13465 13714 
+	}
+	history={
+		owner = ENG
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 5
+			13451 = {
+				naval_base = 2
+			}
+			
+
+		}
+		victory_points = {
+			7011 20 
+		}
+		
+		victory_points = {
+			3996 5 
+		}
+		
+		victory_points = {
+			1068 3 
+		}
+		
+
+	}
+	manpower=6454865
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies=0
+}

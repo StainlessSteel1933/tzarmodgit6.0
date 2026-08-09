@@ -1,0 +1,35 @@
+state={
+	id=202
+	name="STATE_202"
+	resources={
+		oil=8
+		aluminium=7
+	}
+	provinces={
+		489 504 525 582 3494 3543 6497 9465 9543 9568 11557 13682 13683 
+	}
+	history={
+		owner = SOV
+		victory_points = {
+			525 25
+		}
+		buildings = {
+			infrastructure = 4 #was: 7
+			arms_factory = 2
+			industrial_complex = 3
+			fuel_silo = 1
+			air_base = 8
+		}
+		add_core_of = SOV
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 3
+				industrial_complex = 3
+			}
+		}
+	}
+	manpower=2495352
+	buildings_max_level_factor=1
+	state_category=city
+	local_supplies=0
+}

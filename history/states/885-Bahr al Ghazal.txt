@@ -1,6 +1,6 @@
 state={
 	id=885
-	name = "STATE_885" # Bahr al zal
+	name = "STATE_885" # Bahr al Ghazal
 	state_category = pastoral
 	history = {
 		owner = ENG

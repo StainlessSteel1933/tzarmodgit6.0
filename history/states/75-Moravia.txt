@@ -3,7 +3,7 @@ state={
 	name="STATE_75"
 	manpower = 2598400
 	resources={
-		steel=24 # was: 6
+		steel=4 # was: 6
 		oil = 2 # was: 4
 	}
 
@@ -11,12 +11,6 @@ state={
 
 	history={
 		owner = CZE
-		1936.1.1.15 = {
-			owner = SWE 
-		}
-		1936.1.1.16 = {
-			owner = CZE 
-		}
 		victory_points = {
 			3569 20
 		}

@@ -1,24 +1,38 @@
 
-state={
-	id=503
-	name="STATE_503"
+state = {
+	id = 503
+	name = "STATE_503"
+	manpower = 961350 # Was split with Parana from 1922700
+	
 
-	history={
+	resources = {
+		coal = 1 # initial distribution = with infra 1.4 / 3 total
+	}
+
+	state_category = rural
+
+	history = {
+
 		owner = SWE
+		
+
 		buildings = {
-			infrastructure = 3
-			air_base = 1
-
+			infrastructure = 2 #was: 5, then 3
 		}
-		add_core_of = SWE
 
+		victory_points = {
+			4548 2 
+		}
+
+		victory_points = {
+			10405 1 
+		}
+		
 	}
 
-	provinces={
-		1529 4533 4548 5156 8181 10405 12466 
+	provinces = {
+		1529 4548 10405 12466 
 	}
-	manpower=1922700
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+
+	local_supplies = 0.0 
 }

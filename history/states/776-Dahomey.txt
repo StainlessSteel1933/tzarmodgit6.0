@@ -1,10 +1,10 @@
 
 state={
 	id=776
-	name="STATE_776" # Benin/omey
+	name="STATE_776" # Benin/Dahomey
 	manpower = 1351563
 	
-	state_category = pastoral
+	state_category = town
 	history={
 		owner = FRA
 		add_core_of = SWE
@@ -13,9 +13,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			10919 = {
-				naval_base = 1
-			}
 		}
 	}
 

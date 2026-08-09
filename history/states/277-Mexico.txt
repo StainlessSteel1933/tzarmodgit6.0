@@ -4,29 +4,25 @@ state={
 	name="STATE_277"
 	manpower = 3424403
 	
-	state_category = megalopolis
+	state_category = city
 
 	resources={
-		steel= 38 #was 2 before Mexican steel production was centralized to allow oil concessions
+		steel=40 #was 2 before Mexican steel production was centralized to allow oil concessions
+		tungsten = 25
+		coal = 25
+		chromium = 20
+		aluminium = 10
 	}
 	
 	history={
-			1936.1.1.16 = {
-			owner = SWE 
-		} owner = MEX
-		1936.1.1.15 = {
-			owner = SWE 
-		}
-		1936.1.1.13 = {
-			owner = SWE 
-		}
+		owner = MEX
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 2
-			industrial_complex = 4
+			industrial_complex = 2
 			air_base = 3
 		}
-		add_core_of = MEXs
+		add_core_of = MEX
 		victory_points = {
 			1965 25
 		}

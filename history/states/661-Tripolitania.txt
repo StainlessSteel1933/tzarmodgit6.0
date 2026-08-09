@@ -1,29 +1,19 @@
-
 state={
 	id=661
 	name="STATE_661"
-	resources={
-		oil=15
-		rubber=6
+	provinces={
+		1174 4051 4117 4176 4962 7154 10037 10067 11940 12009 13618 13619 13620 13621 13622 13623 13624 13625 13626 13627 13628 13629 13630 13631 13632 13633 13634 13635 
 	}
 	history={
 		owner = ITA
-		victory_points = {
-			3786 1 
-		}
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 1
-
 		}
-		add_core_of = SWE
-
-	}
-
-	provinces={
-		909 947 1174 3786 3951 3964 3983 4051 4117 4176 4962 6808 6871 6877 7154 9811 9901 10037 10067 10884 11831 11860 11940 12082 
+		
 	}
 	manpower=17617
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=1
 	state_category=wasteland
-	local_supplies=0.000
+	local_supplies=0
 }

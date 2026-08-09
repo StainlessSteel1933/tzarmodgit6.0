@@ -6,7 +6,7 @@ state={
 	state_category = pastoral
 	
 	resources={
-		aluminium=42 # was: 112
+		aluminium=105 # was: 112
 	}
 
 	history={

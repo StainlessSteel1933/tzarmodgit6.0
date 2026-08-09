@@ -4,16 +4,17 @@ state={
 	name="STATE_129"
 	manpower = 2212021
 	
-	state_category = metropolis
+	state_category = city
 	
 	resources={
-		steel=11 # was: 20
+		steel = 11 # was: 20
+		coal = 8 #initial distribution
 	}
 
 	history={
 		owner = ENG
 		victory_points = {
-			6237 10 #Nottinm
+			6237 10 #Nottingham
 		}
 		victory_points = {
 			11279 3 #Leicester
@@ -21,7 +22,7 @@ state={
 		buildings = {
 			infrastructure = 4 #was: 8
 			arms_factory = 2
-			industrial_complex = 5
+			industrial_complex = 1
 			air_base = 5
 		}
 		add_core_of = ENG

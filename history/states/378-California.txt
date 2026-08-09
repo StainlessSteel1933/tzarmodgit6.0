@@ -7,35 +7,29 @@ state={
 	state_category = metropolis
 	
 	resources={
-		oil=240 # was: 350
-		aluminium=40 # was: 14
+		oil=180 # was: 350
+		aluminium=8 # was: 14
 	}
 
 	history={
-		1936.1.1.16 = {
-			owner = SWE 
-		}
 		owner = USA
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 2
+			industrial_complex = 6
 			dockyard = 2
 			air_base = 10
 			1562 = {
-				naval_base = 15
-				coastal_bunker = 3
+				naval_base = 10
 			}
 			9671 = {
 				naval_base = 4
-				coastal_bunker = 3
 			}
 			9814 = {
-				naval_base = 15
-				coastal_bunker = 3
+				naval_base = 5
 			}
 			610 = {
 				naval_base = 1
-				coastal_bunker = 3
 			}
 		}
 		add_core_of = USA

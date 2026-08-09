@@ -1,12 +1,10 @@
-
 state={
 	id=115
 	name="STATE_115"
-	resources={
-		chromium=69
-		tungsten=10
+	provinces={
+		1009 1156 3857 4014 4159 7059 7147 10074 12047 13256 13654 
 	}
-	history={
+	history = {
 		owner = ITA
 		victory_points = {
 			10074 20 
@@ -23,7 +21,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			air_base = 15
+			air_base = 10
 			dockyard = 1
 			10074 = {
 				naval_base = 2
@@ -44,14 +42,11 @@ state={
 
 		}
 		add_core_of = ITA
+		
 
-	}
-
-	provinces={
-		1009 1156 3857 4014 4159 7059 7147 10074 12047 12318 13256 
 	}
 	manpower=3836571
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=1
 	state_category=city
-	local_supplies=0.000
+	local_supplies=0
 }

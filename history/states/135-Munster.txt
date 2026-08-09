@@ -4,6 +4,10 @@ state={
 	name="STATE_135"
 	manpower = 941400
 
+	resources = {
+		coal = 1 #initial distribution
+	}
+
 	state_category = town
 
 	history={
@@ -18,7 +22,7 @@ state={
 		victory_points = {
 			6313 1 #Limerick
 		}
-		add_core_of = SWE
+		
 	}
 
 	provinces={

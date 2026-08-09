@@ -3,7 +3,7 @@ state = {
 	id = 878
 	name = "STATE_878" # Khatangsky
 	manpower = 15974
-	impassable = yes
+	
 	state_category = pastoral
 
 	history = {
@@ -12,7 +12,6 @@ state = {
 			infrastructure = 1
 		}
 		add_core_of = SOV
-		add_core_of = 
 	}
 
 	provinces = {

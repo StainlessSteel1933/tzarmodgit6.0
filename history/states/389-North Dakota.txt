@@ -3,20 +3,18 @@ state={
 	id=389
 	name="STATE_389"
 	manpower = 680844
-	state_category = large_city
+	state_category = rural
 	resources={
 		steel=17 # was: 24
 		oil=7 # was: 10
+		coal = 12 # initial distribution = with infra 25.2 / 1280 total
 	}
 
 	history={
-				1936.1.1.16 = {
-			owner = SWE 
-		}
 		owner = USA
 		buildings = {
 			infrastructure = 2
-			
+			industrial_complex = 1
 		}
 		add_core_of = USA
 		victory_points = {

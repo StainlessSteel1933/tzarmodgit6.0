@@ -4,7 +4,7 @@ state={
 	name="STATE_571" # Omsk
 	manpower = 1317157
 	
-	state_category = city
+	state_category = town
 	history={
 		owner = SOV
 		buildings = {

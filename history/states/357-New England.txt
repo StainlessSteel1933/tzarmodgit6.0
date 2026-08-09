@@ -2,19 +2,17 @@ state={
 	id=357
 	name="STATE_357"
 	resources={
-		steel=62 # was: 20.000
+		steel=12 # was: 20.000
 	}
 
 	state_category = metropolis
 
 
 	history={
-				1936.1.1.16 = {
-			owner = SWE 
-		}
 		owner = USA
 		buildings = {
 			infrastructure = 4 #was: 7
+			arms_factory = 1
 			industrial_complex = 5
 			dockyard = 4
 			air_base = 10

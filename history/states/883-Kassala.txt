@@ -1,0 +1,21 @@
+state={
+	id=883
+	name="STATE_883"
+	provinces={
+		2003 2046 2088 7989 13507 13509 13538 13539 13540 13541 13542 13543 13544 13545 13546 
+	}
+	history = {
+		owner = ENG
+		add_core_of = SWE
+		victory_points = {
+			12725 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=511402
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

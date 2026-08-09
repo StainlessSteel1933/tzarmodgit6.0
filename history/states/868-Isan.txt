@@ -5,9 +5,6 @@ state={
 		1357 1535 1548 4511 4582 7516 7601 10384 10425 10438 12195 12264 12360 12373 12388 12402 12417 12431 
 	}
 	history = {
-				1936.1.1.16 = {
-			owner = SWE 
-		}
 		owner = JAP
 		buildings = {
 			infrastructure = 1
@@ -15,9 +12,10 @@ state={
 		victory_points = {
 			10438 1 
 		}
+		
 	}
 	manpower=2000000
-	state_category = rural
+	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

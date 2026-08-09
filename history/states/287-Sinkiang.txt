@@ -1,32 +1,48 @@
+state = {
+	id = 287
+	name = "STATE_287"
 
-state={
-	id=287
-	name="STATE_287"
-	impassable = yes
-history={
-	1936.1.1.16 = {
-			owner = SWE 
-		}
+	history = {
+
 		owner = CHI
-		add_core_of = SWE
 		add_core_of = CHI
 		
-		add_core_of = SWE
+		add_core_of = CHI
+
 		buildings = {
-			infrastructure = 1
-
-		}
-		victory_points = {
-			4973 1 
+			infrastructure = 0
 		}
 
+		1936.1.1 = {
+			IF = {
+				limit = {
+					always = no 
+				}
+				KHM = { transfer_state = PREV }
+				add_core_of = CHI
+			}
+		}	
+
+		1938.10.25 = {
+			IF = {
+				limit = {
+					always = no 
+				}
+				remove_core_of = KHM
+			}	
+			owner = CHI
+		}	
 	}
+
 
 	provinces={
-		4973 8042 10885 10911 12864 
+		5016 7790 8042 8086 10885 12864 
 	}
-	manpower=408000
-	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=4.000
+	manpower = 28000
+	buildings_max_level_factor = 1.000
+	state_category = wasteland
+	impassable = yes 
+	force_link_ownership_to = 1042 # Khotan
+
+	local_supplies = 0.0 
 }

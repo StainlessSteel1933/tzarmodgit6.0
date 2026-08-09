@@ -4,26 +4,20 @@ state={
 	name="STATE_477"
 	manpower = 1951460
 	
-	state_category = city
+	state_category = large_town
 	
 	resources={
 		oil=9
 	}
 
 	history={
-			1936.1.1.16 = {
-			owner = SWE 
-		} owner = MEX
-		1936.1.1.15 = {
-			owner = SWE 
-		}
-		1936.1.1.13 = {
-			owner = SWE 
-		}
+		owner = MEX
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
 			dockyard = 1
+			12810 = {
+				naval_base = 3
+			}
 		}
 		add_core_of = MEX
 		victory_points = {

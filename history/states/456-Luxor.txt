@@ -2,31 +2,36 @@ state={
 	id=456
 	name="STATE_456"
 	provinces={
-		921 1028 1057 1064 1151 2090 2168 5006 5093 7026 7073 7136 7156 8103 10786 10893 11999 12044 12071 12870 
+		1028 1064 1151 4068 7073 10028 11999 12002 12044 12071 12889 13458 13459 13460 13461 13462 13466 13467 13468 13469 13470 13471 13472 13473 13474 13475 13476 13477 13478 13480 13481 13482 13485 13486 13487 
 	}
-	history={
-		victory_points = {
-			11792 1 
-		}
+	history = {
+		
 		owner = ENG
+		add_core_of = SWE
+
 		buildings = {
 			infrastructure = 2
 
+			# Aswan Low Dam
+			11999 = { dam = 1 }
+
 		}
+
 		victory_points = {
-			12071 3 
+			12071 3 # Luxor
 		}
+
 		victory_points = {
-			7144 1 
+			13458 1 # Asyut
 		}
+
 		victory_points = {
-			5093 50 
+			13480 1 # Aswan
 		}
-		add_core_of = SWE
 
 	}
 	manpower=4224516
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=1
 	state_category=rural
-	local_supplies=0.000
+	local_supplies=0
 }

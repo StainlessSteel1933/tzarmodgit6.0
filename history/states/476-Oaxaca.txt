@@ -4,25 +4,20 @@ state={
 	name="STATE_476"
 	manpower = 1663331
 	
-	state_category = rural
+	state_category = large_town
 
 	resources={
 		oil=8
 	}
 	
 	history={
-			1936.1.1.16 = {
-			owner = SWE 
-		} owner = MEX
-		1936.1.1.15 = {
-			owner = SWE 
-		}
-		1936.1.1.13 = {
-			owner = SWE 
-		}
+		owner = MEX
 		buildings = {
 			infrastructure = 2
 			air_base = 2
+			10889 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = MEX
 		victory_points = {

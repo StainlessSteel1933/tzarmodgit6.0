@@ -1,7 +1,7 @@
 
 state={
 	id=570
-	name="STATE_570" # Nsibirsk
+	name="STATE_570" # Novosibirsk
 	manpower = 1765369
 
 	state_category = town

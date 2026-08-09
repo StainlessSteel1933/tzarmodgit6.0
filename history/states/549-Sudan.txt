@@ -11,6 +11,7 @@ state={
 		}
 		owner = ENG
 		add_core_of = SWE
+		
 		buildings = {
 			infrastructure = 2
 

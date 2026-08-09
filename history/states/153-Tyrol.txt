@@ -10,7 +10,6 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			arms_factory = 7
 			air_base = 3
 		}
 		add_core_of = AUS
@@ -25,6 +24,6 @@ state={
 	}
 	manpower=1500986
 	buildings_max_level_factor=1.000
-	state_category= megalopolis
+	state_category=town
 	local_supplies=12.000
 }

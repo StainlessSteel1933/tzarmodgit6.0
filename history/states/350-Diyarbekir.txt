@@ -4,7 +4,7 @@ state={
 	name="STATE_350"
 
 	history={
-		owner = TUR
+		owner = SWE
 		victory_points = {
 			4512 5 
 		}
@@ -19,15 +19,24 @@ state={
 			air_base = 2
 
 		}
-add_core_of = TUR
-
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			
+		}
 	}
 
 	provinces={
-		4512 9823 11871 12387 12416 
+		4512 9823 11759 11871 12387 12416 
 	}
 	manpower=571935
-	buildings_max_level_factor=1.000
 	state_category=town
-	local_supplies=0.000
+
+	local_supplies=0.0 
 }

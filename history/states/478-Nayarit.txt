@@ -6,20 +6,8 @@ state={
 	
 	state_category = town
 	
-	resources={
-		tungsten= 34 # was: 10
-	}
-
 	history={
-			1936.1.1.16 = {
-			owner = SWE 
-		} owner = MEX
-		1936.1.1.15 = {
-			owner = SWE 
-		}
-		1936.1.1.13 = {
-			owner = SWE 
-		}
+		owner = MEX
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

@@ -1,9 +1,9 @@
-state = {
+state={
 	id=884
-	name = "STATE_884"  # Upper Nile 
-	manpower = 1040121
-	state_category = pastoral
-
+	name="STATE_884"
+	provinces={
+		1914 2096 4918 10859 10877 12800 12887 
+	}
 	history = {
 		owner = ENG
 		add_core_of = SWE
@@ -13,11 +13,8 @@ state = {
 		}
 
 	}
-
-	provinces = {
-		2096 10859 10877 12800 
-	}
-
-	buildings_max_level_factor = 1.000
-	local_supplies = 0.000
+	manpower=1040121
+	buildings_max_level_factor=1
+	state_category=pastoral
+	local_supplies=0
 }

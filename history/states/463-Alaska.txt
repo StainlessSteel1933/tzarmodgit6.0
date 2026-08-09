@@ -3,9 +3,6 @@ state={
 	name="STATE_463"
 
 	history={
-				1936.1.1.16 = {
-			owner = SWE 
-		}
 		owner = USA
 		buildings = {
 			infrastructure = 1

@@ -1,0 +1,21 @@
+state={
+	id=1010
+	name="STATE_1010"
+	resources={
+		oil=3
+	}
+	provinces={
+		1631 4951 7144 10876 12413 12839 13554 13555 13556 13557 13558 13559 13560 13561 13562 13563 13567 13570 13571 13572 13573 
+	}
+	history = {
+		owner = ENG
+		add_core_of = SWE
+		victory_points = {
+			12413 1 # Rumadiyah
+		}
+	}
+	manpower=479801
+	buildings_max_level_factor=1
+	state_category=rural
+	local_supplies=0
+}

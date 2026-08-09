@@ -3,19 +3,14 @@ state={
 	name="STATE_9"
 	manpower = 4492600
 	resources={
-		steel=5 # was: 8
+		steel = 5 # was: 8
+		coal = 6 # initial distribution / 60 total
 	}
 	
-	state_category = megalopolis
+	state_category = large_city
 	
 	history={
 		owner = CZE
-		1936.1.1.15 = {
-			owner = SWE 
-		}
-		1936.1.1.16 = {
-			owner = CZE 
-		}
 		victory_points = { 11542 30 }
 		victory_points = { 6418 5 }
 		victory_points = { 9569 5 }

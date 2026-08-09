@@ -1,11 +1,13 @@
+state = {
+	id = 881
+	name = "STATE_881" # Karagandy
 
-state={
-	id=881
-	name="STATE_881"
-
-	history={
+	history = {
 		owner = SOV
-		add_core_of = SWE
+		#victory_points = {
+		#	7597 1
+		#}
+		
 		buildings = {
 			infrastructure = 1
 
@@ -14,11 +16,17 @@ state={
 
 	}
 
-	provinces={
-		1223 1243 1272 1312 1331 1382 1402 4250 4277 4389 4492 4595 7335 7425 10179 10220 10268 10275 10277 10508 12111 12121 12177 12194 12266 12385 12487 
+	provinces = {
+		1243 1312 1382 1402 4250 4277 4389 4492 4595 7335 10179 10220 10268 10275 10277 10508 12111 12121 12177 12194 12385 12487
 	}
-	manpower=227016
-	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
+	manpower = 227016
+
+	resources = {
+		coal = 6 # initial distribution
+	}
+
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+
+	local_supplies = 0.0 
 }

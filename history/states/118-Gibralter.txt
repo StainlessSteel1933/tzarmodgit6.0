@@ -1,40 +1,32 @@
-
 state={
 	id=118
 	name="STATE_118"
-
+	provinces={
+		4135 13228 13653 
+	}
+	resources = {
+		steel = 100 #was 21 #was 35 was 59 # was: 100
+	}
 	history={
 		owner = ENG
-		victory_points = {
-			4135 10 
-		}
+		victory_points = { 4135 10 }
 		buildings = {
 			infrastructure = 3
-			air_base = 15
+			air_base = 2
+			anti_air_building = 3
 			4135 = {
 				naval_base = 5
-				coastal_bunker = 10
-
+				coastal_bunker = 2
 			}
 			13228 = {
 				naval_base = 5
-				coastal_bunker = 10
+				coastal_bunker = 2
 			}
-
 		}
-		victory_points = {
-			4135 5	
-		}
-		add_dynamic_modifier = {
-			modifier = ENG_da_rock
-		}
-	}
-
-	provinces={
-		3979 4135 13228 
+		add_claim_by = SPR
 	}
 	manpower=21372
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=1
 	state_category=enclave
-	local_supplies=0.000
+	local_supplies=0
 }

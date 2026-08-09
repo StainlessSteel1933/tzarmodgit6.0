@@ -2,15 +2,12 @@ state= {
 	id=595
 	name="STATE_595"
 	manpower = 11755600
-	state_category = city
+	state_category = town
 	history=
 	{
-				1936.1.1.16 = {
-			owner = SWE 
-		}
 		owner = CHI
+		
 		add_core_of = CHI
-		add_core_of = SWE
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

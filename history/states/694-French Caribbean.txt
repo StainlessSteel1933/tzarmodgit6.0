@@ -3,7 +3,11 @@ state={
 	name="STATE_694"
 	manpower = 444290
 
-	state_category = rural
+	state_category = city
+	
+	resources={
+		oil=15 # was: 104
+	}	
 
 	history={
 		add_core_of = SWE
@@ -16,9 +20,6 @@ state={
 			air_base = 1
 			177 = {
 				naval_base = 3
-			}
-			9377 = {
-				naval_base = 1
 			}
 		}
 	}

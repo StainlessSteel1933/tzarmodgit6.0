@@ -3,7 +3,7 @@ state = {
 	id = 830
 	name = "STATE_830" #Bukhara
 
-	impassable = yes
+
 	history = {
 	
 		owner = SOV
@@ -22,8 +22,6 @@ state = {
 		}
 		
 		add_core_of = SOV
-		
-		
 
 	}
 

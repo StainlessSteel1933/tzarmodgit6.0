@@ -2,27 +2,28 @@ state={
 	id=358
 	name="STATE_358"
 	resources={
-		steel=32 # was: 24.000
+		steel=13 # was: 24.000
 	}
 	
 	state_category = megalopolis
 
 	history={
-				1936.1.1.16 = {
-			owner = SWE 
-		}
-		
 		owner = USA
 		buildings = {
 			infrastructure = 4 #was: 8
+			arms_factory = 2
 			industrial_complex = 7
 			dockyard = 3
 			air_base = 10
 			3878 = {
 				naval_base = 6
-
+                landmark_statue_of_liberty = {
+                    level = 1
+                    allowed = {
+                        always = no
+                    }
+                }
 			}
-
 		}
 		add_core_of = USA
 		victory_points = {

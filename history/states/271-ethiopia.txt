@@ -4,16 +4,26 @@ state=
 	name = "STATE_271"
 	manpower = 1800000
 	resources = {
-		tungsten = 50 
 		# rubber=2 # was: 2
-		#moved from lisbon cuz i think its funny to put it here maybe later we can make it a front again pepw
 	}
 	
 	state_category = town
 
 	history = {
-		
+		set_variable = { ETH_state_development_production_speed = -0.1 }
+		set_variable = { ETH_state_development_local_building_slots_factor = -0.1 }
+		#set_variable = { ETH_state_decentralization_defence = 0.2 }
+		#set_variable = { ETH_state_decentralization_infrastructure = -0.3 }
+		#set_variable = { ETH_state_decentralization_resources = -0.3 }
+		add_dynamic_modifier = {
+			modifier = ETH_state_development_dynamic_modifier
+		}
+		#add_dynamic_modifier = {
+		#	modifier = ETH_state_decentralization_dynamic_modifier
+		#}
 		owner = ITA
+		add_core_of = SWE
+
 		buildings = {
 			infrastructure = 2
 			arms_factory = 2
@@ -28,7 +38,8 @@ state=
 		}
 		
 		
-		add_core_of = SWE
+		
+		
 
 		1936.6.1 = {
 			owner = ITA

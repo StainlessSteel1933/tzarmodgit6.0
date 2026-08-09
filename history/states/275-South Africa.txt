@@ -4,30 +4,20 @@ state={
 	name="STATE_275" # Transvaal
 	manpower = 3680363
 	
-	state_category = megalopolis
+	state_category = large_city
 	
 	resources={
-		steel=48 # was: 8
+		steel=11 #was: 5   was: 8
 		chromium=53 # was: 80
-		tungsten=62
-		oil = 30
+		coal = 14 # initial distribution
 	}
 
 	history={
 		owner = SAF
-		1936.1.1.13 = {
-			owner = ENG 
-		}
-		1936.1.1.15 = {
-			owner = SAF 
-		}
-		1936.1.1.16 = {
-			owner = SAF 
-		}
 		buildings = {
 			infrastructure = 3 #was: 5
-			arms_factory = 2
-			industrial_complex = 8
+			arms_factory = 1
+			industrial_complex = 5
 			air_base = 3
 		}
 		victory_points = {

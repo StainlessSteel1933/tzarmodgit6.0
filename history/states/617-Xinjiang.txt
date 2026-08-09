@@ -2,21 +2,27 @@ state={
 	id=617
 	name="STATE_617"
 
-history={
-	1936.1.1.16 = {
-			owner = SWE 
-		}
+	history={
 		owner = CHI
-		add_core_of = SWE
 		add_core_of = CHI
-		add_core_of = SWE
+		
+		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 
 		}
+
 		victory_points = {
-			4709 5
+			4709 5 # Urumqi
+		}
+
+		victory_points = {
+			10545 1 # Hejing
+		}
+
+		victory_points = {
+			4682 1 # Aksu
 		}
 
 	}
@@ -27,6 +33,6 @@ history={
 	manpower=1080500
 	buildings_max_level_factor=1.000
 	state_category=rural
-	impassable = yes
+
 	local_supplies=6.0 
 }

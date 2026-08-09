@@ -1,36 +1,39 @@
-state={
-	id=715
-	name="STATE_715"
+state = {
+	id = 715
+	name = "STATE_715"
 	manpower = 3643373
 	
 	state_category = town
-
-	history={
-				1936.1.1.16 = {
-			owner = SWE 
+	resources = {
+			aluminium = 20 # was: 2
+			oil = 20
+			tungsten = 20
+			steel = 40
+			chromium = 10
+			coal = 30
 		}
-		owner = MIN
-		1936.1.1.13 = {
-			owner = JAP
-			add_core_of = JAP 
-		}
-		1936.1.1.16 = {
-			owner = SWE 
-		}
+	history = { 
+		
+		owner = MAN
+		
+		add_core_of = MAN
 		add_core_of = CHI
-		add_core_of = MIN
-		add_core_of = SWE
+
+		victory_points = {
+			11836 1 # Tongliao
+		}
+		add_extra_state_shared_building_slots = 10
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 1
+			arms_factory = 5
+			industrial_complex = 5
 		}
 
 	}
 
-	provinces={
+	provinces = {
 		916 930 1499 1508 1558 1627 1638 3877 3978 4561 4633 4642 6893 7812 9831 10429 11836 11903 12337 12469 12478 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

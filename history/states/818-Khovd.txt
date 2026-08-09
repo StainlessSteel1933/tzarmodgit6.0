@@ -7,18 +7,8 @@ state={
 
 	history={
 		owner = MON
-		1936.1.1.15 = {
-			owner = SOV 
-		}
-		1936.1.1.13 = {
-			owner = SOV
-			add_core_of = SOV 
-		}
-		1936.1.1.16 = {
-			owner = MON
-			}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 		}
 		victory_points = {
 			7843 1 #Ulaangom
@@ -27,6 +17,6 @@ state={
 	}
 	manpower=149000
 	buildings_max_level_factor=1.000
-	state_category= city
+	state_category=pastoral
 	local_supplies=0.000
 }

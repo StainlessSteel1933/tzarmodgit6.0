@@ -7,17 +7,16 @@ state={
 	state_category = megalopolis
 	
 	resources={
-		steel=65 # was: 80
+		steel = 44 # was: 80
+		coal = 160 # initial distribution = with infra 432 / 1280 total
 	}
 
 
 	history={
-				1936.1.1.16 = {
-			owner = SWE 
-		}
 		owner = USA
 		buildings = {
 			infrastructure = 4 #was: 8
+			industrial_complex = 5
 			dockyard = 7
 			air_base = 2
 			6845 = {

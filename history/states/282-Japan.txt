@@ -1,37 +1,56 @@
-
-state={
-	id=282
-	name="STATE_282" # Kanto
-	manpower = 13773000
+state = {
+	id = 282
+	name = "STATE_282" # Kanto
+	manpower = 15773000 # was 13773000
 	
 	state_category = megalopolis
 	
-	resources={
-		aluminium=1 # was: 2
+	resources = {
+		aluminium = 100 # was: 2
+		oil = 100
+		tungsten = 100
+		steel = 400
+		chromium = 100
+		coal = 100
 	}
 
-	history={
-		
-				1936.1.1.16 = {
-			owner = SWE 
-		}
+	history = {
+
 		owner = JAP
 		add_core_of = JAP
+		add_extra_state_shared_building_slots = 18
 		buildings = {
-			infrastructure = 5 #was: 8
+			infrastructure = 4 #was: 8
 			air_base = 6
-			industrial_complex = 8
+			industrial_complex = 15
 			arms_factory = 2
 			dockyard = 4
+
 			9998 = {
-				naval_base = 15
-				coastal_bunker = 3
+				naval_facility = 1
+				naval_base = 6
+			}
+
+			1182 = {
+				landmark_tokyo_imperial_palace = {
+				    level = 1
+				    allowed = {
+				        always = no
+				    }
+				}
+				
 			}
 
 		}
+
 		victory_points = {
-			1182 50 
+			1182 50 # Tokyo
 		}
+
+		victory_points = {
+			9998 25 # Yokohama
+		}
+
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 3
@@ -42,9 +61,9 @@ state={
 
 	}
 
-	provinces={
+	provinces = {
 		993 1097 1113 1182 4000 4100 4184 4188 7016 9998 11908 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

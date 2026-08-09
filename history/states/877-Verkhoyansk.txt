@@ -1,7 +1,7 @@
 state = {
 	id = 877
 	name = "STATE_877" # Verkhoyansk
-	impassable = yes
+
 	history = {
 		owner = SOV
 		victory_points = {
@@ -11,7 +11,6 @@ state = {
 			infrastructure = 1
 		}
 		add_core_of = SOV
-		
 
 	}
 

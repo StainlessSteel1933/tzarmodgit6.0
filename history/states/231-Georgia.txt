@@ -12,13 +12,16 @@ state = {
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 4
+			industrial_complex = 1
 			air_base = 3
-			
+			3653 = {
+				naval_base = 2
+				coastal_bunker = 1
+
+			}
 
 		}
 		add_core_of = SOV
-		add_core_of = SWE
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 2

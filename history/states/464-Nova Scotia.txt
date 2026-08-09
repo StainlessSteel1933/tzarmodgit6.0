@@ -4,16 +4,14 @@ state={
 	name="STATE_464"
 	manpower = 490912
 	
-	state_category = rural
+	resources = {
+		coal = 7 # initial distribution = with infra 16 / 36 total 
+	}
+
+	state_category = town
 
 	history={
 		owner = CAN
-		1936.1.1.13 = {
-			owner = CAN 
-		}
-		1936.1.1.16 = {
-			owner = CAN 
-		}
 		victory_points = {
 			7361 3
 		}

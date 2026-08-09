@@ -24,7 +24,13 @@ state = {
 			dockyard = 4
 			air_base = 5
 			11837 = { #Taranto
-				naval_base = 20
+				naval_base = 10
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						always = no
+					}
+				}
 			}
 			9784 = { #Bari
 				naval_base = 3

@@ -3,10 +3,9 @@ state={
 	name="STATE_700"
 	manpower = 1768500
 	
-	state_category = pastoral
+	state_category = town
 	
-	history=
-	{
+	history={
 		owner = ENG
 		add_core_of = SWE
 		victory_points = {
@@ -15,7 +14,9 @@ state={
 		buildings = {
 			infrastructure = 2
 			2038 = {
-				naval_base = 3
+				naval_base = 8
+				naval_supply_hub = 1
+				naval_headquarters = 1
 			}
 		}
 

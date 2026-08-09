@@ -7,20 +7,12 @@ state={
 	history = {
 		buildings = {
 			infrastructure = 1
-			dockyard = 2
-		}
-				1936.1.1.16 = {
-			owner = SWE 
-		}
-				1936.1.1.16 = {
-			owner = SWE 
-			add_core_of = SWE
 		}
 		owner = AST
 		add_core_of = AST
 	}
 	manpower=100000
-	state_category = town
+	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

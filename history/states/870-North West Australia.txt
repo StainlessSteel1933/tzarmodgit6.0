@@ -8,9 +8,6 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-				1936.1.1.16 = {
-			owner = SWE 
-		}
 		owner = AST
 		add_core_of = AST
 	}

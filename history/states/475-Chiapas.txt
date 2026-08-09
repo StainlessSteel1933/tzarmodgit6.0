@@ -4,21 +4,13 @@ state={
 	name="STATE_475"
 	manpower = 805874
 	
-	state_category = rural
+	state_category = town
 
 	history={
-			1936.1.1.16 = {
-			owner = SWE 
-		} owner = MEX
-		1936.1.1.15 = {
-			owner = SWE 
-		}
-		1936.1.1.13 = {
-			owner = SWE 
-		}
+		owner = MEX
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 2
 		}
 		add_core_of = MEX
 

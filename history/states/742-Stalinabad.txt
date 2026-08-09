@@ -1,7 +1,11 @@
 state = {
 	id = 742
 	name = "STATE_742"
-	impassable = yes
+
+	resources = {
+		steel = 3.000
+	}
+
 	history = {
 
 		owner = SOV
@@ -13,8 +17,6 @@ state = {
 
 		}
 		add_core_of = SOV
-		add_core_of = SWE
-		
 
 	}
 

@@ -4,28 +4,15 @@ state={
 	name="STATE_48"
 	manpower = 1685989
 	resources={
-		aluminium = 4
-		steel=32
-		tungsten=20
-		oil=8
+		aluminium = 2
+		coal = 1 #initial distribution
 	}
 	
 	
-	state_category = megalopolis
+	state_category = city
 
 	history={
 		owner = BUL
-		1936.1.1.13 = {
-			owner = ITA
-			add_core_of = ITA 
-		}
-		1936.1.1.15 = {
-			owner = BUL
-			add_core_of = BUL 
-		}
-		1936.1.1.16 = {
-			owner = BUL 
-		}
 		victory_points = { #Sofia
 			949 15 
 		}
@@ -34,8 +21,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 1
+			industrial_complex = 6
 			air_base = 3
 		}
 		add_core_of = BUL

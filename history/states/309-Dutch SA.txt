@@ -3,17 +3,12 @@ state={
 	id=309
 	name="STATE_309"
 	manpower = 152000
-
-	resources={
-		aluminium=42
-		steel=48		# was: 104
-	}	
 	
-	state_category = metropolis
+	state_category = town
 
 	history={
-		add_core_of = HOL
-		owner = HOL
+		add_core_of = SWE
+		owner = FRA
 		victory_points = {
 			10906 1
 		}

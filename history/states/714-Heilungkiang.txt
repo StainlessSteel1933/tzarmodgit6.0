@@ -1,27 +1,28 @@
 state={
 	id=714
 	name="STATE_714"
-	resources = {
-		oil=41
-	}
-	history={
-				1936.1.1.16 = {
-			owner = SWE 
-		}
-		owner = MIN
-		1936.1.1.13 = {
-			owner = JAP
-			add_core_of = JAP 
-		}
-		1936.1.1.16 = {
-			owner = SWE 
-		}
+
+	history = {
+
+		owner = MAN
+		
+		add_core_of = MAN
 		add_core_of = CHI
-		add_core_of = MIN
-		add_core_of = SWE
+
+		victory_points = {
+			12485 1 # Ulanhot
+		}
+
+		victory_points = {
+			7848 1 # Mohe
+		}
+
+		victory_points = {
+			1693 2 # Aihui/Heihe 
+		}
+
 		buildings = {
 			infrastructure = 2
-
 		}
 
 	}

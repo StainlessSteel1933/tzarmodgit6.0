@@ -10,8 +10,6 @@ state=
 		victory_points = {
 			6727 1
 		}
-		add_core_of = SWE
-		add_core_of = SWE
 		owner = ROM
 		buildings = {
 			infrastructure = 2

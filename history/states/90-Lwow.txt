@@ -22,7 +22,6 @@ state={
 		owner = POL
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 5
 		}
 		add_core_of = POL
 	}

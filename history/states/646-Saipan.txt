@@ -4,20 +4,10 @@ state=
 	name="STATE_646"
 	state_category = small_island
 	manpower=21657
-	
-	resources={
-		rubber=8 
-	}
-	
 	history=
 	{
-				1936.1.1.16 = {
-			owner = SWE 
-		}
-		set_state_flag = JAP_controls
 		owner = JAP
 		add_core_of = JAP
-		
 		buildings = {
 			infrastructure = 2
 			air_base = 3
@@ -31,6 +21,10 @@ state=
 		}	
 		victory_points = {
 			3995 1
+		 }
+
+		 strategic_province_location = {
+		 	defensible_coastline = 3995
 		 }
 
 	}

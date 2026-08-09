@@ -7,25 +7,14 @@ state={
 	state_category = rural
 
 	resources={
-		aluminium=23 # was: 10
-		tungsten=61 # moved from SUNKIANG to here cuz idk what the vanilla state is
+		aluminium=7 # was: 10
 	}
 
 	history={
-				1936.1.1.16 = {
-			owner = SWE 
-		}
-		owner = MIN
-		1936.1.1.13 = {
-			owner = JAP
-			add_core_of = JAP 
-		}
-		1936.1.1.16 = {
-			owner = SWE 
-		}
+		owner = MAN
+		
+		add_core_of = MAN
 		add_core_of = CHI
-		add_core_of = MIN
-		add_core_of = SWE
 		buildings = {
 			infrastructure = 2
 			#industrial_complex = 1

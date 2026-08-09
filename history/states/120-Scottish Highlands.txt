@@ -1,41 +1,46 @@
-state= {
-	id=120
-	name="STATE_120"
-	manpower = 265873
+state = {
+	id = 120
+	name = "STATE_120"
+	manpower = 247873
 	
-	state_category = large_city
+	state_category = rural
 
 	resources={
-		chromium=24 # was: 2
-		tungsten=22 # was: 22
-		aluminium=60 # was: 12
-		oil=100
+		chromium=30 # was: 2
+		tungsten=40 # was: 22
+		aluminium=90 # was: 12
 	}
 
 	history= {
-		add_core_of = SWE
+		
 		owner = ENG
 		victory_points = {
-			6205 1 #Skye/Stornoway
+			6062 1 #Skye/Stornoway
 		}
+		victory_points = {
+			284 1 #Oban
+		}
+		victory_points = {
+			9075 1 #Inverness
+		}
+		victory_points = { 11064 1 }
 		buildings = {
 			infrastructure = 2
 			anti_air_building = 2
-			industrial_complex = 4
+			industrial_complex = 1
 			air_base = 1
 			11064 = {
-				naval_base = 15
-			}
-			6196 = {
-				naval_base = 1	
+				naval_base = 8
+				naval_supply_hub = 1
+				naval_headquarters = 1
 			}
 		}
 		add_core_of = ENG
 	}
 
-	provinces=
-	{
-131 284 3159 3178 3373 6046 6062 6104 6196 6205 9075 9090 11064 11161 11266 	}
+	provinces = { 
+		131 284 3159 3178 3373 6046 6062 6104 6205 9075 9090 11064 11161 11266 13269 13270
+	}
 
 	local_supplies=0.0 
 }

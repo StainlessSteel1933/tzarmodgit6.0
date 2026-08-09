@@ -7,17 +7,6 @@ state={
 
 	history={
 		owner = BUL
-		1936.1.1.13 = {
-			owner = ITA
-			add_core_of = ITA 
-		}
-		1936.1.1.15 = {
-			owner = BUL
-			add_core_of = BUL 
-		}
-		1936.1.1.16 = {
-			owner = BUL 
-		}
 		victory_points = { #Ruse
 			9612 3
 		}

@@ -5,11 +5,7 @@ state={
 	state_category = small_island
 
 	history={
-				1936.1.1.16 = {
-			owner = SWE 
-		}
-		owner = SWE
-		
+		owner = NZL
 		buildings = {
 			infrastructure = 2
 			7290 = {

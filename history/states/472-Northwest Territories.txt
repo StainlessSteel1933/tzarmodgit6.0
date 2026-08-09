@@ -4,12 +4,6 @@ state={
 
 	history={
 		owner = CAN
-		1936.1.1.13 = {
-			owner = CAN 
-		}
-		1936.1.1.16 = {
-			owner = CAN 
-		}
 		buildings = {
 			infrastructure = 1
 

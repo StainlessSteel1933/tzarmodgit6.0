@@ -3,16 +3,14 @@ state={
 	name="STATE_521"
 	resources={
 		tungsten=24.000
+		coal = 4 #initial distribution
 	}
 
 	history={
-				1936.1.1.16 = {
-			owner = SWE 
-		}
 		owner = AST
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
+			industrial_complex = 1
 			air_base = 1
 			7564 = {
 				naval_base = 2

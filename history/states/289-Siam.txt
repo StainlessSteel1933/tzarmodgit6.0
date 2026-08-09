@@ -2,13 +2,11 @@ state={
 	id=289
 	name="STATE_289"
 	resources={
-		rubber=28
+		rubber=8.000
+		tungsten=2.000
 	}
 
 	history={
-				1936.1.1.16 = {
-			owner = SWE 
-		}
 		owner = JAP
 		buildings = {
 			infrastructure = 2
@@ -25,6 +23,8 @@ state={
 			7408 10 
 		}
 		
+		
+		
 
 	}
 
@@ -33,6 +33,6 @@ state={
 	}
 	manpower=8422400
 	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
+	state_category=metropolis
+	local_supplies=1
 }

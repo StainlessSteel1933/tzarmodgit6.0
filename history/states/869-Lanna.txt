@@ -10,15 +10,17 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
-			air_base = 15
-		}
-				1936.1.1.16 = {
-			owner = SWE 
 		}
 		owner = JAP
+		
 	}
 	manpower=2000000
-	state_category = rural
+	
+	resources = {
+		coal = 1 #Lowgrade lignite and sub-bituminous coal
+	}
+	
+	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

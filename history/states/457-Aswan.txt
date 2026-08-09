@@ -1,30 +1,27 @@
-
 state={
 	id=457
 	name="STATE_457"
-
-	history={
+	provinces={
+		1206 1977 4910 4963 5069 7156 7216 8105 10745 10844 10902 12725 12771 13479 13483 13484 13488 13489 13490 13491 13492 13493 13495 13496 13497 13498 13499 13500 13501 13502 13503 13504 13505 13506 13508 13510 13512 13513 13514 13515 13516 13517 13518 13528 13529 13713 
+	}
+	history = {
 		owner = ENG
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 1
-			10892 = {
-				naval_base = 1
-
+			12725 = {
+				naval_base = 3
 			}
-
 		}
+
 		victory_points = {
-			12002 1 
+			12002 1
 		}
-		add_core_of = SWE
 
-	}
-
-	provinces={
-		3862 4068 5069 10892 11844 12002 12889 
+		
 	}
 	manpower=2194
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=1
 	state_category=wasteland
-	local_supplies=0.000
+	local_supplies=0
 }

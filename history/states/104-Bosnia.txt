@@ -9,16 +9,11 @@ state={
 	
 	resources={
 		aluminium=7 # was: 10
+		coal = 2 # initial distribution
 	}
 
 	history={
 		owner = YUG
-		1936.1.1.15 = {
-			owner = SWE 
-		}
-		1936.1.1.16 = {
-			owner = YUG 
-		}
 		victory_points = {
 			11899 5 
 		}
@@ -30,8 +25,7 @@ state={
 			industrial_complex = 2
 			air_base = 2
 		}
-		add_core_of = SWE
-		
+		add_core_of = YUG
 	}
 
 	provinces={

@@ -4,7 +4,7 @@ state={
 	name="STATE_773" # Cameroon
 	manpower = 2945782
 	
-	state_category = city
+	state_category = town
 
 	history={
 		owner = FRA
@@ -16,9 +16,6 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
-			6039 = {
-				naval_base = 1
-			}
 		}
 
 	}

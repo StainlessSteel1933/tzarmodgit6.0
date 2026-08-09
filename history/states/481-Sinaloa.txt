@@ -4,21 +4,17 @@ state={
 	name="STATE_481" # Durango
 	manpower = 1255094
 	
-	state_category = rural
+
+	state_category = town
 	
 	history={
-			1936.1.1.16 = {
-			owner = SWE 
-		} owner = MEX
-		1936.1.1.15 = {
-			owner = SWE 
-		}
-		1936.1.1.13 = {
-			owner = SWE 
-		}
+		owner = MEX
 		buildings = {
 			infrastructure = 2
 			dockyard = 1
+			8057 = {
+				naval_base = 3
+			}
 		}
 		add_core_of = MEX
 		victory_points = {

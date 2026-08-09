@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = ENG
+		add_core_of = SWE
 		victory_points = {
 			792 5 
 		}
@@ -20,7 +21,7 @@ state={
 			}
 		}
 
-		add_core_of = SWE
+		
 	}
 
 	provinces={

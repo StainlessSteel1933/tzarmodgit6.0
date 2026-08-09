@@ -4,22 +4,18 @@ state={
 	name="STATE_387"
 	manpower = 445031
 	
-	state_category = large_city
+	state_category = rural
 	
 	resources={
-		steel=74 # was: 32
-		chromium=97 # was: 2
-		tungsten=65 # was: 34
+		steel=18 # was: 32
+		chromium=1 # was: 2
+		tungsten=18 # was: 34
 	}
 
 	history={
-				1936.1.1.16 = {
-			owner = SWE 
-		}
 		owner = USA
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 6
 		}
 		add_core_of = USA
 		victory_points = {

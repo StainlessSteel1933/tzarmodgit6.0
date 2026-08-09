@@ -7,9 +7,6 @@ state={
 	state_category = city
 
 	history={
-				1936.1.1.16 = {
-			owner = SWE 
-		}
 		owner = USA
 		victory_points = {
 			4464 1 
@@ -17,7 +14,6 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			arms_factory = 3
 			air_base = 3
 			4464 = {
 				naval_base = 4

@@ -2,22 +2,22 @@ state={
 	id=767
 	name="STATE_767"
 	provinces={
-		7987 
+		4138 7987 8103 10900 
 	}
 	impassable = yes
-	victory_points = {
-				7987 1 
-			}
-	history={
+	force_link_ownership_to = 551 # Kharthoum
+	
+	history = {
+
 		owner = ENG
+		
+		
 		buildings = {
 			infrastructure = 0
-
 		}
-
 	}
 	manpower=8143
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=1
 	state_category=wasteland
-	local_supplies=0.000
+	local_supplies=0
 }
