@@ -13,25 +13,25 @@ state = {
 			infrastructure = 0
 		}
 
-		1936.1.1 = {
-			IF = {
-				limit = {
-					always = no 
-				}
-				KHM = { transfer_state = PREV }
-				add_core_of = CHI
-			}
-		}	
+		# 1936.1.1 = {
+		# 	IF = {
+		# 		limit = {
+		# 			always = no 
+		# 		}
+		# 		KHM = { transfer_state = PREV }
+		# 		add_core_of = CHI
+		# 	}
+		# }	
 
-		1938.10.25 = {
-			IF = {
-				limit = {
-					always = no 
-				}
-				remove_core_of = KHM
-			}	
-			owner = CHI
-		}	
+		# 1938.10.25 = {
+		# 	IF = {
+		# 		limit = {
+		# 			always = no 
+		# 		}
+		# 		remove_core_of = KHM
+		# 	}	
+		# 	owner = CHI
+		# }	
 	}
 
 

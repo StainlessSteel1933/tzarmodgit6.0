@@ -7,15 +7,16 @@ state={
 	history={
 		add_extra_state_shared_building_slots = 1
 		owner = RAJ
+		add_core_of = RAJ
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 1
 			4915 = {
                 landmark_taj_mahal = {
                     level = 1
-                    allowed = {
-                        has_dlc = "Graveyard of Empires"
-                    }
+                    # allowed = {
+                    #     has_dlc = "Graveyard of Empires"
+                    # }
                 }
 			}
 		}

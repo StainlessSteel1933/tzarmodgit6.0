@@ -20,27 +20,27 @@ state = {
 			infrastructure = 2
 		}
 
-		1936.1.1 = {
-			IF = {
-				limit = {
-					always = no
-				}
-				transfer_state_to = SIC
-				add_core_of = CHI
-				remove_core_of = XSM
-			}
-		}
+		# 1936.1.1 = {
+		# 	IF = {
+		# 		limit = {
+		# 			always = no
+		# 		}
+		# 		transfer_state_to = SIC
+		# 		add_core_of = CHI
+		# 		remove_core_of = XSM
+		# 	}
+		# }
 
-		1938.10.25 = {
-		IF = {
-				limit = {
-					always = no 
-				}
-				remove_core_of = SIC
-			}		
-			owner = CHI
-			controller = CHI
-		}
+		# 1938.10.25 = {
+		# IF = {
+		# 		limit = {
+		# 			always = no 
+		# 		}
+		# 		remove_core_of = SIC
+		# 	}		
+		# 	owner = CHI
+		# 	controller = CHI
+		# }
 
 	}
 

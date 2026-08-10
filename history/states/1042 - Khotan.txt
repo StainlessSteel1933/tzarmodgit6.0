@@ -11,15 +11,7 @@ state = {
 		
 		add_core_of = CHI
 
-		1936.1.1 = {
-			IF = {
-				limit = {
-					always = no 
-				}
-				KHM = { transfer_state = PREV }
-				add_core_of = CHI
-			}
-		}	
+		
 
 		buildings = {
 			infrastructure = 1
@@ -33,15 +25,7 @@ state = {
 			1970 1 # Yecheng 
 		}
 
-		1938.10.25 = {
-			IF = {
-				limit = {
-					always = no 
-				}
-				remove_core_of = KHM
-			}	
-			owner = CHI
-		}
+		
 	}
 
 	provinces = {

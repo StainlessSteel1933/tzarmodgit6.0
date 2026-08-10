@@ -6,13 +6,13 @@ state=
 	
 	state_category = town
 
-	history=
-	{
-		owner = PHI
+	history={
+		owner = USA
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = PHI
+		
 	}
 	provinces={
 		1224 1311 1340 4269 4373 

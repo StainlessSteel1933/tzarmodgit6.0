@@ -8,22 +8,22 @@ state={
 	
 	history={
 		owner = SWE
-		
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 2
 			industrial_complex = 4
 			dockyard = 2
 			air_base = 7
-			10980 = {
-				naval_base = 7
-                landmark_cristo_redentor = {
-                    level = 1
-                    allowed = {
-                        always = no
-                    }
-                }
-			}
+			# 10980 = {
+			# 	naval_base = 7
+            #     landmark_cristo_redentor = {
+            #         level = 1
+            #         allowed = {
+            #             always = no
+            #         }
+            #     }
+			# }
 		}
 		victory_points = {
 			10980 10

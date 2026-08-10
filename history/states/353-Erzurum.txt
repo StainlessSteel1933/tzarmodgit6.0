@@ -21,17 +21,17 @@ state={
 			infrastructure = 1
 
 		}
-		if = {
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
+		# if = {
+		# 	limit = {
+		# 		has_dlc = "Battle for the Bosporus"
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		NOT = { has_dlc = "Battle for the Bosporus" }
+		# 	}
 			
-		}
+		# }
 	}
 
 	provinces={

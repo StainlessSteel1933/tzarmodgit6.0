@@ -23,37 +23,37 @@ state = {
 			2022 3 #Was in 12732, but is now here
 		}
 
-		1936.1.1 = {
-			IF = {
-				limit = {
-					always = no 
-				}
-				XIC = { transfer_state = PREV }
-				add_core_of = CHI
-				remove_core_of = XSM
-			}
-		}
+		# 1936.1.1 = {
+		# 	IF = {
+		# 		limit = {
+		# 			always = no 
+		# 		}
+		# 		XIC = { transfer_state = PREV }
+		# 		add_core_of = CHI
+		# 		remove_core_of = XSM
+		# 	}
+		# }
 
-		1938.10.25 = {
-			IF = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger"
-					}
-				}
-				CHI = {
-					transfer_state = PREV
-				}
-			}
-			IF = {
-				limit = {
-					always = no 
-				}
-				remove_core_of = XIC
-			}		
-			owner = CHI
-			controller = CHI
-		}
+		# 1938.10.25 = {
+		# 	IF = {
+		# 		limit = {
+		# 			NOT = {
+		# 				has_dlc = "Waking the Tiger"
+		# 			}
+		# 		}
+		# 		CHI = {
+		# 			transfer_state = PREV
+		# 		}
+		# 	}
+		# 	IF = {
+		# 		limit = {
+		# 			always = no 
+		# 		}
+		# 		remove_core_of = XIC
+		# 	}		
+		# 	owner = CHI
+		# 	controller = CHI
+		# }
 	}
 
 	provinces = {

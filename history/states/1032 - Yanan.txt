@@ -11,14 +11,14 @@ state = {
 		add_core_of = CHI
 		
 
-		1936.1.1 = {
-			IF = {
-				limit = {
-					always = no
-				}
-				transfer_state_to = XIC
-			}
-		}
+		# 1936.1.1 = {
+		# 	IF = {
+		# 		limit = {
+		# 			always = no
+		# 		}
+		# 		transfer_state_to = XIC
+		# 	}
+		# }
 
 		victory_points = {
 			8049 3 # Yanan

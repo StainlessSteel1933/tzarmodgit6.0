@@ -6,9 +6,9 @@ state = {
 
 	history = {
 
-		owner = MAN
+		owner = JAP
 		
-		add_core_of = MAN
+		# add_core_of = MAN
 		add_core_of = CHI
 
 		victory_points = {

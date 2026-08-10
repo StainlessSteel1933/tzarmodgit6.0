@@ -33,31 +33,31 @@ state = {
 			5031 1 # Alxa Right Banner
 		}
 
-		1936.1.1 = {
-			IF = {
-				limit = {
-					always = no 
-				}
-				NXM = { transfer_state = PREV }
-				add_core_of = CHI
-				remove_core_of = XSM
-			}
-		}
+		# 1936.1.1 = {
+		# 	IF = {
+		# 		limit = {
+		# 			always = no 
+		# 		}
+		# 		NXM = { transfer_state = PREV }
+		# 		add_core_of = CHI
+		# 		remove_core_of = XSM
+		# 	}
+		# }
 
 
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-				}
-				CHI = {
-					transfer_state = PREV
+		# 1938.10.25 = {
+		# 	if = {
+		# 		limit = {
+		# 			NOT = {
+		# 				has_dlc = "Waking the Tiger" 
+		# 			}
+		# 		}
+		# 		CHI = {
+		# 			transfer_state = PREV
 
-				}
-			}
-		}
+		# 		}
+		# 	}
+		# }
 
 	}
 

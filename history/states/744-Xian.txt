@@ -14,25 +14,25 @@ state = {
 		owner = CHI
 		add_core_of = CHI
 		
-		1936.1.1 = {
-			IF = {
-				limit = {
-					always = no
-				}
-				transfer_state_to = XIC
-			}
-		}
+		# 1936.1.1 = {
+		# 	IF = {
+		# 		limit = {
+		# 			always = no
+		# 		}
+		# 		transfer_state_to = XIC
+		# 	}
+		# }
 
-		1938.10.25 = {
-		IF = {
-				limit = {
-					always = no 
-				}
-				remove_core_of = XIC
-			}		
-			owner = CHI
-			controller = CHI
-		}
+		# 1938.10.25 = {
+		# IF = {
+		# 		limit = {
+		# 			always = no 
+		# 		}
+		# 		remove_core_of = XIC
+		# 	}		
+		# 	owner = CHI
+		# 	controller = CHI
+		# }
 
 		victory_points = {
 			7301 1 # Xian

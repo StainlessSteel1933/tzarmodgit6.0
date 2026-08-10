@@ -16,16 +16,16 @@ state = {
 		owner = CHI
 		add_core_of = CHI
 
-		1936.1.1 = {
-			IF = {
-				limit = {
-					always = no
-				}
-				transfer_state_to = GDC
-				add_core_of = CHI
-				remove_core_of = GXC
-			}
-		}
+		# 1936.1.1 = {
+		# 	IF = {
+		# 		limit = {
+		# 			always = no
+		# 		}
+		# 		transfer_state_to = GDC
+		# 		add_core_of = CHI
+		# 		remove_core_of = GXC
+		# 	}
+		# }
 		
 		
 		add_core_of = CHI
@@ -53,20 +53,20 @@ state = {
 			}
 		}
 
-		1938.10.25 = {		
+		# 1938.10.25 = {		
 
-			remove_core_of = GXC
-			owner = CHI
+		# 	remove_core_of = GXC
+		# 	owner = CHI
 
-			JAP = {
-				set_province_controller = 1202
-				set_province_controller = 4050
-				set_province_controller = 7108
-				set_province_controller = 9938
-				set_province_controller = 12095
-			} 
+		# 	JAP = {
+		# 		set_province_controller = 1202
+		# 		set_province_controller = 4050
+		# 		set_province_controller = 7108
+		# 		set_province_controller = 9938
+		# 		set_province_controller = 12095
+		# 	} 
 
-		}
+		# }
 
 	}
 
