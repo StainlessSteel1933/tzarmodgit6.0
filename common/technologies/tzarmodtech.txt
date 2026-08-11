@@ -11,4 +11,35 @@ technologies = {
 			always = no
 		}
 	}
+
+	battle_of_north_africa_tech = {
+		# mechanized = {
+		# 	max_strength = 7.0
+		# }
+		# motorized = {
+		# 	max_strength = 7.0
+		# }	
+		# amphibious_mechanized = {
+		# 	max_strength = 7.0
+		# }
+		category_tanks = {
+			max_strength = 1.0
+		}
+		category_artillery = {
+			max_strength = 5.0
+			max_organisation = 15
+			default_morale = 0.15
+		}
+		category_light_infantry = {
+			max_strength = -6.0
+			max_organisation = 15
+			default_morale = 0.15
+		}
+
+		doctrine = yes
+		research_cost = 1
+		allow = {
+			always = no
+		}
+	}
 }
