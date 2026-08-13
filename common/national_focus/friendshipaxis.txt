@@ -448,272 +448,272 @@ joint_focus = {
 		#}
 #}
 
-joint_focus = {
-		id = AXIS_anglo_afghan
-		icon = GFX_focus_generic_befriend_afghanistan
-		prerequisite = { focus = AXIS_global_fascism }
-		#mutually_exclusive = { focus =  }
-		dynamic = yes 
+# joint_focus = {
+# 		id = AXIS_anglo_afghan
+# 		icon = GFX_focus_generic_befriend_afghanistan
+# 		prerequisite = { focus = AXIS_global_fascism }
+# 		#mutually_exclusive = { focus =  }
+# 		dynamic = yes 
 		
-		x = 0
-		y = 1
+# 		x = 0
+# 		y = 1
 		
-		relative_position_id = AXIS_global_fascism
+# 		relative_position_id = AXIS_global_fascism
 
-		cost = 6
+# 		cost = 6
 
-		ai_will_do = {
-			#factor = 1
-		}
+# 		ai_will_do = {
+# 			#factor = 1
+# 		}
 
-		joint_trigger = {
+# 		joint_trigger = {
   			
-		}
+# 		}
 		
-		select_effect = {
-			RAJ = {
-				country_event = {id = srevents.15 days = 1 }
-			}
-			ENG = {
-				country_event = {id = srevents.15 days = 1 }
-			}
-		}
+# 		select_effect = {
+# 			RAJ = {
+# 				country_event = {id = srevents.15 days = 1 }
+# 			}
+# 			ENG = {
+# 				country_event = {id = srevents.15 days = 1 }
+# 			}
+# 		}
 		
-		available = {
-			has_global_flag = iran_front_clown
-		}
+# 		available = {
+# 			has_global_flag = iran_front_clown
+# 		}
 		
-		bypass = {
+# 		bypass = {
 
-		}
+# 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+# 		cancel_if_invalid = yes
+# 		continue_if_invalid = no
+# 		available_if_capitulated = no
 
-		complete_tooltip = {
+# 		complete_tooltip = {
 
-		}
+# 		}
 
-		completion_reward = {
+# 		completion_reward = {
 			
-		}
+# 		}
 
-		completion_reward_joint_originator = {
-			442 = { add_claim_by = AFG }
-			GER = {
-				add_to_faction = AFG
-			}
-			ROOT = {
-				set_autonomy = {
-						target = AFG
-						autonomy_state = autonomy_puppet
-				}
-			}
-			news_event = { hours = 1 id = news.1005 }
-			if = {
-				limit = {
-					GER = {
-						has_completed_focus = GER_bilateral_trade
-					}
-				}
-				AFG = {
-					division_template = {
-						name = "German Trained Royal Guard"
+# 		completion_reward_joint_originator = {
+# 			442 = { add_claim_by = AFG }
+# 			GER = {
+# 				add_to_faction = AFG
+# 			}
+# 			ROOT = {
+# 				set_autonomy = {
+# 						target = AFG
+# 						autonomy_state = autonomy_puppet
+# 				}
+# 			}
+# 			news_event = { hours = 1 id = news.1005 }
+# 			if = {
+# 				limit = {
+# 					GER = {
+# 						has_completed_focus = GER_bilateral_trade
+# 					}
+# 				}
+# 				AFG = {
+# 					division_template = {
+# 						name = "German Trained Royal Guard"
 
-						division_names_group = AFG_ARM_01
+# 						division_names_group = AFG_ARM_01
 
-							regiments = {
-								mountaineers = { x = 0 y = 0 }
-								mountaineers = { x = 0 y = 1 }
-								mountaineers = { x = 0 y = 2 }
-								mountaineers = { x = 0 y = 3 }
-								mountaineers = { x = 0 y = 4 }
-								mountaineers = { x = 1 y = 0 }
-								mountaineers = { x = 1 y = 1 }
-								mountaineers = { x = 1 y = 2 }
-								mountaineers = { x = 1 y = 3 }
-								mountaineers = { x = 1 y = 4 }
-								mountaineers = {x = 2 y = 0 }
-								mountaineers = { x = 2 y = 1 }
-								mountaineers = { x = 2 y = 2 }
-								artillery_brigade = { x = 3 y = 0 }
-								artillery_brigade = { x = 3 y = 1 }
-								anti_air_brigade = { x = 3 y = 2 }
-								artillery_brigade = { x = 4 y = 0 }
-								artillery_brigade = { x = 4 y = 1 }
-							}
-							support = {
-								recon = { x = 0 y = 0 }
-								engineer = { x = 0 y = 1 }
-								artillery = { x = 0 y = 2 }
-								anti_air = { x = 0 y = 3 }
-								anti_tank = { x = 0 y = 4 }
-								signal_company = { x = 0 y = 5}
-								logistics_company = { x = 0 y =6 }
-							}
+# 							regiments = {
+# 								mountaineers = { x = 0 y = 0 }
+# 								mountaineers = { x = 0 y = 1 }
+# 								mountaineers = { x = 0 y = 2 }
+# 								mountaineers = { x = 0 y = 3 }
+# 								mountaineers = { x = 0 y = 4 }
+# 								mountaineers = { x = 1 y = 0 }
+# 								mountaineers = { x = 1 y = 1 }
+# 								mountaineers = { x = 1 y = 2 }
+# 								mountaineers = { x = 1 y = 3 }
+# 								mountaineers = { x = 1 y = 4 }
+# 								mountaineers = {x = 2 y = 0 }
+# 								mountaineers = { x = 2 y = 1 }
+# 								mountaineers = { x = 2 y = 2 }
+# 								artillery_brigade = { x = 3 y = 0 }
+# 								artillery_brigade = { x = 3 y = 1 }
+# 								anti_air_brigade = { x = 3 y = 2 }
+# 								artillery_brigade = { x = 4 y = 0 }
+# 								artillery_brigade = { x = 4 y = 1 }
+# 							}
+# 							support = {
+# 								recon = { x = 0 y = 0 }
+# 								engineer = { x = 0 y = 1 }
+# 								artillery = { x = 0 y = 2 }
+# 								anti_air = { x = 0 y = 3 }
+# 								anti_tank = { x = 0 y = 4 }
+# 								signal_company = { x = 0 y = 5}
+# 								logistics_company = { x = 0 y =6 }
+# 							}
 	
-								priority = 2
-						}
-						random_owned_controlled_state = {
-							prioritize = { 267 }
-							create_unit = {
-								division = "name = \"German Trained Royal Guard\" division_template = \"German Trained Royal Guard\" start_experience_factor = 1.00" 
-								owner = AFG
-							}	
-							create_unit = {
-								division = "name = \"German Trained Royal Guard\" division_template = \"German Trained Royal Guard\" start_experience_factor = 1.00" 
-								owner = AFG
-							}
-							create_unit = {
-								division = "name = \"German Trained Royal Guard\" division_template = \"German Trained Royal Guard\" start_experience_factor = 1.00" 
-								owner = AFG
-							}
-							create_unit = {
-								division = "name = \"German Trained Royal Guard\" division_template = \"German Trained Royal Guard\" start_experience_factor = 1.00" 
-								owner = AFG
-							}
-						}
-				}
-			}
+# 								priority = 2
+# 						}
+# 						random_owned_controlled_state = {
+# 							prioritize = { 267 }
+# 							create_unit = {
+# 								division = "name = \"German Trained Royal Guard\" division_template = \"German Trained Royal Guard\" start_experience_factor = 1.00" 
+# 								owner = AFG
+# 							}	
+# 							create_unit = {
+# 								division = "name = \"German Trained Royal Guard\" division_template = \"German Trained Royal Guard\" start_experience_factor = 1.00" 
+# 								owner = AFG
+# 							}
+# 							create_unit = {
+# 								division = "name = \"German Trained Royal Guard\" division_template = \"German Trained Royal Guard\" start_experience_factor = 1.00" 
+# 								owner = AFG
+# 							}
+# 							create_unit = {
+# 								division = "name = \"German Trained Royal Guard\" division_template = \"German Trained Royal Guard\" start_experience_factor = 1.00" 
+# 								owner = AFG
+# 							}
+# 						}
+# 				}
+# 			}
 		
-		}
+# 		}
 
-		completion_reward_joint_member = {
+# 		completion_reward_joint_member = {
 			
-		}
-}
+# 		}
+# }
 
-joint_focus = {
-		id = AXIS_support_goldensquare
-		icon = GFX_focus_TUR_support_the_golden_square
-		prerequisite = { focus = AXIS_global_fascism }
-		mutually_exclusive = { focus =  }
-		dynamic = yes 
+# joint_focus = {
+# 		id = AXIS_support_goldensquare
+# 		icon = GFX_focus_TUR_support_the_golden_square
+# 		prerequisite = { focus = AXIS_global_fascism }
+# 		mutually_exclusive = { focus =  }
+# 		dynamic = yes 
 		
-		x = -2
-		y = 1
+# 		x = -2
+# 		y = 1
 		
-		relative_position_id = AXIS_global_fascism
+# 		relative_position_id = AXIS_global_fascism
 
-		cost = 6
+# 		cost = 6
 
-		ai_will_do = {
-			factor = -100
-		}
+# 		ai_will_do = {
+# 			factor = -100
+# 		}
 
-		joint_trigger = {
+# 		joint_trigger = {
   			
-		}
+# 		}
 
-		available = {
-			ROOT = { has_war_with = ENG	}
-			ITA = { has_war_with = ENG }
-			date<1940.7.10
-		}
+# 		available = {
+# 			ROOT = { has_war_with = ENG	}
+# 			ITA = { has_war_with = ENG }
+# 			date<1940.7.10
+# 		}
 		
-		bypass = {
+# 		bypass = {
 
-		}
+# 		}
 		
-		select_effect = {
-			676 = { set_demilitarized_zone = yes }
-			291 = { set_demilitarized_zone = yes }
-		}
+# 		select_effect = {
+# 			676 = { set_demilitarized_zone = yes }
+# 			291 = { set_demilitarized_zone = yes }
+# 		}
 		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+# 		cancel_if_invalid = yes
+# 		continue_if_invalid = no
+# 		available_if_capitulated = no
 
-		complete_tooltip = {
+# 		complete_tooltip = {
 
-		}
+# 		}
 
-		completion_reward = {
+# 		completion_reward = {
 				
-		}
+# 		}
 
-		completion_reward_joint_originator = {
-			676 = { set_demilitarized_zone = no }
-			291 = { set_demilitarized_zone = no }
-			IRQ = {
-				transfer_state = 676
-				transfer_state = 291
-				load_oob = ITA_anglo_iraq
-			}
-			ROOT = {
-				set_autonomy = {
-						target = IRQ
-						autonomy_state = autonomy_puppet
-				}
-				news_event = { id = news.1000 }
-			}
-			GER = {
-				add_to_faction = IRQ
-			}
-		}
+# 		completion_reward_joint_originator = {
+# 			676 = { set_demilitarized_zone = no }
+# 			291 = { set_demilitarized_zone = no }
+# 			IRQ = {
+# 				transfer_state = 676
+# 				transfer_state = 291
+# 				load_oob = ITA_anglo_iraq
+# 			}
+# 			ROOT = {
+# 				set_autonomy = {
+# 						target = IRQ
+# 						autonomy_state = autonomy_puppet
+# 				}
+# 				news_event = { id = news.1000 }
+# 			}
+# 			GER = {
+# 				add_to_faction = IRQ
+# 			}
+# 		}
 
-		completion_reward_joint_member = {
+# 		completion_reward_joint_member = {
 			
-		}
-}
+# 		}
+# }
 
-joint_focus = {
-		id = AXIS_sword_islam
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = AXIS_support_goldensquare focus = AXIS_anglo_afghan }
-		#mutually_exclusive = { focus =  }
-		dynamic = yes 
+# joint_focus = {
+# 		id = AXIS_sword_islam
+# 		icon = GFX_goal_generic_major_war
+# 		prerequisite = { focus = AXIS_support_goldensquare focus = AXIS_anglo_afghan }
+# 		#mutually_exclusive = { focus =  }
+# 		dynamic = yes 
 		
-		x = 1
-		y = 1
+# 		x = 1
+# 		y = 1
 		
-		relative_position_id = AXIS_support_goldensquare
+# 		relative_position_id = AXIS_support_goldensquare
 
-		cost = 5
+# 		cost = 5
 
-		ai_will_do = {
-			factor = -100
-		}
+# 		ai_will_do = {
+# 			factor = -100
+# 		}
 
-		joint_trigger = {
+# 		joint_trigger = {
   			
-		}
+# 		}
 
-		available = {
+# 		available = {
 			
-		}
+# 		}
 		
-		bypass = {
+# 		bypass = {
 
-		}
+# 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+# 		cancel_if_invalid = yes
+# 		continue_if_invalid = no
+# 		available_if_capitulated = no
 
-		complete_tooltip = {
+# 		complete_tooltip = {
 
-		}
+# 		}
 
-		completion_reward = {
+# 		completion_reward = {
 			
-		}
+# 		}
 
-		completion_reward_joint_originator = {
-			IRQ = {
-				add_ideas = AXIS_sword_of_islam_idea
-			}
+# 		completion_reward_joint_originator = {
+# 			IRQ = {
+# 				add_ideas = AXIS_sword_of_islam_idea
+# 			}
 			
-			AFG = {
-				add_ideas = AXIS_sword_of_islam_idea
-			}
-		}
+# 			AFG = {
+# 				add_ideas = AXIS_sword_of_islam_idea
+# 			}
+# 		}
 
-		completion_reward_joint_member = {
+# 		completion_reward_joint_member = {
 			
-		}
-}
+# 		}
+# }
 
 #joint_focus = {
 #		id = AXIS_azad_hind_fauj
@@ -820,314 +820,314 @@ joint_focus = {
 		}
 }
 
-joint_focus = {
-		id = AXIS_finland_continuewar
-		icon = GFX_focus_FIN_a_cry_for_help
-		prerequisite = { focus = AXIS_anti_bosh_war }
-		#mutually_exclusive = { focus =  }
-		dynamic = yes 
+# joint_focus = {
+# 		id = AXIS_finland_continuewar
+# 		icon = GFX_focus_FIN_a_cry_for_help
+# 		prerequisite = { focus = AXIS_anti_bosh_war }
+# 		#mutually_exclusive = { focus =  }
+# 		dynamic = yes 
 		
-		x = 1
-		y = 1
+# 		x = 1
+# 		y = 1
 		
-		relative_position_id = AXIS_anti_bosh_war
+# 		relative_position_id = AXIS_anti_bosh_war
 
-		cost = 7
+# 		cost = 7
 
-		ai_will_do = {
-			factor = -100
-		}
+# 		ai_will_do = {
+# 			factor = -100
+# 		}
 
-		joint_trigger = {
+# 		joint_trigger = {
   			
-		}
+# 		}
 		
-		select_effect = {
-			111 = { set_demilitarized_zone = yes }
-			149 = { set_demilitarized_zone = yes }
-			150 = { set_demilitarized_zone = yes }
-		}
+# 		select_effect = {
+# 			111 = { set_demilitarized_zone = yes }
+# 			149 = { set_demilitarized_zone = yes }
+# 			150 = { set_demilitarized_zone = yes }
+# 		}
 		
-		available = {
+# 		available = {
 			
-		}
+# 		}
 		
-		bypass = {
+# 		bypass = {
 
-		}
+# 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+# 		cancel_if_invalid = yes
+# 		continue_if_invalid = no
+# 		available_if_capitulated = no
 
-		complete_tooltip = {
+# 		complete_tooltip = {
 
-		}
+# 		}
 
-		completion_reward = {
+# 		completion_reward = {
 			
-		}
+# 		}
 
-		completion_reward_joint_originator = {
-			111 = { set_demilitarized_zone = no }
-			149 = { set_demilitarized_zone = no }
-			150 = { set_demilitarized_zone = no }
-			FIN = {
-			transfer_state = 148
-			transfer_state = 722
-				transfer_state = 111
-				transfer_state = 149 
-				transfer_state = 150		
-				add_ideas = fin_sisu
-				add_ideas = fin_continuation_war
-				hidden_effect = { 
-						set_technology = {  
-							basic_light_tank_chassis  = 1
-							infantry_weapons = 1
-							infantry_weapons1 = 1
-							infantry_weapons2 = 1
-							motorised_infantry = 1
-							armored_car1 = 1
-							bicycle_infantry = 1
-							gw_artillery = 1
-							interwar_artillery = 1
-							artillery1 = 1
-							interwar_antiair = 1
-							antiair1 = 1 
-							antiair2 = 1
-							tech_support = 1
-							tech_engineers = 1
-							tech_engineers2 = 1
-							tech_recon = 1
-							tech_flamethrower = 1
-							tech_logistics_company = 1
-							tech_signal_company = 1
-							basic_train = 1
-							interwar_antitank = 1
-							support_weapons = 1
-							support_weapons2 = 1
-							jaegers
-							tech_flamethrower
-						} 
-				}
-				load_oob = bzk_neva_lose
-			}
-			ROOT = {
-				set_autonomy = {
-						target = FIN
-						autonomy_state = autonomy_puppet
-				}
-			}		
-			news_event = { hours = 6 id = news.1004 }
-		}
+# 		completion_reward_joint_originator = {
+# 			111 = { set_demilitarized_zone = no }
+# 			149 = { set_demilitarized_zone = no }
+# 			150 = { set_demilitarized_zone = no }
+# 			FIN = {
+# 			transfer_state = 148
+# 			transfer_state = 722
+# 				transfer_state = 111
+# 				transfer_state = 149 
+# 				transfer_state = 150		
+# 				add_ideas = fin_sisu
+# 				add_ideas = fin_continuation_war
+# 				hidden_effect = { 
+# 						set_technology = {  
+# 							basic_light_tank_chassis  = 1
+# 							infantry_weapons = 1
+# 							infantry_weapons1 = 1
+# 							infantry_weapons2 = 1
+# 							motorised_infantry = 1
+# 							armored_car1 = 1
+# 							bicycle_infantry = 1
+# 							gw_artillery = 1
+# 							interwar_artillery = 1
+# 							artillery1 = 1
+# 							interwar_antiair = 1
+# 							antiair1 = 1 
+# 							antiair2 = 1
+# 							tech_support = 1
+# 							tech_engineers = 1
+# 							tech_engineers2 = 1
+# 							tech_recon = 1
+# 							tech_flamethrower = 1
+# 							tech_logistics_company = 1
+# 							tech_signal_company = 1
+# 							basic_train = 1
+# 							interwar_antitank = 1
+# 							support_weapons = 1
+# 							support_weapons2 = 1
+# 							jaegers
+# 							tech_flamethrower
+# 						} 
+# 				}
+# 				load_oob = bzk_neva_lose
+# 			}
+# 			ROOT = {
+# 				set_autonomy = {
+# 						target = FIN
+# 						autonomy_state = autonomy_puppet
+# 				}
+# 			}		
+# 			news_event = { hours = 6 id = news.1004 }
+# 		}
 
-		completion_reward_joint_member = {
+# 		completion_reward_joint_member = {
 			
-		}
-}
+# 		}
+# }
 
-joint_focus = {
-		id = AXIS_arm_finland
-		icon = GFX_focus_FIN_right_wing_policies
-		prerequisite = { focus = AXIS_finland_continuewar }
-		#mutually_exclusive = { focus =  }
-		dynamic = yes 
+# joint_focus = {
+# 		id = AXIS_arm_finland
+# 		icon = GFX_focus_FIN_right_wing_policies
+# 		prerequisite = { focus = AXIS_finland_continuewar }
+# 		#mutually_exclusive = { focus =  }
+# 		dynamic = yes 
 		
-		x = 0
-		y = 1
+# 		x = 0
+# 		y = 1
 		
-		relative_position_id = AXIS_finland_continuewar
+# 		relative_position_id = AXIS_finland_continuewar
 
-		cost = 10
+# 		cost = 10
 
-		ai_will_do = {
-			factor = -100
-		}
+# 		ai_will_do = {
+# 			factor = -100
+# 		}
 
-		joint_trigger = {
+# 		joint_trigger = {
   			
-		}
+# 		}
 
-		available = {
+# 		available = {
 			
-		}
+# 		}
 		
-		bypass = {
+# 		bypass = {
 
-		}
+# 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+# 		cancel_if_invalid = yes
+# 		continue_if_invalid = no
+# 		available_if_capitulated = no
 
-		complete_tooltip = {
+# 		complete_tooltip = {
 
-		}
+# 		}
 
-		completion_reward = {
+# 		completion_reward = {
 			
-		}
+# 		}
 
-		completion_reward_joint_originator = {
-			FIN = {
-				add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = 800
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment 
-					amount = 10000
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment
-					amount = 300
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment
-					amount = 700
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment
-					amount = 600
-				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment
-					amount = 300
-				}
-				111 = {	
-					create_unit = {
-						division = "name = \"Jalkaväkidivisioona\" division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.50" 
-						owner = FIN
-					}
-					create_unit = {
-						division = "name = \"Jalkaväkidivisioona\" division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.50" 
-							owner = FIN
-					}
-					create_unit = {
-						division = "name = \"Jalkaväkidivisioona\" division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.50" 
-						owner = FIN
-					}
-				}
-			}
-		}
+# 		completion_reward_joint_originator = {
+# 			FIN = {
+# 				add_equipment_to_stockpile = {
+# 					type = support_equipment
+# 					amount = 800
+# 				}
+# 				add_equipment_to_stockpile = {
+# 					type = infantry_equipment 
+# 					amount = 10000
+# 				}
+# 				add_equipment_to_stockpile = {
+# 					type = motorized_equipment
+# 					amount = 300
+# 				}
+# 				add_equipment_to_stockpile = {
+# 					type = artillery_equipment
+# 					amount = 700
+# 				}
+# 				add_equipment_to_stockpile = {
+# 					type = anti_air_equipment
+# 					amount = 600
+# 				}
+# 				add_equipment_to_stockpile = {
+# 					type = anti_tank_equipment
+# 					amount = 300
+# 				}
+# 				111 = {	
+# 					create_unit = {
+# 						division = "name = \"Jalkaväkidivisioona\" division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.50" 
+# 						owner = FIN
+# 					}
+# 					create_unit = {
+# 						division = "name = \"Jalkaväkidivisioona\" division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.50" 
+# 							owner = FIN
+# 					}
+# 					create_unit = {
+# 						division = "name = \"Jalkaväkidivisioona\" division_template = \"Jalkaväkidivisioona\" start_experience_factor = 0.50" 
+# 						owner = FIN
+# 					}
+# 				}
+# 			}
+# 		}
 
-		completion_reward_joint_member = {
+# 		completion_reward_joint_member = {
 			
-		}
-}
+# 		}
+# }
 
-joint_focus = {
-		id = AXIS_chechnya_insurgency
-		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = AXIS_anti_bosh_war }
-		#mutually_exclusive = { focus =  }
-		dynamic = yes 
+# joint_focus = {
+# 		id = AXIS_chechnya_insurgency
+# 		icon = GFX_focus_generic_support_the_left_right
+# 		prerequisite = { focus = AXIS_anti_bosh_war }
+# 		#mutually_exclusive = { focus =  }
+# 		dynamic = yes 
 		
-		x = -1
-		y = 1
+# 		x = -1
+# 		y = 1
 		
-		relative_position_id = AXIS_anti_bosh_war
-		available = {
-			always = no
-		}
-		cost = 14
+# 		relative_position_id = AXIS_anti_bosh_war
+# 		available = {
+# 			always = no
+# 		}
+# 		cost = 14
 
-		ai_will_do = {
-			factor = -100
-		}
+# 		ai_will_do = {
+# 			factor = -100
+# 		}
 		
-		select_effect = {
-			821 = { set_demilitarized_zone = yes }
-		}
+# 		select_effect = {
+# 			821 = { set_demilitarized_zone = yes }
+# 		}
 		
-		joint_trigger = {
+# 		joint_trigger = {
   			
-		}
+# 		}
 
-		available = {
+# 		available = {
 			
-		}
+# 		}
 		
-		bypass = {
+# 		bypass = {
 
-		}
+# 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+# 		cancel_if_invalid = yes
+# 		continue_if_invalid = no
+# 		available_if_capitulated = no
 
-		complete_tooltip = {
+# 		complete_tooltip = {
 
-		}
+# 		}
 
-		completion_reward = {
+# 		completion_reward = {
 			
-		}
+# 		}
 
-		completion_reward_joint_originator = {
-			821 = { set_demilitarized_zone = no }
-			ROOT = {
-				set_state_controller = 821
-				hidden_effect = {
-					news_event = { id = news.1001 }
-						division_template = {
-							name = "Caucasus Brother Insurgents" 			
-							division_names_group = GER_INF_01
-							is_locked = yes								
-							regiments = {
-								irregular_infantry = { x = 0 y = 0 }
-								irregular_infantry = { x = 0 y = 1 }
-								irregular_infantry = { x = 0 y = 2 }
-								irregular_infantry = { x = 0 y = 3 }
-								irregular_infantry = { x = 1 y = 0 }
-								irregular_infantry = { x = 1 y = 1 }
-								irregular_infantry = { x = 1 y = 2 }
-								irregular_infantry = { x = 1 y = 3 }
-								irregular_infantry = { x = 2 y = 0 }
-								irregular_infantry = { x = 2 y = 1 }
-								irregular_infantry = { x = 2 y = 2 }
-								irregular_infantry = { x = 3 y = 0 }
-								irregular_infantry = { x = 3 y = 1 }
-								irregular_infantry = { x = 3 y = 2 }
-								artillery_brigade = { x = 4 y = 0 }
-								artillery_brigade = { x = 4 y = 1 }
-								artillery_brigade = { x = 4 y = 2 }
-								artillery_brigade = { x = 4 y = 3 }
-							}
-							support = {
-								engineer = { x = 0 y = 0 }
-								recon =  { x = 0 y = 1 }
-								artillery = { x = 0 y = 2 }
-								anti_air = { x = 0 y = 3 }
-							}
-						}
-				}
-				821 = {	
-					create_unit = {
-						division = "name = \"Caucasus Brother Insurgents\" division_template = \"Caucasus Brother Insurgents\" start_experience_factor = 0.50" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Caucasus Brother Insurgents\" division_template = \"Caucasus Brother Insurgents\" start_experience_factor = 0.50" 
-							owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Caucasus Brother Insurgents\" division_template = \"Caucasus Brother Insurgents\" start_experience_factor = 0.50" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Caucasus Brother Insurgents\" division_template = \"Caucasus Brother Insurgents\" start_experience_factor = 0.50" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"Caucasus Brother Insurgents\" division_template = \"Caucasus Brother Insurgents\" start_experience_factor = 0.50" 
-						owner = ROOT
-					}
-				}
-			}
-		}
+# 		completion_reward_joint_originator = {
+# 			821 = { set_demilitarized_zone = no }
+# 			ROOT = {
+# 				set_state_controller = 821
+# 				hidden_effect = {
+# 					news_event = { id = news.1001 }
+# 						division_template = {
+# 							name = "Caucasus Brother Insurgents" 			
+# 							division_names_group = GER_INF_01
+# 							is_locked = yes								
+# 							regiments = {
+# 								irregular_infantry = { x = 0 y = 0 }
+# 								irregular_infantry = { x = 0 y = 1 }
+# 								irregular_infantry = { x = 0 y = 2 }
+# 								irregular_infantry = { x = 0 y = 3 }
+# 								irregular_infantry = { x = 1 y = 0 }
+# 								irregular_infantry = { x = 1 y = 1 }
+# 								irregular_infantry = { x = 1 y = 2 }
+# 								irregular_infantry = { x = 1 y = 3 }
+# 								irregular_infantry = { x = 2 y = 0 }
+# 								irregular_infantry = { x = 2 y = 1 }
+# 								irregular_infantry = { x = 2 y = 2 }
+# 								irregular_infantry = { x = 3 y = 0 }
+# 								irregular_infantry = { x = 3 y = 1 }
+# 								irregular_infantry = { x = 3 y = 2 }
+# 								artillery_brigade = { x = 4 y = 0 }
+# 								artillery_brigade = { x = 4 y = 1 }
+# 								artillery_brigade = { x = 4 y = 2 }
+# 								artillery_brigade = { x = 4 y = 3 }
+# 							}
+# 							support = {
+# 								engineer = { x = 0 y = 0 }
+# 								recon =  { x = 0 y = 1 }
+# 								artillery = { x = 0 y = 2 }
+# 								anti_air = { x = 0 y = 3 }
+# 							}
+# 						}
+# 				}
+# 				821 = {	
+# 					create_unit = {
+# 						division = "name = \"Caucasus Brother Insurgents\" division_template = \"Caucasus Brother Insurgents\" start_experience_factor = 0.50" 
+# 						owner = ROOT
+# 					}
+# 					create_unit = {
+# 						division = "name = \"Caucasus Brother Insurgents\" division_template = \"Caucasus Brother Insurgents\" start_experience_factor = 0.50" 
+# 							owner = ROOT
+# 					}
+# 					create_unit = {
+# 						division = "name = \"Caucasus Brother Insurgents\" division_template = \"Caucasus Brother Insurgents\" start_experience_factor = 0.50" 
+# 						owner = ROOT
+# 					}
+# 					create_unit = {
+# 						division = "name = \"Caucasus Brother Insurgents\" division_template = \"Caucasus Brother Insurgents\" start_experience_factor = 0.50" 
+# 						owner = ROOT
+# 					}
+# 					create_unit = {
+# 						division = "name = \"Caucasus Brother Insurgents\" division_template = \"Caucasus Brother Insurgents\" start_experience_factor = 0.50" 
+# 						owner = ROOT
+# 					}
+# 				}
+# 			}
+# 		}
 
-		completion_reward_joint_member = {
+# 		completion_reward_joint_member = {
 			
-		}
-}
+# 		}
+# }
