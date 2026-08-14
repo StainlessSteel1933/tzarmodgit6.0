@@ -2056,7 +2056,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 10
-
+		
 		completion_reward = {
 			GER_economy_up = yes
 			army_experience = 25

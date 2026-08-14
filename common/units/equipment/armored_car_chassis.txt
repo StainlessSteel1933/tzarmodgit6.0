@@ -43,7 +43,7 @@ equipments = {
 			armor_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					car_armor_type
+					tank_armor_type
 				}
 			}
 

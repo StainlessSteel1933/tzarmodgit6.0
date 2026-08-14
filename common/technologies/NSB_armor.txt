@@ -64,6 +64,9 @@ technologies = {
 			wet_ammo_storage
 			smoke_launchers
 			expanded_fuel_tank
+			tank_rubber_scissor_suspension
+			tank_horstmann_suspension
+			
 		}
 		enable_subunits = {
 			light_armor
@@ -2960,7 +2963,7 @@ technologies = {
 			tank_auto_cannon
 			tank_anti_air_cannon
 			tank_heavy_machine_gun
-			
+			car_AT_rifle
 		}
 
 		research_cost = 1
