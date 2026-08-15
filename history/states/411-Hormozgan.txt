@@ -9,7 +9,8 @@ state={
 		steel=2
 	}
 	state_category = town
-	
+	impassable = yes
+	force_link_ownership_to = 413
 
 	history={
 		owner = PER

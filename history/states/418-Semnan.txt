@@ -5,7 +5,8 @@ state={
 	manpower = 332362
 	
 	state_category = wasteland
-
+	impassable = yes
+	force_link_ownership_to = 418
 	history={
 		owner = PER
 		add_core_of = PER

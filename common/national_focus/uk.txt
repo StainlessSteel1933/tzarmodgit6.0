@@ -3222,7 +3222,7 @@ technology = improved_medium_airframe
 	available = {
 		#NOT = { SOV = { has_completed_focus = SOV_southern_thrust } }
 		has_war_with = GER
-		date>1940.7.1
+		date > 1940.7.1
 		NOT = {
 			has_global_flag = iran_front_clown
 		}
@@ -3236,22 +3236,19 @@ technology = improved_medium_airframe
 					transfer_state = 266
 					transfer_state = 416
 					transfer_state = 418
-					
+					transfer_state = 1004
 					transfer_state = 419
-					
 					transfer_state = 420
+					transfer_state = 1000
+					
 					hidden_effect = {
-						419 = { add_core_of = SOV }
-						416 = { add_core_of = SOV }
+						266 = { add_core_of = SOV }
+						1000 = { add_core_of = SOV }
 						420 = {	
-							add_extra_state_shared_building_slots = 1
-							add_state_modifier = {
-								modifier = {
-									local_non_core_manpower = 0.5
-								}
-							}				
+							add_core_of = SOV				
 						}
 					}
+					
 				}
 				ENG = {
 					transfer_state = 417
@@ -3261,7 +3258,14 @@ technology = improved_medium_airframe
 					transfer_state = 414
 					transfer_state = 421
 					transfer_state = 410
+					transfer_state = 1002
+					transfer_state = 1003
+					transfer_state = 1001
 				}
+				413 = { set_compliance = 100 }
+				412 = { set_compliance = 100 }
+				410 = { set_compliance = 100 }
+				421 = { set_compliance = 100 }
 				news_event = { id = news.411 days = 0 }
 				load_oob = ENG_IRAN
 			set_global_flag = iran_front_clown

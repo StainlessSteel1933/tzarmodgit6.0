@@ -9,7 +9,8 @@ state={
 		steel=4
 		chromium=5
 	}
-
+	impassable = yes
+	force_link_ownership_to = 413 
 	history={
 		owner = PER
 		add_core_of = PER
