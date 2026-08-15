@@ -6,7 +6,8 @@ state={
 	resources={
 	}
 	state_category = rural
-	
+	impassable = yes
+	force_link_ownership_to = 412
 
 	history={
 		owner = PER

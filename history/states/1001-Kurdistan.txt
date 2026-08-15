@@ -5,7 +5,8 @@ state={
 	manpower = 390139
 	
 	state_category = rural
-
+	impassable = yes
+	force_link_ownership_to = 421
 	history={
 		owner = PER
 		add_core_of = PER
