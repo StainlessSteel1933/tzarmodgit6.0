@@ -2293,6 +2293,13 @@ technologies = {
 			}
 		}
 	}
+	ss_battalions = {
+		allow = { always = no }
+		enable_subunits = {
+			ss_grenadiers
+			ss_armor
+		}
+	}
 
 	mechanised_infantry = {
 

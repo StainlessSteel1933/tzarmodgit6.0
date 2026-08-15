@@ -28,7 +28,10 @@ on_startup = {
 				    type = dockyard
   					level = 200
 			}
-			}
+		}
+		GER = {
+			set_technology = { ss_battalions = 1 popup = no }
+		}
 		735 = {
 			add_province_modifier = {
  					static_modifiers = { france_hero_cities_buffed }
