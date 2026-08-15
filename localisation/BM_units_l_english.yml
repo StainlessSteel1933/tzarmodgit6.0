@@ -136,3 +136,5 @@
  support_amtrack:0 "Spt. Amtrack Company"
  support_armoured_car:0 "Spt. Armoured Car Company"
  support_motorized_rocket:0 "Spt. Motorized Rocket"
+ ss_armor:0 "SS Panzers"
+ ss_grenadiers:0 "SS Panzer Grenadiers"
