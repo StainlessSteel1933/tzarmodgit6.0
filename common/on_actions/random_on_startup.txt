@@ -57,7 +57,12 @@ on_startup = {
 			always = yes
 			}
 			add_ideas = tank_nerf
-			# set_technology = { 	new_tank_guns = 1 popup = no }
+			set_technology = { 	new_tank_guns = 1 popup = no }
+			add_daily_mastery = {
+				amount = 0.25
+				days = 1095
+				name = POOP_mastery_boost
+			}
 		}
 		every_country = {
 			limit = {

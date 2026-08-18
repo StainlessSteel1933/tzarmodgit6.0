@@ -506,8 +506,8 @@ sub_units = {
 		combat_width = 2
 		max_strength = 20
 		max_organisation = 55
-		default_morale = 0.25
-		manpower = 800
+		default_morale = 0.30
+		manpower = 450
 		training_time = 75
 		suppression = 2.2
 		weight = 0.75
@@ -515,8 +515,8 @@ sub_units = {
 		transport = motorbike_equipment
 	
 		need = {
-			infantry_equipment = 30
-			motorbike_equipment = 30
+			infantry_equipment = 70
+			motorbike_equipment = 40
 		}
 
 		essential = {

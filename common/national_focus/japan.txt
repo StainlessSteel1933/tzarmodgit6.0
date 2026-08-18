@@ -667,10 +667,12 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-			every_country = {
-			limit = {is_in_faction_with = ENG}
-			add_ideas = allies_nerf
-			}
+			# every_country = {
+			# 	limit = {
+			# 		is_in_faction_with = ENG
+			# 	}
+			# 	add_ideas = allies_nerf
+			# }
 		declare_war_on = { target = ENG type = annex_everything }
 		declare_war_on = { target = FRF type = annex_everything }
 		declare_war_on = { target = HOL type = annex_everything }
@@ -706,7 +708,7 @@ focus_tree = {
 		country_event = { id = japan.144 }
 		# AST = { add_ideas = AST_papua }
 		# NZL = { add_ideas = AST_papua }
-		 USA = { add_ideas = USA_The_Philippine_Front }
+		#  USA = { add_ideas = USA_The_Philippine_Front }
 		every_country = { limit = { OR = { original_tag = AST original_tag = NZL } }
 			add_ideas = AST_papua
 		}

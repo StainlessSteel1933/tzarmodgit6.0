@@ -1676,6 +1676,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			# add_daily_mastery = {
+			# 	amount = 0.25
+			# 	days = 1095
+			# 	name = POOP_mastery_boost
+			# }
 			army_experience = 25
 			add_tech_bonus = {
 				name = land_doc_bonus

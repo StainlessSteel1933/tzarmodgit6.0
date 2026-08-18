@@ -71,7 +71,7 @@ equipments = {
 		reliability = 0.9
 		#hardness = 0
 
-		breakthrough = 1
+		breakthrough = 8
 
 		#Space taken in convoy
 		lend_lease_cost = 2

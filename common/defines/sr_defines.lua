@@ -1,4 +1,5 @@
 -- If you're reading this, don't say anything about this, this is a secret between us (๑>؂•̀๑) (decreased from 4.5 vanilla value to 4.0).
+NDefines.NDoctrines.DEFAULT_REWARD_MASTERY = 50
 
 NDefines.NIntel.ARMY_MIN_INTEL_RATIO_NEEDED_FOR_DISPLAYING_FAKE_ENEMY_INTEL_IN_LEDGER = 1.5
 NDefines.NIntel.ARMY_MIN_INTEL_RATIO_NEEDED_FOR_REVEALING_FAKE_ENEMY_INTEL = 1.5
