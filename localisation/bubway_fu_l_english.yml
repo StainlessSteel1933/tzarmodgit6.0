@@ -474,3 +474,6 @@ skrubwayevents.1.d:0 "The NKVD has reported the Tukhachevsky has slipped away fr
 skrubwayevents.1.a:0 "I KNEW IT! RED BONAPARTIST!!"
 
 austria_skrubway_tt: "§RAustria has prepared itself for the worst we may have to invade them.§!"
+
+tankmodule_folder:0 "Armored Modules"
+tankmodule_folder_desc:0 "Tank guns and Specialized equipment for Tanks."

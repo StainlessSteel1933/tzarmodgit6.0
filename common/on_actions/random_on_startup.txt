@@ -58,6 +58,9 @@ on_startup = {
 			}
 			add_ideas = tank_nerf
 			set_technology = { 	new_tank_guns = 1 popup = no }
+			set_technology = {
+				tech_trucks = 1 popup = NO
+			}
 			add_daily_mastery = {
 				amount = 0.25
 				days = 1095

@@ -2959,6 +2959,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = shit_guns
+			research_cost_coeff = 1
+		}
+
 		enable_equipment_modules = {
 			tank_close_support_gun
 			tank_auto_cannon
@@ -2970,8 +2975,8 @@ technologies = {
 		research_cost = 1
 		start_year = 1936
 		folder = {
-			name = nsb_armour_folder
-			position = { x = -7 y = 0 }
+			name = tankmodule_folder
+			position = { x = -20 y = 0 }
 		}
 
 		ai_will_do = {
@@ -2992,10 +2997,10 @@ technologies = {
 			leads_to_tech = medium_guns2
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = shit_modules
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = shit_modules
+		# 	research_cost_coeff = 1
+		# }
 
 		enable_equipment_modules = {
 			tank_medium_cannon
@@ -3007,8 +3012,8 @@ technologies = {
 		research_cost = 1
 		start_year = 1937
 		folder = {
-			name = nsb_armour_folder
-			position = { x = -5 y = 3 }
+			name = tankmodule_folder
+			position = { x = -24 y = 3 }
 		}
 
 		ai_will_do = {
@@ -3030,14 +3035,14 @@ technologies = {
 			leads_to_tech = medium_guns3
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = shit_guns
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = tank_ammo2
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = shit_guns
+		# 	research_cost_coeff = 1
+		# }
+		# path = {
+		# 	leads_to_tech = tank_ammo2
+		# 	research_cost_coeff = 1
+		# }
 
 		enable_equipment_modules = {
 			tank_medium_howitzer_2
@@ -3049,8 +3054,8 @@ technologies = {
 		research_cost = 1
 		start_year = 1941
 		folder = {
-			name = nsb_armour_folder
-			position = { x = -5 y = @1941 }
+			name = tankmodule_folder
+			position = { x = -24 y = @1941 }
 		}
 
 		ai_will_do = {
@@ -3165,8 +3170,8 @@ technologies = {
 		research_cost = 0.5
 		start_year = 1944
 		folder = {
-			name = nsb_armour_folder
-			position = { x = -5 y = @1944 }
+			name = tankmodule_folder
+			position = { x = -24 y = @1944 }
 		}
 
 		ai_will_do = {
@@ -3189,12 +3194,15 @@ technologies = {
 			squeezebore_adaptor
 			secondary_turret_hmg
 		}
-
+		path = {
+			leads_to_tech = shit_guns
+			research_cost_coeff = 1
+		}
 		research_cost = 0.5
 		start_year = 1936
 		folder = {
-			name = nsb_armour_folder
-			position = { x = -7 y = @1937 }
+			name = tankmodule_folder
+			position = { x = -20 y = 4 }
 		}
 
 		ai_will_do = {
@@ -3211,7 +3219,7 @@ technologies = {
 	shit_guns = {
 		special_project_specialization = { specialization_land }
 		enable_equipment_modules = {	
-			dozer_blade
+			# dozer_blade
 			auto_loader
 			secondary_turret_small_cannon 
 			hvap_ammo
@@ -3224,8 +3232,8 @@ technologies = {
 		research_cost = 1
 		start_year = 1941
 		folder = {
-			name = nsb_armour_folder
-			position = { x = -7 y = @1941 }
+			name = tankmodule_folder
+			position = { x = -20 y = 7 }
 		}
 
 		ai_will_do = {
@@ -3248,10 +3256,10 @@ technologies = {
 			leads_to_tech = heavy_guns2
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = shit_modules
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = shit_modules
+		# 	research_cost_coeff = 1
+		# }
 
 		enable_equipment_modules = {
 			tank_heavy_cannon
@@ -3261,10 +3269,10 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1937
+		start_year = 1941
 		folder = {
-			name = nsb_armour_folder
-			position = { x = -9 y = 3 }
+			name = tankmodule_folder
+			position = { x = -16 y = 8 }
 		}
 
 		ai_will_do = {
@@ -3285,14 +3293,14 @@ technologies = {
 			leads_to_tech = heavy_guns3
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = shit_guns
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = tank_ammo
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = shit_guns
+		# 	research_cost_coeff = 1
+		# }
+		# path = {
+		# 	leads_to_tech = tank_ammo
+		# 	research_cost_coeff = 1
+		# }
 
 		enable_equipment_modules = {
 			tank_heavy_cannon_2		
@@ -3306,10 +3314,10 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1941
+		start_year = 1943
 		folder = {
-			name = nsb_armour_folder
-			position = { x = -9 y = @1941 }
+			name = tankmodule_folder
+			position = { x = -16 y = 10 }
 		}
 
 		ai_will_do = {
@@ -3374,8 +3382,8 @@ technologies = {
 		research_cost = 0.5
 		start_year = 1944
 		folder = {
-			name = nsb_armour_folder
-			position = { x = -9 y = 11 }
+			name = tankmodule_folder
+			position = { x = -16 y = 12 }
 		}
 
 		ai_will_do = {

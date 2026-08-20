@@ -219,6 +219,9 @@ technology_folders = {
 	electronics_folder = {
 		ledger = civilian
 	}
+	tankmodule_folder = {
+		ledger = army
+	}
 }
 
  
