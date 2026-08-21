@@ -3,25 +3,7 @@ set_oob = "ENG_1936"
 
 starting_train_buffer = 4
 
-
 	set_naval_oob = "ENG_1936_Naval"
-
-
-
-		set_technology = {
-			aa_lmg = 1
-			engines_1 = 1
-			engines_2 = 1
-			early_bombs = 1
-			aircraft_construction = 1
-			iw_small_airframe = 1
-			iw_medium_airframe = 1
-			iw_large_airframe = 1
-			basic_medium_airframe = 1
-			basic_small_airframe = 1
-			air_torpedoe_1 = 1
-			bba_early_transport_plane = 1
-		}
 
 give_guarantee = POL
 
@@ -54,15 +36,6 @@ set_technology = {
 	basic_heavy_tank_chassis = 1  # PLACEHOLDER
 	#basic_medium_tank = 1 # PLACEHOLDER
 	iw_small_airframe = 1
-	basic_small_airframe = 1
-
-	
-	
-		iw_medium_airframe = 1
-		basic_medium_airframe = 1
-		aa_lmg = 1
-	
-
 	tech_field_hospital = 1
 	tech_mountaineers = 1
 	
@@ -1126,97 +1099,97 @@ recruit_character = ENG_robert_watson_watt
 			}
 		}
 	
-		create_equipment_variant = {
-			name = "Hawker Fury" #also covers Gloster Gauntlet, Hawker Demon
-			type = small_plane_airframe_0
-			design_team = mio:ENG_hawker_organization
-			modules = {
-				fixed_main_weapon_slot = light_mg_2x
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-		}
+		# create_equipment_variant = {
+		# 	name = "Hawker Fury" #also covers Gloster Gauntlet, Hawker Demon
+		# 	type = small_plane_airframe_0
+		# 	design_team = mio:ENG_hawker_organization
+		# 	modules = {
+		# 		fixed_main_weapon_slot = light_mg_2x
+		# 		engine_type_slot = engine_1_1x
+		# 		special_type_slot_1 = empty
+		# 	}
+		# 	obsolete = yes
+		# }
 
-		create_equipment_variant = {
-			name = "Hawker Nimrod" 
-			type = cv_small_plane_airframe_0
-			design_team = mio:ENG_hawker_organization
-			modules = {
-				fixed_main_weapon_slot = light_mg_2x
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-		}
+		# create_equipment_variant = {
+		# 	name = "Hawker Nimrod" 
+		# 	type = cv_small_plane_airframe_0
+		# 	design_team = mio:ENG_hawker_organization
+		# 	modules = {
+		# 		fixed_main_weapon_slot = light_mg_2x
+		# 		engine_type_slot = engine_1_1x
+		# 		special_type_slot_1 = empty
+		# 	}
+		# 	obsolete = yes
+		# }
 
-		create_equipment_variant = {
-			name = "Gloster Gladiator" 
-			type = small_plane_airframe_0
-			design_team = mio:ENG_supermarine_organization
-			modules = {
-				fixed_main_weapon_slot = light_mg_4x
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-		}
+		# create_equipment_variant = {
+		# 	name = "Gloster Gladiator" 
+		# 	type = small_plane_airframe_0
+		# 	design_team = mio:ENG_supermarine_organization
+		# 	modules = {
+		# 		fixed_main_weapon_slot = light_mg_4x
+		# 		engine_type_slot = engine_1_1x
+		# 		special_type_slot_1 = empty
+		# 	}
+		# }
 
-		create_equipment_variant = {
-			name = "Fairey Gordon" 
-			type = small_plane_cas_airframe_0
-			design_team = mio:ENG_hawker_organization
-			modules = {
-				fixed_main_weapon_slot = bomb_locks
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-			icon = "GFX_ENG_CAS1_medium"
-		}
-		create_equipment_variant = {
-			name = "Vickers Vildebeest" 
-			type = small_plane_naval_bomber_airframe_0
-			design_team = mio:ENG_fairey_aviation_organization
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
-		}
-		create_equipment_variant = {
-			name = "Blackburn Shark" 
-			type = cv_small_plane_naval_bomber_airframe_0
-			design_team = mio:ENG_fairey_aviation_organization
-			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			icon = "GFX_ENG_naval_bomber1_medium"
-		}
-		create_equipment_variant = {
-			name = "Handley Page Heyford" 
-			type = medium_plane_airframe_0
-			design_team = mio:ENG_de_havilland_organization
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				engine_type_slot = engine_1_2x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-			icon = GFX_ENG_early_bomber_medium
-		}
-		create_equipment_variant = {
-			name = "Bristol Blenheim" 
-			type = medium_plane_airframe_1
-			design_team = mio:ENG_de_havilland_organization
-			modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				engine_type_slot = engine_2_2x
-				special_type_slot_1 = lmg_defense_turret
-			}
-			icon = "GFX_ENG_heavy_fighter1_medium"
-		}
+		# create_equipment_variant = {
+		# 	name = "Fairey Gordon" 
+		# 	type = small_plane_cas_airframe_0
+		# 	design_team = mio:ENG_hawker_organization
+		# 	modules = {
+		# 		fixed_main_weapon_slot = bomb_locks
+		# 		engine_type_slot = engine_1_1x
+		# 		special_type_slot_1 = empty
+		# 	}
+		# 	obsolete = yes
+		# 	icon = "GFX_ENG_CAS1_medium"
+		# }
+		# create_equipment_variant = {
+		# 	name = "Vickers Vildebeest" 
+		# 	type = small_plane_naval_bomber_airframe_0
+		# 	design_team = mio:ENG_fairey_aviation_organization
+		# 	modules = {
+		# 		fixed_main_weapon_slot = torpedo_mounting
+		# 		engine_type_slot = engine_1_1x
+		# 		special_type_slot_1 = empty
+		# 	}
+		# 	icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
+		# }
+		# create_equipment_variant = {
+		# 	name = "Blackburn Shark" 
+		# 	type = cv_small_plane_naval_bomber_airframe_0
+		# 	design_team = mio:ENG_fairey_aviation_organization
+		# 	modules = {
+		# 		fixed_main_weapon_slot = torpedo_mounting
+		# 		engine_type_slot = engine_1_1x
+		# 		special_type_slot_1 = empty
+		# 	}
+		# 	icon = "GFX_ENG_naval_bomber1_medium"
+		# }
+		# create_equipment_variant = {
+		# 	name = "Handley Page Heyford" 
+		# 	type = medium_plane_airframe_0
+		# 	design_team = mio:ENG_de_havilland_organization
+		# 	modules = {
+		# 		fixed_main_weapon_slot = medium_bomb_bay
+		# 		engine_type_slot = engine_1_2x
+		# 		special_type_slot_1 = empty
+		# 	}
+		# 	obsolete = yes
+		# 	icon = GFX_ENG_early_bomber_medium
+		# }
+		# create_equipment_variant = {
+		# 	name = "Bristol Blenheim" 
+		# 	type = medium_plane_airframe_1
+		# 	design_team = mio:ENG_de_havilland_organization
+		# 	modules = {
+		# 		fixed_main_weapon_slot = medium_bomb_bay
+		# 		engine_type_slot = engine_2_2x
+		# 		special_type_slot_1 = lmg_defense_turret
+		# 	}
+		# 	icon = "GFX_ENG_heavy_fighter1_medium"
+		# }
 
 

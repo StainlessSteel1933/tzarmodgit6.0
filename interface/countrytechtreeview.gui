@@ -3420,8 +3420,16 @@ guiTypes = {
 				format = "UP"
 			}
 
+			# gridboxtype = {
+			# 	name = "engines_1_tree"
+			# 	position = { x = 1870 y = 32 }
+			# 	size = { width = 400 height = 400 }
+			# 	slotsize = { width = 70 height = 70 }
+			# 	format = "UP"
+			# }
+
 			gridboxtype = {
-				name = "engines_1_tree"
+				name = "aircraft_construction_tree"
 				position = { x = 1870 y = 32 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
