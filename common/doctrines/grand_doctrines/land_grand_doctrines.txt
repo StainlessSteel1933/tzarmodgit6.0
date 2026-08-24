@@ -8,7 +8,7 @@ new_mobile_warfare = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 1
     xp_type = army
 
     ai_will_do = {
@@ -31,7 +31,7 @@ new_mobile_warfare = {
 	planning_speed = 0.20
 	army_speed_factor = 0.10
 	enable_tactic = tactic_unexpected_thrust
-	
+	additional_brigade_column_size = 1
 
     milestones = {
         {
@@ -127,7 +127,7 @@ superior_firepower = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 1
     xp_type = army
 
     ai_will_do = {
@@ -154,7 +154,7 @@ superior_firepower = {
     category_support_artillery = {
         soft_attack = 0.05
     }
-
+    additional_brigade_column_size = 1
 
     milestones = {
         {
@@ -261,7 +261,7 @@ grand_battleplan = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 1
     xp_type = army
 
     ai_will_do = {
@@ -277,7 +277,7 @@ grand_battleplan = {
 
     # EFFECTS
     enable_tactic = tactic_planned_attack
-    
+    additional_brigade_column_size = 1
     max_planning = 0.1
     command_power_gain = 0.25
 
@@ -376,7 +376,7 @@ mass_assault = {
         always = yes
     }
 
-    xp_cost = 100
+    xp_cost = 1
     xp_type = army
 
     ai_will_do = {
@@ -394,7 +394,7 @@ mass_assault = {
     no_supply_grace = 48
     out_of_supply_factor = -0.10
     enable_tactic = tactic_relentless_assault
-    
+    additional_brigade_column_size = 1
 
     milestones = {
         {
