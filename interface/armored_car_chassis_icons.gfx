@@ -92,30 +92,30 @@ spriteTypes = {
 
 	###Cannons
 
-	spriteType = {
-		name = "GFX_EMI_car_infantry_support_gun"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_csg.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_infantry_support_gun"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_csg.dds"
+	# 	legacy_lazy_load = no
+	# }
 
-	spriteType = {
-		name = "GFX_EMI_car_medium_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/car_medium_cannon.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_medium_cannon"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/car_medium_cannon.dds"
+	# 	legacy_lazy_load = no
+	# }
 
 
-	spriteType = {
-		name = "GFX_EMI_car_high_velocity_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_car.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_high_velocity_cannon"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_car.dds"
+	# 	legacy_lazy_load = no
+	# }
 
-	spriteType = {
-		name = "GFX_EMI_car_AT_rifle"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/AT_rifle.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_AT_rifle"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/AT_rifle.dds"
+	# 	legacy_lazy_load = no
+	# }
 
 	spriteType = {
 		name = "GFX_EMI_car_diesel_engine"
@@ -129,35 +129,35 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	spriteType = {
-		name = "GFX_EMI_car_small_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_cannon_car.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_small_cannon"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_cannon_car.dds"
+	# 	legacy_lazy_load = no
+	# }
 	
-	spriteType = {
-		name = "GFX_EMI_car_aa_mg"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_aa_machine_gun.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_aa_mg"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_aa_machine_gun.dds"
+	# 	legacy_lazy_load = no
+	# }
 	
-	spriteType = {
-		name = "GFX_EMI_car_aa_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_aa_autocannon_1.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_aa_cannon"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_aa_autocannon_1.dds"
+	# 	legacy_lazy_load = no
+	# }
 
-	spriteType = {
-		name = "GFX_EMI_car_small_cannon_2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_cannon_2_car.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_small_cannon_2"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_cannon_2_car.dds"
+	# 	legacy_lazy_load = no
+	# }
 
-	spriteType = {
-		name = "GFX_EMI_car_auto_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_auto_cannon_car.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_auto_cannon"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_auto_cannon_car.dds"
+	# 	legacy_lazy_load = no
+	# }
 
 	spriteType = {
 		name = "GFX_EMI_car_machine_gun"
@@ -165,17 +165,17 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	spriteType = {
-		name = "GFX_EMI_car_flamethrower"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/car_module_flamethrower.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_flamethrower"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/car_module_flamethrower.dds"
+	# 	legacy_lazy_load = no
+	# }
 
-	spriteType = {
-		name = "GFX_EMI_car_auto_cannon_2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_auto_cannon_2_car.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_auto_cannon_2"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_auto_cannon_2_car.dds"
+	# 	legacy_lazy_load = no
+	# }
 
 	###Armor
 
@@ -206,11 +206,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
-	spriteType = {
-		name = "GFX_EMI_car_additional_machine_guns"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_internal_machine_gun_2.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_additional_machine_guns"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_internal_machine_gun_2.dds"
+	# 	legacy_lazy_load = no
+	# }
 
 	spriteType = {
 		name = "GFX_EMI_car_stabilizer"
@@ -242,17 +242,17 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	spriteType = {
-		name = "GFX_EMI_car_vision_ports"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_cupola.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_vision_ports"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_cupola.dds"
+	# 	legacy_lazy_load = no
+	# }
 
-	spriteType = {
-		name = "GFX_EMI_car_open_top_turret"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/car_module_open_top_turret.dds"
-		legacy_lazy_load = no
-	}
+	# spriteType = {
+	# 	name = "GFX_EMI_car_open_top_turret"
+	# 	textureFile = "gfx/interface/equipmentdesigner/tanks/modules/car_module_open_top_turret.dds"
+	# 	legacy_lazy_load = no
+	# }
 	
 	spriteType = {
 		name = "GFX_EMI_car_expanded_fuel_tank"

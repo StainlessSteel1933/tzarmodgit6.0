@@ -10,9 +10,9 @@ category = {
 	    super_russo_japanese_war
 	    super_sino_japanese_war
 	    super_soviet_end
-	    super_supercategories.asset
-	    super_superevents.asset
-	    super_supers.asset
+	    # super_supercategories.asset
+	    # super_superevents.asset
+	    # super_supers.asset
 	    super_super_nuke
 	    super_ww2
 	}

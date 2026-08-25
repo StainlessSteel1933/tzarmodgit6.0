@@ -35,7 +35,7 @@ generic_tank_organization = {
 			AND = {
 				OR = {
 					is_literally_china = yes
-					tag = MAN
+					# tag = MAN
 				}
 				has_dlc = "Waking the Tiger"
 			}
@@ -52,28 +52,14 @@ generic_tank_organization = {
 				has_dlc = "Battle for the Bosporus"
 			}
 		}
-		NOT = {
-			AND = {
-				OR = { tag = ETH tag = SWI }
-				
-			}
-		}
+	
 		NOT = {
 			AND = {
 				OR = { original_tag = FIN tag = NOR tag = SWE }
 				
 			}
 		}
-		NOT = {
-			AND = {
-				OR = {
-					original_tag = BRA 
-					original_tag = CHL
-					original_tag = ARG
-				}
-				has_dlc = "Trial of Allegiance"
-			}
-		}
+
 		NOT = {
 			AND = {
 				OR = {
@@ -91,21 +77,6 @@ generic_tank_organization = {
 					original_tag = RAJ
 				}
 				
-			}
-		}
-		NOT = {
-			AND = {
-#				OR = {
-					original_tag = PHI
-#				}
-				has_dlc = "No Compromise, No Surrender"
-				
-			}
-		}
-		NOT = {
-			AND =  {
-				original_tag = SIA
-				has_dlc = "Thunder at Our Gates"
 			}
 		}
 	}
@@ -2484,7 +2455,7 @@ generic_escort_ship_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { original_tag = CHI original_tag = PRC original_tag = MAN original_tag = SHX original_tag = XSM original_tag = GXC original_tag = YUN original_tag = SIK original_tag = MEN }
+				OR = { original_tag = CHI }
 				has_dlc = "Waking the Tiger"
 			}
 		}
@@ -2500,39 +2471,19 @@ generic_escort_ship_organization = {
 				has_dlc = "Battle for the Bosporus"
 			}
 		}
-		NOT = {
-			AND = {
-				OR = { original_tag = EST  original_tag = LAT }
-				has_dlc = "No Step Back"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = { original_tag = ETH original_tag = SWI }
-				
-			}
-		}
+		
 		NOT = {
 			AND = {
 				OR = { original_tag = FIN original_tag = NOR original_tag = DEN original_tag = SWE original_tag = ICE }
 				
 			}
 		}
-		NOT = {
-			AND = {
-				OR = {
-					original_tag = BRA 
-					original_tag = CHL
-					original_tag = ARG
-				}
-				has_dlc = "Trial of Allegiance"
-			}
-		}
+		
 		NOT = {
 			AND = {
 				OR = {
 					original_tag = AUS
-					original_tag = COG
+					
 				}
 				
 				
@@ -2549,31 +2500,6 @@ generic_escort_ship_organization = {
 			}
 		}
 
-		NOT = {
-			AND = {
-				OR = {
-					original_tag = PHI
-					original_tag = SND
-					original_tag = HBC
-					original_tag = XIC
-					original_tag = GDC
-					original_tag = SIC
-					original_tag = NXM
-					original_tag = GSM
-					original_tag = KHM
-				}
-				has_dlc = "No Compromise, No Surrender"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = {
-					original_tag = INS
-					original_tag = SIA
-				}
-				has_dlc = "Thunder at Our Gates"
-			}
-		}
 	}
 
 	equipment_type = {
@@ -4024,19 +3950,7 @@ generic_general_aircraft_organization = {
 				has_dlc = "Together for Victory"
 			}
 		}
-		NOT = {
-			AND = {
-				OR = { 
-					original_tag = PRC 
-					original_tag = SHX 
-					original_tag = XSM 
-					original_tag = GXC 
-					original_tag = YUN 
-					original_tag = SIK 
-				}
-				has_dlc = "Waking the Tiger"
-			}
-		}
+		
 		NOT = {
 			AND = {
 				original_tag = MEX
@@ -4049,15 +3963,7 @@ generic_general_aircraft_organization = {
 				has_dlc = "La Resistance"
 			}
 		}
-		NOT = {
-			AND = {
-				OR = { 
-					original_tag = ETH 
-					original_tag = SWI 
-				}
-				
-			}
-		}
+		
 		NOT = {
 			AND = {
 				OR = { 
@@ -4069,25 +3975,8 @@ generic_general_aircraft_organization = {
 				
 			}
 		}
-		NOT = {
-			AND = {
-				OR = {
-					original_tag = BRA 
-					original_tag = CHL
-					original_tag = ARG
-				} 
-				has_dlc = "Trial of Allegiance"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = {
-					original_tag = AUS
-					original_tag = COG
-				}
-				
-			}
-		}
+		
+		
 		NOT = {
 			AND = {
 				OR = { 
@@ -4098,31 +3987,7 @@ generic_general_aircraft_organization = {
 				
 			}
 		}
-		NOT = {
-			AND = {
-				OR = {
-					original_tag = PHI
-					original_tag = SND
-					original_tag = HBC
-					original_tag = XIC
-					original_tag = GDC
-					original_tag = SIC
-					original_tag = NXM
-					original_tag = GSM
-					original_tag = KHM
-				}
-				has_dlc = "No Compromise, No Surrender"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = {
-					original_tag = INS
-					original_tag = SIA
-				}
-				has_dlc = "Thunder at Our Gates"
-			}
-		}
+		
 	}
 
 	equipment_type = {
@@ -6878,7 +6743,7 @@ generic_artillery_organization = {
 			AND = {
 				OR = {
 					is_literally_china = yes
-					tag = MAN
+					
 				}
 				has_dlc = "Waking the Tiger"
 			}
@@ -6901,41 +6766,21 @@ generic_artillery_organization = {
 				has_dlc = "Battle for the Bosporus"
 			}
 		}
-		NOT = {
-			AND = {
-				OR = { tag = EST tag = LAT tag = LIT }
-				has_dlc = "No Step Back"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = { tag = ETH tag = SWI }
-				
-			}
-		}
+
 		NOT = {
 			AND = {
 				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE }
 				
 			}
 		}
-		NOT = {
-			AND = {
-				OR = {
-					original_tag = BRA 
-					original_tag = CHL
-					original_tag = ARG
-				}
-				has_dlc = "Trial of Allegiance"
-			}
-		}
+		
 		NOT = {
 			AND = {
 				OR = {
 					original_tag = AUS
 					original_tag = HUN
 					original_tag = BEL
-					original_tag = COG
+					
 				}
 				
 				
@@ -6952,22 +6797,13 @@ generic_artillery_organization = {
 				
 			}
 		}
-		NOT = {
-			AND = {
-#				OR = {
-					original_tag = PHI
-#				}
-				has_dlc = "No Compromise, No Surrender"
-				
-			}
-		}
+		
 		NOT = {
 			AND = {
 				OR = {
 					original_tag = AST
 					original_tag = SIA
 				}
-				has_dlc = "Thunder at Our Gates"
 			}
 		}
 	}
@@ -7280,7 +7116,7 @@ generic_infantry_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST tag = SLO tag = RKH tag = INS } }
+		NOT = { OR = { original_tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR } }
 		NOT = {
 			AND = {
 				tag = POL
@@ -7300,7 +7136,7 @@ generic_infantry_equipment_organization = {
 			AND = {
 				OR = {
 					is_literally_china = yes
-					tag = MAN
+					
 				}
 				has_dlc = "Waking the Tiger"
 			}
@@ -7323,40 +7159,20 @@ generic_infantry_equipment_organization = {
 				has_dlc = "Battle for the Bosporus"
 			}
 		}
-		NOT = {
-			AND = {
-				OR = { tag = EST tag = LAT tag = LIT }
-				has_dlc = "No Step Back"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = { tag = ETH tag = SWI }
-				
-			}
-		}
+		
 		NOT = {
 			AND = {
 				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE }
 				
 			}
 		}
-		NOT = {
-			AND = {
-				OR = {
-					original_tag = BRA 
-					original_tag = CHL
-					original_tag = ARG
-				}
-				has_dlc = "Trial of Allegiance"
-			}
-		}
+		
 
 		NOT = {
 			AND = {
 				OR = {
 					original_tag = AUS
-					original_tag = COG
+					
 				}
 				
 				
@@ -7373,21 +7189,12 @@ generic_infantry_equipment_organization = {
 				
 			}
 		}
-		NOT = {
-			AND = {
-#				OR = {
-					original_tag = PHI
-#				}
-				has_dlc = "No Compromise, No Surrender"
-				
-			}
-		}
+		
 		NOT = {
 			AND = {
 				OR = {
 					original_tag = SIA
 				}
-				has_dlc = "Thunder at Our Gates"
 			}
 		}
 	}
@@ -7959,12 +7766,7 @@ generic_motorized_mechanized_organization = {
 				has_dlc = "Together for Victory"
 			}
 		}
-		NOT = {
-			AND = {
-				OR = { original_tag = CHI original_tag = PRC original_tag = MAN original_tag = SHX original_tag = XSM original_tag = GXC original_tag = YUN original_tag = SIK original_tag = MEN }
-				has_dlc = "Waking the Tiger"
-			}
-		}
+		
 		NOT = {
 			AND = {
 				original_tag = HOL
@@ -7983,41 +7785,22 @@ generic_motorized_mechanized_organization = {
 				has_dlc = "Battle for the Bosporus"
 			}
 		}
-		NOT = {
-			AND = {
-				OR = { original_tag = EST original_tag = LAT original_tag = LIT }
-				has_dlc = "No Step Back"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = { original_tag = ETH original_tag = SWI }
-				
-			}
-		}
+		
+		
 		NOT = {
 			AND = {
 				OR = { original_tag = FIN original_tag = NOR original_tag = DEN original_tag = SWE }
 				
 			}
 		}
-		NOT = {
-			AND = {
-				OR = {
-					original_tag = BRA 
-					original_tag = CHL
-					original_tag = ARG
-				}
-				has_dlc = "Trial of Allegiance"
-			}
-		}
+		
 		NOT = {
 			AND = {
 				OR = {
 					original_tag = AUS
 					original_tag = HUN
 					original_tag = BEL					
-					original_tag = COG					
+										
 				}
 				
 				
@@ -8035,31 +7818,15 @@ generic_motorized_mechanized_organization = {
 				
 			}
 		}
+		
 		NOT = {
 			AND = {
 				OR = {
-					original_tag = PHI
-					original_tag = SND
-					original_tag = HBC
-					original_tag = XIC
-					original_tag = GDC
-					original_tag = SIC
-					original_tag = NXM
-					original_tag = GSM
-					original_tag = KHM
-					original_tag = KUM
-				}
-				has_dlc = "No Compromise, No Surrender"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = {
-					original_tag = INS
+					
 					original_tag = AST
 					original_tag = SIA
 				}
-				has_dlc = "Thunder at Our Gates"
+				
 			}
 		}
 	}
