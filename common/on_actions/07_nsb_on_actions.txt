@@ -988,15 +988,6 @@ on_actions = {
 			if = {
 				limit = {
 					SOV = { has_country_flag = SOV_spanish_refugee_generals_welcome_flag }
-					has_dlc = "La Resistance"
-					OR = {
-						tag = SPD
-						tag = SPC
-					}
-					OR = {
-						SPR_scw_in_progress = yes #In case someone else caps the Spanish faction
-						FROM = { original_tag = SPR }
-					}
 				}
 				SOV_manage_spanish_generals_exiled_in_ussr_effect = yes
 			}

@@ -19,9 +19,7 @@ ideas = {
 					small_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				CAS_equipment = {
-						build_cost_ic = -0.1 instant = yes
-					}
+				
 			}
 		}
 		    JAP_island_hopping1 = {
@@ -1379,18 +1377,11 @@ ideas = {
 			
 
 			equipment_bonus = {
-				CAS_equipment = {
-					build_cost_ic = -0.08 instant = yes
-				}
-				tac_bomber_equipment = {
-					build_cost_ic = -0.08 instant = yes
-				}
+				
 				small_plane_airframe = { 
 					build_cost_ic = -0.08 instant = yes
 				}
-				heavy_small_plane_airframe = {
-					build_cost_ic = -0.08 instant = yes 
-				}
+				
 			}
 		}
 		JAP_prioritize_naval_aircraft_construction = {
@@ -1412,15 +1403,7 @@ ideas = {
 				cv_small_plane_airframe = {
 					build_cost_ic = -0.16 instant = yes
 				}
-				cv_CAS_equipment = {
-					build_cost_ic = -0.16 instant = yes
-				}
-				cv_nav_bomber_equipment = {
-					build_cost_ic = -0.16 instant = yes
-				}
-				nav_bomber_equipment = {
-					build_cost_ic = -0.16 instant = yes
-				}
+				
 			}
 		}
 	}

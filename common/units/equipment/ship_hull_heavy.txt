@@ -339,15 +339,7 @@ equipments = {
 					ship_heavy_battery
 				}
 			}
-			rear_1_custom_slot = {
-				required = yes
-				allowed_module_categories = {
-					ship_torpedo
-					ship_airplane_launcher
-					ship_heavy_battery
-					ship_secondaries
-				}
-			}
+			
 		}
 
 		default_modules = {

@@ -120,10 +120,7 @@ ITA_cantiere_oto_organization = {
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 158 #PIEDMONT (Genova)
-		}
-		ITA_is_northern_designer = yes
+		
 	}
 
 	add_trait = { 
@@ -160,10 +157,7 @@ ITA_navalmeccanica_organization = {
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 117 # CAMPAGNA (Napoli)	
-		}
-		ITA_is_southern_designer = yes
+		
 	}
 
 	add_trait = { 
@@ -200,10 +194,7 @@ ITA_cantiere_navale_di_ancona_organization = {
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 157 # ABRUZZO (Ancona)		
-		}
-		ITA_is_southern_designer = yes
+		
 	}
 
 	add_trait = { 
@@ -240,11 +231,7 @@ ITA_cantieri_navali_tosi_organization = {
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 849 # PUGLIA (Taranto)
-			
-		}
-		ITA_is_southern_designer = yes
+		
 	}
 
 	add_trait = { 

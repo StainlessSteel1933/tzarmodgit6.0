@@ -443,34 +443,6 @@ ideas = {
 			}
 		}
 
-		RAJ_exports_for_the_empire = { #For UK and Dominions (no RAJ)
-			picture = ARG_civilian_economy_boost #generic_goods_red_bonus
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			cancel = {
-				NOT = { is_subject_of = ENG }
-				RAJ = {
-					NOT = { is_subject_of = ENG }
-				}
-				has_war_with = RAJ
-				OVERLORD = {
-					has_war_with = RAJ
-				}
-			}
-			
-			modifier = {
-				consumer_goods_factor = -0.05
-			}
-		}
-
 		RAJ_war_industry = {
 			picture = RAJ_private_military_complex
 			allowed = {

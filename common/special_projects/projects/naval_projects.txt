@@ -3156,17 +3156,8 @@ sp_naval_ice_carrier = {
 	}
 	
 	available = {
-				FROM = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}  
+		FROM = {
 				has_tech = improved_ship_hull_carrier
-			}
-			else = {
-				has_tech = improved_carrier
-			}
-
 		}
 
 	}
@@ -3185,61 +3176,14 @@ sp_naval_ice_carrier = {
 	}
 	
 	project_output = {
-		country_effects = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				add_design_template_bonus = {
-					name = sp_naval_ice_carrier_free_design
-					uses = 1
-					cost_factor = 0.5
-					equipment = ship_hull_mega_carrier
-				}
-				SP_create_variant_of_habakkuk_for_production_line = yes
-				custom_effect_tooltip = {
-					localization_key = SP_UNLOCK_TECH
-					TECH = sp_refined_pykrete
-				}
-				add_equipment_production =	{
-					equipment = {
-						type = ship_hull_mega_carrier
-						version_name = "Habakkuk"
-					}
-					requested_factories = 1
-					progress = 0.95
-					amount = 1
-				}
-			}
-			else = {
-				add_equipment_production =	{
-					equipment = {
-						type = mega_carrier
-					}
-					requested_factories = 1
-					progress = 0.95
-					amount = 1
-				}			
-			}
-		}
 		
-
-
 		enable_equipments = {
-			limit = {
-				has_dlc = "Man the Guns"
-			}
+			
 			ship_hull_mega_carrier
-		}
-		enable_equipments = {
-			limit = {
-				not = {has_dlc = "Man the Guns"}
-			}
-			mega_carrier
 		}
 
 		enable_equipment_modules = {	
-			limit = { has_dlc = "Man the Guns" } 		
+					
 			big_ship_deck_space
 			ship_armor_ice_carrier_deck_1
 		}	

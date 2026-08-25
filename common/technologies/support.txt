@@ -236,19 +236,6 @@ technologies = {
 		#	heavy_flame_tank
 		#}
 
-		#on_research_complete = { #MM: Moved to Special Project sp_land_flamethrower_tank
-		#	hidden_effect = {
-		#		if = {
-		#			limit = {
-		#				has_dlc = "No Step Back"
-		#				original_tag = ITA
-		#				has_completed_focus = ITA_italian_tankettes
-		#			}
-		#			ITA_add_basic_light_flamethrower_template = yes
-		#		}
-		#	}
-		#}
-
 		path = {
 			leads_to_tech = tech_engineers3
 			research_cost_coeff = 1
@@ -2090,7 +2077,6 @@ technologies = {
 
 		on_research_complete = {
 
-				SP_create_variant_based_on_country_armored_engineer = yes
 			
 		}
 
@@ -2140,8 +2126,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-
-				SP_create_variant_based_on_country_armored_maintenance = yes
 			
 		}
 
@@ -2197,7 +2181,6 @@ technologies = {
 
 		on_research_complete = {
 			
-				SP_create_variant_based_on_country_armored_signal = yes
 			
 		}
 

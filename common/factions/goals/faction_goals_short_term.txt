@@ -778,19 +778,7 @@ faction_goal_production_quotas = {
 # 		custom_effect_tooltip = ALL_FACTION_MEMBERS
 # 		every_faction_member = { army_experience = 50 }
 # 	}
-# 	ai_will_do = {
-# 		base = 0
-# 		modifier = {
-# 			add = 1
-# 			SPR_scw_in_progress = yes
-# 		}
-# 		modifier = {
-# 			add = 9 # SOV should always prio this
-# 			SPR_scw_in_progress = yes
-# 			original_tag = SOV
-# 		}
-# 	}
-# }
+
 
 
 ##########################################################

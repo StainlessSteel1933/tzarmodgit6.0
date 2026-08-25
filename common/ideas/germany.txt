@@ -467,7 +467,7 @@ ideas = {
 		name = "Neutrality in The World War"
 
 		allowed = {
-			always = yse
+			always = yes
 		}
 
 		allowed_civil_war = {
@@ -502,7 +502,7 @@ ideas = {
 		
 
 		allowed = {
-			always = yse
+			always = yes
 		}
 
 		allowed_civil_war = {
@@ -520,7 +520,7 @@ ideas = {
 		
 
 		allowed = {
-			always = yse
+			always = yes
 		}
 
 		allowed_civil_war = {
@@ -815,9 +815,6 @@ ideas = {
 			small_plane_airframe = {
 				build_cost_ic = -0.05 instant = yes
 			}
-			CAS_equipment = {
-					build_cost_ic = -0.15 instant = yes
-				}
 		}
 	}
 
@@ -1353,12 +1350,6 @@ ideas = {
 
 			picture = strategic_bombing_focus
 	
-			equipment_bonus = {
-				CAS_equipment = {
-					air_ground_attack = 0.1
-				}
-			}
-	
 		}
 
 
@@ -1398,9 +1389,7 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				CAS_equipment = {
-					air_ground_attack = 0.1
-				}
+				
 				small_plane_airframe = {
 				air_range = 0.1
 				air_attack = 0.15
@@ -1712,18 +1701,7 @@ ideas = {
 				small_plane_airframe = {
 					build_cost_ic = -0.25 instant = yes
 				}
-				CAS_equipment = {
-					build_cost_ic = 0.25 instant = yes
-				}
-				tac_bomber_equipment = {
-					build_cost_ic = 0.25 instant = yes
-				}
-				strat_bomber_equipment = {
-					build_cost_ic = 0.25 instant = yes
-				}
-				nav_bomber_equipment = {
-					build_cost_ic = 0.25 instant = yes
-				}
+				
 			}
 		}
 
@@ -2333,7 +2311,6 @@ ideas = {
 
 		}
 		porsche_cze = {
-			text = "Porsche"
 			picture = vauxhall
 			cost = 75
 			
@@ -2483,135 +2460,6 @@ ideas = {
 		}	
 	}
 	
-	aircraft_manufacturer = { 
-			
-		designer = yes
-		
-		messerschmitt = {
-		cost = 75
-			
-			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
-			}
-			modifier = {
-			aircraft_manufacturer_cost_factor = -1
-			}
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			equipment_bonus = {
-				small_plane_airframe = {
-					air_agility = 0.15
-					maximum_speed = 0.1
-					air_range = 0.15
-					air_attack = 0.10
-				}
-			}
-			
-			# traits = {#light_aircraft_manufacturer }
-			traits = {}
-			
-			equipment_bonus = {
-				
-			}
-			modifier = {
-			aircraft_manufacturer_cost_factor = -1
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		junkers = { 
-		cost = 75
-			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
-			}
-			modifier = {
-			aircraft_manufacturer_cost_factor = -1
-			}			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			equipment_bonus = {
-			}
-			traits = { medium_aircraft_manufacturer }
-			traits = {}
-			
-			equipment_bonus = {
-				
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-		
-
-		focke_wulf = { 
-			cost = 75
-			
-			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
-			}
-			
-						
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			modifier = {
-			aircraft_manufacturer_cost_factor = -1
-			}
-			traits = { medium_aircraft_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		heinkel = {
-			cost = 75
-			
-			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
-			}
-			
-			modifier = {
-			aircraft_manufacturer_cost_factor = -1
-			}
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		dornier = {
-			cost = 75
-			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = YUG }
-			}
-			
-				modifier = {
-			aircraft_manufacturer_cost_factor = -1
-			}		
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { naval_aircraft_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-
-
-	}
 	
 	industrial_concern = {
 		

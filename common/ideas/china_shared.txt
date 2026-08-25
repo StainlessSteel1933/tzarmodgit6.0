@@ -163,26 +163,6 @@ ideas = {
 
 	army_chief = {
 		
-		CHI_alexander_von_falkenhausen = {
-			
-			picture = generic_army_europe_2 
-
-			available = {
-				has_completed_focus = CHI_give_falkenhausen_citizenship
-				NOT = { has_global_flag = falkenhausen_recalled }
-			}
-			
-			allowed = {
-					tag = MIN
-				has_dlc = "Waking the Tiger"
-			}
-			
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 2
-			}
-		}
 	}
 
 	air_chief = {
@@ -217,30 +197,7 @@ ideas = {
 		
 		designer = yes
 		
-		CHI_taiyuan_arsenal = {
-			picture = generic_artillery_manufacturer_1
-
-			
-			allowed = {
-
-					tag = MIN
-				
-				has_dlc = "Waking the Tiger"
-			}
-
-			available = {
-				controls_state = 615
-			}
-			
-			research_bonus = {
-				artillery = 0.15
-			}
-			
 		
-						
-			traits = { artillery_manufacturer }
-			
-		}
 		CHI_hanyan_arsenal = {
 			picture = generic_infantry_equipment_manufacturer_1
 
@@ -415,14 +372,7 @@ ideas = {
 					air_agility = 0.05
 					air_attack = 0.1
 				}
-				tac_bomber_equipment = {
-					air_range = 0.1
-					air_ground_attack = 0.1
-				}
-				CAS_equipment = {
-					air_range = 0.1
-					air_ground_attack = 0.1
-				}
+				
 			}
 			
 			research_bonus = {

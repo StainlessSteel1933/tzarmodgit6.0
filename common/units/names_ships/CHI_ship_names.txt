@@ -3,7 +3,7 @@
 CHI_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
-	for_countries = { CHI PRC GXC XSM SIK MAN YUN SHX }
+	for_countries = { CHI  }
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }			

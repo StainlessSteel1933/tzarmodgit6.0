@@ -64,7 +64,6 @@ hidden_ideas = {
 
 			modifier = {
 				production_factory_start_efficiency_factor = 0.6
-				production_factory_start_efficiency_factor = 0.2
 			}
 			
 		}

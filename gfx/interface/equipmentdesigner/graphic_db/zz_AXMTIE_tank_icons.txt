@@ -251,7 +251,7 @@ FIN = {
 	}
 }
 
-SLO = {
+CZE = {
 	light_tank_chassis_1 = {
 		pool = {
 			weight = 2.5

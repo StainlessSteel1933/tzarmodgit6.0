@@ -2237,40 +2237,7 @@ focus = {
 				}
 			}
 
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				if = {
-					limit = {
-						has_tech = improved_light_tank_chassis
-					}
-					ITA_add_improved_light_tank_templates = yes
-				}
-				else = {
-					custom_effect_tooltip = ITA_italian_tankettes_light_hull_tt
-					effect_tooltip = {
-						ITA_add_improved_light_tank_templates = yes
-					}
-				}
-				
-				ITA_add_basic_light_tank_destroyer_template = yes
-
-				if = {
-					limit = {
-						has_tech = tech_engineers2
-					}
-					#L3/35 lf Flamethrower
-					ITA_add_basic_light_flamethrower_template = yes
-				}
-				else = {
-					custom_effect_tooltip = ITA_italian_tankettes_flamethrower_tt
-					effect_tooltip = {
-						#L3/35 lf Flamethrower
-						ITA_add_basic_light_flamethrower_template = yes
-					}
-				}
-			}
+			
 		}
 	}
 

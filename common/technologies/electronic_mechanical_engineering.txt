@@ -1700,11 +1700,6 @@ technologies = {
 				tag = USA
 			}
 
-			modifier = {
-				add = 50
-				PHI_SEA = yes
-				has_completed_focus = PHI_weapons_of_war
-			}
 		}
 		
 		categories = {
@@ -1845,13 +1840,7 @@ technologies = {
 		
 		nuclear_production = 0.5
 		on_research_complete = {
-			if = {
-				limit = {
-					tag = USA
-					has_war_with = JAP
-				}
-				play_warning_to_japan_effect = yes
-			}
+			
 		}
 		categories = {
 			nuclear

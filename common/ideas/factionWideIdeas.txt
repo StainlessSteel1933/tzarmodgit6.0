@@ -153,31 +153,6 @@ ideas = {
 			}
 		}
 		
-		CHI_war_of_resistance_2 = {
-
-			name = CHI_war_of_resistance
-
-			picture = chi_war_of_resistance2
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			
-			
-			modifier = {
-				offensive_war_stability_factor = 0.15
-				defensive_war_stability_factor = 0.50
-				supply_node_range = 0.3
-				supply_combat_penalties_on_core_factor = -0.20
-				army_core_defence_factor = 0.15
-				army_core_attack_factor = 0.15
-			}
-		}
 		
 		SWI_spirit_of_saint_bernard_idea = {
 			picture = SWI_spirit_of_saint_bernard

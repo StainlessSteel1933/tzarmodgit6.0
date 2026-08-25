@@ -1372,21 +1372,6 @@ ideas = {
 			}
 			
 			traits = { tank_manufacturer }
-
-			equipment_bonus = {
-				improved_light_tank_chassis = {
-					reliability = 0.1
-					hard_attack = 0.2
-				}
-				advanced_light_tank_chassis = {
-					reliability = 0.1
-					hard_attack = 0.2
-				}
-				modern_light_tank_chassis = {
-					reliability = 0.1
-					hard_attack = 0.2
-				}
-			}
 			
 			modifier = {
 				equipment_conversion_speed = 0.1
@@ -1687,12 +1672,7 @@ ideas = {
 				cv_small_plane_airframe = {
 					air_attack = 0.1
 				}
-				CAS_equipment = {
-					air_ground_attack = 0.1
-				}
-				cv_CAS_equipment = {
-					air_ground_attack = 0.1
-				}
+				
 			}
 			
 			ai_will_do = {

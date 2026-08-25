@@ -39,14 +39,7 @@ sp_land_flamethrower_tank = {
 	project_output = {
 		country_effects = {
 			hidden_effect = { #Update tooltip in Italian focus if anything changes here!!! (maybe change focus effects too if Italy starts with Flamethrower Tank)
-				if = {
-					limit = {
-						has_dlc = "No Step Back"
-						original_tag = ITA
-						has_completed_focus = ITA_italian_tankettes
-					}
-					ITA_add_basic_light_flamethrower_template = yes
-				}
+				
 			}
 
 			add_design_template_bonus = {
@@ -146,9 +139,6 @@ sp_land_military_engineering_vehicles = {
 
 		country_effects = {
 			
-			SP_create_variant_based_on_country_assault_engineer = yes
-			
-
 			custom_effect_tooltip = {
 				localization_key = SP_UNLOCK_TECH
 				TECH = sp_armored_engineer_tech

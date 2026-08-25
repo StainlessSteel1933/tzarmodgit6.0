@@ -79,10 +79,7 @@ country = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-											mech_chassis = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
+				
 											light_tank_chassis = {
 					build_cost_ic = -0.1
 					instant = yes
@@ -92,10 +89,7 @@ country = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				amtrac_chassis = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
+				
 				motorized_equipment = {
 					build_cost_ic = -0.1
 					instant = yes

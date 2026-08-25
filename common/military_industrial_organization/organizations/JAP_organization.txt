@@ -31,9 +31,7 @@ JAP_osaka_army_arsenal_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_army_faction_is_not_subdued = yes
-			}
+			
 		}
 
 		on_complete = {
@@ -119,9 +117,7 @@ JAP_sagami_army_arsenal_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_army_faction_is_not_subdued = yes
-			}
+			
 		}
 
 		on_complete = {
@@ -188,41 +184,11 @@ JAP_mitsubishi_heavy_industries_organization = {
 	include = generic_infantry_tank_organization
 	icon = GFX_idea_JAP_mitsubishi_tanks
 	allowed = {	
-		OR ={
-			AND = {
-					original_tag = JAP
-					
-			}
-			PHI_SEA = yes
-		}
+		original_tag = JAP
 	}
 
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = JAP } }
-			}
-			FROM = { NOT = { has_war_with = JAP } }
-		}
 		
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = PHI
-				}
-			}
-			FROM = {
-				has_completed_focus = PHI_align_with_japan
-				if = {
-					limit = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-				}
-			}
-		}
 	}
 
 	add_trait = {
@@ -295,9 +261,9 @@ JAP_mitsubishi_heavy_industries_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_zaibatsu_faction_is_at_least_influential = yes
-			}
+			# FROM = {
+			# 	JAP_zaibatsu_faction_is_at_least_influential = yes
+			# }
 		}
 
 		on_complete = {
@@ -333,10 +299,10 @@ JAP_mitsubishi_heavy_industries_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = JAP_foreign_tank_modernization_cooperation
-				NOT = { has_country_flag = JAP_mio_trait_foreign_research_and_development_cooperation_taken_flag }
-			}
+			# FROM = {
+			# 	has_completed_focus = JAP_foreign_tank_modernization_cooperation
+			# 	NOT = { has_country_flag = JAP_mio_trait_foreign_research_and_development_cooperation_taken_flag }
+			# }
 		}
 
 		on_complete = {
@@ -359,99 +325,99 @@ JAP_mitsubishi_heavy_industries_organization = {
 		}
 	}
 
-	add_trait = {
-		token = PHI_mio_trait_ethanol_fuel_adaptations
-		name = PHI_mio_trait_ethanol_fuel_adaptations
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	name = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	icon = GFX_generic_mio_trait_icon_fuel_consumption
+	# 	special_trait_background = yes
 
-		position = { x = 1 y = 3 }  
+	# 	position = { x = 1 y = 3 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-		}
+	# 	available = {
+	# 	}
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			fuel_consumption = -0.05
-		}
+	# 	equipment_bonus = {
+	# 		fuel_consumption = -0.05
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 
-	add_trait = {
-		token = PHI_mio_trait_coconut_fuel_adaptations
-		name = PHI_mio_trait_coconut_fuel_adaptations
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_coconut_fuel_adaptations
+	# 	name = PHI_mio_trait_coconut_fuel_adaptations
+	# 	icon = GFX_generic_mio_trait_icon_fuel_consumption
+	# 	special_trait_background = yes
 
-		position = { x = 0 y = 1 }  
+	# 	position = { x = 0 y = 1 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-			FROM = {
-				PHI_vicente_lava = {
-					is_hired_as_advisor = yes
-				}
-			}
-		}
+	# 	available = {
+	# 		FROM = {
+	# 			PHI_vicente_lava = {
+	# 				is_hired_as_advisor = yes
+	# 			}
+	# 		}
+	# 	}
 
-		relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
-		any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
+	# 	relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			fuel_consumption = -0.10
-			reliability = -0.05
-		}
+	# 	equipment_bonus = {
+	# 		fuel_consumption = -0.10
+	# 		reliability = -0.05
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 
-	add_trait = {
-		token = PHI_mio_trait_ad_hoc_armor_reinforcement
-		name = PHI_mio_trait_ad_hoc_armor_reinforcement
-		icon = GFX_generic_mio_department_icon_tank_general_armor
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_ad_hoc_armor_reinforcement
+	# 	name = PHI_mio_trait_ad_hoc_armor_reinforcement
+	# 	icon = GFX_generic_mio_department_icon_tank_general_armor
+	# 	special_trait_background = yes
 
-		position = { x = 8 y = 2 }  
+	# 	position = { x = 8 y = 2 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-		}
+	# 	available = {
+	# 	}
 
-		any_parent = { generic_mio_trait_thick_armor }
+	# 	any_parent = { generic_mio_trait_thick_armor }
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			hardness = 0.05
-			armor_value = 0.03
-			maximum_speed = -0.03
-		}
+	# 	equipment_bonus = {
+	# 		hardness = 0.05
+	# 		armor_value = 0.03
+	# 		maximum_speed = -0.03
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 
 } 
 
@@ -477,10 +443,7 @@ JAP_kure_naval_arsenal_organization = {
 	}
 
 	available = {
-		FROM = {
-			#has_completed_focus = JAP_supremacy_of_the_battlefleet
-			has_completed_focus = JAP_expand_hiratsuka_navy_arsenal
-		}
+		
 	}
 
 	add_trait = {
@@ -498,9 +461,7 @@ JAP_kure_naval_arsenal_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_naval_faction_is_not_subdued = yes
-			}
+			
 		}
 
 		on_complete = {
@@ -622,41 +583,11 @@ JAP_yokosuka_naval_arsenal_organization = {
 	icon = GFX_idea_yokosuka_naval_arsenal
 
 	allowed = {	
-		OR = {
-			AND = {
-				original_tag = JAP
-				
-			}
-			PHI_SEA = yes
-		}
+		original_tag = JAP
 	}
 
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = JAP } }
-			}
-			FROM = { NOT = { has_war_with = JAP } }
-		}
 		
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = PHI
-				}
-			}
-			FROM = {
-				has_completed_focus = PHI_align_with_japan
-				if = {
-					limit = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-				}
-			}
-		}
 	}
 
 	add_trait = {
@@ -674,9 +605,7 @@ JAP_yokosuka_naval_arsenal_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_naval_faction_is_not_subdued = yes
-			}
+			
 		}
 
 		on_complete = {
@@ -844,10 +773,10 @@ JAP_yokosuka_naval_arsenal_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = JAP_seek_strength_in_numbers
-				NOT = { has_country_flag = JAP_mio_trait_strength_in_numbers_taken_flag }
-			}
+			# FROM = {
+			# 	has_completed_focus = JAP_seek_strength_in_numbers
+			# 	NOT = { has_country_flag = JAP_mio_trait_strength_in_numbers_taken_flag }
+			# }
 		}
 
 		on_complete = {
@@ -869,68 +798,68 @@ JAP_yokosuka_naval_arsenal_organization = {
 		}
 	}
 
-	add_trait = {
-		token = PHI_mio_trait_ethanol_fuel_adaptations
-		name = PHI_mio_trait_ethanol_fuel_adaptations
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	name = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	icon = GFX_generic_mio_trait_icon_fuel_consumption
+	# 	special_trait_background = yes
 
-		position = { x = 9 y = 0 }  
+	# 	position = { x = 9 y = 0 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-		}
+	# 	available = {
+	# 	}
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			fuel_consumption = -0.05
-		}
+	# 	equipment_bonus = {
+	# 		fuel_consumption = -0.05
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 
-	add_trait = {
-		token = PHI_mio_trait_coconut_fuel_adaptations
-		name = PHI_mio_trait_coconut_fuel_adaptations
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_coconut_fuel_adaptations
+	# 	name = PHI_mio_trait_coconut_fuel_adaptations
+	# 	icon = GFX_generic_mio_trait_icon_fuel_consumption
+	# 	special_trait_background = yes
 
-		position = { x = 0 y = 1 }  
+	# 	position = { x = 0 y = 1 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-			FROM = {
-				PHI_vicente_lava = {
-					is_hired_as_advisor = yes
-				}
-			}
-		}
+	# 	available = {
+	# 		FROM = {
+	# 			PHI_vicente_lava = {
+	# 				is_hired_as_advisor = yes
+	# 			}
+	# 		}
+	# 	}
 
-		relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
-		any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
+	# 	relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			fuel_consumption = -0.10
-			reliability = -0.05
-		}
+	# 	equipment_bonus = {
+	# 		fuel_consumption = -0.10
+	# 		reliability = -0.05
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 
 }
 
@@ -1011,9 +940,9 @@ JAP_kawasaki_dockyards_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_zaibatsu_faction_is_at_least_influential = yes
-			}
+			# FROM = {
+			# 	JAP_zaibatsu_faction_is_at_least_influential = yes
+			# }
 		}
 
 		on_complete = {
@@ -1221,9 +1150,7 @@ JAP_maizuru_naval_arsenal_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_naval_faction_is_not_subdued = yes
-			}
+			
 		}
 
 		on_complete = {
@@ -1367,9 +1294,7 @@ JAP_sasebo_naval_arsenal_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_naval_faction_is_not_subdued = yes
-			}
+			
 		}
 
 		on_complete = {
@@ -1445,41 +1370,11 @@ JAP_mitsubishi_kobe_shipyard_organization = {
 	icon = GFX_idea_JAP_kobe_shipyard
 
 	allowed = {	
-		OR = {
-			AND = {
-				original_tag = JAP 
-				
-			}
-			PHI_SEA = yes
-		}
+		original_tag = JAP
 	}
 
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = JAP } }
-			}
-			FROM = { NOT = { has_war_with = JAP } }
-		}
 		
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = PHI
-				}
-			}
-			FROM = {
-				has_completed_focus = PHI_align_with_japan
-				if = {
-					limit = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-				}
-			}
-		}
 	}
 
 	add_trait = {
@@ -1552,9 +1447,9 @@ JAP_mitsubishi_kobe_shipyard_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_zaibatsu_faction_is_at_least_influential = yes
-			}
+			# FROM = {
+			# 	JAP_zaibatsu_faction_is_at_least_influential = yes
+			# }
 		}
 
 		on_complete = {
@@ -1589,10 +1484,10 @@ JAP_mitsubishi_kobe_shipyard_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = JAP_seek_strength_in_numbers
-				NOT = { has_country_flag = JAP_mio_trait_strength_in_numbers_taken_flag }
-			}
+			# FROM = {
+			# 	has_completed_focus = JAP_seek_strength_in_numbers
+			# 	NOT = { has_country_flag = JAP_mio_trait_strength_in_numbers_taken_flag }
+			# }
 		}
 
 		on_complete = {
@@ -1614,68 +1509,68 @@ JAP_mitsubishi_kobe_shipyard_organization = {
 		}
 	}
 
-	add_trait = {
-		token = PHI_mio_trait_ethanol_fuel_adaptations
-		name = PHI_mio_trait_ethanol_fuel_adaptations
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	name = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	icon = GFX_generic_mio_trait_icon_fuel_consumption
+	# 	special_trait_background = yes
 
-		position = { x = 9 y = 0 }  
+	# 	position = { x = 9 y = 0 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-		}
+	# 	available = {
+	# 	}
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			fuel_consumption = -0.05
-		}
+	# 	equipment_bonus = {
+	# 		fuel_consumption = -0.05
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 
-	add_trait = {
-		token = PHI_mio_trait_coconut_fuel_adaptations
-		name = PHI_mio_trait_coconut_fuel_adaptations
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_coconut_fuel_adaptations
+	# 	name = PHI_mio_trait_coconut_fuel_adaptations
+	# 	icon = GFX_generic_mio_trait_icon_fuel_consumption
+	# 	special_trait_background = yes
 
-		position = { x = 0 y = 1 }  
+	# 	position = { x = 0 y = 1 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-			FROM = {
-				PHI_vicente_lava = {
-					is_hired_as_advisor = yes
-				}
-			}
-		}
+	# 	available = {
+	# 		FROM = {
+	# 			PHI_vicente_lava = {
+	# 				is_hired_as_advisor = yes
+	# 			}
+	# 		}
+	# 	}
 
-		relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
-		any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
+	# 	relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			fuel_consumption = -0.10
-			reliability = -0.05
-		}
+	# 	equipment_bonus = {
+	# 		fuel_consumption = -0.10
+	# 		reliability = -0.05
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 
 }
 
@@ -1695,66 +1590,17 @@ JAP_mitsubishi_organization = {
 	icon = GFX_idea_JAP_mitsubishi_airplanes
 	
 	allowed = {	 
-		OR = {
-			original_tag = JAP 
-			AND = {
-				original_tag = ETH
-				has_dlc = "By Blood Alone"
-			}
-			PHI_SEA = yes
-		}
+		original_tag = JAP
 		
 	}
 	
 	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
+		
 	}
 	
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = JAP } }
-			}
-			FROM = { NOT = { has_war_with = JAP } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_JAP_mitsubishi_organization_flag
-				}
-			}
-		}
-
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = PHI
-				}
-			}
-			FROM = {
-				has_completed_focus = PHI_align_with_japan
-				if = {
-					limit = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-				}
-			}
-		}
-
+		
 	}
 
 	add_trait = {
@@ -1772,9 +1618,9 @@ JAP_mitsubishi_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_zaibatsu_faction_is_at_least_influential = yes
-			}
+			# FROM = {
+			# 	JAP_zaibatsu_faction_is_at_least_influential = yes
+			# }
 		}
 
 		on_complete = {
@@ -2046,9 +1892,9 @@ JAP_nakajima_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_zaibatsu_faction_is_at_least_influential = yes
-			}
+			# FROM = {
+			# 	JAP_zaibatsu_faction_is_at_least_influential = yes
+			# }
 		}
 
 		on_complete = {
@@ -2169,9 +2015,7 @@ JAP_yokosuka_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_naval_faction_is_not_subdued = yes
-			}
+			
 		}
 
 		on_complete = {
@@ -2206,10 +2050,7 @@ JAP_yokosuka_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = JAP_sea_unify_the_air_forces
-				NOT = { has_country_flag = JAP_mio_trait_unified_research_and_development_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -2257,10 +2098,7 @@ JAP_kawanishi_aircraft_company_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = JAP_sea_unify_the_air_forces
-				NOT = { has_country_flag = JAP_mio_trait_unified_research_and_development_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -2308,9 +2146,7 @@ JAP_kawasaki_aircraft_industries_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_zaibatsu_faction_is_at_least_influential = yes
-			}
+			
 		}
 
 		on_complete = {
@@ -2345,10 +2181,7 @@ JAP_kawasaki_aircraft_industries_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = JAP_sea_unify_the_air_forces
-				NOT = { has_country_flag = JAP_mio_trait_unified_research_and_development_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -2414,10 +2247,7 @@ JAP_tachikawa_aircraft_company_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_completed_focus = JAP_sea_unify_the_air_forces
-				NOT = { has_country_flag = JAP_mio_trait_unified_research_and_development_taken_flag }
-			}
+			
 		}
 
 		on_complete = {
@@ -2459,42 +2289,12 @@ JAP_kokura_arsenal_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_tokyo_arsenal
 	allowed = {	
-		OR = {
-			AND = {
-				original_tag = JAP
-				
-			}
-			PHI_SEA = yes
-		}
+		original_tag = JAP
 
 	}
 
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = JAP } }
-			}
-			FROM = { NOT = { has_war_with = JAP } }
-		}
 		
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = PHI
-				}
-			}
-			FROM = {
-				has_completed_focus = PHI_align_with_japan
-				if = {
-					limit = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-				}
-			}
-		}
 	}
 
 	add_trait = {
@@ -2512,9 +2312,7 @@ JAP_kokura_arsenal_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_army_faction_is_not_subdued = yes
-			}
+			
 		}
 
 		on_complete = {
@@ -2534,45 +2332,45 @@ JAP_kokura_arsenal_organization = {
 		}
 	}
 
-	add_trait = { 
-		token = PHI_mio_trait_rugged_construction
-		name = PHI_mio_trait_rugged_construction
-		icon = GFX_generic_mio_trait_icon_reliability
-		special_trait_background = yes
+	# add_trait = { 
+	# 	token = PHI_mio_trait_rugged_construction
+	# 	name = PHI_mio_trait_rugged_construction
+	# 	icon = GFX_generic_mio_trait_icon_reliability
+	# 	special_trait_background = yes
 
-		position = { x=0 y=0 }  
+	# 	position = { x=0 y=0 }  
 
-		visible = {
-			FROM = {
-				original_tag = PHI
-			}
-		}
+	# 	visible = {
+	# 		FROM = {
+	# 			original_tag = PHI
+	# 		}
+	# 	}
 
-		equipment_bonus = {
-			reliability = 0.05
-		}
-	}
+	# 	equipment_bonus = {
+	# 		reliability = 0.05
+	# 	}
+	# }
 
-	add_trait = { 
-		token = PHI_mio_trait_use_local_materials
-		name = PHI_mio_trait_use_local_materials
-		icon = GFX_generic_mio_department_icon_facilities
-		special_trait_background = yes
+	# add_trait = { 
+	# 	token = PHI_mio_trait_use_local_materials
+	# 	name = PHI_mio_trait_use_local_materials
+	# 	icon = GFX_generic_mio_department_icon_facilities
+	# 	special_trait_background = yes
 
-		position = { x=0 y=1 }  
+	# 	position = { x=0 y=1 }  
 
-		visible = {
-			FROM = {
-				original_tag = PHI
-			}
-		}
+	# 	visible = {
+	# 		FROM = {
+	# 			original_tag = PHI
+	# 		}
+	# 	}
 
-		any_parent = { PHI_mio_trait_rugged_construction }
+	# 	any_parent = { PHI_mio_trait_rugged_construction }
 
-		production_bonus = { 
-			production_cost_factor = -0.05 
-		}
-	}
+	# 	production_bonus = { 
+	# 		production_cost_factor = -0.05 
+	# 	}
+	# }
 
 }
 
@@ -2599,9 +2397,7 @@ JAP_osaka_army_arsenal_artillery_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_army_faction_is_not_subdued = yes
-			}
+			
 		}
 
 		on_complete = {
@@ -2627,75 +2423,17 @@ JAP_nissan_organization = {
 	include = generic_motorized_mechanized_organization 
 	icon = GFX_idea_nissan
 	allowed = {	 
-		OR = {
-			original_tag = JAP 
-			AND = {
-				original_tag = ETH
-				has_dlc = "By Blood Alone"
-			}
-			AND = {
-				original_tag = MAN
-				has_dlc = "No Compromise, No Surrender"
-			}
-			PHI_SEA = yes
-		}
+		original_tag = JAP
 		
 	}
 	
 	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = MAN }
-			}
-			FROM = { has_completed_focus = MAN_tsr_strengthen_ties_with_nissan }
-		}
+		
 	}
 	
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = JAP } }
-			}
-			FROM = { NOT = { has_war_with = JAP } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_JAP_nissan_organization_flag
-				}
-			}
-		}
-
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = PHI
-				}
-			}
-			FROM = {
-				has_completed_focus = PHI_align_with_japan
-				if = {
-					limit = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-				}
-			}
-		}
+		
 	}
 
 	add_trait = {
@@ -2760,9 +2498,9 @@ JAP_nissan_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_zaibatsu_faction_is_at_least_influential = yes
-			}
+			# FROM = {
+			# 	JAP_zaibatsu_faction_is_at_least_influential = yes
+			# }
 		}
 
 		on_complete = {
@@ -2812,68 +2550,68 @@ JAP_nissan_organization = {
 		}
 	}
 
-	add_trait = {
-		token = PHI_mio_trait_ethanol_fuel_adaptations
-		name = PHI_mio_trait_ethanol_fuel_adaptations
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	name = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	icon = GFX_generic_mio_trait_icon_fuel_consumption
+	# 	special_trait_background = yes
 
-		position = { x = 9 y = 0 }  
+	# 	position = { x = 9 y = 0 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-		}
+	# 	available = {
+	# 	}
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			fuel_consumption = -0.05
-		}
+	# 	equipment_bonus = {
+	# 		fuel_consumption = -0.05
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 
-	add_trait = {
-		token = PHI_mio_trait_coconut_fuel_adaptations
-		name = PHI_mio_trait_coconut_fuel_adaptations
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_coconut_fuel_adaptations
+	# 	name = PHI_mio_trait_coconut_fuel_adaptations
+	# 	icon = GFX_generic_mio_trait_icon_fuel_consumption
+	# 	special_trait_background = yes
 
-		position = { x = 0 y = 1 }  
+	# 	position = { x = 0 y = 1 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-			FROM = {
-				PHI_vicente_lava = {
-					is_hired_as_advisor = yes
-				}
-			}
-		}
+	# 	available = {
+	# 		FROM = {
+	# 			PHI_vicente_lava = {
+	# 				is_hired_as_advisor = yes
+	# 			}
+	# 		}
+	# 	}
 
-		relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
-		any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
+	# 	relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			fuel_consumption = -0.10
-			reliability = -0.05
-		}
+	# 	equipment_bonus = {
+	# 		fuel_consumption = -0.10
+	# 		reliability = -0.05
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 
 }
 
@@ -2884,165 +2622,139 @@ JAP_tokyo_automobile_industries_organization = {
 	allowed = {	
 		OR = {
 			original_tag = JAP
-			PHI_SEA = yes
 		}
-		has_dlc = "La Resistance"
 		
 	}
 	
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = JAP } }
-			}
-			FROM = { NOT = { has_war_with = JAP } }
-		}
 		
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = PHI
-				}
-			}
-			FROM = {
-				has_completed_focus = PHI_align_with_japan
-				if = {
-					limit = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-					NOT = {
-						has_completed_focus = PHI_declare_military_emergency
-					}
-				}
-			}
-		}
 	}
 
-	add_trait = {
-		token = PHI_mio_trait_ethanol_fuel_adaptations
-		name = PHI_mio_trait_ethanol_fuel_adaptations
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	name = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	icon = GFX_generic_mio_trait_icon_fuel_consumption
+	# 	special_trait_background = yes
 
-		position = { x = 9 y = 0 }  
+	# 	position = { x = 9 y = 0 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-		}
+	# 	available = {
+	# 	}
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			fuel_consumption = -0.05
-		}
+	# 	equipment_bonus = {
+	# 		fuel_consumption = -0.05
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 
-	add_trait = {
-		token = PHI_mio_trait_coconut_fuel_adaptations
-		name = PHI_mio_trait_coconut_fuel_adaptations
-		icon = GFX_generic_mio_trait_icon_fuel_consumption
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_coconut_fuel_adaptations
+	# 	name = PHI_mio_trait_coconut_fuel_adaptations
+	# 	icon = GFX_generic_mio_trait_icon_fuel_consumption
+	# 	special_trait_background = yes
 
-		position = { x = 0 y = 1 }  
+	# 	position = { x = 0 y = 1 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-			FROM = {
-				PHI_vicente_lava = {
-					is_hired_as_advisor = yes
-				}
-			}
-		}
+	# 	available = {
+	# 		FROM = {
+	# 			PHI_vicente_lava = {
+	# 				is_hired_as_advisor = yes
+	# 			}
+	# 		}
+	# 	}
 
-		relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
-		any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
+	# 	relative_position_id = PHI_mio_trait_ethanol_fuel_adaptations
+	# 	any_parent = { PHI_mio_trait_ethanol_fuel_adaptations }
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			fuel_consumption = -0.10
-			reliability = -0.05
-		}
+	# 	equipment_bonus = {
+	# 		fuel_consumption = -0.10
+	# 		reliability = -0.05
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 
-	add_trait = {
-		token = PHI_mio_trait_ad_hoc_armor_reinforcement
-		name = PHI_mio_trait_ad_hoc_armor_reinforcement
-		icon = GFX_generic_mio_department_icon_tank_general_armor
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_ad_hoc_armor_reinforcement
+	# 	name = PHI_mio_trait_ad_hoc_armor_reinforcement
+	# 	icon = GFX_generic_mio_department_icon_tank_general_armor
+	# 	special_trait_background = yes
 
-		position = { x = 0 y = 1 }  
+	# 	position = { x = 0 y = 1 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-		}
+	# 	available = {
+	# 	}
 
-		relative_position_id = generic_mio_trait_command_upgrades
-		any_parent = { generic_mio_trait_command_upgrades }
+	# 	relative_position_id = generic_mio_trait_command_upgrades
+	# 	any_parent = { generic_mio_trait_command_upgrades }
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			hardness = 0.05
-			armor_value = 0.03
-			maximum_speed = -0.03
-		}
+	# 	equipment_bonus = {
+	# 		hardness = 0.05
+	# 		armor_value = 0.03
+	# 		maximum_speed = -0.03
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 
-	add_trait = {
-		token = PHI_mio_trait_widened_tires
-		name = PHI_mio_trait_widened_tires
-		icon = GFX_generic_mio_trait_icon_maximum_speed
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = PHI_mio_trait_widened_tires
+	# 	name = PHI_mio_trait_widened_tires
+	# 	icon = GFX_generic_mio_trait_icon_maximum_speed
+	# 	special_trait_background = yes
 
-		position = { x = 0 y = 1 }  
+	# 	position = { x = 0 y = 1 }  
 		
-		visible = {
-			FROM = { original_tag = PHI }
-		}
+	# 	visible = {
+	# 		FROM = { original_tag = PHI }
+	# 	}
 
-		available = {
-		}
+	# 	available = {
+	# 	}
 
-		relative_position_id = generic_mio_trait_reinforced_wheels
-		any_parent = { generic_mio_trait_reinforced_wheels }
+	# 	relative_position_id = generic_mio_trait_reinforced_wheels
+	# 	any_parent = { generic_mio_trait_reinforced_wheels }
 
-		on_complete = {
-		}
+	# 	on_complete = {
+	# 	}
 
-		equipment_bonus = {
-			reliability = 0.07
-			maximum_speed = 0.03
-		}
+	# 	equipment_bonus = {
+	# 		reliability = 0.07
+	# 		maximum_speed = 0.03
+	# 	}
 
-		ai_will_do = {
-			base = 2
-		}
-	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 	}
+	# }
 }
 
 JAP_nagoya_arsenal_organization = {
@@ -3094,9 +2806,7 @@ JAP_nagoya_arsenal_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_army_faction_is_not_subdued = yes
-			}
+			
 		}
 
 		on_complete = {
@@ -3223,9 +2933,9 @@ JAP_nippon_sharyo_organization = {
 		}
 
 		available = {
-			FROM = {
-				JAP_zaibatsu_faction_is_at_least_influential = yes
-			}
+			# FROM = {
+			# 	JAP_zaibatsu_faction_is_at_least_influential = yes
+			# }
 		}
 
 		on_complete = {

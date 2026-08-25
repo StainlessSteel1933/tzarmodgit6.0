@@ -340,7 +340,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
+				
 			}
 		}
 
@@ -388,7 +388,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
+				
 			}
 		}
 
@@ -435,7 +435,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
+				
 			}
 			modifier = {
 				factor = 0.1
@@ -483,7 +483,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
+				
 			}
 		}
 
@@ -526,7 +526,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
+				
 			}
 		}
 
@@ -570,7 +570,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-				anti_submarine_strategy_required_trigger = yes
+				
 			}
 			modifier = {
 				factor = 2
@@ -623,7 +623,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
+				
 			}
 		}
 
@@ -663,7 +663,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-				anti_submarine_strategy_required_trigger = yes
+				
 			}
 		}
 

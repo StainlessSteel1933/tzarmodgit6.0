@@ -1302,8 +1302,6 @@ ideas = {
 					
 			modifier = {
 				operative_slot = 1
-				operation_make_resistance_contacts_outcome = 0.15
-				operation_boost_resistance_outcome = 0.15
 				target_sabotage_factor = 0.1
 			}
 		}

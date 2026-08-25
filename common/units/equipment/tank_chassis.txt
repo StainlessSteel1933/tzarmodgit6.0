@@ -1316,12 +1316,12 @@ equipments = {
 			}
 		}
 		default_modules = {
-			main_armament_slot = tank_super_heavy_cannon
-			turret_type_slot = tank_heavy_three_man_tank_turret
+			main_armament_slot = empty
+			turret_type_slot = empty
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_welded_armor
 			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_3
+			special_type_slot_1 = empty
 			special_type_slot_2 = empty
 			special_type_slot_3 = extra_ammo_storage
 		}
@@ -1381,14 +1381,6 @@ equipments = {
 		# 	module = smoke_launchers
 		# 	count < 2
 		# }
-
-		default_modules = {
-			main_armament_slot = empty
-			turret_type_slot = tank_modern_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
 
 		fuel_consumption = 0
 		maximum_speed = 5
