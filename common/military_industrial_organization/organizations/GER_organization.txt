@@ -3047,13 +3047,16 @@ GER_opel_organization = {
 
 		available = { 
 			FROM = {
-				has_completed_focus = GER_nationalize_ford_factories
+				has_completed_focus = GER_rhineland
 			}
 		}
 
 		equipment_bonus = {
-			reliability = 0.05
-			build_cost_ic = -0.02
+			
+			equipment_bonus = {
+			maximum_speed = 0.5
+			build_cost_ic = 0.25
+			reliability = -0.25
 		}
 
 		ai_will_do = {
