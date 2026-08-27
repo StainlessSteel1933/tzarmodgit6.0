@@ -38,7 +38,7 @@ characters={
 				small="GFX_idea_generic_navy_europe_1"
 			}
 			army={
-				large="gfx/leaders/BUL/Nikola_Totev_Markov.tga"
+				large="GFX_Portrait_Europe_Generic_4"
 			}
 		}
 		corps_commander={
@@ -143,10 +143,10 @@ characters={
 		name="Konstantin Ivanov Bekyarov"
 		portraits={
 			army={
-				small=""
+				small="GFX_idea_generic_army_europe_3"
 			}
 			army={
-				large="gfx/leaders/BUL/Konstantin_Ivanov_Bekyarov.tga"
+				large="GFX_Portrait_Europe_Generic_3"
 			}
 		}
 		field_marshal={
@@ -183,10 +183,10 @@ characters={
 		name="Teodosi Daskalov"
 		portraits={
 			army={
-				small=""
+				small="GFX_idea_generic_army_europe_2"
 			}
 			army={
-				large="gfx/leaders/BUL/Portrait_BUL_Teodosi_Daskalov.tga"
+				large="GFX_Portrait_Europe_Generic_2"
 			}
 		}
 		corps_commander={
@@ -203,10 +203,10 @@ characters={
 		name="Ivan Valkov"
 		portraits={
 			army={
-				small=""
+				small="GFX_idea_generic_army_europe_1"
 			}
 			army={
-				large="gfx/leaders/BUL/Portrait_BUL_Ivan_Valkov.tga"
+				large="GFX_Portrait_Europe_Generic_1"
 			}
 		}
 		corps_commander={

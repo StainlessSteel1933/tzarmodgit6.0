@@ -25,9 +25,24 @@ on_actions = {
 					}
 				}
 				news_event = news.412
-
+				
 				clear_variable = FRA_battle_weeks_held
-
+				FRA = { 
+					set_equipment_fraction = 0.0
+					transfer_navy = {
+    					target = FRF
+					} 
+				}
+				
+				every_core_state = {
+					add_core_of = FRF
+				}
+				FRF = { change_tag_from = FRA }
+				FRF = {
+					inherit_technology = FRA
+					annex_country = { target = FRA transfer_troops = no }
+				}
+				FRF = { set_equipment_fraction = 0.0 }
 				# Add a preset amount of equipment for Germany capping france, since they get none otherwise
 				GER = {
 					add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 65000 producer = GER }
@@ -67,27 +82,27 @@ on_actions = {
 					}
 				}
 
-				FRA = { set_capital = { state = 310 } }
-				310 = { 
-					add_building_construction = {
-						type = infrastructure
-    					level = 8
-    					instant_build = yes
-					}
-					add_building_construction  ={
-						type = naval_base
-						level = 9
-						province = 12885
-						instant_build = yes
-					}
-				}
-				539 = { 
-					add_building_construction = { type = bunker province = 7963 level = 5 instant_build = yes } 
-					add_building_construction = { type = bunker province = 13211 level = 5 instant_build = yes } 
-					add_building_construction = { type = bunker province = 1993 level = 5 instant_build = yes } 
-					add_building_construction = { type = bunker province = 8078 level = 5 instant_build = yes } 
-					add_building_construction = { type = bunker province = 11194 level = 5 instant_build = yes } 
-				}
+				# FRA = { set_capital = { state = 310 } }
+				# 310 = { 
+				# 	add_building_construction = {
+				# 		type = infrastructure
+    			# 		level = 8
+    			# 		instant_build = yes
+				# 	}
+				# 	add_building_construction  ={
+				# 		type = naval_base
+				# 		level = 9
+				# 		province = 12885
+				# 		instant_build = yes
+				# 	}
+				# }
+				# 539 = { 
+				# 	add_building_construction = { type = bunker province = 7963 level = 5 instant_build = yes } 
+				# 	add_building_construction = { type = bunker province = 13211 level = 5 instant_build = yes } 
+				# 	add_building_construction = { type = bunker province = 1993 level = 5 instant_build = yes } 
+				# 	add_building_construction = { type = bunker province = 8078 level = 5 instant_build = yes } 
+				# 	add_building_construction = { type = bunker province = 11194 level = 5 instant_build = yes } 
+				# }
 				28 = {
 					set_building_level = {
 						type = bunker
@@ -99,62 +114,66 @@ on_actions = {
 						}
 					}
 				}
-				if = {
-				limit = {
-					AND = {
-						has_game_rule = { rule = canada_small_game option = CAN_SMALL_GAME_DISABLE }
-						has_start_date = 1936.1.1.13
-					}
-				}
-				539 = {
-					add_extra_state_shared_building_slots = 70
-					add_building_construction = {
-						type = industrial_complex
-						level = 20
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 35
-						instant_build = yes
-					}
-				}
 				772 = {
 					add_extra_state_shared_building_slots = 30
 				}
 				773 = {
 					add_extra_state_shared_building_slots = 30
 				}
-				660 = {
-					add_extra_state_shared_building_slots = 30
-				}
-				}
+				# if = {
+				# limit = {
+				# 	AND = {
+				# 		has_game_rule = { rule = canada_small_game option = CAN_SMALL_GAME_DISABLE }
+				# 		has_start_date = 1936.1.1.13
+				# 	}
+				# }
+				# 539 = {
+				# 	add_extra_state_shared_building_slots = 70
+				# 	add_building_construction = {
+				# 		type = industrial_complex
+				# 		level = 20
+				# 		instant_build = yes
+				# 	}
+				# 	add_building_construction = {
+				# 		type = arms_factory
+				# 		level = 35
+				# 		instant_build = yes
+				# 	}
+				# }
+				# 772 = {
+				# 	add_extra_state_shared_building_slots = 30
+				# }
+				# 773 = {
+				# 	add_extra_state_shared_building_slots = 30
+				# }
+				# 660 = {
+				# 	add_extra_state_shared_building_slots = 30
+				# }
+				# }
 				FRA_fix_africa = yes
-				FRA = { add_state_core = 772 add_state_core = 539 add_state_core = 773 
-						add_state_core = 660 add_state_core = 774 }
-				FRA = { country_event = { id = france.10 }}
+				# FRA = { add_state_core = 772 add_state_core = 539 add_state_core = 773 
+				# 		add_state_core = 660 add_state_core = 774 }
+				# FRA = { country_event = { id = france.10 }}
 				GER = {  country_event = { id = france.14 }
                 GER = { transfer_state = 806 }
-                GER = { transfer_state = 991 }
-                EFR = { transfer_state = 851 }
-                EFR = { transfer_state = 913}
+                EFR = { 
+					transfer_state = 851 
+					transfer_state = 899
+					transfer_state = 898
+					
+				}
+                
                 ITA = {
-                    transfer_state = 956 
-                    transfer_state = 515
-                    transfer_state = 956
-                     
+                    transfer_state = 515 
                 }
                 ENG = {
                 	transfer_state = 554
                 	transfer_state = 553
                 	transfer_state = 680
-                	#transfer_state = 667
+					transfer_state = 775
+					transfer_state = 515
                 }
-                EFR = {transfer_state = 293 }
-                EFR = {
-                transfer_state = 798
-                transfer_state = 342 
-                }
+                
                 FRF = {
                     transfer_state = 888
                     transfer_state = 890
@@ -164,7 +183,9 @@ on_actions = {
                     improved_medium_tank_chassis = 1
                     mechanised_infantry = 1
                     }
+					# change_tag_from = FRA
                 }
+				
 				762 = { set_compliance = 60 }
 				if = {
 					limit = {
@@ -172,10 +193,10 @@ on_actions = {
 							exists = yes
 						}
 					}
-					JAP = { transfer_state = 671 transfer_state = 286 transfer_state = 728 }
+					JAP = { transfer_state = 671 transfer_state = 286 transfer_state = 728 transfer_state = 1017 }
 				}
 
-				FRA = { country_event = { id = france.800 } }
+				#  FRA = { country_event = { id = france.800 } }
 				}
 			}
 			if = {
@@ -195,7 +216,7 @@ on_actions = {
 				
 				
 				
-				}
+			}
 			if = {
 				limit = {
 					original_tag = NOR
@@ -236,8 +257,8 @@ on_actions = {
 			}
             ### bel
 			if =  { limit = { original_tag = BEL }
-				BEL = { country_event = { id =  mtg_netherlands.331 days = 1 } 	}
-				GER = { set_state_owner = 6 set_state_owner = 34 set_state_owner = 8 }
+				# BEL = { country_event = { id =  mtg_netherlands.331 days = 1 } 	}
+				GER = { set_state_owner = 6 set_state_owner = 34 set_state_owner = 8 set_state_owner = 980 set_state_owner = 977}
 				every_state = { limit = { is_core_of = BEL } set_compliance = 40 }
 				FRA = {
 					annex_country = {

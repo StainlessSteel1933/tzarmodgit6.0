@@ -6,7 +6,7 @@ characters={
 				small="GFX_idea_CAN_guy_simonds"
 			}
 			army={
-				large="gfx/leaders/CAN/CAN_Leader_4.dds"
+				large="GFX_Portrait_Europe_Generic_1"
 			}
 		}
 		advisor={	
@@ -94,10 +94,10 @@ characters={
 		name="Thomas Victor Anderson"
 		portraits={
 			army={
-				small=""
+				small="GFX_idea_generic_army_europe_2"
 			}
 			army={
-				large="gfx/leaders/CAN/CAN_Leader_1.dds"
+				large="GFX_Portrait_Europe_Generic_2"
 			}
 		}
 		corps_commander={
@@ -134,10 +134,10 @@ characters={
 		name="John Montague"
 		portraits={
 			army={
-				small=""
+				small="GFX_idea_generic_army_europe_3"
 			}
 			army={
-				large="gfx/leaders/CAN/CAN_Leader_2.dds"
+				large="GFX_Portrait_Europe_Generic_3"
 			}
 		}
 		corps_commander={
@@ -174,10 +174,10 @@ characters={
 		name="Georges Vanier"
 		portraits={
 			army={
-				small=""
+				small="GFX_idea_generic_army_europe_4"
 			}
 			army={
-				large="gfx/leaders/CAN/CAN_Leader_7.dds"
+				large="GFX_Portrait_Europe_Generic_4"
 			}
 		}
 		corps_commander={
@@ -194,10 +194,10 @@ characters={
 		name="Harry Crerar"
 		portraits={
 			army={
-				small="GFX_idea_CAN_harry_crerar"
+				small="GFX_idea_generic_army_europe_5"
 			}
 			army={
-				large="gfx/leaders/CAN/CAN_Leader_5.dds"
+				large="GFX_Portrait_Europe_Generic_5"
 			}
 		}
 		advisor={	
@@ -227,10 +227,10 @@ characters={
 		name="Kenneth Stuart (USE FOR TANKS)"
 		portraits={
 			army={
-				small=""
+				small="GFX_idea_generic_army_europe_6"
 			}
 			army={
-				large="gfx/leaders/CAN/CAN_Leader_6.dds"
+				large="GFX_Portrait_Europe_Generic_6"
 			}
 		}
 		corps_commander={

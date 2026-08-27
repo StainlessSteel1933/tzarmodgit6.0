@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = JAP
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 2
 			12230 = {

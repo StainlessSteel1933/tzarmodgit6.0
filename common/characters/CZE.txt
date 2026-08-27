@@ -129,7 +129,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits = {  offensive_doctrine armor_officer panzer_leader fast_planner ranger trait_reckless panzer_expert organizer career_officer trait_cautious inspirational_leader}
+			traits = {  armor_officer panzer_leader fast_planner ranger trait_reckless panzer_expert organizer career_officer trait_cautious inspirational_leader}
 			skill = 5
 			attack_skill = 8
 			defense_skill = 3
@@ -338,24 +338,23 @@ characters={
 			allowed = {
 				original_tag = CZE
 			}
-				advisor={
+				
 			cost = 150
 			slot = theorist
 			idea_token = manstein
 			ledger = army
-			allowed = {
-				original_tag = GER
-			}
+			
 			traits = {
 				mobile_warfare_expert
 			}
-		}
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
+			
 	}
+	
 
 	CZE_jaroslav_fajfr={
 		name=CZE_jaroslav_fajfr
@@ -584,19 +583,7 @@ characters={
 			traits  = {
 				communist_revolutionary 
 			}
-			ai_will_do  = {
-				base = 0
-				modifier = {
-					add = 20
-					OR = {
-						has_country_flag = CZE_AI_RANDOM_COMMUNIST
-						has_game_rule = {
-							rule = CZE_ai_behavior
-							option = COMMUNIST
-						}
-					}
-				}
-			}
+			
 		}
 	}
 	
@@ -618,19 +605,7 @@ characters={
 			traits  = {
 				fascist_demagogue 
 			}
-			ai_will_do  = {
-				base = 0
-				modifier = {
-					add = 20
-					OR = {
-						has_country_flag = CZE_AI_RANDOM_FASCIST
-						has_game_rule = {
-							rule = CZE_ai_behavior
-							option = FASCIST
-						}
-					}
-				}
-			}
+			
 		}		
 	}
 

@@ -12,6 +12,7 @@ state={
 			infrastructure = 1
 		}
 		owner = JAP
+		add_core_of = SWE
 		
 	}
 	manpower=2000000

@@ -573,49 +573,49 @@ ideas = {
 	}
 
 
-	political_advisor = {
+	# political_advisor = {
 
-		MAN_megata_toshiro = {
+	# 	MAN_megata_toshiro = {
 
-			picture = generic_political_advisor_asia_2
+	# 		picture = generic_political_advisor_asia_2
 			
-			allowed = {
-				original_tag = MIN
-			}
+	# 		allowed = {
+	# 			original_tag = MIN
+	# 		}
 			
-			traits = { armaments_organizer }
-		}
+	# 		traits = { armaments_organizer }
+	# 	}
 
-		MAN_nalan_kang_an = {
+	# 	MAN_nalan_kang_an = {
 
-			picture = generic_political_advisor_asia_3
+	# 		picture = generic_political_advisor_asia_3
 				
-			allowed = {
-				original_tag = MIN
-			}
+	# 		allowed = {
+	# 			original_tag = MIN
+	# 		}
 			
-			traits = { fortification_engineer }
-		}
+	# 		traits = { fortification_engineer }
+	# 	}
 
-		MAN_songgotu_zhanshan = {
+	# 	MAN_songgotu_zhanshan = {
 
-			picture = generic_political_advisor_asia_1
+	# 		picture = generic_political_advisor_asia_1
 			
-			allowed = {
-				original_tag = MIN
-			}
+	# 		allowed = {
+	# 			original_tag = MIN
+	# 		}
 
-			available = {
-				if = {
-					OR = { has_completed_focus = MAN_invite_japanese_investors
-					#has_completed_focus = MAN_invite_japanese_investorsx 
-					}
-				}
-			}
+	# 		available = {
+	# 			if = {
+	# 				OR = { has_completed_focus = MAN_invite_japanese_investors
+	# 				#has_completed_focus = MAN_invite_japanese_investorsx 
+	# 				}
+	# 			}
+	# 		}
 			
-			traits = { captain_of_industry }
-		}
-	}	
+	# 		traits = { captain_of_industry }
+	# 	}
+	# }	
 
 	army_chief = {	
 		MAN_orggg = {			

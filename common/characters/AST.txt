@@ -207,10 +207,10 @@ characters={
 		name="Frank Berryman"
 		portraits={
 			army={
-				small=""
+				small="GFX_idea_generic_army_europe_1"
 			}
 			army={
-				large="gfx/leaders/AST/Portrait_AST_Frank_Berryman.tga"
+				large="GFX_Portrait_Europe_Generic_1"
 			}
 		}
 		corps_commander={
@@ -227,10 +227,10 @@ characters={
 		name="Brudenell White"
 		portraits={
 			army={
-				small=""
+				small="GFX_idea_generic_army_europe_2"
 			}
 			army={
-				large="gfx/leaders/AST/Portrait_AST_Brudenell_White.tga"
+				large="GFX_Portrait_Europe_Generic_2"
 			}
 		}
 		corps_commander={
@@ -247,10 +247,10 @@ characters={
 		name="Iven Mackay"
 		portraits={
 			army={
-				small=""
+				small="GFX_idea_generic_army_europe_3"
 			}
 			army={
-				large="gfx/leaders/AST/Portrait_AST_Iven_Mackay.tga"
+				large="GFX_Portrait_Europe_Generic_3"
 			}
 		}
 		corps_commander={
@@ -267,10 +267,10 @@ characters={
 		name="John Lavarack"
 		portraits={
 			army={
-				small=""
+				small="GFX_idea_generic_army_europe_4"
 			}
 			army={
-				large="gfx/leaders/AST/Portrait_AST_John_Lavarack.tga"
+				large="GFX_Portrait_Europe_Generic_4"
 			}
 		}
 		corps_commander={

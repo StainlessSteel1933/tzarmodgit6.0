@@ -1281,25 +1281,7 @@ ideas = {
 	# }
 	
 	
-	tank_manufacturer = {
 	
-		designer = yes
-	
-		# fiat = {
-	
-		# 	allowed = {
-		# 		OR = { original_tag = ITA original_tag = GER original_tag = SPR original_tag = EFR original_tag = BUL original_tag = ROM  original_tag = HUN original_tag = YUG    } 
-		# 	}
-				
-		# 	# research_bonus = {
-		# 	# 	armor = 0.15
-		# 	# }
-
-		# 	cost = 0
-			
-		# 	traits = { fix_it_again_tony }
-		# }
-	}
 	
 	
 	
@@ -1335,9 +1317,7 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			research_bonus = {
-				mechanized_equipment = 0.10
-			}
+			
 			
 			traits = { motorized_equipment_manufacturer }
 		}
