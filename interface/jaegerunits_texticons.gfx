@@ -66,12 +66,12 @@ spriteTypes = {
 	# 	legacy_lazy_load = no
 	# }
 
-	# spriteType = {
-	# 	name = "GFX_unit_flamethrower_icon_small"
-	# 	texturefile = "gfx/texticons/unit_flamethrower_icon_small.dds"
-	# 	legacy_lazy_load = no
-	# 	noOfFrames = 2
-	# }
+	spriteType = {
+		name = "GFX_unit_flamethrower_icon_small"
+		texturefile = "gfx/bm_units/texticons/bm_flamethower_support.png"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
 
 	# spriteType = {
 	# 	name = "GFX_nato_unit_flamethrower_icon_small"

@@ -578,8 +578,8 @@ ideas = {
 			modifier = {
 				# army_org = 5
 				# army_morale_factor = 0.1
-				experience_gain_army_unit_factor = 0.5
-				experience_loss_factor = -0.5
+				experience_gain_army_unit_factor = 0.1
+				experience_loss_factor = -0.1
 				supply_consumption_factor = -0.02
 			}
 		}

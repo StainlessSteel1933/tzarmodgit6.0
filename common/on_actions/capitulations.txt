@@ -32,10 +32,9 @@ on_actions = {
 					transfer_navy = {
     					target = FRF
 					} 
-				}
-				
-				every_core_state = {
+					every_core_state = {
 					add_core_of = FRF
+					}
 				}
 				FRF = { change_tag_from = FRA }
 				FRF = {

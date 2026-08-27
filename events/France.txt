@@ -279,7 +279,7 @@ country_event = {
 			}
 			FRF = {
 				inherit_technology = FRA
-				set_technology = { FRF_get_tank_designer = 1 }
+				# set_technology = { FRF_get_tank_designer = 1 }
 
 				if = { limit = { FRF = { has_tech = basic_medium_tank } } 
 					set_technology = { basic_medium_tank = 0 }

@@ -7279,7 +7279,7 @@ completion_reward = {
 		id = ITA_war_with_greece
 		icon = GFX_focus_generic_attack_greece
 		prerequisite = { focus = ITA_albanian_occupation }
-		mutually_exclusive = { focus = ITA_befriend_greece }
+		
 		x = 2
 		y = 1
 		relative_position_id = ITA_albanian_occupation
@@ -7292,30 +7292,22 @@ completion_reward = {
 
 		search_filters = {}
 
-completion_reward = {
+	completion_reward = {
 
-	transfer_state = 903
-
-	transfer_state = 914
-
-	transfer_state = 104
-	transfer_state = 103
-	
-	
-	transfer_state = 109
-	transfer_state = 804
-	transfer_state = 764
+				transfer_state = 903
+				transfer_state = 108
+				transfer_state = 914
+				transfer_state = 970
+				transfer_state = 764
 			YUG = {
-				complete_national_focus = YUG_Political_1
-					#set_cosmetic_tag = YUG_CRO	
-					set_politics = {
-						ruling_party = fascism
-						elections_allowed = no
-					}
+				set_cosmetic_tag = YUG_CRO	
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
 				add_popularity = {
 					ideology = fascism
 					popularity = 1.0
-				
 				}
 			}
 			if = {
@@ -7325,16 +7317,10 @@ completion_reward = {
 					}
 				}
 				ITA = {
-					transfer_state = 970
-					transfer_state = 107
-					transfer_state = 108
-					transfer_state = 802
-					transfer_state = 105
-					transfer_state = 804
-					
-					transfer_state = 103
-					transfer_state = 104
 					transfer_state = 109
+					transfer_state = 104
+					transfer_state = 804
+					transfer_state = 103
 					transfer_state = 853
 				}
 				
@@ -7379,7 +7365,7 @@ completion_reward = {
 
 			#ITA = { annex_country = { target = GRE transfer_troops = no } }
 			ITA = {
-				transfer_state = 802 transfer_state = 105 transfer_state = 853
+				transfer_state = 802 transfer_state = 105 
 				transfer_state = 107
 			
 				transfer_state = 731 transfer_state = 185 transfer_state = 47

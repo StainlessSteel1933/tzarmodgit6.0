@@ -73,12 +73,7 @@ characters={
 					large = "GFX_Portrait_hungary_miklos_horthy"
 				}
 			}
-			country_leader = {
-				ideology = oligarchism
-				traits = { fascist_sympathies anti_communist }
-				expire = "1965.1.1.1"
-				id = 500
-			}
+			
 			country_leader = {
 				ideology = fascism_ideology
 				traits = { anti_communist }
