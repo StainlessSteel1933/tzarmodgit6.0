@@ -11,7 +11,7 @@ NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 90								-- base cap of naval invasion
 NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 20							-- base cap of divisions that can be assigned in a naval invasion
 
 NDefines.NProduction.BASE_COUNTRY_ENERGY_PRODUCTION = 1000000 			-- The base energy production of a country
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.3
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.75
 NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999			
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999
 NDefines.NDiplomacy.EMBARGO_COST = 9999
